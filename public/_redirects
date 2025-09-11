@@ -1,1 +1,11 @@
-/*    /index.html   200
+# Cache-Control headers
+/*.html   /index.html   200   Cache-Control: public, max-age=0, must-revalidate
+/*.js     /*.js         200   Cache-Control: public, max-age=31536000, immutable
+/*.css    /*.css        200   Cache-Control: public, max-age=31536000, immutable
+/*.jpg    /*.jpg        200   Cache-Control: public, max-age=31536000, immutable
+/*.png    /*.png        200   Cache-Control: public, max-age=31536000, immutable
+/*.webp   /*.webp       200   Cache-Control: public, max-age=31536000, immutable
+/*.woff2  /*.woff2      200   Cache-Control: public, max-age=31536000, immutable
+
+# Fallback
+/*        /index.html   200
