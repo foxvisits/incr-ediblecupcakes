@@ -74,15 +74,45 @@ const RecipesPage = () => {
                 "position": index + 1,
                 "name": recipe.title,
                 "url": `https://incr-ediblecupcakes.com/recipe/${recipe.slug}`,
-                "image": recipe.image,
+                "image": `https://incr-ediblecupcakes.com${recipe.image}`,
                 "description": recipe.shortDescription,
                 "recipeCategory": recipe.category,
                 "recipeCuisine": recipe.cuisine,
                 "difficulty": recipe.difficulty,
-                "prepTime": recipe.prepTime,
-                "cookTime": recipe.cookTime,
-                "totalTime": recipe.totalTime,
+                "prepTime": recipe.prepTime.includes('PT') ? recipe.prepTime : `PT${recipe.prepTime.match(/\d+/)?.[0] || '30'}M`,
+                "cookTime": recipe.cookTime.includes('PT') ? recipe.cookTime : `PT${recipe.cookTime.match(/\d+/)?.[0] || '30'}M`,
+                "totalTime": recipe.totalTime.includes('PT') ? recipe.totalTime : `PT${recipe.totalTime.match(/\d+/)?.[0] || '60'}M`,
                 "recipeYield": recipe.servings,
+                "recipeIngredient": recipe.ingredients,
+                "recipeInstructions": recipe.instructions.map((instruction, stepIndex) => ({
+                  "@type": "HowToStep",
+                  "position": stepIndex + 1,
+                  "text": instruction,
+                  "image": `https://incr-ediblecupcakes.com${recipe.image}`
+                })),
+                "author": recipe.author || {
+                  "@type": "Organization",
+                  "name": "Incr-EdibleCupCakes",
+                  "url": "https://incr-ediblecupcakes.com"
+                },
+                "keywords": recipe.keywords?.join(', ') || `${recipe.category} cupcakes, ${recipe.difficulty.toLowerCase()} recipes, homemade cupcakes`,
+                "nutrition": recipe.nutritionInfo ? {
+                  "@type": "NutritionInformation",
+                  "calories": `${recipe.nutritionInfo.calories} calories`,
+                  "carbohydrateContent": `${recipe.nutritionInfo.carbs}g`,
+                  "proteinContent": `${recipe.nutritionInfo.protein}g`,
+                  "fatContent": `${recipe.nutritionInfo.fat}g`,
+                  "fiberContent": `${recipe.nutritionInfo.fiber}g`,
+                  "sugarContent": `${recipe.nutritionInfo.sugar}g`
+                } : undefined,
+                "video": recipe.video ? {
+                  "@type": "VideoObject",
+                  "name": `${recipe.title} - Video Tutorial`,
+                  "description": `Learn how to make ${recipe.title} with this step-by-step video tutorial`,
+                  "thumbnailUrl": `https://incr-ediblecupcakes.com${recipe.image}`,
+                  "contentUrl": recipe.video,
+                  "embedUrl": recipe.video
+                } : undefined,
                 "aggregateRating": {
                   "@type": "AggregateRating",
                   "ratingValue": recipe.rating,

@@ -35,6 +35,13 @@ export interface Recipe {
     question: string;
     answer: string;
   }[];
+  // Schema.org fields
+  author?: {
+    name: string;
+    url?: string;
+  };
+  keywords?: string[];
+  video?: string;
 }
 
 // Utility function to generate SEO-friendly slugs from recipe titles
@@ -46,6 +53,21 @@ export const generateSlug = (title: string): string => {
     .replace(/-+/g, '-') // Replace multiple hyphens with single hyphen
     .trim() // Remove leading/trailing whitespace
     .replace(/^-+|-+$/g, ''); // Remove leading/trailing hyphens
+};
+
+// Utility function to convert time format to ISO 8601 duration
+export const convertToISODuration = (timeString: string): string => {
+  const match = timeString.match(/(\d+)\s*(mins?|minutes?|hrs?|hours?)/i);
+  if (!match) return 'PT30M'; // Default to 30 minutes if parsing fails
+  
+  const value = parseInt(match[1]);
+  const unit = match[2].toLowerCase();
+  
+  if (unit.includes('hr') || unit.includes('hour')) {
+    return `PT${value}H`;
+  } else {
+    return `PT${value}M`;
+  }
 };
 
 // Validation function to ensure all recipes have proper slugs
@@ -67,7 +89,7 @@ export const recipes: Recipe[] = [
     slug: 'classic-vanilla-dream-cupcakes',
     description: 'Step into a world of pure vanilla bliss with these extraordinary cupcakes that redefine what classic baking can be. These aren\'t your ordinary vanilla cupcakes – they\'re a symphony of flavors and textures that will make your taste buds sing with joy. The secret begins with real Madagascar vanilla beans, their tiny black specks visible throughout the golden crumb, promising an authentic vanilla experience that artificial extracts simply cannot match. Each cupcake boasts an incredibly moist and tender texture, achieved through a carefully balanced combination of European-style butter and neutral oil that creates the perfect crumb structure. The batter is mixed with precision – just enough to combine the ingredients without developing the gluten, resulting in cupcakes so light and airy they practically melt on your tongue. What truly sets these apart is the Swiss meringue buttercream frosting, whipped to silky perfection with a glossy finish that catches the light beautifully. This isn\'t just frosting; it\'s edible silk that complements the vanilla cake with its subtle sweetness and luxurious mouthfeel. Whether you\'re celebrating a special occasion or simply indulging in life\'s sweet moments, these vanilla dream cupcakes deliver an experience that transforms ordinary days into extraordinary memories.',
     shortDescription: 'Experience pure vanilla bliss with these extraordinary cupcakes featuring real Madagascar vanilla beans and Swiss meringue buttercream frosting.',
-    image: '/Classic Vanilla Dream Cupcakes.jpg?auto=compress&cs=tinysrgb&w=800',
+    image: '/Classic Vanilla Dream Cupcakes.jpg',
     category: 'classic',
     difficulty: 'Easy',
     prepTime: '25 mins',
@@ -78,6 +100,11 @@ export const recipes: Recipe[] = [
     featured: true,
     cuisine: 'American',
     dietaryBadges: ['Vegetarian'],
+    author: {
+      name: 'Incr-EdibleCupCakes',
+      url: 'https://incr-ediblecupcakes.com'
+    },
+    keywords: ['vanilla cupcakes', 'classic cupcakes', 'homemade cupcakes', 'baking recipes', 'dessert recipes'],
     ingredients: [
       '2 cups all-purpose flour',
       '1½ cups granulated sugar',
@@ -154,7 +181,7 @@ export const recipes: Recipe[] = [
     slug: 'keto-chocolate-bliss-cupcakes',
     description: 'Indulge in the ultimate guilt-free chocolate experience with these revolutionary keto cupcakes that prove low-carb doesn\'t mean low-flavor. These decadent treats are a masterclass in ketogenic baking, where every ingredient has been carefully selected to deliver maximum taste while keeping carbs to an absolute minimum. The foundation is built on superfine almond flour, which creates an incredibly moist and tender crumb that rivals any traditional wheat-based cupcake. The chocolate flavor is intensely rich and complex, achieved through a combination of premium Dutch-processed cocoa powder and sugar-free dark chocolate, creating layers of chocolate notes that develop beautifully on your palate. Erythritol provides the perfect sweetness without any bitter aftertaste, while coconut oil adds richness and helps create that coveted fudgy texture. The real showstopper is the cream cheese frosting – a cloud of tangy sweetness that perfectly balances the deep chocolate flavors below. Whipped to perfection with powdered erythritol and a touch of vanilla, it\'s so smooth and luxurious that even your non-keto friends will be amazed. At just 3 net carbs per cupcake, these treats allow you to satisfy your chocolate cravings while maintaining your ketogenic lifestyle, proving that healthy choices never have to mean sacrificing the foods you love.',
     shortDescription: 'Indulge guilt-free with these revolutionary keto chocolate cupcakes featuring rich almond flour base and luxurious cream cheese frosting at just 3 net carbs.',
-    image: '/keto-chocolate-bliss-cupcakes.png?auto=compress&cs=tinysrgb&w=800',
+    image: '/keto-chocolate-bliss-cupcakes.png',
     category: 'keto',
     difficulty: 'Medium',
     prepTime: '30 mins',
@@ -165,6 +192,11 @@ export const recipes: Recipe[] = [
     featured: true,
     cuisine: 'American',
     dietaryBadges: ['Keto', 'Low Carb', 'Gluten-Free'],
+    author: {
+      name: 'Incr-EdibleCupCakes',
+      url: 'https://incr-ediblecupcakes.com'
+    },
+    keywords: ['keto cupcakes', 'low carb cupcakes', 'chocolate cupcakes', 'keto baking', 'sugar free cupcakes'],
     ingredients: [
       '1½ cups almond flour',
       '¾ cup erythritol sweetener',
@@ -241,7 +273,7 @@ export const recipes: Recipe[] = [
     slug: 'vegan-rainbow-surprise-cupcakes',
     description: 'Prepare to be amazed by these spectacular vegan rainbow cupcakes that transform plant-based baking into pure artistry. Each cupcake is a hidden treasure, appearing perfectly normal from the outside but revealing a stunning rainbow of naturally colored layers when you take that first magical bite. This isn\'t just baking – it\'s edible art that celebrates both creativity and compassion. The rainbow effect is achieved through innovative natural coloring techniques that would make any food scientist proud. Vibrant pink comes from pureed fresh beetroot, sunny yellow from golden turmeric, ocean blue from butterfly pea flower tea, and emerald green from nutrient-rich spirulina powder. Each color layer maintains its distinct hue while contributing its own subtle flavor notes to the overall taste experience. The cupcake base is a marvel of vegan baking science, where plant-based milk creates incredible moisture, apple cider vinegar acts as a natural leavening agent, and carefully selected oils provide richness without any animal products. The result is a texture so light, fluffy, and tender that even the most devoted dairy lovers will be converted. Crowned with our signature coconut whipped cream frosting that\'s been whipped to cloud-like perfection, these cupcakes prove that vegan desserts can be every bit as indulgent and satisfying as their traditional counterparts, all while being kinder to our planet and its creatures.',
     shortDescription: 'Be amazed by these spectacular vegan rainbow cupcakes featuring naturally colored layers and cloud-like coconut whipped cream frosting.',
-    image: '/vegan-rainbow-surprise-cupcakes.jpg?auto=compress&cs=tinysrgb&w=800',
+    image: '/vegan-rainbow-surprise-cupcakes.jpg',
     category: 'vegan',
     difficulty: 'Medium',
     prepTime: '40 mins',
@@ -252,6 +284,11 @@ export const recipes: Recipe[] = [
     featured: true,
     cuisine: 'Modern',
     dietaryBadges: ['Vegan', 'Dairy-Free', 'Egg-Free'],
+    author: {
+      name: 'Incr-EdibleCupCakes',
+      url: 'https://incr-ediblecupcakes.com'
+    },
+    keywords: ['vegan cupcakes', 'rainbow cupcakes', 'plant based cupcakes', 'dairy free cupcakes', 'colorful cupcakes'],
     ingredients: [
       '2 cups all-purpose flour',
       '1½ cups sugar',
@@ -325,7 +362,7 @@ export const recipes: Recipe[] = [
     slug: 'nut-free-lemon-sunshine-cupcakes',
     description: 'Experience pure sunshine captured in cupcake form with these absolutely radiant nut-free lemon creations that will instantly brighten your day and lift your spirits. These aren\'t just cupcakes – they\'re edible rays of sunshine that deliver an explosion of fresh, zesty lemon flavor in every single bite. Crafted with meticulous attention to allergen safety, every ingredient has been carefully selected to ensure complete nut-free preparation while never compromising on the incredible taste and texture that makes these cupcakes truly special. The lemon flavor is achieved through a masterful combination of fresh lemon zest, pure lemon juice, and high-quality lemon extract, creating layers of citrus notes that dance on your palate from the first bite to the last. The cupcake itself boasts an incredibly tender, moist crumb that practically melts on your tongue, achieved through the perfect balance of butter, eggs, and buttermilk that creates a delicate texture reminiscent of the finest European sponge cakes. But the real surprise awaits inside – a hidden center of homemade lemon curd that bursts with tangy sweetness, creating a delightful contrast to the tender cake surrounding it. The crowning glory is our signature lemon buttercream frosting, piped into beautiful swirls that resemble miniature sunshine rays, each one infused with fresh lemon juice and zest for an authentic citrus experience that perfectly complements the cake below. These cupcakes are guaranteed to bring smiles to faces of all ages while providing a safe, delicious treat for those with nut allergies.',
     shortDescription: 'Brighten your day with these radiant nut-free lemon cupcakes featuring fresh citrus flavors, lemon curd centers, and sunshine buttercream frosting.',
-    image: '/nut-free-lemon-sunshine-cupcakes.jpg?auto=compress&cs=tinysrgb&w=800',
+    image: '/nut-free-lemon-sunshine-cupcakes.jpg',
     category: 'nut-free',
     difficulty: 'Easy',
     prepTime: '35 mins',
@@ -335,6 +372,11 @@ export const recipes: Recipe[] = [
     rating: 4.6,
     cuisine: 'American',
     dietaryBadges: ['Nut-Free', 'Vegetarian'],
+    author: {
+      name: 'Incr-EdibleCupCakes',
+      url: 'https://incr-ediblecupcakes.com'
+    },
+    keywords: ['nut free cupcakes', 'lemon cupcakes', 'citrus cupcakes', 'allergy friendly cupcakes', 'lemon dessert'],
     ingredients: [
       '2 cups all-purpose flour',
       '1½ cups sugar',
@@ -408,7 +450,7 @@ export const recipes: Recipe[] = [
     slug: 'red-velvet-romance-cupcakes',
     description: 'Surrender to the romance and mystique of these absolutely enchanting red velvet cupcakes that embody passion, elegance, and Southern charm in every luxurious bite. These aren\'t merely cupcakes – they\'re edible love letters that tell a story of tradition, craftsmanship, and the kind of baking that touches the soul. The signature deep crimson color is achieved through the perfect balance of natural cocoa powder and food coloring, creating that iconic red velvet hue that has captivated hearts for generations. But the magic goes far beyond appearances – the texture is what truly sets these cupcakes apart, with a crumb so tender and velvety smooth it feels like silk against your palate. This extraordinary texture comes from the careful interaction between buttermilk\'s acidity and a touch of vinegar, which creates a chemical reaction that produces the most incredibly soft and moist cake imaginable. The flavor profile is a sophisticated dance of subtle chocolate notes from premium cocoa powder, balanced perfectly with the tangy richness of cultured buttermilk and the warmth of pure vanilla extract. Each element works in harmony to create a taste that\'s both familiar and mysteriously complex, leaving you wanting more with every bite. The crowning glory is our traditional cream cheese frosting – rich, tangy, and perfectly sweet – that complements the cake\'s flavors like the perfect dance partner. Whether you\'re celebrating love, marking a special occasion, or simply indulging in one of baking\'s most beloved classics, these red velvet cupcakes speak the universal language of romance through the timeless art of exceptional Southern baking.',
     shortDescription: 'Surrender to romance with these enchanting red velvet cupcakes featuring velvety smooth texture and traditional cream cheese frosting.',
-    image: '/red-velvet-romance-cupcakes.jpg?auto=compress&cs=tinysrgb&w=800',
+    image: '/red-velvet-romance-cupcakes.jpg',
     category: 'classic',
     difficulty: 'Medium',
     prepTime: '45 mins',
@@ -418,6 +460,11 @@ export const recipes: Recipe[] = [
     rating: 4.9,
     cuisine: 'Southern American',
     dietaryBadges: ['Vegetarian'],
+    author: {
+      name: 'Incr-EdibleCupCakes',
+      url: 'https://incr-ediblecupcakes.com'
+    },
+    keywords: ['red velvet cupcakes', 'classic cupcakes', 'cream cheese frosting', 'southern baking', 'romantic cupcakes'],
     ingredients: [
       '2½ cups all-purpose flour',
       '1½ cups sugar',
@@ -491,7 +538,7 @@ export const recipes: Recipe[] = [
     slug: 'gluten-free-almond-joy-cupcakes',
     description: 'Escape to a tropical paradise with every bite of these extraordinary gluten-free Almond Joy cupcakes that perfectly capture the essence of the beloved candy bar while delivering a bakery-quality experience that will transport you straight to sandy beaches and swaying palm trees. These aren\'t just gluten-free alternatives – they\'re destination desserts that happen to be made without gluten, proving that dietary restrictions never have to mean compromising on flavor, texture, or pure indulgence. The foundation is built on a carefully crafted blend of premium gluten-free flours that creates the most incredibly tender, moist, and fluffy texture you\'ve ever experienced in a gluten-free baked good. Each cupcake is infused with rich coconut flavor from multiple sources – creamy coconut milk in the batter, finely shredded coconut folded throughout, and coconut extract that intensifies the tropical notes. The result is a cake that tastes like a gentle ocean breeze and feels like silk on your tongue. But the real magic happens with the toppings that transform these cupcakes into edible works of art. A rich, glossy chocolate ganache cascades down the sides like liquid silk, made from premium dark chocolate and heavy cream that creates the perfect balance of bitter and sweet. Crowning each cupcake are perfectly toasted sliced almonds that add not just visual appeal but also a satisfying crunch that contrasts beautifully with the soft cake below. Hidden inside each cupcake is a surprise coconut cream filling that bursts with tropical flavor, creating multiple layers of taste and texture that make every bite an adventure in paradise.',
     shortDescription: 'Escape to paradise with these gluten-free Almond Joy cupcakes featuring coconut-infused cake, chocolate ganache, and toasted almonds.',
-    image: '/gluten-free-almond-joy-cupcakes.jpg?auto=compress&cs=tinysrgb&w=800',
+    image: '/gluten-free-almond-joy-cupcakes.jpg',
     category: 'gluten-free',
     difficulty: 'Hard',
     prepTime: '50 mins',
@@ -501,6 +548,11 @@ export const recipes: Recipe[] = [
     rating: 4.8,
     cuisine: 'Tropical',
     dietaryBadges: ['Gluten-Free', 'Vegetarian'],
+    author: {
+      name: 'Incr-EdibleCupCakes',
+      url: 'https://incr-ediblecupcakes.com'
+    },
+    keywords: ['gluten free cupcakes', 'almond joy cupcakes', 'coconut cupcakes', 'tropical cupcakes', 'chocolate coconut'],
     ingredients: [
       '2 cups gluten-free flour blend',
       '1 cup sugar',
@@ -574,7 +626,7 @@ export const recipes: Recipe[] = [
     slug: 'rosewater-pistachio-delight-cupcakes',
     description: 'These cupcakes are a love letter to delicate flavors and beautiful textures. The sponge is infused with a whisper of rosewater, giving it a fragrant, floral aroma that pairs perfectly with finely ground pistachios folded into the batter. Each cupcake is topped with a cloud of rose-scented buttercream and sprinkled generously with crushed pistachios for a satisfying crunch. They’re as stunning to look at as they are to eat, making them perfect for moments when you want to impress without going over the top.',
     shortDescription: 'Soft rosewater cupcakes topped with pistachio crunch and dreamy rose buttercream.',
-    image: '/rosewater-pistachio-delight-cupcakes.jpg?auto=compress&cs=tinysrgb&w=800',
+    image: '/rosewater-pistachio-delight-cupcakes.jpg',
     category: 'gourmet',
     difficulty: 'Intermediate',
     prepTime: '30 mins',
@@ -585,6 +637,11 @@ export const recipes: Recipe[] = [
     featured: true,
     cuisine: 'Middle Eastern-Inspired',
     dietaryBadges: ['Vegetarian'],
+    author: {
+      name: 'Incr-EdibleCupCakes',
+      url: 'https://incr-ediblecupcakes.com'
+    },
+    keywords: ['rosewater cupcakes', 'pistachio cupcakes', 'middle eastern cupcakes', 'gourmet cupcakes', 'floral cupcakes'],
     ingredients: [
       '1½ cups all-purpose flour',
       '½ cup finely ground pistachios',
@@ -636,7 +693,7 @@ export const recipes: Recipe[] = [
     slug: 'mango-coconut-sunset-cupcakes',
     description: 'Inspired by tropical sunsets, these cupcakes combine the creamy sweetness of ripe mango with the rich, nutty flavor of coconut. The sponge is soft and moist, thanks to coconut milk, and filled with a bright mango purée. A swirl of coconut cream frosting tops each one, finished with a slice of fresh mango and a sprinkle of toasted coconut. Every bite is like a warm beach breeze.',
     shortDescription: 'Tropical cupcakes with mango filling, coconut frosting, and toasted coconut topping.',
-    image: '/mango-coconut-sunset-cupcakes.png?auto=compress&cs=tinysrgb&w=800',
+    image: '/mango-coconut-sunset-cupcakes.png',
     category: 'tropical',
     difficulty: 'Easy',
     prepTime: '25 mins',
@@ -647,6 +704,11 @@ export const recipes: Recipe[] = [
     featured: false,
     cuisine: 'Caribbean-Inspired',
     dietaryBadges: ['Dairy-Free Option'],
+    author: {
+      name: 'Incr-EdibleCupCakes',
+      url: 'https://incr-ediblecupcakes.com'
+    },
+    keywords: ['mango cupcakes', 'coconut cupcakes', 'tropical cupcakes', 'caribbean cupcakes', 'summer cupcakes'],
     ingredients: [
       '1½ cups all-purpose flour',
       '1 tsp baking powder',
@@ -697,7 +759,7 @@ export const recipes: Recipe[] = [
     slug: 'chocolate-chili-firecracker-cupcakes',
     description: 'These bold cupcakes are for adventurous taste buds. Rich dark chocolate sponge is infused with a hint of chili powder and cinnamon, creating a warm kick that lingers. The frosting is a smooth chocolate ganache with just a touch of cayenne for a fiery finish. Garnished with a shard of chili-infused chocolate, they’re a daring twist on classic chocolate.',
     shortDescription: 'Dark chocolate cupcakes with a warm chili kick and rich ganache frosting.',
-    image: '/Chocolate Chili Firecracker Cupcakes.jpg?auto=compress&cs=tinysrgb&w=800',
+    image: '/Chocolate Chili Firecracker Cupcakes.jpg',
     category: 'spiced',
     difficulty: 'Intermediate',
     prepTime: '30 mins',
@@ -708,6 +770,11 @@ export const recipes: Recipe[] = [
     featured: false,
     cuisine: 'Mexican-Inspired',
     dietaryBadges: [],
+    author: {
+      name: 'Incr-EdibleCupCakes',
+      url: 'https://incr-ediblecupcakes.com'
+    },
+    keywords: ['chocolate chili cupcakes', 'spicy cupcakes', 'mexican cupcakes', 'chili cupcakes', 'adventurous cupcakes'],
     ingredients: [
       '1 cup all-purpose flour',
       '½ cup cocoa powder',
