@@ -51,6 +51,21 @@ const recipes = [
     slug: 'chocolate-chili-firecracker-cupcakes',
     title: 'Chocolate Chili Firecracker Cupcakes',
     image: '/Chocolate Chili Firecracker Cupcakes.jpg'
+  },
+  {
+    slug: 'boston-cream-cupcakes',
+    title: 'Boston Cream Cupcakes',
+    image: '/boston-cream-cupcakes.jpg'
+  },
+  {
+    slug: 'prune-cupcakes',
+    title: 'Prune Cupcakes',
+    image: '/prune-cupcakes.jpg'
+  },
+  {
+    slug: 'yellow-cake-cupcakes',
+    title: 'Yellow Cake Cupcakes',
+    image: '/yellow-cake-cupcakes.jpg'
   }
 ];
 
@@ -157,8 +172,8 @@ function generateSitemap() {
 
   sitemap += `</urlset>`;
 
-  // Write sitemap to dist directory
-  const sitemapPath = path.resolve(root, 'dist', 'sitemap.xml');
+  // Write sitemap to public directory
+  const sitemapPath = path.resolve(root, 'public', 'sitemap.xml');
   writeFileSync(sitemapPath, sitemap, 'utf8');
   
   console.log('✅ Generated sitemap.xml with', recipes.length + 9, 'URLs');

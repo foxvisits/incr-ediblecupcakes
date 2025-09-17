@@ -819,6 +819,293 @@ export const recipes: Recipe[] = [
       { question: 'Can I use milk chocolate?', answer: 'Dark chocolate is better for balancing spice, but milk chocolate works for a sweeter version.' },
       { question: 'Can I freeze them?', answer: 'Yes, but do so without ganache for best results.' }
     ]
+  },
+  {
+    id: '10',
+    title: 'Boston Cream Cupcakes',
+    slug: 'boston-cream-cupcakes',
+    description: 'Experience the perfect fusion of classic American dessert traditions with these extraordinary Boston Cream cupcakes that bring the beloved Boston Cream Pie to life in individual, bite-sized perfection. These aren\'t just cupcakes – they\'re miniature masterpieces that capture the essence of one of America\'s most iconic desserts while delivering an elevated experience that honors the original while creating something entirely new. The foundation is a perfectly tender vanilla sponge cake that\'s been crafted with precision to achieve the ideal texture – moist enough to melt on your tongue yet sturdy enough to hold the luxurious filling that makes these cupcakes truly special. Each cupcake is carefully hollowed out and filled with our signature vanilla pastry cream, a silky-smooth custard that\'s been infused with real vanilla beans and cooked to perfection until it reaches that magical consistency that\'s both rich and light. The pastry cream is the heart of these cupcakes, providing a burst of creamy sweetness that perfectly complements the tender cake surrounding it. But the crowning glory is the glossy chocolate ganache that cascades down the sides like liquid silk, made from premium dark chocolate and heavy cream that creates the perfect balance of bitter and sweet. This isn\'t just any chocolate topping – it\'s a carefully crafted ganache that sets to a beautiful sheen while maintaining its luxurious mouthfeel. Every element works in perfect harmony to create a taste experience that transports you to the finest bakeries of Boston while delivering the convenience and portion control that makes cupcakes so beloved.',
+    shortDescription: 'Classic Boston Cream Pie reimagined as individual cupcakes with vanilla pastry cream filling and rich chocolate ganache topping.',
+    image: '/boston-cream-cupcakes.jpg',
+    category: 'classic',
+    difficulty: 'Hard',
+    prepTime: '60 mins',
+    cookTime: '20 mins',
+    totalTime: '80 mins',
+    servings: 12,
+    rating: 4.9,
+    featured: true,
+    cuisine: 'American',
+    dietaryBadges: ['Vegetarian'],
+    author: {
+      name: 'Sarah Johnson',
+      url: 'https://incr-ediblecupcakes.com/about'
+    },
+    keywords: ['boston cream cupcakes', 'boston cream pie', 'vanilla custard cupcakes', 'chocolate ganache cupcakes', 'classic american dessert'],
+    ingredients: [
+      '2 cups all-purpose flour',
+      '1½ cups sugar',
+      '½ cup butter, softened',
+      '2 large eggs',
+      '2 tsp vanilla extract',
+      '2 tsp baking powder',
+      '½ tsp salt',
+      '1 cup whole milk',
+      'For pastry cream: 2 cups milk, 4 egg yolks, ½ cup sugar, 3 tbsp cornstarch, 1 tsp vanilla',
+      'For ganache: 8 oz dark chocolate, 1 cup heavy cream'
+    ],
+    instructions: [
+      'Preheat oven to 350°F (175°C) and line muffin tin with cupcake liners.',
+      'Cream butter and sugar until light and fluffy, about 3 minutes.',
+      'Add eggs one at a time, then vanilla extract.',
+      'In separate bowl, whisk flour, baking powder, and salt.',
+      'Alternate adding dry ingredients and milk to wet ingredients.',
+      'Fill cupcake liners ¾ full and bake for 18-20 minutes.',
+      'Cool completely, then core cupcakes and fill with pastry cream.',
+      'Top with chocolate ganache and let set before serving.'
+    ],
+    nutritionInfo: {
+      calories: 385,
+      carbs: 52,
+      protein: 6,
+      fat: 18,
+      fiber: 2,
+      sugar: 42
+    },
+    tips: [
+      'Make pastry cream ahead of time and chill thoroughly',
+      'Core cupcakes carefully to avoid breaking the sides',
+      'Let ganache cool slightly before pouring for better control',
+      'Store refrigerated due to pastry cream filling'
+    ],
+    variations: [
+      'Add coffee extract to pastry cream for mocha flavor',
+      'Top with chocolate shavings or gold leaf for elegance',
+      'Create mini versions for bite-sized treats',
+      'Add orange zest to pastry cream for citrus twist'
+    ],
+    pairings: 'Perfect with coffee, espresso, or a glass of cold milk. Pairs beautifully with fresh berries or a scoop of vanilla ice cream.',
+    bestTime: 'Ideal for special occasions, dinner parties, or when you want to impress with classic American dessert perfection. Best consumed within 3 days when refrigerated.',
+    recipeKeys: ['Classic American', 'Elegant', 'Special Occasion', 'Custard Filled', 'Chocolate Topped'],
+    conclusion: 'Boston Cream cupcakes offer the perfect balance of tradition and innovation, delivering restaurant-quality dessert in convenient individual portions.',
+    faq: [
+      {
+        question: "How do I make the pastry cream without lumps?",
+        answer: "Temper the egg yolks by slowly adding hot milk while whisking constantly. Cook over medium heat while stirring continuously until thickened. Strain through a fine mesh sieve if needed."
+      },
+      {
+        question: "Can I make these ahead of time?",
+        answer: "Yes! Make the pastry cream and cupcakes separately, then assemble and add ganache up to 4 hours before serving. Store refrigerated and bring to room temperature before serving."
+      },
+      {
+        question: "What's the best way to core the cupcakes?",
+        answer: "Use a small paring knife or cupcake corer to remove a cone-shaped piece from the center. Cut at an angle to create a cavity for the filling while leaving enough cake at the bottom."
+      },
+      {
+        question: "Can I use store-bought custard instead of making pastry cream?",
+        answer: "While homemade pastry cream is superior, you can use high-quality vanilla pudding or custard. Make sure it's thick enough to hold its shape when piped into the cupcakes."
+      },
+      {
+        question: "Why is my ganache too thick or too thin?",
+        answer: "For thick ganache, add more cream. For thin ganache, add more chocolate. The ideal ratio is 1:1 chocolate to cream by weight. Let it cool to room temperature before pouring."
+      },
+      {
+        question: "Can I make these gluten-free?",
+        answer: "Yes! Use a high-quality gluten-free flour blend and ensure all other ingredients are gluten-free. The texture will be slightly different but still delicious."
+      }
+    ]
+  },
+  {
+    id: '11',
+    title: 'Prune Cupcakes',
+    slug: 'prune-cupcakes',
+    description: 'Discover the unexpected elegance of these sophisticated prune cupcakes that transform this often-overlooked fruit into a dessert masterpiece that will surprise and delight even the most skeptical palates. These aren\'t your grandmother\'s prune desserts – they\'re a modern interpretation that celebrates the natural sweetness and complex flavor profile of prunes while creating a cupcake that\'s both refined and deeply satisfying. The magic begins with premium, plump prunes that have been carefully selected for their rich, wine-like sweetness and tender texture. These prunes are pureed to silky perfection and folded into a carefully balanced batter that\'s been enhanced with warm spices like cinnamon, nutmeg, and a hint of cardamom that perfectly complements the fruit\'s natural flavors. The result is a cupcake with an incredibly moist, tender crumb that practically melts on your tongue, while the prune puree creates a subtle depth of flavor that\'s both sweet and sophisticated. But the real revelation is the cream cheese frosting that\'s been infused with a touch of vanilla and a whisper of lemon zest, creating the perfect balance of tangy and sweet that beautifully complements the rich prune flavor. Each cupcake is finished with a delicate garnish of chopped prunes or a dusting of cinnamon, creating a visual appeal that hints at the complex flavors within. These cupcakes prove that sometimes the most unexpected ingredients can create the most memorable desserts, offering a sophisticated alternative to traditional fruit-based cupcakes while delivering incredible moisture and natural sweetness.',
+    shortDescription: 'Sophisticated cupcakes featuring pureed prunes, warm spices, and cream cheese frosting for a surprisingly elegant dessert experience.',
+    image: '/prune-cupcakes.jpg',
+    category: 'classic',
+    difficulty: 'Medium',
+    prepTime: '40 mins',
+    cookTime: '20 mins',
+    totalTime: '60 mins',
+    servings: 12,
+    rating: 4.6,
+    featured: false,
+    cuisine: 'Modern American',
+    dietaryBadges: ['Vegetarian'],
+    author: {
+      name: 'Chef Maria Rodriguez',
+      url: 'https://incr-ediblecupcakes.com/about'
+    },
+    keywords: ['prune cupcakes', 'dried fruit cupcakes', 'spiced cupcakes', 'moist cupcakes', 'natural sweetness cupcakes'],
+    ingredients: [
+      '2 cups all-purpose flour',
+      '1½ cups sugar',
+      '½ cup butter, softened',
+      '2 large eggs',
+      '1 cup prune puree (about 20 prunes)',
+      '1 tsp vanilla extract',
+      '1 tsp cinnamon',
+      '½ tsp nutmeg',
+      '¼ tsp cardamom',
+      '2 tsp baking powder',
+      '½ tsp salt',
+      '½ cup buttermilk',
+      'For frosting: 8 oz cream cheese, ½ cup butter, 3 cups powdered sugar, 1 tsp vanilla'
+    ],
+    instructions: [
+      'Preheat oven to 350°F (175°C) and line muffin tin with cupcake liners.',
+      'Soak prunes in warm water for 10 minutes, then puree until smooth.',
+      'Cream butter and sugar until light and fluffy.',
+      'Add eggs one at a time, then vanilla and prune puree.',
+      'In separate bowl, whisk flour, spices, baking powder, and salt.',
+      'Alternate adding dry ingredients and buttermilk to wet ingredients.',
+      'Fill cupcake liners ¾ full and bake for 18-22 minutes.',
+      'Cool completely before frosting with cream cheese frosting.'
+    ],
+    nutritionInfo: {
+      calories: 320,
+      carbs: 48,
+      protein: 4,
+      fat: 13,
+      fiber: 3,
+      sugar: 38
+    },
+    tips: [
+      'Use high-quality, plump prunes for best flavor',
+      'Puree prunes while still warm for smoother texture',
+      'Don\'t overbake - prunes keep cupcakes very moist',
+      'Let cupcakes cool completely before frosting'
+    ],
+    variations: [
+      'Add chopped walnuts or pecans to the batter',
+      'Swirl in a ribbon of prune puree for extra fruit flavor',
+      'Top with candied prunes for elegant presentation',
+      'Add orange zest to the frosting for citrus contrast'
+    ],
+    pairings: 'Delightful with Earl Grey tea, coffee, or a glass of port wine. Pairs beautifully with aged cheeses or fresh fruit.',
+    bestTime: 'Perfect for afternoon tea, sophisticated gatherings, or when you want to offer something unique and memorable. Best within 4 days.',
+    recipeKeys: ['Unexpected Elegance', 'Natural Sweetness', 'Spiced', 'Moist', 'Sophisticated'],
+    conclusion: 'Prune cupcakes demonstrate how traditional ingredients can be reimagined into modern, sophisticated desserts that surprise and delight.',
+    faq: [
+      {
+        question: "Why would I use prunes in cupcakes?",
+        answer: "Prunes add incredible moisture, natural sweetness, and a sophisticated depth of flavor. They also provide fiber and nutrients while creating a unique taste that's both familiar and surprising."
+      },
+      {
+        question: "Can I substitute other dried fruits?",
+        answer: "Yes! Dates, figs, or raisins work well, but each will change the flavor profile. Prunes have a unique wine-like sweetness that's hard to replicate with other fruits."
+      },
+      {
+        question: "Will these cupcakes taste like prune juice?",
+        answer: "Not at all! The prunes are pureed and combined with spices and other ingredients, creating a rich, cake-like flavor that's sweet and sophisticated rather than medicinal."
+      },
+      {
+        question: "How do I make prune puree?",
+        answer: "Soak prunes in warm water for 10 minutes, then blend in a food processor or blender until smooth. Add a little soaking liquid if needed to achieve a thick puree consistency."
+      },
+      {
+        question: "Can I make these without the spices?",
+        answer: "Yes, but the spices really enhance the prune flavor. If you prefer, you can reduce or omit them, but the cinnamon and nutmeg add warmth that complements the fruit beautifully."
+      },
+      {
+        question: "Are these cupcakes healthy?",
+        answer: "They're healthier than many cupcakes due to the natural sweetness from prunes and added fiber, but they still contain sugar and butter. They're a better choice than traditional cupcakes but still a treat."
+      }
+    ]
+  },
+  {
+    id: '12',
+    title: 'Yellow Cake Cupcakes',
+    slug: 'yellow-cake-cupcakes',
+    description: 'Celebrate the timeless perfection of these classic yellow cake cupcakes that capture the essence of American baking tradition in every golden, buttery bite. These aren\'t just ordinary cupcakes – they\'re a masterclass in fundamental baking techniques that showcase how simple ingredients, when combined with skill and care, can create something truly extraordinary. The foundation is a perfectly balanced yellow cake batter that\'s been crafted to achieve the ideal golden color and tender crumb that defines this beloved American classic. Each cupcake boasts an incredibly moist and fluffy texture that\'s achieved through the perfect ratio of butter, eggs, and milk, creating a crumb so light and airy it practically melts on your tongue. The secret lies in the careful creaming of butter and sugar, which incorporates just the right amount of air to create that signature lightness, while the addition of whole eggs (not just yolks) provides both structure and richness. The vanilla extract is pure and high-quality, adding that essential warmth and depth that makes yellow cake so comforting and familiar. But what truly elevates these cupcakes is the classic chocolate buttercream frosting that\'s been whipped to silky perfection, creating the perfect contrast between the golden cake and rich chocolate topping. This isn\'t just any chocolate frosting – it\'s a carefully balanced blend of cocoa powder, butter, and powdered sugar that creates the ideal sweetness level while allowing the chocolate flavor to shine through. Every element works in perfect harmony to create a taste experience that\'s both nostalgic and sophisticated, proving that sometimes the classics are classic for a very good reason.',
+    shortDescription: 'Classic American yellow cake cupcakes with rich chocolate buttercream frosting - the perfect combination of golden cake and chocolate indulgence.',
+    image: '/yellow-cake-cupcakes.jpg',
+    category: 'classic',
+    difficulty: 'Easy',
+    prepTime: '30 mins',
+    cookTime: '18 mins',
+    totalTime: '48 mins',
+    servings: 12,
+    rating: 4.8,
+    featured: true,
+    cuisine: 'American',
+    dietaryBadges: ['Vegetarian'],
+    author: {
+      name: 'Baker Emma Thompson',
+      url: 'https://incr-ediblecupcakes.com/about'
+    },
+    keywords: ['yellow cake cupcakes', 'classic cupcakes', 'chocolate buttercream cupcakes', 'american cupcakes', 'golden cake cupcakes'],
+    ingredients: [
+      '2 cups all-purpose flour',
+      '1½ cups sugar',
+      '½ cup butter, softened',
+      '3 large eggs',
+      '2 tsp vanilla extract',
+      '2 tsp baking powder',
+      '½ tsp salt',
+      '1 cup whole milk',
+      'For chocolate frosting: ½ cup butter, 3 cups powdered sugar, ½ cup cocoa powder, 3-4 tbsp milk'
+    ],
+    instructions: [
+      'Preheat oven to 350°F (175°C) and line muffin tin with cupcake liners.',
+      'Cream butter and sugar until light and fluffy, about 4 minutes.',
+      'Add eggs one at a time, beating well after each addition.',
+      'Add vanilla extract and mix until combined.',
+      'In separate bowl, whisk flour, baking powder, and salt.',
+      'Alternate adding dry ingredients and milk to wet ingredients.',
+      'Fill cupcake liners ¾ full and bake for 18-20 minutes.',
+      'Cool completely before frosting with chocolate buttercream.'
+    ],
+    nutritionInfo: {
+      calories: 350,
+      carbs: 52,
+      protein: 5,
+      fat: 15,
+      fiber: 2,
+      sugar: 42
+    },
+    tips: [
+      'Room temperature ingredients are essential for proper creaming',
+      'Don\'t overmix after adding flour to keep cupcakes tender',
+      'Use an ice cream scoop for even portioning',
+      'Let cupcakes cool completely before frosting to prevent melting'
+    ],
+    variations: [
+      'Add rainbow sprinkles to the batter for funfetti cupcakes',
+      'Fill with vanilla pudding for Boston cream style',
+      'Top with chocolate chips or nuts for extra texture',
+      'Create marble effect by swirling in chocolate batter'
+    ],
+    pairings: 'Perfect with cold milk, coffee, or ice cream. Classic pairing with vanilla ice cream for a timeless dessert combination.',
+    bestTime: 'Ideal for birthday parties, potlucks, or any time you want to share a beloved classic. Perfect for kids and adults alike. Best within 3 days.',
+    recipeKeys: ['Classic American', 'Kid Friendly', 'Party Perfect', 'Nostalgic', 'Timeless'],
+    conclusion: 'Yellow cake cupcakes embody the essence of comfort baking, offering timeless appeal with their golden crumb and classic chocolate pairing.',
+    faq: [
+      {
+        question: "What makes yellow cake different from vanilla cake?",
+        answer: "Yellow cake uses whole eggs (not just yolks) and often has a slightly higher egg content, giving it that characteristic golden color and rich, buttery flavor. It's more substantial than white cake but lighter than pound cake."
+      },
+      {
+        question: "Can I make these without eggs?",
+        answer: "Yes! You can use flax eggs (1 tbsp ground flaxseed + 3 tbsp water per egg) or commercial egg replacers. The texture will be slightly different but still delicious."
+      },
+      {
+        question: "Why did my cupcakes turn out dense instead of fluffy?",
+        answer: "This usually happens from overmixing the batter after adding flour, or using cold ingredients. Make sure everything is room temperature and mix just until combined after adding the dry ingredients."
+      },
+      {
+        question: "Can I use different types of milk?",
+        answer: "Yes! Whole milk gives the richest flavor, but 2% or even plant-based milks work well. Avoid skim milk as it can make the cupcakes less tender."
+      },
+      {
+        question: "How do I get the perfect golden color?",
+        answer: "The golden color comes from the whole eggs and proper creaming. Make sure your eggs are fresh and at room temperature. Overbaking can make them too dark, so watch the timing carefully."
+      },
+      {
+        question: "Can I make these as a layer cake instead?",
+        answer: "Absolutely! This recipe works perfectly for two 9-inch round cake layers. Bake for 25-30 minutes and double the frosting recipe for a layer cake."
+      }
+    ]
   }
 ]
 

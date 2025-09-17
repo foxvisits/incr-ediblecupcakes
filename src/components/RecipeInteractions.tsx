@@ -25,32 +25,7 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
   const [userEmail, setUserEmail] = useState('');
   const [captchaAnswer, setCaptchaAnswer] = useState('');
   const [captchaQuestion, setCaptchaQuestion] = useState({ question: '', answer: 0 });
-  const [comments, setComments] = useState([
-    {
-      id: 1,
-      author: 'Emma K.',
-      comment: `Just made these ${recipeId === '1' ? 'vanilla cupcakes' : recipeId === '2' ? 'keto chocolate cupcakes' : recipeId === '3' ? 'rainbow cupcakes' : recipeId === '4' ? 'lemon cupcakes' : recipeId === '5' ? 'red velvet cupcakes' : 'almond joy cupcakes'} and they're incredible! ${recipeId === '2' ? 'Perfect for my keto diet.' : recipeId === '3' ? 'The colors are so vibrant!' : recipeId === '4' ? 'So bright and citrusy!' : recipeId === '5' ? 'That cream cheese frosting is divine!' : recipeId === '6' ? 'Love the coconut flavor!' : 'My family devoured them!'}`,
-      rating: 5,
-      date: '2 days ago',
-      likes: 12
-    },
-    {
-      id: 2,
-      author: 'Jessica L.',
-      comment: `${recipeId === '1' ? 'The texture is so fluffy and light!' : recipeId === '2' ? 'Finally found a keto dessert that actually tastes good!' : recipeId === '3' ? 'My kids were amazed by the rainbow inside!' : recipeId === '4' ? 'Perfect balance of sweet and tart.' : recipeId === '5' ? 'This is the best red velvet recipe I\'ve tried!' : 'Tastes just like the candy bar!'} ${recipeId === '4' ? 'Great for spring gatherings.' : recipeId === '6' ? 'The chocolate ganache is perfect.' : 'Will definitely make again!'}`,
-      rating: 4,
-      date: '1 week ago',
-      likes: 8
-    },
-    {
-      id: 3,
-      author: 'David M.',
-      comment: `${recipeId === '1' ? 'Classic recipe done right!' : recipeId === '2' ? 'Great macros and amazing taste!' : recipeId === '3' ? 'Natural coloring worked perfectly!' : recipeId === '4' ? 'So refreshing and delicious!' : recipeId === '5' ? 'The color is gorgeous!' : 'Love the tropical vibes!'} Thanks for sharing this recipe.`,
-      rating: 5,
-      date: '3 days ago',
-      likes: 6
-    }
-  ]);
+  const [comments, setComments] = useState([]);
 
   // Generate simple math captcha
   const generateCaptcha = () => {
