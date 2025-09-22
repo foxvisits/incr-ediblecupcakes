@@ -1,0 +1,22 @@
+{
+  "defaultLanguage": "pl",
+  "languages": ["pl", "en"],
+  "routes": {
+    "/": {
+      "pl": "/",
+      "en": "/en"
+    },
+    "/recipes": {
+      "pl": "/przepisy",
+      "en": "/recipes"
+    },
+    "/about": {
+      "pl": "/o-nas",
+      "en": "/about"
+    },
+    "/contact": {
+      "pl": "/kontakt",
+      "en": "/contact"
+    }
+  }
+}

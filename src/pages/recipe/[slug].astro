@@ -1,0 +1,406 @@
+---
+import { recipes } from '../../data/recipes';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+  return recipes.map(recipe => ({
+    params: { slug: recipe.slug },
+    props: { recipe }
+  }));
+}
+
+const { recipe } = Astro.props;
+
+// Get related recipes (same category, excluding current)
+const relatedRecipes = recipes
+  .filter(r => r.category === recipe.category && r.id !== recipe.id)
+  .slice(0, 3);
+
+const getCategoryColor = (category: string) => {
+  switch (category) {
+    case 'classic': return 'bg-blue-100 text-blue-800';
+    case 'keto': return 'bg-green-100 text-green-800';
+    case 'vegan': return 'bg-purple-100 text-purple-800';
+    case 'nut-free': return 'bg-yellow-100 text-yellow-800';
+    case 'gluten-free': return 'bg-pink-100 text-pink-800';
+    default: return 'bg-gray-100 text-gray-800';
+  }
+};
+
+const getDifficultyColor = (difficulty: string) => {
+  switch (difficulty) {
+    case 'Easy': return 'text-green-600';
+    case 'Medium': return 'text-yellow-600';
+    case 'Hard': return 'text-red-600';
+    default: return 'text-gray-600';
+  }
+};
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-192.png" />
+    <link rel="shortcut icon" href="/icon-192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <title>{recipe.title} - Professional Recipe with Expert Tips | Incr-EdibleCupCakes</title>
+    <meta name="description" content={`Learn how to make ${recipe.title} with this professional recipe. ${recipe.shortDescription} Complete with ingredients, step-by-step instructions, expert tips, and nutritional information.`} />
+    <meta name="keywords" content={`${recipe.title}, ${recipe.category} cupcakes, ${recipe.difficulty} recipe, ${recipe.dietaryBadges?.join(', ') || ''}, cupcake recipe, baking instructions`} />
+    <link rel="canonical" href={`https://incr-ediblecupcakes.com/recipe/${recipe.slug}`} />
+    
+    <meta property="og:title" content={`${recipe.title} - Professional Recipe | Incr-EdibleCupCakes`} />
+    <meta property="og:description" content={recipe.shortDescription} />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content={`https://incr-ediblecupcakes.com/recipe/${recipe.slug}`} />
+    <meta property="og:image" content={`https://incr-ediblecupcakes.com${recipe.image}`} />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${recipe.title} - Professional Recipe`} />
+    <meta name="twitter:description" content={recipe.shortDescription} />
+    <meta name="twitter:image" content={`https://incr-ediblecupcakes.com${recipe.image}`} />
+    
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Sarah - Professional Baker" />
+    <meta name="theme-color" content="#f43f5e" />
+    
+    <!-- Recipe Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "name": recipe.title,
+        "description": recipe.shortDescription,
+        "image": `https://incr-ediblecupcakes.com${recipe.image}`,
+        "author": {
+          "@type": "Person",
+          "name": "Sarah",
+          "url": "https://incr-ediblecupcakes.com/about"
+        },
+        "datePublished": "2025-01-27",
+        "prepTime": recipe.prepTime,
+        "cookTime": recipe.cookTime,
+        "totalTime": recipe.totalTime,
+        "recipeYield": recipe.servings,
+        "recipeCategory": recipe.category,
+        "recipeCuisine": recipe.cuisine || "American",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": recipe.rating,
+          "ratingCount": "100"
+        },
+        "nutrition": recipe.nutritionInfo ? {
+          "@type": "NutritionInformation",
+          "calories": recipe.nutritionInfo.calories,
+          "carbohydrateContent": recipe.nutritionInfo.carbs,
+          "proteinContent": recipe.nutritionInfo.protein,
+          "fatContent": recipe.nutritionInfo.fat,
+          "fiberContent": recipe.nutritionInfo.fiber,
+          "sugarContent": recipe.nutritionInfo.sugar
+        } : undefined,
+        "recipeIngredient": recipe.ingredients,
+        "recipeInstructions": recipe.instructions.map((instruction, index) => ({
+          "@type": "HowToStep",
+          "position": index + 1,
+          "text": instruction
+        })),
+        "keywords": recipe.keywords?.join(', ') || '',
+        "recipeDifficulty": recipe.difficulty
+      }
+    </script>
+  </head>
+  <body>
+    <Header />
+    
+    <main class="pt-16 lg:pt-20">
+      <!-- Recipe Hero -->
+      <section class="py-16 bg-gradient-to-br from-cupcake-cream to-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Recipe Image -->
+            <div class="order-2 lg:order-1">
+              <div class="relative">
+                <img
+                  src={recipe.image}
+                  alt={`${recipe.title} - professional ${recipe.category} cupcake recipe`}
+                  class="w-full h-96 object-cover rounded-2xl shadow-2xl"
+                  loading="eager"
+                  width={600}
+                  height={384}
+                />
+                
+                <!-- Category Badge -->
+                <div class="absolute top-6 left-6">
+                  <span class={`px-4 py-2 rounded-full text-sm font-bold ${getCategoryColor(recipe.category)}`}>
+                    {recipe.category.charAt(0).toUpperCase() + recipe.category.slice(1)}
+                  </span>
+                </div>
+                
+                <!-- Featured Badge -->
+                {recipe.featured && (
+                  <div class="absolute top-6 right-6">
+                    <span class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                      ⭐ Featured
+                    </span>
+                  </div>
+                )}
+              </div>
+            </div>
+            
+            <!-- Recipe Info -->
+            <div class="order-1 lg:order-2">
+              <h1 class="font-quicksand text-4xl sm:text-5xl font-black text-gray-900 mb-6 leading-tight">
+                {recipe.title}
+              </h1>
+              
+              <p class="font-nunito text-xl text-gray-700 mb-8 leading-relaxed">
+                {recipe.shortDescription}
+              </p>
+              
+              <!-- Recipe Meta -->
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="text-center p-4 bg-white rounded-xl shadow-lg">
+                  <div class="text-2xl mb-2">⏱️</div>
+                  <div class="font-bold text-gray-900">{recipe.totalTime}</div>
+                  <div class="text-sm text-gray-600">Total Time</div>
+                </div>
+                <div class="text-center p-4 bg-white rounded-xl shadow-lg">
+                  <div class="text-2xl mb-2">👥</div>
+                  <div class="font-bold text-gray-900">{recipe.servings}</div>
+                  <div class="text-sm text-gray-600">Servings</div>
+                </div>
+                <div class="text-center p-4 bg-white rounded-xl shadow-lg">
+                  <div class={`text-2xl mb-2 ${getDifficultyColor(recipe.difficulty)}`}>🎯</div>
+                  <div class="font-bold text-gray-900">{recipe.difficulty}</div>
+                  <div class="text-sm text-gray-600">Difficulty</div>
+                </div>
+                <div class="text-center p-4 bg-white rounded-xl shadow-lg">
+                  <div class="text-2xl mb-2">⭐</div>
+                  <div class="font-bold text-gray-900">{recipe.rating}</div>
+                  <div class="text-sm text-gray-600">Rating</div>
+                </div>
+              </div>
+              
+              <!-- Dietary Badges -->
+              {recipe.dietaryBadges && recipe.dietaryBadges.length > 0 && (
+                <div class="mb-8">
+                  <h3 class="font-quicksand text-lg font-bold text-gray-900 mb-3">Dietary Information</h3>
+                  <div class="flex flex-wrap gap-2">
+                    {recipe.dietaryBadges.map((badge) => (
+                      <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm font-medium rounded-full">
+                        {badge}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+              
+              <!-- Recipe Keys -->
+              {recipe.recipeKeys && recipe.recipeKeys.length > 0 && (
+                <div class="mb-8">
+                  <h3 class="font-quicksand text-lg font-bold text-gray-900 mb-3">Recipe Highlights</h3>
+                  <div class="flex flex-wrap gap-2">
+                    {recipe.recipeKeys.map((key) => (
+                      <span class="px-3 py-1 bg-cupcake-pink/20 text-cupcake-coral text-sm font-medium rounded-full">
+                        {key}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recipe Content -->
+      <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            
+            <!-- Ingredients -->
+            <div class="lg:col-span-1">
+              <div class="sticky top-24">
+                <h2 class="font-quicksand text-3xl font-bold text-gray-900 mb-6">Ingredients</h2>
+                <div class="bg-cupcake-cream rounded-2xl p-6 shadow-lg">
+                  <ul class="space-y-3">
+                    {recipe.ingredients.map((ingredient, index) => (
+                      <li class="flex items-start space-x-3">
+                        <span class="text-cupcake-coral font-bold text-lg">•</span>
+                        <span class="font-nunito text-gray-700">{ingredient}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Instructions -->
+            <div class="lg:col-span-2">
+              <h2 class="font-quicksand text-3xl font-bold text-gray-900 mb-6">Instructions</h2>
+              <div class="space-y-6">
+                {recipe.instructions.map((instruction, index) => (
+                  <div class="flex space-x-4 p-6 bg-gradient-to-r from-cupcake-cream to-white rounded-2xl shadow-lg">
+                    <div class="flex-shrink-0 w-8 h-8 bg-cupcake-coral text-white rounded-full flex items-center justify-center font-bold">
+                      {index + 1}
+                    </div>
+                    <div class="flex-1">
+                      <p class="font-nunito text-gray-700 leading-relaxed">{instruction}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Nutrition Info -->
+      {recipe.nutritionInfo && (
+        <section class="py-16 bg-gradient-to-br from-cupcake-cream to-white">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-quicksand text-3xl font-bold text-gray-900 mb-8 text-center">Nutrition Information</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+              <div class="text-center p-4 bg-white rounded-xl shadow-lg">
+                <div class="text-2xl font-bold text-cupcake-coral">{recipe.nutritionInfo.calories}</div>
+                <div class="text-sm text-gray-600">Calories</div>
+              </div>
+              <div class="text-center p-4 bg-white rounded-xl shadow-lg">
+                <div class="text-2xl font-bold text-cupcake-coral">{recipe.nutritionInfo.carbs}g</div>
+                <div class="text-sm text-gray-600">Carbs</div>
+              </div>
+              <div class="text-center p-4 bg-white rounded-xl shadow-lg">
+                <div class="text-2xl font-bold text-cupcake-coral">{recipe.nutritionInfo.protein}g</div>
+                <div class="text-sm text-gray-600">Protein</div>
+              </div>
+              <div class="text-center p-4 bg-white rounded-xl shadow-lg">
+                <div class="text-2xl font-bold text-cupcake-coral">{recipe.nutritionInfo.fat}g</div>
+                <div class="text-sm text-gray-600">Fat</div>
+              </div>
+              <div class="text-center p-4 bg-white rounded-xl shadow-lg">
+                <div class="text-2xl font-bold text-cupcake-coral">{recipe.nutritionInfo.fiber}g</div>
+                <div class="text-sm text-gray-600">Fiber</div>
+              </div>
+              <div class="text-center p-4 bg-white rounded-xl shadow-lg">
+                <div class="text-2xl font-bold text-cupcake-coral">{recipe.nutritionInfo.sugar}g</div>
+                <div class="text-sm text-gray-600">Sugar</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      <!-- Tips & Variations -->
+      {(recipe.tips || recipe.variations) && (
+        <section class="py-16 bg-white">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              
+              <!-- Tips -->
+              {recipe.tips && recipe.tips.length > 0 && (
+                <div>
+                  <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-6">Pro Tips 💡</h3>
+                  <div class="space-y-4">
+                    {recipe.tips.map((tip, index) => (
+                      <div class="flex space-x-3 p-4 bg-yellow-50 rounded-xl">
+                        <span class="text-yellow-500 font-bold text-lg">💡</span>
+                        <p class="font-nunito text-gray-700">{tip}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              
+              <!-- Variations -->
+              {recipe.variations && recipe.variations.length > 0 && (
+                <div>
+                  <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-6">Variations 🌟</h3>
+                  <div class="space-y-4">
+                    {recipe.variations.map((variation, index) => (
+                      <div class="flex space-x-3 p-4 bg-purple-50 rounded-xl">
+                        <span class="text-purple-500 font-bold text-lg">✨</span>
+                        <p class="font-nunito text-gray-700">{variation}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <!-- FAQ -->
+      {recipe.faq && recipe.faq.length > 0 && (
+        <section class="py-16 bg-gradient-to-br from-cupcake-cream to-white">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-quicksand text-3xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+              {recipe.faq.map((faq, index) => (
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                  <h3 class="font-quicksand text-lg font-bold text-gray-900 mb-3">{faq.question}</h3>
+                  <p class="font-nunito text-gray-700">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <!-- Related Recipes -->
+      {relatedRecipes.length > 0 && (
+        <section class="py-16 bg-white">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-quicksand text-3xl font-bold text-gray-900 mb-8 text-center">More {recipe.category.charAt(0).toUpperCase() + recipe.category.slice(1)} Recipes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {relatedRecipes.map((relatedRecipe) => (
+                <div class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+                  <img
+                    src={relatedRecipe.image}
+                    alt={`${relatedRecipe.title} - ${relatedRecipe.category} cupcake recipe`}
+                    class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    width={300}
+                    height={192}
+                  />
+                  <div class="p-6">
+                    <h3 class="font-quicksand text-xl font-bold text-gray-900 mb-2 group-hover:text-cupcake-coral transition-colors duration-300">
+                      {relatedRecipe.title}
+                    </h3>
+                    <p class="font-nunito text-gray-600 mb-4 line-clamp-2">
+                      {relatedRecipe.shortDescription}
+                    </p>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center space-x-2 text-gray-600">
+                        <span class="text-sm">⏱️</span>
+                        <span class="text-sm font-medium">{relatedRecipe.totalTime}</span>
+                      </div>
+                      <div class="flex items-center space-x-1 text-gray-600">
+                        <span class="text-sm">⭐</span>
+                        <span class="text-sm font-medium">{relatedRecipe.rating}</span>
+                      </div>
+                    </div>
+                    <a
+                      href={`/recipe/${relatedRecipe.slug}`}
+                      class="mt-4 w-full bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white font-quicksand font-bold py-2 px-4 rounded-xl hover:from-cupcake-cherry hover:to-cupcake-coral transition-all duration-300 text-center block"
+                    >
+                      View Recipe
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+    </main>
+    
+    <Footer />
+  </body>
+</html>

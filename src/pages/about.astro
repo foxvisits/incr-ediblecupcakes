@@ -1,0 +1,278 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-192.png" />
+    <link rel="shortcut icon" href="/icon-192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <title>About Sarah - Professional Baker & Recipe Developer | Incr-EdibleCupCakes</title>
+    <meta name="description" content="Meet Sarah, the professional baker behind Incr-EdibleCupCakes. Le Cordon Bleu graduate specializing in innovative cupcake recipes for all dietary needs including keto, vegan, and allergen-free options." />
+    <meta name="keywords" content="about Sarah, professional baker, cupcake recipes, Le Cordon Bleu, recipe developer, baking expert, dietary cupcakes" />
+    <link rel="canonical" href="https://incr-ediblecupcakes.com/about" />
+    
+    <meta property="og:title" content="About Sarah - Professional Baker & Recipe Developer" />
+    <meta property="og:description" content="Meet Sarah, the professional baker behind Incr-EdibleCupCakes. Le Cordon Bleu graduate specializing in innovative cupcake recipes for all dietary needs." />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://incr-ediblecupcakes.com/about" />
+    <meta property="og:image" content="https://incr-ediblecupcakes.com/Sarah.png" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About Sarah - Professional Baker & Recipe Developer" />
+    <meta name="twitter:description" content="Meet Sarah, the professional baker behind Incr-EdibleCupCakes. Le Cordon Bleu graduate specializing in innovative cupcake recipes for all dietary needs." />
+    <meta name="twitter:image" content="https://incr-ediblecupcakes.com/Sarah.png" />
+    
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Sarah - Professional Baker" />
+    <meta name="theme-color" content="#f43f5e" />
+    
+    <!-- Person Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sarah",
+        "jobTitle": "Professional Baker & Recipe Developer",
+        "description": "Professional baker specializing in innovative cupcake recipes for all dietary preferences",
+        "image": "https://incr-ediblecupcakes.com/Sarah.png",
+        "url": "https://incr-ediblecupcakes.com/about",
+        "sameAs": [
+          "https://instagram.com/incrediblecupcakes",
+          "https://facebook.com/incrediblecupcakes"
+        ],
+        "knowsAbout": [
+          "Baking",
+          "Cupcake Recipes",
+          "Dietary Restrictions",
+          "Recipe Development",
+          "Pastry Arts"
+        ],
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Le Cordon Bleu"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <Header />
+    
+    <main class="pt-16 lg:pt-20">
+      <!-- Hero Section -->
+      <section class="py-20 bg-gradient-to-br from-cupcake-pink via-cupcake-coral to-cupcake-peach">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Sarah's Photo -->
+            <div class="order-2 lg:order-1">
+              <div class="relative">
+                <div class="relative z-10 bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
+                  <img
+                    src="/Sarah.png"
+                    alt="Sarah - professional baker and recipe developer behind Incr-EdibleCupCakes"
+                    class="relative z-10 w-full h-full object-cover rounded-full border-4 border-white/20 shadow-2xl"
+                    loading="eager"
+                    width={320}
+                    height={320}
+                  />
+                </div>
+                
+                <!-- Background Decoration -->
+                <div class="absolute inset-0 bg-gradient-to-br from-white/20 to-sprinkle-yellow/20 rounded-3xl transform rotate-3 scale-105 -z-10" />
+                <div class="absolute inset-0 bg-gradient-to-br from-sprinkle-blue/20 to-cupcake-pink/20 rounded-3xl transform -rotate-2 scale-110 -z-20" />
+              </div>
+            </div>
+            
+            <!-- Hero Text -->
+            <div class="order-1 lg:order-2 text-center lg:text-left">
+              <h1 class="font-quicksand text-5xl sm:text-6xl font-black text-white mb-6 leading-tight">
+                Meet <span class="text-sprinkle-yellow">Sarah</span> 👩‍🍳
+              </h1>
+              <p class="font-nunito text-xl text-white/95 mb-8 leading-relaxed">
+                Professional baker, Le Cordon Bleu graduate, and the creative mind behind every extraordinary cupcake recipe you'll find here.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <a
+                  href="#story"
+                  class="font-quicksand px-8 py-4 bg-white text-cupcake-coral font-bold text-lg rounded-full hover:bg-cupcake-cream transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  My Story 📖
+                </a>
+                <a
+                  href="/contact"
+                  class="font-quicksand px-8 py-4 border-4 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-cupcake-coral transition-all duration-300 transform hover:scale-105"
+                >
+                  Get In Touch 💌
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Story Section -->
+      <section id="story" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="font-quicksand text-4xl font-black text-gray-900 mb-6">
+              My <span class="text-cupcake-coral">Journey</span> 🍰
+            </h2>
+            <p class="font-nunito text-xl text-gray-700 max-w-3xl mx-auto">
+              From a curious child in her grandmother's kitchen to a professional baker creating innovative recipes for every dietary need.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <!-- Where It All Began -->
+            <div class="text-center">
+              <div class="relative mb-6">
+                <img
+                  src="/Where It All Began.jpg"
+                  alt="Baking in grandmother's kitchen - traditional place where Sarah learned to bake cupcakes"
+                  class="w-full h-64 object-cover rounded-2xl shadow-lg"
+                  loading="lazy"
+                  width={400}
+                  height={256}
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <h3 class="font-quicksand text-xl font-bold mb-2">Where It All Began</h3>
+                </div>
+              </div>
+              <p class="font-nunito text-gray-700">
+                My love for baking started in my grandmother's kitchen, where I learned that the best recipes come from the heart and that every cupcake tells a story.
+              </p>
+            </div>
+
+            <!-- Professional Training -->
+            <div class="text-center">
+              <div class="relative mb-6">
+                <img
+                  src="/Professional Training.jpg"
+                  alt="Professional culinary training - Sarah during her studies at Le Cordon Bleu"
+                  class="w-full h-64 object-cover rounded-2xl shadow-lg"
+                  loading="lazy"
+                  width={400}
+                  height={256}
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <h3 class="font-quicksand text-xl font-bold mb-2">Professional Training</h3>
+                </div>
+              </div>
+              <p class="font-nunito text-gray-700">
+                Le Cordon Bleu gave me the technical foundation, but it was my passion for inclusive baking that led me to specialize in dietary-friendly recipes.
+              </p>
+            </div>
+
+            <!-- Innovation -->
+            <div class="text-center">
+              <div class="relative mb-6">
+                <img
+                  src="/Innovation in Every Bite.jpg"
+                  alt="Modern baking studio - place where Sarah creates innovative cupcake recipes"
+                  class="w-full h-64 object-cover rounded-2xl shadow-lg"
+                  loading="lazy"
+                  width={400}
+                  height={256}
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <h3 class="font-quicksand text-xl font-bold mb-2">Innovation</h3>
+                </div>
+              </div>
+              <p class="font-nunito text-gray-700">
+                Today, I create recipes that prove dietary restrictions don't mean compromising on taste. Every recipe is tested until it's perfect.
+              </p>
+            </div>
+          </div>
+
+          <!-- Story Content -->
+          <div class="prose prose-lg max-w-4xl mx-auto">
+            <div class="bg-gradient-to-br from-cupcake-cream to-white rounded-3xl p-8 shadow-xl">
+              <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-6">My Mission</h3>
+              <p class="font-nunito text-gray-700 mb-6 leading-relaxed">
+                After graduating from Le Cordon Bleu, I realized that traditional baking often excludes people with dietary restrictions. 
+                I made it my mission to create extraordinary cupcake recipes that everyone can enjoy, regardless of their dietary needs.
+              </p>
+              <p class="font-nunito text-gray-700 mb-6 leading-relaxed">
+                Whether you're following a keto diet, living a vegan lifestyle, or have nut allergies, I believe you deserve 
+                to experience the joy of biting into a perfectly crafted cupcake. That's why every recipe on this site 
+                has been meticulously tested and perfected to ensure it meets the highest standards of taste and quality.
+              </p>
+              <p class="font-nunito text-gray-700 leading-relaxed">
+                My goal is to make baking accessible, enjoyable, and delicious for everyone. Because when it comes to cupcakes, 
+                there should be no compromises – only pure, unadulterated joy in every bite.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Expertise Section -->
+      <section class="py-20 bg-gradient-to-br from-cupcake-cream to-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="font-quicksand text-4xl font-black text-gray-900 mb-6">
+              My <span class="text-cupcake-coral">Expertise</span> 🎯
+            </h2>
+            <p class="font-nunito text-xl text-gray-700 max-w-3xl mx-auto">
+              Specialized knowledge in creating exceptional cupcakes for every dietary preference and restriction.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { icon: '🧁', title: 'Classic Cupcakes', description: 'Traditional recipes perfected with modern techniques' },
+              { icon: '🥑', title: 'Keto Baking', description: 'Low-carb, high-fat recipes that taste incredible' },
+              { icon: '🌱', title: 'Vegan Options', description: 'Plant-based recipes without compromising on flavor' },
+              { icon: '🥜', title: 'Allergy-Friendly', description: 'Nut-free and gluten-free recipes for everyone' },
+            ].map((expertise, index) => (
+              <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                <div class="text-4xl mb-4">{expertise.icon}</div>
+                <h3 class="font-quicksand text-xl font-bold text-gray-900 mb-3">{expertise.title}</h3>
+                <p class="font-nunito text-gray-700">{expertise.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="py-20 bg-gradient-to-br from-cupcake-coral to-cupcake-cherry">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 class="font-quicksand text-4xl font-black text-white mb-6">
+            Ready to Start Your Baking Journey? 🍰
+          </h2>
+          <p class="font-nunito text-xl text-white/90 mb-8 font-medium">
+            Let's create something extraordinary together. Browse my recipes or get in touch for personalized baking advice.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <a
+              href="/recipes"
+              class="font-quicksand px-10 py-5 bg-white text-cupcake-coral font-bold text-lg rounded-full hover:bg-cupcake-cream transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              Browse Recipes 🧁
+            </a>
+            <a
+              href="/contact"
+              class="font-quicksand px-10 py-5 border-3 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-cupcake-coral transition-all duration-300 transform hover:scale-105"
+            >
+              Get In Touch 💌
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <Footer />
+  </body>
+</html>

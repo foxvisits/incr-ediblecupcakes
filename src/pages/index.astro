@@ -1,0 +1,212 @@
+---
+import { recipes } from '../data/recipes';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import RecipeCard from '../components/RecipeCard.astro';
+
+// Get featured recipes
+const featuredRecipes = recipes.filter(recipe => recipe.featured).slice(0, 3);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-192.png" />
+    <link rel="shortcut icon" href="/icon-192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <title>Incr-EdibleCupCakes - Extraordinary Cupcake Recipes for Every Taste</title>
+    <meta name="description" content="Discover unique and innovative cupcake recipes including keto, vegan, nut-free, and classic options. Professional baker Sarah shares tested recipes with step-by-step instructions." />
+    <meta name="keywords" content="cupcake recipes, keto cupcakes, vegan cupcakes, nut-free baking, gluten-free desserts, homemade cupcakes, professional baker, dietary cupcakes" />
+    <link rel="canonical" href="https://incr-ediblecupcakes.com/" />
+    
+    <meta property="og:title" content="Incr-EdibleCupCakes - Extraordinary Cupcake Recipes" />
+    <meta property="og:description" content="Discover unique and innovative cupcake recipes for every taste and dietary preference." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://incr-ediblecupcakes.com/" />
+    <meta property="og:image" content="https://incr-ediblecupcakes.com/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Incr-EdibleCupCakes - Extraordinary Cupcake Recipes" />
+    <meta name="twitter:description" content="Discover unique and innovative cupcake recipes for every taste and dietary preference." />
+    <meta name="twitter:image" content="https://incr-ediblecupcakes.com/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png" />
+    
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Sarah - Professional Baker" />
+    <meta name="theme-color" content="#f43f5e" />
+  </head>
+  <body>
+    <Header />
+    
+    <main class="pt-16 lg:pt-20">
+      <!-- Hero Section -->
+      <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-cupcake-pink via-cupcake-coral to-cupcake-peach">
+        <div class="absolute inset-0">
+          <div class="absolute inset-0 bg-white/5" />
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+            
+            <!-- Left Column - Hero Text -->
+            <div class="text-center lg:text-left">
+              <h1 class="font-quicksand text-6xl sm:text-7xl lg:text-8xl font-black mb-8 leading-tight">
+                <span class="text-white drop-shadow-2xl">Incr-</span>
+                <span class="gradient-text text-sprinkle-yellow drop-shadow-2xl">Edible</span>
+                <br />
+                <span class="cupcake-text drop-shadow-2xl">CupCakes</span>
+              </h1>
+              
+              <p class="font-nunito text-xl sm:text-2xl text-white/95 mb-12 leading-relaxed drop-shadow-lg font-medium max-w-2xl mx-auto lg:mx-0">
+                🧁 Discover <strong>extraordinary cupcake recipes</strong> that bring joy to every bite! From classic comfort to innovative dietary alternatives.
+              </p>
+              
+              <div class="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
+                <a
+                  href="#recipes"
+                  class="font-quicksand px-10 py-5 bg-gradient-to-r from-sprinkle-yellow to-sprinkle-orange text-white font-bold text-xl rounded-full hover:from-sprinkle-orange hover:to-cupcake-coral transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl border-4 border-white/20"
+                >
+                  🍰 Explore Recipes
+                </a>
+                <a
+                  href="/about"
+                  class="font-quicksand px-10 py-5 border-4 border-white text-white font-bold text-xl rounded-full hover:bg-white hover:text-cupcake-coral transition-all duration-300 transform hover:scale-105 backdrop-blur-sm shadow-xl"
+                >
+                  👩‍🍳 My Story
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Column - Cupcake Showcase -->
+            <div class="relative">
+              <div class="relative">
+                <!-- Main Cupcake Image -->
+                <div class="relative z-10 bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
+                  <img
+                    src="/A vibrant, mouth-watering cupcake scene.png"
+                    alt="Delicious cupcakes showcase - various types of cupcakes on colorful background"
+                    class="w-full h-80 object-cover rounded-2xl shadow-xl"
+                    loading="eager"
+                    width={400}
+                    height={320}
+                  />
+                </div>
+                
+                <!-- Background Decoration -->
+                <div class="absolute inset-0 bg-gradient-to-br from-white/20 to-sprinkle-yellow/20 rounded-3xl transform rotate-3 scale-105 -z-10" />
+                <div class="absolute inset-0 bg-gradient-to-br from-sprinkle-blue/20 to-cupcake-pink/20 rounded-3xl transform -rotate-2 scale-110 -z-20" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Recipes Section -->
+      <section class="py-32 bg-gradient-to-br from-cupcake-cream to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-20">
+            <h2 class="font-quicksand text-5xl font-black text-gray-900 mb-6">
+              Featured <span class="text-cupcake-coral">Creations</span> 🌟
+            </h2>
+            <p class="font-nunito text-xl text-gray-700 max-w-2xl mx-auto font-medium">
+              Handpicked recipes that showcase the perfect blend of innovation and deliciousness
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {featuredRecipes.map((recipe, index) => (
+              <div class="transform transition-all duration-500 hover:scale-105">
+                <RecipeCard recipe={recipe} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="py-20 bg-gradient-to-r from-cupcake-coral to-cupcake-cherry">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+            {[
+              { icon: '📝', number: '50+', label: 'Unique Recipes' },
+              { icon: '👩‍🍳', number: '10K+', label: 'Happy Bakers' },
+              { icon: '⭐', number: '4.9', label: 'Average Rating' },
+              { icon: '👥', number: '25K+', label: 'Community Members' },
+            ].map((stat, index) => (
+              <div key={index} class="transform transition-all duration-300 hover:scale-110 bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                <div class="text-4xl mb-2">{stat.icon}</div>
+                <div class="font-quicksand text-4xl font-black mb-2">{stat.number}</div>
+                <div class="font-nunito text-white/90 font-medium">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- All Recipes Section -->
+      <section id="recipes" class="py-32 bg-gradient-to-br from-cupcake-cream via-cupcake-vanilla to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-20">
+            <h2 class="font-quicksand text-5xl font-black text-gray-900 mb-6">
+              Recipe <span class="text-cupcake-coral">Collection</span> 📚
+            </h2>
+            <p class="font-nunito text-xl text-gray-700 max-w-2xl mx-auto font-medium">
+              Every cupcake tells a story. Explore our complete collection of carefully crafted recipes.
+            </p>
+          </div>
+
+          <!-- Recipe Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {recipes.slice(0, 6).map((recipe, index) => (
+              <div class="animate-fade-in-up">
+                <RecipeCard recipe={recipe} />
+              </div>
+            ))}
+          </div>
+          
+          <!-- View All Button -->
+          <div class="text-center mt-12">
+            <a
+              href="/recipes"
+              class="inline-block font-quicksand px-10 py-5 bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white font-bold text-lg rounded-full hover:from-cupcake-cherry hover:to-cupcake-coral transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              View All Recipes 🧁
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="py-32 bg-gradient-to-br from-cupcake-coral to-cupcake-cherry relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 class="font-quicksand text-5xl font-black text-white mb-8">
+            Ready to Start Baking? 🥧
+          </h2>
+          <p class="font-nunito text-xl text-white/90 mb-12 font-medium">
+            Join thousands of bakers who have transformed their kitchens with our incredible recipes.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <a
+              href="/about"
+              class="font-quicksand px-10 py-5 bg-white text-cupcake-coral font-bold text-lg rounded-full hover:bg-cupcake-cream transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              👩‍🍳 Learn About Me
+            </a>
+            <a
+              href="/contact"
+              class="font-quicksand px-10 py-5 border-3 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-cupcake-coral transition-all duration-300 transform hover:scale-105"
+            >
+              💌 Get In Touch
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <Footer />
+  </body>
+</html>

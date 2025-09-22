@@ -1,0 +1,165 @@
+---
+export interface Props {
+  recipe: {
+    id: string;
+    title: string;
+    slug: string;
+    description: string;
+    shortDescription: string;
+    image: string;
+    category: 'classic' | 'keto' | 'vegan' | 'nut-free' | 'gluten-free';
+    difficulty: 'Easy' | 'Medium' | 'Hard';
+    prepTime: string;
+    cookTime: string;
+    totalTime: string;
+    servings: number;
+    rating: number;
+    featured?: boolean;
+    ingredients: string[];
+    instructions: string[];
+    nutritionInfo?: {
+      calories: number;
+      carbs: number;
+      protein: number;
+      fat: number;
+      fiber: number;
+      sugar: number;
+    };
+    tips?: string[];
+    variations?: string[];
+    pairings?: string;
+    bestTime?: string;
+    recipeKeys?: string[];
+    dietaryBadges?: string[];
+    cuisine?: string;
+    conclusion?: string;
+    faq?: {
+      question: string;
+      answer: string;
+    }[];
+    author?: {
+      name: string;
+      url?: string;
+    };
+    keywords?: string[];
+    video?: string;
+  };
+}
+
+const { recipe } = Astro.props;
+
+const getCategoryColor = (category: string) => {
+  switch (category) {
+    case 'classic': return 'bg-blue-100 text-blue-800';
+    case 'keto': return 'bg-green-100 text-green-800';
+    case 'vegan': return 'bg-purple-100 text-purple-800';
+    case 'nut-free': return 'bg-yellow-100 text-yellow-800';
+    case 'gluten-free': return 'bg-pink-100 text-pink-800';
+    default: return 'bg-gray-100 text-gray-800';
+  }
+};
+
+const getDifficultyColor = (difficulty: string) => {
+  switch (difficulty) {
+    case 'Easy': return 'text-green-600';
+    case 'Medium': return 'text-yellow-600';
+    case 'Hard': return 'text-red-600';
+    default: return 'text-gray-600';
+  }
+};
+---
+
+<article class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 overflow-hidden border border-gray-100">
+  {/* Image Container */}
+  <div class="relative overflow-hidden">
+    <img
+      src={recipe.image}
+      alt={`${recipe.title} - ${recipe.category} cupcake recipe`}
+      class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+      loading="lazy"
+      width={400}
+      height={256}
+    />
+    
+    {/* Category Badge */}
+    <div class="absolute top-4 left-4">
+      <span class={`px-3 py-1 rounded-full text-sm font-semibold ${getCategoryColor(recipe.category)}`}>
+        {recipe.category.charAt(0).toUpperCase() + recipe.category.slice(1)}
+      </span>
+    </div>
+    
+    {/* Featured Badge */}
+    {recipe.featured && (
+      <div class="absolute top-4 right-4">
+        <span class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+          ⭐ Featured
+        </span>
+      </div>
+    )}
+    
+    {/* Rating Overlay */}
+    <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
+      <span class="text-yellow-500">⭐</span>
+      <span class="font-bold text-gray-800">{recipe.rating}</span>
+    </div>
+  </div>
+  
+  {/* Content */}
+  <div class="p-6">
+    {/* Title */}
+    <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-3 group-hover:text-cupcake-coral transition-colors duration-300 line-clamp-2">
+      {recipe.title}
+    </h3>
+    
+    {/* Description */}
+    <p class="font-nunito text-gray-600 mb-4 line-clamp-3 leading-relaxed">
+      {recipe.shortDescription}
+    </p>
+    
+    {/* Meta Information */}
+    <div class="flex flex-wrap gap-3 mb-4">
+      <div class="flex items-center space-x-1 text-gray-600">
+        <span class="text-sm">⏱️</span>
+        <span class="text-sm font-medium">{recipe.totalTime}</span>
+      </div>
+      <div class="flex items-center space-x-1 text-gray-600">
+        <span class="text-sm">👥</span>
+        <span class="text-sm font-medium">{recipe.servings} servings</span>
+      </div>
+      <div class={`flex items-center space-x-1 text-sm font-medium ${getDifficultyColor(recipe.difficulty)}`}>
+        <span class="text-sm">🎯</span>
+        <span>{recipe.difficulty}</span>
+      </div>
+    </div>
+    
+    {/* Dietary Badges */}
+    {recipe.dietaryBadges && recipe.dietaryBadges.length > 0 && (
+      <div class="flex flex-wrap gap-2 mb-4">
+        {recipe.dietaryBadges.map((badge) => (
+          <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">
+            {badge}
+          </span>
+        ))}
+      </div>
+    )}
+    
+    {/* Recipe Keys */}
+    {recipe.recipeKeys && recipe.recipeKeys.length > 0 && (
+      <div class="flex flex-wrap gap-1 mb-4">
+        {recipe.recipeKeys.slice(0, 3).map((key) => (
+          <span class="px-2 py-1 bg-cupcake-pink/20 text-cupcake-coral text-xs font-medium rounded-full">
+            {key}
+          </span>
+        ))}
+      </div>
+    )}
+    
+    {/* Action Button */}
+    <a
+      href={`/recipe/${recipe.slug}`}
+      class="w-full bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white font-quicksand font-bold py-3 px-6 rounded-xl hover:from-cupcake-cherry hover:to-cupcake-coral transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-center block"
+    >
+      View Recipe 🧁
+    </a>
+  </div>
+</article>

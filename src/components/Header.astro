@@ -1,0 +1,107 @@
+---
+// Header component for Astro
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+      {/* Logo */}
+      <div class="flex-shrink-0">
+        <a href="/" class="flex items-center space-x-3 group">
+          <img
+            src="/Incr-EdibleCupCakes Logo.png"
+            alt="Incr-EdibleCupCakes Logo"
+            class="h-10 w-10 lg:h-12 lg:w-12 group-hover:scale-110 transition-transform duration-300"
+            width={48}
+            height={48}
+          />
+          <div class="hidden sm:block">
+            <h1 class="font-quicksand text-xl lg:text-2xl font-black text-gray-900 group-hover:text-cupcake-coral transition-colors duration-300">
+              Incr-<span class="text-cupcake-coral">Edible</span>CupCakes
+            </h1>
+            <p class="font-nunito text-xs text-gray-600 -mt-1">Extraordinary Recipes</p>
+          </div>
+        </a>
+      </div>
+      
+      {/* Desktop Navigation */}
+      <div class="hidden lg:flex items-center space-x-8">
+        <a href="/" class="font-nunito text-gray-700 hover:text-cupcake-coral font-medium transition-colors duration-300">
+          Home
+        </a>
+        <a href="/recipes" class="font-nunito text-gray-700 hover:text-cupcake-coral font-medium transition-colors duration-300">
+          All Recipes
+        </a>
+        <a href="/categories" class="font-nunito text-gray-700 hover:text-cupcake-coral font-medium transition-colors duration-300">
+          Categories
+        </a>
+        <a href="/about" class="font-nunito text-gray-700 hover:text-cupcake-coral font-medium transition-colors duration-300">
+          About
+        </a>
+        <a href="/contact" class="font-nunito text-gray-700 hover:text-cupcake-coral font-medium transition-colors duration-300">
+          Contact
+        </a>
+        <a
+          href="/recipes"
+          class="bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white font-quicksand font-bold px-6 py-2 rounded-full hover:from-cupcake-cherry hover:to-cupcake-coral transition-all duration-300 transform hover:scale-105 shadow-lg"
+        >
+          Start Baking 🧁
+        </a>
+      </div>
+      
+      {/* Mobile menu button */}
+      <div class="lg:hidden">
+        <button
+          id="mobile-menu-button"
+          class="text-gray-700 hover:text-cupcake-coral focus:outline-none focus:text-cupcake-coral transition-colors duration-300"
+          aria-label="Toggle mobile menu"
+        >
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    {/* Mobile Navigation */}
+    <div id="mobile-menu" class="lg:hidden hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100">
+        <a href="/" class="block px-3 py-2 text-gray-700 hover:text-cupcake-coral font-medium transition-colors duration-300">
+          Home
+        </a>
+        <a href="/recipes" class="block px-3 py-2 text-gray-700 hover:text-cupcake-coral font-medium transition-colors duration-300">
+          All Recipes
+        </a>
+        <a href="/categories" class="block px-3 py-2 text-gray-700 hover:text-cupcake-coral font-medium transition-colors duration-300">
+          Categories
+        </a>
+        <a href="/about" class="block px-3 py-2 text-gray-700 hover:text-cupcake-coral font-medium transition-colors duration-300">
+          About
+        </a>
+        <a href="/contact" class="block px-3 py-2 text-gray-700 hover:text-cupcake-coral font-medium transition-colors duration-300">
+          Contact
+        </a>
+        <a
+          href="/recipes"
+          class="block mx-3 mt-4 bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white font-quicksand font-bold px-6 py-3 rounded-full text-center hover:from-cupcake-cherry hover:to-cupcake-coral transition-all duration-300"
+        >
+          Start Baking 🧁
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  // Mobile menu toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  });
+</script>

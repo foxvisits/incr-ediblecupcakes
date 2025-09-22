@@ -1,0 +1,299 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-192.png" />
+    <link rel="shortcut icon" href="/icon-192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <title>Contact Sarah - Professional Baker | Incr-EdibleCupCakes</title>
+    <meta name="description" content="Get in touch with Sarah for baking questions, recipe help, workshop information, or collaboration opportunities. Professional baker available for consultations and custom recipe development." />
+    <meta name="keywords" content="contact baker, baking questions, recipe help, baking workshops, collaboration, custom recipes, professional baker consultation" />
+    <link rel="canonical" href="https://incr-ediblecupcakes.com/contact" />
+    
+    <meta property="og:title" content="Contact Sarah - Professional Baker | Incr-EdibleCupCakes" />
+    <meta property="og:description" content="Get in touch with Sarah for baking questions, recipe help, workshop information, or collaboration opportunities." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://incr-ediblecupcakes.com/contact" />
+    <meta property="og:image" content="https://incr-ediblecupcakes.com/Sarah.png" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact Sarah - Professional Baker" />
+    <meta name="twitter:description" content="Get in touch with Sarah for baking questions, recipe help, workshop information, or collaboration opportunities." />
+    <meta name="twitter:image" content="https://incr-ediblecupcakes.com/Sarah.png" />
+    
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Sarah - Professional Baker" />
+    <meta name="theme-color" content="#f43f5e" />
+    
+    <!-- ContactPage Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Sarah - Professional Baker",
+        "description": "Get in touch with Sarah for baking questions, recipe help, workshop information, or collaboration opportunities.",
+        "url": "https://incr-ediblecupcakes.com/contact",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Sarah",
+          "jobTitle": "Professional Baker",
+          "email": "sarah@incr-ediblecupcakes.com",
+          "telephone": "+1-555-123-CAKE",
+          "image": "https://incr-ediblecupcakes.com/Sarah.png",
+          "url": "https://incr-ediblecupcakes.com/about"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <Header />
+    
+    <main class="pt-16 lg:pt-20">
+      <!-- Hero Section -->
+      <section class="py-20 bg-gradient-to-br from-cupcake-pink via-cupcake-coral to-cupcake-peach">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 class="font-quicksand text-5xl sm:text-6xl font-black text-white mb-6 leading-tight">
+            Let's <span class="text-sprinkle-yellow">Connect</span> 💌
+          </h1>
+          <p class="font-nunito text-xl text-white/95 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Have a baking question? Need recipe advice? Want to collaborate? I'd love to hear from you!
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Methods -->
+      <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="font-quicksand text-4xl font-black text-gray-900 mb-6">
+              Get In <span class="text-cupcake-coral">Touch</span> 📞
+            </h2>
+            <p class="font-nunito text-xl text-gray-700 max-w-3xl mx-auto">
+              Choose your preferred way to connect with me
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <!-- Email -->
+            <div class="text-center p-8 bg-gradient-to-br from-cupcake-cream to-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+              <div class="text-5xl mb-4">📧</div>
+              <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-4">Email Me</h3>
+              <p class="font-nunito text-gray-700 mb-6">
+                Perfect for detailed questions, recipe requests, or collaboration inquiries
+              </p>
+              <a
+                href="mailto:sarah@incr-ediblecupcakes.com"
+                class="inline-block font-quicksand px-6 py-3 bg-cupcake-coral text-white font-bold rounded-full hover:bg-cupcake-cherry transition-all duration-300"
+              >
+                sarah@incr-ediblecupcakes.com
+              </a>
+            </div>
+
+            <!-- Phone -->
+            <div class="text-center p-8 bg-gradient-to-br from-cupcake-cream to-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+              <div class="text-5xl mb-4">📞</div>
+              <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-4">Call Me</h3>
+              <p class="font-nunito text-gray-700 mb-6">
+                Great for urgent questions or if you prefer a personal conversation
+              </p>
+              <a
+                href="tel:+1555123CAKE"
+                class="inline-block font-quicksand px-6 py-3 bg-cupcake-coral text-white font-bold rounded-full hover:bg-cupcake-cherry transition-all duration-300"
+              >
+                +1-555-123-CAKE
+              </a>
+            </div>
+
+            <!-- Social Media -->
+            <div class="text-center p-8 bg-gradient-to-br from-cupcake-cream to-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+              <div class="text-5xl mb-4">📱</div>
+              <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-4">Follow Me</h3>
+              <p class="font-nunito text-gray-700 mb-6">
+                Stay updated with my latest recipes and baking tips
+              </p>
+              <div class="flex justify-center space-x-4">
+                <a
+                  href="https://instagram.com/incrediblecupcakes"
+                  class="text-3xl hover:text-cupcake-coral transition-colors duration-300"
+                  aria-label="Instagram"
+                >
+                  📷
+                </a>
+                <a
+                  href="https://facebook.com/incrediblecupcakes"
+                  class="text-3xl hover:text-cupcake-coral transition-colors duration-300"
+                  aria-label="Facebook"
+                >
+                  📘
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="py-20 bg-gradient-to-br from-cupcake-cream to-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="font-quicksand text-4xl font-black text-gray-900 mb-6">
+              Send Me a <span class="text-cupcake-coral">Message</span> ✉️
+            </h2>
+            <p class="font-nunito text-xl text-gray-700">
+              Fill out the form below and I'll get back to you within 24 hours
+            </p>
+          </div>
+
+          <div class="bg-white rounded-3xl shadow-2xl p-8">
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block font-quicksand text-lg font-bold text-gray-900 mb-2">
+                    Your Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cupcake-coral focus:border-transparent transition-all duration-300"
+                    placeholder="Enter your full name"
+                  />
+                </div>
+                <div>
+                  <label for="email" class="block font-quicksand text-lg font-bold text-gray-900 mb-2">
+                    Email Address *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cupcake-coral focus:border-transparent transition-all duration-300"
+                    placeholder="your.email@example.com"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="subject" class="block font-quicksand text-lg font-bold text-gray-900 mb-2">
+                  Subject *
+                </label>
+                <select
+                  id="subject"
+                  name="subject"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cupcake-coral focus:border-transparent transition-all duration-300"
+                >
+                  <option value="">Select a topic</option>
+                  <option value="recipe-question">Recipe Question</option>
+                  <option value="baking-help">Baking Help</option>
+                  <option value="collaboration">Collaboration</option>
+                  <option value="workshop">Workshop Inquiry</option>
+                  <option value="custom-recipe">Custom Recipe Request</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message" class="block font-quicksand text-lg font-bold text-gray-900 mb-2">
+                  Message *
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cupcake-coral focus:border-transparent transition-all duration-300"
+                  placeholder="Tell me about your baking question, recipe request, or how I can help you..."
+                ></textarea>
+              </div>
+
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="font-quicksand px-12 py-4 bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white font-bold text-lg rounded-full hover:from-cupcake-cherry hover:to-cupcake-coral transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                >
+                  Send Message 🚀
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="font-quicksand text-4xl font-black text-gray-900 mb-6">
+              Frequently Asked <span class="text-cupcake-coral">Questions</span> ❓
+            </h2>
+            <p class="font-nunito text-xl text-gray-700">
+              Quick answers to common questions
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            {[
+              {
+                question: "How quickly do you respond to messages?",
+                answer: "I typically respond to all messages within 24 hours. For urgent baking questions, feel free to call me directly!"
+              },
+              {
+                question: "Do you offer custom recipe development?",
+                answer: "Yes! I love creating custom recipes for specific dietary needs or special occasions. Contact me with your requirements and I'll work with you to create something perfect."
+              },
+              {
+                question: "Can you help troubleshoot baking problems?",
+                answer: "Absolutely! I'm here to help with any baking challenges you're facing. Send me details about what went wrong and I'll provide solutions."
+              },
+              {
+                question: "Do you offer baking workshops or classes?",
+                answer: "I occasionally offer virtual and in-person workshops. Follow me on social media for updates on upcoming classes, or contact me to discuss private lessons."
+              },
+              {
+                question: "Are you available for collaborations?",
+                answer: "I'm always interested in collaborating with fellow bakers, food bloggers, and brands that align with my values. Let's discuss how we can work together!"
+              }
+            ].map((faq, index) => (
+              <div class="bg-gradient-to-r from-cupcake-cream to-white rounded-2xl p-6 shadow-lg">
+                <h3 class="font-quicksand text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+                <p class="font-nunito text-gray-700">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="py-20 bg-gradient-to-br from-cupcake-coral to-cupcake-cherry">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 class="font-quicksand text-4xl font-black text-white mb-6">
+            Ready to Start Baking? 🍰
+          </h2>
+          <p class="font-nunito text-xl text-white/90 mb-8 font-medium">
+            Don't wait! Browse my recipes and start creating something extraordinary today.
+          </p>
+          <a
+            href="/recipes"
+            class="inline-block font-quicksand px-10 py-5 bg-white text-cupcake-coral font-bold text-lg rounded-full hover:bg-cupcake-cream transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
+            Explore Recipes 🧁
+          </a>
+        </div>
+      </section>
+    </main>
+    
+    <Footer />
+  </body>
+</html>

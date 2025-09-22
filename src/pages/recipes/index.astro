@@ -1,0 +1,144 @@
+---
+import { recipes } from '../../data/recipes';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import RecipeCard from '../../components/RecipeCard.astro';
+
+// Get all categories with counts
+const categories = [
+  { id: 'all', name: 'All Recipes', count: recipes.length },
+  { id: 'classic', name: 'Classic', count: recipes.filter(r => r.category === 'classic').length },
+  { id: 'keto', name: 'Keto', count: recipes.filter(r => r.category === 'keto').length },
+  { id: 'vegan', name: 'Vegan', count: recipes.filter(r => r.category === 'vegan').length },
+  { id: 'nut-free', name: 'Nut-Free', count: recipes.filter(r => r.category === 'nut-free').length },
+  { id: 'gluten-free', name: 'Gluten-Free', count: recipes.filter(r => r.category === 'gluten-free').length },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-192.png" />
+    <link rel="shortcut icon" href="/icon-192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <title>Complete Cupcake Recipe Collection - All Dietary Options | Incr-EdibleCupCakes</title>
+    <meta name="description" content={`Browse our complete collection of ${recipes.length}+ extraordinary cupcake recipes including keto, vegan, nut-free, gluten-free, and classic options. Professional tested recipes with step-by-step instructions and beautiful photos.`} />
+    <meta name="keywords" content="cupcake recipes, keto cupcakes, vegan cupcakes, nut-free baking, gluten-free desserts, homemade cupcakes, professional baker, dietary cupcakes, recipe collection" />
+    <link rel="canonical" href="https://incr-ediblecupcakes.com/recipes" />
+    
+    <meta property="og:title" content="Complete Cupcake Recipe Collection - All Dietary Options" />
+    <meta property="og:description" content={`Browse our complete collection of ${recipes.length}+ extraordinary cupcake recipes including keto, vegan, nut-free, gluten-free, and classic options.`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://incr-ediblecupcakes.com/recipes" />
+    <meta property="og:image" content="https://incr-ediblecupcakes.com/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Complete Cupcake Recipe Collection - All Dietary Options" />
+    <meta name="twitter:description" content={`Browse our complete collection of ${recipes.length}+ extraordinary cupcake recipes including keto, vegan, nut-free, gluten-free, and classic options.`} />
+    <meta name="twitter:image" content="https://incr-ediblecupcakes.com/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png" />
+    
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Sarah - Professional Baker" />
+    <meta name="theme-color" content="#f43f5e" />
+  </head>
+  <body>
+    <Header />
+    
+    <main class="pt-16 lg:pt-20">
+      <!-- Hero Section -->
+      <section class="py-20 bg-gradient-to-br from-cupcake-pink via-cupcake-coral to-cupcake-peach">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 class="font-quicksand text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
+            Complete Recipe <span class="text-sprinkle-yellow">Collection</span> 🧁
+          </h1>
+          <p class="font-nunito text-xl text-white/95 mb-8 max-w-3xl mx-auto font-medium">
+            Discover our complete collection of extraordinary cupcake recipes for every taste and dietary preference
+          </p>
+          <div class="flex flex-wrap justify-center gap-4 text-white">
+            <div class="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
+              <span class="font-bold">{recipes.length}+</span> Recipes
+            </div>
+            <div class="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
+              <span class="font-bold">6</span> Categories
+            </div>
+            <div class="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
+              <span class="font-bold">4.8</span> Average Rating
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Category Filter -->
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="font-quicksand text-3xl font-bold text-gray-900 mb-4">
+              Filter by Category
+            </h2>
+            <p class="font-nunito text-gray-600">
+              Find the perfect recipe for your dietary needs and preferences
+            </p>
+          </div>
+          
+          <div class="flex flex-wrap justify-center gap-4">
+            {categories.map((category) => (
+              <a
+                href={`/categories/${category.id}`}
+                class="px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white shadow-lg hover:shadow-xl"
+              >
+                {category.name} ({category.count})
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- All Recipes Grid -->
+      <section class="py-16 bg-gradient-to-br from-cupcake-cream to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="font-quicksand text-4xl font-bold text-gray-900 mb-4">
+              All Recipes
+            </h2>
+            <p class="font-nunito text-gray-600">
+              Browse our complete collection of tested and perfected cupcake recipes
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {recipes.map((recipe, index) => (
+              <div class="transform transition-all duration-300 hover:scale-105">
+                <RecipeCard recipe={recipe} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="py-20 bg-gradient-to-br from-cupcake-coral to-cupcake-cherry">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 class="font-quicksand text-4xl font-black text-white mb-6">
+            Can't Find What You're Looking For? 🍰
+          </h2>
+          <p class="font-nunito text-xl text-white/90 mb-8 font-medium">
+            Let us know what recipe you'd like to see next! We're always adding new and exciting cupcake creations.
+          </p>
+          <a
+            href="/contact"
+            class="inline-block font-quicksand px-10 py-5 bg-white text-cupcake-coral font-bold text-lg rounded-full hover:bg-cupcake-cream transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
+            Request a Recipe 💌
+          </a>
+        </div>
+      </section>
+    </main>
+    
+    <Footer />
+  </body>
+</html>

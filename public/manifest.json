@@ -1,0 +1,30 @@
+{
+  "name": "Incr-EdibleCupCakes - Extraordinary Cupcake Recipes",
+  "short_name": "IncrEdibleCupCakes",
+  "description": "Discover unique and innovative cupcake recipes for every taste and dietary preference",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f43f5e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "lifestyle", "education"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "prefer_related_applications": false
+}

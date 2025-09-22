@@ -1,0 +1,89 @@
+---
+// Footer component for Astro
+---
+
+<footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {/* Brand Section */}
+      <div class="lg:col-span-2">
+        <div class="flex items-center space-x-3 mb-6">
+          <img
+            src="/Incr-EdibleCupCakes Logo.png"
+            alt="Incr-EdibleCupCakes Logo"
+            class="h-12 w-12"
+            width={48}
+            height={48}
+          />
+          <div>
+            <h3 class="font-quicksand text-2xl font-black text-white">
+              Incr-<span class="text-cupcake-coral">Edible</span>CupCakes
+            </h3>
+            <p class="font-nunito text-gray-300 text-sm">Extraordinary Recipes</p>
+          </div>
+        </div>
+        <p class="font-nunito text-gray-300 mb-6 leading-relaxed max-w-md">
+          Discover the art of extraordinary cupcake baking with our collection of professional recipes. 
+          From classic comfort to innovative dietary alternatives, we bring joy to every bite.
+        </p>
+        <div class="flex space-x-4">
+          <a href="https://instagram.com/incrediblecupcakes" class="text-gray-400 hover:text-cupcake-coral transition-colors duration-300" aria-label="Instagram">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297z"/>
+            </svg>
+          </a>
+          <a href="https://facebook.com/incrediblecupcakes" class="text-gray-400 hover:text-cupcake-coral transition-colors duration-300" aria-label="Facebook">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="mailto:sarah@incr-ediblecupcakes.com" class="text-gray-400 hover:text-cupcake-coral transition-colors duration-300" aria-label="Email">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      {/* Quick Links */}
+      <div>
+        <h4 class="font-quicksand text-lg font-bold text-white mb-4">Quick Links</h4>
+        <ul class="space-y-3">
+          <li><a href="/" class="font-nunito text-gray-300 hover:text-cupcake-coral transition-colors duration-300">Home</a></li>
+          <li><a href="/recipes" class="font-nunito text-gray-300 hover:text-cupcake-coral transition-colors duration-300">All Recipes</a></li>
+          <li><a href="/categories" class="font-nunito text-gray-300 hover:text-cupcake-coral transition-colors duration-300">Categories</a></li>
+          <li><a href="/about" class="font-nunito text-gray-300 hover:text-cupcake-coral transition-colors duration-300">About Sarah</a></li>
+          <li><a href="/contact" class="font-nunito text-gray-300 hover:text-cupcake-coral transition-colors duration-300">Contact</a></li>
+        </ul>
+      </div>
+      
+      {/* Recipe Categories */}
+      <div>
+        <h4 class="font-quicksand text-lg font-bold text-white mb-4">Recipe Types</h4>
+        <ul class="space-y-3">
+          <li><a href="/categories/classic" class="font-nunito text-gray-300 hover:text-cupcake-coral transition-colors duration-300">Classic Cupcakes</a></li>
+          <li><a href="/categories/keto" class="font-nunito text-gray-300 hover:text-cupcake-coral transition-colors duration-300">Keto Recipes</a></li>
+          <li><a href="/categories/vegan" class="font-nunito text-gray-300 hover:text-cupcake-coral transition-colors duration-300">Vegan Options</a></li>
+          <li><a href="/categories/nut-free" class="font-nunito text-gray-300 hover:text-cupcake-coral transition-colors duration-300">Nut-Free</a></li>
+          <li><a href="/categories/gluten-free" class="font-nunito text-gray-300 hover:text-cupcake-coral transition-colors duration-300">Gluten-Free</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    {/* Bottom Section */}
+    <div class="border-t border-gray-700 mt-12 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-center md:text-left mb-4 md:mb-0">
+          <p class="font-nunito text-gray-400 text-sm">
+            © 2025 Incr-EdibleCupCakes. All rights reserved. Made with ❤️ by Sarah.
+          </p>
+        </div>
+        <div class="flex space-x-6 text-sm">
+          <a href="/privacy" class="font-nunito text-gray-400 hover:text-cupcake-coral transition-colors duration-300">Privacy Policy</a>
+          <a href="/terms" class="font-nunito text-gray-400 hover:text-cupcake-coral transition-colors duration-300">Terms of Service</a>
+          <a href="/sitemap.xml" class="font-nunito text-gray-400 hover:text-cupcake-coral transition-colors duration-300">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://incr-ediblecupcakes.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow all search engines to index images
+User-agent: Googlebot-Image
+Allow: /
+
+# Block access to admin or private areas (if any in future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Allow common SEO files
+Allow: /sitemap.xml
+Allow: /robots.txt

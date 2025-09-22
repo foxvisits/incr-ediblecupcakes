@@ -1,0 +1,282 @@
+---
+import { recipes } from '../../data/recipes';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import RecipeCard from '../../components/RecipeCard.astro';
+
+export async function getStaticPaths() {
+  const categories = [
+    { id: 'all', name: 'All Recipes', description: 'Complete collection of all cupcake recipes' },
+    { id: 'classic', name: 'Classic', description: 'Traditional cupcake recipes with timeless appeal' },
+    { id: 'keto', name: 'Keto', description: 'Low-carb, high-fat cupcakes perfect for ketogenic diets' },
+    { id: 'vegan', name: 'Vegan', description: 'Plant-based cupcakes without any animal products' },
+    { id: 'nut-free', name: 'Nut-Free', description: 'Safe recipes for those with nut allergies' },
+    { id: 'gluten-free', name: 'Gluten-Free', description: 'Delicious cupcakes without gluten' },
+  ];
+
+  return categories.map(category => ({
+    params: { category: category.id },
+    props: { category }
+  }));
+}
+
+const { category } = Astro.props;
+
+// Filter recipes based on category
+const filteredRecipes = category.id === 'all' 
+  ? recipes 
+  : recipes.filter(recipe => recipe.category === category.id);
+
+const getCategoryColor = (categoryId: string) => {
+  switch (categoryId) {
+    case 'classic': return 'from-blue-500 to-blue-600';
+    case 'keto': return 'from-green-500 to-green-600';
+    case 'vegan': return 'from-purple-500 to-purple-600';
+    case 'nut-free': return 'from-yellow-500 to-yellow-600';
+    case 'gluten-free': return 'from-pink-500 to-pink-600';
+    default: return 'from-cupcake-coral to-cupcake-cherry';
+  }
+};
+
+const getCategoryIcon = (categoryId: string) => {
+  switch (categoryId) {
+    case 'classic': return '🧁';
+    case 'keto': return '🥑';
+    case 'vegan': return '🌱';
+    case 'nut-free': return '🥜';
+    case 'gluten-free': return '🌾';
+    default: return '📚';
+  }
+};
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-192.png" />
+    <link rel="shortcut icon" href="/icon-192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <title>
+      {category.name} - Incr-EdibleCupCakes
+    </title>
+    <meta
+      name="description"
+      content={category.description}
+    />
+    <meta name="keywords" content={`${category.name.toLowerCase()} cupcakes, ${category.name.toLowerCase()} recipes, cupcake recipes, baking recipes`} />
+    <link rel="canonical" href={`https://incr-ediblecupcakes.com/categories/${category.id}`} />
+    
+    <meta property="og:title" content={`${category.name} Cupcakes - Incr-EdibleCupCakes`} />
+    <meta property="og:description" content={category.description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={`https://incr-ediblecupcakes.com/categories/${category.id}`} />
+    <meta property="og:image" content="https://incr-ediblecupcakes.com/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${category.name} Cupcakes - Incr-EdibleCupCakes`} />
+    <meta name="twitter:description" content={category.description} />
+    <meta name="twitter:image" content="https://incr-ediblecupcakes.com/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png" />
+    
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Sarah - Professional Baker" />
+    <meta name="theme-color" content="#f43f5e" />
+  </head>
+  <body>
+    <Header />
+    
+    <main class="pt-16 lg:pt-20">
+      <!-- Hero Section -->
+      <section class={`py-20 bg-gradient-to-br ${getCategoryColor(category.id)}`}>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div class="text-6xl mb-6">{getCategoryIcon(category.id)}</div>
+          <h1 class="font-quicksand text-5xl sm:text-6xl font-black text-white mb-6 leading-tight">
+            {category.name} <span class="text-sprinkle-yellow">Cupcakes</span>
+          </h1>
+          <p class="font-nunito text-xl text-white/95 mb-8 max-w-3xl mx-auto leading-relaxed">
+            {category.description}
+          </p>
+          <div class="flex flex-wrap justify-center gap-4 text-white">
+            <div class="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
+              <span class="font-bold">{filteredRecipes.length}</span> Recipes
+            </div>
+            <div class="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
+              <span class="font-bold">4.8</span> Average Rating
+            </div>
+            <div class="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
+              <span class="font-bold">Professional</span> Tested
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recipes Grid -->
+      <section class="py-16 bg-gradient-to-br from-cupcake-cream to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="font-quicksand text-4xl font-bold text-gray-900 mb-4">
+              {category.name} Recipe Collection
+            </h2>
+            <p class="font-nunito text-xl text-gray-700">
+              Discover our carefully curated selection of {category.name.toLowerCase()} cupcake recipes
+            </p>
+          </div>
+
+          {filteredRecipes.length > 0 ? (
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+              {filteredRecipes.map((recipe, index) => (
+                <div class="transform transition-all duration-300 hover:scale-105">
+                  <RecipeCard recipe={recipe} />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div class="text-center py-16">
+              <div class="text-6xl mb-6">🔍</div>
+              <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-4">
+                No recipes found
+              </h3>
+              <p class="font-nunito text-gray-600 mb-8">
+                We're working on adding more {category.name.toLowerCase()} recipes. Check back soon!
+              </p>
+              <a
+                href="/recipes"
+                class="inline-block font-quicksand px-8 py-4 bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white font-bold text-lg rounded-full hover:from-cupcake-cherry hover:to-cupcake-coral transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
+                Browse All Recipes
+              </a>
+            </div>
+          )}
+        </div>
+      </section>
+
+      <!-- Category Info -->
+      <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="font-quicksand text-3xl font-bold text-gray-900 mb-6">
+              About {category.name} Cupcakes
+            </h2>
+          </div>
+
+          <div class="bg-gradient-to-br from-cupcake-cream to-white rounded-3xl p-8 shadow-xl">
+            {category.id === 'classic' && (
+              <div>
+                <p class="font-nunito text-gray-700 mb-6 leading-relaxed">
+                  Classic cupcakes are the foundation of great baking. These timeless recipes have been perfected over generations, 
+                  featuring traditional ingredients and techniques that create the perfect balance of flavor and texture.
+                </p>
+                <p class="font-nunito text-gray-700 leading-relaxed">
+                  From vanilla to chocolate, these recipes are perfect for beginners and experienced bakers alike. 
+                  They're the recipes you'll return to again and again, creating memories and traditions in your own kitchen.
+                </p>
+              </div>
+            )}
+
+            {category.id === 'keto' && (
+              <div>
+                <p class="font-nunito text-gray-700 mb-6 leading-relaxed">
+                  Keto cupcakes prove that following a low-carb lifestyle doesn't mean giving up on dessert. 
+                  These recipes use almond flour, coconut flour, and sugar alternatives to create delicious treats 
+                  that fit perfectly into your ketogenic diet.
+                </p>
+                <p class="font-nunito text-gray-700 leading-relaxed">
+                  Each recipe is carefully crafted to maintain the perfect macronutrient ratios while delivering 
+                  incredible taste and texture that rivals traditional cupcakes.
+                </p>
+              </div>
+            )}
+
+            {category.id === 'vegan' && (
+              <div>
+                <p class="font-nunito text-gray-700 mb-6 leading-relaxed">
+                  Vegan cupcakes are a celebration of plant-based ingredients and compassionate baking. 
+                  These recipes use innovative techniques and ingredients to create cupcakes that are 
+                  completely free from animal products while maintaining incredible flavor and texture.
+                </p>
+                <p class="font-nunito text-gray-700 leading-relaxed">
+                  From flax eggs to aquafaba, these recipes showcase the versatility of plant-based baking 
+                  and prove that vegan desserts can be every bit as indulgent and satisfying.
+                </p>
+              </div>
+            )}
+
+            {category.id === 'nut-free' && (
+              <div>
+                <p class="font-nunito text-gray-700 mb-6 leading-relaxed">
+                  Nut-free cupcakes ensure that everyone can enjoy delicious treats safely. These recipes 
+                  are carefully crafted to avoid all tree nuts and peanuts while maintaining incredible 
+                  flavor and texture.
+                </p>
+                <p class="font-nunito text-gray-700 leading-relaxed">
+                  Every ingredient is carefully selected and every recipe is tested to ensure complete 
+                  safety for those with nut allergies, without compromising on taste or quality.
+                </p>
+              </div>
+            )}
+
+            {category.id === 'gluten-free' && (
+              <div>
+                <p class="font-nunito text-gray-700 mb-6 leading-relaxed">
+                  Gluten-free cupcakes open up the world of baking to those with celiac disease or 
+                  gluten sensitivity. These recipes use carefully selected gluten-free flours and 
+                  ingredients to create cupcakes that are just as delicious as their traditional counterparts.
+                </p>
+                <p class="font-nunito text-gray-700 leading-relaxed">
+                  Each recipe is tested to ensure the perfect texture and flavor, proving that 
+                  gluten-free baking can be just as satisfying and enjoyable.
+                </p>
+              </div>
+            )}
+
+            {category.id === 'all' && (
+              <div>
+                <p class="font-nunito text-gray-700 mb-6 leading-relaxed">
+                  Our complete collection showcases the diversity and creativity of modern cupcake baking. 
+                  From classic comfort to innovative dietary alternatives, every recipe is professionally 
+                  tested and perfected to ensure the best possible results.
+                </p>
+                <p class="font-nunito text-gray-700 leading-relaxed">
+                  Whether you're looking for traditional favorites or exploring new dietary options, 
+                  you'll find something special in our comprehensive recipe collection.
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="py-20 bg-gradient-to-br from-cupcake-coral to-cupcake-cherry">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 class="font-quicksand text-4xl font-black text-white mb-6">
+            Ready to Start Baking? 🍰
+          </h2>
+          <p class="font-nunito text-xl text-white/90 mb-8 font-medium">
+            Choose a recipe and let's create something extraordinary together!
+          </p>
+          <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <a
+              href="/recipes"
+              class="font-quicksand px-10 py-5 bg-white text-cupcake-coral font-bold text-lg rounded-full hover:bg-cupcake-cream transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              Browse All Recipes 🧁
+            </a>
+            <a
+              href="/contact"
+              class="font-quicksand px-10 py-5 border-3 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-cupcake-coral transition-all duration-300 transform hover:scale-105"
+            >
+              Get Help 💌
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <Footer />
+  </body>
+</html>

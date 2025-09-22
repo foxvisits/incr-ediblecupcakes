@@ -1,0 +1,63 @@
+---
+// Komponent komentarzy - można użyć Giscus lub Disqus
+export interface Props {
+  recipeId: string;
+  type?: 'giscus' | 'disqus';
+}
+
+const { recipeId, type = 'giscus' } = Astro.props;
+---
+
+{type === 'giscus' && (
+  <div class="mt-12 bg-white rounded-2xl p-8 shadow-lg">
+    <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-6">
+      💬 Komentarze i opinie
+    </h3>
+    <div class="giscus"></div>
+    <script src="https://giscus.app/client.js"
+            data-repo="TwojUsername/incr-ediblecupcakes-astro"
+            data-repo-id="R_kgDO..."
+            data-category="General"
+            data-category-id="DIC_kwDO..."
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="light"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+)}
+
+{type === 'disqus' && (
+  <div class="mt-12 bg-white rounded-2xl p-8 shadow-lg">
+    <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-6">
+      💬 Komentarze i opinie
+    </h3>
+    <div id="disqus_thread"></div>
+    <script>
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://incr-ediblecupcakes.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>
+      Proszę włącz JavaScript, aby zobaczyć komentarze.
+    </noscript>
+  </div>
+)}
+
+<style>
+  .giscus {
+    max-width: 100%;
+  }
+  
+  #disqus_thread {
+    max-width: 100%;
+  }
+</style>
