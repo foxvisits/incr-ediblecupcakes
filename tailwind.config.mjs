@@ -7,6 +7,7 @@ export default {
     'animate-pulse-glow',
     'animate-fade-in-up',
     'animate-fade-in-down',
+    'animate-fade-in-up-delayed',
     'animate-bounce-gentle',
     'animate-bounce-slow',
     'animate-gradient-shift',
@@ -15,6 +16,8 @@ export default {
     'animate-cupcake-bounce',
     'animate-icing-swirl',
     'animate-sprinkle-fall',
+    'animate-pulse-fast',
+    'animate-pulse-subtle',
     'cupcake-coral',
     'cupcake-cherry',
     'cupcake-pink',
@@ -22,6 +25,8 @@ export default {
     'sunshine-500',
     'sunshine-600',
     'text-shadow-sm',
+    'text-shadow-md',
+    'text-shadow-lg',
     'drop-shadow-lg',
     'drop-shadow-md',
     'drop-shadow-2xl',
@@ -33,7 +38,12 @@ export default {
     'btn-primary',
     'btn-secondary',
     'focus-ring',
-    'hero-text'
+    'hero-text',
+    'line-clamp-2',
+    'line-clamp-3',
+    'font-quicksand',
+    'font-poppins',
+    'font-nunito'
   ],
   theme: {
     extend: {
