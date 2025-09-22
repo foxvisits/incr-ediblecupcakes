@@ -1,0 +1,141 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import RecipeCard from '../../components/RecipeCard.tsx';
+import { validatedRecipes as recipes } from '../../data/recipes';
+
+export async function getStaticPaths() {
+  const categoryInfo = {
+    classic: { name: 'Classic Cupcakes', description: 'Timeless recipes that have been perfected over generations. These are the cupcakes that bring back childhood memories and create new ones.', color: 'from-blue-500 to-indigo-600', icon: '🧁' },
+    keto: { name: 'Keto Cupcakes', description: 'Low-carb, high-fat cupcakes that dont compromise on taste. Perfect for maintaining your ketogenic lifestyle while satisfying your sweet tooth.', color: 'from-green-500 to-emerald-600', icon: '🥑' },
+    vegan: { name: 'Vegan Cupcakes', description: 'Plant-based cupcakes that are kind to animals and the environment. Proving that vegan baking can be just as delicious and indulgent.', color: 'from-emerald-500 to-teal-600', icon: '🌱' },
+    'nut-free': { name: 'Nut-Free Cupcakes', description: 'Safe and delicious cupcakes for those with nut allergies. Every recipe is carefully crafted to avoid cross-contamination while maximizing flavor.', color: 'from-amber-500 to-orange-600', icon: '🚫' },
+    'gluten-free': { name: 'Gluten-Free Cupcakes', description: 'Cupcakes made without gluten but full of flavor and texture. Perfect for those with celiac disease or gluten sensitivity.', color: 'from-purple-500 to-violet-600', icon: '🌾' }
+  };
+
+  return Object.keys(categoryInfo).map((categoryId) => ({
+    params: { categoryId },
+    props: { categoryId }
+  }));
+}
+
+const { categoryId } = Astro.params;
+
+const categoryInfo = {
+  classic: { name: 'Classic Cupcakes', description: 'Timeless recipes that have been perfected over generations. These are the cupcakes that bring back childhood memories and create new ones.', color: 'from-blue-500 to-indigo-600', icon: '🧁' },
+  keto: { name: 'Keto Cupcakes', description: 'Low-carb, high-fat cupcakes that dont compromise on taste. Perfect for maintaining your ketogenic lifestyle while satisfying your sweet tooth.', color: 'from-green-500 to-emerald-600', icon: '🥑' },
+  vegan: { name: 'Vegan Cupcakes', description: 'Plant-based cupcakes that are kind to animals and the environment. Proving that vegan baking can be just as delicious and indulgent.', color: 'from-emerald-500 to-teal-600', icon: '🌱' },
+  'nut-free': { name: 'Nut-Free Cupcakes', description: 'Safe and delicious cupcakes for those with nut allergies. Every recipe is carefully crafted to avoid cross-contamination while maximizing flavor.', color: 'from-amber-500 to-orange-600', icon: '🚫' },
+  'gluten-free': { name: 'Gluten-Free Cupcakes', description: 'Cupcakes made without gluten but full of flavor and texture. Perfect for those with celiac disease or gluten sensitivity.', color: 'from-purple-500 to-violet-600', icon: '🌾' }
+};
+
+const currentCategory = categoryId ? categoryInfo[categoryId as keyof typeof categoryInfo] : null;
+const categoryRecipes = categoryId ? recipes.filter(recipe => recipe.category === categoryId) : [];
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": currentCategory ? currentCategory.name : "Cupcake Categories",
+  "description": currentCategory ? currentCategory.description : "Explore our cupcake categories",
+  "url": `https://incr-ediblecupcakes.com/categories/${categoryId}`,
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": categoryRecipes.length,
+    "itemListElement": categoryRecipes.map((recipe, index) => ({
+      "@type": "Recipe",
+      "position": index + 1,
+      "name": recipe.title,
+      "url": `https://incr-ediblecupcakes.com/recipe/${recipe.slug}`,
+      "image": `https://incr-ediblecupcakes.com${recipe.image}`,
+      "description": recipe.shortDescription,
+      "recipeCategory": recipe.category,
+      "recipeCuisine": recipe.cuisine,
+      "difficulty": recipe.difficulty,
+      "prepTime": recipe.prepTime.includes('PT') ? recipe.prepTime : `PT${recipe.prepTime.match(/\d+/)?.[0] || '30'}M`,
+      "cookTime": recipe.cookTime.includes('PT') ? recipe.cookTime : `PT${recipe.cookTime.match(/\d+/)?.[0] || '30'}M`,
+      "totalTime": recipe.totalTime.includes('PT') ? recipe.totalTime : `PT${recipe.totalTime.match(/\d+/)?.[0] || '60'}M`,
+      "recipeYield": recipe.servings,
+      "recipeIngredient": recipe.ingredients,
+      "recipeInstructions": recipe.instructions.map((instruction, stepIndex) => ({
+        "@type": "HowToStep",
+        "position": stepIndex + 1,
+        "text": instruction,
+        "image": `https://incr-ediblecupcakes.com${recipe.image}`
+      })),
+      "author": recipe.author || {
+        "@type": "Organization",
+        "name": "Incr-EdibleCupCakes",
+        "url": "https://incr-ediblecupcakes.com"
+      },
+      "keywords": recipe.keywords?.join(', ') || `${recipe.category} cupcakes, ${recipe.difficulty.toLowerCase()} recipes, homemade cupcakes`,
+      "nutrition": recipe.nutritionInfo ? {
+        "@type": "NutritionInformation",
+        "calories": `${recipe.nutritionInfo.calories} calories`,
+        "carbohydrateContent": `${recipe.nutritionInfo.carbs}g`,
+        "proteinContent": `${recipe.nutritionInfo.protein}g`,
+        "fatContent": `${recipe.nutritionInfo.fat}g`,
+        "fiberContent": `${recipe.nutritionInfo.fiber}g`,
+        "sugarContent": `${recipe.nutritionInfo.sugar}g`
+      } : undefined,
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": recipe.rating,
+        "reviewCount": Math.floor(recipe.rating * 50) + 50
+      },
+    }))
+  }
+};
+---
+
+<BaseLayout
+  title={`${currentCategory?.name} - Incr-EdibleCupCakes`}
+  description={`${currentCategory?.description} Browse our collection of ${currentCategory?.name.toLowerCase()} recipes.`}
+  canonical={`https://incr-ediblecupcakes.com/categories/${categoryId}`}
+>
+  <Header />
+  <main class="pt-16 lg:pt-20">
+    <Fragment slot="head">
+      <meta name="keywords" content={`${categoryId} cupcakes, ${currentCategory?.name.toLowerCase()}, dietary cupcakes, baking recipes, homemade cupcakes`} />
+      <meta property="og:title" content={`${currentCategory?.name} | Incr-EdibleCupCakes`} />
+      <meta property="og:description" content={`${currentCategory?.description} Browse our collection of ${currentCategory?.name.toLowerCase()} recipes.`} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={`https://incr-ediblecupcakes.com/categories/${categoryId}`} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={`${currentCategory?.name} | Incr-EdibleCupCakes`} />
+      <meta name="twitter:description" content={`${currentCategory?.description} Browse our collection of ${currentCategory?.name.toLowerCase()} recipes.`} />
+      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    </Fragment>
+
+    {/* Category Header */}
+    <div class={`bg-gradient-to-r ${currentCategory?.color} p-8 md:p-12 rounded-lg text-white mb-8`}>
+      <div class="max-w-6xl mx-auto">
+        <a
+          href="/categories"
+          class="inline-flex items-center text-white hover:text-white/80 mb-4"
+        >
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+          </svg>
+          Back to Categories
+        </a>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 flex items-center">
+          {currentCategory?.icon} {currentCategory?.name}
+        </h1>
+        <p class="text-lg md:text-xl opacity-90 max-w-3xl">
+          {currentCategory?.description}
+        </p>
+      </div>
+    </div>
+
+    {/* Recipe Grid */}
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {categoryRecipes.map(recipe => (
+          <RecipeCard recipe={recipe} client:load />
+        ))}
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

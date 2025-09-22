@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+// Define category information
+const categoryInfo = {
+  classic: {
+    name: 'Classic Cupcakes',
+    description: 'Timeless recipes that have been perfected over generations. These are the cupcakes that bring back childhood memories and create new ones.',
+    color: 'from-blue-500 to-indigo-600',
+    icon: '🧁'
+  },
+  keto: {
+    name: 'Keto Cupcakes',
+    description: 'Low-carb, high-fat cupcakes that dont compromise on taste. Perfect for maintaining your ketogenic lifestyle while satisfying your sweet tooth.',
+    color: 'from-green-500 to-emerald-600',
+    icon: '🥑'
+  },
+  vegan: {
+    name: 'Vegan Cupcakes',
+    description: 'Plant-based cupcakes that are kind to animals and the environment. Proving that vegan baking can be just as delicious and indulgent.',
+    color: 'from-emerald-500 to-teal-600',
+    icon: '🌱'
+  },
+  'nut-free': {
+    name: 'Nut-Free Cupcakes',
+    description: 'Safe and delicious cupcakes for those with nut allergies. Every recipe is carefully crafted to avoid cross-contamination while maximizing flavor.',
+    color: 'from-amber-500 to-orange-600',
+    icon: '🚫'
+  },
+  'gluten-free': {
+    name: 'Gluten-Free Cupcakes',
+    description: 'Cupcakes made without gluten but full of flavor and texture. Perfect for those with celiac disease or gluten sensitivity.',
+    color: 'from-purple-500 to-violet-600',
+    icon: '🌾'
+  }
+};
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Cupcake Categories",
+  "description": "Explore our cupcake categories",
+  "url": "https://incr-ediblecupcakes.com/categories",
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": Object.entries(categoryInfo).map(([id, info], index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": info.name,
+      "description": info.description,
+      "url": `https://incr-ediblecupcakes.com/categories/${id}`
+    }))
+  }
+};
+---
+
+<BaseLayout
+  title="Cupcake Categories - Incr-EdibleCupCakes"
+  description="Explore our cupcake categories including Classic, Keto, Vegan, Nut-Free, and Gluten-Free options. Find the perfect recipe for your dietary needs."
+  canonical="https://incr-ediblecupcakes.com/categories"
+>
+  <Header />
+  <main class="pt-16 lg:pt-20">
+    <Fragment slot="head">
+      <meta name="keywords" content="cupcake categories, classic cupcakes, keto cupcakes, vegan cupcakes, nut-free cupcakes, gluten-free cupcakes, dietary cupcakes" />
+      <meta property="og:title" content="Cupcake Categories | Incr-EdibleCupCakes" />
+      <meta property="og:description" content="Explore our cupcake categories including Classic, Keto, Vegan, Nut-Free, and Gluten-Free options" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://incr-ediblecupcakes.com/categories" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Cupcake Categories | Incr-EdibleCupCakes" />
+      <meta name="twitter:description" content="Explore our cupcake categories including Classic, Keto, Vegan, Nut-Free, and Gluten-Free options" />
+      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    </Fragment>
+
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-8 text-gray-900">
+        Cupcake Categories
+      </h1>
+      <p class="text-lg text-gray-600 mb-12 max-w-3xl">
+        Explore our diverse collection of cupcake recipes, carefully crafted for different dietary needs and preferences.
+      </p>
+    </div>
+
+    {/* Category Grid */}
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {Object.entries(categoryInfo).map(([id, info]) => (
+          <a
+            href={`/categories/${id}`}
+            class={`bg-gradient-to-r ${info.color} p-8 rounded-lg text-white transform hover:scale-105 transition-transform`}
+          >
+            <div class="text-4xl mb-4">{info.icon}</div>
+            <h2 class="text-2xl font-bold mb-2">{info.name}</h2>
+            <p class="opacity-90">{info.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
