@@ -1,6 +1,40 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  safelist: [
+    'animate-float',
+    'animate-float-random',
+    'animate-pulse-glow',
+    'animate-fade-in-up',
+    'animate-fade-in-down',
+    'animate-bounce-gentle',
+    'animate-bounce-slow',
+    'animate-gradient-shift',
+    'animate-gradient-text',
+    'animate-spin-slow',
+    'animate-cupcake-bounce',
+    'animate-icing-swirl',
+    'animate-sprinkle-fall',
+    'cupcake-coral',
+    'cupcake-cherry',
+    'cupcake-pink',
+    'sunshine-400',
+    'sunshine-500',
+    'sunshine-600',
+    'text-shadow-sm',
+    'drop-shadow-lg',
+    'drop-shadow-md',
+    'drop-shadow-2xl',
+    'gradient-text',
+    'cupcake-text',
+    'hover-lift',
+    'shadow-3xl',
+    'shimmer',
+    'btn-primary',
+    'btn-secondary',
+    'focus-ring',
+    'hero-text'
+  ],
   theme: {
     extend: {
       fontFamily: {
