@@ -1,85 +1,237 @@
 ---
-import Logo from './Logo.astro';
+// Header component props
+interface Props {
+  // No props needed for this header
+}
+
+const { } = Astro.props;
 ---
 
-<header class="fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-xl shadow-2xl border-b border-cupcake-pink/30">
+<header id="main-header" class="fixed w-full z-50 transition-all duration-300 bg-gradient-to-b from-cupcake-coral/20 to-transparent backdrop-blur-md">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16 lg:h-20">
       <a href="/" class="flex items-center space-x-3 group">
-        <Logo />
+        <img
+          src="/Incr-EdibleCupCakes Logo.png"
+          alt="Incr-EdibleCupCakes Logo"
+          class="h-24 w-auto object-contain transform transition-all duration-300 group-hover:scale-105"
+          width="96"
+          height="96"
+        />
       </a>
 
-      <!-- Desktop Navigation -->
+      {/* Desktop Navigation */}
       <nav class="hidden md:flex items-center space-x-8">
         <a
           href="/"
-          class="relative font-quicksand font-bold transition-all duration-300 hover:scale-105 text-shadow-sm text-cupcake-coral shadow-rose-200"
+          class="relative font-quicksand font-bold transition-all duration-300 hover:scale-105 text-shadow-sm text-white/95 hover:text-white drop-shadow-md hover:drop-shadow-lg"
+          data-nav-item
         >
           Home
-          <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-cupcake-coral to-sunshine-400 rounded-full animate-pulse-glow" />
         </a>
         <a
           href="/recipes"
-          class="relative font-quicksand font-bold transition-all duration-300 hover:scale-105 text-shadow-sm text-gray-700 hover:text-cupcake-coral"
+          class="relative font-quicksand font-bold transition-all duration-300 hover:scale-105 text-shadow-sm text-white/95 hover:text-white drop-shadow-md hover:drop-shadow-lg"
+          data-nav-item
         >
           Recipes
         </a>
         <a
           href="/about"
-          class="relative font-quicksand font-bold transition-all duration-300 hover:scale-105 text-shadow-sm text-gray-700 hover:text-cupcake-coral"
+          class="relative font-quicksand font-bold transition-all duration-300 hover:scale-105 text-shadow-sm text-white/95 hover:text-white drop-shadow-md hover:drop-shadow-lg"
+          data-nav-item
         >
           About
         </a>
         <a
           href="/contact"
-          class="relative font-quicksand font-bold transition-all duration-300 hover:scale-105 text-shadow-sm text-gray-700 hover:text-cupcake-coral"
+          class="relative font-quicksand font-bold transition-all duration-300 hover:scale-105 text-shadow-sm text-white/95 hover:text-white drop-shadow-md hover:drop-shadow-lg"
+          data-nav-item
         >
           Contact
         </a>
-        <svg class="w-5 h-5 transition-colors duration-300 animate-pulse text-sunshine-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z" />
+        <svg class="w-5 h-5 transition-colors duration-300 animate-pulse text-sunshine-300 drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
         </svg>
       </nav>
 
-      <!-- Mobile Menu Button -->
+      {/* Mobile Menu Button */}
       <button
-        class="md:hidden p-2 rounded-md text-gray-700 hover:text-cupcake-coral hover:bg-cupcake-pink/20 transition-colors duration-300"
-        aria-label="Toggle menu"
+        id="mobile-menu-button"
+        class="md:hidden p-2 rounded-lg transition-all duration-300 text-white hover:bg-white/10 drop-shadow-lg"
       >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
         </svg>
       </button>
     </div>
 
-    <!-- Mobile Navigation -->
-    <div class="md:hidden">
-      <div class="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-xl rounded-lg shadow-lg mt-2">
+    {/* Mobile Navigation */}
+    <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-white/98 backdrop-blur-xl shadow-2xl border-t border-cupcake-pink/30 animate-fade-in-down hidden">
+      <nav class="px-4 py-4 space-y-3">
         <a
           href="/"
-          class="block px-3 py-2 rounded-md text-base font-medium text-cupcake-coral bg-cupcake-pink/10"
+          class="block py-3 px-4 rounded-xl font-quicksand font-bold transition-all duration-300 transform hover:scale-105 text-gray-700 hover:text-cupcake-coral hover:bg-gradient-to-r hover:from-cupcake-pink/20 hover:to-sunshine-100/50"
+          data-mobile-nav-item
         >
           Home
         </a>
         <a
           href="/recipes"
-          class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-cupcake-coral hover:bg-cupcake-pink/10 transition-colors duration-300"
+          class="block py-3 px-4 rounded-xl font-quicksand font-bold transition-all duration-300 transform hover:scale-105 text-gray-700 hover:text-cupcake-coral hover:bg-gradient-to-r hover:from-cupcake-pink/20 hover:to-sunshine-100/50"
+          data-mobile-nav-item
         >
           Recipes
         </a>
         <a
           href="/about"
-          class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-cupcake-coral hover:bg-cupcake-pink/10 transition-colors duration-300"
+          class="block py-3 px-4 rounded-xl font-quicksand font-bold transition-all duration-300 transform hover:scale-105 text-gray-700 hover:text-cupcake-coral hover:bg-gradient-to-r hover:from-cupcake-pink/20 hover:to-sunshine-100/50"
+          data-mobile-nav-item
         >
           About
         </a>
         <a
           href="/contact"
-          class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-cupcake-coral hover:bg-cupcake-pink/10 transition-colors duration-300"
+          class="block py-3 px-4 rounded-xl font-quicksand font-bold transition-all duration-300 transform hover:scale-105 text-gray-700 hover:text-cupcake-coral hover:bg-gradient-to-r hover:from-cupcake-pink/20 hover:to-sunshine-100/50"
+          data-mobile-nav-item
         >
           Contact
         </a>
-      </div>
+      </nav>
     </div>
   </div>
 </header>
+
+<script>
+  // Header scroll effects and mobile menu functionality
+  const header = document.getElementById('main-header');
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const navItems = document.querySelectorAll('[data-nav-item]');
+  const mobileNavItems = document.querySelectorAll('[data-mobile-nav-item]');
+
+  let isMenuOpen = false;
+  let isScrolled = false;
+
+  // Handle scroll effects
+  function handleScroll() {
+    const scrollY = window.scrollY;
+    const shouldBeScrolled = scrollY > 20;
+    
+    if (shouldBeScrolled !== isScrolled) {
+      isScrolled = shouldBeScrolled;
+      
+      if (isScrolled) {
+        header.classList.remove('bg-gradient-to-b', 'from-cupcake-coral/20', 'to-transparent', 'backdrop-blur-md');
+        header.classList.add('bg-white/95', 'backdrop-blur-xl', 'shadow-2xl', 'border-b', 'border-cupcake-pink/30');
+        
+        // Update nav items for scrolled state
+        navItems.forEach(item => {
+          item.classList.remove('text-white/95', 'hover:text-white', 'drop-shadow-md', 'hover:drop-shadow-lg');
+          item.classList.add('text-gray-700', 'hover:text-cupcake-coral');
+        });
+        
+        // Update mobile menu button for scrolled state
+        mobileMenuButton.classList.remove('text-white', 'hover:bg-white/10', 'drop-shadow-lg');
+        mobileMenuButton.classList.add('text-gray-700', 'hover:bg-cupcake-pink/20');
+        
+      } else {
+        header.classList.remove('bg-white/95', 'backdrop-blur-xl', 'shadow-2xl', 'border-b', 'border-cupcake-pink/30');
+        header.classList.add('bg-gradient-to-b', 'from-cupcake-coral/20', 'to-transparent', 'backdrop-blur-md');
+        
+        // Update nav items for normal state
+        navItems.forEach(item => {
+          item.classList.remove('text-gray-700', 'hover:text-cupcake-coral');
+          item.classList.add('text-white/95', 'hover:text-white', 'drop-shadow-md', 'hover:drop-shadow-lg');
+        });
+        
+        // Update mobile menu button for normal state
+        mobileMenuButton.classList.remove('text-gray-700', 'hover:bg-cupcake-pink/20');
+        mobileMenuButton.classList.add('text-white', 'hover:bg-white/10', 'drop-shadow-lg');
+      }
+    }
+  }
+
+  // Handle mobile menu toggle
+  function toggleMobileMenu() {
+    isMenuOpen = !isMenuOpen;
+    
+    if (isMenuOpen) {
+      mobileMenu.classList.remove('hidden');
+      menuIcon.classList.add('hidden');
+      closeIcon.classList.remove('hidden');
+    } else {
+      mobileMenu.classList.add('hidden');
+      menuIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    }
+  }
+
+  // Handle active nav item highlighting
+  function updateActiveNavItem() {
+    const currentPath = window.location.pathname;
+    
+    // Update desktop nav items
+    navItems.forEach(item => {
+      const href = item.getAttribute('href');
+      const isActive = href === currentPath || (currentPath === '/' && href === '/');
+      
+      if (isActive) {
+        item.classList.add('text-cupcake-coral', 'shadow-rose-200');
+        
+        // Add active indicator
+        if (!item.querySelector('.active-indicator')) {
+          const indicator = document.createElement('span');
+          indicator.className = 'active-indicator absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-cupcake-coral to-sunshine-400 rounded-full animate-pulse-glow';
+          item.appendChild(indicator);
+        }
+      } else {
+        item.classList.remove('text-cupcake-coral', 'shadow-rose-200');
+        const indicator = item.querySelector('.active-indicator');
+        if (indicator) {
+          indicator.remove();
+        }
+      }
+    });
+    
+    // Update mobile nav items
+    mobileNavItems.forEach(item => {
+      const href = item.getAttribute('href');
+      const isActive = href === currentPath || (currentPath === '/' && href === '/');
+      
+      if (isActive) {
+        item.classList.remove('text-gray-700', 'hover:text-cupcake-coral', 'hover:bg-gradient-to-r', 'hover:from-cupcake-pink/20', 'hover:to-sunshine-100/50');
+        item.classList.add('text-cupcake-coral', 'bg-gradient-to-r', 'from-cupcake-pink/20', 'to-sunshine-100/50', 'shadow-md');
+      } else {
+        item.classList.remove('text-cupcake-coral', 'bg-gradient-to-r', 'from-cupcake-pink/20', 'to-sunshine-100/50', 'shadow-md');
+        item.classList.add('text-gray-700', 'hover:text-cupcake-coral', 'hover:bg-gradient-to-r', 'hover:from-cupcake-pink/20', 'hover:to-sunshine-100/50');
+      }
+    });
+  }
+
+  // Close mobile menu when clicking on a nav item
+  mobileNavItems.forEach(item => {
+    item.addEventListener('click', () => {
+      isMenuOpen = false;
+      mobileMenu.classList.add('hidden');
+      menuIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    });
+  });
+
+  // Event listeners
+  window.addEventListener('scroll', handleScroll);
+  mobileMenuButton.addEventListener('click', toggleMobileMenu);
+  
+  // Initialize
+  handleScroll();
+  updateActiveNavItem();
+  
+  // Update active nav item on navigation
+  window.addEventListener('popstate', updateActiveNavItem);
+</script>

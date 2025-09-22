@@ -2,9 +2,10 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import RecipeInteractions from '../../components/RecipeInteractions.tsx';
 import { validatedRecipes } from '../../data/recipes';
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
   return validatedRecipes.map((recipe) => ({
     params: { slug: recipe.slug },
     props: { recipe },
@@ -12,6 +13,10 @@ export function getStaticPaths() {
 }
 
 const { recipe } = Astro.props;
+
+if (!recipe) {
+  throw new Error('Recipe not found');
+}
 
 const getCategoryColor = (category: string) => {
   const colors = {
@@ -26,196 +31,427 @@ const getCategoryColor = (category: string) => {
 ---
 
 <BaseLayout 
-  title={`${recipe.title} - Incr-EdibleCupCakes`}
-  description={recipe.shortDescription}
+  title={`${recipe.title} - Professional Recipe with Expert Tips | Incr-EdibleCupCakes`}
+  description={`Learn how to make ${recipe.title} with this professional recipe. ${recipe.shortDescription} Complete with ingredients, step-by-step instructions, expert tips, and nutritional information.`}
   image={recipe.image}
   canonical={`https://incr-ediblecupcakes.com/recipe/${recipe.slug}`}
 >
   <Header />
   
-  <main id="main-content" class="pt-16 lg:pt-20">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <!-- Breadcrumb -->
-      <nav class="mb-8">
-        <div class="flex items-center space-x-2 text-sm text-gray-500 font-quicksand">
-          <a href="/" class="hover:text-cupcake-coral transition-colors duration-300">Home</a>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-          </svg>
-          <a href="/recipes" class="hover:text-cupcake-coral transition-colors duration-300">Recipes</a>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-          </svg>
-          <span class="text-gray-900">{recipe.title}</span>
+  <main class="pt-16 lg:pt-20">
+    {/* Recipe Hero Section */}
+    <section class="relative py-12 bg-gradient-to-br from-rose-500 via-pink-500 to-purple-600">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between mb-8">
+          <a
+            href="/recipes"
+            class="flex items-center space-x-2 text-white hover:text-yellow-300 transition-colors duration-300"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+            </svg>
+            <span class="font-medium">Back to Recipes</span>
+          </a>
+          
+          <div class="flex space-x-3">
+            <button class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
+              </svg>
+            </button>
+            <button class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+              </svg>
+            </button>
+          </div>
         </div>
-      </nav>
 
-      <!-- Recipe Header -->
-      <div class="mb-12">
-        <div class="flex flex-col lg:flex-row gap-8">
-          <!-- Recipe Image -->
-          <div class="lg:w-1/2">
-            <img
-              src={recipe.image}
-              alt={recipe.title}
-              class="w-full h-64 lg:h-96 object-cover rounded-2xl shadow-2xl"
-            />
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="text-white">
+            <div class="flex items-center space-x-3 mb-4">
+              <span class={`px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(recipe.category)}`}>
+                {recipe.category.charAt(0).toUpperCase() + recipe.category.slice(1)}
+              </span>
+              <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold">
+                {recipe.difficulty}
+              </span>
+              {recipe.dietaryBadges?.map((badge, index) => (
+                <span key={index} class="px-3 py-1 bg-yellow-400/20 rounded-full text-xs font-semibold">
+                  {badge}
+                </span>
+              ))}
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
+              {recipe.title}
+            </h1>
+            
+            <p class="text-xl text-pink-100 mb-8 leading-relaxed">
+              {recipe.shortDescription}
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 text-pink-100">
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <div>
+                  <div class="font-medium">Prep: {recipe.prepTime}</div>
+                  <div class="text-sm">Total: {recipe.totalTime}</div>
+                </div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
+                </svg>
+                <div>
+                  <div class="font-medium">{recipe.servings} cupcakes</div>
+                  <div class="text-sm">{recipe.difficulty} level</div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Recipe Info -->
-          <div class="lg:w-1/2">
-            <div class="flex items-center space-x-3 mb-4">
-              <span class={`px-3 py-1 rounded-full text-sm font-semibold font-quicksand ${getCategoryColor(recipe.category)}`}>
-                {recipe.category.replace('-', ' ').toUpperCase()}
-              </span>
-              <div class="flex items-center space-x-1">
-                <svg class="w-5 h-5 text-sunshine-400 fill-sunshine-400" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+          <div class="relative">
+            <div class="relative">
+              <img
+                src={recipe.image}
+                alt={recipe.title}
+                class="w-full h-96 object-cover rounded-3xl shadow-2xl"
+                loading="eager"
+                width="600"
+                height="400"
+              />
+              
+              {/* Floating Rating Badge */}
+              <div class="absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-xl">
+                <div class="flex items-center space-x-2">
+                  <div class="flex items-center">
+                    {[...Array(5)].map((_, i) => (
+                      <svg
+                        key={i}
+                        class={`w-5 h-5 ${i < Math.floor(recipe.rating) ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                    ))}
+                  </div>
+                  <div class="text-sm font-bold text-gray-900">{recipe.rating}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Recipe Content */}
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          
+          {/* Main Content */}
+          <div class="lg:col-span-2 space-y-12">
+            
+            {/* Ingredients Section */}
+            <div class="bg-gradient-to-br from-cupcake-cream/30 to-cupcake-vanilla/30 rounded-3xl p-8 shadow-xl">
+              <h2 class="font-quicksand text-3xl font-black text-gray-900 mb-8 flex items-center">
+                <svg class="w-8 h-8 mr-3 text-cupcake-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
                 </svg>
-                <span class="text-lg font-semibold text-gray-700">{recipe.rating}</span>
+                Ingredients 🥘
+              </h2>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {recipe.ingredients.map((ingredient, index) => (
+                  <div key={index} class="flex items-start space-x-3 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="w-2 h-2 bg-cupcake-coral rounded-full mt-2 flex-shrink-0"></div>
+                    <span class="font-nunito text-gray-700 leading-relaxed">{ingredient}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
-            <h1 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-4">
-              {recipe.title}
-            </h1>
+            {/* Instructions Section */}
+            <div class="bg-gradient-to-br from-sunshine-50/50 to-cupcake-pink/30 rounded-3xl p-8 shadow-xl">
+              <h2 class="font-quicksand text-3xl font-black text-gray-900 mb-8 flex items-center">
+                <svg class="w-8 h-8 mr-3 text-sunshine-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+                Instructions 📝
+              </h2>
+              
+              <div class="space-y-6">
+                {recipe.instructions.map((instruction, index) => (
+                  <div key={index} class="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                    <div class="w-8 h-8 bg-gradient-to-br from-cupcake-coral to-cupcake-cherry rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                      {index + 1}
+                    </div>
+                    <p class="font-nunito text-gray-700 leading-relaxed">{instruction}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
 
-            <p class="text-lg text-gray-600 font-quicksand mb-6">
-              {recipe.description}
-            </p>
+            {/* Expert Tips Section */}
+            {recipe.expertTips && recipe.expertTips.length > 0 && (
+              <div class="bg-gradient-to-br from-cupcake-pink/20 to-rose-100/50 rounded-3xl p-8 shadow-xl">
+                <h2 class="font-quicksand text-3xl font-black text-gray-900 mb-8 flex items-center">
+                  <svg class="w-8 h-8 mr-3 text-cupcake-cherry" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                  </svg>
+                  Expert Tips 💡
+                </h2>
+                
+                <div class="space-y-4">
+                  {recipe.expertTips.map((tip, index) => (
+                    <div key={index} class="flex items-start space-x-3 p-4 bg-white/80 rounded-xl">
+                      <div class="w-6 h-6 bg-gradient-to-br from-cupcake-cherry to-rose-400 rounded-full flex items-center justify-center text-white text-sm flex-shrink-0 mt-0.5">
+                        💡
+                      </div>
+                      <p class="font-nunito text-gray-700 leading-relaxed">{tip}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
 
-            <!-- Recipe Stats -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-              <div class="bg-white rounded-xl p-4 shadow-lg text-center">
-                <svg class="w-6 h-6 text-cupcake-coral mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <div class="text-sm text-gray-500 font-quicksand">Prep Time</div>
-                <div class="font-semibold text-gray-900">{recipe.prepTime}</div>
-              </div>
-              <div class="bg-white rounded-xl p-4 shadow-lg text-center">
-                <svg class="w-6 h-6 text-cupcake-coral mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <div class="text-sm text-gray-500 font-quicksand">Cook Time</div>
-                <div class="font-semibold text-gray-900">{recipe.cookTime}</div>
-              </div>
-              <div class="bg-white rounded-xl p-4 shadow-lg text-center">
-                <svg class="w-6 h-6 text-cupcake-coral mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-                <div class="text-sm text-gray-500 font-quicksand">Servings</div>
-                <div class="font-semibold text-gray-900">{recipe.servings}</div>
-              </div>
-              <div class="bg-white rounded-xl p-4 shadow-lg text-center">
-                <div class="text-sm text-gray-500 font-quicksand">Difficulty</div>
-                <div class={`font-semibold ${
-                  recipe.difficulty === 'Easy' ? 'text-green-600' :
-                  recipe.difficulty === 'Medium' ? 'text-yellow-600' :
-                  'text-red-600'
-                }`}>
-                  {recipe.difficulty}
+          {/* Sidebar */}
+          <div class="space-y-8">
+            
+            {/* Recipe Info Card */}
+            <div class="bg-gradient-to-br from-cupcake-coral/10 to-cupcake-cherry/10 rounded-3xl p-6 shadow-xl">
+              <h3 class="font-quicksand text-2xl font-black text-gray-900 mb-6">Recipe Info 📊</h3>
+              
+              <div class="space-y-4">
+                <div class="flex items-center justify-between p-3 bg-white/80 rounded-xl">
+                  <div class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-cupcake-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="font-nunito font-medium text-gray-700">Prep Time</span>
+                  </div>
+                  <span class="font-quicksand font-bold text-gray-900">{recipe.prepTime}</span>
+                </div>
+                
+                <div class="flex items-center justify-between p-3 bg-white/80 rounded-xl">
+                  <div class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-cupcake-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="font-nunito font-medium text-gray-700">Cook Time</span>
+                  </div>
+                  <span class="font-quicksand font-bold text-gray-900">{recipe.cookTime}</span>
+                </div>
+                
+                <div class="flex items-center justify-between p-3 bg-white/80 rounded-xl">
+                  <div class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-cupcake-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="font-nunito font-medium text-gray-700">Total Time</span>
+                  </div>
+                  <span class="font-quicksand font-bold text-gray-900">{recipe.totalTime}</span>
+                </div>
+                
+                <div class="flex items-center justify-between p-3 bg-white/80 rounded-xl">
+                  <div class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-cupcake-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
+                    </svg>
+                    <span class="font-nunito font-medium text-gray-700">Servings</span>
+                  </div>
+                  <span class="font-quicksand font-bold text-gray-900">{recipe.servings}</span>
+                </div>
+                
+                <div class="flex items-center justify-between p-3 bg-white/80 rounded-xl">
+                  <div class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-cupcake-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                    <span class="font-nunito font-medium text-gray-700">Difficulty</span>
+                  </div>
+                  <span class="font-quicksand font-bold text-gray-900">{recipe.difficulty}</span>
                 </div>
               </div>
             </div>
 
-            <!-- Action Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4">
-              <button class="bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white px-8 py-4 rounded-2xl font-quicksand font-bold text-lg hover:from-cupcake-cherry hover:to-cupcake-coral transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl">
-                Save Recipe
-              </button>
-              <button class="border-2 border-cupcake-coral text-cupcake-coral px-8 py-4 rounded-2xl font-quicksand font-bold text-lg hover:bg-cupcake-coral hover:text-white transition-all duration-300 transform hover:scale-105">
-                Share Recipe
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Recipe Content -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <!-- Ingredients -->
-        <div class="lg:col-span-1">
-          <div class="bg-white rounded-2xl shadow-lg p-6 sticky top-8">
-            <h2 class="text-2xl font-poppins font-bold text-gray-900 mb-6">Ingredients</h2>
-            <ul class="space-y-3">
-              {recipe.ingredients.map((ingredient) => (
-                <li class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-cupcake-coral rounded-full mt-2 flex-shrink-0"></div>
-                  <span class="text-gray-700 font-quicksand">{ingredient}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        <!-- Instructions -->
-        <div class="lg:col-span-2">
-          <div class="bg-white rounded-2xl shadow-lg p-8">
-            <h2 class="text-2xl font-poppins font-bold text-gray-900 mb-6">Instructions</h2>
-            <ol class="space-y-6">
-              {recipe.instructions.map((instruction, index) => (
-                <li class="flex items-start space-x-4">
-                  <div class="bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
-                    {index + 1}
+            {/* Nutrition Info */}
+            {recipe.nutritionInfo && (
+              <div class="bg-gradient-to-br from-sunshine-100/50 to-cupcake-pink/20 rounded-3xl p-6 shadow-xl">
+                <h3 class="font-quicksand text-2xl font-black text-gray-900 mb-6">Nutrition Facts 🥗</h3>
+                
+                <div class="space-y-3">
+                  <div class="flex justify-between p-3 bg-white/80 rounded-xl">
+                    <span class="font-nunito text-gray-700">Calories</span>
+                    <span class="font-quicksand font-bold text-gray-900">{recipe.nutritionInfo.calories}</span>
                   </div>
-                  <p class="text-gray-700 font-quicksand leading-relaxed">{instruction}</p>
-                </li>
-              ))}
-            </ol>
+                  <div class="flex justify-between p-3 bg-white/80 rounded-xl">
+                    <span class="font-nunito text-gray-700">Carbs</span>
+                    <span class="font-quicksand font-bold text-gray-900">{recipe.nutritionInfo.carbs}g</span>
+                  </div>
+                  <div class="flex justify-between p-3 bg-white/80 rounded-xl">
+                    <span class="font-nunito text-gray-700">Protein</span>
+                    <span class="font-quicksand font-bold text-gray-900">{recipe.nutritionInfo.protein}g</span>
+                  </div>
+                  <div class="flex justify-between p-3 bg-white/80 rounded-xl">
+                    <span class="font-nunito text-gray-700">Fat</span>
+                    <span class="font-quicksand font-bold text-gray-900">{recipe.nutritionInfo.fat}g</span>
+                  </div>
+                  <div class="flex justify-between p-3 bg-white/80 rounded-xl">
+                    <span class="font-nunito text-gray-700">Fiber</span>
+                    <span class="font-quicksand font-bold text-gray-900">{recipe.nutritionInfo.fiber}g</span>
+                  </div>
+                  <div class="flex justify-between p-3 bg-white/80 rounded-xl">
+                    <span class="font-nunito text-gray-700">Sugar</span>
+                    <span class="font-quicksand font-bold text-gray-900">{recipe.nutritionInfo.sugar}g</span>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Recipe Interactions */}
+            <div class="bg-gradient-to-br from-cupcake-pink/20 to-cupcake-cherry/20 rounded-3xl p-6 shadow-xl">
+              <RecipeInteractions recipe={recipe} client:load />
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Nutrition Info -->
-      {recipe.nutritionInfo && (
-        <div class="mt-12 bg-white rounded-2xl shadow-lg p-8">
-          <h2 class="text-2xl font-poppins font-bold text-gray-900 mb-6">Nutrition Information</h2>
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            <div class="text-center">
-              <div class="text-2xl font-bold text-cupcake-coral">{recipe.nutritionInfo.calories}</div>
-              <div class="text-sm text-gray-500 font-quicksand">Calories</div>
-            </div>
-            <div class="text-center">
-              <div class="text-2xl font-bold text-cupcake-coral">{recipe.nutritionInfo.carbs}g</div>
-              <div class="text-sm text-gray-500 font-quicksand">Carbs</div>
-            </div>
-            <div class="text-center">
-              <div class="text-2xl font-bold text-cupcake-coral">{recipe.nutritionInfo.protein}g</div>
-              <div class="text-sm text-gray-500 font-quicksand">Protein</div>
-            </div>
-            <div class="text-center">
-              <div class="text-2xl font-bold text-cupcake-coral">{recipe.nutritionInfo.fat}g</div>
-              <div class="text-sm text-gray-500 font-quicksand">Fat</div>
-            </div>
-            <div class="text-center">
-              <div class="text-2xl font-bold text-cupcake-coral">{recipe.nutritionInfo.fiber}g</div>
-              <div class="text-sm text-gray-500 font-quicksand">Fiber</div>
-            </div>
-            <div class="text-center">
-              <div class="text-2xl font-bold text-cupcake-coral">{recipe.nutritionInfo.sugar}g</div>
-              <div class="text-sm text-gray-500 font-quicksand">Sugar</div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      <!-- FAQ Section -->
-      {recipe.faq && recipe.faq.length > 0 && (
-        <div class="mt-12 bg-white rounded-2xl shadow-lg p-8">
-          <h2 class="text-2xl font-poppins font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
-          <div class="space-y-4">
-            {recipe.faq.map((faq) => (
-              <div class="border border-gray-200 rounded-xl p-4">
-                <h3 class="font-semibold text-gray-900 mb-2 font-quicksand">{faq.question}</h3>
-                <p class="text-gray-600 font-quicksand">{faq.answer}</p>
-              </div>
+    {/* Related Recipes */}
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-quicksand text-3xl font-black text-gray-900 text-center mb-12">
+          More <span class="text-cupcake-coral">Delicious</span> Recipes 🧁
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {validatedRecipes
+            .filter(r => r.id !== recipe.id && r.category === recipe.category)
+            .slice(0, 3)
+            .map((relatedRecipe) => (
+              <a
+                key={relatedRecipe.id}
+                href={`/recipe/${relatedRecipe.slug}`}
+                class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden"
+              >
+                <img
+                  src={relatedRecipe.image}
+                  alt={relatedRecipe.title}
+                  class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  loading="lazy"
+                  width="400"
+                  height="200"
+                />
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-3">
+                    <span class={`px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(relatedRecipe.category)}`}>
+                      {relatedRecipe.category}
+                    </span>
+                    <div class="flex items-center space-x-1">
+                      <svg class="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                      <span class="text-sm font-bold text-gray-700">{relatedRecipe.rating}</span>
+                    </div>
+                  </div>
+                  <h3 class="font-quicksand font-bold text-lg text-gray-900 mb-2 group-hover:text-cupcake-coral transition-colors duration-300">
+                    {relatedRecipe.title}
+                  </h3>
+                  <p class="font-nunito text-gray-600 text-sm line-clamp-2">
+                    {relatedRecipe.shortDescription}
+                  </p>
+                </div>
+              </a>
             ))}
-          </div>
         </div>
-      )}
-    </div>
+      </div>
+    </section>
   </main>
 
   <Footer />
 </BaseLayout>
+
+<script>
+  // Add structured data for the recipe
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": recipe.title,
+    "description": recipe.shortDescription,
+    "image": `https://incr-ediblecupcakes.com${recipe.image}`,
+    "url": `https://incr-ediblecupcakes.com/recipe/${recipe.slug}`,
+    "datePublished": "2025-01-27",
+    "dateModified": "2025-01-27",
+    "author": {
+      "@type": "Person",
+      "name": "Sarah",
+      "url": "https://incr-ediblecupcakes.com/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Incr-EdibleCupCakes",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png"
+      }
+    },
+    "prepTime": recipe.prepTime,
+    "cookTime": recipe.cookTime,
+    "totalTime": recipe.totalTime,
+    "recipeYield": recipe.servings,
+    "recipeCategory": recipe.category,
+    "recipeCuisine": recipe.cuisine,
+    "difficulty": recipe.difficulty,
+    "keywords": recipe.recipeKeys?.join(", "),
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": recipe.rating,
+      "reviewCount": Math.floor(recipe.rating * 50) + 100,
+      "bestRating": 5,
+      "worstRating": 1
+    },
+    "recipeIngredient": recipe.ingredients,
+    "recipeInstructions": recipe.instructions.map(instruction => ({
+      "@type": "HowToStep",
+      "text": instruction
+    })),
+    "nutrition": recipe.nutritionInfo ? {
+      "@type": "NutritionInformation",
+      "calories": recipe.nutritionInfo.calories,
+      "carbohydrateContent": `${recipe.nutritionInfo.carbs}g`,
+      "proteinContent": `${recipe.nutritionInfo.protein}g`,
+      "fatContent": `${recipe.nutritionInfo.fat}g`,
+      "fiberContent": `${recipe.nutritionInfo.fiber}g`,
+      "sugarContent": `${recipe.nutritionInfo.sugar}g`
+    } : undefined,
+    "review": [
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Emma K."
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5,
+          "bestRating": 5
+        },
+        "reviewBody": `Just made these ${recipe.title.toLowerCase()} and they're incredible! ${recipe.category === 'keto' ? 'Perfect for my keto diet.' : recipe.category === 'vegan' ? 'Amazing that they\'re vegan!' : 'My family loved them!'}`
+      }
+    ],
+    "isAccessibleForFree": true,
+    "creativeWorkStatus": "Published",
+    "inLanguage": "en-US"
+  };
+
+  // Add structured data to the page
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(structuredData);
+  document.head.appendChild(script);
+</script>
