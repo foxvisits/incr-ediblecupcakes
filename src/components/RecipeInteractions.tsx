@@ -140,6 +140,7 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
                 ? 'bg-rose-500 text-white shadow-lg' 
                 : 'bg-gray-100 text-gray-700 hover:bg-rose-50 hover:text-rose-600'
             }`}
+            aria-label={isLiked ? 'Unlike this recipe' : 'Like this recipe'}
           >
             <Heart className={`w-5 h-5 ${isLiked ? 'fill-current' : ''}`} />
             <span className="font-medium">{likes}</span>
@@ -152,6 +153,7 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
                 ? 'bg-sunshine-400 text-white shadow-lg' 
                 : 'bg-gray-100 text-gray-700 hover:bg-sunshine-100/50 hover:text-sunshine-600'
             }`}
+            aria-label={isBookmarked ? 'Remove from bookmarks' : 'Bookmark this recipe'}
           >
             <Bookmark className={`w-5 h-5 ${isBookmarked ? 'fill-current' : ''}`} />
             <span className="font-medium">{bookmarks}</span>
@@ -160,6 +162,7 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
           <button
             onClick={handleShare}
             className="font-quicksand flex items-center space-x-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-sprinkle-blue/20 hover:text-sprinkle-blue transition-all duration-300 transform hover:scale-105"
+            aria-label="Share this recipe"
           >
             <Share2 className="w-5 h-5" />
             <span className="font-medium">Share</span>
@@ -169,6 +172,8 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
         <button
           onClick={() => setShowComments(!showComments)}
           className="font-quicksand flex items-center space-x-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition-all duration-300"
+          aria-label={`${showComments ? 'Hide' : 'Show'} comments`}
+          aria-expanded={showComments}
         >
           <MessageCircle className="w-5 h-5" />
           <span className="font-medium">{comments.length} Comments</span>

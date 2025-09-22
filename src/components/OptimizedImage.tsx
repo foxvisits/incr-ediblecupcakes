@@ -45,12 +45,17 @@ export default function OptimizedImage({
   // Generowanie srcSet dla różnych rozmiarów i formatów
   const generateSrcSet = (imagePath: string) => {
     const sizes = [320, 640, 960, 1280];
-    const formats = ['webp', 'jpg'];
     
-    return formats.map(format => 
-      sizes.map(size => 
-        `${imagePath}?w=${size}&fm=${format} ${size}w`
-      ).join(', ')
+    // Sprawdź czy obrazek już ma parametry (np. z Cloudinary)
+    if (imagePath.includes('?')) {
+      return sizes.map(size => 
+        `${imagePath}&w=${size}&fm=webp ${size}w`
+      ).join(', ');
+    }
+    
+    // Dla lokalnych obrazków, generuj różne formaty
+    return sizes.map(size => 
+      `${imagePath}?w=${size}&fm=webp ${size}w`
     ).join(', ');
   };
 

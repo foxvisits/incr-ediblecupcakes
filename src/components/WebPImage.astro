@@ -1,0 +1,54 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  className?: string;
+  width?: number;
+  height?: number;
+  priority?: boolean;
+  sizes?: string;
+}
+
+const { 
+  src, 
+  alt, 
+  className = '', 
+  width, 
+  height, 
+  priority = false,
+  sizes = "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+} = Astro.props;
+
+// Generowanie srcSet dla WebP
+const generateSrcSet = (imagePath: string) => {
+  const sizes = [320, 640, 960, 1280, 1920];
+  
+  return sizes.map(size => 
+    `${imagePath}?w=${size}&fm=webp ${size}w`
+  ).join(', ');
+};
+
+// Fallback dla starszych przeglądarek
+const fallbackSrc = src.includes('?') ? `${src}&fm=jpg` : `${src}?fm=jpg`;
+---
+
+<picture>
+  <!-- WebP format dla nowoczesnych przeglądarek -->
+  <source 
+    srcset={generateSrcSet(src)} 
+    sizes={sizes}
+    type="image/webp"
+  />
+  
+  <!-- Fallback JPEG -->
+  <img
+    src={fallbackSrc}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={priority ? 'eager' : 'lazy'}
+    decoding="async"
+    class={`transition-opacity duration-300 ${className}`}
+    style={width && height ? `aspect-ratio: ${width}/${height}` : undefined}
+  />
+</picture>

@@ -1,0 +1,28 @@
+---
+interface Props {
+  src?: string;
+  inline?: string;
+  defer?: boolean;
+  async?: boolean;
+}
+
+const { src, inline, defer = true, async = false } = Astro.props;
+---
+
+{src && (
+  <script 
+    src={src} 
+    defer={defer} 
+    async={async}
+    type="text/javascript"
+  ></script>
+)}
+
+{inline && (
+  <script 
+    defer={defer} 
+    async={async}
+    type="text/javascript"
+    set:html={inline}
+  ></script>
+)}

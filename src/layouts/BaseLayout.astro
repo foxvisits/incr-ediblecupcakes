@@ -70,10 +70,26 @@ const siteTitle = title.includes('Incr-EdibleCupCakes') ? title : `${title} - In
     <!-- Canonical URL -->
     <link rel="canonical" href={canonical} />
     
-    <!-- Preconnects / Fonts -->
+    <!-- Critical CSS - Inlined for performance -->
+    <style>
+      /* Critical above-the-fold styles */
+      body { margin: 0; font-family: 'Nunito', sans-serif; background: linear-gradient(135deg, #fdf2f8 0%, #fed7aa 100%); min-height: 100vh; }
+      .header-container { background: linear-gradient(135deg, #ec4899 0%, #f97316 100%); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); position: relative; z-index: 50; }
+      .hero-gradient { background: linear-gradient(135deg, #fdf2f8 0%, #fed7aa 100%); min-height: 80vh; }
+      .btn-primary { background: linear-gradient(135deg, #ec4899 0%, #f97316 100%); color: white; padding: 0.75rem 1.5rem; border-radius: 0.75rem; font-weight: 600; text-decoration: none; display: inline-block; transition: transform 0.2s ease; }
+      .btn-primary:hover { transform: translateY(-2px); }
+      .text-shadow-sm { text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+      @media (max-width: 768px) { .hero-gradient { min-height: 60vh; } }
+    </style>
+
+    <!-- Preconnects / Fonts - Optimized for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"></noscript>
+    <!-- Non-critical fonts loaded asynchronously -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&family=Poppins:wght@300;500;800;900&family=Nunito:wght@300;500;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     
     <!-- Preconnect to external domains for performance -->
     <link rel="preconnect" href="https://images.pexels.com">
@@ -134,6 +150,34 @@ const siteTitle = title.includes('Incr-EdibleCupCakes') ? title : `${title} - In
       </a>
       <slot />
     </div>
+    
+    <!-- Deferred JavaScript for performance -->
+    <script>
+      // Critical performance optimizations
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => console.log('SW registered'))
+            .catch(error => console.log('SW registration failed'));
+        });
+      }
+      
+      // Preload next page on hover
+      document.addEventListener('DOMContentLoaded', () => {
+        const links = document.querySelectorAll('a[href^="/"]');
+        links.forEach(link => {
+          link.addEventListener('mouseenter', () => {
+            const href = link.getAttribute('href');
+            if (href && !href.includes('#')) {
+              const linkEl = document.createElement('link');
+              linkEl.rel = 'prefetch';
+              linkEl.href = href;
+              document.head.appendChild(linkEl);
+            }
+          });
+        });
+      });
+    </script>
     
     <!-- Global Schema.org JSON-LD -->
     <script type="application/ld+json">
