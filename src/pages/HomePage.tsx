@@ -222,8 +222,11 @@ const HomePage = () => {
                 <div className="relative z-10 bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
                   <img
                     src="/A vibrant, mouth-watering cupcake scene.png"
-                    alt="Delicious cupcakes showcase"
+                    alt="Delicious cupcakes showcase - various types of cupcakes on colorful background"
                     className="w-full h-80 object-cover rounded-2xl shadow-xl"
+                    loading="eager"
+                    width={400}
+                    height={320}
                   />
                   
                   {/* Floating Recipe Cards */}

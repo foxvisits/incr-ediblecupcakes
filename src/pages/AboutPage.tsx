@@ -101,8 +101,11 @@ const AboutPage = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-rose-400 rounded-full animate-pulse" />
                 <img
                   src="/Sarah.png"
-                  alt="Sarah - The baker behind Incr-EdibleCupCakes"
+                  alt="Sarah - professional baker and recipe developer behind Incr-EdibleCupCakes"
                   className="relative z-10 w-full h-full object-cover rounded-full border-4 border-white/20 shadow-2xl"
+                  loading="eager"
+                  width={320}
+                  height={320}
                 />
                 <div className="absolute -top-4 -right-4 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg animate-bounce">
                   <Heart className="w-8 h-8 text-cupcake-coral" />
@@ -127,8 +130,11 @@ const AboutPage = () => {
               <div className="md:w-1/2">
                 <img
                   src="/Where It All Began.jpg"
-                  alt="Baking in grandmother's kitchen"
+                  alt="Baking in grandmother's kitchen - traditional place where Sarah learned to bake cupcakes"
                   className="w-full h-64 object-cover rounded-2xl shadow-lg"
+                  loading="lazy"
+                  width={400}
+                  height={256}
                 />
               </div>
               <div className="md:w-1/2">
@@ -146,8 +152,11 @@ const AboutPage = () => {
               <div className="md:w-1/2">
                 <img
                   src="/Professional Training.jpg"
-                  alt="Culinary school graduation"
+                  alt="Professional culinary training - Sarah during her studies at Le Cordon Bleu"
                   className="w-full h-64 object-cover rounded-2xl shadow-lg"
+                  loading="lazy"
+                  width={400}
+                  height={256}
                 />
               </div>
               <div className="md:w-1/2">
@@ -164,8 +173,11 @@ const AboutPage = () => {
               <div className="md:w-1/2">
                 <img
                   src="/Innovation in Every Bite.jpg"
-                  alt="Modern baking studio"
+                  alt="Modern baking studio - place where Sarah creates innovative cupcake recipes"
                   className="w-full h-64 object-cover rounded-2xl shadow-lg"
+                  loading="lazy"
+                  width={400}
+                  height={256}
                 />
               </div>
               <div className="md:w-1/2">

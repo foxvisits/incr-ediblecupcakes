@@ -29,38 +29,6 @@ const ContactPage = () => {
   return (
     <div className="pt-16 lg:pt-20">
       <Helmet>
-        <title>Contact Sarah - Incr-EdibleCupCakes</title>
-        <meta name="description" content="Get in touch with Sarah for custom cupcake orders, baking consultations, or recipe questions. Professional baker available for events and special occasions." />
-        <meta name="keywords" content="contact baker, custom cupcakes, baking consultation, recipe questions, cupcake orders" />
-        <link rel="canonical" href="https://incr-ediblecupcakes.com/contact" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Contact Sarah - Incr-EdibleCupCakes" />
-        <meta property="og:description" content="Get in touch with Sarah for custom cupcake orders, baking consultations, or recipe questions." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://incr-ediblecupcakes.com/contact" />
-        
-        {/* Schema.org JSON-LD */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ContactPage",
-            "name": "Contact Sarah",
-            "description": "Get in touch with Sarah for custom cupcake orders, baking consultations, or recipe questions",
-            "url": "https://incr-ediblecupcakes.com/contact",
-            "mainEntity": {
-              "@type": "Organization",
-              "name": "Incr-EdibleCupCakes",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "customer service",
-                "availableLanguage": ["English"]
-              }
-            }
-          })}
-        </script>
-      </Helmet>
-      <Helmet>
         <title>Contact Sarah - Professional Baker | Incr-EdibleCupCakes</title>
         <meta name="description" content="Get in touch with Sarah for baking questions, recipe help, workshop information, or collaboration opportunities. Professional baker available for consultations and custom recipe development." />
         <meta name="keywords" content="contact baker, baking questions, recipe help, baking workshops, collaboration, custom recipes, professional baker consultation" />

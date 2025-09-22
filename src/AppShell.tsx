@@ -53,9 +53,10 @@ export default function AppShell() {
         <meta name="theme-color" content="#f43f5e" />
         
         {/* Favicon and App Icons */}
-        <link rel="icon" type="image/png" sizes="32x32" href="/Incr-EdibleCupCakes Logo.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/Incr-EdibleCupCakes Logo.png" />
-        <link rel="apple-touch-icon" href="/Incr-EdibleCupCakes Logo.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon-192.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/icon-192.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/icon-192.png" />
+        <link rel="shortcut icon" href="/icon-192.png" />
         <link rel="manifest" href="/manifest.json" />
         
         {/* Global Schema.org JSON-LD */}
@@ -91,7 +92,8 @@ export default function AppShell() {
             },
             "address": {
               "@type": "PostalAddress",
-              "addressCountry": "PL"
+              "addressCountry": "US",
+              "addressLocality": "Portland, Oregon"
             },
             "sameAs": [
               "https://instagram.com/incrediblecupcakes",

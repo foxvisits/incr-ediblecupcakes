@@ -219,8 +219,11 @@ const RecipePage = () => {
             <div className="relative">
               <img
                 src={recipe.image}
-                alt={recipe.title}
+                alt={`${recipe.title} - professional ${recipe.category} cupcake recipe`}
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
+                loading="eager"
+                width={600}
+                height={384}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl" />
             </div>
@@ -470,8 +473,11 @@ const RecipePage = () => {
                 >
                   <img
                     src={relatedRecipe.image}
-                    alt={relatedRecipe.title}
+                    alt={`${relatedRecipe.title} - ${relatedRecipe.category} cupcake recipe`}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    width={300}
+                    height={192}
                   />
                   <div className="p-4">
                     <h3 className="font-semibold text-gray-900 group-hover:text-rose-600 transition-colors duration-300">

@@ -23,5 +23,8 @@
   ],
   "categories": ["food", "lifestyle", "education"],
   "lang": "en-US",
-  "dir": "ltr"
+  "dir": "ltr",
+  "scope": "/",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "prefer_related_applications": false
 }
