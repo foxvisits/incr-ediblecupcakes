@@ -3,15 +3,18 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import RecipeCard from '../../components/RecipeCard.tsx';
+import ClientOnly from '../../components/ClientOnly.tsx';
 import { validatedRecipes } from '../../data/recipes';
 
+const recipes = validatedRecipes;
+
 const categories = [
-  { id: 'all', name: 'All Recipes', count: validatedRecipes.length },
-  { id: 'classic', name: 'Classic', count: validatedRecipes.filter(r => r.category === 'classic').length },
-  { id: 'keto', name: 'Keto', count: validatedRecipes.filter(r => r.category === 'keto').length },
-  { id: 'vegan', name: 'Vegan', count: validatedRecipes.filter(r => r.category === 'vegan').length },
-  { id: 'nut-free', name: 'Nut-Free', count: validatedRecipes.filter(r => r.category === 'nut-free').length },
-  { id: 'gluten-free', name: 'Gluten-Free', count: validatedRecipes.filter(r => r.category === 'gluten-free').length },
+  { id: 'all', name: 'All Recipes', count: recipes.length },
+  { id: 'classic', name: 'Classic', count: recipes.filter(r => r.category === 'classic').length },
+  { id: 'keto', name: 'Keto', count: recipes.filter(r => r.category === 'keto').length },
+  { id: 'vegan', name: 'Vegan', count: recipes.filter(r => r.category === 'vegan').length },
+  { id: 'nut-free', name: 'Nut-Free', count: recipes.filter(r => r.category === 'nut-free').length },
+  { id: 'gluten-free', name: 'Gluten-Free', count: recipes.filter(r => r.category === 'gluten-free').length },
 ];
 
 const difficulties = [
@@ -20,60 +23,197 @@ const difficulties = [
   { id: 'Medium', name: 'Medium' },
   { id: 'Hard', name: 'Hard' },
 ];
+
+// For static rendering, we'll show all recipes
+// Client-side filtering will be added later
+const filteredRecipes = recipes;
 ---
 
 <BaseLayout 
-  title="All Cupcake Recipes - Incr-EdibleCupCakes"
-  description="Browse our complete collection of cupcake recipes including classic, keto, vegan, gluten-free, and nut-free options. Find the perfect recipe for your dietary needs."
+  title="Complete Cupcake Recipe Collection - All Dietary Options | Incr-EdibleCupCakes"
+  description={`Browse our complete collection of ${recipes.length}+ extraordinary cupcake recipes including keto, vegan, nut-free, gluten-free, and classic options. Professional tested recipes with step-by-step instructions and beautiful photos.`}
+  image="/A vibrant, mouth-watering cupcake scene.png"
   canonical="https://incr-ediblecupcakes.com/recipes"
 >
   <Header />
   
-  <main id="main-content" class="pt-16 lg:pt-20">
-    <!-- Hero Section -->
-    <section class="py-12 lg:py-16 bg-gradient-to-br from-cupcake-coral/10 via-sunshine-400/10 to-cupcake-cherry/10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <h1 class="text-3xl md:text-4xl lg:text-5xl font-poppins font-bold text-gray-900 mb-4">
-            All Cupcake Recipes
-          </h1>
-          <p class="text-lg text-gray-600 font-quicksand max-w-2xl mx-auto">
-            Discover our complete collection of extraordinary cupcake recipes. Filter by category, 
-            difficulty, or search for your perfect treat.
-          </p>
-        </div>
+  <main class="pt-16 lg:pt-20">
+    {/* Hero Section */}
+    <section class="relative py-20 bg-gradient-to-br from-cupcake-coral via-sunshine-400 to-cupcake-cherry overflow-hidden">
+      <div class="absolute inset-0">
+        <ClientOnly client:load>
+          <>
+          {[...Array(15)].map((_, i) => (
+            <div
+              key={i}
+              class="absolute animate-float-random opacity-20"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${i * 0.2}s`,
+                animationDuration: `${5 + i * 0.3}s`,
+              }}
+            >
+              {i % 4 === 0 ? '🧁' : i % 4 === 1 ? '🍰' : i % 4 === 2 ? '🎂' : '📖'}
+            </div>
+          ))}
+          </>
+        </ClientOnly>
       </div>
-    </section>
 
-    <!-- Filters Section -->
-    <section class="py-8 bg-white border-b border-gray-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-wrap gap-4 justify-center">
-          <!-- Category Filter -->
-          <div class="flex flex-wrap gap-2">
-            {categories.map((category) => (
-              <button
-                class={`px-4 py-2 rounded-full font-quicksand font-semibold text-sm transition-all duration-300 ${
-                  category.id === 'all' 
-                    ? 'bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white shadow-lg' 
-                    : 'bg-gray-100 text-gray-700 hover:bg-cupcake-pink/20 hover:text-cupcake-coral'
-                }`}
-                data-category={category.id}
-              >
-                {category.name} ({category.count})
-              </button>
-            ))}
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="font-quicksand text-4xl sm:text-6xl font-black text-white mb-6 leading-tight drop-shadow-2xl">
+          Recipe <span class="text-sunshine-300 animate-gradient-text">Collection</span>
+        </h1>
+        <p class="font-nunito text-xl text-pink-100 mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
+          Explore our complete library of extraordinary cupcake recipes, each crafted with love and tested to perfection. 
+          From classic favorites to innovative dietary alternatives.
+        </p>
+        <div class="flex items-center justify-center space-x-6 text-pink-100">
+          <div class="flex items-center space-x-2">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+            <span class="font-quicksand font-bold">{recipes.length}+ Recipes</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+            <span class="font-quicksand font-bold">10K+ Favorites</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <svg class="w-6 h-6 fill-current text-sunshine-300" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <span class="font-quicksand font-bold">4.9 Rating</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Recipes Grid -->
-    <section class="py-12 lg:py-16">
+    {/* Search and Filters */}
+    <section class="py-12 bg-white border-b border-gray-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {validatedRecipes.map((recipe) => (
-            <RecipeCard recipe={recipe} client:load />
+        <div class="flex flex-col lg:flex-row gap-6 items-center">
+          {/* Search Bar */}
+          <div class="relative flex-1 max-w-md">
+            <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+            <input
+              type="text"
+              placeholder="Search recipes..."
+              id="search-input"
+              class="font-nunito w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cupcake-coral focus:border-transparent transition-all duration-300"
+            />
+          </div>
+
+          {/* Category Filter */}
+          <div class="flex items-center space-x-2">
+            <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.707A1 1 0 013 7V4z"/>
+            </svg>
+            <select
+              id="category-filter"
+              class="font-nunito px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cupcake-coral focus:border-transparent transition-all duration-300"
+            >
+              {categories.map(category => (
+                <option key={category.id} value={category.id}>
+                  {category.name} ({category.count})
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Difficulty Filter */}
+          <div>
+            <select
+              id="difficulty-filter"
+              class="font-nunito px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cupcake-coral focus:border-transparent transition-all duration-300"
+            >
+              {difficulties.map(difficulty => (
+                <option key={difficulty.id} value={difficulty.id}>
+                  {difficulty.name}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+
+        {/* Results Count */}
+        <div class="mt-6 text-center">
+          <p class="font-nunito text-gray-600">
+            Showing <span class="font-bold text-cupcake-coral" id="results-count">{filteredRecipes.length}</span> recipes
+            <span id="search-term-display" class="hidden"> for "<span class="font-bold" id="search-term-text"></span>"</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* Recipe Grid */}
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div id="recipe-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredRecipes.map((recipe, index) => (
+            <div
+              key={recipe.id}
+              class="animate-fade-in-up"
+              style={`animation-delay: ${index * 100}ms`}
+              data-recipe-id={recipe.id}
+              data-recipe-title={recipe.title.toLowerCase()}
+              data-recipe-description={recipe.description.toLowerCase()}
+              data-recipe-category={recipe.category}
+              data-recipe-difficulty={recipe.difficulty}
+            >
+              <RecipeCard recipe={recipe} client:load />
+            </div>
+          ))}
+        </div>
+        
+        {/* No Results Message */}
+        <div id="no-results" class="hidden text-center py-16">
+          <div class="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-quicksand text-2xl font-black text-gray-900 mb-4">No recipes found</h3>
+          <p class="font-nunito text-gray-600 mb-6">
+            Try adjusting your search terms or filters to find what you're looking for.
+          </p>
+          <button
+            id="clear-filters"
+            class="font-quicksand px-6 py-3 bg-cupcake-coral text-white rounded-xl hover:bg-cupcake-cherry transition-colors duration-300 font-bold"
+          >
+            Clear Filters
+          </button>
+        </div>
+      </div>
+    </section>
+
+    {/* Featured Categories */}
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-quicksand text-3xl font-black text-gray-900 text-center mb-12">
+          Browse by <span class="text-cupcake-coral">Category</span>
+        </h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          {categories.slice(1).map(category => (
+            <a
+              key={category.id}
+              href={`/categories/${category.id}`}
+              class="group bg-gradient-to-br from-cupcake-pink/20 to-sunshine-100/50 rounded-2xl p-6 text-center hover:from-cupcake-pink/30 hover:to-sunshine-200/60 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+            >
+              <div class="w-16 h-16 bg-gradient-to-br from-cupcake-coral to-sunshine-400 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                </svg>
+              </div>
+              <h3 class="font-quicksand font-bold text-gray-900 mb-2">{category.name}</h3>
+              <p class="font-nunito text-sm text-gray-600">{category.count} recipes</p>
+            </a>
           ))}
         </div>
       </div>
@@ -81,41 +221,76 @@ const difficulties = [
   </main>
 
   <Footer />
-
-  <script>
-    // Client-side filtering logic
-    document.addEventListener('DOMContentLoaded', function() {
-      const categoryButtons = document.querySelectorAll('[data-category]');
-      const recipeCards = document.querySelectorAll('[data-recipe-category]');
-      
-      categoryButtons.forEach(button => {
-        button.addEventListener('click', function() {
-          const selectedCategory = this.dataset.category;
-          
-          // Update active button
-          categoryButtons.forEach(btn => {
-            btn.className = btn.className.replace(
-              'bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white shadow-lg',
-              'bg-gray-100 text-gray-700 hover:bg-cupcake-pink/20 hover:text-cupcake-coral'
-            );
-          });
-          
-          this.className = this.className.replace(
-            'bg-gray-100 text-gray-700 hover:bg-cupcake-pink/20 hover:text-cupcake-coral',
-            'bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white shadow-lg'
-          );
-          
-          // Filter recipes
-          recipeCards.forEach(card => {
-            const recipeCategory = card.dataset.recipeCategory;
-            if (selectedCategory === 'all' || recipeCategory === selectedCategory) {
-              card.style.display = 'block';
-            } else {
-              card.style.display = 'none';
-            }
-          });
-        });
-      });
-    });
-  </script>
 </BaseLayout>
+
+<script>
+  // Client-side filtering functionality
+  const searchInput = document.getElementById('search-input');
+  const categoryFilter = document.getElementById('category-filter');
+  const difficultyFilter = document.getElementById('difficulty-filter');
+  const resultsCount = document.getElementById('results-count');
+  const searchTermDisplay = document.getElementById('search-term-display');
+  const searchTermText = document.getElementById('search-term-text');
+  const recipeGrid = document.getElementById('recipe-grid');
+  const noResults = document.getElementById('no-results');
+  const clearFilters = document.getElementById('clear-filters');
+
+  function filterRecipes() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const selectedCategory = categoryFilter.value;
+    const selectedDifficulty = difficultyFilter.value;
+    
+    const recipeCards = recipeGrid.querySelectorAll('[data-recipe-id]');
+    let visibleCount = 0;
+
+    recipeCards.forEach(card => {
+      const title = card.dataset.recipeTitle || '';
+      const description = card.dataset.recipeDescription || '';
+      const category = card.dataset.recipeCategory || '';
+      const difficulty = card.dataset.recipeDifficulty || '';
+
+      const matchesSearch = !searchTerm || title.includes(searchTerm) || description.includes(searchTerm);
+      const matchesCategory = selectedCategory === 'all' || category === selectedCategory;
+      const matchesDifficulty = selectedDifficulty === 'all' || difficulty === selectedDifficulty;
+
+      if (matchesSearch && matchesCategory && matchesDifficulty) {
+        card.style.display = 'block';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Update results count
+    resultsCount.textContent = visibleCount;
+    
+    // Show/hide search term display
+    if (searchTerm) {
+      searchTermText.textContent = searchTerm;
+      searchTermDisplay.classList.remove('hidden');
+    } else {
+      searchTermDisplay.classList.add('hidden');
+    }
+
+    // Show/hide no results message
+    if (visibleCount === 0) {
+      recipeGrid.style.display = 'none';
+      noResults.classList.remove('hidden');
+    } else {
+      recipeGrid.style.display = 'grid';
+      noResults.classList.add('hidden');
+    }
+  }
+
+  // Event listeners
+  searchInput?.addEventListener('input', filterRecipes);
+  categoryFilter?.addEventListener('change', filterRecipes);
+  difficultyFilter?.addEventListener('change', filterRecipes);
+  
+  clearFilters?.addEventListener('click', () => {
+    searchInput.value = '';
+    categoryFilter.value = 'all';
+    difficultyFilter.value = 'all';
+    filterRecipes();
+  });
+</script>
