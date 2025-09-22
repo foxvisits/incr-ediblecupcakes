@@ -465,7 +465,7 @@ const schemaData = {
     <section class="py-16 bg-gray-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <RecipeInteractions 
-          recipe={recipe}
+          recipeId={recipe.id}
           initialLikes={Math.floor(recipe.rating * 100) + 50}
           initialRating={recipe.rating}
           initialBookmarks={Math.floor(recipe.rating * 40) + 25}
