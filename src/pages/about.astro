@@ -3,6 +3,36 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ClientOnly from '../components/ClientOnly.tsx';
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sarah",
+  "jobTitle": "Professional Baker & Recipe Developer",
+  "description": "Le Cordon Bleu graduate and professional baker specializing in innovative cupcake recipes for all dietary preferences",
+  "url": "https://incr-ediblecupcakes.com/about",
+  "image": "https://incr-ediblecupcakes.com/Sarah.png",
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Le Cordon Bleu"
+  },
+  "knowsAbout": [
+    "Cupcake Baking",
+    "Keto Baking",
+    "Vegan Baking",
+    "Allergen-Free Baking",
+    "Pastry Arts",
+    "Recipe Development"
+  ],
+  "award": [
+    "Best Bakery 2024",
+    "Published Author - Innovative Cupcakes for Everyone"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Incr-EdibleCupCakes"
+  }
+};
 ---
 
 <BaseLayout 
@@ -14,25 +44,39 @@ import ClientOnly from '../components/ClientOnly.tsx';
   <Header />
   
   <main class="pt-16 lg:pt-20">
+    <Fragment slot="head">
+      <meta name="keywords" content="Sarah baker, professional baker, Le Cordon Bleu, cupcake recipe developer, keto baking expert, vegan baking, allergen-free baking, pastry chef" />
+      <meta property="og:title" content="About Sarah - Professional Baker | Incr-EdibleCupCakes" />
+      <meta property="og:description" content="Meet Sarah, the professional baker behind Incr-EdibleCupCakes. Le Cordon Bleu graduate specializing in innovative cupcake recipes." />
+      <meta property="og:type" content="profile" />
+      <meta property="og:url" content="https://incr-ediblecupcakes.com/about" />
+      <meta property="og:image" content="https://incr-ediblecupcakes.com/Sarah.png" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="About Sarah - Professional Baker | Incr-EdibleCupCakes" />
+      <meta name="twitter:description" content="Meet Sarah, the professional baker behind Incr-EdibleCupCakes. Le Cordon Bleu graduate specializing in innovative cupcake recipes." />
+      <meta name="twitter:image" content="https://incr-ediblecupcakes.com/Sarah.png" />
+      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    </Fragment>
+
     {/* Hero Section */}
     <section class="relative py-20 bg-gradient-to-br from-cupcake-coral via-sunshine-400 to-cupcake-cherry overflow-hidden">
       <div class="absolute inset-0 pointer-events-none">
         <ClientOnly client:load>
           <>
-          {[...Array(12)].map((_, i) => (
-            <div
-              key={i}
-              class="absolute animate-float-random opacity-20"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${i * 0.3}s`,
-                animationDuration: `${4 + i * 0.5}s`,
-              }}
-            >
-              {i % 4 === 0 ? '🧁' : i % 4 === 1 ? '🍰' : i % 4 === 2 ? '🎂' : '🧁'}
-            </div>
-          ))}
+            {[...Array(12)].map((_, i) => (
+              <div
+                key={i}
+                class="absolute animate-float-random opacity-20"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  animationDelay: `${i * 0.3}s`,
+                  animationDuration: `${4 + i * 0.5}s`,
+                }}
+              >
+                {i % 4 === 0 ? '🧁' : i % 4 === 1 ? '🍰' : i % 4 === 2 ? '🎂' : '🧁'}
+              </div>
+            ))}
           </>
         </ClientOnly>
       </div>
@@ -53,334 +97,231 @@ import ClientOnly from '../components/ClientOnly.tsx';
           
           <div class="relative">
             <div class="w-80 h-80 mx-auto relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-yellow-400 to-rose-400 rounded-full animate-pulse" />
               <img
                 src="/Sarah.png"
-                alt="Sarah - Professional Baker"
-                class="w-full h-full object-cover rounded-full border-8 border-white shadow-2xl"
+                alt="Sarah - professional baker and recipe developer behind Incr-EdibleCupCakes"
+                class="relative z-10 w-full h-full object-cover rounded-full border-4 border-white/20 shadow-2xl"
                 loading="eager"
-                width="320"
-                height="320"
+                width={320}
+                height={320}
               />
-              
-              {/* Floating Achievement Badges */}
-              <div class="absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-xl animate-float" style="animation-delay: 1s;">
-                <div class="text-center">
-                  <div class="text-2xl mb-1">🏆</div>
-                  <div class="font-bold text-cupcake-coral text-sm">Best Bakery 2024</div>
-                </div>
-              </div>
-              
-              <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl p-4 shadow-xl animate-float" style="animation-delay: 2s;">
-                <div class="text-center">
-                  <div class="text-2xl mb-1">🎓</div>
-                  <div class="font-bold text-cupcake-coral text-sm">Le Cordon Bleu</div>
-                </div>
-              </div>
-              
-              <div class="absolute top-1/2 -right-8 bg-white rounded-2xl p-3 shadow-xl animate-float" style="animation-delay: 0.5s;">
-                <div class="text-center">
-                  <div class="text-xl mb-1">📚</div>
-                  <div class="font-bold text-cupcake-coral text-xs">Author</div>
-                </div>
+              <div class="absolute -top-4 -right-4 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg animate-bounce">
+                <svg class="w-8 h-8 text-cupcake-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                </svg>
               </div>
             </div>
-            
-            {/* Background Decoration */}
-            <div class="absolute inset-0 bg-gradient-to-br from-white/20 to-sunshine-300/20 rounded-full transform rotate-6 scale-110 -z-10"></div>
-            <div class="absolute inset-0 bg-gradient-to-br from-cupcake-pink/20 to-cupcake-coral/20 rounded-full transform -rotate-3 scale-105 -z-20"></div>
           </div>
         </div>
       </div>
     </section>
 
-    {/* My Story Section */}
+    {/* Story Section */}
     <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div class="relative">
-            <img
-              src="/Where It All Began.jpg"
-              alt="Where it all began - Sarah's baking journey"
-              class="w-full h-96 object-cover rounded-3xl shadow-2xl"
-              loading="lazy"
-              width="600"
-              height="400"
-            />
-            
-            {/* Floating Elements */}
-            <div class="absolute -top-6 -left-6 w-24 h-24 bg-cupcake-coral rounded-full flex items-center justify-center animate-float">
-              <span class="text-4xl">👵</span>
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-quicksand text-4xl font-black text-gray-900 mb-6">
+            My <span class="text-cupcake-coral">Journey</span>
+          </h2>
+        </div>
+
+        <div class="space-y-12">
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+              <img
+                src="/Where It All Began.jpg"
+                alt="Baking in grandmother's kitchen - traditional place where Sarah learned to bake cupcakes"
+                class="w-full h-64 object-cover rounded-2xl shadow-lg"
+                loading="lazy"
+                width={400}
+                height={256}
+              />
             </div>
-            <div class="absolute -bottom-6 -right-6 w-20 h-20 bg-sunshine-400 rounded-full flex items-center justify-center animate-float" style="animation-delay: 1s;">
-              <span class="text-3xl">🏠</span>
+            <div class="md:w-1/2">
+              <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-4">Where It All Began</h3>
+              <p class="font-nunito text-gray-600 leading-relaxed">
+                My love for baking started at age 7 in my grandmother's cozy kitchen. She taught me that baking 
+                isn't just about following recipes—it's about creating moments of joy and bringing people together. 
+                Every Saturday morning, we'd experiment with new flavors and techniques, always pushing the boundaries 
+                of traditional baking.
+              </p>
             </div>
           </div>
-          
-          <div>
-            <h2 class="font-quicksand text-3xl sm:text-4xl font-black text-gray-900 mb-6">
-              Where It All <span class="text-cupcake-coral">Began</span>
-            </h2>
-            <p class="font-nunito text-lg text-gray-700 mb-6 leading-relaxed">
-              My love for baking started in my grandmother's cozy kitchen, where the smell of vanilla and 
-              warm butter filled the air. She taught me that baking isn't just about following recipes—it's 
-              about creating memories and sharing love through food.
-            </p>
-            <p class="font-nunito text-lg text-gray-700 mb-8 leading-relaxed">
-              After graduating from Le Cordon Bleu, I spent years perfecting traditional techniques while 
-              exploring innovative approaches to make baking accessible for everyone, regardless of dietary 
-              restrictions or preferences.
-            </p>
-            
-            <div class="flex flex-wrap gap-4">
-              <div class="bg-gradient-to-r from-cupcake-pink to-cupcake-coral text-white px-6 py-3 rounded-full font-quicksand font-bold">
-                🎓 Le Cordon Bleu Graduate
-              </div>
-              <div class="bg-gradient-to-r from-sunshine-400 to-sunshine-500 text-white px-6 py-3 rounded-full font-quicksand font-bold">
-                📚 Published Author
-              </div>
+
+          <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+            <div class="md:w-1/2">
+              <img
+                src="/Professional Training.jpg"
+                alt="Professional culinary training - Sarah during her studies at Le Cordon Bleu"
+                class="w-full h-64 object-cover rounded-2xl shadow-lg"
+                loading="lazy"
+                width={400}
+                height={256}
+              />
+            </div>
+            <div class="md:w-1/2">
+              <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-4">Professional Training</h3>
+              <p class="font-nunito text-gray-600 leading-relaxed">
+                After graduating from Le Cordon Bleu, I specialized in pastry arts and nutritional baking. 
+                I became passionate about creating delicious treats that everyone can enjoy, regardless of dietary 
+                restrictions. This led me to develop innovative techniques for keto, vegan, and allergen-free baking.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+              <img
+                src="/Innovation in Every Bite.jpg"
+                alt="Modern baking studio - place where Sarah creates innovative cupcake recipes"
+                class="w-full h-64 object-cover rounded-2xl shadow-lg"
+                loading="lazy"
+                width={400}
+                height={256}
+              />
+            </div>
+            <div class="md:w-1/2">
+              <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-4">Innovation in Every Bite</h3>
+              <p class="font-nunito text-gray-600 leading-relaxed">
+                Today, I run my own baking studio where I develop and test every recipe featured on this site. 
+                Each cupcake represents hours of experimentation, taste-testing, and refinement. My mission is to 
+                prove that dietary restrictions never mean compromising on flavor or beauty.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    {/* Stats Section */}
-    <section class="py-20 bg-gradient-to-r from-cupcake-pink to-cupcake-coral">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-          <div class="transform transition-all duration-300 hover:scale-110">
-            <div class="text-4xl mb-2">🧁</div>
-            <div class="font-quicksand text-4xl font-black mb-2">50+</div>
-            <div class="font-nunito text-white/90 font-medium">Recipes Created</div>
-          </div>
-          <div class="transform transition-all duration-300 hover:scale-110">
-            <div class="text-4xl mb-2">👩‍🍳</div>
-            <div class="font-quicksand text-4xl font-black mb-2">15+</div>
-            <div class="font-nunito text-white/90 font-medium">Years Experience</div>
-          </div>
-          <div class="transform transition-all duration-300 hover:scale-110">
-            <div class="text-4xl mb-2">🌟</div>
-            <div class="font-quicksand text-4xl font-black mb-2">10K+</div>
-            <div class="font-nunito text-white/90 font-medium">Happy Bakers</div>
-          </div>
-          <div class="transform transition-all duration-300 hover:scale-110">
-            <div class="text-4xl mb-2">📖</div>
-            <div class="font-quicksand text-4xl font-black mb-2">3</div>
-            <div class="font-nunito text-white/90 font-medium">Cookbooks Published</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    {/* Professional Journey Timeline */}
-    <section class="py-20 bg-gray-50">
+    {/* Achievements Section */}
+    <section class="py-20 bg-gradient-to-br from-cupcake-pink/20 to-sunshine-100/50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="font-quicksand text-3xl sm:text-4xl font-black text-gray-900 mb-6">
-            My Professional <span class="text-cupcake-coral">Journey</span>
+          <h2 class="font-quicksand text-4xl font-black text-gray-900 mb-6">
+            Achievements & <span class="text-cupcake-coral">Recognition</span>
           </h2>
-          <p class="font-nunito text-xl text-gray-700 max-w-3xl mx-auto">
-            From learning in my grandmother's kitchen to becoming a published author and award-winning baker
-          </p>
         </div>
 
-        <div class="relative">
-          {/* Timeline Line */}
-          <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-cupcake-coral via-sunshine-400 to-cupcake-cherry"></div>
-          
-          <div class="space-y-16">
-            {/* Timeline Item 1 */}
-            <div class="relative flex items-center">
-              <div class="flex-1 text-right pr-8">
-                <div class="bg-white rounded-2xl p-8 shadow-xl border-l-4 border-cupcake-coral">
-                  <div class="flex items-center justify-end mb-4">
-                    <span class="text-2xl mr-3">👵</span>
-                    <h3 class="font-quicksand text-2xl font-black text-gray-900">2008 - The Beginning</h3>
-                  </div>
-                  <p class="font-nunito text-gray-700 leading-relaxed">
-                    Started learning to bake with my grandmother, discovering the magic of transforming simple 
-                    ingredients into delicious treats. This is where my passion for baking was born.
-                  </p>
-                </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            {
+              icon: 'award',
+              title: 'Best Bakery 2024',
+              description: 'Voted best specialty bakery in the region',
+              color: 'bg-sunshine-400'
+            },
+            {
+              icon: 'book',
+              title: 'Published Author',
+              description: 'Author of "Innovative Cupcakes for Everyone"',
+              color: 'bg-sprinkle-blue'
+            },
+            {
+              icon: 'users',
+              title: '50K+ Students',
+              description: 'Taught thousands through online courses',
+              color: 'bg-sprinkle-green'
+            },
+            {
+              icon: 'heart',
+              title: 'Community Impact',
+              description: 'Donated 10,000+ cupcakes to local charities',
+              color: 'bg-cupcake-coral'
+            }
+          ].map((achievement, index) => (
+            <div
+              key={index}
+              class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center"
+            >
+              <div class={`w-16 h-16 ${achievement.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
+                {achievement.icon === 'award' && (
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                  </svg>
+                )}
+                {achievement.icon === 'book' && (
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                  </svg>
+                )}
+                {achievement.icon === 'users' && (
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
+                  </svg>
+                )}
+                {achievement.icon === 'heart' && (
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                  </svg>
+                )}
               </div>
-              
-              <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-cupcake-coral rounded-full border-4 border-white shadow-lg"></div>
-              
-              <div class="flex-1 pl-8">
-                <div class="text-cupcake-coral font-quicksand font-bold text-lg">2008</div>
-              </div>
+              <h3 class="font-quicksand text-xl font-bold text-gray-900 mb-2">{achievement.title}</h3>
+              <p class="font-nunito text-gray-600">{achievement.description}</p>
             </div>
-
-            {/* Timeline Item 2 */}
-            <div class="relative flex items-center">
-              <div class="flex-1 pr-8">
-                <div class="text-cupcake-coral font-quicksand font-bold text-lg text-right">2012</div>
-              </div>
-              
-              <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-sunshine-400 rounded-full border-4 border-white shadow-lg"></div>
-              
-              <div class="flex-1 pl-8">
-                <div class="bg-white rounded-2xl p-8 shadow-xl border-l-4 border-sunshine-400">
-                  <div class="flex items-center mb-4">
-                    <span class="text-2xl mr-3">🎓</span>
-                    <h3 class="font-quicksand text-2xl font-black text-gray-900">2012 - Le Cordon Bleu</h3>
-                  </div>
-                  <p class="font-nunito text-gray-700 leading-relaxed">
-                    Graduated from Le Cordon Bleu with honors, mastering classical French techniques and 
-                    developing a deep understanding of pastry arts and baking science.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Timeline Item 3 */}
-            <div class="relative flex items-center">
-              <div class="flex-1 text-right pr-8">
-                <div class="bg-white rounded-2xl p-8 shadow-xl border-l-4 border-cupcake-cherry">
-                  <div class="flex items-center justify-end mb-4">
-                    <span class="text-2xl mr-3">🏆</span>
-                    <h3 class="font-quicksand text-2xl font-black text-gray-900">2018 - First Award</h3>
-                  </div>
-                  <p class="font-nunito text-gray-700 leading-relaxed">
-                    Won "Best Bakery 2018" for my innovative approach to allergen-free baking, proving that 
-                    dietary restrictions don't mean compromising on taste or quality.
-                  </p>
-                </div>
-              </div>
-              
-              <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-cupcake-cherry rounded-full border-4 border-white shadow-lg"></div>
-              
-              <div class="flex-1 pl-8">
-                <div class="text-cupcake-coral font-quicksand font-bold text-lg">2018</div>
-              </div>
-            </div>
-
-            {/* Timeline Item 4 */}
-            <div class="relative flex items-center">
-              <div class="flex-1 pr-8">
-                <div class="text-cupcake-coral font-quicksand font-bold text-lg text-right">2022</div>
-              </div>
-              
-              <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-cupcake-coral rounded-full border-4 border-white shadow-lg"></div>
-              
-              <div class="flex-1 pl-8">
-                <div class="bg-white rounded-2xl p-8 shadow-xl border-l-4 border-cupcake-coral">
-                  <div class="flex items-center mb-4">
-                    <span class="text-2xl mr-3">📚</span>
-                    <h3 class="font-quicksand text-2xl font-black text-gray-900">2022 - Published Author</h3>
-                  </div>
-                  <p class="font-nunito text-gray-700 leading-relaxed">
-                    Published my first cookbook "Innovative Cupcakes for Everyone" featuring 50+ recipes 
-                    for various dietary needs, reaching thousands of bakers worldwide.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Timeline Item 5 */}
-            <div class="relative flex items-center">
-              <div class="flex-1 text-right pr-8">
-                <div class="bg-white rounded-2xl p-8 shadow-xl border-l-4 border-sunshine-400">
-                  <div class="flex items-center justify-end mb-4">
-                    <span class="text-2xl mr-3">🌐</span>
-                    <h3 class="font-quicksand text-2xl font-black text-gray-900">2024 - Incr-EdibleCupCakes</h3>
-                  </div>
-                  <p class="font-nunito text-gray-700 leading-relaxed">
-                    Launched Incr-EdibleCupCakes website to share my recipes with a global community, 
-                    continuing my mission to make extraordinary baking accessible to everyone.
-                  </p>
-                </div>
-              </div>
-              
-              <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-sunshine-400 rounded-full border-4 border-white shadow-lg"></div>
-              
-              <div class="flex-1 pl-8">
-                <div class="text-cupcake-coral font-quicksand font-bold text-lg">2024</div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
 
     {/* Philosophy Section */}
     <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="font-quicksand text-3xl sm:text-4xl font-black text-gray-900 mb-6">
-            My Baking <span class="text-cupcake-coral">Philosophy</span>
-          </h2>
-          <p class="font-nunito text-xl text-gray-700 max-w-3xl mx-auto">
-            Every recipe I create is guided by these core principles
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="text-center p-8 bg-gradient-to-br from-cupcake-pink/10 to-cupcake-coral/10 rounded-3xl">
-            <div class="w-20 h-20 bg-gradient-to-br from-cupcake-coral to-cupcake-cherry rounded-full flex items-center justify-center mx-auto mb-6">
-              <span class="text-3xl">❤️</span>
-            </div>
-            <h3 class="font-quicksand text-2xl font-black text-gray-900 mb-4">Bake with Love</h3>
-            <p class="font-nunito text-gray-700 leading-relaxed">
-              Every cupcake is made with genuine care and attention to detail. Love is the secret ingredient 
-              that makes all the difference.
-            </p>
-          </div>
-
-          <div class="text-center p-8 bg-gradient-to-br from-sunshine-100/50 to-sunshine-200/50 rounded-3xl">
-            <div class="w-20 h-20 bg-gradient-to-br from-sunshine-400 to-sunshine-500 rounded-full flex items-center justify-center mx-auto mb-6">
-              <span class="text-3xl">🌍</span>
-            </div>
-            <h3 class="font-quicksand text-2xl font-black text-gray-900 mb-4">Baking for Everyone</h3>
-            <p class="font-nunito text-gray-700 leading-relaxed">
-              I believe everyone deserves to enjoy delicious treats, regardless of dietary restrictions. 
-              That's why I create recipes for all needs.
-            </p>
-          </div>
-
-          <div class="text-center p-8 bg-gradient-to-br from-cupcake-cherry/10 to-cupcake-pink/10 rounded-3xl">
-            <div class="w-20 h-20 bg-gradient-to-br from-cupcake-cherry to-cupcake-pink rounded-full flex items-center justify-center mx-auto mb-6">
-              <span class="text-3xl">✨</span>
-            </div>
-            <h3 class="font-quicksand text-2xl font-black text-gray-900 mb-4">Innovation & Quality</h3>
-            <p class="font-nunito text-gray-700 leading-relaxed">
-              I combine traditional techniques with innovative approaches to create extraordinary flavors 
-              and textures that surprise and delight.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    {/* Call to Action */}
-    <section class="py-20 bg-gradient-to-br from-cupcake-coral to-cupcake-cherry relative overflow-hidden">
-      {/* Background Decorations */}
-      <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute top-10 left-10 text-6xl opacity-20 animate-float">🧁</div>
-        <div class="absolute bottom-20 right-20 text-8xl opacity-15 animate-float" style="animation-delay: 1s;">🍰</div>
-        <div class="absolute top-1/2 left-1/4 text-4xl opacity-25 animate-float" style="animation-delay: 2s;">👩‍🍳</div>
-      </div>
-      
-      <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-        <h2 class="font-quicksand text-4xl sm:text-5xl font-black text-white mb-8">
-          Let's Bake Something <span class="text-sunshine-300">Extraordinary</span> Together! 🥧
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="font-quicksand text-4xl font-black text-gray-900 mb-8">
+          My Baking <span class="text-cupcake-coral">Philosophy</span>
         </h2>
-        <p class="font-nunito text-xl text-white/90 mb-12 leading-relaxed">
-          Ready to start your own baking journey? Explore my recipes, join the community, 
-          and discover the joy of creating incredible cupcakes in your own kitchen.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {[
+            {
+              title: 'Inclusivity',
+              description: 'Every person deserves to enjoy incredible desserts, regardless of dietary needs.',
+              icon: '🤝'
+            },
+            {
+              title: 'Innovation',
+              description: 'Traditional techniques meet modern nutritional science for extraordinary results.',
+              icon: '💡'
+            },
+            {
+              title: 'Quality',
+              description: 'Only the finest ingredients and meticulous attention to detail in every recipe.',
+              icon: '⭐'
+            }
+          ].map((principle, index) => (
+            <div key={index} class="text-center">
+              <div class="text-4xl mb-4">{principle.icon}</div>
+              <h3 class="font-quicksand text-xl font-bold text-gray-900 mb-3">{principle.title}</h3>
+              <p class="font-nunito text-gray-600">{principle.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <blockquote class="font-nunito text-2xl font-medium text-gray-900 italic mb-8">
+          "Baking is my way of spreading happiness, one cupcake at a time. Every recipe I create 
+          is infused with love and the belief that extraordinary flavors should be accessible to everyone."
+        </blockquote>
+        
+        <div class="flex justify-center space-x-6">
           <a
-            href="/recipes"
-            class="font-quicksand px-10 py-5 bg-white text-cupcake-coral font-bold text-lg rounded-full hover:bg-cupcake-cream transition-all duration-300 transform hover:scale-105 shadow-lg"
+            href="https://instagram.com/incrediblecupcakes"
+            class="font-quicksand flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-cupcake-coral to-sunshine-400 text-white rounded-full hover:from-cupcake-cherry hover:to-sunshine-500 transition-all duration-300 transform hover:scale-105 font-bold"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            🍰 Explore Recipes
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+            </svg>
+            <span>Follow My Journey</span>
           </a>
           <a
-            href="/contact"
-            class="font-quicksand px-10 py-5 border-3 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-cupcake-coral transition-all duration-300 transform hover:scale-105"
+            href="mailto:sarah@incr-ediblecupcakes.com"
+            class="font-quicksand flex items-center space-x-2 px-6 py-3 border-2 border-cupcake-coral text-cupcake-coral rounded-full hover:bg-cupcake-coral hover:text-white transition-all duration-300 transform hover:scale-105 font-bold"
           >
-            💌 Get In Touch
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <span>Say Hello</span>
           </a>
         </div>
       </div>
