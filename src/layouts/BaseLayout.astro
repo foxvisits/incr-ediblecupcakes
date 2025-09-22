@@ -145,7 +145,11 @@ const siteTitle = title.includes('Incr-EdibleCupCakes') ? title : `${title} - In
   </head>
   <body>
     <div class="min-h-screen bg-gradient-to-br from-pink-50 to-orange-50 font-nunito">
-      <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-rose-500 focus:text-white focus:rounded-md">
+      <a 
+        href="#main-content" 
+        class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-rose-500 focus:text-white focus:rounded-md focus:outline-none focus:ring-2 focus:ring-rose-300"
+        id="skip-link"
+      >
         Skip to main content
       </a>
       <slot />
