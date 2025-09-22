@@ -1,0 +1,58 @@
+[33mcommit 963629c9ed6c2b77a26c8f9e1177443bb632e0cb[m
+Author: foxvisits <foxvisits@gmail.com>
+Date:   Mon Sep 22 16:38:27 2025 +0200
+
+    🚀 Migracja z Vite+React na Astro
+    
+    ✨ Nowe funkcje:
+    - Pena migracja na Astro z integracj React
+    - Statyczne generowanie stron (SSG)
+    - Optymalizacja SEO z automatycznym sitemap
+    - Responsive design z Tailwind CSS
+    - PWA ready
+    - Gotowe do deploymentu na Netlify
+    
+    🔄 Zmiany:
+    - Zastpiono Vite+React na Astro
+    - Przepisano komponenty na Astro/React hybrid
+    - Utworzono dynamiczne strony przepisów
+    - Dodano konfiguracj Netlify
+    - Zaktualizowano package.json dla Astro
+    
+    📁 Struktura:
+    - src/layouts/ - Layout Astro
+    - src/pages/ - Strony Astro z routing
+    - src/components/ - Komponenty Astro/React
+    - src/data/ - Dane przepisów
+    
+    🎯 Gotowe do deploymentu na Netlify!
+
+.astro/types.d.ts
+astro.config.mjs
+netlify.toml
+package-lock.json
+package.json
+src/App.tsx
+src/AppShell.tsx
+src/components/Footer.astro
+src/components/Header.astro
+src/components/Logo.astro
+src/components/RecipeCard.tsx
+src/data/recipes.ts
+src/entry-client.tsx
+src/entry-server.tsx
+src/env.d.ts
+src/layouts/BaseLayout.astro
+src/pages/AboutPage.tsx
+src/pages/CategoriesPage.tsx
+src/pages/ContactPage.tsx
+src/pages/HomePage.tsx
+src/pages/RecipePage.tsx
+src/pages/RecipesPage.tsx
+src/pages/about.astro
+src/pages/contact.astro
+src/pages/index.astro
+src/pages/recipe/[slug].astro
+src/pages/recipes/index.astro
+tailwind.config.js
+tailwind.config.mjs
