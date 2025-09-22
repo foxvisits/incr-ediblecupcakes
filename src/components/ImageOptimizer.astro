@@ -1,0 +1,113 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  className?: string;
+  width?: number;
+  height?: number;
+  priority?: boolean;
+  sizes?: string;
+}
+
+const { 
+  src, 
+  alt, 
+  className = '', 
+  width, 
+  height, 
+  priority = false,
+  sizes = "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+} = Astro.props;
+
+// Generowanie optymalnych parametrów dla różnych formatów
+const generateImageParams = (format: string, quality: number = 85) => {
+  const sizes = [320, 640, 960, 1280, 1920];
+  
+  return sizes.map(size => {
+    const params = new URLSearchParams({
+      w: size.toString(),
+      fm: format,
+      q: quality.toString(),
+      f: 'auto', // Auto-format selection
+      fit: 'crop',
+      crop: 'center'
+    });
+    
+    return `${src}?${params.toString()} ${size}w`;
+  }).join(', ');
+};
+
+// Fallback dla starszych przeglądarek
+const fallbackSrc = (() => {
+  const params = new URLSearchParams({
+    w: width ? Math.min(width, 1280).toString() : '640',
+    fm: 'jpg',
+    q: '90',
+    f: 'auto'
+  });
+  return `${src}?${params.toString()}`;
+})();
+
+// Optymalizacja rozmiarów
+const getResponsiveSizes = () => {
+  if (width && height) {
+    const aspectRatio = width / height;
+    return `(max-width: 640px) ${Math.min(width, 640)}px, (max-width: 1024px) ${Math.min(width, 960)}px, ${width}px`;
+  }
+  return sizes;
+};
+---
+
+<picture>
+  <!-- AVIF format - najlepsza kompresja -->
+  <source 
+    srcset={generateImageParams('avif', 80)} 
+    sizes={getResponsiveSizes()}
+    type="image/avif"
+  />
+  
+  <!-- WebP format - dobra kompresja -->
+  <source 
+    srcset={generateImageParams('webp', 85)} 
+    sizes={getResponsiveSizes()}
+    type="image/webp"
+  />
+  
+  <!-- Fallback JPEG -->
+  <img
+    src={fallbackSrc}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={priority ? 'eager' : 'lazy'}
+    decoding="async"
+    class={`transition-opacity duration-300 ${className}`}
+    style={width && height ? `aspect-ratio: ${width}/${height}` : undefined}
+    srcset={generateImageParams('jpg', 90)}
+    sizes={getResponsiveSizes()}
+  />
+</picture>
+
+<style>
+  /* Progressive loading */
+  img {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  img[src] {
+    opacity: 1;
+  }
+  
+  /* Skeleton loading */
+  img:not([src]) {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+  }
+  
+  @keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+</style>

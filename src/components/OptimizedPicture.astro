@@ -1,0 +1,91 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  className?: string;
+  width?: number;
+  height?: number;
+  priority?: boolean;
+  sizes?: string;
+  placeholder?: string;
+}
+
+const { 
+  src, 
+  alt, 
+  className = '', 
+  width, 
+  height, 
+  priority = false,
+  sizes = "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw",
+  placeholder = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjI0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PC9zdmc+"
+} = Astro.props;
+
+// Generowanie srcSet dla różnych formatów i rozmiarów
+const generateSrcSet = (imagePath: string, format: string) => {
+  const sizes = [320, 640, 960, 1280, 1920];
+  
+  return sizes.map(size => 
+    `${imagePath}?w=${size}&fm=${format}&q=80 ${size}w`
+  ).join(', ');
+};
+
+// Fallback dla starszych przeglądarek
+const fallbackSrc = src.includes('?') ? `${src}&fm=jpg&q=85` : `${src}?fm=jpg&q=85`;
+
+// Optymalizacja rozmiarów dla różnych urządzeń
+const getOptimalSizes = (width?: number, height?: number) => {
+  if (width && height) {
+    return `(max-width: 640px) ${Math.min(width, 640)}px, (max-width: 1024px) ${Math.min(width, 960)}px, ${width}px`;
+  }
+  return sizes;
+};
+---
+
+<picture>
+  <!-- AVIF format dla najlepszej kompresji -->
+  <source 
+    srcset={generateSrcSet(src, 'avif')} 
+    sizes={getOptimalSizes(width, height)}
+    type="image/avif"
+  />
+  
+  <!-- WebP format dla dobrej kompresji -->
+  <source 
+    srcset={generateSrcSet(src, 'webp')} 
+    sizes={getOptimalSizes(width, height)}
+    type="image/webp"
+  />
+  
+  <!-- Fallback JPEG -->
+  <img
+    src={fallbackSrc}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={priority ? 'eager' : 'lazy'}
+    decoding="async"
+    class={`transition-opacity duration-300 ${className}`}
+    style={width && height ? `aspect-ratio: ${width}/${height}` : undefined}
+    srcset={generateSrcSet(src, 'jpg')}
+    sizes={getOptimalSizes(width, height)}
+  />
+</picture>
+
+<style>
+  /* Progressive loading styles */
+  img {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  img[src] {
+    opacity: 1;
+  }
+  
+  /* Blur placeholder while loading */
+  img:not([src]) {
+    filter: blur(5px);
+    transform: scale(1.05);
+  }
+</style>

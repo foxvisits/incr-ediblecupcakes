@@ -20,6 +20,7 @@ export default defineConfig({
   build: {
     inlineStylesheets: 'auto',
     assets: '_astro',
+    format: 'file',
   },
   vite: {
     optimizeDeps: {

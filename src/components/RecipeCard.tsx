@@ -33,12 +33,27 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
   return (
     <div className="group bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 border-2 border-cupcake-pink/20 hover:border-cupcake-coral/40">
       <div className="relative overflow-hidden">
-        <img
-          src={recipe.image}
-          alt={recipe.title}
-          className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
-          loading="lazy"
-        />
+        <picture>
+          <source 
+            srcSet={`${recipe.image}?w=640&fm=avif&q=80 640w, ${recipe.image}?w=960&fm=avif&q=80 960w, ${recipe.image}?w=1280&fm=avif&q=80 1280w`}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            type="image/avif"
+          />
+          <source 
+            srcSet={`${recipe.image}?w=640&fm=webp&q=85 640w, ${recipe.image}?w=960&fm=webp&q=85 960w, ${recipe.image}?w=1280&fm=webp&q=85 1280w`}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            type="image/webp"
+          />
+          <img
+            src={`${recipe.image}?w=640&fm=jpg&q=90`}
+            alt={recipe.title}
+            className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+            loading="lazy"
+            decoding="async"
+            srcSet={`${recipe.image}?w=640&fm=jpg&q=90 640w, ${recipe.image}?w=960&fm=jpg&q=90 960w, ${recipe.image}?w=1280&fm=jpg&q=90 1280w`}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         
         {/* Category Badge */}
