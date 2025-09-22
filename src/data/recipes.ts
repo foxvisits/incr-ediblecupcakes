@@ -83,6 +83,7 @@ export const validateRecipeSlug = (recipe: Recipe): Recipe => {
 };
 
 export const recipes: Recipe[] = [
+  // Pierwsze 3 przepisy
   {
     id: '1',
     title: 'Classic Vanilla Dream Cupcakes',

@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import RecipeCard from '../../components/RecipeCard.tsx';
+import { validatedRecipes } from '../../data/recipes';
+
+const categories = [
+  { id: 'all', name: 'All Recipes', count: validatedRecipes.length },
+  { id: 'classic', name: 'Classic', count: validatedRecipes.filter(r => r.category === 'classic').length },
+  { id: 'keto', name: 'Keto', count: validatedRecipes.filter(r => r.category === 'keto').length },
+  { id: 'vegan', name: 'Vegan', count: validatedRecipes.filter(r => r.category === 'vegan').length },
+  { id: 'nut-free', name: 'Nut-Free', count: validatedRecipes.filter(r => r.category === 'nut-free').length },
+  { id: 'gluten-free', name: 'Gluten-Free', count: validatedRecipes.filter(r => r.category === 'gluten-free').length },
+];
+
+const difficulties = [
+  { id: 'all', name: 'All Levels' },
+  { id: 'Easy', name: 'Easy' },
+  { id: 'Medium', name: 'Medium' },
+  { id: 'Hard', name: 'Hard' },
+];
+---
+
+<BaseLayout 
+  title="All Cupcake Recipes - Incr-EdibleCupCakes"
+  description="Browse our complete collection of cupcake recipes including classic, keto, vegan, gluten-free, and nut-free options. Find the perfect recipe for your dietary needs."
+  canonical="https://incr-ediblecupcakes.com/recipes"
+>
+  <Header />
+  
+  <main id="main-content" class="pt-16 lg:pt-20">
+    <!-- Hero Section -->
+    <section class="py-12 lg:py-16 bg-gradient-to-br from-cupcake-coral/10 via-sunshine-400/10 to-cupcake-cherry/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-poppins font-bold text-gray-900 mb-4">
+            All Cupcake Recipes
+          </h1>
+          <p class="text-lg text-gray-600 font-quicksand max-w-2xl mx-auto">
+            Discover our complete collection of extraordinary cupcake recipes. Filter by category, 
+            difficulty, or search for your perfect treat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="py-8 bg-white border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap gap-4 justify-center">
+          <!-- Category Filter -->
+          <div class="flex flex-wrap gap-2">
+            {categories.map((category) => (
+              <button
+                class={`px-4 py-2 rounded-full font-quicksand font-semibold text-sm transition-all duration-300 ${
+                  category.id === 'all' 
+                    ? 'bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white shadow-lg' 
+                    : 'bg-gray-100 text-gray-700 hover:bg-cupcake-pink/20 hover:text-cupcake-coral'
+                }`}
+                data-category={category.id}
+              >
+                {category.name} ({category.count})
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recipes Grid -->
+    <section class="py-12 lg:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {validatedRecipes.map((recipe) => (
+            <RecipeCard recipe={recipe} client:load />
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+
+  <script>
+    // Client-side filtering logic
+    document.addEventListener('DOMContentLoaded', function() {
+      const categoryButtons = document.querySelectorAll('[data-category]');
+      const recipeCards = document.querySelectorAll('[data-recipe-category]');
+      
+      categoryButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const selectedCategory = this.dataset.category;
+          
+          // Update active button
+          categoryButtons.forEach(btn => {
+            btn.className = btn.className.replace(
+              'bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white shadow-lg',
+              'bg-gray-100 text-gray-700 hover:bg-cupcake-pink/20 hover:text-cupcake-coral'
+            );
+          });
+          
+          this.className = this.className.replace(
+            'bg-gray-100 text-gray-700 hover:bg-cupcake-pink/20 hover:text-cupcake-coral',
+            'bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white shadow-lg'
+          );
+          
+          // Filter recipes
+          recipeCards.forEach(card => {
+            const recipeCategory = card.dataset.recipeCategory;
+            if (selectedCategory === 'all' || recipeCategory === selectedCategory) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</BaseLayout>

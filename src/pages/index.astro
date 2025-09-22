@@ -1,0 +1,176 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import RecipeCard from '../components/RecipeCard.tsx';
+import { validatedRecipes } from '../data/recipes';
+
+const featuredRecipes = validatedRecipes.filter(recipe => recipe.featured).slice(0, 3);
+const categories = [
+  { id: 'all', name: 'All Recipes', count: validatedRecipes.length },
+  { id: 'classic', name: 'Classic', count: validatedRecipes.filter(r => r.category === 'classic').length },
+  { id: 'keto', name: 'Keto', count: validatedRecipes.filter(r => r.category === 'keto').length },
+  { id: 'vegan', name: 'Vegan', count: validatedRecipes.filter(r => r.category === 'vegan').length },
+  { id: 'nut-free', name: 'Nut-Free', count: validatedRecipes.filter(r => r.category === 'nut-free').length },
+];
+---
+
+<BaseLayout 
+  title="Incr-EdibleCupCakes - Extraordinary Cupcake Recipes"
+  description="Discover our collection of unique cupcake recipes, including keto, vegan, gluten-free, and classic options. Professionally tested recipes with detailed instructions."
+  image="/A vibrant, mouth-watering cupcake scene.png"
+>
+  <Header />
+  
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="pt-16 lg:pt-20 pb-12 lg:pb-20 bg-gradient-to-br from-cupcake-coral/10 via-sunshine-400/10 to-cupcake-cherry/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-poppins font-bold text-transparent bg-clip-text bg-gradient-to-r from-cupcake-coral via-cupcake-cherry to-sunshine-600 mb-6">
+            Extraordinary Cupcake Recipes
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-700 font-quicksand max-w-3xl mx-auto mb-8">
+            Discover unique and innovative cupcake recipes for every taste and dietary preference. 
+            Professional baker Sarah shares tested recipes with step-by-step instructions.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/recipes"
+              class="bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white px-8 py-4 rounded-2xl font-quicksand font-bold text-lg hover:from-cupcake-cherry hover:to-cupcake-coral transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
+            >
+              Explore All Recipes
+            </a>
+            <a
+              href="/about"
+              class="border-2 border-cupcake-coral text-cupcake-coral px-8 py-4 rounded-2xl font-quicksand font-bold text-lg hover:bg-cupcake-coral hover:text-white transition-all duration-300 transform hover:scale-105"
+            >
+              Meet Sarah
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Recipes Section -->
+    <section class="py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-poppins font-bold text-gray-900 mb-4">
+            Featured Recipes
+          </h2>
+          <p class="text-lg text-gray-600 font-quicksand max-w-2xl mx-auto">
+            Our most popular and highly-rated cupcake recipes, handpicked by our professional baker Sarah.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {featuredRecipes.map((recipe) => (
+            <RecipeCard recipe={recipe} client:load />
+          ))}
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="/recipes"
+            class="inline-flex items-center bg-gradient-to-r from-sunshine-400 to-sunshine-600 text-white px-8 py-4 rounded-2xl font-quicksand font-bold text-lg hover:from-sunshine-600 hover:to-sunshine-400 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
+          >
+            View All Recipes
+            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-16 lg:py-24 bg-gradient-to-br from-gray-50 to-pink-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-poppins font-bold text-gray-900 mb-4">
+            Recipe Categories
+          </h2>
+          <p class="text-lg text-gray-600 font-quicksand max-w-2xl mx-auto">
+            Find the perfect cupcake recipe for your dietary needs and preferences.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {categories.slice(1).map((category) => (
+            <a
+              href={`/categories/${category.id}`}
+              class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-cupcake-pink/30 transform hover:scale-105"
+            >
+              <div class="text-center">
+                <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-cupcake-coral to-cupcake-cherry rounded-full flex items-center justify-center text-white text-2xl font-bold group-hover:from-cupcake-cherry group-hover:to-cupcake-coral transition-all duration-300">
+                  {category.id === 'classic' ? '🧁' : 
+                   category.id === 'keto' ? '🥑' : 
+                   category.id === 'vegan' ? '🌱' : 
+                   category.id === 'nut-free' ? '🚫' : '🌾'}
+                </div>
+                <h3 class="text-xl font-poppins font-bold text-gray-900 mb-2 group-hover:text-cupcake-coral transition-colors duration-300">
+                  {category.name}
+                </h3>
+                <p class="text-gray-600 font-quicksand mb-4">
+                  {category.count} recipes
+                </p>
+                <span class="inline-flex items-center text-cupcake-coral font-quicksand font-semibold group-hover:text-cupcake-cherry transition-colors duration-300">
+                  Explore Recipes
+                  <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-6">
+              Meet Sarah, Our Professional Baker
+            </h2>
+            <p class="text-lg text-gray-600 font-quicksand mb-6">
+              With over 10 years of experience in professional baking, Sarah has dedicated her career 
+              to creating extraordinary cupcake recipes that cater to every dietary need and preference.
+            </p>
+            <p class="text-lg text-gray-600 font-quicksand mb-8">
+              From classic vanilla to innovative keto and vegan options, each recipe is carefully 
+              tested and perfected to ensure the best results in your home kitchen.
+            </p>
+            <a
+              href="/about"
+              class="inline-flex items-center bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white px-8 py-4 rounded-2xl font-quicksand font-bold text-lg hover:from-cupcake-cherry hover:to-cupcake-coral transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
+            >
+              Learn More About Sarah
+              <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+          <div class="relative">
+            <img
+              src="/Sarah.png"
+              alt="Sarah - Professional Baker"
+              class="w-full h-96 object-cover rounded-2xl shadow-2xl"
+            />
+            <div class="absolute -bottom-6 -right-6 bg-gradient-to-r from-sunshine-400 to-sunshine-600 text-white p-6 rounded-2xl shadow-xl">
+              <div class="text-center">
+                <div class="text-3xl font-bold font-poppins">4.9</div>
+                <div class="text-sm font-quicksand">Average Rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

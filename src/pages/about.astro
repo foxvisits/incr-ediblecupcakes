@@ -1,0 +1,183 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout 
+  title="About Sarah - Professional Baker - Incr-EdibleCupCakes"
+  description="Meet Sarah, our professional baker with over 10 years of experience creating extraordinary cupcake recipes for every dietary need and preference."
+  image="/Sarah.png"
+  canonical="https://incr-ediblecupcakes.com/about"
+>
+  <Header />
+  
+  <main id="main-content" class="pt-16 lg:pt-20">
+    <!-- Hero Section -->
+    <section class="py-12 lg:py-16 bg-gradient-to-br from-cupcake-coral/10 via-sunshine-400/10 to-cupcake-cherry/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-poppins font-bold text-gray-900 mb-4">
+            About Sarah
+          </h1>
+          <p class="text-lg text-gray-600 font-quicksand max-w-2xl mx-auto">
+            Meet the professional baker behind Incr-EdibleCupCakes and discover the passion 
+            that drives our extraordinary recipes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sarah's Story -->
+    <section class="py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-6">
+              A Passion for Extraordinary Baking
+            </h2>
+            <p class="text-lg text-gray-600 font-quicksand mb-6">
+              With over 10 years of experience in professional baking, Sarah has dedicated her career 
+              to creating extraordinary cupcake recipes that cater to every dietary need and preference. 
+              Her journey began in a small bakery in Portland, Oregon, where she discovered her love 
+              for transforming simple ingredients into magical treats.
+            </p>
+            <p class="text-lg text-gray-600 font-quicksand mb-6">
+              Sarah's expertise spans across traditional baking techniques and modern dietary innovations. 
+              She has mastered the art of creating delicious cupcakes that are keto-friendly, vegan, 
+              gluten-free, and nut-free, without ever compromising on taste or texture.
+            </p>
+            <p class="text-lg text-gray-600 font-quicksand mb-8">
+              Each recipe on Incr-EdibleCupCakes has been carefully tested and perfected in Sarah's 
+              home kitchen, ensuring that every home baker can achieve professional-quality results 
+              with clear, step-by-step instructions.
+            </p>
+            <a
+              href="/recipes"
+              class="inline-flex items-center bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white px-8 py-4 rounded-2xl font-quicksand font-bold text-lg hover:from-cupcake-cherry hover:to-cupcake-coral transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
+            >
+              Explore Sarah's Recipes
+              <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+          <div class="relative">
+            <img
+              src="/Sarah.png"
+              alt="Sarah - Professional Baker"
+              class="w-full h-96 object-cover rounded-2xl shadow-2xl"
+            />
+            <div class="absolute -bottom-6 -right-6 bg-gradient-to-r from-sunshine-400 to-sunshine-600 text-white p-6 rounded-2xl shadow-xl">
+              <div class="text-center">
+                <div class="text-3xl font-bold font-poppins">10+</div>
+                <div class="text-sm font-quicksand">Years Experience</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="py-16 lg:py-24 bg-gradient-to-br from-gray-50 to-pink-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-4">
+            Sarah's Expertise
+          </h2>
+          <p class="text-lg text-gray-600 font-quicksand max-w-2xl mx-auto">
+            Specialized knowledge in creating delicious cupcakes for every dietary preference and need.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+            <div class="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+              🧁
+            </div>
+            <h3 class="text-xl font-poppins font-bold text-gray-900 mb-3">Classic Baking</h3>
+            <p class="text-gray-600 font-quicksand">
+              Mastery of traditional baking techniques and time-tested recipes that create the perfect foundation for extraordinary cupcakes.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+            <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+              🥑
+            </div>
+            <h3 class="text-xl font-poppins font-bold text-gray-900 mb-3">Keto & Low-Carb</h3>
+            <p class="text-gray-600 font-quicksand">
+              Specialized knowledge in ketogenic baking, creating delicious low-carb cupcakes that maintain taste without compromising dietary goals.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+            <div class="w-16 h-16 bg-gradient-to-r from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+              🌱
+            </div>
+            <h3 class="text-xl font-poppins font-bold text-gray-900 mb-3">Vegan Baking</h3>
+            <p class="text-gray-600 font-quicksand">
+              Expert in plant-based baking techniques, creating dairy-free and egg-free cupcakes that are both delicious and compassionate.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+            <div class="w-16 h-16 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+              🚫
+            </div>
+            <h3 class="text-xl font-poppins font-bold text-gray-900 mb-3">Allergy-Friendly</h3>
+            <p class="text-gray-600 font-quicksand">
+              Deep understanding of food allergies and cross-contamination prevention, ensuring safe baking for everyone.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+            <div class="w-16 h-16 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+              🌾
+            </div>
+            <h3 class="text-xl font-poppins font-bold text-gray-900 mb-3">Gluten-Free</h3>
+            <p class="text-gray-600 font-quicksand">
+              Expertise in gluten-free flour blends and techniques, creating cupcakes that are indistinguishable from traditional recipes.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+            <div class="w-16 h-16 bg-gradient-to-r from-pink-400 to-pink-600 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+              ✨
+            </div>
+            <h3 class="text-xl font-poppins font-bold text-gray-900 mb-3">Innovation</h3>
+            <p class="text-gray-600 font-quicksand">
+              Continuous experimentation with new ingredients and techniques to create unique flavor combinations and textures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-4">
+            Get in Touch
+          </h2>
+          <p class="text-lg text-gray-600 font-quicksand max-w-2xl mx-auto mb-8">
+            Have questions about a recipe or want to share your baking success? Sarah loves hearing from fellow baking enthusiasts!
+          </p>
+          <a
+            href="/contact"
+            class="inline-flex items-center bg-gradient-to-r from-cupcake-coral to-cupcake-cherry text-white px-8 py-4 rounded-2xl font-quicksand font-bold text-lg hover:from-cupcake-cherry hover:to-cupcake-coral transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
+          >
+            Contact Sarah
+            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
