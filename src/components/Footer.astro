@@ -1,94 +1,179 @@
 ---
-// Footer component for Astro
+// Footer component props
+interface Props {
+  // No props needed for this footer
+}
+
+const { } = Astro.props;
 ---
 
 <footer class="bg-gradient-to-br from-cupcake-coral via-cupcake-cherry to-sunshine-600 text-white relative overflow-hidden">
-  <!-- Background Decorations -->
+  {/* Background Decorations */}
   <div class="absolute inset-0 pointer-events-none">
-    {[...Array(15)].map((_, i) => (
-      <div
-        class="absolute animate-float-random opacity-10"
-        style={{
-          left: `${Math.random() * 100}%`,
-          top: `${Math.random() * 100}%`,
-          animationDelay: `${i * 0.5}s`,
-          animationDuration: `${8 + Math.random() * 4}s`,
-        }}
-      >
-        {i % 3 === 0 ? '🧁' : i % 3 === 1 ? '🍰' : '🎂'}
-      </div>
-    ))}
+    <div id="footer-decorations" class="absolute inset-0">
+      <!-- Floating decorations will be added by JavaScript -->
+    </div>
   </div>
   
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <!-- Brand Section -->
-      <div class="lg:col-span-2">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      {/* Brand Section */}
+      <div class="col-span-1 md:col-span-2">
         <div class="flex items-center space-x-3 mb-4">
           <img
             src="/Incr-EdibleCupCakes Logo.png"
             alt="Incr-EdibleCupCakes Logo"
-            class="h-12 w-12"
+            class="h-24 w-auto object-contain transform transition-all duration-300 hover:scale-105"
+            width="96"
+            height="96"
           />
-          <h3 class="text-2xl font-poppins font-bold text-white">Incr-EdibleCupCakes</h3>
         </div>
-        <p class="text-white/90 mb-6 max-w-md font-quicksand">
-          Discover extraordinary cupcake recipes for every taste and dietary preference. 
-          Professional baker Sarah shares tested recipes with step-by-step instructions.
+        <p class="font-nunito text-pink-100 mb-6 max-w-md">
+          Discover the most innovative and delicious cupcake recipes that cater to every taste and dietary preference. From classic favorites to unique creations.
         </p>
         <div class="flex space-x-4">
-          <a href="https://instagram.com/incrediblecupcakes" class="text-white/80 hover:text-white transition-colors duration-300" aria-label="Instagram">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781h-1.594c-.807 0-1.418.611-1.418 1.418s.611 1.418 1.418 1.418h1.594c.807 0 1.418-.611 1.418-1.418s-.611-1.418-1.418-1.418z"/>
+          <a
+            href="https://instagram.com/incrediblecupcakes"
+            class="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110 hover:rotate-12"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
             </svg>
           </a>
-          <a href="https://facebook.com/incrediblecupcakes" class="text-white/80 hover:text-white transition-colors duration-300" aria-label="Facebook">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <a
+            href="https://facebook.com/incrediblecupcakes"
+            class="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110 hover:rotate-12"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
             </svg>
           </a>
-          <a href="mailto:sarah@incr-ediblecupcakes.com" class="text-white/80 hover:text-white transition-colors duration-300" aria-label="Email">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <a
+            href="https://twitter.com/incrediblecupcakes"
+            class="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110 hover:rotate-12"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+          <a
+            href="mailto:sarah@incr-ediblecupcakes.com"
+            class="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110 hover:rotate-12"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
           </a>
         </div>
       </div>
 
-      <!-- Quick Links -->
+      {/* Quick Links */}
       <div>
-        <h4 class="text-lg font-poppins font-semibold text-white mb-4">Quick Links</h4>
-        <ul class="space-y-2 font-quicksand">
-          <li><a href="/" class="text-white/80 hover:text-white transition-colors duration-300">Home</a></li>
-          <li><a href="/recipes" class="text-white/80 hover:text-white transition-colors duration-300">All Recipes</a></li>
-          <li><a href="/categories/classic" class="text-white/80 hover:text-white transition-colors duration-300">Classic Cupcakes</a></li>
-          <li><a href="/categories/keto" class="text-white/80 hover:text-white transition-colors duration-300">Keto Cupcakes</a></li>
-          <li><a href="/categories/vegan" class="text-white/80 hover:text-white transition-colors duration-300">Vegan Cupcakes</a></li>
+        <h4 class="font-quicksand font-bold text-lg mb-4 flex items-center">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+          </svg>
+          Quick Links
+        </h4>
+        <ul class="space-y-2 text-pink-100 font-nunito">
+          <li>
+            <a href="/recipes" class="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">
+              All Recipes
+            </a>
+          </li>
+          <li>
+            <a href="/categories/keto" class="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">
+              Keto Cupcakes
+            </a>
+          </li>
+          <li>
+            <a href="/categories/vegan" class="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">
+              Vegan Options
+            </a>
+          </li>
+          <li>
+            <a href="/categories/nut-free" class="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">
+              Nut-Free
+            </a>
+          </li>
+          <li>
+            <a href="/about" class="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">
+              About Me
+            </a>
+          </li>
+          <li>
+            <a href="/contact" class="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
 
-      <!-- Contact Info -->
+      {/* Newsletter */}
       <div>
-        <h4 class="text-lg font-poppins font-semibold text-white mb-4">Contact</h4>
-        <div class="space-y-2 font-quicksand text-white/80">
-          <p>📍 Portland, Oregon</p>
-          <p>📞 +1-555-123-CAKE</p>
-          <p>✉️ sarah@incr-ediblecupcakes.com</p>
+        <h4 class="font-quicksand font-bold text-lg mb-4">Stay Updated</h4>
+        <p class="font-nunito text-pink-100 text-sm mb-4">
+          Get the latest recipes delivered to your inbox!
+        </p>
+        <div class="flex">
+          <input
+            type="email"
+            placeholder="Your email"
+            class="flex-1 px-3 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-l-lg text-white placeholder-pink-200 focus:outline-none focus:border-white/40 font-nunito"
+          />
+          <button class="px-4 py-2 bg-sunshine-400 hover:bg-sunshine-500 rounded-r-lg transition-all duration-300 hover:scale-105">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
 
-    <!-- Bottom Section -->
-    <div class="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-      <p class="text-white/80 font-quicksand text-sm mb-4 md:mb-0">
-        © 2024 Incr-EdibleCupCakes. Made with <span class="text-red-300">♥</span> by Sarah
-      </p>
-      <div class="flex items-center space-x-2 text-white/60">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <div class="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between">
+      <p class="font-nunito text-pink-200 text-sm">
+        © 2025 Incr-EdibleCupCakes. Made with <svg class="w-4 h-4 text-sunshine-300 inline mx-1 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-        </svg>
-        <span class="text-sm font-quicksand">Extraordinary in Every Bite</span>
-      </div>
+        </svg> for cupcake lovers.
+      </p>
+      <p class="font-nunito text-pink-200 text-sm mt-2 md:mt-0">
+        Domain: incr-ediblecupcakes.com
+      </p>
     </div>
   </div>
 </footer>
+
+<script>
+  // Add floating decorations to footer
+  function addFooterDecorations() {
+    const decorationsContainer = document.getElementById('footer-decorations');
+    if (!decorationsContainer) return;
+
+    // Clear existing decorations
+    decorationsContainer.innerHTML = '';
+
+    // Add floating decorations
+    for (let i = 0; i < 15; i++) {
+      const decoration = document.createElement('div');
+      decoration.className = 'absolute animate-float-random opacity-10';
+      decoration.style.left = `${Math.random() * 100}%`;
+      decoration.style.top = `${Math.random() * 100}%`;
+      decoration.style.animationDelay = `${i * 0.5}s`;
+      decoration.style.animationDuration = `${8 + Math.random() * 4}s`;
+      
+      const emoji = i % 3 === 0 ? '🧁' : i % 3 === 1 ? '🍰' : '🎂';
+      decoration.textContent = emoji;
+      
+      decorationsContainer.appendChild(decoration);
+    }
+  }
+
+  // Initialize decorations when DOM is loaded
+  document.addEventListener('DOMContentLoaded', addFooterDecorations);
+</script>

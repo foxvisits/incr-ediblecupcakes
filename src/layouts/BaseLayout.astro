@@ -134,5 +134,54 @@ const siteTitle = title.includes('Incr-EdibleCupCakes') ? title : `${title} - In
       </a>
       <slot />
     </div>
+    
+    <!-- Global Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Incr-EdibleCupCakes",
+        "url": "https://incr-ediblecupcakes.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://incr-ediblecupcakes.com/recipes?search={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Incr-EdibleCupCakes",
+        "url": "https://incr-ediblecupcakes.com",
+        "logo": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png",
+        "description": "Professional bakery specializing in innovative cupcake recipes for all dietary preferences",
+        "founder": {
+          "@type": "Person",
+          "name": "Sarah",
+          "jobTitle": "Professional Baker",
+          "image": "https://incr-ediblecupcakes.com/Sarah.png"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "US",
+          "addressLocality": "Portland, Oregon"
+        },
+        "sameAs": [
+          "https://instagram.com/incrediblecupcakes",
+          "https://facebook.com/incrediblecupcakes"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-555-123-CAKE",
+          "contactType": "customer service",
+          "email": "sarah@incr-ediblecupcakes.com"
+        }
+      }
+    </script>
   </body>
 </html>
