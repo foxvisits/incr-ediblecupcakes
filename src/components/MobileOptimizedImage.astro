@@ -1,0 +1,147 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  className?: string;
+  width?: number;
+  height?: number;
+  priority?: boolean;
+  sizes?: string;
+}
+
+const { 
+  src, 
+  alt, 
+  className = '', 
+  width, 
+  height, 
+  priority = false,
+  sizes = "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+} = Astro.props;
+
+// Mobile-first image optimization
+const generateMobileSrcSet = (format: string, quality: number) => {
+  // Mobile-first sizes: 320, 375, 640, 960 (skip 1280+ for mobile)
+  const mobileSizes = [320, 375, 640, 960];
+  
+  return mobileSizes.map(size => {
+    const params = new URLSearchParams({
+      w: size.toString(),
+      fm: format,
+      q: quality.toString(),
+      f: 'auto'
+    });
+    
+    return `${src}?${params.toString()} ${size}w`;
+  }).join(', ');
+};
+
+// Desktop sizes for larger screens
+const generateDesktopSrcSet = (format: string, quality: number) => {
+  const desktopSizes = [640, 960, 1280, 1920];
+  
+  return desktopSizes.map(size => {
+    const params = new URLSearchParams({
+      w: size.toString(),
+      fm: format,
+      q: quality.toString(),
+      f: 'auto'
+    });
+    
+    return `${src}?${params.toString()} ${size}w`;
+  }).join(', ');
+};
+
+// Fallback optimized for mobile
+const fallbackSrc = (() => {
+  const params = new URLSearchParams({
+    w: '375', // Mobile-first default
+    fm: 'jpg',
+    q: '85',
+    f: 'auto'
+  });
+  return `${src}?${params.toString()}`;
+})();
+
+// Mobile-first responsive sizes
+const getMobileSizes = () => {
+  if (width && height) {
+    return `(max-width: 640px) ${Math.min(width, 375)}px, (max-width: 1024px) ${Math.min(width, 640)}px, ${width}px`;
+  }
+  return "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw";
+};
+---
+
+<picture>
+  <!-- Mobile-optimized AVIF -->
+  <source 
+    srcset={generateMobileSrcSet('avif', 70)} 
+    sizes={getMobileSizes()}
+    type="image/avif"
+    media="(max-width: 768px)"
+  />
+  
+  <!-- Desktop AVIF -->
+  <source 
+    srcset={generateDesktopSrcSet('avif', 80)} 
+    sizes={getMobileSizes()}
+    type="image/avif"
+    media="(min-width: 769px)"
+  />
+  
+  <!-- Mobile-optimized WebP -->
+  <source 
+    srcset={generateMobileSrcSet('webp', 75)} 
+    sizes={getMobileSizes()}
+    type="image/webp"
+    media="(max-width: 768px)"
+  />
+  
+  <!-- Desktop WebP -->
+  <source 
+    srcset={generateDesktopSrcSet('webp', 85)} 
+    sizes={getMobileSizes()}
+    type="image/webp"
+    media="(min-width: 769px)"
+  />
+  
+  <!-- Fallback JPEG -->
+  <img
+    src={fallbackSrc}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={priority ? 'eager' : 'lazy'}
+    decoding="async"
+    class={`transition-opacity duration-300 ${className}`}
+    style={width && height ? `aspect-ratio: ${width}/${height}` : undefined}
+    srcset={generateMobileSrcSet('jpg', 85)}
+    sizes={getMobileSizes()}
+  />
+</picture>
+
+<style>
+  /* Mobile-optimized loading */
+  img {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  img[src] {
+    opacity: 1;
+  }
+  
+  /* Faster skeleton for mobile */
+  @media (max-width: 768px) {
+    img:not([src]) {
+      background: linear-gradient(90deg, #f5f5f5 25%, #e5e5e5 50%, #f5f5f5 75%);
+      background-size: 200% 100%;
+      animation: loading-mobile 1s infinite;
+    }
+    
+    @keyframes loading-mobile {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+  }
+</style>

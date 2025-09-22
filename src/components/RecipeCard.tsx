@@ -35,22 +35,22 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
       <div className="relative overflow-hidden">
         <picture>
           <source 
-            srcSet={`${recipe.image}?w=640&fm=avif&q=80 640w, ${recipe.image}?w=960&fm=avif&q=80 960w, ${recipe.image}?w=1280&fm=avif&q=80 1280w`}
+            srcSet={`${recipe.image}?w=375&fm=avif&q=75 375w, ${recipe.image}?w=640&fm=avif&q=80 640w, ${recipe.image}?w=960&fm=avif&q=80 960w`}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             type="image/avif"
           />
           <source 
-            srcSet={`${recipe.image}?w=640&fm=webp&q=85 640w, ${recipe.image}?w=960&fm=webp&q=85 960w, ${recipe.image}?w=1280&fm=webp&q=85 1280w`}
+            srcSet={`${recipe.image}?w=375&fm=webp&q=80 375w, ${recipe.image}?w=640&fm=webp&q=85 640w, ${recipe.image}?w=960&fm=webp&q=85 960w`}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             type="image/webp"
           />
           <img
-            src={`${recipe.image}?w=640&fm=jpg&q=90`}
+            src={`${recipe.image}?w=375&fm=jpg&q=85`}
             alt={recipe.title}
             className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
             loading="lazy"
             decoding="async"
-            srcSet={`${recipe.image}?w=640&fm=jpg&q=90 640w, ${recipe.image}?w=960&fm=jpg&q=90 960w, ${recipe.image}?w=1280&fm=jpg&q=90 1280w`}
+            srcSet={`${recipe.image}?w=375&fm=jpg&q=85 375w, ${recipe.image}?w=640&fm=jpg&q=90 640w, ${recipe.image}?w=960&fm=jpg&q=90 960w`}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         </picture>

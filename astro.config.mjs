@@ -29,6 +29,24 @@ export default defineConfig({
     ssr: {
       noExternal: ['lucide-react'],
     },
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'vendor': ['react', 'react-dom'],
+            'icons': ['lucide-react']
+          }
+        }
+      },
+      target: 'es2018',
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true,
+        },
+      },
+    },
   },
   experimental: {
     contentCollectionCache: true,

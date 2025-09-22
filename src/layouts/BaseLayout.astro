@@ -70,19 +70,33 @@ const siteTitle = title.includes('Incr-EdibleCupCakes') ? title : `${title} - In
     <!-- Canonical URL -->
     <link rel="canonical" href={canonical} />
     
-    <!-- Critical CSS - Inlined for performance -->
+    <!-- Critical CSS - Mobile-first optimized -->
     <style>
-      /* Critical above-the-fold styles - optimized */
+      /* Critical above-the-fold styles - mobile-first */
       * { box-sizing: border-box; }
       html { font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif; }
       body { margin: 0; background: linear-gradient(135deg, #fdf2f8 0%, #fed7aa 100%); min-height: 100vh; line-height: 1.6; color: #374151; }
-      .header-container { background: linear-gradient(135deg, #ec4899 0%, #f97316 100%); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); position: relative; z-index: 50; }
-      .hero-gradient { background: linear-gradient(135deg, #fdf2f8 0%, #fed7aa 100%); min-height: 80vh; }
-      .btn-primary { background: linear-gradient(135deg, #ec4899 0%, #f97316 100%); color: white; padding: 0.75rem 1.5rem; border-radius: 0.75rem; font-weight: 600; text-decoration: none; display: inline-block; transition: transform 0.2s ease; border: none; cursor: pointer; }
-      .btn-primary:hover { transform: translateY(-2px); }
+      
+      /* Mobile-first responsive design */
+      .header-container { background: linear-gradient(135deg, #ec4899 0%, #f97316 100%); position: relative; z-index: 50; }
+      .hero-gradient { background: linear-gradient(135deg, #fdf2f8 0%, #fed7aa 100%); min-height: 60vh; }
+      .btn-primary { background: linear-gradient(135deg, #ec4899 0%, #f97316 100%); color: white; padding: 0.75rem 1.5rem; border-radius: 0.75rem; font-weight: 600; text-decoration: none; display: inline-block; border: none; cursor: pointer; }
       .text-shadow-sm { text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
       img { max-width: 100%; height: auto; }
-      @media (max-width: 768px) { .hero-gradient { min-height: 60vh; } }
+      
+      /* Mobile optimizations */
+      @media (max-width: 768px) {
+        .hero-gradient { min-height: 50vh; }
+        .btn-primary { padding: 0.625rem 1.25rem; font-size: 0.875rem; }
+        body { font-size: 14px; }
+      }
+      
+      /* Desktop enhancements */
+      @media (min-width: 769px) {
+        .hero-gradient { min-height: 80vh; }
+        .btn-primary:hover { transform: translateY(-2px); transition: transform 0.2s ease; }
+        .header-container { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+      }
     </style>
 
     <!-- Preconnects / Fonts - Optimized for performance -->
@@ -184,13 +198,16 @@ const siteTitle = title.includes('Incr-EdibleCupCakes') ? title : `${title} - In
       >
         Skip to main content
       </a>
-      <slot />
+    <slot />
     </div>
     
-    <!-- Deferred JavaScript for performance -->
+    <!-- Mobile-optimized JavaScript -->
     <script>
-      // Critical performance optimizations
-      if ('serviceWorker' in navigator) {
+      // Mobile-first performance optimizations
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      
+      // Service Worker - only on mobile for better caching
+      if ('serviceWorker' in navigator && isMobile) {
         window.addEventListener('load', () => {
           navigator.serviceWorker.register('/service-worker.js')
             .then(registration => console.log('SW registered'))
@@ -198,20 +215,45 @@ const siteTitle = title.includes('Incr-EdibleCupCakes') ? title : `${title} - In
         });
       }
       
-      // Preload next page on hover
+      // Lazy load non-critical resources
       document.addEventListener('DOMContentLoaded', () => {
-        const links = document.querySelectorAll('a[href^="/"]');
-        links.forEach(link => {
-          link.addEventListener('mouseenter', () => {
-            const href = link.getAttribute('href');
-            if (href && !href.includes('#')) {
-              const linkEl = document.createElement('link');
-              linkEl.rel = 'prefetch';
-              linkEl.href = href;
-              document.head.appendChild(linkEl);
-            }
+        // Preload next page on hover (desktop only)
+        if (!isMobile) {
+          const links = document.querySelectorAll('a[href^="/"]');
+          links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+              const href = link.getAttribute('href');
+              if (href && !href.includes('#')) {
+                const linkEl = document.createElement('link');
+                linkEl.rel = 'prefetch';
+                linkEl.href = href;
+                document.head.appendChild(linkEl);
+              }
+            });
           });
-        });
+        }
+        
+        // Mobile-specific optimizations
+        if (isMobile) {
+          // Reduce animation complexity on mobile
+          document.body.classList.add('mobile-optimized');
+          
+          // Lazy load images below the fold
+          const images = document.querySelectorAll('img[loading="lazy"]');
+          if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  const img = entry.target;
+                  img.src = img.dataset.src || img.src;
+                  imageObserver.unobserve(img);
+                }
+              });
+            }, { rootMargin: '50px' });
+            
+            images.forEach(img => imageObserver.observe(img));
+          }
+        }
       });
     </script>
     
