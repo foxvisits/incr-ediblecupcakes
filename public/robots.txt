@@ -15,6 +15,9 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 Disallow: /*.json$
+# Allow important JSON files
+Allow: /manifest.json
+Allow: /_astro/*.json
 
 # Allow common SEO files
 Allow: /sitemap.xml

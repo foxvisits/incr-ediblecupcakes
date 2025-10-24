@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout 
+  title="Page Not Found - 404 Error | Incr-EdibleCupCakes"
+  description="Sorry, the page you're looking for doesn't exist. Explore our amazing cupcake recipes instead!"
+  canonical="https://incr-ediblecupcakes.com/404"
+>
+  <Header />
+  
+  <main class="pt-16 lg:pt-20">
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-cupcake-pink/20 to-sunshine-100/50">
+      <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <div class="mb-8">
+          <h1 class="font-quicksand text-8xl sm:text-9xl font-black text-cupcake-coral mb-4">404</h1>
+          <h2 class="font-quicksand text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+            Oops! This Page is Missing
+          </h2>
+          <p class="font-nunito text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Looks like this cupcake recipe got lost in the oven! But don't worry - we have plenty of other 
+            delicious recipes waiting for you.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <a
+            href="/"
+            class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center"
+          >
+            <div class="text-4xl mb-4">🏠</div>
+            <h3 class="font-quicksand font-bold text-gray-900 mb-2">Go Home</h3>
+            <p class="font-nunito text-gray-600 text-sm">Return to our homepage</p>
+          </a>
+          
+          <a
+            href="/recipes"
+            class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center"
+          >
+            <div class="text-4xl mb-4">🧁</div>
+            <h3 class="font-quicksand font-bold text-gray-900 mb-2">Browse Recipes</h3>
+            <p class="font-nunito text-gray-600 text-sm">Explore our recipe collection</p>
+          </a>
+          
+          <a
+            href="/contact"
+            class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center"
+          >
+            <div class="text-4xl mb-4">💌</div>
+            <h3 class="font-quicksand font-bold text-gray-900 mb-2">Contact Us</h3>
+            <p class="font-nunito text-gray-600 text-sm">Let us know what you need</p>
+          </a>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-4">Popular Recipes</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <a href="/recipe/classic-vanilla-dream-cupcakes" class="text-cupcake-coral hover:text-cupcake-cherry transition-colors">
+              Classic Vanilla Dream
+            </a>
+            <a href="/recipe/keto-chocolate-bliss-cupcakes" class="text-cupcake-coral hover:text-cupcake-cherry transition-colors">
+              Keto Chocolate Bliss
+            </a>
+            <a href="/recipe/vegan-rainbow-surprise-cupcakes" class="text-cupcake-coral hover:text-cupcake-cherry transition-colors">
+              Vegan Rainbow Surprise
+            </a>
+            <a href="/recipe/red-velvet-romance-cupcakes" class="text-cupcake-coral hover:text-cupcake-cherry transition-colors">
+              Red Velvet Romance
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/update-sitemap.mjs && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "astro check"
+    "lint": "astro check",
+    "update-sitemap": "node scripts/update-sitemap.mjs",
+    "seo-check": "node scripts/seo-monitor.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",

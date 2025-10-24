@@ -1,0 +1,21 @@
+---
+// Component to generate Open Graph images dynamically
+export interface Props {
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const { title, description, image } = Astro.props;
+---
+
+<!-- Open Graph Image Meta Tags -->
+<meta property="og:image" content={image ? `https://incr-ediblecupcakes.com${image}` : "https://incr-ediblecupcakes.com/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png"} />
+<meta property="og:image:alt" content={`${title} - Incr-EdibleCupCakes Recipe`} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/png" />
+
+<!-- Twitter Card Image Meta Tags -->
+<meta name="twitter:image" content={image ? `https://incr-ediblecupcakes.com${image}` : "https://incr-ediblecupcakes.com/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png"} />
+<meta name="twitter:image:alt" content={`${title} - Incr-EdibleCupCakes Recipe`} />

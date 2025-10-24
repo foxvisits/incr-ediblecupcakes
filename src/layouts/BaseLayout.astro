@@ -39,6 +39,19 @@ const siteTitle = title.includes('Incr-EdibleCupCakes') ? title : `${title} - In
     <meta name="geo.region" content="US" />
     <meta name="geo.country" content="United States" />
     
+    <!-- Additional SEO Meta Tags -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Incr-EdibleCupCakes" />
+    <meta name="msapplication-TileColor" content="#FF69B4" />
+    <meta name="theme-color" content="#FF69B4" />
+    <meta name="color-scheme" content="light" />
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/icon-192.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/icon-192.png" />
@@ -164,7 +177,7 @@ const siteTitle = title.includes('Incr-EdibleCupCakes') ? title : `${title} - In
         "name": "Incr-EdibleCupCakes",
         "url": "https://incr-ediblecupcakes.com",
         "logo": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png",
-        "description": "Profesjonalna cukiernia specjalizująca się w innowacyjnych przepisach na babeczki dla wszystkich preferencji dietetycznych",
+        "description": "Professional bakery specializing in innovative cupcake recipes for all dietary preferences",
         "founder": {
           "@type": "Person",
           "name": "Sarah",
@@ -255,55 +268,6 @@ const siteTitle = title.includes('Incr-EdibleCupCakes') ? title : `${title} - In
           }
         }
       });
-    </script>
-    
-    <!-- Global Schema.org JSON-LD -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Incr-EdibleCupCakes",
-        "url": "https://incr-ediblecupcakes.com",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://incr-ediblecupcakes.com/recipes?search={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-        }
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Incr-EdibleCupCakes",
-        "url": "https://incr-ediblecupcakes.com",
-        "logo": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png",
-        "description": "Professional bakery specializing in innovative cupcake recipes for all dietary preferences",
-        "founder": {
-          "@type": "Person",
-          "name": "Sarah",
-          "jobTitle": "Professional Baker",
-          "image": "https://incr-ediblecupcakes.com/Sarah.png"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "US",
-          "addressLocality": "Portland, Oregon"
-        },
-        "sameAs": [
-          "https://instagram.com/incrediblecupcakes",
-          "https://facebook.com/incrediblecupcakes"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+1-555-123-CAKE",
-          "contactType": "customer service",
-          "email": "sarah@incr-ediblecupcakes.com"
-        }
-      }
     </script>
   </body>
 </html>

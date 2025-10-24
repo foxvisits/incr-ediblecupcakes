@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+import fs from 'fs';
+import path from 'path';
+
+// Generate dynamic sitemap with current date
+const generateSitemap = () => {
+  const currentDate = new Date().toISOString().split('T')[0];
+  
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
   <!-- Homepage -->
   <url>
     <loc>https://incr-ediblecupcakes.com/</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -17,14 +24,14 @@
   <!-- Main Pages -->
   <url>
     <loc>https://incr-ediblecupcakes.com/recipes</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/about</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -35,7 +42,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/contact</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -43,35 +50,35 @@
   <!-- Category Pages -->
   <url>
     <loc>https://incr-ediblecupcakes.com/categories/classic</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/categories/keto</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/categories/vegan</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/categories/nut-free</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/categories/gluten-free</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -79,7 +86,7 @@
   <!-- Recipe Pages -->
   <url>
     <loc>https://incr-ediblecupcakes.com/recipe/classic-vanilla-dream-cupcakes</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -90,7 +97,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipe/keto-chocolate-bliss-cupcakes</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -101,7 +108,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipe/vegan-rainbow-surprise-cupcakes</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -112,7 +119,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipe/nut-free-lemon-sunshine-cupcakes</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -123,7 +130,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipe/red-velvet-romance-cupcakes</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -134,7 +141,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipe/gluten-free-almond-joy-cupcakes</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -145,7 +152,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipe/rosewater-pistachio-delight-cupcakes</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -156,7 +163,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipe/mango-coconut-sunset-cupcakes</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -167,7 +174,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipe/chocolate-chili-firecracker-cupcakes</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -178,7 +185,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipe/boston-cream-cupcakes</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -189,7 +196,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipe/prune-cupcakes</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -200,7 +207,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipe/yellow-cake-cupcakes</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -209,4 +216,13 @@
     </image:image>
   </url>
 
-</urlset>
+</urlset>`;
+
+  return sitemap;
+};
+
+// Write sitemap to public directory
+const sitemapContent = generateSitemap();
+fs.writeFileSync(path.join(process.cwd(), 'public', 'sitemap.xml'), sitemapContent);
+
+console.log('✅ Sitemap updated with current date:', new Date().toISOString().split('T')[0]);
