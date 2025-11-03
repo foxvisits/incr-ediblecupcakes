@@ -5,7 +5,7 @@ import Footer from '../../components/Footer.astro';
 import { validatedRecipes as recipes } from '../../data/recipes';
 import OGImageGenerator from '../../components/OGImageGenerator.astro';
 
-const KNOWN: Record<string, { title: string; intro: string; tips: string[] }> = {
+const KNOWN = {
   egg: {
     title: 'Egg substitutes for cupcakes',
     intro: 'Popular egg replacements that actually work in cupcakes.',
@@ -29,8 +29,7 @@ const KNOWN: Record<string, { title: string; intro: string; tips: string[] }> = 
 };
 
 export async function getStaticPaths() {
-  const keys = Object.keys(KNOWN);
-  return keys.map((ingredient) => ({ params: { ingredient }, props: { ingredient } }));
+  return ['egg', 'buttermilk', 'sugar', 'flour'].map((ingredient) => ({ params: { ingredient }, props: { ingredient } }));
 }
 
 const { ingredient } = Astro.params;
