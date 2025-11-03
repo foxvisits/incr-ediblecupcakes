@@ -27,6 +27,39 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
   const [captchaQuestion, setCaptchaQuestion] = useState({ question: '', answer: 0 });
   const [comments, setComments] = useState([]);
 
+  // Local persistence per recipe
+  const storageKey = `recipe:${recipeId}:interactions`;
+
+  React.useEffect(() => {
+    try {
+      const raw = localStorage.getItem(storageKey);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (typeof parsed.isLiked === 'boolean') setIsLiked(parsed.isLiked);
+        if (typeof parsed.isBookmarked === 'boolean') setIsBookmarked(parsed.isBookmarked);
+        if (typeof parsed.likes === 'number') setLikes(parsed.likes);
+        if (typeof parsed.bookmarks === 'number') setBookmarks(parsed.bookmarks);
+        if (typeof parsed.userRating === 'number') setUserRating(parsed.userRating);
+        if (Array.isArray(parsed.comments)) setComments(parsed.comments);
+      }
+    } catch {}
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [recipeId]);
+
+  React.useEffect(() => {
+    try {
+      const payload = {
+        isLiked,
+        isBookmarked,
+        likes,
+        bookmarks,
+        userRating,
+        comments
+      };
+      localStorage.setItem(storageKey, JSON.stringify(payload));
+    } catch {}
+  }, [isLiked, isBookmarked, likes, bookmarks, userRating, comments, storageKey]);
+
   // Generate simple math captcha
   const generateCaptcha = () => {
     const num1 = Math.floor(Math.random() * 10) + 1;
@@ -333,6 +366,27 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
           </div>
         </div>
       )}
+
+      {/* Newsletter */}
+      <div className="mt-8 grid grid-cols-1 lg:grid-cols-1 gap-6">
+        <div className="p-5 rounded-xl border border-rose-100 bg-rose-50/50">
+          <h3 className="font-quicksand font-bold text-gray-900 mb-2">Get pro tips weekly</h3>
+          <p className="font-nunito text-sm text-gray-600 mb-3">Join our newsletter for expert cupcake techniques and troubleshooting.</p>
+          <form name="newsletter" method="POST" data-netlify="true" className="flex gap-2">
+            <input type="hidden" name="form-name" value="newsletter" />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="you@email.com"
+              className="font-nunito flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cupcake-coral focus:border-transparent"
+            />
+            <button className="font-quicksand px-4 py-2 bg-cupcake-coral text-white rounded-lg hover:bg-cupcake-cherry transition font-bold">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };

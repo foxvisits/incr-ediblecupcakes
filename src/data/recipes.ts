@@ -5,7 +5,7 @@ export interface Recipe {
   description: string;
   shortDescription: string;
   image: string;
-  category: 'classic' | 'keto' | 'vegan' | 'nut-free' | 'gluten-free';
+  category: 'classic' | 'keto' | 'vegan' | 'nut-free' | 'gluten-free' | 'gourmet' | 'tropical' | 'spiced' | 'seasonal';
   difficulty: 'Easy' | 'Medium' | 'Hard';
   prepTime: string;
   cookTime: string;
@@ -15,6 +15,7 @@ export interface Recipe {
   featured?: boolean;
   ingredients: string[];
   instructions: string[];
+  tags?: string[];
   nutritionInfo?: {
     calories: number;
     carbs: number;
@@ -101,6 +102,7 @@ export const recipes: Recipe[] = [
     featured: true,
     cuisine: 'American',
     dietaryBadges: ['Vegetarian'],
+    tags: ['vanilla', 'buttercream', 'madagascar-vanilla', 'classic'],
     author: {
       name: 'Incr-EdibleCupCakes',
       url: 'https://incr-ediblecupcakes.com'
@@ -177,6 +179,91 @@ export const recipes: Recipe[] = [
     ]
   },
   {
+    id: '13',
+    title: 'Cherry Blossom Cupcakes',
+    slug: 'cherry-blossom-cupcakes',
+    description: 'Delicate spring cupcakes with a light natural cherry flavor and a soft pink swirl of buttercream inspired by cherry blossoms. The crumb is tender and moist, balanced with a whisper of almond and vanilla that lifts the fruit without overpowering. Finished with a pale pink frosting and tiny blossom decoration for an elegant, seasonal look.',
+    shortDescription: 'Light cherry flavor, tender crumb, and a soft pink swirl inspired by cherry blossoms.',
+    image: '/Cherry-Blossom-Cupcakes.jpg',
+    category: 'seasonal',
+    difficulty: 'Easy',
+    prepTime: '25 mins',
+    cookTime: '18 mins',
+    totalTime: '43 mins',
+    servings: 12,
+    rating: 4.8,
+    featured: true,
+    cuisine: 'Modern',
+    dietaryBadges: ['Vegetarian'],
+    author: {
+      name: 'Incr-EdibleCupCakes',
+      url: 'https://incr-ediblecupcakes.com'
+    },
+    keywords: ['cherry cupcakes', 'spring cupcakes', 'pink swirl frosting', 'cherry blossom cupcakes'],
+    tags: ['cherry', 'blossom', 'spring', 'pink-swirl'],
+    ingredients: [
+      '2 cups all-purpose flour',
+      '1½ tsp baking powder',
+      '½ tsp baking soda',
+      '½ tsp fine salt',
+      '½ cup unsalted butter, softened',
+      '¾ cup granulated sugar',
+      '2 large eggs, room temperature',
+      '1 tsp vanilla extract',
+      '¼ tsp almond extract (optional, enhances cherry)',
+      '½ cup whole milk, room temperature',
+      '½ cup light cherry purée or high-quality cherry juice (reduced to concentrate)',
+      'For frosting: 1 cup unsalted butter, 3–3½ cups confectioners’ sugar, 2–3 tbsp cream/milk, 1–2 tsp cherry juice/purée for tint + flavor'
+    ],
+    instructions: [
+      'Preheat oven to 350°F (175°C). Line a 12-cup muffin pan with cupcake liners.',
+      'Whisk flour, baking powder, baking soda, and salt together and set aside.',
+      'Beat butter and sugar until very light and pale (2–3 minutes).',
+      'Add eggs one at a time, mixing to combine; add vanilla and optional almond extract.',
+      'In a measuring cup, combine milk with cherry purée/juice.',
+      'Add dry ingredients to the butter mixture in two additions, alternating with the cherry milk; mix just until combined.',
+      'Portion batter to 2/3–3/4 full. Bake 16–18 minutes, until a toothpick shows a few moist crumbs.',
+      'Cool 2–3 minutes in the pan, then transfer to a rack to cool completely.',
+      'Frosting: beat butter until smooth and pale, add confectioners’ sugar gradually, then cream/milk to adjust texture. Tint and flavor gently with 1–2 tsp cherry juice/purée to achieve a soft pink. Pipe a gentle swirl; decorate with small blossom accents if desired.'
+    ],
+    nutritionInfo: {
+      calories: 315,
+      carbs: 46,
+      protein: 4,
+      fat: 13,
+      fiber: 1,
+      sugar: 35
+    },
+    tips: [
+      'Reduce cherry juice by simmering to concentrate flavor without adding too much liquid.',
+      'For a pastel swirl, split frosting: leave half white, tint half pink, then fill the piping bag with both sides.',
+      'Use room-temperature ingredients for a finer crumb.'
+    ],
+    variations: [
+      'Fill with a teaspoon of cherry jam before frosting for a surprise center.',
+      'Add lemon zest to batter for a brighter cherry profile.',
+      'Swap ¼ cup milk for sour cream for extra tenderness.'
+    ],
+    pairings: 'Serve with green tea, jasmine tea, or a dry prosecco. Fresh cherries or white chocolate curls complement the look.',
+    bestTime: 'Perfect for spring gatherings, baby showers, and seasonal celebrations.',
+    recipeKeys: ['Seasonal', 'Pastel Aesthetic', 'Light Fruit Flavor', 'Elegant'],
+    conclusion: 'These Cherry Blossom Cupcakes balance a gentle cherry note with an elegant soft pink swirl—seasonal, refined, and crowd-pleasing.',
+    faq: [
+      {
+        question: 'How do I get cherry flavor without artificial extract?',
+        answer: 'Reduce cherry juice/purée over low heat to concentrate flavor, then add small amounts to batter and frosting. A tiny hint of almond extract boosts perceived cherry without tasting almond.'
+      },
+      {
+        question: 'How do I keep the frosting light pink and not runny?',
+        answer: 'Add cherry juice a teaspoon at a time and beat well before adding more. Adjust with extra confectioners’ sugar or brief chilling if needed.'
+      },
+      {
+        question: 'Can I use frozen cherries?',
+        answer: 'Yes. Thaw, drain, and blend to a purée, then simmer to reduce. Avoid large chunks in batter to keep a fine crumb.'
+      }
+    ]
+  },
+  {
     id: '2',
     title: 'Keto Chocolate Bliss Cupcakes',
     slug: 'keto-chocolate-bliss-cupcakes',
@@ -193,6 +280,7 @@ export const recipes: Recipe[] = [
     featured: true,
     cuisine: 'American',
     dietaryBadges: ['Keto', 'Low Carb', 'Gluten-Free'],
+    tags: ['keto', 'chocolate', 'almond-flour', 'erythritol'],
     author: {
       name: 'Incr-EdibleCupCakes',
       url: 'https://incr-ediblecupcakes.com'
@@ -285,6 +373,7 @@ export const recipes: Recipe[] = [
     featured: true,
     cuisine: 'Modern',
     dietaryBadges: ['Vegan', 'Dairy-Free', 'Egg-Free'],
+    tags: ['vegan', 'rainbow', 'coconut', 'natural-colors'],
     author: {
       name: 'Incr-EdibleCupCakes',
       url: 'https://incr-ediblecupcakes.com'
@@ -373,6 +462,7 @@ export const recipes: Recipe[] = [
     rating: 4.6,
     cuisine: 'American',
     dietaryBadges: ['Nut-Free', 'Vegetarian'],
+    tags: ['lemon', 'nut-free', 'citrus', 'curd'],
     author: {
       name: 'Incr-EdibleCupCakes',
       url: 'https://incr-ediblecupcakes.com'
@@ -461,6 +551,7 @@ export const recipes: Recipe[] = [
     rating: 4.9,
     cuisine: 'Southern American',
     dietaryBadges: ['Vegetarian'],
+    tags: ['red-velvet', 'cream-cheese', 'classic', 'cocoa'],
     author: {
       name: 'Incr-EdibleCupCakes',
       url: 'https://incr-ediblecupcakes.com'
@@ -549,6 +640,7 @@ export const recipes: Recipe[] = [
     rating: 4.8,
     cuisine: 'Tropical',
     dietaryBadges: ['Gluten-Free', 'Vegetarian'],
+    tags: ['gluten-free', 'almond-joy', 'coconut', 'ganache'],
     author: {
       name: 'Incr-EdibleCupCakes',
       url: 'https://incr-ediblecupcakes.com'
@@ -638,6 +730,7 @@ export const recipes: Recipe[] = [
     featured: true,
     cuisine: 'Middle Eastern-Inspired',
     dietaryBadges: ['Vegetarian'],
+    tags: ['rosewater', 'pistachio', 'gourmet', 'floral'],
     author: {
       name: 'Incr-EdibleCupCakes',
       url: 'https://incr-ediblecupcakes.com'
@@ -705,6 +798,7 @@ export const recipes: Recipe[] = [
     featured: false,
     cuisine: 'Caribbean-Inspired',
     dietaryBadges: ['Dairy-Free Option'],
+    tags: ['mango', 'coconut', 'tropical'],
     author: {
       name: 'Incr-EdibleCupCakes',
       url: 'https://incr-ediblecupcakes.com'
@@ -771,6 +865,7 @@ export const recipes: Recipe[] = [
     featured: false,
     cuisine: 'Mexican-Inspired',
     dietaryBadges: [],
+    tags: ['chocolate', 'chili', 'spiced', 'ganache'],
     author: {
       name: 'Incr-EdibleCupCakes',
       url: 'https://incr-ediblecupcakes.com'
@@ -838,6 +933,7 @@ export const recipes: Recipe[] = [
     featured: true,
     cuisine: 'American',
     dietaryBadges: ['Vegetarian'],
+    tags: ['boston-cream', 'custard', 'ganache', 'classic'],
     author: {
       name: 'Sarah Johnson',
       url: 'https://incr-ediblecupcakes.com/about'
@@ -933,6 +1029,7 @@ export const recipes: Recipe[] = [
     featured: false,
     cuisine: 'Modern American',
     dietaryBadges: ['Vegetarian'],
+    tags: ['prune', 'spiced', 'cream-cheese'],
     author: {
       name: 'Chef Maria Rodriguez',
       url: 'https://incr-ediblecupcakes.com/about'
@@ -1031,6 +1128,7 @@ export const recipes: Recipe[] = [
     featured: true,
     cuisine: 'American',
     dietaryBadges: ['Vegetarian'],
+    tags: ['yellow-cake', 'chocolate-buttercream', 'classic'],
     author: {
       name: 'Baker Emma Thompson',
       url: 'https://incr-ediblecupcakes.com/about'

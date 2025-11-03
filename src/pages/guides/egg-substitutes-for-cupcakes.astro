@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import OGImageGenerator from '../../components/OGImageGenerator.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const title = 'Egg substitutes for cupcakes';
+const featuredImage = '/Egg substitutes for cupcakes.jpg';
+const items = [
+  { name: 'Flax egg', detail: '1 tbsp ground flax + 3 tbsp water per egg; rest 5 min' },
+  { name: 'Applesauce', detail: '1/4 cup per egg; adds moisture, mild apple note' },
+  { name: 'Aquafaba', detail: '3 tbsp per egg; great for structure and lightness' },
+  { name: 'Commercial replacer', detail: 'Follow package; consistent binding' },
+  { name: 'Yogurt', detail: '1/4 cup per egg; tender crumb, reduce other liquids' },
+];
+
+const faq = [
+  { q: 'Which substitute is best for chocolate cupcakes?', a: 'Aquafaba or flax egg maintain structure without overpowering flavor.' },
+  { q: 'Will cupcakes rise without eggs?', a: 'Yes, with proper leavening (fresh baking powder) and minimal mixing.' },
+];
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } }))
+};
+---
+
+<BaseLayout title={`${title} - Incr-EdibleCupCakes`} description="Reliable egg replacements and when to use each." canonical="https://incr-ediblecupcakes.com/guides/egg-substitutes-for-cupcakes">
+  <Header />
+  <main class="pt-24 lg:pt-28 pb-24">
+    <Fragment slot="head">
+      <OGImageGenerator title={title} description="Reliable egg replacements and when to use each." />
+      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    </Fragment>
+    <div class="max-w-5xl mx-auto px-4">
+      <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides', url: '/guides' }, { name: title }]} />
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <aside class="lg:col-span-1 lg:sticky lg:top-24 space-y-6">
+          <div class="w-80 h-80 rounded-2xl overflow-hidden shadow bg-white">
+            <img src={featuredImage} alt={title} width={600} height={600} loading="eager" class="w-full h-full object-cover" />
+          </div>
+          <div class="bg-gray-50 border rounded-xl p-4">
+            <h2 class="font-bold text-gray-900 mb-3">When to use what</h2>
+            <ul class="list-disc pl-5 text-sm text-gray-700 space-y-1">
+              <li>Light crumb: aquafaba</li>
+              <li>Moisture: applesauce/yogurt</li>
+              <li>Binding: flax/chia egg</li>
+            </ul>
+          </div>
+        </aside>
+        <article class="lg:col-span-2 space-y-4">
+          <h1 class="text-4xl font-black text-gray-900">{title}</h1>
+          <p class="text-lg text-gray-700">Choose the right substitute based on structure, moisture and flavor. Here are reliable swaps and how they impact cupcakes.</p>
+          <p class="text-gray-700">Eggs contribute structure, emulsification and moisture. No single substitute replicates all three perfectly, so choose the swap that best serves the recipe’s priority. Chocolate cupcakes often tolerate aquafaba; vanilla may benefit from yogurt for tenderness.</p>
+          <div class="flex items-center gap-3 mb-4">
+            <button onclick="window.print()" class="px-4 py-2 rounded-lg bg-white border hover:bg-gray-50 font-quicksand text-gray-700">Print</button>
+            <a href="/egg-substitutes-cheatsheet.txt" download class="px-4 py-2 rounded-lg bg-rose-500 text-white hover:bg-rose-600 font-quicksand">Download cheatsheet</a>
+          </div>
+          <ul class="list-disc pl-6 space-y-2 text-gray-800">
+            {items.map((i) => (
+              <li><strong>{i.name}:</strong> {i.detail}</li>
+            ))}
+          </ul>
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-gray-900">How to choose the right substitute</h2>
+            <p class="text-gray-700">Think in terms of function: structure (aquafaba), binding (flax/chia), moisture (applesauce/yogurt). Match the function to the recipe’s primary need and flavor profile.</p>
+          </section>
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-gray-900">Baker’s notes</h2>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>With applesauce or yogurt, reduce other liquids slightly to keep crumb balanced.</li>
+              <li>Flax/chia eggs benefit from a 5–10 minute bloom for stronger binding.</li>
+              <li>Aquafaba whips best when chilled; add a pinch of acid (cream of tartar).</li>
+            </ul>
+          </section>
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-gray-900">Function matrix (quick view)</h2>
+            <div class="grid grid-cols-4 text-sm border rounded-xl overflow-hidden">
+              <div class="p-2 font-semibold bg-gray-50">Substitute</div>
+              <div class="p-2 font-semibold bg-gray-50">Structure</div>
+              <div class="p-2 font-semibold bg-gray-50">Moisture</div>
+              <div class="p-2 font-semibold bg-gray-50">Flavor impact</div>
+              <div class="p-2">Aquafaba</div><div class="p-2">High</div><div class="p-2">Low</div><div class="p-2">Neutral</div>
+              <div class="p-2">Flax egg</div><div class="p-2">Medium</div><div class="p-2">Medium</div><div class="p-2">Nutty</div>
+              <div class="p-2">Applesauce</div><div class="p-2">Low</div><div class="p-2">High</div><div class="p-2">Light apple</div>
+              <div class="p-2">Yogurt</div><div class="p-2">Medium</div><div class="p-2">High</div><div class="p-2">Tangy</div>
+            </div>
+          </section>
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-gray-900">Practice with these recipes</h2>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li><a href="/recipe/vegan-rainbow-surprise-cupcakes" class="text-rose-600 hover:underline">Vegan Rainbow Surprise</a> – aquafaba/emulsification practice.</li>
+              <li><a href="/recipe/keto-chocolate-bliss-cupcakes" class="text-rose-600 hover:underline">Keto Chocolate Bliss</a> – binding and moisture balance.</li>
+            </ul>
+          </section>
+          <div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-3">FAQ</h2>
+            <div class="space-y-3">
+              {faq.map((f) => (
+                <div class="bg-gray-50 rounded-lg p-4 border">
+                  <h3 class="font-semibold text-gray-900">{f.q}</h3>
+                  <p class="text-gray-700">{f.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
+
+

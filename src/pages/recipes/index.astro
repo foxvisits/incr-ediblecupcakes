@@ -4,6 +4,8 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import RecipeCard from '../../components/RecipeCard.tsx';
 import ClientOnly from '../../components/ClientOnly.tsx';
+import GuideCard from '../../components/GuideCard.astro';
+import { latestGuides } from '../../data/guides';
 import { validatedRecipes } from '../../data/recipes';
 
 const recipes = validatedRecipes;
@@ -15,6 +17,10 @@ const categories = [
   { id: 'vegan', name: 'Vegan', count: recipes.filter(r => r.category === 'vegan').length },
   { id: 'nut-free', name: 'Nut-Free', count: recipes.filter(r => r.category === 'nut-free').length },
   { id: 'gluten-free', name: 'Gluten-Free', count: recipes.filter(r => r.category === 'gluten-free').length },
+  { id: 'gourmet', name: 'Gourmet', count: recipes.filter(r => r.category === 'gourmet').length },
+  { id: 'tropical', name: 'Tropical', count: recipes.filter(r => r.category === 'tropical').length },
+  { id: 'spiced', name: 'Spiced', count: recipes.filter(r => r.category === 'spiced').length },
+  { id: 'seasonal', name: 'Seasonal', count: recipes.filter(r => r.category === 'seasonal').length },
 ];
 
 const difficulties = [
@@ -151,6 +157,8 @@ const filteredRecipes = recipes;
       </div>
     </section>
 
+    
+
     {/* Recipe Grid */}
     <section class="py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -165,11 +173,15 @@ const filteredRecipes = recipes;
               data-recipe-description={recipe.description.toLowerCase()}
               data-recipe-category={recipe.category}
               data-recipe-difficulty={recipe.difficulty}
+              data-index={index}
             >
               <RecipeCard recipe={recipe} client:load />
             </div>
           ))}
         </div>
+
+        {/* Pagination */}
+        <div id="pagination" class="mt-10 flex justify-center items-center gap-2"></div>
         
         {/* No Results Message */}
         <div id="no-results" class="hidden text-center py-16">
@@ -188,6 +200,24 @@ const filteredRecipes = recipes;
           >
             Clear Filters
           </button>
+        </div>
+      </div>
+    </section>
+
+    {/* Guides Section (image cards, like homepage) */}
+    <section class="py-12 bg-white border-b">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between mb-6">
+          <div>
+            <h2 class="font-quicksand text-2xl font-black text-gray-900">Guides & Troubleshooting</h2>
+            <p class="font-nunito text-gray-600">Improve your technique with step-by-step guides.</p>
+          </div>
+          <a href="/guides" class="font-quicksand text-rose-600 hover:text-rose-700 font-bold">View all</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {latestGuides.slice(0,3).map((g) => (
+            <GuideCard href={`/guides/${g.slug}`} title={g.title} excerpt={g.desc} image={g.image} />
+          ))}
         </div>
       </div>
     </section>
@@ -234,14 +264,18 @@ const filteredRecipes = recipes;
   const recipeGrid = document.getElementById('recipe-grid');
   const noResults = document.getElementById('no-results');
   const clearFilters = document.getElementById('clear-filters');
+  const pagination = document.getElementById('pagination');
+
+  let currentPage = 1;
+  const pageSize = 12;
 
   function filterRecipes() {
     const searchTerm = searchInput.value.toLowerCase();
     const selectedCategory = categoryFilter.value;
     const selectedDifficulty = difficultyFilter.value;
     
-    const recipeCards = recipeGrid.querySelectorAll('[data-recipe-id]');
-    let visibleCount = 0;
+    const recipeCards = Array.from(recipeGrid.querySelectorAll('[data-recipe-id]'));
+    let visible = [];
 
     recipeCards.forEach(card => {
       const title = card.dataset.recipeTitle || '';
@@ -253,16 +287,20 @@ const filteredRecipes = recipes;
       const matchesCategory = selectedCategory === 'all' || category === selectedCategory;
       const matchesDifficulty = selectedDifficulty === 'all' || difficulty === selectedDifficulty;
 
-      if (matchesSearch && matchesCategory && matchesDifficulty) {
-        card.style.display = 'block';
-        visibleCount++;
-      } else {
-        card.style.display = 'none';
-      }
+      if (matchesSearch && matchesCategory && matchesDifficulty) visible.push(card);
+      card.style.display = 'none';
     });
 
+    // Pagination slice
+    const total = visible.length;
+    const totalPages = Math.max(1, Math.ceil(total / pageSize));
+    if (currentPage > totalPages) currentPage = 1;
+    const start = (currentPage - 1) * pageSize;
+    const end = start + pageSize;
+    visible.slice(start, end).forEach(card => { card.style.display = 'block'; });
+
     // Update results count
-    resultsCount.textContent = visibleCount;
+    resultsCount.textContent = total;
     
     // Show/hide search term display
     if (searchTerm) {
@@ -273,13 +311,38 @@ const filteredRecipes = recipes;
     }
 
     // Show/hide no results message
-    if (visibleCount === 0) {
+    if (total === 0) {
       recipeGrid.style.display = 'none';
       noResults.classList.remove('hidden');
     } else {
       recipeGrid.style.display = 'grid';
       noResults.classList.add('hidden');
     }
+
+    renderPagination(totalPages);
+  }
+
+  function renderPagination(totalPages) {
+    pagination.innerHTML = '';
+    if (totalPages <= 1) return;
+    const prev = document.createElement('button');
+    prev.textContent = 'Prev';
+    prev.className = 'px-3 py-2 rounded bg-white border hover:bg-gray-50';
+    prev.disabled = currentPage === 1;
+    prev.onclick = () => { currentPage = Math.max(1, currentPage - 1); filterRecipes(); };
+    pagination.appendChild(prev);
+
+    const info = document.createElement('span');
+    info.className = 'px-3 text-gray-600';
+    info.textContent = `Page ${currentPage} of ${totalPages}`;
+    pagination.appendChild(info);
+
+    const next = document.createElement('button');
+    next.textContent = 'Next';
+    next.className = 'px-3 py-2 rounded bg-white border hover:bg-gray-50';
+    next.disabled = currentPage === totalPages;
+    next.onclick = () => { currentPage = Math.min(totalPages, currentPage + 1); filterRecipes(); };
+    pagination.appendChild(next);
   }
 
   // Event listeners
@@ -291,6 +354,10 @@ const filteredRecipes = recipes;
     searchInput.value = '';
     categoryFilter.value = 'all';
     difficultyFilter.value = 'all';
+    currentPage = 1;
     filterRecipes();
   });
+
+  // initial render
+  filterRecipes();
 </script>

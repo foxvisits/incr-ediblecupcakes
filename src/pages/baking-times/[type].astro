@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { validatedRecipes as recipes } from '../../data/recipes';
+import OGImageGenerator from '../../components/OGImageGenerator.astro';
+
+const TIMES: Record<string, { title: string; items: Array<{ temp: string; time: string; notes?: string }> }> = {
+  standard: {
+    title: 'Standard cupcakes baking time',
+    items: [
+      { temp: '175°C / 350°F', time: '18–20 min', notes: 'Most classic batters' },
+      { temp: '165°C / 325°F', time: '20–22 min', notes: 'Richer batters, keto/almond flour' }
+    ]
+  },
+  mini: {
+    title: 'Mini cupcakes baking time',
+    items: [ { temp: '175°C / 350°F', time: '10–12 min', notes: 'Check at 9 min' } ]
+  },
+  jumbo: {
+    title: 'Jumbo cupcakes baking time',
+    items: [ { temp: '175°C / 350°F', time: '22–26 min', notes: 'Use test skewer' } ]
+  }
+};
+
+export async function getStaticPaths() {
+  return Object.keys(TIMES).map((type) => ({ params: { type }, props: { type } }));
+}
+
+const { type } = Astro.params;
+const data = TIMES[type || 'standard'] || TIMES.standard;
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: data.title,
+  step: data.items.map((it, i) => ({ "@type": "HowToStep", position: i + 1, name: `${it.temp} – ${it.time}` }))
+};
+---
+
+<BaseLayout title={`${data.title} - Incr-EdibleCupCakes`} description="Quick reference baking times for perfect cupcakes." canonical={`https://incr-ediblecupcakes.com/baking-times/${type}`}>
+  <Header />
+  <main class="pt-16 lg:pt-20">
+    <Fragment slot="head">
+      <OGImageGenerator title={data.title} description="Quick reference baking times for perfect cupcakes." />
+      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    </Fragment>
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-4xl font-bold text-gray-900 mb-6">{data.title}</h1>
+      <div class="space-y-3 mb-10">
+        {data.items.map((it) => (
+          <div class="p-4 rounded-lg bg-gray-50 border">
+            <div class="font-semibold text-gray-900">{it.temp} – {it.time}</div>
+            {it.notes && (<div class="text-sm text-gray-600">{it.notes}</div>)}
+          </div>
+        ))}
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Try these recipes</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        {recipes.slice(0,6).map((r) => (<li><a href={`/recipe/${r.slug}`} class="text-rose-600 hover:underline">{r.title}</a></li>))}
+      </ul>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
+
+

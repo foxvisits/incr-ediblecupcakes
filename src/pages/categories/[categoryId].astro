@@ -3,7 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import RecipeCard from '../../components/RecipeCard.tsx';
-import { validatedRecipes as recipes } from '../../data/recipes';
+import { validatedRecipes as recipes, convertToISODuration } from '../../data/recipes';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 
 export async function getStaticPaths() {
   const categoryInfo = {
@@ -11,7 +12,11 @@ export async function getStaticPaths() {
     keto: { name: 'Keto Cupcakes', description: 'Low-carb, high-fat cupcakes that dont compromise on taste. Perfect for maintaining your ketogenic lifestyle while satisfying your sweet tooth.', color: 'from-green-500 to-emerald-600', icon: '🥑' },
     vegan: { name: 'Vegan Cupcakes', description: 'Plant-based cupcakes that are kind to animals and the environment. Proving that vegan baking can be just as delicious and indulgent.', color: 'from-emerald-500 to-teal-600', icon: '🌱' },
     'nut-free': { name: 'Nut-Free Cupcakes', description: 'Safe and delicious cupcakes for those with nut allergies. Every recipe is carefully crafted to avoid cross-contamination while maximizing flavor.', color: 'from-amber-500 to-orange-600', icon: '🚫' },
-    'gluten-free': { name: 'Gluten-Free Cupcakes', description: 'Cupcakes made without gluten but full of flavor and texture. Perfect for those with celiac disease or gluten sensitivity.', color: 'from-purple-500 to-violet-600', icon: '🌾' }
+    'gluten-free': { name: 'Gluten-Free Cupcakes', description: 'Cupcakes made without gluten but full of flavor and texture. Perfect for those with celiac disease or gluten sensitivity.', color: 'from-purple-500 to-violet-600', icon: '🌾' },
+    gourmet: { name: 'Gourmet Cupcakes', description: 'Elegant, dopracowane smaki i techniki dla efektu wow na talerzu.', color: 'from-pink-600 to-rose-600', icon: '🍒' },
+    tropical: { name: 'Tropical Cupcakes', description: 'Słońce w smaku: mango, kokos, ananas i wakacyjne klimaty.', color: 'from-amber-500 to-yellow-500', icon: '🌴' },
+  spiced: { name: 'Spiced Cupcakes', description: 'Przyprawy, ciepło i charakter: cynamon, chili, kardamon i więcej.', color: 'from-orange-600 to-red-600', icon: '🌶️' },
+  seasonal: { name: 'Seasonal Cupcakes', description: 'Flavors inspired by the season: fresh fruit, pastels and festive looks.', color: 'from-rose-500 to-pink-600', icon: '🌸' }
   };
 
   return Object.keys(categoryInfo).map((categoryId) => ({
@@ -27,7 +32,11 @@ const categoryInfo = {
   keto: { name: 'Keto Cupcakes', description: 'Low-carb, high-fat cupcakes that dont compromise on taste. Perfect for maintaining your ketogenic lifestyle while satisfying your sweet tooth.', color: 'from-green-500 to-emerald-600', icon: '🥑' },
   vegan: { name: 'Vegan Cupcakes', description: 'Plant-based cupcakes that are kind to animals and the environment. Proving that vegan baking can be just as delicious and indulgent.', color: 'from-emerald-500 to-teal-600', icon: '🌱' },
   'nut-free': { name: 'Nut-Free Cupcakes', description: 'Safe and delicious cupcakes for those with nut allergies. Every recipe is carefully crafted to avoid cross-contamination while maximizing flavor.', color: 'from-amber-500 to-orange-600', icon: '🚫' },
-  'gluten-free': { name: 'Gluten-Free Cupcakes', description: 'Cupcakes made without gluten but full of flavor and texture. Perfect for those with celiac disease or gluten sensitivity.', color: 'from-purple-500 to-violet-600', icon: '🌾' }
+  'gluten-free': { name: 'Gluten-Free Cupcakes', description: 'Cupcakes made without gluten but full of flavor and texture. Perfect for those with celiac disease or gluten sensitivity.', color: 'from-purple-500 to-violet-600', icon: '🌾' },
+  gourmet: { name: 'Gourmet Cupcakes', description: 'Elegant, dopracowane smaki i techniki dla efektu wow na talerzu.', color: 'from-pink-600 to-rose-600', icon: '🍒' },
+  tropical: { name: 'Tropical Cupcakes', description: 'Słońce w smaku: mango, kokos, ananas i wakacyjne klimaty.', color: 'from-amber-500 to-yellow-500', icon: '🌴' },
+  spiced: { name: 'Spiced Cupcakes', description: 'Przyprawy, ciepło i charakter: cynamon, chili, kardamon i więcej.', color: 'from-orange-600 to-red-600', icon: '🌶️' },
+  seasonal: { name: 'Seasonal Cupcakes', description: 'Flavors inspired by the season: fresh fruit, pastels and festive looks.', color: 'from-rose-500 to-pink-600', icon: '🌸' }
 };
 
 const currentCategory = categoryId ? categoryInfo[categoryId as keyof typeof categoryInfo] : null;
@@ -52,9 +61,9 @@ const schemaData = {
       "recipeCategory": recipe.category,
       "recipeCuisine": recipe.cuisine,
       "difficulty": recipe.difficulty,
-      "prepTime": recipe.prepTime.includes('PT') ? recipe.prepTime : `PT${recipe.prepTime.match(/\d+/)?.[0] || '30'}M`,
-      "cookTime": recipe.cookTime.includes('PT') ? recipe.cookTime : `PT${recipe.cookTime.match(/\d+/)?.[0] || '30'}M`,
-      "totalTime": recipe.totalTime.includes('PT') ? recipe.totalTime : `PT${recipe.totalTime.match(/\d+/)?.[0] || '60'}M`,
+      "prepTime": convertToISODuration(recipe.prepTime),
+      "cookTime": convertToISODuration(recipe.cookTime),
+      "totalTime": convertToISODuration(recipe.totalTime),
       "recipeYield": recipe.servings,
       "recipeIngredient": recipe.ingredients,
       "recipeInstructions": recipe.instructions.map((instruction, stepIndex) => ({
@@ -95,6 +104,13 @@ const schemaData = {
 >
   <Header />
   <main class="pt-16 lg:pt-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <Breadcrumbs items={[
+        { name: 'Home', url: '/' },
+        { name: 'Categories', url: '/categories' },
+        { name: currentCategory?.name || 'Category' }
+      ]} />
+    </div>
     <Fragment slot="head">
       <meta name="keywords" content={`${categoryId} cupcakes, ${currentCategory?.name.toLowerCase()}, dietary cupcakes, baking recipes, homemade cupcakes`} />
       <meta property="og:title" content={`${currentCategory?.name} | Incr-EdibleCupCakes`} />
@@ -130,12 +146,55 @@ const schemaData = {
 
     {/* Recipe Grid */}
     <div class="max-w-6xl mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {categoryRecipes.map(recipe => (
-          <RecipeCard recipe={recipe} client:load />
+      <div id="category-recipe-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {categoryRecipes.map((recipe, index) => (
+          <div data-index={index}>
+            <RecipeCard recipe={recipe} client:load />
+          </div>
         ))}
       </div>
+      <div id="category-pagination" class="mt-10 flex justify-center items-center gap-2"></div>
     </div>
   </main>
   <Footer />
 </BaseLayout>
+
+<script>
+  const grid = document.getElementById('category-recipe-grid');
+  const pagination = document.getElementById('category-pagination');
+  const pageSize = 12;
+  let currentPage = 1;
+
+  function render() {
+    const cards = Array.from(grid.querySelectorAll('[data-index]'));
+    const total = cards.length;
+    const totalPages = Math.max(1, Math.ceil(total / pageSize));
+    if (currentPage > totalPages) currentPage = 1;
+    const start = (currentPage - 1) * pageSize;
+    const end = start + pageSize;
+    cards.forEach((c, i) => { c.style.display = (i >= start && i < end) ? 'block' : 'none'; });
+
+    pagination.innerHTML = '';
+    if (totalPages <= 1) return;
+    const prev = document.createElement('button');
+    prev.textContent = 'Prev';
+    prev.className = 'px-3 py-2 rounded bg-white border hover:bg-gray-50';
+    prev.disabled = currentPage === 1;
+    prev.onclick = () => { currentPage = Math.max(1, currentPage - 1); render(); };
+    pagination.appendChild(prev);
+
+    const info = document.createElement('span');
+    info.className = 'px-3 text-gray-600';
+    info.textContent = `Page ${currentPage} of ${totalPages}`;
+    pagination.appendChild(info);
+
+    const next = document.createElement('button');
+    next.textContent = 'Next';
+    next.className = 'px-3 py-2 rounded bg-white border hover:bg-gray-50';
+    next.disabled = currentPage === totalPages;
+    next.onclick = () => { currentPage = Math.min(totalPages, currentPage + 1); render(); };
+    pagination.appendChild(next);
+  }
+
+  render();
+</script>

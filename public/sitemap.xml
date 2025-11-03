@@ -17,7 +17,7 @@
   <!-- Main Pages -->
   <url>
     <loc>https://incr-ediblecupcakes.com/recipes</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>2025-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -35,9 +35,39 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/contact</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>2025-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Guides -->
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides/fix-cupcake-mistakes</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides/egg-substitutes-for-cupcakes</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides/natural-food-coloring-for-frosting</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/Pastel-color-palette-frosting-bowls.jpg</image:loc>
+      <image:title>Natural Food Coloring for Frosting</image:title>
+    </image:image>
   </url>
 
   <!-- Category Pages -->
@@ -206,6 +236,17 @@
     <image:image>
       <image:loc>https://incr-ediblecupcakes.com%2Fyellow-cake-cupcakes.jpg</image:loc>
       <image:title>Yellow Cake Cupcakes Recipe</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/cherry-blossom-cupcakes</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com%2FCherry-Blossom-Cupcakes.jpg</image:loc>
+      <image:title>Cherry Blossom Cupcakes Recipe</image:title>
     </image:image>
   </url>
 

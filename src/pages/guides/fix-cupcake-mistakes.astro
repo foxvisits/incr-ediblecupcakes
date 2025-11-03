@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import OGImageGenerator from '../../components/OGImageGenerator.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const title = '10 cupcake mistakes and how to fix them';
+const featuredImage = '/cupcake-mistakes-and-how-to-avoid-them.jpg';
+const steps = [
+  'Dense crumb: Mix only until combined; ensure ingredients are room temp',
+  'Sinking centers: Don’t overfill; bake immediately after mixing',
+  'Tunnels: Avoid overmixing; check leaveners are fresh',
+  'Dry texture: Measure flour correctly; don’t overbake',
+  'Flat tops: Oven not preheated; leaveners expired',
+  'Peeling liners: Cool in pan 2–3 minutes, then remove; avoid steam',
+  'Sticky tops: Allow to cool completely; reduce humidity/cover loosely',
+  'Hollow domes: Fill liners 2/3; stable batter ratio fat:sugar:flour',
+  'Curdled batter: Alternate wet/dry; keep ingredients similar temps',
+  'Frosting issues: Use room-temp butter/cream cheese; re-whip properly'
+];
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: title,
+  description: 'Troubleshooting common cupcake issues with practical fixes',
+  step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s }))
+};
+---
+
+<BaseLayout title={`${title} - Incr-EdibleCupCakes`} description="Troubleshooting common cupcake issues with practical fixes" canonical="https://incr-ediblecupcakes.com/guides/fix-cupcake-mistakes">
+  <Header />
+  <main class="pt-24 lg:pt-28 pb-24">
+    <Fragment slot="head">
+      <OGImageGenerator title={title} description="Troubleshooting common cupcake issues with practical fixes" />
+      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    </Fragment>
+    <div class="max-w-5xl mx-auto px-4">
+      <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides', url: '/guides' }, { name: title }]} />
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <aside class="lg:col-span-1 lg:sticky lg:top-24 space-y-6">
+          <div class="w-80 h-80 rounded-2xl overflow-hidden shadow bg-white">
+            <img src={featuredImage} alt={title} width={600} height={600} loading="eager" class="w-full h-full object-cover" />
+          </div>
+          <div class="bg-gray-50 border rounded-xl p-4">
+            <h2 class="font-bold text-gray-900 mb-3">Quick checks</h2>
+            <ul class="list-disc pl-5 text-sm text-gray-700 space-y-1">
+              <li>Oven fully preheated?</li>
+              <li>Fresh baking powder/soda?</li>
+              <li>Ingredients at room temp?</li>
+              <li>Don’t overmix after flour.</li>
+            </ul>
+          </div>
+        </aside>
+        <article class="lg:col-span-2 space-y-4">
+          <h1 class="text-4xl font-black text-gray-900">{title}</h1>
+          <p class="text-lg text-gray-700">A practical, no-fluff guide to the most common cupcake problems and exactly how to fix them. Test-backed recommendations, quick checks and preventative tips.</p>
+          <p class="text-gray-700">Cupcakes look simple, but consistency requires control over four variables: ingredient temperature, ratios, leavening power and heat transfer. In this guide we’ll translate those into checks you can apply every time you bake.</p>
+          <p class="text-gray-700">If your cupcakes vary batch-to-batch, start by standardizing measurement (grams), preheating thoroughly, and mixing just until combined. Most issues vanish with those three habits.</p>
+          <div class="flex items-center gap-3 mb-4">
+            <button onclick="window.print()" class="px-4 py-2 rounded-lg bg-white border hover:bg-gray-50 font-quicksand text-gray-700">Print</button>
+            <a href="/cupcake-troubleshooting-checklist.txt" download class="px-4 py-2 rounded-lg bg-rose-500 text-white hover:bg-rose-600 font-quicksand">Download checklist</a>
+          </div>
+
+          <ol class="list-decimal pl-6 space-y-4 text-gray-800">
+            {steps.map((s) => (
+              <li>{s}</li>
+            ))}
+          </ol>
+          <div class="p-5 bg-rose-50 border border-rose-100 rounded-xl">
+            <h3 class="font-bold text-gray-900 mb-1">Pro tip</h3>
+            <p class="text-gray-700">Invest in an oven thermometer and weigh flour (120 g per cup). These two changes eliminate most inconsistency.</p>
+          </div>
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-gray-900">Prevention checklist</h2>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>Weigh flour and sugar for consistent ratios (baker’s percentages).</li>
+              <li>Room‑temp dairy and eggs speed emulsion and avoid curdling.</li>
+              <li>Mix wet and dry separately; combine just until no dry pockets remain.</li>
+              <li>Fill liners 2/3–3/4; bake immediately after mixing.</li>
+              <li>Rotate tray once (only if your oven bakes unevenly) after 2/3 time.</li>
+            </ul>
+          </section>
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-gray-900">Batter science in 60 seconds</h2>
+            <p class="text-gray-700">Emulsification (fat + water) traps air; leaveners expand that air; gluten provides structure that sets. Overmixing strengthens gluten and pushes air out; undermixing leaves pockets of flour. Aim for smooth but not glossy batter.</p>
+            <p class="text-gray-700">Sugar tenderizes and increases browning; more sugar means more spread and softer crumb. Flour adds structure; too much dries the crumb. Balance is key.</p>
+          </section>
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-gray-900">Oven behavior</h2>
+            <p class="text-gray-700">Most home ovens run 10–20°C off. Preheat 15–20 minutes and place the tray on the middle rack. If tops brown before set, tent lightly with foil for the final minutes.</p>
+          </section>
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-gray-900">Frosting rescue</h2>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>Too soft: chill 10 minutes, then re‑whip.</li>
+              <li>Grainy: warm bowl slightly (10–15 sec), whip to smooth.</li>
+              <li>Too sweet: add a pinch of salt and a spoon of cream cheese.</li>
+            </ul>
+          </section>
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-gray-900">Practice with these recipes</h2>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li><a href="/recipe/classic-vanilla-dream-cupcakes" class="text-rose-600 hover:underline">Classic Vanilla Dream</a> – focus on mixing just until combined.</li>
+              <li><a href="/recipe/red-velvet-romance-cupcakes" class="text-rose-600 hover:underline">Red Velvet Romance</a> – timing and oven verification.</li>
+            </ul>
+          </section>
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-gray-900">Tools that actually help</h2>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>Instant‑read thermometer (center should be ~98–99°C / 208–210°F for doneness).</li>
+              <li>Oven thermometer to verify set temperature.</li>
+              <li>Cookie scoop for even portioning and uniform domes.</li>
+              <li>Scale for accurate, repeatable outcomes.</li>
+            </ul>
+          </section>
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-gray-900">Troubleshooting by symptom</h2>
+            <p class="text-gray-700">Map your issue to likely causes and fixes:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="p-4 bg-white border rounded-xl">
+                <h3 class="font-semibold text-gray-900 mb-1">Too dense</h3>
+                <p class="text-gray-700 text-sm">Overmixing; too little leavener; cold ingredients. Fix: mix less, fresh BP/BS, room‑temp.</p>
+              </div>
+              <div class="p-4 bg-white border rounded-xl">
+                <h3 class="font-semibold text-gray-900 mb-1">Sinks in center</h3>
+                <p class="text-gray-700 text-sm">Underbaked; overfilled; oven too cool. Fix: longer bake, 2/3 fill, preheat verified.</p>
+              </div>
+              <div class="p-4 bg-white border rounded-xl">
+                <h3 class="font-semibold text-gray-900 mb-1">Dry/crumbly</h3>
+                <p class="text-gray-700 text-sm">Too much flour; overbaked. Fix: weigh flour, pull at first clean crumbs.</p>
+              </div>
+              <div class="p-4 bg-white border rounded-xl">
+                <h3 class="font-semibold text-gray-900 mb-1">Peeling liners</h3>
+                <p class="text-gray-700 text-sm">Condensation/steam. Fix: remove from pan after 2–3 min; cool on rack.</p>
+              </div>
+            </div>
+          </section>
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-gray-900">Conclusion</h2>
+            <p class="text-gray-700">Consistent cupcakes come from control: ingredient temperature, accurate ratios, verified oven heat and minimal mixing. Apply the checks above and your bakes will level‑up immediately.</p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
+
+

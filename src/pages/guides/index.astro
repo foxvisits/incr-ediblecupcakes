@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import OGImageGenerator from '../../components/OGImageGenerator.astro';
+import GuideCard from '../../components/GuideCard.astro';
+import { latestGuides } from '../../data/guides';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const guides = latestGuides;
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: 'Cupcake Guides',
+  description: 'Troubleshooting and technique guides for perfect cupcakes.',
+  url: 'https://incr-ediblecupcakes.com/guides',
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: guides.length,
+    itemListElement: guides.map((g, i) => ({ "@type": "ListItem", position: i + 1, name: g.title, url: `https://incr-ediblecupcakes.com/guides/${g.slug}` }))
+  }
+};
+---
+
+<BaseLayout title="Cupcake Guides - Incr-EdibleCupCakes" description="Troubleshooting and technique guides for perfect cupcakes." canonical="https://incr-ediblecupcakes.com/guides">
+  <Header />
+  <main class="pt-24 lg:pt-28 pb-24">
+    <Fragment slot="head">
+      <OGImageGenerator title="Cupcake Guides" description="Troubleshooting and technique guides for perfect cupcakes." />
+      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    </Fragment>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides' }]} />
+      <div class="text-center mb-12">
+        <h1 class="text-5xl font-black text-gray-900 mb-3">Cupcake Guides</h1>
+        <p class="text-lg text-gray-700">Practical, tested techniques to level up your baking.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {guides.map((g) => (
+          <GuideCard href={`/guides/${g.slug}`} title={g.title} excerpt={g.desc} image={g.image} />
+        ))}
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
+
+

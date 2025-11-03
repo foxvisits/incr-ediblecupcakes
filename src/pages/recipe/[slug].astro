@@ -3,7 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import RecipeInteractions from '../../components/RecipeInteractions.tsx';
-import { validatedRecipes } from '../../data/recipes';
+import { validatedRecipes, convertToISODuration } from '../../data/recipes';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 
 export async function getStaticPaths() {
   return validatedRecipes.map((recipe) => ({
@@ -51,9 +52,9 @@ const schemaData = {
       "url": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png"
     }
   },
-  "prepTime": recipe.prepTime,
-  "cookTime": recipe.cookTime,
-  "totalTime": recipe.totalTime,
+  "prepTime": convertToISODuration(recipe.prepTime),
+  "cookTime": convertToISODuration(recipe.cookTime),
+  "totalTime": convertToISODuration(recipe.totalTime),
   "recipeYield": recipe.servings,
   "recipeCategory": recipe.category,
   "recipeCuisine": recipe.cuisine,
@@ -117,6 +118,13 @@ const schemaData = {
   <Header />
   
   <main class="pt-16 lg:pt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <Breadcrumbs items={[
+        { name: 'Home', url: '/' },
+        { name: 'Recipes', url: '/recipes' },
+        { name: recipe.title }
+      ]} />
+    </div>
     <Fragment slot="head">
       <meta name="keywords" content={`${recipe.title}, ${recipe.category} cupcakes, baking recipe, ${recipe.difficulty} recipe, cupcake ingredients, baking instructions, professional baker, ${recipe.cuisine} cuisine, ${recipe.recipeKeys?.join(', ')}`} />
       <meta property="og:title" content={`${recipe.title} | Incr-EdibleCupCakes`} />
@@ -291,6 +299,19 @@ const schemaData = {
           
           {/* Left Column */}
           <div class="space-y-8">
+            {/* Secondary Image (for visual detail) */}
+            {recipe.slug === 'cherry-blossom-cupcakes' && (
+              <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="/Pink-swirl+tiny-blossom-decoration.jpg"
+                  alt="Cherry Blossom cupcakes with soft pink swirl and tiny blossom"
+                  width={1200}
+                  height={800}
+                  loading="lazy"
+                  class="w-full h-64 object-cover"
+                />
+              </div>
+            )}
             {/* Pro Tips */}
             {recipe.tips && (
               <div class="bg-white rounded-2xl p-6 shadow-lg">
@@ -331,6 +352,19 @@ const schemaData = {
               </div>
             )}
 
+            {recipe.slug === 'cherry-blossom-cupcakes' && (
+              <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="/Cherry-Blossom-Cupcakes-with-Light-cherry flavor-soft-pink-swirl.jpg"
+                  alt="Cherry Blossom cupcakes – light cherry flavor with soft pink swirl"
+                  width={1200}
+                  height={800}
+                  loading="lazy"
+                  class="w-full h-64 object-cover"
+                />
+              </div>
+            )}
+
             {/* Pairings */}
             {recipe.pairings && (
               <div class="bg-white rounded-2xl p-6 shadow-lg">
@@ -368,6 +402,19 @@ const schemaData = {
                 </div>
               </div>
 
+          {/* Author Box */}
+          <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">About the Author</h3>
+            <div class="flex items-center gap-4">
+              <img src="/Sarah.png" alt="Author" width={56} height={56} class="w-14 h-14 rounded-full object-cover" loading="lazy" />
+              <div>
+                <div class="font-semibold text-gray-900">{schemaData.author.name}</div>
+                <a href={schemaData.author.url} class="text-rose-600 hover:underline text-sm">View profile</a>
+              </div>
+            </div>
+            <p class="text-gray-600 mt-3 text-sm">Professional baker sharing tested cupcake recipes, techniques and troubleshooting tips.</p>
+          </div>
+
               {/* Nutrition Information */}
               {recipe.nutritionInfo && (
                 <div>
@@ -402,7 +449,7 @@ const schemaData = {
               )}
             </div>
 
-            {/* Best Time & Recipe Keys */}
+          {/* Best Time & Recipe Keys */}
             <div class="bg-white rounded-2xl p-6 shadow-lg">
               <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
                 <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -437,6 +484,8 @@ const schemaData = {
               <p class="leading-relaxed">{recipe.conclusion}</p>
             </div>
           </div>
+
+          
         </div>
       </div>
     </section>
@@ -522,6 +571,24 @@ const schemaData = {
         </div>
       </div>
     </section>
+
+    {/* Explore More (Internal Linking) */}
+    {recipe.tags && recipe.tags.length > 0 && (
+      <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">
+            Explore more by <span class="text-rose-500">Tags</span>
+          </h2>
+          <div class="flex flex-wrap gap-3 justify-center">
+            {recipe.tags.map((t) => (
+              <a href={`/tags/${t.toLowerCase()}`} class="px-4 py-2 rounded-full bg-rose-50 text-rose-700 hover:bg-rose-100 transition">
+                #{t}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
   </main>
 
   <Footer />

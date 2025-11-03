@@ -1,0 +1,23 @@
+---
+export interface Props {
+  href: string;
+  title: string;
+  excerpt: string;
+  image: string;
+}
+
+const { href, title, excerpt, image } = Astro.props;
+---
+
+<a href={href} class="group bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition-all duration-300 border">
+  <div class="relative h-44 overflow-hidden">
+    <img src={image} alt={title} width={600} height={176} loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+  </div>
+  <div class="p-5">
+    <h3 class="font-quicksand text-lg font-bold text-gray-900 mb-1 group-hover:text-rose-600 transition-colors">{title}</h3>
+    <p class="font-nunito text-gray-600 text-sm">{excerpt}</p>
+  </div>
+</a>
+
+
