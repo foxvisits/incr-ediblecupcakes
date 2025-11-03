@@ -5,7 +5,7 @@ import Footer from '../../components/Footer.astro';
 import { validatedRecipes as recipes } from '../../data/recipes';
 import OGImageGenerator from '../../components/OGImageGenerator.astro';
 
-const TIMES: Record<string, { title: string; items: Array<{ temp: string; time: string; notes?: string }> }> = {
+const TIMES = {
   standard: {
     title: 'Standard cupcakes baking time',
     items: [
