@@ -5,7 +5,6 @@ import Footer from '../../components/Footer.astro';
 import { validatedRecipes as recipes } from '../../data/recipes';
 import OGImageGenerator from '../../components/OGImageGenerator.astro';
 
-const TIME_KEYS = ['standard', 'mini', 'jumbo'];
 const TIMES = {
   standard: {
     title: 'Standard cupcakes baking time',
@@ -25,7 +24,7 @@ const TIMES = {
 };
 
 export async function getStaticPaths() {
-  return TIME_KEYS.map((type) => ({ params: { type }, props: { type } }));
+  return ['standard', 'mini', 'jumbo'].map((type) => ({ params: { type }, props: { type } }));
 }
 
 const { type } = Astro.params;
