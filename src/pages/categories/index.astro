@@ -2,19 +2,20 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 
 // Define category information
 const categoryInfo = {
   classic: {
     name: 'Classic Cupcakes',
     description: 'Timeless recipes that have been perfected over generations. These are the cupcakes that bring back childhood memories and create new ones.',
-    color: 'from-blue-500 to-indigo-600',
+    color: 'from-cupcake-coral to-sunshine-400',
     icon: '🧁'
   },
   keto: {
     name: 'Keto Cupcakes',
     description: 'Low-carb, high-fat cupcakes that dont compromise on taste. Perfect for maintaining your ketogenic lifestyle while satisfying your sweet tooth.',
-    color: 'from-green-500 to-emerald-600',
+    color: 'from-emerald-500 to-teal-600',
     icon: '🥑'
   },
   vegan: {
@@ -26,7 +27,7 @@ const categoryInfo = {
   'nut-free': {
     name: 'Nut-Free Cupcakes',
     description: 'Safe and delicious cupcakes for those with nut allergies. Every recipe is carefully crafted to avoid cross-contamination while maximizing flavor.',
-    color: 'from-amber-500 to-orange-600',
+    color: 'from-amber-400 to-orange-500',
     icon: '🚫'
   },
   'gluten-free': {
@@ -38,13 +39,13 @@ const categoryInfo = {
   gourmet: {
     name: 'Gourmet Cupcakes',
     description: 'Elegant, elevated flavors and techniques for a true wow-factor presentation.',
-    color: 'from-pink-600 to-rose-600',
+    color: 'from-rose-500 to-pink-600',
     icon: '🍒'
   },
   tropical: {
     name: 'Tropical Cupcakes',
     description: 'Sun-kissed flavors: mango, coconut, pineapple, and holiday vibes in every bite.',
-    color: 'from-amber-500 to-yellow-500',
+    color: 'from-sunshine-400 to-amber-500',
     icon: '🌴'
   },
   spiced: {
@@ -56,7 +57,7 @@ const categoryInfo = {
   seasonal: {
     name: 'Seasonal Cupcakes',
     description: 'Flavors inspired by the season: fresh fruit, pastels and festive looks.',
-    color: 'from-rose-500 to-pink-600',
+    color: 'from-cupcake-pink to-rose-500',
     icon: '🌸'
   }
 };
@@ -87,6 +88,12 @@ const schemaData = {
 >
   <Header />
   <main class="pt-16 lg:pt-20 pb-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <Breadcrumbs items={[
+        { name: 'Home', url: '/' },
+        { name: 'Categories' }
+      ]} />
+    </div>
     <Fragment slot="head">
       <meta name="keywords" content="cupcake categories, classic cupcakes, keto cupcakes, vegan cupcakes, nut-free cupcakes, gluten-free cupcakes, dietary cupcakes" />
       <meta property="og:title" content="Cupcake Categories | Incr-EdibleCupCakes" />
@@ -117,7 +124,7 @@ const schemaData = {
           {Object.entries(categoryInfo).map(([id, info]) => (
             <a
               href={`/categories/${id}`}
-              class={`group relative overflow-hidden bg-gradient-to-r ${info.color} p-8 rounded-2xl text-white shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5`}
+              class={`group relative overflow-hidden bg-gradient-to-br ${info.color} p-8 rounded-2xl text-white shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5`}
             >
               <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div class="relative">
