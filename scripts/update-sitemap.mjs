@@ -216,6 +216,28 @@ const generateSitemap = () => {
     </image:image>
   </url>
 
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/white-chocolate-snowflake-cupcakes</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com%2FWhite%20Chocolate%20Snowflake%20Cupcakes%20with%20White%20chocolate%20swirl%20frosting.jpg</image:loc>
+      <image:title>White Chocolate Snowflake Cupcakes Recipe</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/spiced-pear-cupcakes</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com%2FSpiced%20Pear%20Cupcakes%20with%20pear%20puree.jpg</image:loc>
+      <image:title>Spiced Pear Cupcakes Recipe</image:title>
+    </image:image>
+  </url>
+
 </urlset>`;
 
   return sitemap;

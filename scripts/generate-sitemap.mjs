@@ -67,6 +67,17 @@ const recipes = [
     title: 'Yellow Cake Cupcakes',
     image: '/yellow-cake-cupcakes.jpg'
   }
+  ,
+  {
+    slug: 'white-chocolate-snowflake-cupcakes',
+    title: 'White Chocolate Snowflake Cupcakes',
+    image: '/White Chocolate Snowflake Cupcakes with White chocolate swirl frosting.jpg'
+  },
+  {
+    slug: 'spiced-pear-cupcakes',
+    title: 'Spiced Pear Cupcakes',
+    image: '/Spiced Pear Cupcakes with pear puree.jpg'
+  }
 ];
 
 function generateSitemap() {

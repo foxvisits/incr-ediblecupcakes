@@ -300,6 +300,30 @@ const schemaData = {
           {/* Left Column */}
           <div class="space-y-8">
             {/* Secondary Image (for visual detail) */}
+            {recipe.slug === 'spiced-pear-cupcakes' && (
+              <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="/Spiced Pear Cupcakes.jpg"
+                  alt="Spiced Pear Cupcakes – additional seasonal photo"
+                  width={1200}
+                  height={800}
+                  loading="lazy"
+                  class="w-full h-64 object-cover"
+                />
+              </div>
+            )}
+            {recipe.slug === 'white-chocolate-snowflake-cupcakes' && (
+              <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="/White Chocolate Snowflake Cupcakes-Snowy pastel blue setting.jpg"
+                  alt="White Chocolate Snowflake Cupcakes – snowy pastel blue winter aesthetic"
+                  width={1200}
+                  height={800}
+                  loading="lazy"
+                  class="w-full h-64 object-cover"
+                />
+              </div>
+            )}
             {recipe.slug === 'cherry-blossom-cupcakes' && (
               <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <img

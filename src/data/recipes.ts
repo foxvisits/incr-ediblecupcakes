@@ -179,6 +179,152 @@ export const recipes: Recipe[] = [
     ]
   },
   {
+    id: '14',
+    title: 'White Chocolate Snowflake Cupcakes',
+    slug: 'white-chocolate-snowflake-cupcakes',
+    description: 'Celebrate winter with these elegant White Chocolate Snowflake Cupcakes. A tender vanilla–white chocolate crumb is topped with a delicate white chocolate swirl frosting, then finished with shimmering snowflake accents. The result is a refined, snowy aesthetic perfect for seasonal gatherings and festive tablescapes.',
+    shortDescription: 'Delicate winter cupcakes with white chocolate and a graceful white chocolate swirl frosting.',
+    image: '/White Chocolate Snowflake Cupcakes with White chocolate swirl frosting.jpg',
+    category: 'seasonal',
+    difficulty: 'Medium',
+    prepTime: '30 mins',
+    cookTime: '18 mins',
+    totalTime: '48 mins',
+    servings: 12,
+    rating: 4.9,
+    featured: true,
+    cuisine: 'American',
+    dietaryBadges: ['Vegetarian'],
+    tags: ['white-chocolate', 'winter', 'seasonal', 'snowflake', 'frosting-swirl'],
+    author: {
+      name: 'Sarah',
+      url: 'https://incr-ediblecupcakes.com/about'
+    },
+    keywords: ['white chocolate cupcakes', 'winter cupcakes', 'snowflake cupcakes', 'seasonal cupcakes', 'white chocolate frosting'],
+    ingredients: [
+      '1⅔ cups all-purpose flour',
+      '1 cup sugar',
+      '½ cup unsalted butter, softened',
+      '2 large eggs, room temperature',
+      '¾ cup whole milk, room temperature',
+      '100 g white chocolate, finely chopped (melted and cooled)',
+      '1½ tsp baking powder',
+      '¼ tsp baking soda',
+      '¼ tsp fine salt',
+      '1½ tsp vanilla extract',
+      'Frosting: 170 g white chocolate (melted & cooled), 1 cup unsalted butter (soft), 3–3½ cups powdered sugar, 2–3 tbsp heavy cream, 1 tsp vanilla, pinch of salt',
+      'Decoration: sugar snowflakes, white edible glitter (optional)'
+    ],
+    instructions: [
+      'Preheat the oven to 350°F (175°C) and line a 12-cup muffin tin with paper liners.',
+      'Cream butter and sugar until pale and fluffy, about 3–4 minutes.',
+      'Beat in the eggs one at a time, mixing well after each addition; mix in vanilla.',
+      'In a separate bowl whisk together flour, baking powder, baking soda, and salt.',
+      'Add dry ingredients and milk to the butter mixture in 2–3 additions, mixing just until combined.',
+      'Fold in the melted, cooled white chocolate gently until evenly incorporated.',
+      'Fill liners about ¾ full and bake 17–19 minutes, until a toothpick comes out clean. Cool completely.',
+      'Frosting: Beat soft butter until light (2–3 minutes). Add 2 cups powdered sugar, salt, and vanilla; beat until smooth.',
+      'Stream in the melted, cooled white chocolate; mix briefly. Add cream and remaining sugar to reach a smooth, pipeable consistency.',
+      'Transfer to a piping bag fitted with an open-star tip and pipe a delicate swirl. Decorate with snowflakes and a touch of edible glitter.'
+    ],
+    nutritionInfo: {
+      calories: 360,
+      carbs: 50,
+      protein: 5,
+      fat: 16,
+      fiber: 1,
+      sugar: 40
+    },
+    tips: [
+      'Use melted but cooled white chocolate so it does not seize the frosting.',
+      'Avoid overmixing after adding flour to preserve a tender crumb.',
+      'If frosting is too thick, add ½ tbsp cream; if too soft, add more powdered sugar.',
+      'Cool cupcakes fully before piping to keep the swirl defined.'
+    ],
+    variations: [
+      'Add a drop of almond extract to the frosting for a marzipan hint.',
+      'Hide 1 tsp lemon curd in the center for a bright citrus contrast.',
+      'Tint the frosting a whisper of pearl blue to enhance the winter look.'
+    ],
+    pairings: 'Perfect with white tea, hot chocolate, or a brisk prosecco brut.',
+    bestTime: 'Winter season, holiday parties, New Year’s Eve, winter baby showers.',
+    recipeKeys: ['Seasonal', 'White Chocolate', 'Elegant', 'Snowflake', 'Swirl Frosting'],
+    conclusion: 'These snowflake cupcakes marry white-chocolate elegance with simplicity—ideal for winter celebrations with a refined, delicate finish.'
+  },
+  {
+    id: '15',
+    title: 'Spiced Pear Cupcakes',
+    slug: 'spiced-pear-cupcakes',
+    description: 'These Spiced Pear Cupcakes capture cozy, seasonal comfort in every bite. A tender crumb enriched with smooth pear purée is warmly spiced with cinnamon and a hint of ginger, then crowned with a cinnamon-vanilla swirl frosting. Balanced, fragrant, and not overly sweet—perfect for cool evenings and festive gatherings.',
+    shortDescription: 'Tender pear purée cupcakes with warm spices and a cinnamon–vanilla swirl frosting.',
+    image: '/Spiced Pear Cupcakes with pear puree.jpg',
+    category: 'seasonal',
+    difficulty: 'Medium',
+    prepTime: '30 mins',
+    cookTime: '18 mins',
+    totalTime: '48 mins',
+    servings: 12,
+    rating: 4.8,
+    featured: true,
+    cuisine: 'Modern',
+    dietaryBadges: ['Vegetarian'],
+    tags: ['pear', 'spiced', 'cinnamon', 'seasonal', 'swirl-frosting'],
+    author: {
+      name: 'Sarah',
+      url: 'https://incr-ediblecupcakes.com/about'
+    },
+    keywords: ['pear cupcakes', 'spiced cupcakes', 'cinnamon swirl frosting', 'seasonal cupcakes', 'pear purée'],
+    ingredients: [
+      '1⅔ cups all-purpose flour',
+      '¾ cup granulated sugar',
+      '½ cup light brown sugar, packed',
+      '½ cup unsalted butter, softened',
+      '2 large eggs, room temperature',
+      '¾ cup pear purée (smooth; from ripe pears, lightly reduced if very watery)',
+      '¼ cup whole milk, room temperature',
+      '1½ tsp baking powder',
+      '¼ tsp baking soda',
+      '¼ tsp fine salt',
+      '1¼ tsp ground cinnamon',
+      '¼ tsp ground ginger',
+      '½ tsp vanilla extract',
+      'Frosting: 1 cup unsalted butter (soft), 3–3½ cups confectioners’ sugar, 2–3 tbsp cream/milk, 1 tsp vanilla, ½–1 tsp ground cinnamon, pinch of salt'
+    ],
+    instructions: [
+      'Preheat oven to 350°F (175°C). Line a 12-cup muffin pan with paper liners.',
+      'Beat butter with granulated and brown sugar until pale and fluffy (2–3 minutes).',
+      'Add eggs one at a time, mixing well; blend in vanilla.',
+      'Whisk flour, baking powder, baking soda, salt, cinnamon, and ginger in a separate bowl.',
+      'Stir pear purée with milk. Add dry ingredients to the butter mixture in 2–3 additions, alternating with the pear–milk mixture. Mix just until combined.',
+      'Divide batter evenly (about ¾ full). Bake 17–19 minutes until a toothpick comes out clean. Cool completely.',
+      'Frosting: Beat soft butter 2–3 minutes. Add 2 cups sugar, salt, vanilla, and cinnamon; beat until smooth. Add cream and remaining sugar to reach a smooth, pipeable consistency.',
+      'Pipe a cinnamon–vanilla swirl (open-star tip works well). Optionally dust lightly with cinnamon.'
+    ],
+    nutritionInfo: {
+      calories: 355,
+      carbs: 52,
+      protein: 4,
+      fat: 15,
+      fiber: 2,
+      sugar: 36
+    },
+    tips: [
+      'If pears are very juicy, gently simmer purée for a few minutes to thicken before using.',
+      'Do not overmix once flour is added—this preserves a tender crumb.',
+      'For stronger spice, add a pinch of allspice or cardamom to the dry mix.',
+      'Use room-temperature ingredients for even mixing and better rise.'
+    ],
+    variations: [
+      'Fold in ½ cup finely diced ripe pear for extra fruit texture.',
+      'Add a quick pear jam core: spoon 1 tsp into the center before baking.',
+      'Swap cinnamon for chai spice blend for a café-style profile.'
+    ],
+    pairings: 'Lovely with chai tea, oolong, cappuccino, or a dry cider.',
+    bestTime: 'Autumn-through-winter (holiday tables, cozy evenings, seasonal gatherings).',
+    recipeKeys: ['Seasonal', 'Pear Purée', 'Warm Spices', 'Moist Crumb', 'Swirl Frosting'],
+    conclusion: 'A balanced, gently spiced cupcake where pear purée brings moistness and fragrance—finished with a cinnamon–vanilla swirl for an elegant seasonal touch.'
+  },
+  {
     id: '13',
     title: 'Cherry Blossom Cupcakes',
     slug: 'cherry-blossom-cupcakes',
