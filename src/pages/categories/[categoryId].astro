@@ -13,9 +13,9 @@ export async function getStaticPaths() {
     vegan: { name: 'Vegan Cupcakes', description: 'Plant-based cupcakes that are kind to animals and the environment. Proving that vegan baking can be just as delicious and indulgent.', color: 'from-emerald-500 to-teal-600', icon: '🌱' },
     'nut-free': { name: 'Nut-Free Cupcakes', description: 'Safe and delicious cupcakes for those with nut allergies. Every recipe is carefully crafted to avoid cross-contamination while maximizing flavor.', color: 'from-amber-500 to-orange-600', icon: '🚫' },
     'gluten-free': { name: 'Gluten-Free Cupcakes', description: 'Cupcakes made without gluten but full of flavor and texture. Perfect for those with celiac disease or gluten sensitivity.', color: 'from-purple-500 to-violet-600', icon: '🌾' },
-    gourmet: { name: 'Gourmet Cupcakes', description: 'Elegant, dopracowane smaki i techniki dla efektu wow na talerzu.', color: 'from-pink-600 to-rose-600', icon: '🍒' },
-    tropical: { name: 'Tropical Cupcakes', description: 'Słońce w smaku: mango, kokos, ananas i wakacyjne klimaty.', color: 'from-amber-500 to-yellow-500', icon: '🌴' },
-  spiced: { name: 'Spiced Cupcakes', description: 'Przyprawy, ciepło i charakter: cynamon, chili, kardamon i więcej.', color: 'from-orange-600 to-red-600', icon: '🌶️' },
+    gourmet: { name: 'Gourmet Cupcakes', description: 'Elegant, elevated flavors and techniques for a true wow-factor presentation.', color: 'from-pink-600 to-rose-600', icon: '🍒' },
+    tropical: { name: 'Tropical Cupcakes', description: 'Sun-kissed flavors: mango, coconut, pineapple, and holiday vibes in every bite.', color: 'from-amber-500 to-yellow-500', icon: '🌴' },
+  spiced: { name: 'Spiced Cupcakes', description: 'Warm spices with character: cinnamon, chili, cardamom, and more for cozy depth.', color: 'from-orange-600 to-red-600', icon: '🌶️' },
   seasonal: { name: 'Seasonal Cupcakes', description: 'Flavors inspired by the season: fresh fruit, pastels and festive looks.', color: 'from-rose-500 to-pink-600', icon: '🌸' }
   };
 
@@ -33,9 +33,9 @@ const categoryInfo = {
   vegan: { name: 'Vegan Cupcakes', description: 'Plant-based cupcakes that are kind to animals and the environment. Proving that vegan baking can be just as delicious and indulgent.', color: 'from-emerald-500 to-teal-600', icon: '🌱' },
   'nut-free': { name: 'Nut-Free Cupcakes', description: 'Safe and delicious cupcakes for those with nut allergies. Every recipe is carefully crafted to avoid cross-contamination while maximizing flavor.', color: 'from-amber-500 to-orange-600', icon: '🚫' },
   'gluten-free': { name: 'Gluten-Free Cupcakes', description: 'Cupcakes made without gluten but full of flavor and texture. Perfect for those with celiac disease or gluten sensitivity.', color: 'from-purple-500 to-violet-600', icon: '🌾' },
-  gourmet: { name: 'Gourmet Cupcakes', description: 'Elegant, dopracowane smaki i techniki dla efektu wow na talerzu.', color: 'from-pink-600 to-rose-600', icon: '🍒' },
-  tropical: { name: 'Tropical Cupcakes', description: 'Słońce w smaku: mango, kokos, ananas i wakacyjne klimaty.', color: 'from-amber-500 to-yellow-500', icon: '🌴' },
-  spiced: { name: 'Spiced Cupcakes', description: 'Przyprawy, ciepło i charakter: cynamon, chili, kardamon i więcej.', color: 'from-orange-600 to-red-600', icon: '🌶️' },
+  gourmet: { name: 'Gourmet Cupcakes', description: 'Elegant, elevated flavors and techniques for a true wow-factor presentation.', color: 'from-pink-600 to-rose-600', icon: '🍒' },
+  tropical: { name: 'Tropical Cupcakes', description: 'Sun-kissed flavors: mango, coconut, pineapple, and holiday vibes in every bite.', color: 'from-amber-500 to-yellow-500', icon: '🌴' },
+  spiced: { name: 'Spiced Cupcakes', description: 'Warm spices with character: cinnamon, chili, cardamom, and more for cozy depth.', color: 'from-orange-600 to-red-600', icon: '🌶️' },
   seasonal: { name: 'Seasonal Cupcakes', description: 'Flavors inspired by the season: fresh fruit, pastels and festive looks.', color: 'from-rose-500 to-pink-600', icon: '🌸' }
 };
 
@@ -103,7 +103,7 @@ const schemaData = {
   canonical={`https://incr-ediblecupcakes.com/categories/${categoryId}`}
 >
   <Header />
-  <main class="pt-16 lg:pt-20">
+  <main class="pt-16 lg:pt-20 pb-20">
     <div class="max-w-6xl mx-auto px-4">
       <Breadcrumbs items={[
         { name: 'Home', url: '/' },

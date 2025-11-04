@@ -37,19 +37,19 @@ const categoryInfo = {
   },
   gourmet: {
     name: 'Gourmet Cupcakes',
-    description: 'Elegant, dopracowane smaki i techniki dla efektu wow na talerzu.',
+    description: 'Elegant, elevated flavors and techniques for a true wow-factor presentation.',
     color: 'from-pink-600 to-rose-600',
     icon: '🍒'
   },
   tropical: {
     name: 'Tropical Cupcakes',
-    description: 'Słońce w smaku: mango, kokos, ananas i wakacyjne klimaty.',
+    description: 'Sun-kissed flavors: mango, coconut, pineapple, and holiday vibes in every bite.',
     color: 'from-amber-500 to-yellow-500',
     icon: '🌴'
   },
   spiced: {
     name: 'Spiced Cupcakes',
-    description: 'Przyprawy, ciepło i charakter: cynamon, chili, kardamon i więcej.',
+    description: 'Warm spices with character: cinnamon, chili, cardamom, and more for cozy depth.',
     color: 'from-orange-600 to-red-600',
     icon: '🌶️'
   },
@@ -86,7 +86,7 @@ const schemaData = {
   canonical="https://incr-ediblecupcakes.com/categories"
 >
   <Header />
-  <main class="pt-16 lg:pt-20">
+  <main class="pt-16 lg:pt-20 pb-20">
     <Fragment slot="head">
       <meta name="keywords" content="cupcake categories, classic cupcakes, keto cupcakes, vegan cupcakes, nut-free cupcakes, gluten-free cupcakes, dietary cupcakes" />
       <meta property="og:title" content="Cupcake Categories | Incr-EdibleCupCakes" />
@@ -99,30 +99,41 @@ const schemaData = {
       <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
     </Fragment>
 
-    <div class="max-w-6xl mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl font-bold mb-8 text-gray-900">
-        Cupcake Categories
-      </h1>
-      <p class="text-lg text-gray-600 mb-12 max-w-3xl">
-        Explore our diverse collection of cupcake recipes, carefully crafted for different dietary needs and preferences.
-      </p>
-    </div>
+    <section class="py-14 bg-gradient-to-br from-rose-50 to-pink-50 border-b border-rose-100/50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+          Cupcake Categories
+        </h1>
+        <p class="text-lg text-gray-600 max-w-3xl">
+          Explore our diverse collection of cupcake recipes, crafted for different dietary needs and preferences.
+        </p>
+      </div>
+    </section>
 
     {/* Category Grid */}
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {Object.entries(categoryInfo).map(([id, info]) => (
-          <a
-            href={`/categories/${id}`}
-            class={`bg-gradient-to-r ${info.color} p-8 rounded-lg text-white transform hover:scale-105 transition-transform`}
-          >
-            <div class="text-4xl mb-4">{info.icon}</div>
-            <h2 class="text-2xl font-bold mb-2">{info.name}</h2>
-            <p class="opacity-90">{info.description}</p>
-          </a>
-        ))}
+    <section class="py-14">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {Object.entries(categoryInfo).map(([id, info]) => (
+            <a
+              href={`/categories/${id}`}
+              class={`group relative overflow-hidden bg-gradient-to-r ${info.color} p-8 rounded-2xl text-white shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5`}
+            >
+              <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div class="relative">
+                <div class="text-4xl mb-5 drop-shadow">{info.icon}</div>
+                <h2 class="text-2xl font-extrabold mb-2 tracking-tight">{info.name}</h2>
+                <p class="opacity-95 leading-relaxed">{info.description}</p>
+                <div class="mt-6 inline-flex items-center gap-2 text-white/95 bg-white/10 backdrop-blur px-4 py-2 rounded-full border border-white/20 group-hover:bg-white/15">
+                  <span class="text-sm font-semibold">View {info.name}</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   </main>
   <Footer />
 </BaseLayout>
