@@ -69,6 +69,11 @@ const recipes = [
   }
   ,
   {
+    slug: 'cranberry-orange-sparkle-cupcakes',
+    title: 'Cranberry Orange Sparkle Cupcakes',
+    image: '/Cranberry Orange Sparkle Cupcakes.jpg'
+  },
+  {
     slug: 'white-chocolate-snowflake-cupcakes',
     title: 'White Chocolate Snowflake Cupcakes',
     image: '/White Chocolate Snowflake Cupcakes with White chocolate swirl frosting.jpg'

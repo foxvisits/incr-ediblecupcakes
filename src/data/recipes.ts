@@ -179,6 +179,92 @@ export const recipes: Recipe[] = [
     ]
   },
   {
+    id: '16',
+    title: 'Cranberry Orange Sparkle Cupcakes',
+    slug: 'cranberry-orange-sparkle-cupcakes',
+    description: 'Bright, festive cupcakes that balance tart cranberry compote cores with a fragrant orange-zest buttercream. A soft vanilla–orange crumb encases a jewel-toned cranberry filling, while the frosting delivers lively citrus aromatics and a subtle sparkle finish. Perfect for winter gatherings and holiday dessert tables.',
+    shortDescription: 'Tart cranberry compote filling + bright orange zest frosting in a soft citrus crumb.',
+    image: '/Cranberry Orange Sparkle Cupcakes.jpg',
+    category: 'classic',
+    difficulty: 'Medium',
+    prepTime: '35 mins',
+    cookTime: '18 mins',
+    totalTime: '53 mins',
+    servings: 12,
+    rating: 4.9,
+    featured: true,
+    cuisine: 'American',
+    dietaryBadges: ['Vegetarian'],
+    tags: ['cranberry', 'orange', 'compote', 'zest', 'classic'],
+    author: {
+      name: 'Sarah',
+      url: 'https://incr-ediblecupcakes.com/about'
+    },
+    keywords: ['cranberry cupcakes', 'orange zest frosting', 'cranberry compote filling', 'holiday cupcakes', 'classic cupcakes'],
+    ingredients: [
+      '1⅔ cups all-purpose flour',
+      '1 cup granulated sugar',
+      '½ cup unsalted butter, softened',
+      '2 large eggs, room temperature',
+      '¾ cup whole milk, room temperature',
+      '1½ tsp baking powder',
+      '¼ tsp baking soda',
+      '½ tsp fine salt',
+      'Zest of 1 large orange (for batter)',
+      '1 tsp vanilla extract',
+      'Cranberry compote (filling): 1½ cups fresh or frozen cranberries, ½ cup sugar, zest of ½ orange, 2 tbsp orange juice, pinch of salt',
+      'Orange zest buttercream: 1 cup unsalted butter (soft), 3–3½ cups powdered sugar, zest of 1 orange, 1–2 tbsp fresh orange juice, ½ tsp vanilla, pinch of salt',
+      'Optional garnish: sanding sugar or fine edible glitter'
+    ],
+    instructions: [
+      'Make cranberry compote: In a small saucepan combine cranberries, sugar, orange zest, juice, and a pinch of salt. Simmer 6–8 minutes until berries burst and mixture thickens to a jammy consistency. Cool completely.',
+      'Preheat oven to 350°F (175°C). Line a 12-cup muffin tin with paper liners.',
+      'Cream butter and sugar until pale and fluffy (2–3 minutes). Beat in eggs one at a time; mix in vanilla and orange zest.',
+      'Whisk flour, baking powder, baking soda, and salt in a separate bowl. Add dry ingredients to the butter mixture in 2 additions, alternating with milk. Mix just until combined.',
+      'Portion batter to 2/3–3/4 full. Bake 17–19 minutes, until a toothpick shows a few moist crumbs. Cool completely.',
+      'Core each cupcake (small cone). Fill centers with cooled cranberry compote; replace a thin slice of the core as a lid.',
+      'Orange zest buttercream: Beat butter until light (2–3 minutes). Add 2 cups powdered sugar, salt, and vanilla; beat smooth. Add orange zest and juice; beat. Add remaining sugar to a smooth, pipeable consistency.',
+      'Pipe tall swirls; finish with a light sprinkle of sanding sugar or fine edible glitter.'
+    ],
+    nutritionInfo: {
+      calories: 345,
+      carbs: 52,
+      protein: 4,
+      fat: 14,
+      fiber: 2,
+      sugar: 38
+    },
+    tips: [
+      'Reduce compote until jammy; excess liquid will soak into the crumb.',
+      'Use room-temperature ingredients for a fine, even crumb and good rise.',
+      'Zest the orange directly over the bowl to capture aromatic oils.',
+      'If frosting seems loose, chill 10 minutes, then re-whip briefly.'
+    ],
+    variations: [
+      'Add ½ tsp ground cinnamon to compote for a warm holiday note.',
+      'Swap 2 tbsp milk for sour cream in batter for extra tenderness.',
+      'Fold ½ cup white chocolate chips into batter for creamy sweetness.'
+    ],
+    pairings: 'Serve with Earl Grey, citrusy IPA, or a dry prosecco. Candied orange peel or sugared cranberries make elegant garnishes.',
+    bestTime: 'Peak holiday season through winter; perfect for Thanksgiving to New Year gatherings.',
+    recipeKeys: ['Classic', 'Holiday Ready', 'Cranberry Core', 'Orange Zest', 'Sparkle Finish'],
+    conclusion: 'Tart-sweet cranberry and bright orange zest meet in a polished, party-ready cupcake with a sparkling finish—festive, balanced, and highly craveable.',
+    faq: [
+      {
+        question: 'Can I use cranberry sauce instead of compote?',
+        answer: 'Homemade compote is thicker and less sweet than canned sauce. If using canned, reduce it on the stove 3–5 minutes to a jammy consistency before filling.'
+      },
+      {
+        question: 'Will orange juice curdle the frosting?',
+        answer: 'Add juice gradually and whip well; balance with powdered sugar. If it loosens too much, chill briefly and re-whip.'
+      },
+      {
+        question: 'How do I prevent soggy centers?',
+        answer: 'Cool compote fully and avoid overfilling. Replace a thin cake “lid” before frosting to seal moisture.'
+      }
+    ]
+  },
+  {
     id: '14',
     title: 'White Chocolate Snowflake Cupcakes',
     slug: 'white-chocolate-snowflake-cupcakes',
