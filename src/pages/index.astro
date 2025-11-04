@@ -396,25 +396,36 @@ const collectionSchema = {
   <Footer />
 
   <script>
-    // Category filter functionality
-    document.addEventListener('DOMContentLoaded', function() {
+    // Category filter functionality (robust init even if DOMContentLoaded already fired)
+    function setupCategoryFilter() {
       const filterButtons = document.querySelectorAll('.category-filter');
       const recipeItems = document.querySelectorAll('.recipe-item');
-      
+      if (!filterButtons.length || !recipeItems.length) return;
+
+      // Mark 'all' active by default
+      const allBtn = Array.from(filterButtons).find(b => b.dataset.category === 'all');
+      if (allBtn) {
+        filterButtons.forEach(btn => {
+          btn.classList.remove('bg-cupcake-coral', 'text-white', 'shadow-lg', 'font-bold');
+          btn.classList.add('bg-white', 'text-gray-700', 'shadow-sm', 'font-medium');
+        });
+        allBtn.classList.remove('bg-white', 'text-gray-700', 'shadow-sm', 'font-medium');
+        allBtn.classList.add('bg-cupcake-coral', 'text-white', 'shadow-lg', 'font-bold');
+      }
+
       filterButtons.forEach(button => {
         button.addEventListener('click', function() {
           const selectedCategory = this.dataset.category;
-          
-          // Update active button
+
+          // Update active button styles
           filterButtons.forEach(btn => {
             btn.classList.remove('bg-cupcake-coral', 'text-white', 'shadow-lg', 'font-bold');
             btn.classList.add('bg-white', 'text-gray-700', 'shadow-sm', 'font-medium');
           });
-          
           this.classList.remove('bg-white', 'text-gray-700', 'shadow-sm', 'font-medium');
           this.classList.add('bg-cupcake-coral', 'text-white', 'shadow-lg', 'font-bold');
-          
-          // Filter recipes
+
+          // Filter items
           recipeItems.forEach(item => {
             const itemCategory = item.dataset.category;
             if (selectedCategory === 'all' || itemCategory === selectedCategory) {
@@ -426,6 +437,12 @@ const collectionSchema = {
           });
         });
       });
-    });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', setupCategoryFilter);
+    } else {
+      setupCategoryFilter();
+    }
   </script>
 </BaseLayout>
