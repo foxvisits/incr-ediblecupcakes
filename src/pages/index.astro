@@ -398,6 +398,10 @@ const collectionSchema = {
   <script>
     // Category filter functionality (robust init even if DOMContentLoaded already fired)
     function setupCategoryFilter() {
+      const container = document.getElementById('recipes');
+      if (!container) return;
+      if (container.dataset.filtersInitialized === 'true') return; // prevent double-bind
+
       const filterButtons = document.querySelectorAll('.category-filter');
       const recipeItems = document.querySelectorAll('.recipe-item');
       if (!filterButtons.length || !recipeItems.length) return;
@@ -437,12 +441,30 @@ const collectionSchema = {
           });
         });
       });
+
+      // Ensure items are visible on first load
+      recipeItems.forEach(item => { item.style.display = 'block'; });
+      container.dataset.filtersInitialized = 'true';
     }
 
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', setupCategoryFilter);
-    } else {
+    // Try to init now or on DOM ready
+    const initNowOrLater = () => {
       setupCategoryFilter();
+      if (document.getElementById('recipes')?.dataset.filtersInitialized === 'true') return;
+      // Fallback: observe DOM for ClientOnly-rendered buttons
+      const observer = new MutationObserver(() => {
+        setupCategoryFilter();
+        if (document.getElementById('recipes')?.dataset.filtersInitialized === 'true') {
+          observer.disconnect();
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initNowOrLater);
+    } else {
+      initNowOrLater();
     }
   </script>
 </BaseLayout>
