@@ -12,6 +12,19 @@ const guidesModule = await import(pathToFileURL(path.join(root, 'src', 'data', '
 const validatedRecipes = recipesModule.validatedRecipes;
 const guides = guidesModule.guides;
 
+// Helper function to encode image URL properly (preserve /, encode only special chars in filename)
+const encodeImageUrl = (imagePath) => {
+  // Split path into parts, encode only the filename, keep / separators
+  const parts = imagePath.split('/');
+  const encodedParts = parts.map((part, index) => {
+    // Don't encode the first empty part (leading /) or directory separators
+    if (index === 0 && part === '') return '';
+    // Encode only the filename (last part) and directory names
+    return encodeURIComponent(part);
+  });
+  return encodedParts.join('/');
+};
+
 // Generate dynamic sitemap with current date
 const generateSitemap = () => {
   const baseUrl = 'https://incr-ediblecupcakes.com';
@@ -28,7 +41,7 @@ const generateSitemap = () => {
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>${baseUrl}/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png</image:loc>
+      <image:loc>${baseUrl}${encodeImageUrl('/A vibrant, mouth-watering cupcake scene.png')}</image:loc>
       <image:title>Incr-EdibleCupCakes - Extraordinary Cupcake Recipes</image:title>
     </image:image>
   </url>
@@ -47,7 +60,7 @@ const generateSitemap = () => {
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>${baseUrl}/Sarah.png</image:loc>
+      <image:loc>${baseUrl}${encodeImageUrl('/Sarah.png')}</image:loc>
       <image:title>Sarah - Professional Baker and Recipe Developer</image:title>
     </image:image>
   </url>
@@ -151,7 +164,7 @@ const generateSitemap = () => {
 
   // Add all recipe pages dynamically
   validatedRecipes.forEach(recipe => {
-    const imageUrl = encodeURIComponent(recipe.image);
+    const imageUrl = encodeImageUrl(recipe.image);
     sitemap += `  <!-- ${recipe.title} -->
   <url>
     <loc>${baseUrl}/recipe/${recipe.slug}</loc>
@@ -189,7 +202,7 @@ const generateSitemap = () => {
 
   // Add all guide pages
   guides.forEach(guide => {
-    const imageUrl = encodeURIComponent(guide.image);
+    const imageUrl = encodeImageUrl(guide.image);
     sitemap += `  <!-- ${guide.title} -->
   <url>
     <loc>${baseUrl}/guides/${guide.slug}</loc>
