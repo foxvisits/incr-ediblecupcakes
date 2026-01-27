@@ -1,19 +1,21 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
-import sitemap from '@astrojs/sitemap';
+// Sitemap integration disabled - using manual sitemap generation via scripts/update-sitemap.mjs
+// import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
     react(),
     tailwind(),
-    sitemap({
-      changefreq: 'weekly',
-      priority: 0.7,
-      lastmod: new Date(),
-      filter: (page) => !page.includes('404'),
-    })
+    // Sitemap integration disabled - using manual sitemap generation for better control
+    // sitemap({
+    //   changefreq: 'weekly',
+    //   priority: 0.7,
+    //   lastmod: new Date(),
+    //   filter: (page) => !page.includes('404'),
+    // })
   ],
   site: 'https://incr-ediblecupcakes.com',
   output: 'static',

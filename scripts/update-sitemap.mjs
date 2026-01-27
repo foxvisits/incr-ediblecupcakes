@@ -1,244 +1,239 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath, pathToFileURL } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const root = path.resolve(__dirname, '..');
+
+// Dynamic import of data files - use file:// URL for Windows compatibility
+const recipesModule = await import(pathToFileURL(path.join(root, 'src', 'data', 'recipes.ts')).href);
+const guidesModule = await import(pathToFileURL(path.join(root, 'src', 'data', 'guides.ts')).href);
+
+const validatedRecipes = recipesModule.validatedRecipes;
+const guides = guidesModule.guides;
 
 // Generate dynamic sitemap with current date
 const generateSitemap = () => {
+  const baseUrl = 'https://incr-ediblecupcakes.com';
   const currentDate = new Date().toISOString().split('T')[0];
   
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+  let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
   <!-- Homepage -->
   <url>
-    <loc>https://incr-ediblecupcakes.com/</loc>
+    <loc>${baseUrl}/</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png</image:loc>
+      <image:loc>${baseUrl}/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png</image:loc>
       <image:title>Incr-EdibleCupCakes - Extraordinary Cupcake Recipes</image:title>
     </image:image>
   </url>
 
   <!-- Main Pages -->
   <url>
-    <loc>https://incr-ediblecupcakes.com/recipes</loc>
+    <loc>${baseUrl}/recipes</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://incr-ediblecupcakes.com/about</loc>
+    <loc>${baseUrl}/about</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/Sarah.png</image:loc>
+      <image:loc>${baseUrl}/Sarah.png</image:loc>
       <image:title>Sarah - Professional Baker and Recipe Developer</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://incr-ediblecupcakes.com/contact</loc>
+    <loc>${baseUrl}/contact</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- Categories Index -->
+  <url>
+    <loc>${baseUrl}/categories</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Category Pages -->
   <url>
-    <loc>https://incr-ediblecupcakes.com/categories/classic</loc>
+    <loc>${baseUrl}/categories/classic</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://incr-ediblecupcakes.com/categories/keto</loc>
+    <loc>${baseUrl}/categories/keto</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://incr-ediblecupcakes.com/categories/vegan</loc>
+    <loc>${baseUrl}/categories/vegan</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://incr-ediblecupcakes.com/categories/nut-free</loc>
+    <loc>${baseUrl}/categories/nut-free</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://incr-ediblecupcakes.com/categories/gluten-free</loc>
+    <loc>${baseUrl}/categories/gluten-free</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Recipe Pages -->
   <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/classic-vanilla-dream-cupcakes</loc>
+    <loc>${baseUrl}/categories/gourmet</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>${baseUrl}/categories/tropical</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>${baseUrl}/categories/spiced</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>${baseUrl}/categories/seasonal</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Tags Index -->
+  <url>
+    <loc>${baseUrl}/tags</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Guides Index -->
+  <url>
+    <loc>${baseUrl}/guides</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+`;
+
+  // Add all recipe pages dynamically
+  validatedRecipes.forEach(recipe => {
+    const imageUrl = encodeURIComponent(recipe.image);
+    sitemap += `  <!-- ${recipe.title} -->
+  <url>
+    <loc>${baseUrl}/recipe/${recipe.slug}</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com%2FClassic%20Vanilla%20Dream%20Cupcakes.jpg</image:loc>
-      <image:title>Classic Vanilla Dream Cupcakes Recipe</image:title>
+      <image:loc>${baseUrl}${imageUrl}</image:loc>
+      <image:title>${recipe.title} Recipe</image:title>
     </image:image>
   </url>
 
+`;
+  });
+
+  // Get all unique tags from recipes
+  const allTags = Array.from(
+    new Set(
+      validatedRecipes.flatMap((r) => (r.tags ? r.tags.map((t) => t.toLowerCase()) : []))
+    )
+  );
+
+  // Add all tag pages
+  allTags.forEach(tag => {
+    sitemap += `  <!-- Tag: ${tag} -->
   <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/keto-chocolate-bliss-cupcakes</loc>
+    <loc>${baseUrl}/tags/${encodeURIComponent(tag)}</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+`;
+  });
+
+  // Add all guide pages
+  guides.forEach(guide => {
+    const imageUrl = encodeURIComponent(guide.image);
+    sitemap += `  <!-- ${guide.title} -->
+  <url>
+    <loc>${baseUrl}/guides/${guide.slug}</loc>
+    <lastmod>${guide.publishedAt}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>${baseUrl}${imageUrl}</image:loc>
+      <image:title>${guide.title}</image:title>
+    </image:image>
+  </url>
+
+`;
+  });
+
+  // Add substitute pages
+  const substitutes = ['egg', 'buttermilk', 'sugar', 'flour'];
+  substitutes.forEach(ingredient => {
+    sitemap += `  <!-- Substitute: ${ingredient} -->
+  <url>
+    <loc>${baseUrl}/substitutes/${ingredient}</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com%2Fketo-chocolate-bliss-cupcakes.png</image:loc>
-      <image:title>Keto Chocolate Bliss Cupcakes Recipe</image:title>
-    </image:image>
+    <priority>0.7</priority>
   </url>
 
+`;
+  });
+
+  // Add baking-times pages
+  const bakingTypes = ['standard', 'mini', 'jumbo'];
+  bakingTypes.forEach(type => {
+    sitemap += `  <!-- Baking Times: ${type} -->
   <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/vegan-rainbow-surprise-cupcakes</loc>
+    <loc>${baseUrl}/baking-times/${type}</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com%2Fvegan-rainbow-surprise-cupcakes.jpg</image:loc>
-      <image:title>Vegan Rainbow Surprise Cupcakes Recipe</image:title>
-    </image:image>
+    <priority>0.7</priority>
   </url>
 
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/nut-free-lemon-sunshine-cupcakes</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com%2Fnut-free-lemon-sunshine-cupcakes.jpg</image:loc>
-      <image:title>Nut-Free Lemon Sunshine Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
+`;
+  });
 
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/red-velvet-romance-cupcakes</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com%2Fred-velvet-romance-cupcakes.jpg</image:loc>
-      <image:title>Red Velvet Romance Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/gluten-free-almond-joy-cupcakes</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com%2Fgluten-free-almond-joy-cupcakes.jpg</image:loc>
-      <image:title>Gluten-Free Almond Joy Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/rosewater-pistachio-delight-cupcakes</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com%2Frosewater-pistachio-delight-cupcakes.jpg</image:loc>
-      <image:title>Rosewater Pistachio Delight Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/mango-coconut-sunset-cupcakes</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com%2Fmango-coconut-sunset-cupcakes.png</image:loc>
-      <image:title>Mango Coconut Sunset Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/chocolate-chili-firecracker-cupcakes</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com%2FChocolate%20Chili%20Firecracker%20Cupcakes.jpg</image:loc>
-      <image:title>Chocolate Chili Firecracker Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/boston-cream-cupcakes</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com%2Fboston-cream-cupcakes.jpg</image:loc>
-      <image:title>Boston Cream Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/prune-cupcakes</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com%2Fprune-cupcakes.jpg</image:loc>
-      <image:title>Prune Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/yellow-cake-cupcakes</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com%2Fyellow-cake-cupcakes.jpg</image:loc>
-      <image:title>Yellow Cake Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/white-chocolate-snowflake-cupcakes</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com%2FWhite%20Chocolate%20Snowflake%20Cupcakes%20with%20White%20chocolate%20swirl%20frosting.jpg</image:loc>
-      <image:title>White Chocolate Snowflake Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/spiced-pear-cupcakes</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com%2FSpiced%20Pear%20Cupcakes%20with%20pear%20puree.jpg</image:loc>
-      <image:title>Spiced Pear Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-</urlset>`;
+  sitemap += `</urlset>`;
 
   return sitemap;
 };
@@ -247,4 +242,19 @@ const generateSitemap = () => {
 const sitemapContent = generateSitemap();
 fs.writeFileSync(path.join(process.cwd(), 'public', 'sitemap.xml'), sitemapContent);
 
-console.log('✅ Sitemap updated with current date:', new Date().toISOString().split('T')[0]);
+const totalUrls = 4 + // homepage, recipes, about, contact
+  1 + // categories index
+  9 + // category pages
+  1 + // tags index
+  validatedRecipes.length + // recipe pages
+  Array.from(new Set(validatedRecipes.flatMap((r) => (r.tags ? r.tags.map((t) => t.toLowerCase()) : [])))).length + // tag pages
+  1 + // guides index
+  guides.length + // guide pages
+  4 + // substitute pages
+  3; // baking-times pages
+
+console.log(`✅ Sitemap updated with ${totalUrls} URLs`);
+console.log(`   - ${validatedRecipes.length} recipe pages`);
+console.log(`   - ${Array.from(new Set(validatedRecipes.flatMap((r) => (r.tags ? r.tags.map((t) => t.toLowerCase()) : [])))).length} tag pages`);
+console.log(`   - ${guides.length} guide pages`);
+console.log(`   - Current date: ${new Date().toISOString().split('T')[0]}`);
