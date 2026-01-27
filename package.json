@@ -2,14 +2,17 @@
   "name": "incr-ediblecupcakes-astro",
   "type": "module",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "node scripts/update-sitemap.mjs && astro build",
+    "build": "tsx scripts/update-sitemap.mjs && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "lint": "astro check",
-    "update-sitemap": "node scripts/update-sitemap.mjs",
+    "update-sitemap": "tsx scripts/update-sitemap.mjs",
     "seo-check": "node scripts/seo-monitor.mjs"
   },
   "dependencies": {
@@ -27,6 +30,7 @@
   "devDependencies": {
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
-    "tailwindcss-textshadow": "^2.1.3"
+    "tailwindcss-textshadow": "^2.1.3",
+    "tsx": "^4.7.0"
   }
 }
