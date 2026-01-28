@@ -1,33 +1,23 @@
 import React, { useState } from 'react';
-import { Heart, Share2, Bookmark, Star, MessageCircle, ThumbsUp } from 'lucide-react';
+import { Heart, Share2, Bookmark, Star, MessageCircle } from 'lucide-react';
 
 interface RecipeInteractionsProps {
   recipeId: string;
-  initialLikes?: number;
-  initialRating?: number;
-  initialBookmarks?: number;
 }
 
-const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
-  recipeId,
-  initialLikes = 0,
-  initialRating = 0,
-  initialBookmarks = 0
-}) => {
+const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({ recipeId }) => {
   const [isLiked, setIsLiked] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState(false);
-  const [likes, setLikes] = useState(initialLikes);
-  const [bookmarks, setBookmarks] = useState(initialBookmarks);
   const [userRating, setUserRating] = useState(0);
-  const [showComments, setShowComments] = useState(false);
+  const [showNotes, setShowNotes] = useState(false);
   const [newComment, setNewComment] = useState('');
   const [userName, setUserName] = useState('');
   const [userEmail, setUserEmail] = useState('');
   const [captchaAnswer, setCaptchaAnswer] = useState('');
   const [captchaQuestion, setCaptchaQuestion] = useState({ question: '', answer: 0 });
-  const [comments, setComments] = useState([]);
+  const [notes, setNotes] = useState<{ id: number; author: string; comment: string; rating: number; date: string }[]>([]);
 
-  // Local persistence per recipe
+  // Local persistence per recipe (saved on this device only)
   const storageKey = `recipe:${recipeId}:interactions`;
 
   React.useEffect(() => {
@@ -37,10 +27,10 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
         const parsed = JSON.parse(raw);
         if (typeof parsed.isLiked === 'boolean') setIsLiked(parsed.isLiked);
         if (typeof parsed.isBookmarked === 'boolean') setIsBookmarked(parsed.isBookmarked);
-        if (typeof parsed.likes === 'number') setLikes(parsed.likes);
-        if (typeof parsed.bookmarks === 'number') setBookmarks(parsed.bookmarks);
         if (typeof parsed.userRating === 'number') setUserRating(parsed.userRating);
-        if (Array.isArray(parsed.comments)) setComments(parsed.comments);
+        if (Array.isArray(parsed.notes)) setNotes(parsed.notes);
+        // Legacy: support old "comments" key
+        if (Array.isArray(parsed.comments) && !parsed.notes) setNotes(parsed.comments);
       }
     } catch {}
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -51,14 +41,12 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
       const payload = {
         isLiked,
         isBookmarked,
-        likes,
-        bookmarks,
         userRating,
-        comments
+        notes
       };
       localStorage.setItem(storageKey, JSON.stringify(payload));
     } catch {}
-  }, [isLiked, isBookmarked, likes, bookmarks, userRating, comments, storageKey]);
+  }, [isLiked, isBookmarked, userRating, notes, storageKey]);
 
   // Generate simple math captcha
   const generateCaptcha = () => {
@@ -84,22 +72,15 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
     setCaptchaQuestion({ question, answer });
   };
 
-  // Generate captcha on component mount and when comments are shown
+  // Generate captcha when notes panel is shown
   React.useEffect(() => {
-    if (showComments) {
+    if (showNotes) {
       generateCaptcha();
     }
-  }, [showComments]);
+  }, [showNotes]);
 
-  const handleLike = () => {
-    setIsLiked(!isLiked);
-    setLikes(prev => isLiked ? prev - 1 : prev + 1);
-  };
-
-  const handleBookmark = () => {
-    setIsBookmarked(!isBookmarked);
-    setBookmarks(prev => isBookmarked ? prev - 1 : prev + 1);
-  };
+  const handleLike = () => setIsLiked(!isLiked);
+  const handleBookmark = () => setIsBookmarked(!isBookmarked);
 
   const handleShare = async () => {
     if (navigator.share) {
@@ -122,43 +103,30 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
     setUserRating(rating);
   };
 
-  const handleCommentSubmit = (e: React.FormEvent) => {
+  const handleNoteSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Validate required fields
     if (!newComment.trim()) {
-      alert('Please enter a comment.');
+      alert('Please enter a note.');
       return;
     }
-    
-    if (!userName.trim()) {
-      alert('Please enter your name.');
-      return;
-    }
-    
-    // Validate captcha
     if (parseInt(captchaAnswer) !== captchaQuestion.answer) {
       alert('Please solve the math problem correctly.');
       return;
     }
-    
-    if (newComment.trim() && userName.trim() && parseInt(captchaAnswer) === captchaQuestion.answer) {
-      const comment = {
-        id: comments.length + 1,
-        author: userName.trim(),
-        comment: newComment,
-        rating: userRating,
-        date: 'Just now',
-        likes: 0
-      };
-      setComments([comment, ...comments]);
-      setNewComment('');
-      setUserName('');
-      setUserEmail('');
-      setCaptchaAnswer('');
-      setUserRating(0);
-      generateCaptcha(); // Generate new captcha for next comment
-    }
+    const note = {
+      id: notes.length + 1,
+      author: userName.trim() || 'Note',
+      comment: newComment.trim(),
+      rating: userRating,
+      date: 'Just now'
+    };
+    setNotes([note, ...notes]);
+    setNewComment('');
+    setUserName('');
+    setUserEmail('');
+    setCaptchaAnswer('');
+    setUserRating(0);
+    generateCaptcha();
   };
 
   return (
@@ -173,10 +141,10 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
                 ? 'bg-rose-500 text-white shadow-lg' 
                 : 'bg-gray-100 text-gray-700 hover:bg-rose-50 hover:text-rose-600'
             }`}
-            aria-label={isLiked ? 'Unlike this recipe' : 'Like this recipe'}
+            aria-label={isLiked ? 'Remove from favorites' : 'Add to favorites'}
           >
             <Heart className={`w-5 h-5 ${isLiked ? 'fill-current' : ''}`} />
-            <span className="font-medium">{likes}</span>
+            <span className="font-medium">{isLiked ? 'In favorites' : 'Favorite'}</span>
           </button>
 
           <button
@@ -186,10 +154,10 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
                 ? 'bg-sunshine-400 text-white shadow-lg' 
                 : 'bg-gray-100 text-gray-700 hover:bg-sunshine-100/50 hover:text-sunshine-600'
             }`}
-            aria-label={isBookmarked ? 'Remove from bookmarks' : 'Bookmark this recipe'}
+            aria-label={isBookmarked ? 'Remove from saved' : 'Save recipe'}
           >
             <Bookmark className={`w-5 h-5 ${isBookmarked ? 'fill-current' : ''}`} />
-            <span className="font-medium">{bookmarks}</span>
+            <span className="font-medium">{isBookmarked ? 'Saved' : 'Save'}</span>
           </button>
 
           <button
@@ -203,19 +171,19 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
         </div>
 
         <button
-          onClick={() => setShowComments(!showComments)}
+          onClick={() => setShowNotes(!showNotes)}
           className="font-quicksand flex items-center space-x-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition-all duration-300"
-          aria-label={`${showComments ? 'Hide' : 'Show'} comments`}
-          aria-expanded={showComments}
+          aria-label={`${showNotes ? 'Hide' : 'Show'} notes`}
+          aria-expanded={showNotes}
         >
           <MessageCircle className="w-5 h-5" />
-          <span className="font-medium">{comments.length} Comments</span>
+          <span className="font-medium">{notes.length} Notes</span>
         </button>
       </div>
 
-      {/* Rating Section */}
+      {/* Your rating (saved on this device only) */}
       <div className="mb-6">
-        <h3 className="font-quicksand font-bold text-gray-900 mb-3">Rate this recipe:</h3>
+        <h3 className="font-quicksand font-bold text-gray-900 mb-3">Your rating:</h3>
         <div className="flex items-center space-x-1">
           {[1, 2, 3, 4, 5].map((star) => (
             <button
@@ -237,25 +205,25 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
         </div>
       </div>
 
-      {/* Comments Section */}
-      {showComments && (
+      {/* Notes (saved on this device only) */}
+      {showNotes && (
         <div className="space-y-6">
-          {/* Add Comment Form */}
-          <form onSubmit={handleCommentSubmit} className="bg-gray-50 rounded-xl p-4">
-            {/* Name and Email Fields */}
+          <p className="font-nunito text-sm text-gray-600">
+            Notes are stored only in this browser. Other people cannot see them.
+          </p>
+          <form onSubmit={handleNoteSubmit} className="bg-gray-50 rounded-xl p-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div>
                 <label htmlFor="userName" className="block text-sm font-bold text-gray-700 mb-2 font-quicksand">
-                  Your Name *
+                  Label (optional)
                 </label>
                 <input
                   type="text"
                   id="userName"
                   value={userName}
                   onChange={(e) => setUserName(e.target.value)}
-                  placeholder="Enter your name"
+                  placeholder="e.g. First try, with extra lemon"
                   className="font-nunito w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cupcake-coral focus:border-transparent"
-                  required
                 />
               </div>
               <div>
@@ -272,21 +240,17 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
                 />
               </div>
             </div>
-            
-            {/* Comment Textarea */}
             <textarea
               value={newComment}
               onChange={(e) => setNewComment(e.target.value)}
-              placeholder="Share your experience with this recipe..."
+              placeholder="Your note about this recipe..."
               className="font-nunito w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cupcake-coral focus:border-transparent resize-none"
               rows={3}
               required
             />
-            
-            {/* Captcha */}
             <div className="mt-4 p-4 bg-white rounded-lg border border-gray-200">
               <label htmlFor="captcha" className="block text-sm font-bold text-gray-700 mb-2 font-quicksand">
-                Security Check: {captchaQuestion.question}
+                Security check: {captchaQuestion.question}
               </label>
               <div className="flex items-center space-x-3">
                 <input
@@ -303,14 +267,13 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
                   onClick={generateCaptcha}
                   className="font-nunito text-sm text-cupcake-coral hover:text-cupcake-cherry transition-colors duration-300"
                 >
-                  New Question
+                  New question
                 </button>
               </div>
             </div>
-            
             <div className="flex items-center justify-between mt-3">
               <div className="flex items-center space-x-2">
-                <span className="font-nunito text-sm text-gray-600">Your rating:</span>
+                <span className="font-nunito text-sm text-gray-600">Your rating for this note:</span>
                 <div className="flex items-center space-x-1">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <button
@@ -328,37 +291,34 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({
               </div>
               <button
                 type="submit"
-                disabled={!newComment.trim() || !userName.trim() || !captchaAnswer.trim()}
+                disabled={!newComment.trim() || !captchaAnswer.trim()}
                 className="font-quicksand px-6 py-2 bg-gradient-to-r from-cupcake-coral to-sunshine-400 text-white rounded-lg hover:from-cupcake-cherry hover:to-sunshine-500 disabled:from-gray-300 disabled:to-gray-400 disabled:cursor-not-allowed transition-all duration-300 font-bold transform hover:scale-105 disabled:hover:scale-100"
               >
-                Post Comment
+                Save note
               </button>
             </div>
           </form>
 
-          {/* Comments List */}
           <div className="space-y-4">
-            {comments.map((comment) => (
-              <div key={comment.id} className="bg-gray-50 rounded-xl p-4">
+            {notes.map((note) => (
+              <div key={note.id} className="bg-gray-50 rounded-xl p-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-10 h-10 bg-gradient-to-br from-cupcake-coral to-sunshine-400 rounded-full flex items-center justify-center text-white font-bold">
-                    {comment.author.charAt(0)}
+                    {note.author.charAt(0)}
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center space-x-2 mb-1">
-                      <h4 className="font-quicksand font-bold text-gray-900">{comment.author}</h4>
-                      <div className="flex items-center space-x-1">
-                        {[...Array(comment.rating)].map((_, i) => (
-                          <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                        ))}
-                      </div>
-                      <span className="font-nunito text-sm text-gray-500">{comment.date}</span>
+                      <h4 className="font-quicksand font-bold text-gray-900">{note.author}</h4>
+                      {note.rating > 0 && (
+                        <div className="flex items-center space-x-1">
+                          {[...Array(note.rating)].map((_, i) => (
+                            <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                          ))}
+                        </div>
+                      )}
+                      <span className="font-nunito text-sm text-gray-500">{note.date}</span>
                     </div>
-                    <p className="font-nunito text-gray-700 mb-2">{comment.comment}</p>
-                    <button className="font-nunito flex items-center space-x-1 text-sm text-gray-500 hover:text-cupcake-coral transition-colors duration-300">
-                      <ThumbsUp className="w-4 h-4" />
-                      <span>{comment.likes}</span>
-                    </button>
+                    <p className="font-nunito text-gray-700">{note.comment}</p>
                   </div>
                 </div>
               </div>

@@ -1437,6 +1437,214 @@ export const recipes: Recipe[] = [
         answer: "Absolutely! This recipe works perfectly for two 9-inch round cake layers. Bake for 25-30 minutes and double the frosting recipe for a layer cake."
       }
     ]
+  },
+  {
+    id: '17',
+    title: 'Keto Lemon Ricotta Cupcakes',
+    slug: 'keto-lemon-ricotta-cupcakes',
+    description: 'Experience the perfect harmony of bright citrus and creamy richness with these extraordinary keto lemon ricotta cupcakes that prove low-carb desserts can be both sophisticated and indulgent. These aren\'t just cupcakes – they\'re a celebration of Italian-inspired flavors transformed into a ketogenic masterpiece that will delight your taste buds while keeping you firmly in ketosis. The foundation is built on superfine almond flour, which creates an incredibly tender and moist crumb that perfectly complements the luxurious ricotta filling hidden within. The lemon flavor is achieved through a masterful combination of fresh lemon zest, pure lemon juice, and high-quality lemon extract, creating layers of citrus notes that dance on your palate from the first bite to the last. Each cupcake boasts an incredibly light and airy texture, achieved through the careful balance of ricotta cheese, eggs, and almond flour that creates a delicate structure reminiscent of the finest Italian pastries. But the real revelation is the ricotta filling – a cloud of creamy sweetness that bursts with tangy lemon flavor, creating a delightful contrast to the tender cake surrounding it. The crowning glory is our signature lemon cream cheese frosting, whipped to silky perfection with powdered erythritol and fresh lemon zest, creating a tangy-sweet topping that perfectly balances the rich ricotta flavors below. At just 3 net carbs per cupcake, these treats allow you to satisfy your dessert cravings while maintaining your ketogenic lifestyle, proving that healthy choices never have to mean sacrificing the foods you love.',
+    shortDescription: 'Bright citrus meets creamy richness in these keto lemon ricotta cupcakes featuring almond flour base, ricotta filling, and tangy lemon cream cheese frosting at just 3 net carbs.',
+    image: '/keto-lemon-ricotta-cupcakes.jpg',
+    category: 'keto',
+    difficulty: 'Medium',
+    prepTime: '35 mins',
+    cookTime: '20 mins',
+    totalTime: '55 mins',
+    servings: 10,
+    rating: 4.8,
+    featured: true,
+    cuisine: 'Italian-Inspired',
+    dietaryBadges: ['Keto', 'Low Carb', 'Gluten-Free'],
+    tags: ['keto', 'lemon', 'ricotta', 'almond-flour', 'erythritol'],
+    author: {
+      name: 'Incr-EdibleCupCakes',
+      url: 'https://incr-ediblecupcakes.com'
+    },
+    keywords: ['keto lemon cupcakes', 'keto ricotta cupcakes', 'low carb lemon cupcakes', 'keto baking', 'sugar free lemon dessert'],
+    ingredients: [
+      '1½ cups superfine almond flour',
+      '¾ cup erythritol sweetener',
+      '1½ tsp baking powder',
+      '½ tsp salt',
+      '3 large eggs, room temperature',
+      '⅓ cup melted coconut oil',
+      '½ cup whole milk ricotta cheese',
+      'Zest of 2 large lemons',
+      '3 tbsp fresh lemon juice',
+      '1 tsp vanilla extract',
+      'For ricotta filling: 1 cup ricotta cheese, 2 tbsp powdered erythritol, zest of 1 lemon, 1 tsp vanilla',
+      'For frosting: 8 oz cream cheese (softened), ½ cup butter (softened), 1 cup powdered erythritol, zest of 1 lemon, 2 tbsp fresh lemon juice, 1 tsp vanilla extract'
+    ],
+    instructions: [
+      'Preheat oven to 325°F (165°C) and line a 10-cup muffin tin with paper liners.',
+      'In a medium bowl, whisk together almond flour, erythritol, baking powder, and salt until well combined.',
+      'In a large bowl, beat eggs until light and frothy, about 2 minutes.',
+      'Add melted coconut oil, ricotta cheese, lemon zest, lemon juice, and vanilla extract. Mix until smooth.',
+      'Gradually add dry ingredients to wet ingredients, mixing just until combined. Do not overmix.',
+      'Fill cupcake liners about ¾ full. Bake for 18-22 minutes, until tops spring back lightly and a toothpick comes out with just a few moist crumbs.',
+      'Cool cupcakes completely in the pan for 10 minutes, then transfer to a wire rack to cool completely.',
+      'Make ricotta filling: Mix ricotta cheese, powdered erythritol, lemon zest, and vanilla until smooth. Chill for 30 minutes.',
+      'Core each cooled cupcake using a small knife or cupcake corer. Fill centers with ricotta filling.',
+      'Make frosting: Beat cream cheese and butter until smooth and creamy. Add powdered erythritol gradually, then lemon zest, lemon juice, and vanilla. Beat until fluffy.',
+      'Pipe or spread frosting onto cupcakes. Garnish with additional lemon zest if desired.'
+    ],
+    nutritionInfo: {
+      calories: 195,
+      carbs: 3,
+      protein: 7,
+      fat: 18,
+      fiber: 2,
+      sugar: 2
+    },
+    tips: [
+      'Use room temperature ingredients for best results – cold ingredients can cause the batter to separate',
+      'Don\'t overmix the batter after adding flour – this can make cupcakes dense',
+      'Let coconut oil cool slightly before adding to eggs to prevent cooking them',
+      'Chill the ricotta filling before using for easier handling',
+      'Store cupcakes in the refrigerator due to cream cheese frosting and ricotta filling'
+    ],
+    variations: [
+      'Add a teaspoon of poppy seeds to the batter for lemon-poppy seed flavor',
+      'Replace lemon with lime for a tropical twist',
+      'Add a few drops of lemon essential oil (food-grade) for extra intense lemon flavor',
+      'Top with sugar-free lemon curd instead of ricotta filling',
+      'Create a lemon glaze by mixing powdered erythritol with lemon juice'
+    ],
+    pairings: 'Perfect with bulletproof coffee, unsweetened iced tea, or herbal lemon tea. Pairs beautifully with fresh berries or a small serving of keto-friendly nuts.',
+    bestTime: 'Ideal for spring celebrations, afternoon tea, or when you crave bright, refreshing desserts. Perfect for keto dieters who miss citrus flavors. Best consumed within 5 days when refrigerated.',
+    recipeKeys: ['Keto Friendly', 'Low Carb', 'Sugar Free', 'Gluten Free', 'Ricotta Filled', 'Citrus Fresh'],
+    conclusion: 'These keto lemon ricotta cupcakes prove that following a ketogenic lifestyle doesn\'t mean giving up on bright, refreshing flavors. The perfect balance of tangy lemon and creamy ricotta creates a dessert that\'s both sophisticated and satisfying!',
+    faq: [
+      {
+        question: "Will these cupcakes kick me out of ketosis?",
+        answer: "No! With only 3 net carbs per cupcake, these fit perfectly into a ketogenic diet. The ricotta adds protein and healthy fats while keeping carbs minimal. Stick to one cupcake to maintain your macros."
+      },
+      {
+        question: "Can I use cottage cheese instead of ricotta?",
+        answer: "Yes, but you'll need to blend cottage cheese until smooth first. Ricotta has a creamier texture that works better in baking, but cottage cheese can work in a pinch if blended well."
+      },
+      {
+        question: "Why are my keto cupcakes dense instead of light?",
+        answer: "This usually happens from overmixing the batter or using cold ingredients. Make sure all ingredients are at room temperature and mix just until combined after adding the dry ingredients. Almond flour doesn't need as much mixing as regular flour."
+      },
+      {
+        question: "Can I make these without the ricotta filling?",
+        answer: "Absolutely! The cupcakes are delicious on their own. Simply skip the coring and filling steps. You can also increase the ricotta in the batter for extra richness."
+      },
+      {
+        question: "How do I prevent the lemon flavor from being too tart?",
+        answer: "Balance is key! Start with less lemon juice and add more gradually. The erythritol provides sweetness, but you can add a bit more if needed. The ricotta and cream cheese help balance the tartness naturally."
+      },
+      {
+        question: "Can I freeze these cupcakes?",
+        answer: "Yes! Freeze unfrosted cupcakes for up to 3 months. Thaw in the refrigerator overnight, then add filling and frosting before serving. The frosting can also be frozen separately."
+      }
+    ]
+  },
+  {
+    id: '18',
+    title: 'Keto Chocolate Truffle Cupcakes',
+    slug: 'keto-chocolate-truffle-cupcakes',
+    description: 'Indulge in pure chocolate decadence with these extraordinary keto chocolate truffle cupcakes that redefine what low-carb desserts can be. These aren\'t just cupcakes – they\'re edible luxury that proves ketogenic baking can be every bit as indulgent and sophisticated as traditional desserts. The foundation is built on premium superfine almond flour, which creates an incredibly moist and tender crumb that serves as the perfect canvas for the rich chocolate flavors that follow. The chocolate intensity is achieved through a masterful combination of Dutch-processed cocoa powder and sugar-free dark chocolate, creating layers of deep, complex chocolate notes that develop beautifully on your palate. Each cupcake boasts an incredibly fudgy texture, achieved through the careful balance of almond flour, eggs, and coconut oil that creates a dense, truffle-like consistency that melts on your tongue. But the real showstopper is the luxurious chocolate ganache frosting – a silky-smooth blend of sugar-free dark chocolate and heavy cream that cascades down the sides like liquid silk, creating the perfect balance of bitter and sweet. This isn\'t just any chocolate frosting – it\'s a carefully crafted ganache that sets to a beautiful sheen while maintaining its luxurious mouthfeel. Hidden within each cupcake is a surprise center of rich chocolate truffle filling, creating multiple layers of chocolate intensity that make every bite an adventure in decadence. At just 4 net carbs per cupcake, these treats allow you to satisfy your deepest chocolate cravings while maintaining your ketogenic lifestyle, proving that healthy choices never have to mean sacrificing the foods you love.',
+    shortDescription: 'Pure chocolate decadence in these keto chocolate truffle cupcakes featuring fudgy almond flour base, rich chocolate ganache frosting, and truffle centers at just 4 net carbs.',
+    image: '/keto-chocolate-truffle-cupcakes.jpg',
+    category: 'keto',
+    difficulty: 'Medium',
+    prepTime: '40 mins',
+    cookTime: '22 mins',
+    totalTime: '62 mins',
+    servings: 10,
+    rating: 4.9,
+    featured: true,
+    cuisine: 'French-Inspired',
+    dietaryBadges: ['Keto', 'Low Carb', 'Gluten-Free'],
+    tags: ['keto', 'chocolate', 'truffle', 'ganache', 'almond-flour', 'erythritol'],
+    author: {
+      name: 'Incr-EdibleCupCakes',
+      url: 'https://incr-ediblecupcakes.com'
+    },
+    keywords: ['keto chocolate cupcakes', 'keto truffle cupcakes', 'low carb chocolate cupcakes', 'keto ganache cupcakes', 'sugar free chocolate dessert'],
+    ingredients: [
+      '1½ cups superfine almond flour',
+      '¾ cup erythritol sweetener',
+      '⅓ cup unsweetened Dutch-processed cocoa powder',
+      '1½ tsp baking powder',
+      '½ tsp salt',
+      '3 large eggs, room temperature',
+      '⅓ cup melted coconut oil',
+      '½ cup unsweetened almond milk',
+      '2 oz sugar-free dark chocolate (70% cacao or higher), melted and cooled',
+      '1 tsp vanilla extract',
+      'For truffle filling: 4 oz sugar-free dark chocolate, ¼ cup heavy cream, 2 tbsp powdered erythritol, 1 tsp vanilla',
+      'For ganache frosting: 6 oz sugar-free dark chocolate, ½ cup heavy cream, 2 tbsp powdered erythritol, 1 tsp vanilla extract'
+    ],
+    instructions: [
+      'Preheat oven to 325°F (165°C) and line a 10-cup muffin tin with paper liners.',
+      'In a medium bowl, whisk together almond flour, erythritol, cocoa powder, baking powder, and salt until well combined.',
+      'In a large bowl, beat eggs until light and frothy, about 2 minutes.',
+      'Add melted coconut oil, melted chocolate, almond milk, and vanilla extract. Mix until smooth.',
+      'Gradually add dry ingredients to wet ingredients, mixing just until combined. Do not overmix.',
+      'Fill cupcake liners about ¾ full. Bake for 20-24 minutes, until tops spring back lightly and a toothpick comes out with just a few moist crumbs.',
+      'Cool cupcakes completely in the pan for 10 minutes, then transfer to a wire rack to cool completely.',
+      'Make truffle filling: Heat heavy cream until just simmering. Pour over chopped chocolate and let sit 2 minutes. Whisk until smooth. Add powdered erythritol and vanilla. Chill for 1 hour until firm.',
+      'Core each cooled cupcake using a small knife or cupcake corer. Fill centers with chilled truffle filling.',
+      'Make ganache frosting: Heat heavy cream until just simmering. Pour over chopped chocolate and let sit 2 minutes. Whisk until smooth. Add powdered erythritol and vanilla. Let cool to room temperature, stirring occasionally, until spreadable consistency.',
+      'Spread or pipe ganache onto cupcakes. Garnish with chocolate shavings or cocoa powder if desired.'
+    ],
+    nutritionInfo: {
+      calories: 220,
+      carbs: 4,
+      protein: 7,
+      fat: 20,
+      fiber: 3,
+      sugar: 1
+    },
+    tips: [
+      'Use high-quality sugar-free dark chocolate (70% cacao or higher) for best flavor',
+      'Let melted chocolate cool slightly before adding to batter to prevent cooking the eggs',
+      'Don\'t overbake – keto cupcakes continue cooking while cooling',
+      'Chill the truffle filling thoroughly before using for easier handling',
+      'Let ganache cool to room temperature before frosting – it should be spreadable but not runny',
+      'Store cupcakes in the refrigerator due to ganache and truffle filling'
+    ],
+    variations: [
+      'Add espresso powder to the batter for mocha truffle flavor',
+      'Swirl in sugar-free peanut butter for a chocolate-peanut butter combo',
+      'Top with crushed sugar-free cookies for extra texture',
+      'Add orange zest to the ganache for a chocolate-orange twist',
+      'Create a white chocolate ganache version using sugar-free white chocolate',
+      'Add a pinch of cayenne pepper to the ganache for a spicy kick'
+    ],
+    pairings: 'Perfect with bulletproof coffee, unsweetened almond milk, or a glass of dry red wine. Pairs beautifully with fresh raspberries or a small serving of keto-friendly nuts.',
+    bestTime: 'Ideal for special occasions, chocolate cravings, or when you need a luxurious keto dessert. Perfect for Valentine\'s Day or romantic dinners. Best consumed within 5 days when refrigerated.',
+    recipeKeys: ['Keto Friendly', 'Low Carb', 'Sugar Free', 'Gluten Free', 'Truffle Filled', 'Ganache Topped', 'Chocolate Rich'],
+    conclusion: 'These keto chocolate truffle cupcakes prove that following a ketogenic lifestyle doesn\'t mean giving up on the most decadent chocolate experiences. Pure indulgence in every bite!',
+    faq: [
+      {
+        question: "Will these cupcakes kick me out of ketosis?",
+        answer: "No! With only 4 net carbs per cupcake, these fit perfectly into a ketogenic diet. The high fat content from almond flour, coconut oil, and heavy cream helps maintain ketosis. Stick to one cupcake to maintain your macros."
+      },
+      {
+        question: "Can I use regular dark chocolate instead of sugar-free?",
+        answer: "Regular dark chocolate contains sugar and will significantly increase the carb count. For true keto, stick with sugar-free dark chocolate sweetened with stevia, erythritol, or monk fruit."
+      },
+      {
+        question: "Why is my ganache too thick or too thin?",
+        answer: "Ganache consistency depends on temperature and chocolate-to-cream ratio. If too thick, warm it gently and add a bit more cream. If too thin, add more chocolate or chill it longer. The ideal ratio is 1:1 chocolate to cream by weight."
+      },
+      {
+        question: "Can I make these without the truffle filling?",
+        answer: "Absolutely! The cupcakes are delicious on their own. Simply skip the coring and filling steps. You can also increase the chocolate in the batter for extra richness."
+      },
+      {
+        question: "How do I prevent the ganache from becoming grainy?",
+        answer: "Grainy ganache usually happens from overheating or not whisking properly. Heat cream until just simmering (not boiling), pour over chocolate, let sit 2 minutes, then whisk gently until smooth. Don't overheat or overmix."
+      },
+      {
+        question: "Can I freeze these cupcakes?",
+        answer: "Yes! Freeze unfrosted cupcakes for up to 3 months. Thaw in the refrigerator overnight, then add filling and ganache before serving. The ganache can also be frozen separately and reheated gently before using."
+      }
+    ]
   }
 ]
 

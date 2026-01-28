@@ -27,6 +27,27 @@ export const guides: GuideMeta[] = [
     desc: 'Troubleshooting guide: domes, sinking centers, dryness, tunnels and more.',
     image: '/cupcake-mistakes-and-how-to-avoid-them.jpg',
     publishedAt: '2025-11-01'
+  },
+  {
+    slug: 'why-do-cupcakes-sink-after-baking',
+    title: 'Why Do Cupcakes Sink After Baking?',
+    desc: 'Causes, fixes and prevention for sunken cupcake centers.',
+    image: '/guide-why-cupcakes-sink.jpg',
+    publishedAt: '2026-01-28'
+  },
+  {
+    slug: 'how-to-make-cupcakes-moist-every-time',
+    title: 'How to Make Cupcakes Moist Every Time',
+    desc: 'Ingredients, techniques and habits for consistently tender, moist cupcakes.',
+    image: '/guide-moist-cupcakes.jpg',
+    publishedAt: '2026-01-28'
+  },
+  {
+    slug: 'cupcake-vs-muffin-whats-the-real-difference',
+    title: "Cupcake vs Muffin – What's the Real Difference?",
+    desc: 'Mixing method, ingredients and texture: the real distinctions.',
+    image: '/guide-cupcake-vs-muffin.jpg',
+    publishedAt: '2026-01-28'
   }
 ];
 

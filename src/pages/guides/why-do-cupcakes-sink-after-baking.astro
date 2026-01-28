@@ -1,0 +1,184 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import OGImageGenerator from '../../components/OGImageGenerator.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const title = 'Why Do Cupcakes Sink After Baking?';
+const featuredImage = '/guide-why-cupcakes-sink.jpg';
+const steps = [
+  'Underbaking: Center never sets; remove only when a skewer comes out clean',
+  'Overmixing: Weakens structure; mix wet and dry just until combined',
+  'Too much leavener: Gas expands then collapses; use fresh BP/BS and correct amounts',
+  'Overfilling liners: Fill 2/3 full; excess batter sinks as it cools',
+  'Opening the oven early: Cold air collapses rising batter; avoid opening first 2/3 of bake',
+  'Expired leavener: Test baking powder in water; replace if no fizz'
+];
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: title,
+  description: 'Causes and fixes for sunken cupcake centers',
+  step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s }))
+};
+---
+
+<BaseLayout title={`${title} - Incr-EdibleCupCakes`} description="Causes and fixes for sunken cupcake centers. Underbaking, overmixing, leavening and more." canonical="https://incr-ediblecupcakes.com/guides/why-do-cupcakes-sink-after-baking">
+  <Header />
+  <main class="pt-24 lg:pt-28 pb-24">
+    <Fragment slot="head">
+      <OGImageGenerator title={title} description="Causes and fixes for sunken cupcake centers." />
+      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    </Fragment>
+    <div class="max-w-5xl mx-auto px-4">
+      <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides', url: '/guides' }, { name: title }]} />
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <aside class="lg:col-span-1 lg:sticky lg:top-24 space-y-6">
+          <div class="w-80 h-80 rounded-2xl overflow-hidden shadow bg-white">
+            <img src={featuredImage} alt={title} width={600} height={600} loading="eager" class="w-full h-full object-cover" />
+          </div>
+          <div class="bg-gray-50 border rounded-xl p-4">
+            <h2 class="font-bold text-gray-900 mb-3">Quick fixes</h2>
+            <ul class="list-disc pl-5 text-sm text-gray-700 space-y-1">
+              <li>Bake until skewer is clean</li>
+              <li>Fill liners 2/3 only</li>
+              <li>Don’t open oven early</li>
+              <li>Mix just until combined</li>
+            </ul>
+          </div>
+        </aside>
+        <article class="lg:col-span-2 space-y-8">
+          <h1 class="text-4xl font-black text-gray-900">{title}</h1>
+          <p class="text-lg text-gray-700">Sunken centers are one of the most common cupcake problems. The good news: they’re almost always fixable once you know the cause.</p>
+          <p class="text-gray-700">A cupcake rises when gas from leavening and trapped air expands in the oven. The structure sets when proteins and starch coagulate. If the center never gets hot enough to set, or if the structure is too weak to hold the rise, the middle collapses as the cake cools.</p>
+
+          <div class="overflow-hidden rounded-xl border border-gray-200">
+            <table class="w-full text-left text-sm text-gray-700">
+              <thead>
+                <tr class="border-b border-gray-200 bg-gray-50">
+                  <th class="px-4 py-3 font-semibold text-gray-900">Cause</th>
+                  <th class="px-4 py-3 font-semibold text-gray-900">Fix</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Underbaking</td><td class="px-4 py-3">Bake until skewer comes out clean; use thermometer ~98–99°C in centre</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Overmixing</td><td class="px-4 py-3">Mix wet and dry just until combined; stop as soon as flour is in</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Too much leavener</td><td class="px-4 py-3">Measure correctly (no heaping); use fresh BP/BS</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Overfilling liners</td><td class="px-4 py-3">Fill 2/3 full; use a scoop for even portions</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Opening oven early</td><td class="px-4 py-3">Don’t open until last third of bake; rotate only then if needed</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Expired leavener</td><td class="px-4 py-3">Test BP in hot water (should fizz); replace every 6–12 months</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <button onclick="window.print()" class="px-4 py-2 rounded-lg bg-white border hover:bg-gray-50 font-quicksand text-gray-700">Print</button>
+          </div>
+
+          <hr class="border-gray-200" />
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Underbaking is the number-one cause</h2>
+            <p class="text-gray-700">If the centre never reaches a high enough temperature, the starch and proteins there never fully set. The outer ring is set but the middle stays soft; as it cools, that soft centre can’t support the dome and it sinks.</p>
+            <p class="text-gray-700">Recipes give times as guidelines. Your oven and pan size affect the real bake time. Rely on doneness cues, not the clock alone.</p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
+              <li>Skewer or thin knife in the centre: no wet batter (a few moist crumbs are fine).</li>
+              <li>Instant-read thermometer in centre: ~98–99°C (208–210°F) when done.</li>
+              <li>Preheat 15–20 minutes; use middle rack; don’t crowd the pan.</li>
+              <li>If oven runs cool: add 5–10 min or raise temp slightly; note the time for next batch.</li>
+            </ul>
+          </section>
+
+          <hr class="border-gray-200" />
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Overmixing weakens structure</h2>
+            <p class="text-gray-700">When you mix flour with liquid, gluten forms. A little gives structure; too much makes the batter tough and weakens the crumb’s ability to hold gas. Overmixing also pushes out air you beat into the butter and eggs.</p>
+            <p class="text-gray-700">The result: denser batter that may rise in the oven but doesn’t have a strong enough network as it cools, so the centre collapses.</p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
+              <li>Mix wet and dry only until no dry pockets remain; stop as soon as flour is incorporated.</li>
+              <li>A few small lumps are better than a smooth, overmixed batter.</li>
+              <li>Wet in one bowl, dry (sifted/whisked) in another; add dry in 1–2 additions; fold or low speed.</li>
+              <li>Stand mixer: lowest setting for the final step; mix only until combined.</li>
+            </ul>
+          </section>
+
+          <hr class="border-gray-200" />
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Too much leavener or expired leavener</h2>
+            <p class="text-gray-700">Baking powder and soda produce gas. Too much and the batter can rise very fast then collapse before the structure sets. The bubbles get too big and the crumb can’t support them.</p>
+            <p class="text-gray-700">Expired leavener may not produce enough gas, so the centre doesn’t set properly and can sink.</p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
+              <li>Measure with a proper spoon (or scale); don’t heap. Check you’re not using tablespoon for teaspoon.</li>
+              <li>Test baking powder: 1 tsp in hot water — should fizz. No reaction = replace.</li>
+              <li>Test baking soda: drop of vinegar — should bubble.</li>
+              <li>Store in a cool, dry place; replace every 6–12 months.</li>
+            </ul>
+          </section>
+
+          <hr class="border-gray-200" />
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Overfilling the liners</h2>
+            <p class="text-gray-700">More than about two-thirds full and the extra batter in the centre takes longer to bake. The top and sides set while the middle is still wet; when it cools, it can sink.</p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
+              <li>Portion so each liner is about two-thirds full.</li>
+              <li>Use a scoop for even portions and a modest dome.</li>
+            </ul>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Opening the oven too early</h2>
+            <p class="text-gray-700">Opening the door in the first half or two-thirds of the bake lets cold air in and can drop the temperature. The rising batter is still fragile; a sudden drop in heat can make it fall before the structure sets.</p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
+              <li>Don’t open until cupcakes look set and are close to done.</li>
+              <li>If you rotate for even browning, do it in the last third of the bake and close the door quickly.</li>
+            </ul>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Other factors: sugar, liquid and altitude</h2>
+            <p class="text-gray-700">Recipes with a lot of sugar or liquid set more slowly and have softer structure; they can be more prone to sinking. Bake a bit longer or at a slightly higher temperature so the centre sets.</p>
+            <p class="text-gray-700">At high altitude, batters can rise more and then collapse. Follow altitude-adjusted instructions (often less leavener, more liquid, higher oven temp) and rely on skewer and thermometer for doneness.</p>
+          </section>
+
+          <hr class="border-gray-200" />
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Prevention checklist</h2>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>Preheat the oven fully and use an oven thermometer to verify the temperature.</li>
+              <li>Fill liners two-thirds full; use a scoop for even portions.</li>
+              <li>Mix wet and dry just until combined; avoid overmixing after adding flour.</li>
+              <li>Use fresh baking powder and baking soda; test them if you’re unsure.</li>
+              <li>Don’t open the oven until the last third of the bake; then only briefly if needed.</li>
+              <li>Test doneness with a skewer (no wet batter) and optionally a thermometer (~98–99°C in the centre).</li>
+            </ul>
+          </section>
+
+          <div class="p-5 bg-rose-50 border border-rose-100 rounded-xl">
+            <h3 class="font-bold text-gray-900 mb-1">Pro tip</h3>
+            <p class="text-gray-700">Bake one test cupcake first if you’re using a new recipe or oven. Note the time and appearance when the centre is done; then use that for the full batch.</p>
+          </div>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">More troubleshooting</h2>
+            <p class="text-gray-700">For a full list of common cupcake problems and fixes, see our <a href="/guides/fix-cupcake-mistakes" class="text-rose-600 hover:underline">10 cupcake mistakes and how to fix them</a>. For practice with controlled mixing and baking, try <a href="/recipe/classic-vanilla-dream-cupcakes" class="text-rose-600 hover:underline">Classic Vanilla Dream</a> or <a href="/recipe/red-velvet-romance-cupcakes" class="text-rose-600 hover:underline">Red Velvet Romance</a>.</p>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Summary</h2>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li><strong>Why they sink:</strong> Centre doesn’t set (underbaking); structure too weak (overmixing or too much leavener); dome too heavy for core (overfilling); or opening oven too soon / expired leavener.</li>
+              <li><strong>Fix:</strong> Bake until skewer is clean; fill liners two-thirds full; mix just until combined; use fresh leavener.</li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

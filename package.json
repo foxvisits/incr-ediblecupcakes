@@ -6,9 +6,9 @@
     "node": ">=22"
   },
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "tsx scripts/update-sitemap.mjs && astro build",
+    "dev": "cross-env NODE_OPTIONS=--max-old-space-size=4096 astro dev",
+    "start": "cross-env NODE_OPTIONS=--max-old-space-size=4096 astro dev",
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=4096 tsx scripts/update-sitemap.mjs && cross-env NODE_OPTIONS=--max-old-space-size=4096 astro build",
     "preview": "astro preview",
     "astro": "astro",
     "lint": "astro check",
@@ -20,6 +20,7 @@
     "@astrojs/react": "^3.6.2",
     "@astrojs/sitemap": "^3.2.2",
     "@astrojs/tailwind": "^5.1.2",
+    "@fal-ai/client": "^1.8.4",
     "astro": "^4.16.15",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
@@ -28,6 +29,7 @@
     "typescript": "^5.5.3"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "tailwindcss-textshadow": "^2.1.3",

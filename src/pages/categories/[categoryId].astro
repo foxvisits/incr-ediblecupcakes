@@ -86,12 +86,7 @@ const schemaData = {
         "fatContent": `${recipe.nutritionInfo.fat}g`,
         "fiberContent": `${recipe.nutritionInfo.fiber}g`,
         "sugarContent": `${recipe.nutritionInfo.sugar}g`
-      } : undefined,
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": recipe.rating,
-        "reviewCount": Math.floor(recipe.rating * 50) + 50
-      },
+      } : undefined
     }))
   }
 };

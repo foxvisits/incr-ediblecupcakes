@@ -33,6 +33,26 @@ const difficulties = [
 // For static rendering, we'll show all recipes
 // Client-side filtering will be added later
 const filteredRecipes = recipes;
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Complete Cupcake Recipe Collection",
+  "description": "Browse our complete collection of extraordinary cupcake recipes including keto, vegan, nut-free, gluten-free, and classic options.",
+  "url": "https://incr-ediblecupcakes.com/recipes",
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": recipes.length,
+    "itemListElement": recipes.map((r, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": r.title,
+      "url": `https://incr-ediblecupcakes.com/recipe/${r.slug}`,
+      "image": `https://incr-ediblecupcakes.com${r.image}`,
+      "description": r.shortDescription
+    }))
+  }
+};
 ---
 
 <BaseLayout 
@@ -41,6 +61,9 @@ const filteredRecipes = recipes;
   image="/A vibrant, mouth-watering cupcake scene.png"
   canonical="https://incr-ediblecupcakes.com/recipes"
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  </Fragment>
   <Header />
   
   <main class="pt-16 lg:pt-20">

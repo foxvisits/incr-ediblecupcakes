@@ -60,13 +60,6 @@ const schemaData = {
   "recipeCuisine": recipe.cuisine,
   "difficulty": recipe.difficulty,
   "keywords": recipe.recipeKeys?.join(", "),
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": recipe.rating,
-    "reviewCount": Math.floor(recipe.rating * 50) + 100,
-    "bestRating": 5,
-    "worstRating": 1
-  },
   "recipeIngredient": recipe.ingredients,
   "recipeInstructions": recipe.instructions.map(instruction => ({
     "@type": "HowToStep",
@@ -88,21 +81,6 @@ const schemaData = {
     "fiberContent": `${recipe.nutritionInfo.fiber}g`,
     "sugarContent": `${recipe.nutritionInfo.sugar}g`
   } : undefined,
-  "review": [
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Emma K."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": 5,
-        "bestRating": 5
-      },
-      "reviewBody": `Just made these ${recipe.title.toLowerCase()} and they're incredible! ${recipe.category === 'keto' ? 'Perfect for my keto diet.' : recipe.category === 'vegan' ? 'Amazing that they\'re vegan!' : 'My family loved them!'}`
-    }
-  ],
   "isAccessibleForFree": true,
   "creativeWorkStatus": "Published",
   "inLanguage": "en-US"
@@ -216,7 +194,7 @@ const schemaData = {
                 </svg>
                 <div>
                   <div class="font-medium">{recipe.rating} rating</div>
-                  <div class="text-sm">{Math.floor(recipe.rating * 50) + 100} reviews</div>
+                  <div class="text-sm">Editor&apos;s rating</div>
                 </div>
               </div>
               <div class="flex items-center space-x-2">
@@ -341,6 +319,30 @@ const schemaData = {
                 <img
                   src="/Pink-swirl+tiny-blossom-decoration.jpg"
                   alt="Cherry Blossom cupcakes with soft pink swirl and tiny blossom"
+                  width={1200}
+                  height={800}
+                  loading="lazy"
+                  class="w-full h-64 object-cover"
+                />
+              </div>
+            )}
+            {recipe.slug === 'keto-lemon-ricotta-cupcakes' && (
+              <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="/keto-lemon-ricotta-cupcakes-cross-section.jpg"
+                  alt="Keto Lemon Ricotta Cupcakes – cross-section showing moist almond flour crumb and creamy ricotta filling"
+                  width={1200}
+                  height={800}
+                  loading="lazy"
+                  class="w-full h-64 object-cover"
+                />
+              </div>
+            )}
+            {recipe.slug === 'keto-chocolate-truffle-cupcakes' && (
+              <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="/keto-chocolate-truffle-cupcakes-detail.jpg"
+                  alt="Keto Chocolate Truffle Cupcakes – close-up detail showing rich chocolate ganache texture and smooth frosting swirl"
                   width={1200}
                   height={800}
                   loading="lazy"
@@ -549,12 +551,7 @@ const schemaData = {
     {/* Recipe Interactions - Comments, Ratings, Shares */}
     <section class="py-16 bg-gray-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <RecipeInteractions 
-          recipeId={recipe.id}
-          initialLikes={Math.floor(recipe.rating * 100) + 50}
-          initialRating={recipe.rating}
-          initialBookmarks={Math.floor(recipe.rating * 40) + 25}
-        />
+        <RecipeInteractions recipeId={recipe.id} />
       </div>
     </section>
 

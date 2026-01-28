@@ -1,0 +1,190 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import OGImageGenerator from '../../components/OGImageGenerator.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const title = 'How to Make Cupcakes Moist Every Time';
+const featuredImage = '/guide-moist-cupcakes.jpg';
+const steps = [
+  'Use enough fat and sugar: they tenderize and hold moisture',
+  'Don’t overbake: remove when skewer is clean, not dry',
+  'Measure flour correctly: weigh or spoon-and-level to avoid dryness',
+  'Use room-temperature ingredients: better emulsion and even baking',
+  'Add moisture boosters if needed: sour cream, yogurt or buttermilk',
+  'Store properly: cool completely, then cover or wrap to retain moisture'
+];
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: title,
+  description: 'Ingredients and techniques for consistently moist cupcakes',
+  step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s }))
+};
+---
+
+<BaseLayout title={`${title} - Incr-EdibleCupCakes`} description="Ingredients and techniques for consistently moist cupcakes. Fat, sugar, baking time and storage." canonical="https://incr-ediblecupcakes.com/guides/how-to-make-cupcakes-moist-every-time">
+  <Header />
+  <main class="pt-24 lg:pt-28 pb-24">
+    <Fragment slot="head">
+      <OGImageGenerator title={title} description="Ingredients and techniques for consistently moist cupcakes." />
+      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    </Fragment>
+    <div class="max-w-5xl mx-auto px-4">
+      <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides', url: '/guides' }, { name: title }]} />
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <aside class="lg:col-span-1 lg:sticky lg:top-24 space-y-6">
+          <div class="w-80 h-80 rounded-2xl overflow-hidden shadow bg-white">
+            <img src={featuredImage} alt={title} width={600} height={600} loading="eager" class="w-full h-full object-cover" />
+          </div>
+          <div class="bg-gray-50 border rounded-xl p-4">
+            <h2 class="font-bold text-gray-900 mb-3">Moisture basics</h2>
+            <ul class="list-disc pl-5 text-sm text-gray-700 space-y-1">
+              <li>Enough fat and sugar</li>
+              <li>Don’t overbake</li>
+              <li>Correct flour measure</li>
+              <li>Room-temp ingredients</li>
+            </ul>
+          </div>
+        </aside>
+        <article class="lg:col-span-2 space-y-8">
+          <h1 class="text-4xl font-black text-gray-900">{title}</h1>
+          <p class="text-lg text-gray-700">Dry cupcakes are usually fixable. Moisture comes from the right balance of fat, sugar, liquid and baking time, plus a few habits that keep that balance consistent.</p>
+          <p class="text-gray-700">“Moist” here means tender, soft and not crumbly or chalky. The main levers: enough fat and sugar, not overbaking, measuring flour correctly, and room-temperature ingredients. Optional boosters: sour cream, yogurt or buttermilk.</p>
+
+          <div class="overflow-hidden rounded-xl border border-gray-200">
+            <table class="w-full text-left text-sm text-gray-700">
+              <thead>
+                <tr class="border-b border-gray-200 bg-gray-50">
+                  <th class="px-4 py-3 font-semibold text-gray-900">Factor</th>
+                  <th class="px-4 py-3 font-semibold text-gray-900">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Fat & sugar</td><td class="px-4 py-3">Don’t reduce; they tenderize and hold moisture</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Baking time</td><td class="px-4 py-3">Remove when skewer is clean (not dry); use thermometer ~98–99°C</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Flour</td><td class="px-4 py-3">Weigh or spoon-and-level; avoid scooping</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Ingredients</td><td class="px-4 py-3">Room-temperature butter and eggs for good emulsion</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Boosters</td><td class="px-4 py-3">Sour cream, yogurt or buttermilk (small amount)</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Storage</td><td class="px-4 py-3">Cool completely; airtight at room temp; fridge/freeze if longer</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <button onclick="window.print()" class="px-4 py-2 rounded-lg bg-white border hover:bg-gray-50 font-quicksand text-gray-700">Print</button>
+          </div>
+
+          <hr class="border-gray-200" />
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Fat and sugar: the foundation of moisture</h2>
+            <p class="text-gray-700">Fat coats flour and limits gluten, so the crumb stays tender. It carries flavor and helps the cake hold moisture. Butter is the usual choice; oil keeps cakes moist longer because it’s liquid at room temperature. Recipes that use both often stay moist for several days.</p>
+            <p class="text-gray-700">Sugar is a tenderizer too. It attracts and holds water and delays starch setting. Recipes with moderate to high sugar (relative to flour) tend to be more tender and moist.</p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
+              <li>Don’t reduce fat unless you’re following a tested low-fat recipe.</li>
+              <li>Don’t cut sugar unless the recipe is designed for it; use a different recipe for less sweetness.</li>
+            </ul>
+          </section>
+
+          <hr class="border-gray-200" />
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Don’t overbake</h2>
+            <p class="text-gray-700">The single biggest cause of dry cupcakes is overbaking. The longer they stay in the oven, the more moisture evaporates and the structure tightens.</p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
+              <li>Remove as soon as the centre is set: skewer with no wet batter (a few moist crumbs are fine).</li>
+              <li>If skewer is completely dry, the crumb will be dry too.</li>
+              <li>Set a timer for the lower end of the recipe’s range; check 1–2 minutes before.</li>
+              <li>Instant-read thermometer in centre: ~98–99°C (208–210°F) when done.</li>
+              <li>Use an oven thermometer to verify temperature; if oven runs hot, outside can set before centre is done.</li>
+              <li>If tops brown too fast, tent loosely with foil for the last few minutes.</li>
+            </ul>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Measure flour correctly</h2>
+            <p class="text-gray-700">Too much flour makes cupcakes dense and dry. Flour is the main structure-builder; extra flour absorbs moisture.</p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
+              <li><strong>By weight:</strong> If the recipe gives grams, use a scale. Common standard: ~120 g per cup all-purpose flour.</li>
+              <li><strong>By volume:</strong> Spoon flour into the cup and level with a knife. Don’t scoop with the cup or tap to settle — both pack in 10–20% more flour.</li>
+            </ul>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Room-temperature ingredients</h2>
+            <p class="text-gray-700">Soft butter creams better and traps more air; cold butter can make the batter look curdled. Room-temperature eggs blend into the fat evenly so the emulsion is stable. Cold dairy can seize the butter and make the batter lumpy.</p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
+              <li>Take butter and eggs out of the fridge about an hour before baking.</li>
+              <li>In a hurry: warm butter briefly in the microwave (low power, short bursts); place eggs in warm water for a few minutes.</li>
+              <li>Don’t use hot butter or eggs — that can affect leavening and texture.</li>
+            </ul>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Moisture boosters: sour cream, yogurt, buttermilk</h2>
+            <p class="text-gray-700">These add fat, water and a slightly tangy note; they help tenderize the crumb.</p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
+              <li>Replace a portion of milk with an equal amount of sour cream or yogurt (e.g. 2–3 tbsp per batch).</li>
+              <li>Or use buttermilk in place of milk; it’s acidic so it reacts with baking soda — recipe should include baking soda or add a pinch.</li>
+              <li>Don’t replace all the liquid or the batter may become too thick.</li>
+            </ul>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Mixing: enough, but not too much</h2>
+            <p class="text-gray-700">Overmixing after adding flour develops gluten and can make the crumb tough and dry. Undermixing can leave raw flour.</p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
+              <li>Mix wet and dry just until no dry pockets remain. A few small lumps are fine.</li>
+              <li>Stand mixer: lowest speed for the final step; mix only until combined.</li>
+            </ul>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Storage</h2>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>Let cupcakes cool completely before covering; wrapping while warm can make tops sticky and liners peel.</li>
+              <li>Once cool: airtight container at room temperature for 1–2 days.</li>
+              <li>Longer: wrap individually or sealed container in the fridge; bring to room temperature before serving.</li>
+              <li>Freeze unfrosted in a freezer bag; thaw at room temperature and frost when needed.</li>
+              <li>Frosting can seal in moisture; refrigerate buttercream/cream cheese if room is warm — allow time to soften before serving.</li>
+            </ul>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Recipe choice</h2>
+            <p class="text-gray-700">Some recipes are designed to be especially moist: oil-based, or with sour cream/yogurt, or higher sugar and fat to flour. Stick to recipes that work and apply the habits above.</p>
+            <p class="text-gray-700">If adapting: add a small amount of sour cream or yogurt, or replace some butter with oil, in small steps and note the result.</p>
+          </section>
+
+          <div class="p-5 bg-rose-50 border border-rose-100 rounded-xl">
+            <h3 class="font-bold text-gray-900 mb-1">Pro tip</h3>
+            <p class="text-gray-700">Weigh flour (e.g. 120 g per cup) and pull cupcakes from the oven as soon as the skewer is clean. Those two habits fix most dryness.</p>
+          </div>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Egg substitutes and moisture</h2>
+            <p class="text-gray-700">Some substitutes add moisture (e.g. applesauce, yogurt), others add structure (e.g. aquafaba). Choose one that matches the recipe. See our <a href="/guides/egg-substitutes-for-cupcakes" class="text-rose-600 hover:underline">egg substitutes for cupcakes</a> guide. Reducing other liquids when using wet substitutes helps keep the crumb balanced.</p>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Practice recipes</h2>
+            <p class="text-gray-700">For tender, moist crumb: <a href="/recipe/classic-vanilla-dream-cupcakes" class="text-rose-600 hover:underline">Classic Vanilla Dream</a> and <a href="/recipe/red-velvet-romance-cupcakes" class="text-rose-600 hover:underline">Red Velvet Romance</a>. For more troubleshooting: <a href="/guides/fix-cupcake-mistakes" class="text-rose-600 hover:underline">10 cupcake mistakes and how to fix them</a>.</p>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Summary</h2>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>Use enough fat and sugar; don’t overbake (skewer clean, not dry).</li>
+              <li>Measure flour by weight or spoon-and-level; room-temperature ingredients; mix just until combined.</li>
+              <li>Optional: sour cream, yogurt or buttermilk. Store cooled cupcakes in an airtight container.</li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
