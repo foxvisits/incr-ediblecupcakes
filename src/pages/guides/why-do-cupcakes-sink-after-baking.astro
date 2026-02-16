@@ -7,6 +7,11 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 
 const title = 'Why Do Cupcakes Sink After Baking?';
 const featuredImage = '/guide-why-cupcakes-sink.jpg';
+const canonicalUrl = 'https://incr-ediblecupcakes.com/guides/why-do-cupcakes-sink-after-baking';
+const metaDescription = 'Causes and fixes for sunken cupcake centers. Underbaking, overmixing, leavening and more.';
+const summaryShort = 'Cupcakes usually sink because the center does not set in time (underbaking), the structure is weakened (overmixing), or leavening is off. Use correct filling level, fresh leaveners, and bake until the center is fully set.';
+const guideDatePublished = '2026-01-28';
+const guideDateModified = '2026-01-28';
 const steps = [
   'Underbaking: Center never sets; remove only when a skewer comes out clean',
   'Overmixing: Weakens structure; mix wet and dry just until combined',
@@ -23,14 +28,39 @@ const schemaData = {
   description: 'Causes and fixes for sunken cupcake centers',
   step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s }))
 };
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": metaDescription,
+  "url": canonicalUrl,
+  "datePublished": guideDatePublished,
+  "dateModified": guideDateModified,
+  "author": {
+    "@type": "Person",
+    "name": "Sarah",
+    "url": "https://incr-ediblecupcakes.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Incr-EdibleCupCakes",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png"
+    }
+  },
+  "image": `https://incr-ediblecupcakes.com${featuredImage}`
+};
 ---
 
-<BaseLayout title={`${title} - Incr-EdibleCupCakes`} description="Causes and fixes for sunken cupcake centers. Underbaking, overmixing, leavening and more." canonical="https://incr-ediblecupcakes.com/guides/why-do-cupcakes-sink-after-baking">
+<BaseLayout title={`${title} - Incr-EdibleCupCakes`} description={metaDescription} canonical={canonicalUrl}>
   <Header />
-  <main class="pt-24 lg:pt-28 pb-24">
+  <main id="main-content" class="pt-24 lg:pt-28 pb-24">
     <Fragment slot="head">
       <OGImageGenerator title={title} description="Causes and fixes for sunken cupcake centers." />
       <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+      <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
     </Fragment>
     <div class="max-w-5xl mx-auto px-4">
       <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides', url: '/guides' }, { name: title }]} />
@@ -51,6 +81,12 @@ const schemaData = {
         </aside>
         <article class="lg:col-span-2 space-y-8">
           <h1 class="text-4xl font-black text-gray-900">{title}</h1>
+          <p class="text-sm text-gray-500">
+            By <a href="/about" class="text-rose-600 hover:underline">Sarah</a>, professional baker at Incr-EdibleCupCakes. Updated {guideDateModified}.
+          </p>
+          <p class="text-base text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
+            {summaryShort}
+          </p>
           <p class="text-lg text-gray-700">Sunken centers are one of the most common cupcake problems. The good news: they’re almost always fixable once you know the cause.</p>
           <p class="text-gray-700">A cupcake rises when gas from leavening and trapped air expands in the oven. The structure sets when proteins and starch coagulate. If the center never gets hot enough to set, or if the structure is too weak to hold the rise, the middle collapses as the cake cools.</p>
 

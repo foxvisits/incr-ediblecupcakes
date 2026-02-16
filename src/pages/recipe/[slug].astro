@@ -30,6 +30,32 @@ const getCategoryColor = (category: string) => {
   return colors[category as keyof typeof colors] || 'bg-gray-100 text-gray-800';
 };
 
+const recipeDatePublished = recipe.datePublished ?? '2025-01-27';
+const recipeDateModified = recipe.dateModified ?? recipeDatePublished;
+const formatDisplayDate = (isoDate: string) => {
+  const parsed = new Date(`${isoDate}T00:00:00Z`);
+  if (Number.isNaN(parsed.getTime())) return isoDate;
+  return parsed.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+};
+const formattedLastUpdated = formatDisplayDate(recipeDateModified);
+
+const faqSchema = recipe.faq && recipe.faq.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": recipe.faq.map((faq) => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+} : null;
+
 const schemaData = {
   "@context": "https://schema.org/",
   "@type": "Recipe",
@@ -37,8 +63,8 @@ const schemaData = {
   "description": recipe.shortDescription,
   "image": `https://incr-ediblecupcakes.com${recipe.image}`,
   "url": `https://incr-ediblecupcakes.com/recipe/${recipe.slug}`,
-  "datePublished": "2025-01-27",
-  "dateModified": "2025-01-27",
+  "datePublished": recipeDatePublished,
+  "dateModified": recipeDateModified,
   "author": {
     "@type": "Person",
     "name": "Sarah",
@@ -70,7 +96,7 @@ const schemaData = {
     "name": `How to Make ${recipe.title}`,
     "description": `Step-by-step video guide for making ${recipe.title}`,
     "thumbnailUrl": `https://incr-ediblecupcakes.com${recipe.image}`,
-    "uploadDate": "2025-01-27"
+    "uploadDate": recipeDateModified
   } : undefined,
   "nutrition": recipe.nutritionInfo ? {
     "@type": "NutritionInformation",
@@ -95,7 +121,7 @@ const schemaData = {
 >
   <Header />
   
-  <main class="pt-16 lg:pt-20">
+  <main id="main-content" class="pt-16 lg:pt-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <Breadcrumbs items={[
         { name: 'Home', url: '/' },
@@ -115,6 +141,7 @@ const schemaData = {
       <meta name="twitter:description" content={recipe.shortDescription} />
       <meta name="twitter:image" content={`https://incr-ediblecupcakes.com${recipe.image}`} />
       <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+      {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
     </Fragment>
 
     {/* Recipe Hero Section */}
@@ -167,6 +194,9 @@ const schemaData = {
             
             <p class="text-xl text-pink-100 mb-8 leading-relaxed">
               {recipe.shortDescription}
+            </p>
+            <p class="text-sm text-pink-100/90 mb-6">
+              Last updated: {formattedLastUpdated}
             </p>
 
             <div class="grid grid-cols-2 gap-4 text-pink-100">

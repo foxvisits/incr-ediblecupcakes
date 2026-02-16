@@ -7,6 +7,11 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 
 const title = 'Egg substitutes for cupcakes';
 const featuredImage = '/Egg substitutes for cupcakes.jpg';
+const canonicalUrl = 'https://incr-ediblecupcakes.com/guides/egg-substitutes-for-cupcakes';
+const metaDescription = 'Reliable egg replacements and when to use each.';
+const summaryShort = 'Egg replacements work best when you match the substitute to the recipe goal: structure, moisture, or binding. Aquafaba, flax egg, yogurt, and applesauce each solve different baking problems.';
+const guideDatePublished = '2025-11-02';
+const guideDateModified = '2025-11-02';
 const items = [
   { name: 'Flax egg', detail: '1 tbsp ground flax + 3 tbsp water per egg; rest 5 min' },
   { name: 'Applesauce', detail: '1/4 cup per egg; adds moisture, mild apple note' },
@@ -25,14 +30,39 @@ const schemaData = {
   "@type": "FAQPage",
   mainEntity: faq.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } }))
 };
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": metaDescription,
+  "url": canonicalUrl,
+  "datePublished": guideDatePublished,
+  "dateModified": guideDateModified,
+  "author": {
+    "@type": "Person",
+    "name": "Sarah",
+    "url": "https://incr-ediblecupcakes.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Incr-EdibleCupCakes",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png"
+    }
+  },
+  "image": `https://incr-ediblecupcakes.com${featuredImage}`
+};
 ---
 
-<BaseLayout title={`${title} - Incr-EdibleCupCakes`} description="Reliable egg replacements and when to use each." canonical="https://incr-ediblecupcakes.com/guides/egg-substitutes-for-cupcakes">
+<BaseLayout title={`${title} - Incr-EdibleCupCakes`} description={metaDescription} canonical={canonicalUrl}>
   <Header />
-  <main class="pt-24 lg:pt-28 pb-24">
+  <main id="main-content" class="pt-24 lg:pt-28 pb-24">
     <Fragment slot="head">
       <OGImageGenerator title={title} description="Reliable egg replacements and when to use each." />
       <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+      <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
     </Fragment>
     <div class="max-w-5xl mx-auto px-4">
       <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides', url: '/guides' }, { name: title }]} />
@@ -52,6 +82,12 @@ const schemaData = {
         </aside>
         <article class="lg:col-span-2 space-y-4">
           <h1 class="text-4xl font-black text-gray-900">{title}</h1>
+          <p class="text-sm text-gray-500">
+            By <a href="/about" class="text-rose-600 hover:underline">Sarah</a>, professional baker at Incr-EdibleCupCakes. Updated {guideDateModified}.
+          </p>
+          <p class="text-base text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
+            {summaryShort}
+          </p>
           <p class="text-lg text-gray-700">Choose the right substitute based on structure, moisture and flavor. Here are reliable swaps and how they impact cupcakes.</p>
           <p class="text-gray-700">Eggs contribute structure, emulsification and moisture. No single substitute replicates all three perfectly, so choose the swap that best serves the recipe’s priority. Chocolate cupcakes often tolerate aquafaba; vanilla may benefit from yogurt for tenderness.</p>
           <div class="flex items-center gap-3 mb-4">

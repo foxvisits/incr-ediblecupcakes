@@ -188,6 +188,8 @@ const RecipeInteractions: React.FC<RecipeInteractionsProps> = ({ recipeId }) => 
           {[1, 2, 3, 4, 5].map((star) => (
             <button
               key={star}
+              aria-label={`Rate ${star} star${star !== 1 ? 's' : ''}`}
+              title={`Rate ${star} star${star !== 1 ? 's' : ''}`}
               className={`font-quicksand flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 ${
                 star <= userRating
                   ? 'bg-cupcake-coral text-white shadow-lg' 

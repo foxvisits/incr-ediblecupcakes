@@ -9,6 +9,11 @@ const title = 'Natural Food Coloring for Frosting (No Dyes)';
 const category = 'Frosting & Decoration';
 const heroImage = '/Pastel-color-palette-frosting-bowls.jpg';
 const altImage = '/Cupcakes-with-gentle-natural-tones.jpg';
+const canonicalUrl = 'https://incr-ediblecupcakes.com/guides/natural-food-coloring-for-frosting';
+const metaDescription = 'A practical guide to naturally coloring buttercream frosting with beet, spirulina, matcha and turmeric—no synthetic dyes.';
+const summaryShort = 'Natural frosting colors work best when you start with a pale base, add pigments in tiny doses, and let color bloom before adjusting. This gives clean flavor and stable piping without synthetic dyes.';
+const guideDatePublished = '2025-11-03';
+const guideDateModified = '2025-11-03';
 
 const faq = [
   { q: 'Will natural colors change the frosting taste?', a: 'Subtlely, yes. Beet adds mild earthiness, matcha a green tea note, turmeric warmth, spirulina is nearly neutral in tiny amounts. Balance with vanilla, citrus zest or a pinch of salt.' },
@@ -42,15 +47,40 @@ const schemaFAQ = {
   "@type": "FAQPage",
   mainEntity: faq.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } }))
 };
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": metaDescription,
+  "url": canonicalUrl,
+  "datePublished": guideDatePublished,
+  "dateModified": guideDateModified,
+  "author": {
+    "@type": "Person",
+    "name": "Sarah",
+    "url": "https://incr-ediblecupcakes.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Incr-EdibleCupCakes",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png"
+    }
+  },
+  "image": `https://incr-ediblecupcakes.com${heroImage}`
+};
 ---
 
-<BaseLayout title={`${title} - Incr-EdibleCupCakes`} description="A practical guide to naturally coloring buttercream frosting with beet, spirulina, matcha and turmeric—no synthetic dyes." canonical="https://incr-ediblecupcakes.com/guides/natural-food-coloring-for-frosting">
+<BaseLayout title={`${title} - Incr-EdibleCupCakes`} description={metaDescription} canonical={canonicalUrl}>
   <Header />
-  <main class="pt-24 lg:pt-28 pb-24">
+  <main id="main-content" class="pt-24 lg:pt-28 pb-24">
     <Fragment slot="head">
       <OGImageGenerator title={title} description="Color buttercream naturally—pastel tones, stable piping, clean taste." />
       <script type="application/ld+json" set:html={JSON.stringify(schemaHowTo)} />
       <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} />
+      <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
     </Fragment>
     <div class="max-w-5xl mx-auto px-4">
       <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides', url: '/guides' }, { name: title }]} />
@@ -76,6 +106,12 @@ const schemaFAQ = {
         </aside>
         <article class="lg:col-span-2 space-y-5">
           <h1 class="text-4xl font-black text-gray-900">{title}</h1>
+          <p class="text-sm text-gray-500">
+            By <a href="/about" class="text-rose-600 hover:underline">Sarah</a>, professional baker at Incr-EdibleCupCakes. Updated {guideDateModified}.
+          </p>
+          <p class="text-base text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
+            {summaryShort}
+          </p>
           <p class="text-lg text-gray-700">If you want soft, elegant color without synthetic dyes, natural pigments can deliver beautiful, modern tones—especially pastels—while keeping flavor clean and labels simple. This guide shows how to use beet, spirulina, matcha and turmeric to create reliable, pipeable frosting colors that hold up on cupcakes and layer cakes.</p>
           <p class="text-gray-700">The keys are: start with a pale, stable base; add tiny amounts; pre‑hydrate powders to avoid speckles; rest to let color bloom; and adjust flavor balance at the end. With these habits, your natural colors will look intentional, not compromised.</p>
 

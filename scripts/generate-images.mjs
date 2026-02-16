@@ -9,7 +9,10 @@ const root = dirname(__dirname);
 const publicDir = join(root, 'public');
 
 // Set up fal.ai client
-const FAL_KEY = '64ebd893-a72a-4654-b096-4f5ccb84875f:ada89019bfe35e5fafef23fc30115d00';
+const FAL_KEY = process.env.FAL_KEY || process.env.FAL_AI_KEY;
+if (!FAL_KEY) {
+  throw new Error('Set FAL_KEY or FAL_AI_KEY environment variable');
+}
 fal.config({
   credentials: FAL_KEY,
 });

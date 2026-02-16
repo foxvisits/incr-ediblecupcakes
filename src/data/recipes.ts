@@ -43,6 +43,8 @@ export interface Recipe {
   };
   keywords?: string[];
   video?: string;
+  datePublished?: string;
+  dateModified?: string;
 }
 
 // Utility function to generate SEO-friendly slugs from recipe titles

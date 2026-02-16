@@ -7,6 +7,11 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 
 const title = "Cupcake vs Muffin – What's the Real Difference?";
 const featuredImage = '/guide-cupcake-vs-muffin.jpg';
+const canonicalUrl = 'https://incr-ediblecupcakes.com/guides/cupcake-vs-muffin-whats-the-real-difference';
+const metaDescription = 'Mixing method, ingredients and texture: the real differences between cupcakes and muffins.';
+const summaryShort = 'Cupcakes and muffins differ mostly in method and ratios: cupcakes use creaming with more sugar and fat, while muffins use the quick muffin method with less sugar and fat. That is why cupcakes are finer and muffins are denser.';
+const guideDatePublished = '2026-01-28';
+const guideDateModified = '2026-01-28';
 const faq = [
   { q: 'Is a muffin just a cupcake without frosting?', a: 'No. The main difference is mixing method and ratios: cupcakes use the creaming method and more sugar and fat; muffins use the muffin method and less sugar and fat, so the texture and crumb are different.' },
   { q: 'Can I use a cupcake recipe to make muffins?', a: 'You can bake cupcake batter in muffin tins, but the result will be cake-like (sweeter, finer crumb). For a true muffin texture, use a muffin recipe with the muffin method.' },
@@ -18,14 +23,39 @@ const schemaData = {
   "@type": "FAQPage",
   mainEntity: faq.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } }))
 };
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": metaDescription,
+  "url": canonicalUrl,
+  "datePublished": guideDatePublished,
+  "dateModified": guideDateModified,
+  "author": {
+    "@type": "Person",
+    "name": "Sarah",
+    "url": "https://incr-ediblecupcakes.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Incr-EdibleCupCakes",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png"
+    }
+  },
+  "image": `https://incr-ediblecupcakes.com${featuredImage}`
+};
 ---
 
-<BaseLayout title={`${title} - Incr-EdibleCupCakes`} description="Mixing method, ingredients and texture: the real differences between cupcakes and muffins." canonical="https://incr-ediblecupcakes.com/guides/cupcake-vs-muffin-whats-the-real-difference">
+<BaseLayout title={`${title} - Incr-EdibleCupCakes`} description={metaDescription} canonical={canonicalUrl}>
   <Header />
-  <main class="pt-24 lg:pt-28 pb-24">
+  <main id="main-content" class="pt-24 lg:pt-28 pb-24">
     <Fragment slot="head">
       <OGImageGenerator title={title} description="Mixing method, ingredients and texture: the real differences between cupcakes and muffins." />
       <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+      <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
     </Fragment>
     <div class="max-w-5xl mx-auto px-4">
       <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides', url: '/guides' }, { name: title }]} />
@@ -44,6 +74,12 @@ const schemaData = {
         </aside>
         <article class="lg:col-span-2 space-y-8">
           <h1 class="text-4xl font-black text-gray-900">{title}</h1>
+          <p class="text-sm text-gray-500">
+            By <a href="/about" class="text-rose-600 hover:underline">Sarah</a>, professional baker at Incr-EdibleCupCakes. Updated {guideDateModified}.
+          </p>
+          <p class="text-base text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
+            {summaryShort}
+          </p>
           <p class="text-lg text-gray-700">Cupcakes and muffins look similar: both are small, round bakes in a tin. The real difference isn’t frosting or size—it’s how they’re mixed, how much sugar and fat they contain, and what that does to the texture.</p>
           <p class="text-gray-700">A muffin is not “a cupcake without frosting.” Cupcakes are miniature cakes: they use the creaming method (butter + sugar beaten until light, then eggs, then dry). Muffins use the muffin method: wet and dry mixed separately, then combined quickly with minimal mixing. The result is a different crumb, sweetness and density.</p>
 

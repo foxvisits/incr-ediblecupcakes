@@ -41,6 +41,9 @@ const categoryInfo = {
 
 const currentCategory = categoryId ? categoryInfo[categoryId as keyof typeof categoryInfo] : null;
 const categoryRecipes = categoryId ? recipes.filter(recipe => recipe.category === categoryId) : [];
+const categoryOgImage = categoryRecipes.length > 0
+  ? categoryRecipes[0].image
+  : '/A vibrant, mouth-watering cupcake scene.png';
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -95,10 +98,11 @@ const schemaData = {
 <BaseLayout
   title={`${currentCategory?.name} - Incr-EdibleCupCakes`}
   description={`${currentCategory?.description} Browse our collection of ${currentCategory?.name.toLowerCase()} recipes.`}
+  image={categoryOgImage}
   canonical={`https://incr-ediblecupcakes.com/categories/${categoryId}`}
 >
   <Header />
-  <main class="pt-16 lg:pt-20 pb-20">
+  <main id="main-content" class="pt-16 lg:pt-20 pb-20">
     <div class="max-w-6xl mx-auto px-4">
       <Breadcrumbs items={[
         { name: 'Home', url: '/' },

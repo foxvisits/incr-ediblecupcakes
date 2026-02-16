@@ -7,6 +7,11 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 
 const title = '10 cupcake mistakes and how to fix them';
 const featuredImage = '/cupcake-mistakes-and-how-to-avoid-them.jpg';
+const canonicalUrl = 'https://incr-ediblecupcakes.com/guides/fix-cupcake-mistakes';
+const metaDescription = 'Troubleshooting common cupcake issues with practical fixes';
+const summaryShort = 'Most cupcake failures come from four factors: inaccurate ratios, poor temperature control, weak leavening, or overmixing. Fix these first and your consistency improves immediately.';
+const guideDatePublished = '2025-11-01';
+const guideDateModified = '2025-11-01';
 const steps = [
   'Dense crumb: Mix only until combined; ensure ingredients are room temp',
   'Sinking centers: Don’t overfill; bake immediately after mixing',
@@ -27,14 +32,39 @@ const schemaData = {
   description: 'Troubleshooting common cupcake issues with practical fixes',
   step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s }))
 };
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": metaDescription,
+  "url": canonicalUrl,
+  "datePublished": guideDatePublished,
+  "dateModified": guideDateModified,
+  "author": {
+    "@type": "Person",
+    "name": "Sarah",
+    "url": "https://incr-ediblecupcakes.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Incr-EdibleCupCakes",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png"
+    }
+  },
+  "image": `https://incr-ediblecupcakes.com${featuredImage}`
+};
 ---
 
-<BaseLayout title={`${title} - Incr-EdibleCupCakes`} description="Troubleshooting common cupcake issues with practical fixes" canonical="https://incr-ediblecupcakes.com/guides/fix-cupcake-mistakes">
+<BaseLayout title={`${title} - Incr-EdibleCupCakes`} description={metaDescription} canonical={canonicalUrl}>
   <Header />
-  <main class="pt-24 lg:pt-28 pb-24">
+  <main id="main-content" class="pt-24 lg:pt-28 pb-24">
     <Fragment slot="head">
       <OGImageGenerator title={title} description="Troubleshooting common cupcake issues with practical fixes" />
       <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+      <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
     </Fragment>
     <div class="max-w-5xl mx-auto px-4">
       <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides', url: '/guides' }, { name: title }]} />
@@ -55,6 +85,12 @@ const schemaData = {
         </aside>
         <article class="lg:col-span-2 space-y-4">
           <h1 class="text-4xl font-black text-gray-900">{title}</h1>
+          <p class="text-sm text-gray-500">
+            By <a href="/about" class="text-rose-600 hover:underline">Sarah</a>, professional baker at Incr-EdibleCupCakes. Updated {guideDateModified}.
+          </p>
+          <p class="text-base text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
+            {summaryShort}
+          </p>
           <p class="text-lg text-gray-700">A practical, no-fluff guide to the most common cupcake problems and exactly how to fix them. Test-backed recommendations, quick checks and preventative tips.</p>
           <p class="text-gray-700">Cupcakes look simple, but consistency requires control over four variables: ingredient temperature, ratios, leavening power and heat transfer. In this guide we’ll translate those into checks you can apply every time you bake.</p>
           <p class="text-gray-700">If your cupcakes vary batch-to-batch, start by standardizing measurement (grams), preheating thoroughly, and mixing just until combined. Most issues vanish with those three habits.</p>

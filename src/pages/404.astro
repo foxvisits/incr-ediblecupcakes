@@ -7,11 +7,11 @@ import Footer from '../components/Footer.astro';
 <BaseLayout 
   title="Page Not Found - 404 Error | Incr-EdibleCupCakes"
   description="Sorry, the page you're looking for doesn't exist. Explore our amazing cupcake recipes instead!"
-  canonical="https://incr-ediblecupcakes.com/404"
+  robots="noindex, follow"
 >
   <Header />
   
-  <main class="pt-16 lg:pt-20">
+  <main id="main-content" class="pt-16 lg:pt-20">
     <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-cupcake-pink/20 to-sunshine-100/50">
       <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <div class="mb-8">
