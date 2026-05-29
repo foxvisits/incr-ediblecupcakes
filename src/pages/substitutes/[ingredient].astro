@@ -3,7 +3,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { validatedRecipes as recipes } from '../../data/recipes';
-import OGImageGenerator from '../../components/OGImageGenerator.astro';
 
 const KNOWN = {
   egg: {
@@ -45,12 +44,11 @@ const schemaData = {
 ---
 
 <BaseLayout title={`${data.title} - Incr-EdibleCupCakes`} description={data.intro} canonical={`https://incr-ediblecupcakes.com/substitutes/${ingredient}`}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  </Fragment>
   <Header />
   <main id="main-content" class="pt-16 lg:pt-20">
-    <Fragment slot="head">
-      <OGImageGenerator title={data.title} description={data.intro} />
-      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-    </Fragment>
     <div class="max-w-4xl mx-auto px-4">
       <h1 class="text-4xl font-bold text-gray-900 mb-4">{data.title}</h1>
       <p class="text-lg text-gray-700 mb-6">{data.intro}</p>

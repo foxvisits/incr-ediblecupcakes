@@ -2,8 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import OGImageGenerator from '../../components/OGImageGenerator.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildGuideArticleSchema } from '../../utils/guideArticleSchema';
 
 const title = 'Egg substitutes for cupcakes';
 const featuredImage = '/Egg substitutes for cupcakes.jpg';
@@ -31,39 +31,23 @@ const schemaData = {
   mainEntity: faq.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } }))
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": title,
-  "description": metaDescription,
-  "url": canonicalUrl,
-  "datePublished": guideDatePublished,
-  "dateModified": guideDateModified,
-  "author": {
-    "@type": "Person",
-    "name": "Sarah",
-    "url": "https://incr-ediblecupcakes.com/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Incr-EdibleCupCakes",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png"
-    }
-  },
-  "image": `https://incr-ediblecupcakes.com${featuredImage}`
-};
+const articleSchema = buildGuideArticleSchema({
+  headline: title,
+  description: metaDescription,
+  url: canonicalUrl,
+  datePublished: guideDatePublished,
+  dateModified: guideDateModified,
+  imagePath: featuredImage,
+});
 ---
 
 <BaseLayout title={`${title} - Incr-EdibleCupCakes`} description={metaDescription} canonical={canonicalUrl}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  </Fragment>
   <Header />
   <main id="main-content" class="pt-24 lg:pt-28 pb-24">
-    <Fragment slot="head">
-      <OGImageGenerator title={title} description="Reliable egg replacements and when to use each." />
-      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-      <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
-    </Fragment>
     <div class="max-w-5xl mx-auto px-4">
       <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides', url: '/guides' }, { name: title }]} />
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -85,7 +69,7 @@ const articleSchema = {
           <p class="text-sm text-gray-500">
             By <a href="/about" class="text-rose-600 hover:underline">Sarah</a>, professional baker at Incr-EdibleCupCakes. Updated {guideDateModified}.
           </p>
-          <p class="text-base text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
+          <p class="guide-summary text-base text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
             {summaryShort}
           </p>
           <p class="text-lg text-gray-700">Choose the right substitute based on structure, moisture and flavor. Here are reliable swaps and how they impact cupcakes.</p>
@@ -107,7 +91,7 @@ const articleSchema = {
             <h2 class="text-2xl font-bold text-gray-900">Baker’s notes</h2>
             <ul class="list-disc pl-6 text-gray-700 space-y-2">
               <li>With applesauce or yogurt, reduce other liquids slightly to keep crumb balanced.</li>
-              <li>Flax/chia eggs benefit from a 5–10 minute bloom for stronger binding.</li>
+              <li>Flax/chia eggs benefit from a 5-10 minute bloom for stronger binding.</li>
               <li>Aquafaba whips best when chilled; add a pinch of acid (cream of tartar).</li>
             </ul>
           </section>
@@ -127,8 +111,8 @@ const articleSchema = {
           <section class="space-y-3">
             <h2 class="text-2xl font-bold text-gray-900">Practice with these recipes</h2>
             <ul class="list-disc pl-6 text-gray-700 space-y-2">
-              <li><a href="/recipe/vegan-rainbow-surprise-cupcakes" class="text-rose-600 hover:underline">Vegan Rainbow Surprise</a> – aquafaba/emulsification practice.</li>
-              <li><a href="/recipe/keto-chocolate-bliss-cupcakes" class="text-rose-600 hover:underline">Keto Chocolate Bliss</a> – binding and moisture balance.</li>
+              <li><a href="/recipe/vegan-rainbow-surprise-cupcakes" class="text-rose-600 hover:underline">Vegan Rainbow Surprise</a> - aquafaba/emulsification practice.</li>
+              <li><a href="/recipe/keto-chocolate-bliss-cupcakes" class="text-rose-600 hover:underline">Keto Chocolate Bliss</a> - binding and moisture balance.</li>
             </ul>
           </section>
           <div>

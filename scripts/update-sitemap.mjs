@@ -12,6 +12,19 @@ const guidesModule = await import(pathToFileURL(path.join(root, 'src', 'data', '
 const validatedRecipes = recipesModule.validatedRecipes;
 const guides = guidesModule.guides;
 
+const getQualifiedTagSlugs = () => {
+  const tagCounts = validatedRecipes.reduce((acc, r) => {
+    (r.tags || []).forEach((t) => {
+      const key = t.toLowerCase();
+      acc[key] = (acc[key] || 0) + 1;
+    });
+    return acc;
+  }, {});
+  return Object.keys(tagCounts).filter((tag) => tagCounts[tag] >= 2);
+};
+
+const qualifiedTags = getQualifiedTagSlugs();
+
 // Helper function to encode image URL properly (preserve /, encode only special chars in filename)
 const encodeImageUrl = (imagePath) => {
   // Split path into parts, encode only the filename, keep / separators
@@ -70,6 +83,13 @@ const generateSitemap = () => {
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>${baseUrl}/privacy</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
   <!-- Categories Index -->
@@ -180,15 +200,8 @@ const generateSitemap = () => {
 `;
   });
 
-  // Get all unique tags from recipes
-  const allTags = Array.from(
-    new Set(
-      validatedRecipes.flatMap((r) => (r.tags ? r.tags.map((t) => t.toLowerCase()) : []))
-    )
-  );
-
-  // Add all tag pages
-  allTags.forEach(tag => {
+  // Add tag pages (2+ recipes; thin tags use noindex on-site)
+  qualifiedTags.forEach(tag => {
     sitemap += `  <!-- Tag: ${tag} -->
   <url>
     <loc>${baseUrl}/tags/${encodeURIComponent(tag)}</loc>
@@ -255,12 +268,12 @@ const generateSitemap = () => {
 const sitemapContent = generateSitemap();
 fs.writeFileSync(path.join(process.cwd(), 'public', 'sitemap.xml'), sitemapContent);
 
-const totalUrls = 4 + // homepage, recipes, about, contact
+const totalUrls = 5 + // homepage, recipes, about, contact, privacy
   1 + // categories index
   9 + // category pages
   1 + // tags index
   validatedRecipes.length + // recipe pages
-  Array.from(new Set(validatedRecipes.flatMap((r) => (r.tags ? r.tags.map((t) => t.toLowerCase()) : [])))).length + // tag pages
+  qualifiedTags.length + // tag pages (2+ recipes)
   1 + // guides index
   guides.length + // guide pages
   4 + // substitute pages
@@ -268,6 +281,6 @@ const totalUrls = 4 + // homepage, recipes, about, contact
 
 console.log(`✅ Sitemap updated with ${totalUrls} URLs`);
 console.log(`   - ${validatedRecipes.length} recipe pages`);
-console.log(`   - ${Array.from(new Set(validatedRecipes.flatMap((r) => (r.tags ? r.tags.map((t) => t.toLowerCase()) : [])))).length} tag pages`);
+console.log(`   - ${qualifiedTags.length} tag pages (2+ recipes)`);
 console.log(`   - ${guides.length} guide pages`);
 console.log(`   - Current date: ${new Date().toISOString().split('T')[0]}`);

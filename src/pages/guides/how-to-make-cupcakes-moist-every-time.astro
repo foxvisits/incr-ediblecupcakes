@@ -2,8 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import OGImageGenerator from '../../components/OGImageGenerator.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildGuideArticleSchema } from '../../utils/guideArticleSchema';
 
 const title = 'How to Make Cupcakes Moist Every Time';
 const featuredImage = '/guide-moist-cupcakes.jpg';
@@ -29,39 +29,23 @@ const schemaData = {
   step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s }))
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": title,
-  "description": metaDescription,
-  "url": canonicalUrl,
-  "datePublished": guideDatePublished,
-  "dateModified": guideDateModified,
-  "author": {
-    "@type": "Person",
-    "name": "Sarah",
-    "url": "https://incr-ediblecupcakes.com/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Incr-EdibleCupCakes",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png"
-    }
-  },
-  "image": `https://incr-ediblecupcakes.com${featuredImage}`
-};
+const articleSchema = buildGuideArticleSchema({
+  headline: title,
+  description: metaDescription,
+  url: canonicalUrl,
+  datePublished: guideDatePublished,
+  dateModified: guideDateModified,
+  imagePath: featuredImage,
+});
 ---
 
 <BaseLayout title={`${title} - Incr-EdibleCupCakes`} description={metaDescription} canonical={canonicalUrl}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  </Fragment>
   <Header />
   <main id="main-content" class="pt-24 lg:pt-28 pb-24">
-    <Fragment slot="head">
-      <OGImageGenerator title={title} description="Ingredients and techniques for consistently moist cupcakes." />
-      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-      <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
-    </Fragment>
     <div class="max-w-5xl mx-auto px-4">
       <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides', url: '/guides' }, { name: title }]} />
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -84,7 +68,7 @@ const articleSchema = {
           <p class="text-sm text-gray-500">
             By <a href="/about" class="text-rose-600 hover:underline">Sarah</a>, professional baker at Incr-EdibleCupCakes. Updated {guideDateModified}.
           </p>
-          <p class="text-base text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
+          <p class="guide-summary text-base text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
             {summaryShort}
           </p>
           <p class="text-lg text-gray-700">Dry cupcakes are usually fixable. Moisture comes from the right balance of fat, sugar, liquid and baking time, plus a few habits that keep that balance consistent.</p>
@@ -100,7 +84,7 @@ const articleSchema = {
               </thead>
               <tbody>
                 <tr class="border-b border-gray-100"><td class="px-4 py-3">Fat & sugar</td><td class="px-4 py-3">Don’t reduce; they tenderize and hold moisture</td></tr>
-                <tr class="border-b border-gray-100"><td class="px-4 py-3">Baking time</td><td class="px-4 py-3">Remove when skewer is clean (not dry); use thermometer ~98–99°C</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Baking time</td><td class="px-4 py-3">Remove when skewer is clean (not dry); use thermometer ~98-99°C</td></tr>
                 <tr class="border-b border-gray-100"><td class="px-4 py-3">Flour</td><td class="px-4 py-3">Weigh or spoon-and-level; avoid scooping</td></tr>
                 <tr class="border-b border-gray-100"><td class="px-4 py-3">Ingredients</td><td class="px-4 py-3">Room-temperature butter and eggs for good emulsion</td></tr>
                 <tr class="border-b border-gray-100"><td class="px-4 py-3">Boosters</td><td class="px-4 py-3">Sour cream, yogurt or buttermilk (small amount)</td></tr>
@@ -133,8 +117,8 @@ const articleSchema = {
             <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
               <li>Remove as soon as the centre is set: skewer with no wet batter (a few moist crumbs are fine).</li>
               <li>If skewer is completely dry, the crumb will be dry too.</li>
-              <li>Set a timer for the lower end of the recipe’s range; check 1–2 minutes before.</li>
-              <li>Instant-read thermometer in centre: ~98–99°C (208–210°F) when done.</li>
+              <li>Set a timer for the lower end of the recipe’s range; check 1-2 minutes before.</li>
+              <li>Instant-read thermometer in centre: ~98-99°C (208-210°F) when done.</li>
               <li>Use an oven thermometer to verify temperature; if oven runs hot, outside can set before centre is done.</li>
               <li>If tops brown too fast, tent loosely with foil for the last few minutes.</li>
             </ul>
@@ -145,7 +129,7 @@ const articleSchema = {
             <p class="text-gray-700">Too much flour makes cupcakes dense and dry. Flour is the main structure-builder; extra flour absorbs moisture.</p>
             <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
               <li><strong>By weight:</strong> If the recipe gives grams, use a scale. Common standard: ~120 g per cup all-purpose flour.</li>
-              <li><strong>By volume:</strong> Spoon flour into the cup and level with a knife. Don’t scoop with the cup or tap to settle — both pack in 10–20% more flour.</li>
+              <li><strong>By volume:</strong> Spoon flour into the cup and level with a knife. Don’t scoop with the cup or tap to settle ,  both pack in 10-20% more flour.</li>
             </ul>
           </section>
 
@@ -155,7 +139,7 @@ const articleSchema = {
             <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
               <li>Take butter and eggs out of the fridge about an hour before baking.</li>
               <li>In a hurry: warm butter briefly in the microwave (low power, short bursts); place eggs in warm water for a few minutes.</li>
-              <li>Don’t use hot butter or eggs — that can affect leavening and texture.</li>
+              <li>Don’t use hot butter or eggs ,  that can affect leavening and texture.</li>
             </ul>
           </section>
 
@@ -163,8 +147,8 @@ const articleSchema = {
             <h2 class="text-2xl font-bold text-gray-900">Moisture boosters: sour cream, yogurt, buttermilk</h2>
             <p class="text-gray-700">These add fat, water and a slightly tangy note; they help tenderize the crumb.</p>
             <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
-              <li>Replace a portion of milk with an equal amount of sour cream or yogurt (e.g. 2–3 tbsp per batch).</li>
-              <li>Or use buttermilk in place of milk; it’s acidic so it reacts with baking soda — recipe should include baking soda or add a pinch.</li>
+              <li>Replace a portion of milk with an equal amount of sour cream or yogurt (e.g. 2-3 tbsp per batch).</li>
+              <li>Or use buttermilk in place of milk; it’s acidic so it reacts with baking soda ,  recipe should include baking soda or add a pinch.</li>
               <li>Don’t replace all the liquid or the batter may become too thick.</li>
             </ul>
           </section>
@@ -182,10 +166,10 @@ const articleSchema = {
             <h2 class="text-2xl font-bold text-gray-900">Storage</h2>
             <ul class="list-disc pl-6 text-gray-700 space-y-2">
               <li>Let cupcakes cool completely before covering; wrapping while warm can make tops sticky and liners peel.</li>
-              <li>Once cool: airtight container at room temperature for 1–2 days.</li>
+              <li>Once cool: airtight container at room temperature for 1-2 days.</li>
               <li>Longer: wrap individually or sealed container in the fridge; bring to room temperature before serving.</li>
               <li>Freeze unfrosted in a freezer bag; thaw at room temperature and frost when needed.</li>
-              <li>Frosting can seal in moisture; refrigerate buttercream/cream cheese if room is warm — allow time to soften before serving.</li>
+              <li>Frosting can seal in moisture; refrigerate buttercream/cream cheese if room is warm ,  allow time to soften before serving.</li>
             </ul>
           </section>
 

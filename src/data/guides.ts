@@ -44,7 +44,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: 'cupcake-vs-muffin-whats-the-real-difference',
-    title: "Cupcake vs Muffin – What's the Real Difference?",
+    title: "Cupcake vs Muffin - What's the Real Difference?",
     desc: 'Mixing method, ingredients and texture: the real distinctions.',
     image: '/guide-cupcake-vs-muffin.jpg',
     publishedAt: '2026-01-28'

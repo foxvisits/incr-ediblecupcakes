@@ -8,25 +8,16 @@ const schemaData = {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Sarah",
-  "jobTitle": "Professional Baker & Recipe Developer",
-  "description": "Le Cordon Bleu graduate and professional baker specializing in innovative cupcake recipes for all dietary preferences",
+  "jobTitle": "Home Baker & Recipe Developer",
+  "description": "Recipe developer behind Incr-EdibleCupCakes, creating tested cupcake recipes for classic, keto, vegan, and allergen-friendly baking at home.",
   "url": "https://incr-ediblecupcakes.com/about",
   "image": "https://incr-ediblecupcakes.com/Sarah.png",
-  "alumniOf": {
-    "@type": "EducationalOrganization",
-    "name": "Le Cordon Bleu"
-  },
   "knowsAbout": [
     "Cupcake Baking",
     "Keto Baking",
     "Vegan Baking",
     "Allergen-Free Baking",
-    "Pastry Arts",
     "Recipe Development"
-  ],
-  "award": [
-    "Best Bakery 2024",
-    "Published Author - Innovative Cupcakes for Everyone"
   ],
   "worksFor": {
     "@type": "Organization",
@@ -36,28 +27,19 @@ const schemaData = {
 ---
 
 <BaseLayout 
-  title="About Sarah - Professional Baker & Recipe Developer | Incr-EdibleCupCakes"
-  description="Meet Sarah, the professional baker behind Incr-EdibleCupCakes. Le Cordon Bleu graduate specializing in innovative cupcake recipes for all dietary needs including keto, vegan, and allergen-free options."
+  title="About Sarah | Incr-EdibleCupCakes"
+  description="Meet Sarah, home baker and recipe developer behind Incr-EdibleCupCakes. Tested cupcake recipes for keto, vegan, nut-free, and classic baking."
   image="/Sarah.png"
   canonical="https://incr-ediblecupcakes.com/about"
+  ogType="profile"
 >
+  <Fragment slot="head">
+    <meta name="keywords" content="Sarah baker, home baker, cupcake recipe developer, keto baking, vegan baking, allergen-free baking" />
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  </Fragment>
   <Header />
   
   <main id="main-content" class="pt-16 lg:pt-20">
-    <Fragment slot="head">
-      <meta name="keywords" content="Sarah baker, professional baker, Le Cordon Bleu, cupcake recipe developer, keto baking expert, vegan baking, allergen-free baking, pastry chef" />
-      <meta property="og:title" content="About Sarah - Professional Baker | Incr-EdibleCupCakes" />
-      <meta property="og:description" content="Meet Sarah, the professional baker behind Incr-EdibleCupCakes. Le Cordon Bleu graduate specializing in innovative cupcake recipes." />
-      <meta property="og:type" content="profile" />
-      <meta property="og:url" content="https://incr-ediblecupcakes.com/about" />
-      <meta property="og:image" content="https://incr-ediblecupcakes.com/Sarah.png" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="About Sarah - Professional Baker | Incr-EdibleCupCakes" />
-      <meta name="twitter:description" content="Meet Sarah, the professional baker behind Incr-EdibleCupCakes. Le Cordon Bleu graduate specializing in innovative cupcake recipes." />
-      <meta name="twitter:image" content="https://incr-ediblecupcakes.com/Sarah.png" />
-      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-    </Fragment>
-
     {/* Hero Section */}
     <section class="relative py-20 bg-gradient-to-br from-cupcake-coral via-sunshine-400 to-cupcake-cherry overflow-hidden">
       <div class="absolute inset-0 pointer-events-none">
@@ -89,9 +71,8 @@ const schemaData = {
               <span class="block text-sunshine-300 animate-gradient-text">Magic</span>
             </h1>
             <p class="font-nunito text-xl text-pink-100 leading-relaxed drop-shadow-lg">
-              Hi, I'm Sarah! A passionate baker who believes that every cupcake should be an extraordinary experience. 
-              My journey began in my grandmother's kitchen and has evolved into creating innovative recipes that 
-              bring joy to people with diverse dietary needs.
+              Hi, I'm Sarah. I develop and test every cupcake recipe on this site in my home kitchen, classic comfort bakes,
+              keto-friendly options, vegan batters, and nut-free alternatives. My goal is clear instructions and honest results.
             </p>
           </div>
           
@@ -142,7 +123,7 @@ const schemaData = {
               <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-4">Where It All Began</h3>
               <p class="font-nunito text-gray-600 leading-relaxed">
                 My love for baking started at age 7 in my grandmother's cozy kitchen. She taught me that baking 
-                isn't just about following recipes—it's about creating moments of joy and bringing people together. 
+                isn't just about following recipes, it's about creating moments of joy and bringing people together. 
                 Every Saturday morning, we'd experiment with new flavors and techniques, always pushing the boundaries 
                 of traditional baking.
               </p>
@@ -153,7 +134,7 @@ const schemaData = {
             <div class="md:w-1/2">
               <img
                 src="/Professional Training.jpg"
-                alt="Professional culinary training - Sarah during her studies at Le Cordon Bleu"
+                alt="Sarah learning baking techniques through practice and recipe testing at home"
                 class="w-full h-64 object-cover rounded-2xl shadow-lg"
                 loading="lazy"
                 width={400}
@@ -161,11 +142,11 @@ const schemaData = {
               />
             </div>
             <div class="md:w-1/2">
-              <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-4">Professional Training</h3>
+              <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-4">Learning & Testing</h3>
               <p class="font-nunito text-gray-600 leading-relaxed">
-                After graduating from Le Cordon Bleu, I specialized in pastry arts and nutritional baking. 
-                I became passionate about creating delicious treats that everyone can enjoy, regardless of dietary 
-                restrictions. This led me to develop innovative techniques for keto, vegan, and allergen-free baking.
+                I studied baking through practice, cookbooks, and community feedback, not a culinary school diploma.
+                Over time I focused on dietary alternatives: keto sweeteners, egg replacers, and nut-free ingredients.
+                Each recipe here is retested until the texture and flavor are repeatable in a standard home oven.
               </p>
             </div>
           </div>
@@ -184,9 +165,9 @@ const schemaData = {
             <div class="md:w-1/2">
               <h3 class="font-quicksand text-2xl font-bold text-gray-900 mb-4">Innovation in Every Bite</h3>
               <p class="font-nunito text-gray-600 leading-relaxed">
-                Today, I run my own baking studio where I develop and test every recipe featured on this site. 
-                Each cupcake represents hours of experimentation, taste-testing, and refinement. My mission is to 
-                prove that dietary restrictions never mean compromising on flavor or beauty.
+                Today I publish recipes and troubleshooting guides so home bakers can fix sunken centers, dry crumbs,
+                and frosting issues. Incr-EdibleCupCakes is a recipe blog, not a retail bakery, focused on inclusive baking
+                that still tastes like a treat.
               </p>
             </div>
           </div>
@@ -194,70 +175,24 @@ const schemaData = {
       </div>
     </section>
 
-    {/* Achievements Section */}
+    {/* What you'll find */}
     <section class="py-20 bg-gradient-to-br from-cupcake-pink/20 to-sunshine-100/50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="font-quicksand text-4xl font-black text-gray-900 mb-6">
-            Achievements & <span class="text-cupcake-coral">Recognition</span>
+            What You'll Find <span class="text-cupcake-coral">Here</span>
           </h2>
         </div>
-
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            {
-              icon: 'award',
-              title: 'Best Bakery 2024',
-              description: 'Voted best specialty bakery in the region',
-              color: 'bg-sunshine-400'
-            },
-            {
-              icon: 'book',
-              title: 'Published Author',
-              description: 'Author of "Innovative Cupcakes for Everyone"',
-              color: 'bg-sprinkle-blue'
-            },
-            {
-              icon: 'users',
-              title: '50K+ Students',
-              description: 'Taught thousands through online courses',
-              color: 'bg-sprinkle-green'
-            },
-            {
-              icon: 'heart',
-              title: 'Community Impact',
-              description: 'Donated 10,000+ cupcakes to local charities',
-              color: 'bg-cupcake-coral'
-            }
-          ].map((achievement, index) => (
-            <div
-              key={index}
-              class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center"
-            >
-              <div class={`w-16 h-16 ${achievement.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
-                {achievement.icon === 'award' && (
-                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-                  </svg>
-                )}
-                {achievement.icon === 'book' && (
-                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-                  </svg>
-                )}
-                {achievement.icon === 'users' && (
-                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
-                  </svg>
-                )}
-                {achievement.icon === 'heart' && (
-                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                  </svg>
-                )}
-              </div>
-              <h3 class="font-quicksand text-xl font-bold text-gray-900 mb-2">{achievement.title}</h3>
-              <p class="font-nunito text-gray-600">{achievement.description}</p>
+            { title: 'Tested Recipes', description: 'Every cupcake recipe is baked and revised at home before publishing.', color: 'bg-sunshine-400' },
+            { title: 'Dietary Options', description: 'Classic, keto, vegan, nut-free, and gluten-free categories.', color: 'bg-sprinkle-blue' },
+            { title: 'Troubleshooting Guides', description: 'Fix sinking centers, dryness, and frosting problems.', color: 'bg-sprinkle-green' },
+            { title: 'Honest Notes', description: 'Clear ingredient lists, timing, and storage tips, no fake stats.', color: 'bg-cupcake-coral' },
+          ].map((item, index) => (
+            <div key={index} class="bg-white rounded-2xl p-6 shadow-lg text-center">
+              <h3 class="font-quicksand text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+              <p class="font-nunito text-gray-600">{item.description}</p>
             </div>
           ))}
         </div>

@@ -1,9 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ClientOnly from '../components/ClientOnly.tsx';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import RecipeCard from '../components/RecipeCard.tsx';
-import ClientOnly from '../components/ClientOnly.tsx';
 import { validatedRecipes } from '../data/recipes';
 import { latestGuides } from '../data/guides';
 
@@ -21,42 +21,6 @@ const categories = [
   { id: 'seasonal', name: 'Seasonal', count: validatedRecipes.filter(r => r.category === 'seasonal').length },
 ];
 
-const websiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Incr-EdibleCupCakes",
-  "url": "https://incr-ediblecupcakes.com",
-  "description": "Discover unique and innovative cupcake recipes for every taste and dietary preference",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://incr-ediblecupcakes.com/recipes?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-};
-
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Incr-EdibleCupCakes",
-  "url": "https://incr-ediblecupcakes.com",
-  "logo": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png",
-  "description": "Professional bakery specializing in innovative cupcake recipes for all dietary preferences",
-  "founder": {
-    "@type": "Person",
-    "name": "Sarah"
-  },
-  "sameAs": [
-    "https://instagram.com/incrediblecupcakes",
-    "https://facebook.com/incrediblecupcakes"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+1-555-123-CAKE",
-    "contactType": "customer service",
-    "email": "sarah@incr-ediblecupcakes.com"
-  }
-};
-
 const collectionSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -67,12 +31,10 @@ const collectionSchema = {
     "@type": "ItemList",
     "numberOfItems": validatedRecipes.length,
     "itemListElement": validatedRecipes.map((recipe, index) => ({
-      "@type": "Recipe",
+      "@type": "ListItem",
       "position": index + 1,
       "name": recipe.title,
-      "url": `https://incr-ediblecupcakes.com/recipe/${recipe.slug}`,
-      "image": recipe.image,
-      "description": recipe.shortDescription
+      "url": `https://incr-ediblecupcakes.com/recipe/${recipe.slug}`
     }))
   }
 };
@@ -80,29 +42,16 @@ const collectionSchema = {
 
 <BaseLayout 
   title="Incr-EdibleCupCakes - Extraordinary Cupcake Recipes for Every Taste"
-  description="Discover unique and innovative cupcake recipes including keto, vegan, nut-free, and classic options. Professional baker Sarah shares tested recipes with step-by-step instructions."
+  description="Home-tested cupcake recipes: classic, keto, vegan, nut-free, and gluten-free. Step-by-step instructions and troubleshooting guides from Sarah."
   image="/A vibrant, mouth-watering cupcake scene.png"
   canonical="https://incr-ediblecupcakes.com/"
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+  </Fragment>
   <Header />
   
   <main id="main-content" class="pt-16 lg:pt-20">
-    <Fragment slot="head">
-      <meta name="keywords" content="cupcake recipes, keto cupcakes, vegan cupcakes, nut-free baking, gluten-free desserts, homemade cupcakes, professional baker, dietary cupcakes" />
-      <meta property="og:title" content="Incr-EdibleCupCakes - Extraordinary Cupcake Recipes" />
-      <meta property="og:description" content="Discover unique and innovative cupcake recipes for every taste and dietary preference." />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://incr-ediblecupcakes.com/" />
-      <meta property="og:image" content="https://incr-ediblecupcakes.com/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Incr-EdibleCupCakes - Extraordinary Cupcake Recipes" />
-      <meta name="twitter:description" content="Discover unique and innovative cupcake recipes for every taste and dietary preference." />
-      <meta name="twitter:image" content="https://incr-ediblecupcakes.com/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png" />
-      <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
-      <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
-      <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
-    </Fragment>
-
     {/* Hero Section */}
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-cupcake-pink via-cupcake-coral to-cupcake-peach">
       <div class="absolute inset-0">
@@ -110,40 +59,30 @@ const collectionSchema = {
       </div>
       
       {/* Cupcake & Sprinkle Background Elements */}
-      <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <ClientOnly client:load>
-          <>
-          {/* Floating Sprinkles */}
-          {[...Array(20)].map((_, i) => (
-            <div
-              key={i}
-              class={`absolute animate-sprinkle-fall ${
-                i % 5 === 0 ? 'bg-sprinkle-yellow' : 
-                i % 5 === 1 ? 'bg-sprinkle-blue' : 
-                i % 5 === 2 ? 'bg-sprinkle-green' :
-                i % 5 === 3 ? 'bg-sprinkle-purple' : 'bg-sprinkle-orange'
-              } ${i % 3 === 0 ? 'rounded-full' : 'rounded-lg rotate-45'}`}
-              style={{
-                width: `${Math.random() * 12 + 4}px`,
-                height: `${Math.random() * 12 + 4}px`,
-                left: `${Math.random() * 100}%`,
-                animationDelay: `${i * 0.5}s`,
-                animationDuration: `${8 + Math.random() * 4}s`,
-              }}
-            />
-          ))}
-          
-          {/* Cupcake Icons */}
-          <div class="absolute top-20 left-10 text-6xl animate-cupcake-bounce" style="animation-delay: 0s">🧁</div>
-          <div class="absolute bottom-32 right-20 text-4xl animate-cupcake-bounce" style="animation-delay: 1s">🧁</div>
-          <div class="absolute top-1/3 right-10 text-5xl animate-cupcake-bounce" style="animation-delay: 2s">🧁</div>
-          <div class="absolute bottom-1/4 left-1/4 text-3xl animate-cupcake-bounce" style="animation-delay: 1.5s">🧁</div>
-          
-          {/* Icing Swirls */}
-          <div class="absolute top-1/4 left-1/3 w-16 h-16 bg-white/20 rounded-full animate-icing-swirl" />
-          <div class="absolute bottom-1/3 right-1/4 w-12 h-12 bg-sprinkle-yellow/30 rounded-full animate-icing-swirl" style="animation-delay: 2s" />
-          </>
-        </ClientOnly>
+      <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        {Array.from({ length: 20 }, (_, i) => (
+          <div
+            class={`absolute animate-sprinkle-fall ${
+              i % 5 === 0 ? 'bg-sprinkle-yellow' :
+              i % 5 === 1 ? 'bg-sprinkle-blue' :
+              i % 5 === 2 ? 'bg-sprinkle-green' :
+              i % 5 === 3 ? 'bg-sprinkle-purple' : 'bg-sprinkle-orange'
+            } ${i % 3 === 0 ? 'rounded-full' : 'rounded-lg rotate-45'}`}
+            style={{
+              width: `${8 + (i % 4) * 2}px`,
+              height: `${8 + (i % 3) * 2}px`,
+              left: `${(i * 5) % 100}%`,
+              animationDelay: `${i * 0.5}s`,
+              animationDuration: `${8 + (i % 4)}s`,
+            }}
+          />
+        ))}
+        <div class="absolute top-20 left-10 text-6xl animate-cupcake-bounce" style="animation-delay: 0s">🧁</div>
+        <div class="absolute bottom-32 right-20 text-4xl animate-cupcake-bounce" style="animation-delay: 1s">🧁</div>
+        <div class="absolute top-1/3 right-10 text-5xl animate-cupcake-bounce" style="animation-delay: 2s">🧁</div>
+        <div class="absolute bottom-1/4 left-1/4 text-3xl animate-cupcake-bounce" style="animation-delay: 1.5s">🧁</div>
+        <div class="absolute top-1/4 left-1/3 w-16 h-16 bg-white/20 rounded-full animate-icing-swirl" />
+        <div class="absolute bottom-1/3 right-1/4 w-12 h-12 bg-sprinkle-yellow/30 rounded-full animate-icing-swirl" style="animation-delay: 2s" />
       </div>
 
       <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -296,10 +235,10 @@ const collectionSchema = {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
           {[
-            { icon: 'chef', number: '50+', label: 'Unique Recipes', emoji: '📝' },
-            { icon: 'heart', number: '10K+', label: 'Happy Bakers', emoji: '👩‍🍳' },
-            { icon: 'star', number: '4.9', label: 'Average Rating', emoji: '⭐' },
-            { icon: 'users', number: '25K+', label: 'Community Members', emoji: '👥' },
+            { number: String(validatedRecipes.length), label: 'Tested Recipes', emoji: '📝' },
+            { number: String(categories.length - 1), label: 'Dietary Categories', emoji: '🏷️' },
+            { number: String(latestGuides.length), label: 'Baking Guides', emoji: '📖' },
+            { number: '100%', label: 'Home Kitchen Tested', emoji: '👩‍🍳' },
           ].map((stat, index) => (
             <div key={index} class="transform transition-all duration-300 hover:scale-110 bg-white/10 backdrop-blur-sm rounded-2xl p-6">
               <div class="text-4xl mb-2">{stat.emoji}</div>
@@ -373,7 +312,7 @@ const collectionSchema = {
           Ready to Start Baking? 🥧
         </h2>
         <p class="font-nunito text-xl text-white/90 mb-12 font-medium">
-          Join thousands of bakers who have transformed their kitchens with our incredible recipes.
+          Start with a tested recipe below, or read a guide if your cupcakes need troubleshooting.
         </p>
         <div class="flex flex-col sm:flex-row gap-6 justify-center">
           <a

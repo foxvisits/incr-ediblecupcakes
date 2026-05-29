@@ -86,6 +86,10 @@ const schemaData = {
   description="Explore our cupcake categories including Classic, Keto, Vegan, Nut-Free, and Gluten-Free options. Find the perfect recipe for your dietary needs."
   canonical="https://incr-ediblecupcakes.com/categories"
 >
+  <Fragment slot="head">
+    <meta name="keywords" content="cupcake categories, classic cupcakes, keto cupcakes, vegan cupcakes, nut-free cupcakes, gluten-free cupcakes, dietary cupcakes" />
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  </Fragment>
   <Header />
   <main id="main-content" class="pt-16 lg:pt-20 pb-20">
     <div class="max-w-6xl mx-auto px-4">
@@ -94,17 +98,6 @@ const schemaData = {
         { name: 'Categories' }
       ]} />
     </div>
-    <Fragment slot="head">
-      <meta name="keywords" content="cupcake categories, classic cupcakes, keto cupcakes, vegan cupcakes, nut-free cupcakes, gluten-free cupcakes, dietary cupcakes" />
-      <meta property="og:title" content="Cupcake Categories | Incr-EdibleCupCakes" />
-      <meta property="og:description" content="Explore our cupcake categories including Classic, Keto, Vegan, Nut-Free, and Gluten-Free options" />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://incr-ediblecupcakes.com/categories" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Cupcake Categories | Incr-EdibleCupCakes" />
-      <meta name="twitter:description" content="Explore our cupcake categories including Classic, Keto, Vegan, Nut-Free, and Gluten-Free options" />
-      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-    </Fragment>
 
     <section class="py-14 bg-gradient-to-br from-rose-50 to-pink-50 border-b border-rose-100/50">
       <div class="max-w-6xl mx-auto px-4">
@@ -112,7 +105,9 @@ const schemaData = {
           Cupcake Categories
         </h1>
         <p class="text-lg text-gray-600 max-w-3xl">
-          Explore our diverse collection of cupcake recipes, crafted for different dietary needs and preferences.
+          Nine curated collections ,  from classic buttercream to keto, vegan, and nut-free ,  each with tested recipes,
+          ingredient notes, and FAQs. Pick a category that matches your pantry and dietary needs, then open a recipe
+          with full timings, nutrition estimates, and substitution links.
         </p>
       </div>
     </section>

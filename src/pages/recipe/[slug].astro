@@ -2,9 +2,9 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import RecipeInteractions from '../../components/RecipeInteractions.tsx';
 import { validatedRecipes, convertToISODuration } from '../../data/recipes';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { normalizeRecipeStrings, normalizeRecipeText } from '../../utils/schema';
 
 export async function getStaticPaths() {
   return validatedRecipes.map((recipe) => ({
@@ -86,18 +86,11 @@ const schemaData = {
   "recipeCuisine": recipe.cuisine,
   "difficulty": recipe.difficulty,
   "keywords": recipe.recipeKeys?.join(", "),
-  "recipeIngredient": recipe.ingredients,
+  "recipeIngredient": normalizeRecipeStrings(recipe.ingredients),
   "recipeInstructions": recipe.instructions.map(instruction => ({
     "@type": "HowToStep",
-    "text": instruction
+    "text": normalizeRecipeText(instruction)
   })),
-  "video": recipe.id === "1" ? {
-    "@type": "VideoObject",
-    "name": `How to Make ${recipe.title}`,
-    "description": `Step-by-step video guide for making ${recipe.title}`,
-    "thumbnailUrl": `https://incr-ediblecupcakes.com${recipe.image}`,
-    "uploadDate": recipeDateModified
-  } : undefined,
   "nutrition": recipe.nutritionInfo ? {
     "@type": "NutritionInformation",
     "calories": recipe.nutritionInfo.calories,
@@ -114,11 +107,16 @@ const schemaData = {
 ---
 
 <BaseLayout 
-  title={`${recipe.title} - Professional Recipe with Expert Tips | Incr-EdibleCupCakes`}
-  description={`Learn how to make ${recipe.title} with this professional recipe. ${recipe.shortDescription} Complete with ingredients, step-by-step instructions, expert tips, and nutritional information.`}
+  title={`${recipe.title} Recipe | Incr-EdibleCupCakes`}
+  description={`${recipe.shortDescription} Step-by-step ingredients, instructions, tips, and nutrition.`}
   image={recipe.image}
   canonical={`https://incr-ediblecupcakes.com/recipe/${recipe.slug}`}
+  ogType="article"
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  </Fragment>
   <Header />
   
   <main id="main-content" class="pt-16 lg:pt-20">
@@ -129,20 +127,6 @@ const schemaData = {
         { name: recipe.title }
       ]} />
     </div>
-    <Fragment slot="head">
-      <meta name="keywords" content={`${recipe.title}, ${recipe.category} cupcakes, baking recipe, ${recipe.difficulty} recipe, cupcake ingredients, baking instructions, professional baker, ${recipe.cuisine} cuisine, ${recipe.recipeKeys?.join(', ')}`} />
-      <meta property="og:title" content={`${recipe.title} | Incr-EdibleCupCakes`} />
-      <meta property="og:description" content={recipe.shortDescription} />
-      <meta property="og:type" content="article" />
-      <meta property="og:url" content={`https://incr-ediblecupcakes.com/recipe/${recipe.slug}`} />
-      <meta property="og:image" content={`https://incr-ediblecupcakes.com${recipe.image}`} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={`${recipe.title} | Incr-EdibleCupCakes`} />
-      <meta name="twitter:description" content={recipe.shortDescription} />
-      <meta name="twitter:image" content={`https://incr-ediblecupcakes.com${recipe.image}`} />
-      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-      {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
-    </Fragment>
 
     {/* Recipe Hero Section */}
     <section class="relative py-12 bg-gradient-to-br from-rose-500 via-pink-500 to-purple-600">
@@ -312,7 +296,7 @@ const schemaData = {
               <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <img
                   src="/Spiced Pear Cupcakes.jpg"
-                  alt="Spiced Pear Cupcakes – additional seasonal photo"
+                  alt="Spiced Pear Cupcakes - additional seasonal photo"
                   width={1200}
                   height={800}
                   loading="lazy"
@@ -324,7 +308,7 @@ const schemaData = {
               <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <img
                   src="/White Chocolate Snowflake Cupcakes-Snowy pastel blue setting.jpg"
-                  alt="White Chocolate Snowflake Cupcakes – snowy pastel blue winter aesthetic"
+                  alt="White Chocolate Snowflake Cupcakes - snowy pastel blue winter aesthetic"
                   width={1200}
                   height={800}
                   loading="lazy"
@@ -336,7 +320,7 @@ const schemaData = {
               <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <img
                   src="/cupcake cut in half, showing a bright ruby cranberry compote filling.jpg"
-                  alt="Cranberry Orange Sparkle – cupcake cut in half, ruby cranberry compote filling"
+                  alt="Cranberry Orange Sparkle - cupcake cut in half, ruby cranberry compote filling"
                   width={1200}
                   height={800}
                   loading="lazy"
@@ -360,7 +344,7 @@ const schemaData = {
               <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <img
                   src="/keto-lemon-ricotta-cupcakes-cross-section.jpg"
-                  alt="Keto Lemon Ricotta Cupcakes – cross-section showing moist almond flour crumb and creamy ricotta filling"
+                  alt="Keto Lemon Ricotta Cupcakes - cross-section showing moist almond flour crumb and creamy ricotta filling"
                   width={1200}
                   height={800}
                   loading="lazy"
@@ -372,7 +356,7 @@ const schemaData = {
               <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <img
                   src="/keto-chocolate-truffle-cupcakes-detail.jpg"
-                  alt="Keto Chocolate Truffle Cupcakes – close-up detail showing rich chocolate ganache texture and smooth frosting swirl"
+                  alt="Keto Chocolate Truffle Cupcakes - close-up detail showing rich chocolate ganache texture and smooth frosting swirl"
                   width={1200}
                   height={800}
                   loading="lazy"
@@ -424,7 +408,7 @@ const schemaData = {
               <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <img
                   src="/Cherry-Blossom-Cupcakes-with-Light-cherry flavor-soft-pink-swirl.jpg"
-                  alt="Cherry Blossom cupcakes – light cherry flavor with soft pink swirl"
+                  alt="Cherry Blossom cupcakes - light cherry flavor with soft pink swirl"
                   width={1200}
                   height={800}
                   loading="lazy"
@@ -480,7 +464,7 @@ const schemaData = {
                 <a href={schemaData.author.url} class="text-rose-600 hover:underline text-sm">View profile</a>
               </div>
             </div>
-            <p class="text-gray-600 mt-3 text-sm">Professional baker sharing tested cupcake recipes, techniques and troubleshooting tips.</p>
+            <p class="text-gray-600 mt-3 text-sm">Home baker sharing tested cupcake recipes, techniques, and troubleshooting tips.</p>
           </div>
 
               {/* Nutrition Information */}
@@ -577,13 +561,6 @@ const schemaData = {
         </div>
       </section>
     )}
-
-    {/* Recipe Interactions - Comments, Ratings, Shares */}
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <RecipeInteractions recipeId={recipe.id} />
-      </div>
-    </section>
 
     {/* Related Recipes */}
     <section class="py-16 bg-white">

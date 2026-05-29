@@ -2,8 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import OGImageGenerator from '../../components/OGImageGenerator.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildGuideArticleSchema } from '../../utils/guideArticleSchema';
 
 const title = '10 cupcake mistakes and how to fix them';
 const featuredImage = '/cupcake-mistakes-and-how-to-avoid-them.jpg';
@@ -18,7 +18,7 @@ const steps = [
   'Tunnels: Avoid overmixing; check leaveners are fresh',
   'Dry texture: Measure flour correctly; don’t overbake',
   'Flat tops: Oven not preheated; leaveners expired',
-  'Peeling liners: Cool in pan 2–3 minutes, then remove; avoid steam',
+  'Peeling liners: Cool in pan 2-3 minutes, then remove; avoid steam',
   'Sticky tops: Allow to cool completely; reduce humidity/cover loosely',
   'Hollow domes: Fill liners 2/3; stable batter ratio fat:sugar:flour',
   'Curdled batter: Alternate wet/dry; keep ingredients similar temps',
@@ -33,39 +33,23 @@ const schemaData = {
   step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s }))
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": title,
-  "description": metaDescription,
-  "url": canonicalUrl,
-  "datePublished": guideDatePublished,
-  "dateModified": guideDateModified,
-  "author": {
-    "@type": "Person",
-    "name": "Sarah",
-    "url": "https://incr-ediblecupcakes.com/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Incr-EdibleCupCakes",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png"
-    }
-  },
-  "image": `https://incr-ediblecupcakes.com${featuredImage}`
-};
+const articleSchema = buildGuideArticleSchema({
+  headline: title,
+  description: metaDescription,
+  url: canonicalUrl,
+  datePublished: guideDatePublished,
+  dateModified: guideDateModified,
+  imagePath: featuredImage,
+});
 ---
 
 <BaseLayout title={`${title} - Incr-EdibleCupCakes`} description={metaDescription} canonical={canonicalUrl}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  </Fragment>
   <Header />
   <main id="main-content" class="pt-24 lg:pt-28 pb-24">
-    <Fragment slot="head">
-      <OGImageGenerator title={title} description="Troubleshooting common cupcake issues with practical fixes" />
-      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-      <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
-    </Fragment>
     <div class="max-w-5xl mx-auto px-4">
       <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides', url: '/guides' }, { name: title }]} />
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -88,7 +72,7 @@ const articleSchema = {
           <p class="text-sm text-gray-500">
             By <a href="/about" class="text-rose-600 hover:underline">Sarah</a>, professional baker at Incr-EdibleCupCakes. Updated {guideDateModified}.
           </p>
-          <p class="text-base text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
+          <p class="guide-summary text-base text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
             {summaryShort}
           </p>
           <p class="text-lg text-gray-700">A practical, no-fluff guide to the most common cupcake problems and exactly how to fix them. Test-backed recommendations, quick checks and preventative tips.</p>
@@ -112,9 +96,9 @@ const articleSchema = {
             <h2 class="text-2xl font-bold text-gray-900">Prevention checklist</h2>
             <ul class="list-disc pl-6 text-gray-700 space-y-2">
               <li>Weigh flour and sugar for consistent ratios (baker’s percentages).</li>
-              <li>Room‑temp dairy and eggs speed emulsion and avoid curdling.</li>
+              <li>Room-temp dairy and eggs speed emulsion and avoid curdling.</li>
               <li>Mix wet and dry separately; combine just until no dry pockets remain.</li>
-              <li>Fill liners 2/3–3/4; bake immediately after mixing.</li>
+              <li>Fill liners 2/3-3/4; bake immediately after mixing.</li>
               <li>Rotate tray once (only if your oven bakes unevenly) after 2/3 time.</li>
             </ul>
           </section>
@@ -125,27 +109,27 @@ const articleSchema = {
           </section>
           <section class="space-y-3">
             <h2 class="text-2xl font-bold text-gray-900">Oven behavior</h2>
-            <p class="text-gray-700">Most home ovens run 10–20°C off. Preheat 15–20 minutes and place the tray on the middle rack. If tops brown before set, tent lightly with foil for the final minutes.</p>
+            <p class="text-gray-700">Most home ovens run 10-20°C off. Preheat 15-20 minutes and place the tray on the middle rack. If tops brown before set, tent lightly with foil for the final minutes.</p>
           </section>
           <section class="space-y-3">
             <h2 class="text-2xl font-bold text-gray-900">Frosting rescue</h2>
             <ul class="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Too soft: chill 10 minutes, then re‑whip.</li>
-              <li>Grainy: warm bowl slightly (10–15 sec), whip to smooth.</li>
+              <li>Too soft: chill 10 minutes, then re-whip.</li>
+              <li>Grainy: warm bowl slightly (10-15 sec), whip to smooth.</li>
               <li>Too sweet: add a pinch of salt and a spoon of cream cheese.</li>
             </ul>
           </section>
           <section class="space-y-3">
             <h2 class="text-2xl font-bold text-gray-900">Practice with these recipes</h2>
             <ul class="list-disc pl-6 text-gray-700 space-y-2">
-              <li><a href="/recipe/classic-vanilla-dream-cupcakes" class="text-rose-600 hover:underline">Classic Vanilla Dream</a> – focus on mixing just until combined.</li>
-              <li><a href="/recipe/red-velvet-romance-cupcakes" class="text-rose-600 hover:underline">Red Velvet Romance</a> – timing and oven verification.</li>
+              <li><a href="/recipe/classic-vanilla-dream-cupcakes" class="text-rose-600 hover:underline">Classic Vanilla Dream</a> - focus on mixing just until combined.</li>
+              <li><a href="/recipe/red-velvet-romance-cupcakes" class="text-rose-600 hover:underline">Red Velvet Romance</a> - timing and oven verification.</li>
             </ul>
           </section>
           <section class="space-y-3">
             <h2 class="text-2xl font-bold text-gray-900">Tools that actually help</h2>
             <ul class="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Instant‑read thermometer (center should be ~98–99°C / 208–210°F for doneness).</li>
+              <li>Instant-read thermometer (center should be ~98-99°C / 208-210°F for doneness).</li>
               <li>Oven thermometer to verify set temperature.</li>
               <li>Cookie scoop for even portioning and uniform domes.</li>
               <li>Scale for accurate, repeatable outcomes.</li>
@@ -157,7 +141,7 @@ const articleSchema = {
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div class="p-4 bg-white border rounded-xl">
                 <h3 class="font-semibold text-gray-900 mb-1">Too dense</h3>
-                <p class="text-gray-700 text-sm">Overmixing; too little leavener; cold ingredients. Fix: mix less, fresh BP/BS, room‑temp.</p>
+                <p class="text-gray-700 text-sm">Overmixing; too little leavener; cold ingredients. Fix: mix less, fresh BP/BS, room-temp.</p>
               </div>
               <div class="p-4 bg-white border rounded-xl">
                 <h3 class="font-semibold text-gray-900 mb-1">Sinks in center</h3>
@@ -169,13 +153,13 @@ const articleSchema = {
               </div>
               <div class="p-4 bg-white border rounded-xl">
                 <h3 class="font-semibold text-gray-900 mb-1">Peeling liners</h3>
-                <p class="text-gray-700 text-sm">Condensation/steam. Fix: remove from pan after 2–3 min; cool on rack.</p>
+                <p class="text-gray-700 text-sm">Condensation/steam. Fix: remove from pan after 2-3 min; cool on rack.</p>
               </div>
             </div>
           </section>
           <section class="space-y-3">
             <h2 class="text-2xl font-bold text-gray-900">Conclusion</h2>
-            <p class="text-gray-700">Consistent cupcakes come from control: ingredient temperature, accurate ratios, verified oven heat and minimal mixing. Apply the checks above and your bakes will level‑up immediately.</p>
+            <p class="text-gray-700">Consistent cupcakes come from control: ingredient temperature, accurate ratios, verified oven heat and minimal mixing. Apply the checks above and your bakes will level-up immediately.</p>
           </section>
         </article>
       </div>

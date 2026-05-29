@@ -2,7 +2,6 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import OGImageGenerator from '../../components/OGImageGenerator.astro';
 import GuideCard from '../../components/GuideCard.astro';
 import { latestGuides } from '../../data/guides';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
@@ -24,12 +23,11 @@ const schemaData = {
 ---
 
 <BaseLayout title="Cupcake Guides - Incr-EdibleCupCakes" description="Troubleshooting and technique guides for perfect cupcakes." canonical="https://incr-ediblecupcakes.com/guides">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  </Fragment>
   <Header />
   <main id="main-content" class="pt-24 lg:pt-28 pb-24">
-    <Fragment slot="head">
-      <OGImageGenerator title="Cupcake Guides" description="Troubleshooting and technique guides for perfect cupcakes." />
-      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-    </Fragment>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides' }]} />
       <div class="text-center mb-12">

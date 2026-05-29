@@ -1,9 +1,13 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://incr-ediblecupcakes.com/sitemap.xml
+User-agent: GPTBot
+Allow: /
 
-# Block access to admin or private areas
-Disallow: /admin/
-Disallow: /private/
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://incr-ediblecupcakes.com/sitemap.xml

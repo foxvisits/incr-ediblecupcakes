@@ -2,8 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import OGImageGenerator from '../../components/OGImageGenerator.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildGuideArticleSchema } from '../../utils/guideArticleSchema';
 
 const title = 'Why Do Cupcakes Sink After Baking?';
 const featuredImage = '/guide-why-cupcakes-sink.jpg';
@@ -29,39 +29,23 @@ const schemaData = {
   step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s }))
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": title,
-  "description": metaDescription,
-  "url": canonicalUrl,
-  "datePublished": guideDatePublished,
-  "dateModified": guideDateModified,
-  "author": {
-    "@type": "Person",
-    "name": "Sarah",
-    "url": "https://incr-ediblecupcakes.com/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Incr-EdibleCupCakes",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png"
-    }
-  },
-  "image": `https://incr-ediblecupcakes.com${featuredImage}`
-};
+const articleSchema = buildGuideArticleSchema({
+  headline: title,
+  description: metaDescription,
+  url: canonicalUrl,
+  datePublished: guideDatePublished,
+  dateModified: guideDateModified,
+  imagePath: featuredImage,
+});
 ---
 
 <BaseLayout title={`${title} - Incr-EdibleCupCakes`} description={metaDescription} canonical={canonicalUrl}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  </Fragment>
   <Header />
   <main id="main-content" class="pt-24 lg:pt-28 pb-24">
-    <Fragment slot="head">
-      <OGImageGenerator title={title} description="Causes and fixes for sunken cupcake centers." />
-      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-      <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
-    </Fragment>
     <div class="max-w-5xl mx-auto px-4">
       <Breadcrumbs items={[{ name: 'Home', url: '/' }, { name: 'Guides', url: '/guides' }, { name: title }]} />
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -84,7 +68,7 @@ const articleSchema = {
           <p class="text-sm text-gray-500">
             By <a href="/about" class="text-rose-600 hover:underline">Sarah</a>, professional baker at Incr-EdibleCupCakes. Updated {guideDateModified}.
           </p>
-          <p class="text-base text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
+          <p class="guide-summary text-base text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
             {summaryShort}
           </p>
           <p class="text-lg text-gray-700">Sunken centers are one of the most common cupcake problems. The good news: they’re almost always fixable once you know the cause.</p>
@@ -99,12 +83,12 @@ const articleSchema = {
                 </tr>
               </thead>
               <tbody>
-                <tr class="border-b border-gray-100"><td class="px-4 py-3">Underbaking</td><td class="px-4 py-3">Bake until skewer comes out clean; use thermometer ~98–99°C in centre</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Underbaking</td><td class="px-4 py-3">Bake until skewer comes out clean; use thermometer ~98-99°C in centre</td></tr>
                 <tr class="border-b border-gray-100"><td class="px-4 py-3">Overmixing</td><td class="px-4 py-3">Mix wet and dry just until combined; stop as soon as flour is in</td></tr>
                 <tr class="border-b border-gray-100"><td class="px-4 py-3">Too much leavener</td><td class="px-4 py-3">Measure correctly (no heaping); use fresh BP/BS</td></tr>
                 <tr class="border-b border-gray-100"><td class="px-4 py-3">Overfilling liners</td><td class="px-4 py-3">Fill 2/3 full; use a scoop for even portions</td></tr>
                 <tr class="border-b border-gray-100"><td class="px-4 py-3">Opening oven early</td><td class="px-4 py-3">Don’t open until last third of bake; rotate only then if needed</td></tr>
-                <tr class="border-b border-gray-100"><td class="px-4 py-3">Expired leavener</td><td class="px-4 py-3">Test BP in hot water (should fizz); replace every 6–12 months</td></tr>
+                <tr class="border-b border-gray-100"><td class="px-4 py-3">Expired leavener</td><td class="px-4 py-3">Test BP in hot water (should fizz); replace every 6-12 months</td></tr>
               </tbody>
             </table>
           </div>
@@ -121,9 +105,9 @@ const articleSchema = {
             <p class="text-gray-700">Recipes give times as guidelines. Your oven and pan size affect the real bake time. Rely on doneness cues, not the clock alone.</p>
             <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
               <li>Skewer or thin knife in the centre: no wet batter (a few moist crumbs are fine).</li>
-              <li>Instant-read thermometer in centre: ~98–99°C (208–210°F) when done.</li>
-              <li>Preheat 15–20 minutes; use middle rack; don’t crowd the pan.</li>
-              <li>If oven runs cool: add 5–10 min or raise temp slightly; note the time for next batch.</li>
+              <li>Instant-read thermometer in centre: ~98-99°C (208-210°F) when done.</li>
+              <li>Preheat 15-20 minutes; use middle rack; don’t crowd the pan.</li>
+              <li>If oven runs cool: add 5-10 min or raise temp slightly; note the time for next batch.</li>
             </ul>
           </section>
 
@@ -136,7 +120,7 @@ const articleSchema = {
             <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
               <li>Mix wet and dry only until no dry pockets remain; stop as soon as flour is incorporated.</li>
               <li>A few small lumps are better than a smooth, overmixed batter.</li>
-              <li>Wet in one bowl, dry (sifted/whisked) in another; add dry in 1–2 additions; fold or low speed.</li>
+              <li>Wet in one bowl, dry (sifted/whisked) in another; add dry in 1-2 additions; fold or low speed.</li>
               <li>Stand mixer: lowest setting for the final step; mix only until combined.</li>
             </ul>
           </section>
@@ -149,9 +133,9 @@ const articleSchema = {
             <p class="text-gray-700">Expired leavener may not produce enough gas, so the centre doesn’t set properly and can sink.</p>
             <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200 pl-4">
               <li>Measure with a proper spoon (or scale); don’t heap. Check you’re not using tablespoon for teaspoon.</li>
-              <li>Test baking powder: 1 tsp in hot water — should fizz. No reaction = replace.</li>
-              <li>Test baking soda: drop of vinegar — should bubble.</li>
-              <li>Store in a cool, dry place; replace every 6–12 months.</li>
+              <li>Test baking powder: 1 tsp in hot water ,  should fizz. No reaction = replace.</li>
+              <li>Test baking soda: drop of vinegar ,  should bubble.</li>
+              <li>Store in a cool, dry place; replace every 6-12 months.</li>
             </ul>
           </section>
 
@@ -191,7 +175,7 @@ const articleSchema = {
               <li>Mix wet and dry just until combined; avoid overmixing after adding flour.</li>
               <li>Use fresh baking powder and baking soda; test them if you’re unsure.</li>
               <li>Don’t open the oven until the last third of the bake; then only briefly if needed.</li>
-              <li>Test doneness with a skewer (no wet batter) and optionally a thermometer (~98–99°C in the centre).</li>
+              <li>Test doneness with a skewer (no wet batter) and optionally a thermometer (~98-99°C in the centre).</li>
             </ul>
           </section>
 

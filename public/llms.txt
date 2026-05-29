@@ -1,0 +1,36 @@
+# Incr-EdibleCupCakes
+
+> Home-tested cupcake recipes and baking guides for classic, keto, vegan, nut-free, and gluten-free bakers.
+
+## Primary pages
+
+- https://incr-ediblecupcakes.com/
+- https://incr-ediblecupcakes.com/recipes
+- https://incr-ediblecupcakes.com/guides
+- https://incr-ediblecupcakes.com/about
+- https://incr-ediblecupcakes.com/contact
+- https://incr-ediblecupcakes.com/privacy
+
+## Top recipes
+
+- https://incr-ediblecupcakes.com/recipe/classic-vanilla-dream-cupcakes
+- https://incr-ediblecupcakes.com/recipe/keto-chocolate-bliss-cupcakes
+- https://incr-ediblecupcakes.com/recipe/yellow-cake-cupcakes
+- https://incr-ediblecupcakes.com/recipe/mango-coconut-sunset-cupcakes
+- https://incr-ediblecupcakes.com/recipe/chocolate-chili-firecracker-cupcakes
+
+## Top guides
+
+- https://incr-ediblecupcakes.com/guides/why-do-cupcakes-sink-after-baking
+- https://incr-ediblecupcakes.com/guides/fix-cupcake-mistakes
+- https://incr-ediblecupcakes.com/guides/how-to-make-cupcakes-moist-every-time
+- https://incr-ediblecupcakes.com/guides/egg-substitutes-for-cupcakes
+
+## Resources
+
+- https://incr-ediblecupcakes.com/cupcake-troubleshooting-checklist.txt
+- https://incr-ediblecupcakes.com/egg-substitutes-cheatsheet.txt
+
+Sitemap: https://incr-ediblecupcakes.com/sitemap.xml
+
+Contact: sarah@incr-ediblecupcakes.com

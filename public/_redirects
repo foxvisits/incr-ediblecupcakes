@@ -1,4 +1,2 @@
-# Netlify redirects file
-# Cache-Control headers are handled by _headers file
-# No redirects needed for Astro static site - Astro generates static HTML files for each page
-# When changing recipe or guide URLs, add 301 redirects here (example: /old-slug  /new-slug  301)
+# Netlify redirects
+/Chocolate%20Chili%20Firecracker%20Cupcakes.jpg  /Chocolate Chili Firecracker Cupcakes.jpg  301

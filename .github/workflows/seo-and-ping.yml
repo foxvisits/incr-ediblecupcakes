@@ -24,6 +24,8 @@ jobs:
         run: npm ci
       - name: Run SEO check
         run: npm run seo-check
+      - name: Astro check
+        run: npm run lint
 
   ping-sitemaps:
     if: github.event_name == 'push'

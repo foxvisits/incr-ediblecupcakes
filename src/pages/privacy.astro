@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Privacy Policy | Incr-EdibleCupCakes"
+  description="Privacy policy for incr-ediblecupcakes.com ,  cookies, analytics, and how we handle contact information."
+  canonical="https://incr-ediblecupcakes.com/privacy"
+>
+  <Header />
+  <main id="main-content" class="pt-24 pb-20 max-w-3xl mx-auto px-4">
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">Privacy Policy</h1>
+    <p class="text-sm text-gray-500 mb-8">Last updated: May 29, 2026</p>
+
+    <div class="prose prose-gray max-w-none space-y-6 text-gray-700">
+      <section>
+        <h2 class="text-xl font-bold text-gray-900">Who we are</h2>
+        <p>Incr-EdibleCupCakes (incr-ediblecupcakes.com) is a recipe blog operated by Sarah. Contact: <a href="mailto:sarah@incr-ediblecupcakes.com" class="text-rose-600">sarah@incr-ediblecupcakes.com</a>.</p>
+      </section>
+      <section>
+        <h2 class="text-xl font-bold text-gray-900">Information we collect</h2>
+        <p>We do not sell personal data. If you email us or use the contact form, we receive the information you send (name, email, message). Newsletter signup on this site is not connected to a mailing provider, submissions are not stored unless you email us directly.</p>
+      </section>
+      <section>
+        <h2 class="text-xl font-bold text-gray-900">Cookies & analytics</h2>
+        <p>We may use privacy-friendly analytics (e.g. Google Analytics) to understand traffic. You can block cookies in your browser. Third-party fonts load from Google Fonts.</p>
+      </section>
+      <section>
+        <h2 class="text-xl font-bold text-gray-900">Local storage</h2>
+        <p>Recipe rating and notes on recipe pages may be saved in your browser’s local storage on your device only, they are not sent to our servers.</p>
+      </section>
+      <section>
+        <h2 class="text-xl font-bold text-gray-900">Your rights</h2>
+        <p>You may request access or deletion of correspondence you sent us by emailing the address above.</p>
+      </section>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

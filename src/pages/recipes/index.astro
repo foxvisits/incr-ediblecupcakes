@@ -56,8 +56,8 @@ const schemaData = {
 ---
 
 <BaseLayout 
-  title="Complete Cupcake Recipe Collection - All Dietary Options | Incr-EdibleCupCakes"
-  description={`Browse our complete collection of ${recipes.length}+ extraordinary cupcake recipes including keto, vegan, nut-free, gluten-free, and classic options. Professional tested recipes with step-by-step instructions and beautiful photos.`}
+  title={`Cupcake Recipes (${recipes.length}) | Incr-EdibleCupCakes`}
+  description={`Browse ${recipes.length} tested cupcake recipes: classic, keto, vegan, nut-free, and gluten-free. Filter by category, difficulty, or search by name.`}
   image="/A vibrant, mouth-watering cupcake scene.png"
   canonical="https://incr-ediblecupcakes.com/recipes"
 >
@@ -95,29 +95,28 @@ const schemaData = {
           Recipe <span class="text-sunshine-300 animate-gradient-text">Collection</span>
         </h1>
         <p class="font-nunito text-xl text-pink-100 mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
-          Explore our complete library of extraordinary cupcake recipes, each crafted with love and tested to perfection. 
-          From classic favorites to innovative dietary alternatives.
+          {recipes.length} home-tested cupcake recipes with step-by-step instructions. Use search and filters below, or browse
+          <a href="/guides" class="underline text-white font-semibold">troubleshooting guides</a>.
         </p>
-        <div class="flex items-center justify-center space-x-6 text-pink-100">
-          <div class="flex items-center space-x-2">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-            </svg>
-            <span class="font-quicksand font-bold">{recipes.length}+ Recipes</span>
-          </div>
-          <div class="flex items-center space-x-2">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-            </svg>
-            <span class="font-quicksand font-bold">10K+ Favorites</span>
-          </div>
-          <div class="flex items-center space-x-2">
-            <svg class="w-6 h-6 fill-current text-sunshine-300" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
-            <span class="font-quicksand font-bold">4.9 Rating</span>
-          </div>
+        <div class="flex flex-wrap items-center justify-center gap-4 text-pink-100 text-sm">
+          <span class="font-quicksand font-bold">{recipes.length} recipes</span>
+          <span>·</span>
+          <span>{categories.length - 1} categories</span>
+          <span>·</span>
+          <span>{latestGuides.length} guides</span>
         </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-white">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="font-quicksand text-2xl font-bold text-gray-900 mb-4">How to use this collection</h2>
+        <p class="font-nunito text-gray-700 leading-relaxed">
+          Search by recipe name or ingredient. Filter by dietary category (keto, vegan, nut-free) or difficulty.
+          Each recipe page lists ingredients in US cups and spoons, bake times for standard cupcakes, and editor notes on texture.
+          New to baking? Start with <a href="/recipe/classic-vanilla-dream-cupcakes" class="text-rose-600 hover:underline">Classic Vanilla Dream</a> or read
+          <a href="/guides/fix-cupcake-mistakes" class="text-rose-600 hover:underline">10 cupcake mistakes and how to fix them</a>.
+        </p>
       </div>
     </section>
 
@@ -193,7 +192,7 @@ const schemaData = {
               style={`animation-delay: ${index * 100}ms`}
               data-recipe-id={recipe.id}
               data-recipe-title={recipe.title.toLowerCase()}
-              data-recipe-description={recipe.description.toLowerCase()}
+              data-recipe-description={(recipe.shortDescription || recipe.description).toLowerCase()}
               data-recipe-category={recipe.category}
               data-recipe-difficulty={recipe.difficulty}
               data-index={index}
@@ -381,6 +380,11 @@ const schemaData = {
     filterRecipes();
   });
 
-  // initial render
+  const params = new URLSearchParams(window.location.search);
+  const initialSearch = params.get('search') || params.get('q') || '';
+  if (initialSearch && searchInput) {
+    searchInput.value = initialSearch;
+  }
+
   filterRecipes();
 </script>

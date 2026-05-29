@@ -8,51 +8,34 @@ const schemaData = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
   "name": "Contact Incr-EdibleCupCakes",
-  "description": "Contact professional baker Sarah for recipe questions, workshops, and collaborations",
+  "description": "Contact Sarah for recipe questions and baking feedback",
   "url": "https://incr-ediblecupcakes.com/contact",
   "mainEntity": {
     "@type": "Organization",
     "name": "Incr-EdibleCupCakes",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+1-555-123-CAKE",
       "email": "sarah@incr-ediblecupcakes.com",
       "contactType": "customer service",
-      "availableLanguage": "English",
-      "hoursAvailable": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "17:00"
-      }
+      "availableLanguage": "English"
     }
   }
 };
 ---
 
 <BaseLayout 
-  title="Contact Sarah - Professional Baker | Incr-EdibleCupCakes"
-  description="Get in touch with Sarah for baking questions, recipe help, workshop information, or collaboration opportunities. Professional baker available for consultations and custom recipe development."
+  title="Contact | Incr-EdibleCupCakes"
+  description="Email Sarah for cupcake recipe questions, feedback, or collaboration ideas. Typical reply within a few business days."
   image="/Sarah.png"
   canonical="https://incr-ediblecupcakes.com/contact"
 >
+  <Fragment slot="head">
+    <meta name="keywords" content="contact baker, baking questions, recipe help, collaboration, recipe feedback" />
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  </Fragment>
   <Header />
   
   <main id="main-content" class="pt-16 lg:pt-20">
-    <Fragment slot="head">
-      <meta name="keywords" content="contact baker, baking questions, recipe help, baking workshops, collaboration, custom recipes, professional baker consultation" />
-      <meta property="og:title" content="Contact Sarah - Professional Baker | Incr-EdibleCupCakes" />
-      <meta property="og:description" content="Get in touch with Sarah for baking questions, recipe help, workshop information, or collaboration opportunities." />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://incr-ediblecupcakes.com/contact" />
-      <meta property="og:image" content="https://incr-ediblecupcakes.com/Sarah.png" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Contact Sarah - Professional Baker | Incr-EdibleCupCakes" />
-      <meta name="twitter:description" content="Get in touch with Sarah for baking questions, recipe help, workshop information, or collaboration opportunities." />
-      <meta name="twitter:image" content="https://incr-ediblecupcakes.com/Sarah.png" />
-      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-    </Fragment>
-
     {/* Hero Section */}
     <section class="relative py-20 bg-gradient-to-br from-cupcake-coral via-sunshine-400 to-cupcake-cherry overflow-hidden">
       <div class="absolute inset-0">
@@ -112,19 +95,7 @@ const schemaData = {
                   icon: 'mail',
                   title: 'Email',
                   info: 'sarah@incr-ediblecupcakes.com',
-                  description: 'Best way to reach me for detailed questions'
-                },
-                {
-                  icon: 'phone',
-                  title: 'Phone',
-                  info: '+1 (555) 123-CAKE',
-                  description: 'Available Monday-Friday, 9AM-5PM EST'
-                },
-                {
-                  icon: 'map-pin',
-                  title: 'Studio Location',
-                  info: 'Portland, Oregon',
-                  description: 'By appointment only for workshops'
+                  description: 'Best way to reach me for recipe questions'
                 },
                 {
                   icon: 'clock',

@@ -4,8 +4,6 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import RecipeCard from '../../components/RecipeCard.tsx';
 import { validatedRecipes as recipes } from '../../data/recipes';
-import OGImageGenerator from '../../components/OGImageGenerator.astro';
-
 export async function getStaticPaths() {
   const allTags = Array.from(
     new Set(
@@ -18,49 +16,42 @@ export async function getStaticPaths() {
 const { tag } = Astro.params;
 const normalized = (tag || '').toLowerCase();
 const taggedRecipes = recipes.filter((r) => r.tags?.map((t) => t.toLowerCase()).includes(normalized));
+const thinTag = taggedRecipes.length < 2;
+const tagIntro = taggedRecipes.length === 0
+  ? `No recipes are currently tagged with "${tag}". Browse the full collection or try another tag.`
+  : `Recipes tagged "${tag}" share this flavor or technique focus. ${taggedRecipes.length} recipe${taggedRecipes.length === 1 ? '' : 's'} below include ingredients, bake times, and troubleshooting tips.`;
 
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   name: `Cupcake recipes with tag: ${tag}`,
-  description: `Browse cupcake recipes tagged with ${tag}.` ,
+  description: tagIntro,
   url: `https://incr-ediblecupcakes.com/tags/${tag}`,
   mainEntity: {
     "@type": "ItemList",
     numberOfItems: taggedRecipes.length,
     itemListElement: taggedRecipes.map((recipe, index) => ({
-      "@type": "Recipe",
+      "@type": "ListItem",
       position: index + 1,
       name: recipe.title,
       url: `https://incr-ediblecupcakes.com/recipe/${recipe.slug}`,
-      image: `https://incr-ediblecupcakes.com${recipe.image}`,
-      description: recipe.shortDescription,
-      keywords: recipe.tags?.join(', ')
     }))
   }
 };
 ---
 
 <BaseLayout
-  title={`Recipes tagged "${tag}" - Incr-EdibleCupCakes`}
-  description={`Explore cupcake recipes tagged with ${tag}.`}
+  title={`${tag} Cupcake Recipes | Incr-EdibleCupCakes`}
+  description={tagIntro.slice(0, 155)}
   canonical={`https://incr-ediblecupcakes.com/tags/${tag}`}
+  robots={thinTag ? 'noindex, follow' : undefined}
 >
+  <Fragment slot="head">
+    <meta name="keywords" content={`cupcake recipes, ${tag} cupcakes, baking, tags`} />
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  </Fragment>
   <Header />
   <main id="main-content" class="pt-16 lg:pt-20">
-    <Fragment slot="head">
-      <meta name="keywords" content={`cupcake recipes, ${tag} cupcakes, baking, tags`} />
-      <meta property="og:title" content={`Recipes tagged ${tag} | Incr-EdibleCupCakes`} />
-      <meta property="og:description" content={`Explore cupcake recipes tagged with ${tag}.`} />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={`https://incr-ediblecupcakes.com/tags/${tag}`} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={`Recipes tagged ${tag} | Incr-EdibleCupCakes`} />
-      <meta name="twitter:description" content={`Explore cupcake recipes tagged with ${tag}.`} />
-      <OGImageGenerator title={`Recipes tagged ${tag}`} description={`Explore cupcake recipes tagged with ${tag}.`} />
-      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-    </Fragment>
-
     <div class="max-w-6xl mx-auto px-4">
       <div class="bg-gradient-to-r from-rose-500 to-pink-600 p-8 rounded-lg text-white mb-8">
         <a href="/tags" class="inline-flex items-center text-white hover:text-white/80 mb-4">
@@ -70,7 +61,7 @@ const schemaData = {
           Back to Tags
         </a>
         <h1 class="text-4xl md:text-5xl font-bold mb-2">#{tag}</h1>
-        <p class="text-lg opacity-90">Recipes matching the "{tag}" tag.</p>
+        <p class="text-lg opacity-90 max-w-2xl">{tagIntro}</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

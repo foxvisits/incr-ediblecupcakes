@@ -3,8 +3,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { validatedRecipes as recipes } from '../../data/recipes';
-import OGImageGenerator from '../../components/OGImageGenerator.astro';
-
 const allTags = Array.from(
   new Set(
     recipes.flatMap((r) => (r.tags ? r.tags.map((t) => t.toLowerCase()) : []))
@@ -35,24 +33,19 @@ const schemaData = {
   description="Browse cupcake recipe tags and find your next bake."
   canonical="https://incr-ediblecupcakes.com/tags"
 >
+  <Fragment slot="head">
+    <meta name="keywords" content="cupcake tags, ingredients, flavors, baking" />
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  </Fragment>
   <Header />
   <main id="main-content" class="pt-16 lg:pt-20">
-    <Fragment slot="head">
-      <meta name="keywords" content="cupcake tags, ingredients, flavors, baking" />
-      <meta property="og:title" content="Recipe Tags | Incr-EdibleCupCakes" />
-      <meta property="og:description" content="Browse cupcake recipe tags and find your next bake." />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://incr-ediblecupcakes.com/tags" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Recipe Tags | Incr-EdibleCupCakes" />
-      <meta name="twitter:description" content="Browse cupcake recipe tags and find your next bake." />
-      <OGImageGenerator title="Recipe Tags" description="Browse cupcake recipe tags and find your next bake." />
-      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-    </Fragment>
-
     <div class="max-w-6xl mx-auto px-4">
       <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Recipe Tags</h1>
-      <p class="text-lg text-gray-600 mb-10">Explore by flavors, ingredients and themes.</p>
+      <p class="text-lg text-gray-600 mb-6 max-w-3xl">
+        Tags group our {recipes.length} home-tested cupcake recipes by flavor, technique, and dietary theme.
+        Use them to jump from an ingredient you have on hand to a full recipe with tested timings and substitutions.
+      </p>
+      <p class="text-gray-600 mb-10">Only tags with two or more recipes are indexed for search; single-recipe tags remain browsable here.</p>
 
       <div class="flex flex-wrap gap-3">
         {allTags.map((t) => (

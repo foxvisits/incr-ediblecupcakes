@@ -5,6 +5,7 @@ interface Recipe {
   slug: string;
   title: string;
   description: string;
+  shortDescription?: string;
   image: string;
   category: string;
   difficulty: string;
@@ -33,27 +34,15 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
   return (
     <div className="group bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 border-2 border-cupcake-pink/20 hover:border-cupcake-coral/40">
       <div className="relative overflow-hidden">
-        <picture>
-          <source 
-            srcSet={`${recipe.image}?w=375&fm=avif&q=75 375w, ${recipe.image}?w=640&fm=avif&q=80 640w, ${recipe.image}?w=960&fm=avif&q=80 960w`}
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            type="image/avif"
-          />
-          <source 
-            srcSet={`${recipe.image}?w=375&fm=webp&q=80 375w, ${recipe.image}?w=640&fm=webp&q=85 640w, ${recipe.image}?w=960&fm=webp&q=85 960w`}
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            type="image/webp"
-          />
-          <img
-            src={`${recipe.image}?w=375&fm=jpg&q=85`}
-            alt={recipe.title}
-            className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
-            loading="lazy"
-            decoding="async"
-            srcSet={`${recipe.image}?w=375&fm=jpg&q=85 375w, ${recipe.image}?w=640&fm=jpg&q=90 640w, ${recipe.image}?w=960&fm=jpg&q=90 960w`}
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
-        </picture>
+        <img
+          src={recipe.image}
+          alt={recipe.title}
+          className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+          loading="lazy"
+          decoding="async"
+          width={400}
+          height={256}
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         
         {/* Category Badge */}
@@ -68,15 +57,6 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
           </div>
         )}
 
-        {/* Favorite Button */}
-        <button 
-          className="absolute bottom-4 right-4 w-12 h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-cupcake-coral hover:text-white transform hover:scale-110 shadow-xl"
-          aria-label={`Add ${recipe.title} to favorites`}
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-          </svg>
-        </button>
       </div>
 
       <div className="p-8">
@@ -84,7 +64,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
           {recipe.title}
         </h3>
         <p className="font-nunito text-gray-600 mb-6 line-clamp-3 leading-relaxed">
-          {recipe.description}
+          {recipe.shortDescription || recipe.description}
         </p>
 
         <div className="flex items-center justify-between text-sm text-gray-500 mb-6">

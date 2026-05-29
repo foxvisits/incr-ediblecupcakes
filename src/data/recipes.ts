@@ -91,8 +91,8 @@ export const recipes: Recipe[] = [
     id: '1',
     title: 'Classic Vanilla Dream Cupcakes',
     slug: 'classic-vanilla-dream-cupcakes',
-    description: 'Step into a world of pure vanilla bliss with these extraordinary cupcakes that redefine what classic baking can be. These aren\'t your ordinary vanilla cupcakes – they\'re a symphony of flavors and textures that will make your taste buds sing with joy. The secret begins with real Madagascar vanilla beans, their tiny black specks visible throughout the golden crumb, promising an authentic vanilla experience that artificial extracts simply cannot match. Each cupcake boasts an incredibly moist and tender texture, achieved through a carefully balanced combination of European-style butter and neutral oil that creates the perfect crumb structure. The batter is mixed with precision – just enough to combine the ingredients without developing the gluten, resulting in cupcakes so light and airy they practically melt on your tongue. What truly sets these apart is the Swiss meringue buttercream frosting, whipped to silky perfection with a glossy finish that catches the light beautifully. This isn\'t just frosting; it\'s edible silk that complements the vanilla cake with its subtle sweetness and luxurious mouthfeel. Whether you\'re celebrating a special occasion or simply indulging in life\'s sweet moments, these vanilla dream cupcakes deliver an experience that transforms ordinary days into extraordinary memories.',
-    shortDescription: 'Experience pure vanilla bliss with these extraordinary cupcakes featuring real Madagascar vanilla beans and Swiss meringue buttercream frosting.',
+    description: 'Step into a world of pure vanilla bliss with these extraordinary cupcakes that redefine what classic baking can be. These aren\'t your ordinary vanilla cupcakes - they\'re a symphony of flavors and textures that will make your taste buds sing with joy. The secret begins with real Madagascar vanilla beans, their tiny black specks visible throughout the golden crumb, promising an authentic vanilla experience that artificial extracts simply cannot match. Each cupcake boasts an incredibly moist and tender texture, achieved through a carefully balanced combination of European-style butter and neutral oil that creates the perfect crumb structure. The batter is mixed with precision - just enough to combine the ingredients without developing the gluten, resulting in cupcakes so light and airy they practically melt on your tongue. What truly sets these apart is the Swiss meringue buttercream frosting, whipped to silky perfection with a glossy finish that catches the light beautifully. This isn\'t just frosting; it\'s edible silk that complements the vanilla cake with its subtle sweetness and luxurious mouthfeel. Whether you\'re celebrating a special occasion or simply indulging in life\'s sweet moments, these vanilla dream cupcakes deliver an experience that transforms ordinary days into extraordinary memories.',
+    shortDescription: 'Classic vanilla cupcakes with Madagascar vanilla bean and Swiss meringue buttercream. Prep 25 minutes, bakes in 18 minutes.',
     image: '/Classic Vanilla Dream Cupcakes.jpg',
     category: 'classic',
     difficulty: 'Easy',
@@ -172,7 +172,7 @@ export const recipes: Recipe[] = [
       },
       {
         question: "What's the secret to extra moist vanilla cupcakes?",
-        answer: "The combination of butter and oil in this recipe creates optimal moisture. The butter provides flavor while the oil keeps them tender. Also, don't overbake – they're done when a toothpick comes out with just a few moist crumbs."
+        answer: "The combination of butter and oil in this recipe creates optimal moisture. The butter provides flavor while the oil keeps them tender. Also, don't overbake - they're done when a toothpick comes out with just a few moist crumbs."
       },
       {
         question: "How should I store these cupcakes?",
@@ -184,8 +184,8 @@ export const recipes: Recipe[] = [
     id: '16',
     title: 'Cranberry Orange Sparkle Cupcakes',
     slug: 'cranberry-orange-sparkle-cupcakes',
-    description: 'Bright, festive cupcakes that balance tart cranberry compote cores with a fragrant orange-zest buttercream. A soft vanilla–orange crumb encases a jewel-toned cranberry filling, while the frosting delivers lively citrus aromatics and a subtle sparkle finish. Perfect for winter gatherings and holiday dessert tables.',
-    shortDescription: 'Tart cranberry compote filling + bright orange zest frosting in a soft citrus crumb.',
+    description: 'Bright, festive cupcakes that balance tart cranberry compote cores with a fragrant orange-zest buttercream. A soft vanilla-orange crumb encases a jewel-toned cranberry filling, while the frosting delivers lively citrus aromatics and a subtle sparkle finish. Perfect for winter gatherings and holiday dessert tables.',
+    shortDescription: 'Holiday cupcakes with tart cranberry compote filling and orange zest buttercream on a soft citrus cake.',
     image: '/Cranberry Orange Sparkle Cupcakes.jpg',
     category: 'classic',
     difficulty: 'Medium',
@@ -215,17 +215,17 @@ export const recipes: Recipe[] = [
       'Zest of 1 large orange (for batter)',
       '1 tsp vanilla extract',
       'Cranberry compote (filling): 1½ cups fresh or frozen cranberries, ½ cup sugar, zest of ½ orange, 2 tbsp orange juice, pinch of salt',
-      'Orange zest buttercream: 1 cup unsalted butter (soft), 3–3½ cups powdered sugar, zest of 1 orange, 1–2 tbsp fresh orange juice, ½ tsp vanilla, pinch of salt',
+      'Orange zest buttercream: 1 cup unsalted butter (soft), 3-3½ cups powdered sugar, zest of 1 orange, 1-2 tbsp fresh orange juice, ½ tsp vanilla, pinch of salt',
       'Optional garnish: sanding sugar or fine edible glitter'
     ],
     instructions: [
-      'Make cranberry compote: In a small saucepan combine cranberries, sugar, orange zest, juice, and a pinch of salt. Simmer 6–8 minutes until berries burst and mixture thickens to a jammy consistency. Cool completely.',
+      'Make cranberry compote: In a small saucepan combine cranberries, sugar, orange zest, juice, and a pinch of salt. Simmer 6-8 minutes until berries burst and mixture thickens to a jammy consistency. Cool completely.',
       'Preheat oven to 350°F (175°C). Line a 12-cup muffin tin with paper liners.',
-      'Cream butter and sugar until pale and fluffy (2–3 minutes). Beat in eggs one at a time; mix in vanilla and orange zest.',
+      'Cream butter and sugar until pale and fluffy (2-3 minutes). Beat in eggs one at a time; mix in vanilla and orange zest.',
       'Whisk flour, baking powder, baking soda, and salt in a separate bowl. Add dry ingredients to the butter mixture in 2 additions, alternating with milk. Mix just until combined.',
-      'Portion batter to 2/3–3/4 full. Bake 17–19 minutes, until a toothpick shows a few moist crumbs. Cool completely.',
+      'Portion batter to 2/3-3/4 full. Bake 17-19 minutes, until a toothpick shows a few moist crumbs. Cool completely.',
       'Core each cupcake (small cone). Fill centers with cooled cranberry compote; replace a thin slice of the core as a lid.',
-      'Orange zest buttercream: Beat butter until light (2–3 minutes). Add 2 cups powdered sugar, salt, and vanilla; beat smooth. Add orange zest and juice; beat. Add remaining sugar to a smooth, pipeable consistency.',
+      'Orange zest buttercream: Beat butter until light (2-3 minutes). Add 2 cups powdered sugar, salt, and vanilla; beat smooth. Add orange zest and juice; beat. Add remaining sugar to a smooth, pipeable consistency.',
       'Pipe tall swirls; finish with a light sprinkle of sanding sugar or fine edible glitter.'
     ],
     nutritionInfo: {
@@ -250,11 +250,11 @@ export const recipes: Recipe[] = [
     pairings: 'Serve with Earl Grey, citrusy IPA, or a dry prosecco. Candied orange peel or sugared cranberries make elegant garnishes.',
     bestTime: 'Peak holiday season through winter; perfect for Thanksgiving to New Year gatherings.',
     recipeKeys: ['Classic', 'Holiday Ready', 'Cranberry Core', 'Orange Zest', 'Sparkle Finish'],
-    conclusion: 'Tart-sweet cranberry and bright orange zest meet in a polished, party-ready cupcake with a sparkling finish—festive, balanced, and highly craveable.',
+    conclusion: 'Tart-sweet cranberry and bright orange zest meet in a polished, party-ready cupcake with a sparkling finish, festive, balanced, and highly craveable.',
     faq: [
       {
         question: 'Can I use cranberry sauce instead of compote?',
-        answer: 'Homemade compote is thicker and less sweet than canned sauce. If using canned, reduce it on the stove 3–5 minutes to a jammy consistency before filling.'
+        answer: 'Homemade compote is thicker and less sweet than canned sauce. If using canned, reduce it on the stove 3-5 minutes to a jammy consistency before filling.'
       },
       {
         question: 'Will orange juice curdle the frosting?',
@@ -270,8 +270,8 @@ export const recipes: Recipe[] = [
     id: '14',
     title: 'White Chocolate Snowflake Cupcakes',
     slug: 'white-chocolate-snowflake-cupcakes',
-    description: 'Celebrate winter with these elegant White Chocolate Snowflake Cupcakes. A tender vanilla–white chocolate crumb is topped with a delicate white chocolate swirl frosting, then finished with shimmering snowflake accents. The result is a refined, snowy aesthetic perfect for seasonal gatherings and festive tablescapes.',
-    shortDescription: 'Delicate winter cupcakes with white chocolate and a graceful white chocolate swirl frosting.',
+    description: 'Celebrate winter with these elegant White Chocolate Snowflake Cupcakes. A tender vanilla-white chocolate crumb is topped with a delicate white chocolate swirl frosting, then finished with shimmering snowflake accents. The result is a refined, snowy aesthetic perfect for seasonal gatherings and festive tablescapes.',
+    shortDescription: 'Winter white chocolate cupcakes with vanilla crumb and piped white chocolate swirl frosting. Serves 12.',
     image: '/White Chocolate Snowflake Cupcakes with White chocolate swirl frosting.jpg',
     category: 'seasonal',
     difficulty: 'Medium',
@@ -300,18 +300,18 @@ export const recipes: Recipe[] = [
       '¼ tsp baking soda',
       '¼ tsp fine salt',
       '1½ tsp vanilla extract',
-      'Frosting: 170 g white chocolate (melted & cooled), 1 cup unsalted butter (soft), 3–3½ cups powdered sugar, 2–3 tbsp heavy cream, 1 tsp vanilla, pinch of salt',
+      'Frosting: 170 g white chocolate (melted & cooled), 1 cup unsalted butter (soft), 3-3½ cups powdered sugar, 2-3 tbsp heavy cream, 1 tsp vanilla, pinch of salt',
       'Decoration: sugar snowflakes, white edible glitter (optional)'
     ],
     instructions: [
       'Preheat the oven to 350°F (175°C) and line a 12-cup muffin tin with paper liners.',
-      'Cream butter and sugar until pale and fluffy, about 3–4 minutes.',
+      'Cream butter and sugar until pale and fluffy, about 3-4 minutes.',
       'Beat in the eggs one at a time, mixing well after each addition; mix in vanilla.',
       'In a separate bowl whisk together flour, baking powder, baking soda, and salt.',
-      'Add dry ingredients and milk to the butter mixture in 2–3 additions, mixing just until combined.',
+      'Add dry ingredients and milk to the butter mixture in 2-3 additions, mixing just until combined.',
       'Fold in the melted, cooled white chocolate gently until evenly incorporated.',
-      'Fill liners about ¾ full and bake 17–19 minutes, until a toothpick comes out clean. Cool completely.',
-      'Frosting: Beat soft butter until light (2–3 minutes). Add 2 cups powdered sugar, salt, and vanilla; beat until smooth.',
+      'Fill liners about ¾ full and bake 17-19 minutes, until a toothpick comes out clean. Cool completely.',
+      'Frosting: Beat soft butter until light (2-3 minutes). Add 2 cups powdered sugar, salt, and vanilla; beat until smooth.',
       'Stream in the melted, cooled white chocolate; mix briefly. Add cream and remaining sugar to reach a smooth, pipeable consistency.',
       'Transfer to a piping bag fitted with an open-star tip and pipe a delicate swirl. Decorate with snowflakes and a touch of edible glitter.'
     ],
@@ -337,14 +337,24 @@ export const recipes: Recipe[] = [
     pairings: 'Perfect with white tea, hot chocolate, or a brisk prosecco brut.',
     bestTime: 'Winter season, holiday parties, New Year’s Eve, winter baby showers.',
     recipeKeys: ['Seasonal', 'White Chocolate', 'Elegant', 'Snowflake', 'Swirl Frosting'],
-    conclusion: 'These snowflake cupcakes marry white-chocolate elegance with simplicity—ideal for winter celebrations with a refined, delicate finish.'
+    conclusion: 'These snowflake cupcakes marry white-chocolate elegance with simplicity, ideal for winter celebrations with a refined, delicate finish.',
+    faq: [
+      {
+        question: 'Why did my white chocolate frosting seize?',
+        answer: 'White chocolate must be melted and cooled to room temperature before adding to buttercream. Hot or wet chocolate will seize the frosting.'
+      },
+      {
+        question: 'Can I use white chocolate chips instead of bar chocolate?',
+        answer: 'Yes, but choose chips with cocoa butter listed first. Melt slowly and cool before folding in.'
+      }
+    ]
   },
   {
     id: '15',
     title: 'Spiced Pear Cupcakes',
     slug: 'spiced-pear-cupcakes',
-    description: 'These Spiced Pear Cupcakes capture cozy, seasonal comfort in every bite. A tender crumb enriched with smooth pear purée is warmly spiced with cinnamon and a hint of ginger, then crowned with a cinnamon-vanilla swirl frosting. Balanced, fragrant, and not overly sweet—perfect for cool evenings and festive gatherings.',
-    shortDescription: 'Tender pear purée cupcakes with warm spices and a cinnamon–vanilla swirl frosting.',
+    description: 'These Spiced Pear Cupcakes capture cozy, seasonal comfort in every bite. A tender crumb enriched with smooth pear purée is warmly spiced with cinnamon and a hint of ginger, then crowned with a cinnamon-vanilla swirl frosting. Balanced, fragrant, and not overly sweet, perfect for cool evenings and festive gatherings.',
+    shortDescription: 'Seasonal pear puree cupcakes with cinnamon and ginger spice, topped with cinnamon vanilla buttercream.',
     image: '/Spiced Pear Cupcakes with pear puree.jpg',
     category: 'seasonal',
     difficulty: 'Medium',
@@ -376,17 +386,17 @@ export const recipes: Recipe[] = [
       '1¼ tsp ground cinnamon',
       '¼ tsp ground ginger',
       '½ tsp vanilla extract',
-      'Frosting: 1 cup unsalted butter (soft), 3–3½ cups confectioners’ sugar, 2–3 tbsp cream/milk, 1 tsp vanilla, ½–1 tsp ground cinnamon, pinch of salt'
+      'Frosting: 1 cup unsalted butter (soft), 3-3½ cups confectioners’ sugar, 2-3 tbsp cream/milk, 1 tsp vanilla, ½-1 tsp ground cinnamon, pinch of salt'
     ],
     instructions: [
       'Preheat oven to 350°F (175°C). Line a 12-cup muffin pan with paper liners.',
-      'Beat butter with granulated and brown sugar until pale and fluffy (2–3 minutes).',
+      'Beat butter with granulated and brown sugar until pale and fluffy (2-3 minutes).',
       'Add eggs one at a time, mixing well; blend in vanilla.',
       'Whisk flour, baking powder, baking soda, salt, cinnamon, and ginger in a separate bowl.',
-      'Stir pear purée with milk. Add dry ingredients to the butter mixture in 2–3 additions, alternating with the pear–milk mixture. Mix just until combined.',
-      'Divide batter evenly (about ¾ full). Bake 17–19 minutes until a toothpick comes out clean. Cool completely.',
-      'Frosting: Beat soft butter 2–3 minutes. Add 2 cups sugar, salt, vanilla, and cinnamon; beat until smooth. Add cream and remaining sugar to reach a smooth, pipeable consistency.',
-      'Pipe a cinnamon–vanilla swirl (open-star tip works well). Optionally dust lightly with cinnamon.'
+      'Stir pear purée with milk. Add dry ingredients to the butter mixture in 2-3 additions, alternating with the pear-milk mixture. Mix just until combined.',
+      'Divide batter evenly (about ¾ full). Bake 17-19 minutes until a toothpick comes out clean. Cool completely.',
+      'Frosting: Beat soft butter 2-3 minutes. Add 2 cups sugar, salt, vanilla, and cinnamon; beat until smooth. Add cream and remaining sugar to reach a smooth, pipeable consistency.',
+      'Pipe a cinnamon-vanilla swirl (open-star tip works well). Optionally dust lightly with cinnamon.'
     ],
     nutritionInfo: {
       calories: 355,
@@ -398,7 +408,7 @@ export const recipes: Recipe[] = [
     },
     tips: [
       'If pears are very juicy, gently simmer purée for a few minutes to thicken before using.',
-      'Do not overmix once flour is added—this preserves a tender crumb.',
+      'Do not overmix once flour is added, this preserves a tender crumb.',
       'For stronger spice, add a pinch of allspice or cardamom to the dry mix.',
       'Use room-temperature ingredients for even mixing and better rise.'
     ],
@@ -410,14 +420,24 @@ export const recipes: Recipe[] = [
     pairings: 'Lovely with chai tea, oolong, cappuccino, or a dry cider.',
     bestTime: 'Autumn-through-winter (holiday tables, cozy evenings, seasonal gatherings).',
     recipeKeys: ['Seasonal', 'Pear Purée', 'Warm Spices', 'Moist Crumb', 'Swirl Frosting'],
-    conclusion: 'A balanced, gently spiced cupcake where pear purée brings moistness and fragrance—finished with a cinnamon–vanilla swirl for an elegant seasonal touch.'
+    conclusion: 'A balanced, gently spiced cupcake where pear purée brings moistness and fragrance, finished with a cinnamon-vanilla swirl for an elegant seasonal touch.',
+    faq: [
+      {
+        question: 'How do I make pear purée for cupcakes?',
+        answer: 'Peel ripe pears, blend until smooth, and simmer briefly if very watery to thicken. Cool before adding to batter.'
+      },
+      {
+        question: 'Can I use canned pear instead of fresh?',
+        answer: 'Drain canned pears well, blend smooth, and reduce excess liquid on the stove for best texture.'
+      }
+    ]
   },
   {
     id: '13',
     title: 'Cherry Blossom Cupcakes',
     slug: 'cherry-blossom-cupcakes',
     description: 'Delicate spring cupcakes with a light natural cherry flavor and a soft pink swirl of buttercream inspired by cherry blossoms. The crumb is tender and moist, balanced with a whisper of almond and vanilla that lifts the fruit without overpowering. Finished with a pale pink frosting and tiny blossom decoration for an elegant, seasonal look.',
-    shortDescription: 'Light cherry flavor, tender crumb, and a soft pink swirl inspired by cherry blossoms.',
+    shortDescription: 'Spring cherry cupcakes with light fruit flavor, tender crumb, and soft pink cherry buttercream.',
     image: '/Cherry-Blossom-Cupcakes.jpg',
     category: 'seasonal',
     difficulty: 'Easy',
@@ -447,18 +467,18 @@ export const recipes: Recipe[] = [
       '¼ tsp almond extract (optional, enhances cherry)',
       '½ cup whole milk, room temperature',
       '½ cup light cherry purée or high-quality cherry juice (reduced to concentrate)',
-      'For frosting: 1 cup unsalted butter, 3–3½ cups confectioners’ sugar, 2–3 tbsp cream/milk, 1–2 tsp cherry juice/purée for tint + flavor'
+      'For frosting: 1 cup unsalted butter, 3-3½ cups confectioners’ sugar, 2-3 tbsp cream/milk, 1-2 tsp cherry juice/purée for tint + flavor'
     ],
     instructions: [
       'Preheat oven to 350°F (175°C). Line a 12-cup muffin pan with cupcake liners.',
       'Whisk flour, baking powder, baking soda, and salt together and set aside.',
-      'Beat butter and sugar until very light and pale (2–3 minutes).',
+      'Beat butter and sugar until very light and pale (2-3 minutes).',
       'Add eggs one at a time, mixing to combine; add vanilla and optional almond extract.',
       'In a measuring cup, combine milk with cherry purée/juice.',
       'Add dry ingredients to the butter mixture in two additions, alternating with the cherry milk; mix just until combined.',
-      'Portion batter to 2/3–3/4 full. Bake 16–18 minutes, until a toothpick shows a few moist crumbs.',
-      'Cool 2–3 minutes in the pan, then transfer to a rack to cool completely.',
-      'Frosting: beat butter until smooth and pale, add confectioners’ sugar gradually, then cream/milk to adjust texture. Tint and flavor gently with 1–2 tsp cherry juice/purée to achieve a soft pink. Pipe a gentle swirl; decorate with small blossom accents if desired.'
+      'Portion batter to 2/3-3/4 full. Bake 16-18 minutes, until a toothpick shows a few moist crumbs.',
+      'Cool 2-3 minutes in the pan, then transfer to a rack to cool completely.',
+      'Frosting: beat butter until smooth and pale, add confectioners’ sugar gradually, then cream/milk to adjust texture. Tint and flavor gently with 1-2 tsp cherry juice/purée to achieve a soft pink. Pipe a gentle swirl; decorate with small blossom accents if desired.'
     ],
     nutritionInfo: {
       calories: 315,
@@ -481,7 +501,7 @@ export const recipes: Recipe[] = [
     pairings: 'Serve with green tea, jasmine tea, or a dry prosecco. Fresh cherries or white chocolate curls complement the look.',
     bestTime: 'Perfect for spring gatherings, baby showers, and seasonal celebrations.',
     recipeKeys: ['Seasonal', 'Pastel Aesthetic', 'Light Fruit Flavor', 'Elegant'],
-    conclusion: 'These Cherry Blossom Cupcakes balance a gentle cherry note with an elegant soft pink swirl—seasonal, refined, and crowd-pleasing.',
+    conclusion: 'These Cherry Blossom Cupcakes balance a gentle cherry note with an elegant soft pink swirl, seasonal, refined, and crowd-pleasing.',
     faq: [
       {
         question: 'How do I get cherry flavor without artificial extract?',
@@ -500,9 +520,10 @@ export const recipes: Recipe[] = [
   {
     id: '2',
     title: 'Keto Chocolate Bliss Cupcakes',
-    slug: 'keto-chocolate-bliss-cupcakes',
-    description: 'Indulge in the ultimate guilt-free chocolate experience with these revolutionary keto cupcakes that prove low-carb doesn\'t mean low-flavor. These decadent treats are a masterclass in ketogenic baking, where every ingredient has been carefully selected to deliver maximum taste while keeping carbs to an absolute minimum. The foundation is built on superfine almond flour, which creates an incredibly moist and tender crumb that rivals any traditional wheat-based cupcake. The chocolate flavor is intensely rich and complex, achieved through a combination of premium Dutch-processed cocoa powder and sugar-free dark chocolate, creating layers of chocolate notes that develop beautifully on your palate. Erythritol provides the perfect sweetness without any bitter aftertaste, while coconut oil adds richness and helps create that coveted fudgy texture. The real showstopper is the cream cheese frosting – a cloud of tangy sweetness that perfectly balances the deep chocolate flavors below. Whipped to perfection with powdered erythritol and a touch of vanilla, it\'s so smooth and luxurious that even your non-keto friends will be amazed. At just 3 net carbs per cupcake, these treats allow you to satisfy your chocolate cravings while maintaining your ketogenic lifestyle, proving that healthy choices never have to mean sacrificing the foods you love.',
-    shortDescription: 'Indulge guilt-free with these revolutionary keto chocolate cupcakes featuring rich almond flour base and luxurious cream cheese frosting at just 3 net carbs.',
+    slug: 'keto-chocolate-bliss-cupcakes',dateModified: '2026-05-29',
+    
+    description: 'Indulge in the ultimate guilt-free chocolate experience with these revolutionary keto cupcakes that prove low-carb doesn\'t mean low-flavor. These decadent treats are a masterclass in ketogenic baking, where every ingredient has been carefully selected to deliver maximum taste while keeping carbs to an absolute minimum. The foundation is built on superfine almond flour, which creates an incredibly moist and tender crumb that rivals any traditional wheat-based cupcake. The chocolate flavor is intensely rich and complex, achieved through a combination of premium Dutch-processed cocoa powder and sugar-free dark chocolate, creating layers of chocolate notes that develop beautifully on your palate. Erythritol provides the perfect sweetness without any bitter aftertaste, while coconut oil adds richness and helps create that coveted fudgy texture. The real showstopper is the cream cheese frosting - a cloud of tangy sweetness that perfectly balances the deep chocolate flavors below. Whipped to perfection with powdered erythritol and a touch of vanilla, it\'s so smooth and luxurious that even your non-keto friends will be amazed. At just 3 net carbs per cupcake, these treats allow you to satisfy your chocolate cravings while maintaining your ketogenic lifestyle, proving that healthy choices never have to mean sacrificing the foods you love.',
+    shortDescription: 'Keto chocolate cupcakes with almond flour, erythritol sweetener, and cream cheese frosting. About 3 net carbs per cupcake.',
     image: '/keto-chocolate-bliss-cupcakes.png',
     category: 'keto',
     difficulty: 'Medium',
@@ -566,7 +587,7 @@ export const recipes: Recipe[] = [
     faq: [
       {
         question: "Will these cupcakes kick me out of ketosis?",
-        answer: "No! With only 3 net carbs per cupcake, these fit perfectly into a ketogenic diet. However, portion control is still important – stick to one cupcake to maintain your macros."
+        answer: "No! With only 3 net carbs per cupcake, these fit perfectly into a ketogenic diet. However, portion control is still important - stick to one cupcake to maintain your macros."
       },
       {
         question: "Can I substitute the erythritol with other keto sweeteners?",
@@ -594,8 +615,8 @@ export const recipes: Recipe[] = [
     id: '3',
     title: 'Vegan Rainbow Surprise Cupcakes',
     slug: 'vegan-rainbow-surprise-cupcakes',
-    description: 'Prepare to be amazed by these spectacular vegan rainbow cupcakes that transform plant-based baking into pure artistry. Each cupcake is a hidden treasure, appearing perfectly normal from the outside but revealing a stunning rainbow of naturally colored layers when you take that first magical bite. This isn\'t just baking – it\'s edible art that celebrates both creativity and compassion. The rainbow effect is achieved through innovative natural coloring techniques that would make any food scientist proud. Vibrant pink comes from pureed fresh beetroot, sunny yellow from golden turmeric, ocean blue from butterfly pea flower tea, and emerald green from nutrient-rich spirulina powder. Each color layer maintains its distinct hue while contributing its own subtle flavor notes to the overall taste experience. The cupcake base is a marvel of vegan baking science, where plant-based milk creates incredible moisture, apple cider vinegar acts as a natural leavening agent, and carefully selected oils provide richness without any animal products. The result is a texture so light, fluffy, and tender that even the most devoted dairy lovers will be converted. Crowned with our signature coconut whipped cream frosting that\'s been whipped to cloud-like perfection, these cupcakes prove that vegan desserts can be every bit as indulgent and satisfying as their traditional counterparts, all while being kinder to our planet and its creatures.',
-    shortDescription: 'Be amazed by these spectacular vegan rainbow cupcakes featuring naturally colored layers and cloud-like coconut whipped cream frosting.',
+    description: 'Prepare to be amazed by these spectacular vegan rainbow cupcakes that transform plant-based baking into pure artistry. Each cupcake is a hidden treasure, appearing perfectly normal from the outside but revealing a stunning rainbow of naturally colored layers when you take that first magical bite. This isn\'t just baking - it\'s edible art that celebrates both creativity and compassion. The rainbow effect is achieved through innovative natural coloring techniques that would make any food scientist proud. Vibrant pink comes from pureed fresh beetroot, sunny yellow from golden turmeric, ocean blue from butterfly pea flower tea, and emerald green from nutrient-rich spirulina powder. Each color layer maintains its distinct hue while contributing its own subtle flavor notes to the overall taste experience. The cupcake base is a marvel of vegan baking science, where plant-based milk creates incredible moisture, apple cider vinegar acts as a natural leavening agent, and carefully selected oils provide richness without any animal products. The result is a texture so light, fluffy, and tender that even the most devoted dairy lovers will be converted. Crowned with our signature…',
+    shortDescription: 'Vegan rainbow cupcakes with naturally colored batter layers and coconut whipped cream frosting. No eggs or dairy.',
     image: '/vegan-rainbow-surprise-cupcakes.jpg',
     category: 'vegan',
     difficulty: 'Medium',
@@ -684,8 +705,8 @@ export const recipes: Recipe[] = [
     id: '4',
     title: 'Nut-Free Lemon Sunshine Cupcakes',
     slug: 'nut-free-lemon-sunshine-cupcakes',
-    description: 'Experience pure sunshine captured in cupcake form with these absolutely radiant nut-free lemon creations that will instantly brighten your day and lift your spirits. These aren\'t just cupcakes – they\'re edible rays of sunshine that deliver an explosion of fresh, zesty lemon flavor in every single bite. Crafted with meticulous attention to allergen safety, every ingredient has been carefully selected to ensure complete nut-free preparation while never compromising on the incredible taste and texture that makes these cupcakes truly special. The lemon flavor is achieved through a masterful combination of fresh lemon zest, pure lemon juice, and high-quality lemon extract, creating layers of citrus notes that dance on your palate from the first bite to the last. The cupcake itself boasts an incredibly tender, moist crumb that practically melts on your tongue, achieved through the perfect balance of butter, eggs, and buttermilk that creates a delicate texture reminiscent of the finest European sponge cakes. But the real surprise awaits inside – a hidden center of homemade lemon curd that bursts with tangy sweetness, creating a delightful contrast to the tender cake surrounding it. The crowning glory is our signature lemon buttercream frosting, piped into beautiful swirls that resemble miniature sunshine rays, each one infused with fresh lemon juice and zest for an authentic citrus experience that perfectly complements the cake below. These cupcakes are guaranteed to bring smiles to faces of all ages while providing a safe, delicious treat for those with nut allergies.',
-    shortDescription: 'Brighten your day with these radiant nut-free lemon cupcakes featuring fresh citrus flavors, lemon curd centers, and sunshine buttercream frosting.',
+    description: 'Experience pure sunshine captured in cupcake form with these absolutely radiant nut-free lemon creations that will instantly brighten your day and lift your spirits. These aren\'t just cupcakes - they\'re edible rays of sunshine that deliver an explosion of fresh, zesty lemon flavor in every single bite. Crafted with meticulous attention to allergen safety, every ingredient has been carefully selected to ensure complete nut-free preparation while never compromising on the incredible taste and texture that makes these cupcakes truly special. The lemon flavor is achieved through a masterful combination of fresh lemon zest, pure lemon juice, and high-quality lemon extract, creating layers of citrus notes that dance on your palate from the first bite to the last. The cupcake itself boasts an incredibly tender, moist crumb that practically melts on your tongue, achieved through the perfect balance of butter, eggs, and buttermilk that creates a delicate texture reminiscent of the finest European sponge cakes. But the real surprise awaits inside - a hidden center of homemade lemon curd that bursts with tangy sweetness, creating a delightful contrast to the tender…',
+    shortDescription: 'Nut-free lemon cupcakes with citrus cake, lemon curd filling, and lemon buttercream. Safe for tree nut and peanut allergies when labels are checked.',
     image: '/nut-free-lemon-sunshine-cupcakes.jpg',
     category: 'nut-free',
     difficulty: 'Easy',
@@ -773,8 +794,8 @@ export const recipes: Recipe[] = [
     id: '5',
     title: 'Red Velvet Romance Cupcakes',
     slug: 'red-velvet-romance-cupcakes',
-    description: 'Surrender to the romance and mystique of these absolutely enchanting red velvet cupcakes that embody passion, elegance, and Southern charm in every luxurious bite. These aren\'t merely cupcakes – they\'re edible love letters that tell a story of tradition, craftsmanship, and the kind of baking that touches the soul. The signature deep crimson color is achieved through the perfect balance of natural cocoa powder and food coloring, creating that iconic red velvet hue that has captivated hearts for generations. But the magic goes far beyond appearances – the texture is what truly sets these cupcakes apart, with a crumb so tender and velvety smooth it feels like silk against your palate. This extraordinary texture comes from the careful interaction between buttermilk\'s acidity and a touch of vinegar, which creates a chemical reaction that produces the most incredibly soft and moist cake imaginable. The flavor profile is a sophisticated dance of subtle chocolate notes from premium cocoa powder, balanced perfectly with the tangy richness of cultured buttermilk and the warmth of pure vanilla extract. Each element works in harmony to create a taste that\'s both familiar and mysteriously complex, leaving you wanting more with every bite. The crowning glory is our traditional cream cheese frosting – rich, tangy, and perfectly sweet – that complements the cake\'s flavors like the perfect dance partner. Whether you\'re celebrating love, marking a special occasion, or simply indulging in one of baking\'s most beloved classics, these red velvet cupcakes speak the universal language of romance through the timeless art of exceptional Southern baking.',
-    shortDescription: 'Surrender to romance with these enchanting red velvet cupcakes featuring velvety smooth texture and traditional cream cheese frosting.',
+    description: 'Surrender to the romance and mystique of these absolutely enchanting red velvet cupcakes that embody passion, elegance, and Southern charm in every luxurious bite. These aren\'t merely cupcakes - they\'re edible love letters that tell a story of tradition, craftsmanship, and the kind of baking that touches the soul. The signature deep crimson color is achieved through the perfect balance of natural cocoa powder and food coloring, creating that iconic red velvet hue that has captivated hearts for generations. But the magic goes far beyond appearances - the texture is what truly sets these cupcakes apart, with a crumb so tender and velvety smooth it feels like silk against your palate. This extraordinary texture comes from the careful interaction between buttermilk\'s acidity and a touch of vinegar, which creates a chemical reaction that produces the most incredibly soft and moist cake imaginable. The flavor profile is a sophisticated dance of subtle chocolate notes from premium cocoa powder, balanced perfectly with the tangy richness of cultured buttermilk and the warmth of pure vanilla extract. Each element works in harmony to create…',
+    shortDescription: 'Red velvet cupcakes with cocoa buttermilk crumb and classic cream cheese frosting. Medium difficulty, 45 minutes total.',
     image: '/red-velvet-romance-cupcakes.jpg',
     category: 'classic',
     difficulty: 'Medium',
@@ -830,7 +851,7 @@ export const recipes: Recipe[] = [
     pairings: 'Classic with coffee, perfect with champagne for celebrations, or alongside vanilla ice cream. Pairs beautifully with fresh strawberries.',
     bestTime: 'Perfect for Valentine\'s Day, anniversaries, romantic dinners, or any time you want to show someone you care. Best enjoyed within 4 days.',
     recipeKeys: ['Romantic', 'Southern Classic', 'Elegant', 'Special Occasion', 'Timeless'],
-    conclusion: 'These red velvet cupcakes are more than dessert – they\'re an expression of love and tradition that creates unforgettable moments.',
+    conclusion: 'These red velvet cupcakes are more than dessert - they\'re an expression of love and tradition that creates unforgettable moments.',
     faq: [
       {
         question: "What makes red velvet different from chocolate cake?",
@@ -842,7 +863,7 @@ export const recipes: Recipe[] = [
       },
       {
         question: "Why is my red velvet cake more brown than red?",
-        answer: "This usually means you need more food coloring or your cocoa powder is too dark. Use a lighter cocoa powder and don't be afraid to add enough red coloring – typically 2-3 tablespoons for vibrant color."
+        answer: "This usually means you need more food coloring or your cocoa powder is too dark. Use a lighter cocoa powder and don't be afraid to add enough red coloring - typically 2-3 tablespoons for vibrant color."
       },
       {
         question: "Can I make cream cheese frosting ahead of time?",
@@ -850,7 +871,7 @@ export const recipes: Recipe[] = [
       },
       {
         question: "What's the secret to smooth cream cheese frosting?",
-        answer: "Use room temperature cream cheese and butter – this is crucial! Beat the cream cheese alone first until smooth, then add butter, and finally powdered sugar. Cold ingredients will create lumpy frosting."
+        answer: "Use room temperature cream cheese and butter - this is crucial! Beat the cream cheese alone first until smooth, then add butter, and finally powdered sugar. Cold ingredients will create lumpy frosting."
       },
       {
         question: "Can I turn this into a layer cake instead?",
@@ -862,8 +883,8 @@ export const recipes: Recipe[] = [
     id: '6',
     title: 'Gluten-Free Almond Joy Cupcakes',
     slug: 'gluten-free-almond-joy-cupcakes',
-    description: 'Escape to a tropical paradise with every bite of these extraordinary gluten-free Almond Joy cupcakes that perfectly capture the essence of the beloved candy bar while delivering a bakery-quality experience that will transport you straight to sandy beaches and swaying palm trees. These aren\'t just gluten-free alternatives – they\'re destination desserts that happen to be made without gluten, proving that dietary restrictions never have to mean compromising on flavor, texture, or pure indulgence. The foundation is built on a carefully crafted blend of premium gluten-free flours that creates the most incredibly tender, moist, and fluffy texture you\'ve ever experienced in a gluten-free baked good. Each cupcake is infused with rich coconut flavor from multiple sources – creamy coconut milk in the batter, finely shredded coconut folded throughout, and coconut extract that intensifies the tropical notes. The result is a cake that tastes like a gentle ocean breeze and feels like silk on your tongue. But the real magic happens with the toppings that transform these cupcakes into edible works of art. A rich, glossy chocolate ganache cascades down the sides like liquid silk, made from premium dark chocolate and heavy cream that creates the perfect balance of bitter and sweet. Crowning each cupcake are perfectly toasted sliced almonds that add not just visual appeal but also a satisfying crunch that contrasts beautifully with the soft cake below. Hidden inside each cupcake is a surprise coconut cream filling that bursts with tropical flavor, creating multiple layers of taste and texture that make every bite an adventure in paradise.',
-    shortDescription: 'Escape to paradise with these gluten-free Almond Joy cupcakes featuring coconut-infused cake, chocolate ganache, and toasted almonds.',
+    description: 'Escape to a tropical paradise with every bite of these extraordinary gluten-free Almond Joy cupcakes that perfectly capture the essence of the beloved candy bar while delivering a bakery-quality experience that will transport you straight to sandy beaches and swaying palm trees. These aren\'t just gluten-free alternatives - they\'re destination desserts that happen to be made without gluten, proving that dietary restrictions never have to mean compromising on flavor, texture, or pure indulgence. The foundation is built on a carefully crafted blend of premium gluten-free flours that creates the most incredibly tender, moist, and fluffy texture you\'ve ever experienced in a gluten-free baked good. Each cupcake is infused with rich coconut flavor from multiple sources - creamy coconut milk in the batter, finely shredded coconut folded throughout, and coconut extract that intensifies the tropical notes. The result is a cake that tastes like a gentle ocean breeze and feels like silk on your tongue. But the real magic happens with the toppings that transform these cupcakes into edible works of art. A rich, glossy chocolate ganache cascades down the sides…',
+    shortDescription: 'Gluten-free Almond Joy style cupcakes with coconut cake, chocolate ganache, and toasted almonds.',
     image: '/gluten-free-almond-joy-cupcakes.jpg',
     category: 'gluten-free',
     difficulty: 'Hard',
@@ -952,7 +973,7 @@ export const recipes: Recipe[] = [
     title: 'Rosewater Pistachio Delight Cupcakes',
     slug: 'rosewater-pistachio-delight-cupcakes',
     description: 'These cupcakes are a love letter to delicate flavors and beautiful textures. The sponge is infused with a whisper of rosewater, giving it a fragrant, floral aroma that pairs perfectly with finely ground pistachios folded into the batter. Each cupcake is topped with a cloud of rose-scented buttercream and sprinkled generously with crushed pistachios for a satisfying crunch. They’re as stunning to look at as they are to eat, making them perfect for moments when you want to impress without going over the top.',
-    shortDescription: 'Soft rosewater cupcakes topped with pistachio crunch and dreamy rose buttercream.',
+    shortDescription: 'Gourmet rosewater and pistachio cupcakes with rose buttercream and chopped pistachio topping.',
     image: '/rosewater-pistachio-delight-cupcakes.jpg',
     category: 'gourmet',
     difficulty: 'Intermediate',
@@ -1009,7 +1030,7 @@ export const recipes: Recipe[] = [
     conclusion: 'These cupcakes are proof that elegance can be both simple and unforgettable.',
     faq: [
       { question: 'Can I skip the pistachios?', answer: 'Yes, you can replace them with almond flour for a slightly different flavor and texture.' },
-      { question: 'How strong is the rosewater flavor?', answer: 'It’s subtle and floral—just enough to complement the sweetness without being perfumey.' },
+      { question: 'How strong is the rosewater flavor?', answer: 'It’s subtle and floral, just enough to complement the sweetness without being perfumey.' },
       { question: 'Can I make them vegan?', answer: 'Yes, use plant-based butter, almond milk, and flax eggs for a vegan-friendly version.' },
       { question: 'How should I store them?', answer: 'Keep them in an airtight container at room temperature for 2 days or refrigerate for up to 4 days.' },
       { question: 'Will they freeze well?', answer: 'The unfrosted cupcakes freeze beautifully for up to 2 months. Thaw before frosting.' }
@@ -1018,9 +1039,10 @@ export const recipes: Recipe[] = [
   {
     id: '8',
     title: 'Mango Coconut Sunset Cupcakes',
-    slug: 'mango-coconut-sunset-cupcakes',
+    slug: 'mango-coconut-sunset-cupcakes',dateModified: '2026-05-29',
+    
     description: 'Inspired by tropical sunsets, these cupcakes combine the creamy sweetness of ripe mango with the rich, nutty flavor of coconut. The sponge is soft and moist, thanks to coconut milk, and filled with a bright mango purée. A swirl of coconut cream frosting tops each one, finished with a slice of fresh mango and a sprinkle of toasted coconut. Every bite is like a warm beach breeze.',
-    shortDescription: 'Tropical cupcakes with mango filling, coconut frosting, and toasted coconut topping.',
+    shortDescription: 'Tropical mango coconut cupcakes with mango filling, coconut frosting, and toasted coconut.',
     image: '/mango-coconut-sunset-cupcakes.png',
     category: 'tropical',
     difficulty: 'Easy',
@@ -1085,9 +1107,10 @@ export const recipes: Recipe[] = [
   {
     id: '9',
     title: 'Chocolate Chili Firecracker Cupcakes',
-    slug: 'chocolate-chili-firecracker-cupcakes',
+    slug: 'chocolate-chili-firecracker-cupcakes',dateModified: '2026-05-29',
+    
     description: 'These bold cupcakes are for adventurous taste buds. Rich dark chocolate sponge is infused with a hint of chili powder and cinnamon, creating a warm kick that lingers. The frosting is a smooth chocolate ganache with just a touch of cayenne for a fiery finish. Garnished with a shard of chili-infused chocolate, they’re a daring twist on classic chocolate.',
-    shortDescription: 'Dark chocolate cupcakes with a warm chili kick and rich ganache frosting.',
+    shortDescription: 'Spiced chocolate chili cupcakes with cocoa crumb, mild heat, and dark chocolate ganache frosting.',
     image: '/Chocolate Chili Firecracker Cupcakes.jpg',
     category: 'spiced',
     difficulty: 'Intermediate',
@@ -1154,8 +1177,8 @@ export const recipes: Recipe[] = [
     id: '10',
     title: 'Boston Cream Cupcakes',
     slug: 'boston-cream-cupcakes',
-    description: 'Experience the perfect fusion of classic American dessert traditions with these extraordinary Boston Cream cupcakes that bring the beloved Boston Cream Pie to life in individual, bite-sized perfection. These aren\'t just cupcakes – they\'re miniature masterpieces that capture the essence of one of America\'s most iconic desserts while delivering an elevated experience that honors the original while creating something entirely new. The foundation is a perfectly tender vanilla sponge cake that\'s been crafted with precision to achieve the ideal texture – moist enough to melt on your tongue yet sturdy enough to hold the luxurious filling that makes these cupcakes truly special. Each cupcake is carefully hollowed out and filled with our signature vanilla pastry cream, a silky-smooth custard that\'s been infused with real vanilla beans and cooked to perfection until it reaches that magical consistency that\'s both rich and light. The pastry cream is the heart of these cupcakes, providing a burst of creamy sweetness that perfectly complements the tender cake surrounding it. But the crowning glory is the glossy chocolate ganache that cascades down the sides like liquid silk, made from premium dark chocolate and heavy cream that creates the perfect balance of bitter and sweet. This isn\'t just any chocolate topping – it\'s a carefully crafted ganache that sets to a beautiful sheen while maintaining its luxurious mouthfeel. Every element works in perfect harmony to create a taste experience that transports you to the finest bakeries of Boston while delivering the convenience and portion control that makes cupcakes so beloved.',
-    shortDescription: 'Classic Boston Cream Pie reimagined as individual cupcakes with vanilla pastry cream filling and rich chocolate ganache topping.',
+    description: 'Experience the perfect fusion of classic American dessert traditions with these extraordinary Boston Cream cupcakes that bring the beloved Boston Cream Pie to life in individual, bite-sized perfection. These aren\'t just cupcakes - they\'re miniature masterpieces that capture the essence of one of America\'s most iconic desserts while delivering an elevated experience that honors the original while creating something entirely new. The foundation is a perfectly tender vanilla sponge cake that\'s been crafted with precision to achieve the ideal texture - moist enough to melt on your tongue yet sturdy enough to hold the luxurious filling that makes these cupcakes truly special. Each cupcake is carefully hollowed out and filled with our signature vanilla pastry cream, a silky-smooth custard that\'s been infused with real vanilla beans and cooked to perfection until it reaches that magical consistency that\'s both rich and light. The pastry cream is the heart of these cupcakes, providing a burst of creamy sweetness that perfectly complements the tender cake surrounding it. But the crowning glory is the glossy chocolate ganache that cascades down the sides like liquid…',
+    shortDescription: 'Boston cream style cupcakes with vanilla cake, pastry cream filling, and chocolate ganache top.',
     image: '/boston-cream-cupcakes.jpg',
     category: 'classic',
     difficulty: 'Hard',
@@ -1250,8 +1273,8 @@ export const recipes: Recipe[] = [
     id: '11',
     title: 'Prune Cupcakes',
     slug: 'prune-cupcakes',
-    description: 'Discover the unexpected elegance of these sophisticated prune cupcakes that transform this often-overlooked fruit into a dessert masterpiece that will surprise and delight even the most skeptical palates. These aren\'t your grandmother\'s prune desserts – they\'re a modern interpretation that celebrates the natural sweetness and complex flavor profile of prunes while creating a cupcake that\'s both refined and deeply satisfying. The magic begins with premium, plump prunes that have been carefully selected for their rich, wine-like sweetness and tender texture. These prunes are pureed to silky perfection and folded into a carefully balanced batter that\'s been enhanced with warm spices like cinnamon, nutmeg, and a hint of cardamom that perfectly complements the fruit\'s natural flavors. The result is a cupcake with an incredibly moist, tender crumb that practically melts on your tongue, while the prune puree creates a subtle depth of flavor that\'s both sweet and sophisticated. But the real revelation is the cream cheese frosting that\'s been infused with a touch of vanilla and a whisper of lemon zest, creating the perfect balance of tangy and sweet that beautifully complements the rich prune flavor. Each cupcake is finished with a delicate garnish of chopped prunes or a dusting of cinnamon, creating a visual appeal that hints at the complex flavors within. These cupcakes prove that sometimes the most unexpected ingredients can create the most memorable desserts, offering a sophisticated alternative to traditional fruit-based cupcakes while delivering incredible moisture and natural sweetness.',
-    shortDescription: 'Sophisticated cupcakes featuring pureed prunes, warm spices, and cream cheese frosting for a surprisingly elegant dessert experience.',
+    description: 'Discover the unexpected elegance of these sophisticated prune cupcakes that transform this often-overlooked fruit into a dessert masterpiece that will surprise and delight even the most skeptical palates. These aren\'t your grandmother\'s prune desserts - they\'re a modern interpretation that celebrates the natural sweetness and complex flavor profile of prunes while creating a cupcake that\'s both refined and deeply satisfying. The magic begins with premium, plump prunes that have been carefully selected for their rich, wine-like sweetness and tender texture. These prunes are pureed to silky perfection and folded into a carefully balanced batter that\'s been enhanced with warm spices like cinnamon, nutmeg, and a hint of cardamom that perfectly complements the fruit\'s natural flavors. The result is a cupcake with an incredibly moist, tender crumb that practically melts on your tongue, while the prune puree creates a subtle depth of flavor that\'s both sweet and sophisticated. But the real revelation is the cream cheese frosting that\'s been infused with a touch of vanilla and a whisper of lemon zest, creating the perfect balance of tangy and sweet that beautifully…',
+    shortDescription: 'Prune spice cupcakes with pureed prunes, warm cinnamon notes, and cream cheese frosting.',
     image: '/prune-cupcakes.jpg',
     category: 'classic',
     difficulty: 'Medium',
@@ -1348,9 +1371,10 @@ export const recipes: Recipe[] = [
   {
     id: '12',
     title: 'Yellow Cake Cupcakes',
-    slug: 'yellow-cake-cupcakes',
-    description: 'Celebrate the timeless perfection of these classic yellow cake cupcakes that capture the essence of American baking tradition in every golden, buttery bite. These aren\'t just ordinary cupcakes – they\'re a masterclass in fundamental baking techniques that showcase how simple ingredients, when combined with skill and care, can create something truly extraordinary. The foundation is a perfectly balanced yellow cake batter that\'s been crafted to achieve the ideal golden color and tender crumb that defines this beloved American classic. Each cupcake boasts an incredibly moist and fluffy texture that\'s achieved through the perfect ratio of butter, eggs, and milk, creating a crumb so light and airy it practically melts on your tongue. The secret lies in the careful creaming of butter and sugar, which incorporates just the right amount of air to create that signature lightness, while the addition of whole eggs (not just yolks) provides both structure and richness. The vanilla extract is pure and high-quality, adding that essential warmth and depth that makes yellow cake so comforting and familiar. But what truly elevates these cupcakes is the classic chocolate buttercream frosting that\'s been whipped to silky perfection, creating the perfect contrast between the golden cake and rich chocolate topping. This isn\'t just any chocolate frosting – it\'s a carefully balanced blend of cocoa powder, butter, and powdered sugar that creates the ideal sweetness level while allowing the chocolate flavor to shine through. Every element works in perfect harmony to create a taste experience that\'s both nostalgic and sophisticated, proving that sometimes the classics are classic for a very good reason.',
-    shortDescription: 'Classic American yellow cake cupcakes with rich chocolate buttercream frosting - the perfect combination of golden cake and chocolate indulgence.',
+    slug: 'yellow-cake-cupcakes',dateModified: '2026-05-29',
+    
+    description: 'Celebrate the timeless perfection of these classic yellow cake cupcakes that capture the essence of American baking tradition in every golden, buttery bite. These aren\'t just ordinary cupcakes - they\'re a masterclass in fundamental baking techniques that showcase how simple ingredients, when combined with skill and care, can create something truly extraordinary. The foundation is a perfectly balanced yellow cake batter that\'s been crafted to achieve the ideal golden color and tender crumb that defines this beloved American classic. Each cupcake boasts an incredibly moist and fluffy texture that\'s achieved through the perfect ratio of butter, eggs, and milk, creating a crumb so light and airy it practically melts on your tongue. The secret lies in the careful creaming of butter and sugar, which incorporates just the right amount of air to create that signature lightness, while the addition of whole eggs (not just yolks) provides both structure and richness. The vanilla extract is pure and high-quality, adding that essential warmth and depth that makes yellow cake so comforting and familiar. But what truly elevates these cupcakes is the classic…',
+    shortDescription: 'Yellow cake cupcakes with golden vanilla crumb and chocolate buttercream frosting. Classic American bake.',
     image: '/yellow-cake-cupcakes.jpg',
     category: 'classic',
     difficulty: 'Easy',
@@ -1364,7 +1388,7 @@ export const recipes: Recipe[] = [
     dietaryBadges: ['Vegetarian'],
     tags: ['yellow-cake', 'chocolate-buttercream', 'classic'],
     author: {
-      name: 'Baker Emma Thompson',
+      name: 'Sarah',
       url: 'https://incr-ediblecupcakes.com/about'
     },
     keywords: ['yellow cake cupcakes', 'classic cupcakes', 'chocolate buttercream cupcakes', 'american cupcakes', 'golden cake cupcakes'],
@@ -1444,8 +1468,8 @@ export const recipes: Recipe[] = [
     id: '17',
     title: 'Keto Lemon Ricotta Cupcakes',
     slug: 'keto-lemon-ricotta-cupcakes',
-    description: 'Experience the perfect harmony of bright citrus and creamy richness with these extraordinary keto lemon ricotta cupcakes that prove low-carb desserts can be both sophisticated and indulgent. These aren\'t just cupcakes – they\'re a celebration of Italian-inspired flavors transformed into a ketogenic masterpiece that will delight your taste buds while keeping you firmly in ketosis. The foundation is built on superfine almond flour, which creates an incredibly tender and moist crumb that perfectly complements the luxurious ricotta filling hidden within. The lemon flavor is achieved through a masterful combination of fresh lemon zest, pure lemon juice, and high-quality lemon extract, creating layers of citrus notes that dance on your palate from the first bite to the last. Each cupcake boasts an incredibly light and airy texture, achieved through the careful balance of ricotta cheese, eggs, and almond flour that creates a delicate structure reminiscent of the finest Italian pastries. But the real revelation is the ricotta filling – a cloud of creamy sweetness that bursts with tangy lemon flavor, creating a delightful contrast to the tender cake surrounding it. The crowning glory is our signature lemon cream cheese frosting, whipped to silky perfection with powdered erythritol and fresh lemon zest, creating a tangy-sweet topping that perfectly balances the rich ricotta flavors below. At just 3 net carbs per cupcake, these treats allow you to satisfy your dessert cravings while maintaining your ketogenic lifestyle, proving that healthy choices never have to mean sacrificing the foods you love.',
-    shortDescription: 'Bright citrus meets creamy richness in these keto lemon ricotta cupcakes featuring almond flour base, ricotta filling, and tangy lemon cream cheese frosting at just 3 net carbs.',
+    description: 'Experience the perfect harmony of bright citrus and creamy richness with these extraordinary keto lemon ricotta cupcakes that prove low-carb desserts can be both sophisticated and indulgent. These aren\'t just cupcakes - they\'re a celebration of Italian-inspired flavors transformed into a ketogenic masterpiece that will delight your taste buds while keeping you firmly in ketosis. The foundation is built on superfine almond flour, which creates an incredibly tender and moist crumb that perfectly complements the luxurious ricotta filling hidden within. The lemon flavor is achieved through a masterful combination of fresh lemon zest, pure lemon juice, and high-quality lemon extract, creating layers of citrus notes that dance on your palate from the first bite to the last. Each cupcake boasts an incredibly light and airy texture, achieved through the careful balance of ricotta cheese, eggs, and almond flour that creates a delicate structure reminiscent of the finest Italian pastries. But the real revelation is the ricotta filling - a cloud of creamy sweetness that bursts with tangy lemon flavor, creating a delightful contrast to the tender cake surrounding it. The…',
+    shortDescription: 'Keto lemon ricotta cupcakes with almond flour, lemon zest, ricotta filling, and cream cheese frosting. About 3 net carbs each.',
     image: '/keto-lemon-ricotta-cupcakes.jpg',
     category: 'keto',
     difficulty: 'Medium',
@@ -1499,8 +1523,8 @@ export const recipes: Recipe[] = [
       sugar: 2
     },
     tips: [
-      'Use room temperature ingredients for best results – cold ingredients can cause the batter to separate',
-      'Don\'t overmix the batter after adding flour – this can make cupcakes dense',
+      'Use room temperature ingredients for best results - cold ingredients can cause the batter to separate',
+      'Don\'t overmix the batter after adding flour - this can make cupcakes dense',
       'Let coconut oil cool slightly before adding to eggs to prevent cooking them',
       'Chill the ricotta filling before using for easier handling',
       'Store cupcakes in the refrigerator due to cream cheese frosting and ricotta filling'
@@ -1547,8 +1571,8 @@ export const recipes: Recipe[] = [
     id: '18',
     title: 'Keto Chocolate Truffle Cupcakes',
     slug: 'keto-chocolate-truffle-cupcakes',
-    description: 'Indulge in pure chocolate decadence with these extraordinary keto chocolate truffle cupcakes that redefine what low-carb desserts can be. These aren\'t just cupcakes – they\'re edible luxury that proves ketogenic baking can be every bit as indulgent and sophisticated as traditional desserts. The foundation is built on premium superfine almond flour, which creates an incredibly moist and tender crumb that serves as the perfect canvas for the rich chocolate flavors that follow. The chocolate intensity is achieved through a masterful combination of Dutch-processed cocoa powder and sugar-free dark chocolate, creating layers of deep, complex chocolate notes that develop beautifully on your palate. Each cupcake boasts an incredibly fudgy texture, achieved through the careful balance of almond flour, eggs, and coconut oil that creates a dense, truffle-like consistency that melts on your tongue. But the real showstopper is the luxurious chocolate ganache frosting – a silky-smooth blend of sugar-free dark chocolate and heavy cream that cascades down the sides like liquid silk, creating the perfect balance of bitter and sweet. This isn\'t just any chocolate frosting – it\'s a carefully crafted ganache that sets to a beautiful sheen while maintaining its luxurious mouthfeel. Hidden within each cupcake is a surprise center of rich chocolate truffle filling, creating multiple layers of chocolate intensity that make every bite an adventure in decadence. At just 4 net carbs per cupcake, these treats allow you to satisfy your deepest chocolate cravings while maintaining your ketogenic lifestyle, proving that healthy choices never have to mean sacrificing the foods you love.',
-    shortDescription: 'Pure chocolate decadence in these keto chocolate truffle cupcakes featuring fudgy almond flour base, rich chocolate ganache frosting, and truffle centers at just 4 net carbs.',
+    description: 'Indulge in pure chocolate decadence with these extraordinary keto chocolate truffle cupcakes that redefine what low-carb desserts can be. These aren\'t just cupcakes - they\'re edible luxury that proves ketogenic baking can be every bit as indulgent and sophisticated as traditional desserts. The foundation is built on premium superfine almond flour, which creates an incredibly moist and tender crumb that serves as the perfect canvas for the rich chocolate flavors that follow. The chocolate intensity is achieved through a masterful combination of Dutch-processed cocoa powder and sugar-free dark chocolate, creating layers of deep, complex chocolate notes that develop beautifully on your palate. Each cupcake boasts an incredibly fudgy texture, achieved through the careful balance of almond flour, eggs, and coconut oil that creates a dense, truffle-like consistency that melts on your tongue. But the real showstopper is the luxurious chocolate ganache frosting - a silky-smooth blend of sugar-free dark chocolate and heavy cream that cascades down the sides like liquid silk, creating the perfect balance of bitter and sweet. This isn\'t just any chocolate frosting - it\'s a carefully crafted…',
+    shortDescription: 'Keto chocolate truffle cupcakes with fudgy almond flour crumb, ganache frosting, and truffle center. About 4 net carbs each.',
     image: '/keto-chocolate-truffle-cupcakes.jpg',
     category: 'keto',
     difficulty: 'Medium',
@@ -1604,9 +1628,9 @@ export const recipes: Recipe[] = [
     tips: [
       'Use high-quality sugar-free dark chocolate (70% cacao or higher) for best flavor',
       'Let melted chocolate cool slightly before adding to batter to prevent cooking the eggs',
-      'Don\'t overbake – keto cupcakes continue cooking while cooling',
+      'Don\'t overbake - keto cupcakes continue cooking while cooling',
       'Chill the truffle filling thoroughly before using for easier handling',
-      'Let ganache cool to room temperature before frosting – it should be spreadable but not runny',
+      'Let ganache cool to room temperature before frosting - it should be spreadable but not runny',
       'Store cupcakes in the refrigerator due to ganache and truffle filling'
     ],
     variations: [

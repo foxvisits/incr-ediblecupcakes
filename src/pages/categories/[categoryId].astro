@@ -3,197 +3,147 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import RecipeCard from '../../components/RecipeCard.tsx';
-import { validatedRecipes as recipes, convertToISODuration } from '../../data/recipes';
+import { validatedRecipes as recipes } from '../../data/recipes';
+import { categoryExtraContent } from '../../data/categoryContent';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 
-export async function getStaticPaths() {
-  const categoryInfo = {
-    classic: { name: 'Classic Cupcakes', description: 'Timeless recipes that have been perfected over generations. These are the cupcakes that bring back childhood memories and create new ones.', color: 'from-blue-500 to-indigo-600', icon: '🧁' },
-    keto: { name: 'Keto Cupcakes', description: 'Low-carb, high-fat cupcakes that dont compromise on taste. Perfect for maintaining your ketogenic lifestyle while satisfying your sweet tooth.', color: 'from-green-500 to-emerald-600', icon: '🥑' },
-    vegan: { name: 'Vegan Cupcakes', description: 'Plant-based cupcakes that are kind to animals and the environment. Proving that vegan baking can be just as delicious and indulgent.', color: 'from-emerald-500 to-teal-600', icon: '🌱' },
-    'nut-free': { name: 'Nut-Free Cupcakes', description: 'Safe and delicious cupcakes for those with nut allergies. Every recipe is carefully crafted to avoid cross-contamination while maximizing flavor.', color: 'from-amber-500 to-orange-600', icon: '🚫' },
-    'gluten-free': { name: 'Gluten-Free Cupcakes', description: 'Cupcakes made without gluten but full of flavor and texture. Perfect for those with celiac disease or gluten sensitivity.', color: 'from-purple-500 to-violet-600', icon: '🌾' },
-    gourmet: { name: 'Gourmet Cupcakes', description: 'Elegant, elevated flavors and techniques for a true wow-factor presentation.', color: 'from-pink-600 to-rose-600', icon: '🍒' },
-    tropical: { name: 'Tropical Cupcakes', description: 'Sun-kissed flavors: mango, coconut, pineapple, and holiday vibes in every bite.', color: 'from-amber-500 to-yellow-500', icon: '🌴' },
-  spiced: { name: 'Spiced Cupcakes', description: 'Warm spices with character: cinnamon, chili, cardamom, and more for cozy depth.', color: 'from-orange-600 to-red-600', icon: '🌶️' },
-  seasonal: { name: 'Seasonal Cupcakes', description: 'Flavors inspired by the season: fresh fruit, pastels and festive looks.', color: 'from-rose-500 to-pink-600', icon: '🌸' }
-  };
+const categoryInfo: Record<string, { name: string; description: string; color: string; icon: string }> = {
+  classic: { name: 'Classic Cupcakes', description: 'Timeless recipes perfected for home bakers.', color: 'from-blue-500 to-indigo-600', icon: '🧁' },
+  keto: { name: 'Keto Cupcakes', description: 'Low-carb cupcakes that do not compromise on taste.', color: 'from-green-500 to-emerald-600', icon: '🥑' },
+  vegan: { name: 'Vegan Cupcakes', description: 'Plant-based cupcakes that are kind and indulgent.', color: 'from-emerald-500 to-teal-600', icon: '🌱' },
+  'nut-free': { name: 'Nut-Free Cupcakes', description: 'Safe, flavorful cupcakes for nut allergies.', color: 'from-amber-500 to-orange-600', icon: '🚫' },
+  'gluten-free': { name: 'Gluten-Free Cupcakes', description: 'Full flavor without gluten.', color: 'from-purple-500 to-violet-600', icon: '🌾' },
+  gourmet: { name: 'Gourmet Cupcakes', description: 'Elevated flavors and presentation.', color: 'from-pink-600 to-rose-600', icon: '🍒' },
+  tropical: { name: 'Tropical Cupcakes', description: 'Mango, coconut, and sun-kissed flavors.', color: 'from-amber-500 to-yellow-500', icon: '🌴' },
+  spiced: { name: 'Spiced Cupcakes', description: 'Warm spices and bold character.', color: 'from-orange-600 to-red-600', icon: '🌶️' },
+  seasonal: { name: 'Seasonal Cupcakes', description: 'Flavors inspired by the season.', color: 'from-rose-500 to-pink-600', icon: '🌸' },
+};
 
-  return Object.keys(categoryInfo).map((categoryId) => ({
+export function getStaticPaths() {
+  return Object.keys(categoryExtraContent).map((categoryId) => ({
     params: { categoryId },
-    props: { categoryId }
   }));
 }
 
 const { categoryId } = Astro.params;
-
-const categoryInfo = {
-  classic: { name: 'Classic Cupcakes', description: 'Timeless recipes that have been perfected over generations. These are the cupcakes that bring back childhood memories and create new ones.', color: 'from-blue-500 to-indigo-600', icon: '🧁' },
-  keto: { name: 'Keto Cupcakes', description: 'Low-carb, high-fat cupcakes that dont compromise on taste. Perfect for maintaining your ketogenic lifestyle while satisfying your sweet tooth.', color: 'from-green-500 to-emerald-600', icon: '🥑' },
-  vegan: { name: 'Vegan Cupcakes', description: 'Plant-based cupcakes that are kind to animals and the environment. Proving that vegan baking can be just as delicious and indulgent.', color: 'from-emerald-500 to-teal-600', icon: '🌱' },
-  'nut-free': { name: 'Nut-Free Cupcakes', description: 'Safe and delicious cupcakes for those with nut allergies. Every recipe is carefully crafted to avoid cross-contamination while maximizing flavor.', color: 'from-amber-500 to-orange-600', icon: '🚫' },
-  'gluten-free': { name: 'Gluten-Free Cupcakes', description: 'Cupcakes made without gluten but full of flavor and texture. Perfect for those with celiac disease or gluten sensitivity.', color: 'from-purple-500 to-violet-600', icon: '🌾' },
-  gourmet: { name: 'Gourmet Cupcakes', description: 'Elegant, elevated flavors and techniques for a true wow-factor presentation.', color: 'from-pink-600 to-rose-600', icon: '🍒' },
-  tropical: { name: 'Tropical Cupcakes', description: 'Sun-kissed flavors: mango, coconut, pineapple, and holiday vibes in every bite.', color: 'from-amber-500 to-yellow-500', icon: '🌴' },
-  spiced: { name: 'Spiced Cupcakes', description: 'Warm spices with character: cinnamon, chili, cardamom, and more for cozy depth.', color: 'from-orange-600 to-red-600', icon: '🌶️' },
-  seasonal: { name: 'Seasonal Cupcakes', description: 'Flavors inspired by the season: fresh fruit, pastels and festive looks.', color: 'from-rose-500 to-pink-600', icon: '🌸' }
-};
-
-const currentCategory = categoryId ? categoryInfo[categoryId as keyof typeof categoryInfo] : null;
-const categoryRecipes = categoryId ? recipes.filter(recipe => recipe.category === categoryId) : [];
-const categoryOgImage = categoryRecipes.length > 0
-  ? categoryRecipes[0].image
-  : '/A vibrant, mouth-watering cupcake scene.png';
+const currentCategory = categoryId ? categoryInfo[categoryId] : null;
+const categoryRecipes = categoryId ? recipes.filter((recipe) => recipe.category === categoryId) : [];
+const extra = categoryId ? categoryExtraContent[categoryId] : null;
+const categoryOgImage = categoryRecipes.length > 0 ? categoryRecipes[0].image : '/A vibrant, mouth-watering cupcake scene.png';
 
 const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": currentCategory ? currentCategory.name : "Cupcake Categories",
-  "description": currentCategory ? currentCategory.description : "Explore our cupcake categories",
-  "url": `https://incr-ediblecupcakes.com/categories/${categoryId}`,
-  "mainEntity": {
-    "@type": "ItemList",
-    "numberOfItems": categoryRecipes.length,
-    "itemListElement": categoryRecipes.map((recipe, index) => ({
-      "@type": "Recipe",
-      "position": index + 1,
-      "name": recipe.title,
-      "url": `https://incr-ediblecupcakes.com/recipe/${recipe.slug}`,
-      "image": `https://incr-ediblecupcakes.com${recipe.image}`,
-      "description": recipe.shortDescription,
-      "recipeCategory": recipe.category,
-      "recipeCuisine": recipe.cuisine,
-      "difficulty": recipe.difficulty,
-      "prepTime": convertToISODuration(recipe.prepTime),
-      "cookTime": convertToISODuration(recipe.cookTime),
-      "totalTime": convertToISODuration(recipe.totalTime),
-      "recipeYield": recipe.servings,
-      "recipeIngredient": recipe.ingredients,
-      "recipeInstructions": recipe.instructions.map((instruction, stepIndex) => ({
-        "@type": "HowToStep",
-        "position": stepIndex + 1,
-        "text": instruction,
-        "image": `https://incr-ediblecupcakes.com${recipe.image}`
-      })),
-      "author": recipe.author || {
-        "@type": "Organization",
-        "name": "Incr-EdibleCupCakes",
-        "url": "https://incr-ediblecupcakes.com"
-      },
-      "keywords": recipe.keywords?.join(', ') || `${recipe.category} cupcakes, ${recipe.difficulty.toLowerCase()} recipes, homemade cupcakes`,
-      "nutrition": recipe.nutritionInfo ? {
-        "@type": "NutritionInformation",
-        "calories": `${recipe.nutritionInfo.calories} calories`,
-        "carbohydrateContent": `${recipe.nutritionInfo.carbs}g`,
-        "proteinContent": `${recipe.nutritionInfo.protein}g`,
-        "fatContent": `${recipe.nutritionInfo.fat}g`,
-        "fiberContent": `${recipe.nutritionInfo.fiber}g`,
-        "sugarContent": `${recipe.nutritionInfo.sugar}g`
-      } : undefined
-    }))
-  }
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: currentCategory?.name ?? 'Cupcake Categories',
+  description: extra?.intro ?? currentCategory?.description,
+  url: `https://incr-ediblecupcakes.com/categories/${categoryId}`,
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: categoryRecipes.length,
+    itemListElement: categoryRecipes.map((recipe, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: recipe.title,
+      url: `https://incr-ediblecupcakes.com/recipe/${recipe.slug}`,
+    })),
+  },
 };
+
+const faqSchema = extra?.faq?.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: extra.faq.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      })),
+    }
+  : null;
 ---
 
 <BaseLayout
-  title={`${currentCategory?.name} - Incr-EdibleCupCakes`}
-  description={`${currentCategory?.description} Browse our collection of ${currentCategory?.name.toLowerCase()} recipes.`}
+  title={`${currentCategory?.name} | Incr-EdibleCupCakes`}
+  description={extra?.intro?.slice(0, 155) ?? currentCategory?.description}
   image={categoryOgImage}
   canonical={`https://incr-ediblecupcakes.com/categories/${categoryId}`}
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  </Fragment>
   <Header />
   <main id="main-content" class="pt-16 lg:pt-20 pb-20">
     <div class="max-w-6xl mx-auto px-4">
       <Breadcrumbs items={[
         { name: 'Home', url: '/' },
         { name: 'Categories', url: '/categories' },
-        { name: currentCategory?.name || 'Category' }
+        { name: currentCategory?.name || 'Category' },
       ]} />
     </div>
-    <Fragment slot="head">
-      <meta name="keywords" content={`${categoryId} cupcakes, ${currentCategory?.name.toLowerCase()}, dietary cupcakes, baking recipes, homemade cupcakes`} />
-      <meta property="og:title" content={`${currentCategory?.name} | Incr-EdibleCupCakes`} />
-      <meta property="og:description" content={`${currentCategory?.description} Browse our collection of ${currentCategory?.name.toLowerCase()} recipes.`} />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={`https://incr-ediblecupcakes.com/categories/${categoryId}`} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={`${currentCategory?.name} | Incr-EdibleCupCakes`} />
-      <meta name="twitter:description" content={`${currentCategory?.description} Browse our collection of ${currentCategory?.name.toLowerCase()} recipes.`} />
-      <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-    </Fragment>
 
-    {/* Category Header */}
-    <div class={`bg-gradient-to-r ${currentCategory?.color} p-8 md:p-12 rounded-lg text-white mb-8`}>
-      <div class="max-w-6xl mx-auto">
-        <a
-          href="/categories"
-          class="inline-flex items-center text-white hover:text-white/80 mb-4"
-        >
-          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
-          </svg>
-          Back to Categories
-        </a>
-        <h1 class="text-4xl md:text-5xl font-bold mb-4 flex items-center">
-          {currentCategory?.icon} {currentCategory?.name}
-        </h1>
-        <p class="text-lg md:text-xl opacity-90 max-w-3xl">
-          {currentCategory?.description}
-        </p>
-      </div>
+    <div class={`bg-gradient-to-r ${currentCategory?.color} p-8 md:p-12 rounded-lg text-white mb-8 max-w-6xl mx-auto`}>
+      <a href="/categories" class="inline-flex items-center text-white hover:text-white/80 mb-4">
+        ← Back to Categories
+      </a>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{currentCategory?.icon} {currentCategory?.name}</h1>
+      <p class="text-lg md:text-xl opacity-90 max-w-3xl">{currentCategory?.description}</p>
     </div>
 
-    {/* Recipe Grid */}
+    <article class="max-w-6xl mx-auto px-4 mb-10 prose prose-lg max-w-none">
+      {extra && <p class="text-gray-700 leading-relaxed">{extra.intro}</p>}
+      {categoryId === 'keto' && categoryRecipes.length > 0 && (
+        <div class="overflow-x-auto mt-6 not-prose">
+          <table class="w-full text-sm text-left border border-gray-200 rounded-lg">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-4 py-2 font-semibold">Recipe</th>
+                <th class="px-4 py-2 font-semibold">Difficulty</th>
+                <th class="px-4 py-2 font-semibold">Prep</th>
+              </tr>
+            </thead>
+            <tbody>
+              {categoryRecipes.map((r) => (
+                <tr class="border-t border-gray-100">
+                  <td class="px-4 py-2"><a href={`/recipe/${r.slug}`} class="text-rose-600 hover:underline">{r.title}</a></td>
+                  <td class="px-4 py-2">{r.difficulty}</td>
+                  <td class="px-4 py-2">{r.prepTime}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+      {categoryId === 'nut-free' && (
+        <p class="mt-4 text-sm text-amber-800 bg-amber-50 border border-amber-100 rounded-lg px-4 py-3">
+          See also: <a href="/guides/egg-substitutes-for-cupcakes" class="text-rose-600 hover:underline">egg substitutes guide</a> and
+          <a href="/substitutes/egg" class="text-rose-600 hover:underline ml-1">egg swap cheatsheet</a>.
+        </p>
+      )}
+    </article>
+
+    {extra?.faq && extra.faq.length > 0 && (
+      <section class="max-w-6xl mx-auto px-4 mb-10">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Common questions</h2>
+        <div class="space-y-4">
+          {extra.faq.map((f) => (
+            <details class="bg-white border border-gray-200 rounded-xl p-4">
+              <summary class="font-semibold text-gray-900 cursor-pointer">{f.question}</summary>
+              <p class="mt-2 text-gray-700 text-sm">{f.answer}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
+
     <div class="max-w-6xl mx-auto px-4">
-      <div id="category-recipe-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {categoryRecipes.map((recipe, index) => (
-          <div data-index={index}>
-            <RecipeCard recipe={recipe} client:load />
-          </div>
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">{categoryRecipes.length} recipes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {categoryRecipes.map((recipe) => (
+          <RecipeCard recipe={recipe} client:load />
         ))}
       </div>
-      <div id="category-pagination" class="mt-10 flex justify-center items-center gap-2"></div>
     </div>
   </main>
   <Footer />
 </BaseLayout>
-
-<script>
-  const grid = document.getElementById('category-recipe-grid');
-  const pagination = document.getElementById('category-pagination');
-  const pageSize = 12;
-  let currentPage = 1;
-
-  function render() {
-    const cards = Array.from(grid.querySelectorAll('[data-index]'));
-    const total = cards.length;
-    const totalPages = Math.max(1, Math.ceil(total / pageSize));
-    if (currentPage > totalPages) currentPage = 1;
-    const start = (currentPage - 1) * pageSize;
-    const end = start + pageSize;
-    cards.forEach((c, i) => { c.style.display = (i >= start && i < end) ? 'block' : 'none'; });
-
-    pagination.innerHTML = '';
-    if (totalPages <= 1) return;
-    const prev = document.createElement('button');
-    prev.textContent = 'Prev';
-    prev.className = 'px-3 py-2 rounded bg-white border hover:bg-gray-50';
-    prev.disabled = currentPage === 1;
-    prev.onclick = () => { currentPage = Math.max(1, currentPage - 1); render(); };
-    pagination.appendChild(prev);
-
-    const info = document.createElement('span');
-    info.className = 'px-3 text-gray-600';
-    info.textContent = `Page ${currentPage} of ${totalPages}`;
-    pagination.appendChild(info);
-
-    const next = document.createElement('button');
-    next.textContent = 'Next';
-    next.className = 'px-3 py-2 rounded bg-white border hover:bg-gray-50';
-    next.disabled = currentPage === totalPages;
-    next.onclick = () => { currentPage = Math.min(totalPages, currentPage + 1); render(); };
-    pagination.appendChild(next);
-  }
-
-  render();
-</script>
