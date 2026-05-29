@@ -20,6 +20,26 @@ import {
   ROOT,
 } from './lib/paths.mjs';
 
+function skipIfAlreadyPublished(draft, file, scheduledPath, liveDir, archiveDir, label) {
+  const slug = draft.slug;
+  if (!slug) return false;
+
+  const livePath = path.join(liveDir, `${slug}.json`);
+  const archivePath = path.join(archiveDir, file);
+  const alreadyLive = fs.existsSync(livePath);
+  const alreadyArchived = fs.existsSync(archivePath);
+
+  if (!alreadyLive && !alreadyArchived) return false;
+
+  if (alreadyLive && !alreadyArchived) {
+    writeJson(archivePath, draft);
+  }
+
+  fs.unlinkSync(scheduledPath);
+  console.log(`⏭️  Skipped ${label} (already published): ${slug}`);
+  return true;
+}
+
 function copyContentImages(draft) {
   const files = new Set();
   if (draft.images?.length) {
@@ -53,6 +73,11 @@ export async function cmdPublishDue() {
   for (const file of listJsonFiles(SCHEDULED)) {
     const scheduledPath = path.join(SCHEDULED, file);
     const draft = readJson(scheduledPath);
+
+    if (skipIfAlreadyPublished(draft, file, scheduledPath, GENERATED_RECIPES, PUBLISHED_ARCHIVE, 'recipe')) {
+      continue;
+    }
+
     const publishAt = new Date(draft.publishAt);
 
     if (Number.isNaN(publishAt.getTime()) || publishAt > now) continue;
@@ -80,6 +105,11 @@ export async function cmdPublishDue() {
   for (const file of listJsonFiles(GUIDE_SCHEDULED)) {
     const scheduledPath = path.join(GUIDE_SCHEDULED, file);
     const draft = readJson(scheduledPath);
+
+    if (skipIfAlreadyPublished(draft, file, scheduledPath, GENERATED_GUIDES, GUIDE_PUBLISHED, 'guide')) {
+      continue;
+    }
+
     const publishAt = new Date(draft.publishAt);
 
     if (Number.isNaN(publishAt.getTime()) || publishAt > now) continue;
