@@ -5,6 +5,14 @@ import path from 'path';
 
 const root = process.cwd();
 
+const REQUIRED_LLMS_PATHS = [
+  '/guides/natural-food-coloring-for-frosting',
+  '/guides/cupcake-vs-muffin-whats-the-real-difference',
+  '/categories',
+  '/substitutes/egg',
+  '/baking-times/standard',
+];
+
 const checkSEO = () => {
   console.log('🔍 SEO Health Check Starting...\n');
 
@@ -20,6 +28,9 @@ const checkSEO = () => {
     }
     if (!fs.readFileSync(sitemapPath, 'utf8').includes('/privacy')) {
       console.log('⚠️  Sitemap missing /privacy - run npm run update-sitemap');
+    }
+    if (fs.readFileSync(sitemapPath, 'utf8').includes('mouth-watering')) {
+      console.log('⚠️  Sitemap still references legacy hero image filename');
     }
   } else {
     console.log('❌ Sitemap not found!');
@@ -44,9 +55,40 @@ const checkSEO = () => {
 
   const llmsPath = path.join(root, 'public', 'llms.txt');
   if (fs.existsSync(llmsPath)) {
+    const llms = fs.readFileSync(llmsPath, 'utf8');
     console.log('✅ llms.txt present for AI crawlers');
+    for (const requiredPath of REQUIRED_LLMS_PATHS) {
+      if (!llms.includes(requiredPath)) {
+        console.log(`⚠️  llms.txt missing ${requiredPath}`);
+      }
+    }
   } else {
     console.log('⚠️  llms.txt missing');
+  }
+
+  const headersPath = path.join(root, 'public', '_headers');
+  if (fs.existsSync(headersPath)) {
+    const headers = fs.readFileSync(headersPath, 'utf8');
+    if (headers.includes('Strict-Transport-Security')) {
+      console.log('✅ HSTS header configured');
+    } else {
+      console.log('⚠️  HSTS header missing in _headers');
+    }
+    if (headers.includes('Content-Security-Policy:') && !headers.includes('Report-Only')) {
+      console.log('✅ Enforced CSP configured');
+    } else {
+      console.log('⚠️  CSP not enforced in _headers');
+    }
+  }
+
+  const redirectsPath = path.join(root, 'public', '_redirects');
+  if (fs.existsSync(redirectsPath)) {
+    const redirects = fs.readFileSync(redirectsPath, 'utf8');
+    if (redirects.includes('/hero-cupcake-scene.png')) {
+      console.log('✅ Canonical image redirects present');
+    } else {
+      console.log('⚠️  Missing canonical image redirects');
+    }
   }
 
   const layoutPath = path.join(root, 'src', 'layouts', 'BaseLayout.astro');
@@ -57,6 +99,19 @@ const checkSEO = () => {
     } else {
       console.log('❌ BaseLayout missing <slot name="head" />');
     }
+    if (layout.includes('GoogleAnalytics')) {
+      console.log('✅ Google Analytics component wired in BaseLayout');
+    }
+  }
+
+  const recipePagePath = path.join(root, 'src', 'pages', 'recipe', '[slug].astro');
+  if (fs.existsSync(recipePagePath)) {
+    const recipePage = fs.readFileSync(recipePagePath, 'utf8');
+    if (!recipePage.includes('"difficulty":')) {
+      console.log('✅ Recipe schema excludes invalid difficulty property');
+    } else {
+      console.log('⚠️  Recipe schema still includes invalid difficulty property');
+    }
   }
 
   const privacyPath = path.join(root, 'src', 'pages', 'privacy.astro');
@@ -66,8 +121,14 @@ const checkSEO = () => {
     console.log('⚠️  privacy.astro missing');
   }
 
+  const homeFaqPath = path.join(root, 'src', 'data', 'homeFaq.ts');
+  if (fs.existsSync(homeFaqPath)) {
+    console.log('✅ Homepage FAQ data present');
+  }
+
   console.log('\n🎯 SEO Health Check Complete!');
   console.log('\n📋 After deploy: docs/GSC_REINDEX_QUEUE.md');
+  console.log('📋 Set PUBLIC_GA_MEASUREMENT_ID in Netlify to override default GA4 ID');
 };
 
 checkSEO();

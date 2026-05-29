@@ -4,39 +4,58 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import RecipeCard from '../../components/RecipeCard.tsx';
 import { validatedRecipes as recipes } from '../../data/recipes';
+import {
+  getTagIntro,
+  getTagFaq,
+  isCategoryDuplicateTag,
+} from '../../data/tagContent';
+
 export async function getStaticPaths() {
   const allTags = Array.from(
-    new Set(
-      recipes.flatMap((r) => (r.tags ? r.tags.map((t) => t.toLowerCase()) : []))
-    )
+    new Set(recipes.flatMap((r) => (r.tags ? r.tags.map((t) => t.toLowerCase()) : [])))
   );
   return allTags.map((tag) => ({ params: { tag }, props: { tag } }));
 }
 
 const { tag } = Astro.params;
 const normalized = (tag || '').toLowerCase();
-const taggedRecipes = recipes.filter((r) => r.tags?.map((t) => t.toLowerCase()).includes(normalized));
+const taggedRecipes = recipes.filter((r) =>
+  r.tags?.map((t) => t.toLowerCase()).includes(normalized)
+);
 const thinTag = taggedRecipes.length < 2;
-const tagIntro = taggedRecipes.length === 0
-  ? `No recipes are currently tagged with "${tag}". Browse the full collection or try another tag.`
-  : `Recipes tagged "${tag}" share this flavor or technique focus. ${taggedRecipes.length} recipe${taggedRecipes.length === 1 ? '' : 's'} below include ingredients, bake times, and troubleshooting tips.`;
+const tagIntro = getTagIntro(normalized, taggedRecipes.length);
+const tagFaq = getTagFaq(normalized);
+const isCategoryDup = isCategoryDuplicateTag(normalized);
+
+const faqSchema =
+  tagFaq.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: tagFaq.map((f) => ({
+          '@type': 'Question',
+          name: f.question,
+          acceptedAnswer: { '@type': 'Answer', text: f.answer },
+        })),
+      }
+    : null;
 
 const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  name: `Cupcake recipes with tag: ${tag}`,
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: `Cupcake recipes tagged: ${tag}`,
   description: tagIntro,
   url: `https://incr-ediblecupcakes.com/tags/${tag}`,
   mainEntity: {
-    "@type": "ItemList",
+    '@type': 'ItemList',
     numberOfItems: taggedRecipes.length,
     itemListElement: taggedRecipes.map((recipe, index) => ({
-      "@type": "ListItem",
+      '@type': 'ListItem',
       position: index + 1,
       name: recipe.title,
       url: `https://incr-ediblecupcakes.com/recipe/${recipe.slug}`,
-    }))
-  }
+    })),
+  },
 };
 ---
 
@@ -44,25 +63,45 @@ const schemaData = {
   title={`${tag} Cupcake Recipes | Incr-EdibleCupCakes`}
   description={tagIntro.slice(0, 155)}
   canonical={`https://incr-ediblecupcakes.com/tags/${tag}`}
-  robots={thinTag ? 'noindex, follow' : undefined}
+  robots={thinTag || isCategoryDup ? 'noindex, follow' : undefined}
 >
   <Fragment slot="head">
-    <meta name="keywords" content={`cupcake recipes, ${tag} cupcakes, baking, tags`} />
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
     <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
   </Fragment>
   <Header />
-  <main id="main-content" class="pt-16 lg:pt-20">
+  <main id="main-content" class="pt-16 lg:pt-20 pb-20">
     <div class="max-w-6xl mx-auto px-4">
       <div class="bg-gradient-to-r from-rose-500 to-pink-600 p-8 rounded-lg text-white mb-8">
         <a href="/tags" class="inline-flex items-center text-white hover:text-white/80 mb-4">
-          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
-          </svg>
-          Back to Tags
+          ← Back to Tags
         </a>
-        <h1 class="text-4xl md:text-5xl font-bold mb-2">#{tag}</h1>
-        <p class="text-lg opacity-90 max-w-2xl">{tagIntro}</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-3">#{tag}</h1>
+        <p class="text-lg opacity-95 max-w-3xl leading-relaxed">{tagIntro}</p>
+        {isCategoryDup && (
+          <p class="mt-4 text-sm bg-white/15 rounded-lg px-4 py-2 inline-block">
+            Browse the full
+            <a href={`/categories/${normalized}`} class="underline font-semibold ml-1 mr-1">
+              {tag} category
+            </a>
+            for dietary overview and FAQ.
+          </p>
+        )}
       </div>
+
+      {tagFaq.length > 0 && (
+        <section class="mb-10 max-w-3xl">
+          <h2 class="text-xl font-bold text-gray-900 mb-3">About this tag</h2>
+          <div class="space-y-2">
+            {tagFaq.map((f) => (
+              <details class="bg-white border border-gray-200 rounded-xl p-4">
+                <summary class="font-semibold text-gray-900 cursor-pointer">{f.question}</summary>
+                <p class="mt-2 text-gray-700 text-sm">{f.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {taggedRecipes.map((recipe) => (
@@ -73,5 +112,3 @@ const schemaData = {
   </main>
   <Footer />
 </BaseLayout>
-
-

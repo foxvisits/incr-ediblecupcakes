@@ -1,4 +1,4 @@
-const CACHE_NAME = 'incr-ediblecupcakes-v2';
+const CACHE_NAME = 'incr-ediblecupcakes-v3';
 const RUNTIME = 'runtime';
 
 // Zasoby do pre-cachowania
@@ -6,7 +6,7 @@ const PRECACHE_URLS = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/Incr-EdibleCupCakes Logo.png',
+  '/logo.png',
   '/icon-192.png',
   '/icon-512.png'
 ];

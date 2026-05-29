@@ -2,66 +2,145 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { validatedRecipes as recipes } from '../../data/recipes';
-
-const KNOWN = {
-  egg: {
-    title: 'Egg substitutes for cupcakes',
-    intro: 'Popular egg replacements that actually work in cupcakes.',
-    tips: ['Flax egg (1 tbsp ground flax + 3 tbsp water per egg)', 'Applesauce (1/4 cup per egg)', 'Commercial replacers (follow package)']
-  },
-  buttermilk: {
-    title: 'Buttermilk substitutes for cupcakes',
-    intro: 'When you run out of buttermilk, try these alternatives.',
-    tips: ['Milk + 1 tbsp lemon juice or vinegar (per cup)', 'Yogurt + water/milk to thin', 'Kefir 1:1']
-  },
-  sugar: {
-    title: 'Sugar substitutes for cupcakes',
-    intro: 'Sweeteners and how they change texture and taste.',
-    tips: ['Erythritol/monk fruit for keto (adjust cooling effect)', 'Coconut sugar (darker flavor)', 'Honey/maple (reduce other liquids)']
-  },
-  flour: {
-    title: 'Flour substitutes for cupcakes',
-    intro: 'Swapping all-purpose for gluten-free or alternatives.',
-    tips: ['Use 1:1 GF blend with xanthan gum', 'Almond flour needs extra binders', 'Oat flour adds tenderness']
-  }
-};
+import {
+  substitutesContent,
+  getRelatedRecipesForSubstitute,
+} from '../../data/substitutesContent';
 
 export async function getStaticPaths() {
-  return ['egg', 'buttermilk', 'sugar', 'flour'].map((ingredient) => ({ params: { ingredient }, props: { ingredient } }));
+  return Object.keys(substitutesContent).map((ingredient) => ({
+    params: { ingredient },
+    props: { ingredient },
+  }));
 }
 
 const { ingredient } = Astro.params;
-const data = KNOWN[ingredient || ''] || { title: `Substitutes for ${ingredient}`, intro: 'Common swaps that work in cupcakes.', tips: [] };
+const data = substitutesContent[ingredient || ''];
+if (!data) {
+  throw new Error(`Unknown substitute: ${ingredient}`);
+}
 
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
+const relatedRecipes = getRelatedRecipesForSubstitute(ingredient || '', recipes);
+const canonicalUrl = `https://incr-ediblecupcakes.com/substitutes/${ingredient}`;
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: data.faq.map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
+};
+
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
   name: data.title,
-  description: data.intro,
-  step: data.tips.map((t, i) => ({ "@type": "HowToStep", position: i + 1, name: t }))
+  description: data.metaDescription,
+  step: data.swaps.map((s, i) => ({
+    '@type': 'HowToStep',
+    position: i + 1,
+    name: s.name,
+    text: `${s.ratio}. Best for: ${s.bestFor}. ${s.note}`,
+  })),
 };
 ---
 
-<BaseLayout title={`${data.title} - Incr-EdibleCupCakes`} description={data.intro} canonical={`https://incr-ediblecupcakes.com/substitutes/${ingredient}`}>
+<BaseLayout
+  title={`${data.title} | Incr-EdibleCupCakes`}
+  description={data.metaDescription}
+  canonical={canonicalUrl}
+>
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
   </Fragment>
   <Header />
-  <main id="main-content" class="pt-16 lg:pt-20">
+  <main id="main-content" class="pt-24 lg:pt-28 pb-24">
     <div class="max-w-4xl mx-auto px-4">
-      <h1 class="text-4xl font-bold text-gray-900 mb-4">{data.title}</h1>
-      <p class="text-lg text-gray-700 mb-6">{data.intro}</p>
-      <ul class="list-disc pl-6 space-y-2 mb-10">
-        {data.tips.map((t) => (<li class="text-gray-700">{t}</li>))}
-      </ul>
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Related recipes</h2>
-      <ul class="list-disc pl-6 space-y-2">
-        {recipes.slice(0,6).map((r) => (<li><a href={`/recipe/${r.slug}`} class="text-rose-600 hover:underline">{r.title}</a></li>))}
-      </ul>
+      <Breadcrumbs
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Guides', url: '/guides' },
+          { name: data.title },
+        ]}
+      />
+
+      <article class="space-y-8">
+        <header>
+          <h1 class="text-4xl font-black text-gray-900 mb-4">{data.title}</h1>
+          <p class="guide-summary text-lg text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
+            {data.intro}
+          </p>
+        </header>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-3">Why the substitute matters</h2>
+          <p class="text-gray-700 leading-relaxed">{data.whyItMatters}</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Substitutes and ratios</h2>
+          <div class="overflow-hidden rounded-xl border border-gray-200">
+            <table class="w-full text-left text-sm">
+              <thead>
+                <tr class="bg-gray-50 border-b border-gray-200">
+                  <th class="px-4 py-3 font-semibold text-gray-900">Swap</th>
+                  <th class="px-4 py-3 font-semibold text-gray-900">Ratio</th>
+                  <th class="px-4 py-3 font-semibold text-gray-900 hidden sm:table-cell">Best for</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.swaps.map((s) => (
+                  <tr class="border-b border-gray-100 last:border-0">
+                    <td class="px-4 py-3 font-medium text-gray-900 align-top">{s.name}</td>
+                    <td class="px-4 py-3 text-gray-700 align-top">{s.ratio}</td>
+                    <td class="px-4 py-3 text-gray-600 align-top hidden sm:table-cell">
+                      {s.bestFor}
+                      <span class="block text-xs text-gray-500 mt-1">{s.note}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {data.deepDiveGuide && (
+          <p class="text-gray-700">
+            <a href={data.deepDiveGuide} class="text-rose-600 font-semibold hover:underline">
+              {data.deepDiveLabel ?? 'Read the full guide →'}
+            </a>
+          </p>
+        )}
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Common questions</h2>
+          <div class="space-y-3">
+            {data.faq.map((f) => (
+              <details class="bg-white border border-gray-200 rounded-xl p-4">
+                <summary class="font-semibold text-gray-900 cursor-pointer">{f.question}</summary>
+                <p class="mt-2 text-gray-700 text-sm leading-relaxed">{f.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Recipes that use this swap</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            {relatedRecipes.map((r) => (
+              <li>
+                <a href={`/recipe/${r.slug}`} class="text-rose-600 hover:underline">{r.title}</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </article>
     </div>
   </main>
   <Footer />
 </BaseLayout>
-
-

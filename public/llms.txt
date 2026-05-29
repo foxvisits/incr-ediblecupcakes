@@ -7,6 +7,7 @@
 - https://incr-ediblecupcakes.com/
 - https://incr-ediblecupcakes.com/recipes
 - https://incr-ediblecupcakes.com/guides
+- https://incr-ediblecupcakes.com/categories
 - https://incr-ediblecupcakes.com/about
 - https://incr-ediblecupcakes.com/contact
 - https://incr-ediblecupcakes.com/privacy
@@ -18,6 +19,8 @@
 - https://incr-ediblecupcakes.com/recipe/yellow-cake-cupcakes
 - https://incr-ediblecupcakes.com/recipe/mango-coconut-sunset-cupcakes
 - https://incr-ediblecupcakes.com/recipe/chocolate-chili-firecracker-cupcakes
+- https://incr-ediblecupcakes.com/recipe/red-velvet-romance-cupcakes
+- https://incr-ediblecupcakes.com/recipe/vegan-rainbow-surprise-cupcakes
 
 ## Top guides
 
@@ -25,6 +28,16 @@
 - https://incr-ediblecupcakes.com/guides/fix-cupcake-mistakes
 - https://incr-ediblecupcakes.com/guides/how-to-make-cupcakes-moist-every-time
 - https://incr-ediblecupcakes.com/guides/egg-substitutes-for-cupcakes
+- https://incr-ediblecupcakes.com/guides/cupcake-vs-muffin-whats-the-real-difference
+- https://incr-ediblecupcakes.com/guides/natural-food-coloring-for-frosting
+
+## Reference pages
+
+- https://incr-ediblecupcakes.com/substitutes/egg
+- https://incr-ediblecupcakes.com/substitutes/buttermilk
+- https://incr-ediblecupcakes.com/baking-times/standard
+- https://incr-ediblecupcakes.com/categories/keto
+- https://incr-ediblecupcakes.com/categories/vegan
 
 ## Resources
 

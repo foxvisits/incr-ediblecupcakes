@@ -1,2 +1,25 @@
-# Netlify redirects
-/Chocolate%20Chili%20Firecracker%20Cupcakes.jpg  /Chocolate Chili Firecracker Cupcakes.jpg  301
+# Canonical asset URLs (200 rewrite to legacy filenames on CDN)
+/hero-cupcake-scene.png  /A vibrant, mouth-watering cupcake scene.png  200
+/logo.png  /Incr-EdibleCupCakes Logo.png  200
+/sarah.png  /Sarah.png  200
+
+# Recipe images — kebab-case canonical URLs
+/classic-vanilla-dream-cupcakes.jpg  /Classic Vanilla Dream Cupcakes.jpg  200
+/cranberry-orange-sparkle-cupcakes.jpg  /Cranberry Orange Sparkle Cupcakes.jpg  200
+/white-chocolate-snowflake-cupcakes.jpg  /White Chocolate Snowflake Cupcakes with White chocolate swirl frosting.jpg  200
+/spiced-pear-cupcakes.jpg  /Spiced Pear Cupcakes with pear puree.jpg  200
+/chocolate-chili-firecracker-cupcakes.jpg  /Chocolate Chili Firecracker Cupcakes.jpg  200
+
+# Guide images
+/egg-substitutes-for-cupcakes.jpg  /Egg substitutes for cupcakes.jpg  200
+
+# 301 legacy URLs → canonical
+/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png  /hero-cupcake-scene.png  301
+/Incr-EdibleCupCakes%20Logo.png  /logo.png  301
+/Sarah.png  /sarah.png  301
+/Classic%20Vanilla%20Dream%20Cupcakes.jpg  /classic-vanilla-dream-cupcakes.jpg  301
+/Cranberry%20Orange%20Sparkle%20Cupcakes.jpg  /cranberry-orange-sparkle-cupcakes.jpg  301
+/White%20Chocolate%20Snowflake%20Cupcakes%20with%20White%20chocolate%20swirl%20frosting.jpg  /white-chocolate-snowflake-cupcakes.jpg  301
+/Spiced%20Pear%20Cupcakes%20with%20pear%20puree.jpg  /spiced-pear-cupcakes.jpg  301
+/Chocolate%20Chili%20Firecracker%20Cupcakes.jpg  /chocolate-chili-firecracker-cupcakes.jpg  301
+/Egg%20substitutes%20for%20cupcakes.jpg  /egg-substitutes-for-cupcakes.jpg  301

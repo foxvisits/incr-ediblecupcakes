@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ClientOnly from '../components/ClientOnly.tsx';
+import { SITE_IMAGES } from '../data/siteAssets';
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -26,7 +27,7 @@ const schemaData = {
 <BaseLayout 
   title="Contact | Incr-EdibleCupCakes"
   description="Email Sarah for cupcake recipe questions, feedback, or collaboration ideas. Typical reply within a few business days."
-  image="/Sarah.png"
+  image={SITE_IMAGES.sarah}
   canonical="https://incr-ediblecupcakes.com/contact"
 >
   <Fragment slot="head">

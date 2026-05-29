@@ -5,6 +5,8 @@ import Footer from '../../components/Footer.astro';
 import { validatedRecipes, convertToISODuration } from '../../data/recipes';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { normalizeRecipeStrings, normalizeRecipeText } from '../../utils/schema';
+import { buildRecipeKeywords } from '../../utils/recipeSchema';
+import { SITE_IMAGES, absoluteUrl } from '../../data/siteAssets';
 
 export async function getStaticPaths() {
   return validatedRecipes.map((recipe) => ({
@@ -75,7 +77,7 @@ const schemaData = {
     "name": "Incr-EdibleCupCakes",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png"
+      "url": absoluteUrl(SITE_IMAGES.logo)
     }
   },
   "prepTime": convertToISODuration(recipe.prepTime),
@@ -84,8 +86,7 @@ const schemaData = {
   "recipeYield": recipe.servings,
   "recipeCategory": recipe.category,
   "recipeCuisine": recipe.cuisine,
-  "difficulty": recipe.difficulty,
-  "keywords": recipe.recipeKeys?.join(", "),
+  "keywords": buildRecipeKeywords(recipe),
   "recipeIngredient": normalizeRecipeStrings(recipe.ingredients),
   "recipeInstructions": recipe.instructions.map(instruction => ({
     "@type": "HowToStep",
@@ -458,7 +459,7 @@ const schemaData = {
           <div class="bg-white rounded-2xl p-6 shadow-lg">
             <h3 class="text-xl font-bold text-gray-900 mb-4">About the Author</h3>
             <div class="flex items-center gap-4">
-              <img src="/Sarah.png" alt="Author" width={56} height={56} class="w-14 h-14 rounded-full object-cover" loading="lazy" />
+              <img src={SITE_IMAGES.sarah} alt="Sarah, recipe developer at Incr-EdibleCupCakes" width={56} height={56} class="w-14 h-14 rounded-full object-cover" loading="lazy" />
               <div>
                 <div class="font-semibold text-gray-900">{schemaData.author.name}</div>
                 <a href={schemaData.author.url} class="text-rose-600 hover:underline text-sm">View profile</a>

@@ -9,7 +9,7 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png</image:loc>
+      <image:loc>https://incr-ediblecupcakes.com/hero-cupcake-scene.png</image:loc>
       <image:title>Incr-EdibleCupCakes - Extraordinary Cupcake Recipes</image:title>
     </image:image>
   </url>
@@ -28,7 +28,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/Sarah.png</image:loc>
+      <image:loc>https://incr-ediblecupcakes.com/sarah.png</image:loc>
       <image:title>Sarah - Professional Baker and Recipe Developer</image:title>
     </image:image>
   </url>
@@ -142,7 +142,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/Classic%20Vanilla%20Dream%20Cupcakes.jpg</image:loc>
+      <image:loc>https://incr-ediblecupcakes.com/classic-vanilla-dream-cupcakes.jpg</image:loc>
       <image:title>Classic Vanilla Dream Cupcakes Recipe</image:title>
     </image:image>
   </url>
@@ -154,7 +154,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/Cranberry%20Orange%20Sparkle%20Cupcakes.jpg</image:loc>
+      <image:loc>https://incr-ediblecupcakes.com/cranberry-orange-sparkle-cupcakes.jpg</image:loc>
       <image:title>Cranberry Orange Sparkle Cupcakes Recipe</image:title>
     </image:image>
   </url>
@@ -166,7 +166,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/White%20Chocolate%20Snowflake%20Cupcakes%20with%20White%20chocolate%20swirl%20frosting.jpg</image:loc>
+      <image:loc>https://incr-ediblecupcakes.com/white-chocolate-snowflake-cupcakes.jpg</image:loc>
       <image:title>White Chocolate Snowflake Cupcakes Recipe</image:title>
     </image:image>
   </url>
@@ -178,7 +178,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/Spiced%20Pear%20Cupcakes%20with%20pear%20puree.jpg</image:loc>
+      <image:loc>https://incr-ediblecupcakes.com/spiced-pear-cupcakes.jpg</image:loc>
       <image:title>Spiced Pear Cupcakes Recipe</image:title>
     </image:image>
   </url>
@@ -286,7 +286,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/Chocolate%20Chili%20Firecracker%20Cupcakes.jpg</image:loc>
+      <image:loc>https://incr-ediblecupcakes.com/chocolate-chili-firecracker-cupcakes.jpg</image:loc>
       <image:title>Chocolate Chili Firecracker Cupcakes Recipe</image:title>
     </image:image>
   </url>
@@ -349,38 +349,6 @@
       <image:loc>https://incr-ediblecupcakes.com/keto-chocolate-truffle-cupcakes.jpg</image:loc>
       <image:title>Keto Chocolate Truffle Cupcakes Recipe</image:title>
     </image:image>
-  </url>
-
-  <!-- Tag: classic -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/classic</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Tag: seasonal -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/seasonal</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Tag: spiced -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/spiced</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Tag: keto -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/keto</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
 
   <!-- Tag: chocolate -->
@@ -458,7 +426,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/Egg%20substitutes%20for%20cupcakes.jpg</image:loc>
+      <image:loc>https://incr-ediblecupcakes.com/egg-substitutes-for-cupcakes.jpg</image:loc>
       <image:title>Egg substitutes for cupcakes</image:title>
     </image:image>
   </url>

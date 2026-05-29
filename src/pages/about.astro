@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ClientOnly from '../components/ClientOnly.tsx';
+import { SITE_IMAGES, absoluteUrl } from '../data/siteAssets';
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -11,7 +12,7 @@ const schemaData = {
   "jobTitle": "Home Baker & Recipe Developer",
   "description": "Recipe developer behind Incr-EdibleCupCakes, creating tested cupcake recipes for classic, keto, vegan, and allergen-friendly baking at home.",
   "url": "https://incr-ediblecupcakes.com/about",
-  "image": "https://incr-ediblecupcakes.com/Sarah.png",
+  "image": absoluteUrl(SITE_IMAGES.sarah),
   "knowsAbout": [
     "Cupcake Baking",
     "Keto Baking",
@@ -29,7 +30,7 @@ const schemaData = {
 <BaseLayout 
   title="About Sarah | Incr-EdibleCupCakes"
   description="Meet Sarah, home baker and recipe developer behind Incr-EdibleCupCakes. Tested cupcake recipes for keto, vegan, nut-free, and classic baking."
-  image="/Sarah.png"
+  image={SITE_IMAGES.sarah}
   canonical="https://incr-ediblecupcakes.com/about"
   ogType="profile"
 >
@@ -80,7 +81,7 @@ const schemaData = {
             <div class="w-80 h-80 mx-auto relative">
               <div class="absolute inset-0 bg-gradient-to-br from-yellow-400 to-rose-400 rounded-full animate-pulse" />
               <img
-                src="/Sarah.png"
+                src={SITE_IMAGES.sarah}
                 alt="Sarah - professional baker and recipe developer behind Incr-EdibleCupCakes"
                 class="relative z-10 w-full h-full object-cover rounded-full border-4 border-white/20 shadow-2xl"
                 loading="eager"

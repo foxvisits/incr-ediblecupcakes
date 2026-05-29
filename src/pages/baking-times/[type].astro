@@ -2,63 +2,141 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { validatedRecipes as recipes } from '../../data/recipes';
-const TIMES = {
-  standard: {
-    title: 'Standard cupcakes baking time',
-    items: [
-      { temp: '175°C / 350°F', time: '18-20 min', notes: 'Most classic batters' },
-      { temp: '165°C / 325°F', time: '20-22 min', notes: 'Richer batters, keto/almond flour' }
-    ]
-  },
-  mini: {
-    title: 'Mini cupcakes baking time',
-    items: [ { temp: '175°C / 350°F', time: '10-12 min', notes: 'Check at 9 min' } ]
-  },
-  jumbo: {
-    title: 'Jumbo cupcakes baking time',
-    items: [ { temp: '175°C / 350°F', time: '22-26 min', notes: 'Use test skewer' } ]
-  }
-};
+import { bakingTimesContent } from '../../data/bakingTimesContent';
 
 export async function getStaticPaths() {
-  return ['standard', 'mini', 'jumbo'].map((type) => ({ params: { type }, props: { type } }));
+  return Object.keys(bakingTimesContent).map((type) => ({
+    params: { type },
+    props: { type },
+  }));
 }
 
 const { type } = Astro.params;
-const data = TIMES[type || 'standard'] || TIMES.standard;
+const data = bakingTimesContent[type || 'standard'];
+if (!data) {
+  throw new Error(`Unknown baking time type: ${type}`);
+}
 
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  name: data.title,
-  step: data.items.map((it, i) => ({ "@type": "HowToStep", position: i + 1, name: `${it.temp} - ${it.time}` }))
+const relatedRecipes = data.relatedCategories
+  ? recipes.filter((r) => data.relatedCategories!.includes(r.category)).slice(0, 8)
+  : recipes.slice(0, 6);
+
+const canonicalUrl = `https://incr-ediblecupcakes.com/baking-times/${type}`;
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: data.faq.map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
 };
 ---
 
-<BaseLayout title={`${data.title} - Incr-EdibleCupCakes`} description="Quick reference baking times for perfect cupcakes." canonical={`https://incr-ediblecupcakes.com/baking-times/${type}`}>
+<BaseLayout
+  title={`${data.title} | Incr-EdibleCupCakes`}
+  description={data.metaDescription}
+  canonical={canonicalUrl}
+>
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   </Fragment>
   <Header />
-  <main id="main-content" class="pt-16 lg:pt-20">
+  <main id="main-content" class="pt-24 lg:pt-28 pb-24">
     <div class="max-w-4xl mx-auto px-4">
-      <h1 class="text-4xl font-bold text-gray-900 mb-6">{data.title}</h1>
-      <div class="space-y-3 mb-10">
-        {data.items.map((it) => (
-          <div class="p-4 rounded-lg bg-gray-50 border">
-            <div class="font-semibold text-gray-900">{it.temp} - {it.time}</div>
-            {it.notes && (<div class="text-sm text-gray-600">{it.notes}</div>)}
+      <Breadcrumbs
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Guides', url: '/guides' },
+          { name: data.title },
+        ]}
+      />
+
+      <article class="space-y-8">
+        <header>
+          <h1 class="text-4xl font-black text-gray-900 mb-4">{data.title}</h1>
+          <p class="guide-summary text-lg text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
+            {data.intro}
+          </p>
+        </header>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Baking time chart</h2>
+          <div class="overflow-hidden rounded-xl border border-gray-200">
+            <table class="w-full text-left text-sm">
+              <thead>
+                <tr class="bg-gray-50 border-b border-gray-200">
+                  <th class="px-4 py-3 font-semibold">Size</th>
+                  <th class="px-4 py-3 font-semibold">Temperature</th>
+                  <th class="px-4 py-3 font-semibold">Time</th>
+                  <th class="px-4 py-3 font-semibold hidden md:table-cell">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.rows.map((row) => (
+                  <tr class="border-b border-gray-100 last:border-0">
+                    <td class="px-4 py-3 font-medium text-gray-900">{row.size}</td>
+                    <td class="px-4 py-3 text-gray-700">{row.temp}</td>
+                    <td class="px-4 py-3 text-gray-700">{row.time}</td>
+                    <td class="px-4 py-3 text-gray-600 hidden md:table-cell">{row.notes}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-        ))}
-      </div>
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Try these recipes</h2>
-      <ul class="list-disc pl-6 space-y-2">
-        {recipes.slice(0,6).map((r) => (<li><a href={`/recipe/${r.slug}`} class="text-rose-600 hover:underline">{r.title}</a></li>))}
-      </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-3">When to adjust oven time or temperature</h2>
+          <ul class="list-disc pl-6 space-y-2 text-gray-700">
+            {data.whenToAdjust.map((tip) => (
+              <li>{tip}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-3">How to know cupcakes are done</h2>
+          <ul class="list-disc pl-6 space-y-2 text-gray-700">
+            {data.donenessTips.map((tip) => (
+              <li>{tip}</li>
+            ))}
+          </ul>
+          <p class="mt-4 text-sm text-gray-600">
+            Troubleshooting sunken centers?
+            <a href="/guides/why-do-cupcakes-sink-after-baking" class="text-rose-600 hover:underline ml-1">
+              See the cause-and-fix guide
+            </a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">FAQ</h2>
+          <div class="space-y-3">
+            {data.faq.map((f) => (
+              <details class="bg-white border border-gray-200 rounded-xl p-4">
+                <summary class="font-semibold text-gray-900 cursor-pointer">{f.question}</summary>
+                <p class="mt-2 text-gray-700 text-sm">{f.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Try these recipes</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            {relatedRecipes.map((r) => (
+              <li>
+                <a href={`/recipe/${r.slug}`} class="text-rose-600 hover:underline">{r.title}</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </article>
     </div>
   </main>
   <Footer />
 </BaseLayout>
-
-

@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import RecipeCard from '../../components/RecipeCard.tsx';
 import { validatedRecipes as recipes } from '../../data/recipes';
 import { categoryExtraContent } from '../../data/categoryContent';
+import { SITE_IMAGES } from '../../data/siteAssets';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 
 const categoryInfo: Record<string, { name: string; description: string; color: string; icon: string }> = {
@@ -29,7 +30,7 @@ const { categoryId } = Astro.params;
 const currentCategory = categoryId ? categoryInfo[categoryId] : null;
 const categoryRecipes = categoryId ? recipes.filter((recipe) => recipe.category === categoryId) : [];
 const extra = categoryId ? categoryExtraContent[categoryId] : null;
-const categoryOgImage = categoryRecipes.length > 0 ? categoryRecipes[0].image : '/A vibrant, mouth-watering cupcake scene.png';
+const categoryOgImage = categoryRecipes.length > 0 ? categoryRecipes[0].image : SITE_IMAGES.hero;
 
 const schemaData = {
   '@context': 'https://schema.org',

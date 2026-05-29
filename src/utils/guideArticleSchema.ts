@@ -1,3 +1,5 @@
+import { SITE_IMAGES, absoluteUrl } from '../data/siteAssets';
+
 export function buildGuideArticleSchema(opts: {
   headline: string;
   description: string;
@@ -24,10 +26,10 @@ export function buildGuideArticleSchema(opts: {
       name: 'Incr-EdibleCupCakes',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png',
+        url: absoluteUrl(SITE_IMAGES.logo),
       },
     },
-    image: `https://incr-ediblecupcakes.com${opts.imagePath}`,
+    image: absoluteUrl(opts.imagePath),
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['.guide-summary', 'h1'],

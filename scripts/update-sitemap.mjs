@@ -8,9 +8,13 @@ const root = path.resolve(__dirname, '..');
 // Dynamic import of data files - use file:// URL for Windows compatibility
 const recipesModule = await import(pathToFileURL(path.join(root, 'src', 'data', 'recipes.ts')).href);
 const guidesModule = await import(pathToFileURL(path.join(root, 'src', 'data', 'guides.ts')).href);
+const siteAssetsModule = await import(pathToFileURL(path.join(root, 'src', 'data', 'siteAssets.ts')).href);
+const tagContentModule = await import(pathToFileURL(path.join(root, 'src', 'data', 'tagContent.ts')).href);
 
 const validatedRecipes = recipesModule.validatedRecipes;
 const guides = guidesModule.guides;
+const SITE_IMAGES = siteAssetsModule.SITE_IMAGES;
+const getSitemapTags = tagContentModule.getSitemapTags;
 
 const getQualifiedTagSlugs = () => {
   const tagCounts = validatedRecipes.reduce((acc, r) => {
@@ -24,6 +28,7 @@ const getQualifiedTagSlugs = () => {
 };
 
 const qualifiedTags = getQualifiedTagSlugs();
+const sitemapTags = getSitemapTags(qualifiedTags);
 
 // Helper function to encode image URL properly (preserve /, encode only special chars in filename)
 const encodeImageUrl = (imagePath) => {
@@ -54,7 +59,7 @@ const generateSitemap = () => {
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>${baseUrl}${encodeImageUrl('/A vibrant, mouth-watering cupcake scene.png')}</image:loc>
+      <image:loc>${baseUrl}${encodeImageUrl(SITE_IMAGES.hero)}</image:loc>
       <image:title>Incr-EdibleCupCakes - Extraordinary Cupcake Recipes</image:title>
     </image:image>
   </url>
@@ -73,7 +78,7 @@ const generateSitemap = () => {
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>${baseUrl}${encodeImageUrl('/Sarah.png')}</image:loc>
+      <image:loc>${baseUrl}${encodeImageUrl(SITE_IMAGES.sarah)}</image:loc>
       <image:title>Sarah - Professional Baker and Recipe Developer</image:title>
     </image:image>
   </url>
@@ -200,8 +205,8 @@ const generateSitemap = () => {
 `;
   });
 
-  // Add tag pages (2+ recipes; thin tags use noindex on-site)
-  qualifiedTags.forEach(tag => {
+  // Tag pages (2+ recipes, excluding category-duplicate slugs)
+  sitemapTags.forEach(tag => {
     sitemap += `  <!-- Tag: ${tag} -->
   <url>
     <loc>${baseUrl}/tags/${encodeURIComponent(tag)}</loc>
@@ -273,7 +278,7 @@ const totalUrls = 5 + // homepage, recipes, about, contact, privacy
   9 + // category pages
   1 + // tags index
   validatedRecipes.length + // recipe pages
-  qualifiedTags.length + // tag pages (2+ recipes)
+  sitemapTags.length + // tag pages in sitemap (excl. category dupes)
   1 + // guides index
   guides.length + // guide pages
   4 + // substitute pages
@@ -281,6 +286,6 @@ const totalUrls = 5 + // homepage, recipes, about, contact, privacy
 
 console.log(`✅ Sitemap updated with ${totalUrls} URLs`);
 console.log(`   - ${validatedRecipes.length} recipe pages`);
-console.log(`   - ${qualifiedTags.length} tag pages (2+ recipes)`);
+console.log(`   - ${sitemapTags.length} tag pages in sitemap (${qualifiedTags.length - sitemapTags.length} category-dupe tags excluded)`);
 console.log(`   - ${guides.length} guide pages`);
 console.log(`   - Current date: ${new Date().toISOString().split('T')[0]}`);

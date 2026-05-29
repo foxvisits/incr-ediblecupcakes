@@ -1,4 +1,6 @@
 ---
+import { SITE_IMAGES, absoluteUrl } from '../data/siteAssets';
+
 // Component to generate Open Graph images dynamically
 export interface Props {
   title: string;
@@ -7,15 +9,16 @@ export interface Props {
 }
 
 const { title, description, image } = Astro.props;
+const ogImage = image ? absoluteUrl(image) : absoluteUrl(SITE_IMAGES.hero);
 ---
 
 <!-- Open Graph Image Meta Tags -->
-<meta property="og:image" content={image ? `https://incr-ediblecupcakes.com${image}` : "https://incr-ediblecupcakes.com/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png"} />
+<meta property="og:image" content={ogImage} />
 <meta property="og:image:alt" content={`${title} - Incr-EdibleCupCakes Recipe`} />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:type" content="image/png" />
 
 <!-- Twitter Card Image Meta Tags -->
-<meta name="twitter:image" content={image ? `https://incr-ediblecupcakes.com${image}` : "https://incr-ediblecupcakes.com/A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png"} />
+<meta name="twitter:image" content={ogImage} />
 <meta name="twitter:image:alt" content={`${title} - Incr-EdibleCupCakes Recipe`} />

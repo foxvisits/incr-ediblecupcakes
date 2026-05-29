@@ -40,7 +40,18 @@ export const categoryExtraContent: Record<string, CategoryExtra> = {
   },
   gourmet: {
     intro: `Gourmet cupcakes layer refined flavors, rosewater, pistachio, cherry blossom, and polished presentation. They suit special occasions when you want elevated technique and plating.`,
-    faq: [],
+    faq: [
+      {
+        question: 'What makes a cupcake "gourmet" versus classic?',
+        answer:
+          'Gourmet recipes use premium ingredients (rosewater, pistachio, cherry blossom) and focus on presentation — piped finishes, garnishes, and balanced flavor layers beyond standard buttercream.',
+      },
+      {
+        question: 'Are gourmet cupcakes harder to bake?',
+        answer:
+          'Technique matters more than difficulty. Rosewater pistachio and cherry blossom recipes here are rated Medium — allow extra time for garnish and frosting set.',
+      },
+    ],
   },
   tropical: {
     intro: `Tropical cupcakes highlight mango, coconut, and citrus. Coconut milk and fruit purées add moisture; balance sweetness with lime or passionfruit notes. See our mango coconut sunset recipe for a bright, beach-style finish.`,
@@ -50,10 +61,32 @@ export const categoryExtraContent: Record<string, CategoryExtra> = {
   },
   spiced: {
     intro: `Spiced cupcakes combine warm cinnamon, chili, pear, or seasonal aromatics. Chili-chocolate pairs heat with cocoa for a bold dessert. Measure spices precisely, too much heat or cinnamon can overpower the crumb.`,
-    faq: [],
+    faq: [
+      {
+        question: 'How do I balance chili heat in chocolate cupcakes?',
+        answer:
+          'Start with the recipe amount — our chili firecracker cupcakes use measured heat that builds as they cool. Add more only after a test batch.',
+      },
+      {
+        question: 'Can I use pre-mixed pumpkin spice in any batter?',
+        answer:
+          'Swap up to 1 tsp of mixed spice per batch in compatible recipes, but reduce separate cinnamon or nutmeg to avoid doubling up.',
+      },
+    ],
   },
   seasonal: {
     intro: `Seasonal cupcakes follow the calendar: cranberry orange for winter, snowflake white chocolate for holidays, and pastel frostings for spring. Rotate flavors with produce availability for the best taste.`,
-    faq: [],
+    faq: [
+      {
+        question: 'Which seasonal recipe is best for winter holidays?',
+        answer:
+          'Cranberry orange sparkle and white chocolate snowflake cupcakes are designed for holiday platters — both include compote or swirl frosting steps in the instructions.',
+      },
+      {
+        question: 'Can I freeze seasonal cupcakes?',
+        answer:
+          'Unfrosted cupcakes freeze well up to 2 months. Thaw at room temperature and frost fresh for the best texture on fruit-forward seasonal batters.',
+      },
+    ],
   },
 };

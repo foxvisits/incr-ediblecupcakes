@@ -1,5 +1,7 @@
 ---
 import '../index.css';
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
+import { SITE_IMAGES, absoluteUrl } from '../data/siteAssets';
 
 export interface Props {
   title: string;
@@ -13,7 +15,7 @@ export interface Props {
 const { 
   title, 
   description, 
-  image = "/A vibrant, mouth-watering cupcake scene.png",
+  image = SITE_IMAGES.hero,
   canonical = Astro.url.href,
   robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   ogType = "website",
@@ -27,6 +29,7 @@ const ogImage = new URL(image, Astro.site).href;
 <!doctype html>
 <html lang="en">
   <head>
+    <GoogleAnalytics />
     <meta charset="UTF-8" />
     <title>{siteTitle}</title>
     <meta name="description" content={description} />
@@ -63,6 +66,7 @@ const ogImage = new URL(image, Astro.site).href;
     <meta property="og:title" content={siteTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content={description.slice(0, 120)} />
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content={canonical} />
@@ -146,14 +150,14 @@ const ogImage = new URL(image, Astro.site).href;
       "@type": "Organization",
       "name": "Incr-EdibleCupCakes",
       "url": "https://incr-ediblecupcakes.com",
-      "logo": "https://incr-ediblecupcakes.com/Incr-EdibleCupCakes%20Logo.png",
+      "logo": absoluteUrl(SITE_IMAGES.logo),
       "description": "Recipe blog and baking guides specializing in cupcake recipes for all dietary preferences",
       "founder": {
         "@type": "Person",
         "name": "Sarah",
         "jobTitle": "Recipe Developer",
         "url": "https://incr-ediblecupcakes.com/about",
-        "image": "https://incr-ediblecupcakes.com/Sarah.png"
+        "image": absoluteUrl(SITE_IMAGES.sarah)
       },
       "sameAs": [
         "https://instagram.com/incrediblecupcakes",

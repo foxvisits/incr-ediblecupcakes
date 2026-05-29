@@ -6,6 +6,8 @@ import Footer from '../components/Footer.astro';
 import RecipeCard from '../components/RecipeCard.tsx';
 import { validatedRecipes } from '../data/recipes';
 import { latestGuides } from '../data/guides';
+import { homeFaq } from '../data/homeFaq';
+import { SITE_IMAGES } from '../data/siteAssets';
 
 const featuredRecipes = validatedRecipes.filter(recipe => recipe.featured).slice(0, 3);
 const categories = [
@@ -20,6 +22,29 @@ const categories = [
   { id: 'spiced', name: 'Spiced', count: validatedRecipes.filter(r => r.category === 'spiced').length },
   { id: 'seasonal', name: 'Seasonal', count: validatedRecipes.filter(r => r.category === 'seasonal').length },
 ];
+
+const faqAnswerText = (item: (typeof homeFaq)[number]) => {
+  const linksByAfter = new Map((item.links ?? []).map((l) => [l.afterIndex ?? 0, l]));
+  return item.answerParts
+    .map((part, i) => {
+      const link = linksByAfter.get(i);
+      return link ? `${part}${link.label}` : part;
+    })
+    .join('');
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": homeFaq.map((item) => ({
+    "@type": "Question",
+    "name": item.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faqAnswerText(item),
+    },
+  })),
+};
 
 const collectionSchema = {
   "@context": "https://schema.org",
@@ -41,13 +66,14 @@ const collectionSchema = {
 ---
 
 <BaseLayout 
-  title="Incr-EdibleCupCakes - Extraordinary Cupcake Recipes for Every Taste"
+  title="Cupcake Recipes for Every Diet | Incr-EdibleCupCakes"
   description="Home-tested cupcake recipes: classic, keto, vegan, nut-free, and gluten-free. Step-by-step instructions and troubleshooting guides from Sarah."
-  image="/A vibrant, mouth-watering cupcake scene.png"
+  image={SITE_IMAGES.hero}
   canonical="https://incr-ediblecupcakes.com/"
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   </Fragment>
   <Header />
   
@@ -90,11 +116,12 @@ const collectionSchema = {
           
           {/* Left Column - Hero Text */}
           <div class="text-center lg:text-left animate-fade-in-up-delayed">
-            <h1 class="font-quicksand text-6xl sm:text-7xl lg:text-8xl font-black mb-8 leading-tight">
-              <span class="text-white drop-shadow-2xl">Incr-</span>
-              <span class="gradient-text text-sprinkle-yellow drop-shadow-2xl">Edible</span>
-              <br />
-              <span class="cupcake-text drop-shadow-2xl">CupCakes</span>
+            <h1 class="font-quicksand text-5xl sm:text-6xl lg:text-7xl font-black mb-8 leading-tight">
+              <span class="text-white drop-shadow-2xl block sm:inline">Extraordinary </span>
+              <span class="gradient-text text-sprinkle-yellow drop-shadow-2xl">Cupcake Recipes</span>
+              <span class="block text-2xl sm:text-3xl lg:text-4xl font-bold text-white/95 mt-3 drop-shadow-lg">
+                for every diet — Incr-EdibleCupCakes
+              </span>
             </h1>
             
             <p class="font-nunito text-xl sm:text-2xl text-white/95 mb-12 leading-relaxed drop-shadow-lg font-medium max-w-2xl mx-auto lg:mx-0">
@@ -123,8 +150,8 @@ const collectionSchema = {
               {/* Main Cupcake Image */}
               <div class="relative z-10 bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
                 <img
-                  src="/A vibrant, mouth-watering cupcake scene.png"
-                  alt="Delicious cupcakes showcase - various types of cupcakes on colorful background"
+                  src={SITE_IMAGES.hero}
+                  alt="A vibrant assortment of frosted cupcakes on a pastel background"
                   class="w-full h-80 object-cover rounded-2xl shadow-xl"
                   loading="eager"
                   width={400}
@@ -295,6 +322,46 @@ const collectionSchema = {
             </div>
           ))}
         </div>
+      </div>
+    </section>
+
+    {/* FAQ Section — AIO / GEO citability */}
+    <section id="faq" class="py-20 bg-gradient-to-br from-pink-50 to-orange-50" aria-labelledby="faq-heading">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 id="faq-heading" class="font-quicksand text-4xl font-black text-gray-900 mb-4 text-center">
+          Cupcake Baking FAQ
+        </h2>
+        <p class="font-nunito text-lg text-gray-600 mb-10 text-center max-w-2xl mx-auto">
+          Quick answers to common cupcake questions. Each answer links to full recipes and guides on Incr-EdibleCupCakes.
+        </p>
+        <div class="space-y-4">
+          {homeFaq.map((item) => (
+            <details class="group bg-white rounded-xl border border-rose-100 shadow-sm open:shadow-md transition-shadow">
+              <summary class="cursor-pointer list-none px-6 py-4 font-quicksand font-bold text-gray-900 flex items-center justify-between gap-4">
+                {item.question}
+                <span class="text-rose-500 group-open:rotate-180 transition-transform shrink-0" aria-hidden="true">▼</span>
+              </summary>
+              <p class="guide-summary px-6 pb-5 text-gray-700 leading-relaxed border-t border-rose-50 pt-4">
+                {item.answerParts.map((part, partIndex) => {
+                  const link = item.links?.find((l) => l.afterIndex === partIndex);
+                  return (
+                    <>
+                      {part}
+                      {link && (
+                        <a href={link.href} class="text-rose-600 font-semibold hover:underline">
+                          {link.label}
+                        </a>
+                      )}
+                    </>
+                  );
+                })}
+              </p>
+            </details>
+          ))}
+        </div>
+        <p class="text-center mt-8">
+          <a href="/guides" class="font-quicksand text-rose-600 hover:text-rose-700 font-bold">Browse all baking guides →</a>
+        </p>
       </div>
     </section>
 

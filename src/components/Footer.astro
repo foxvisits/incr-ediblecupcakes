@@ -1,4 +1,6 @@
 ---
+import { SITE_IMAGES } from '../data/siteAssets';
+
 // Footer component props
 interface Props {
   // No props needed for this footer
@@ -21,8 +23,8 @@ const { } = Astro.props;
       <div class="col-span-1 md:col-span-2">
         <div class="flex items-center space-x-3 mb-4">
           <img
-            src="/Incr-EdibleCupCakes Logo.png"
-            alt="Incr-EdibleCupCakes Logo"
+            src={SITE_IMAGES.logo}
+            alt="Incr-EdibleCupCakes logo"
             class="h-14 w-auto object-contain transform transition-all duration-300 hover:scale-105"
             width="56"
             height="56"

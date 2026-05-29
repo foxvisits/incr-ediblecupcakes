@@ -7,6 +7,7 @@ import ClientOnly from '../../components/ClientOnly.tsx';
 import GuideCard from '../../components/GuideCard.astro';
 import { latestGuides } from '../../data/guides';
 import { validatedRecipes } from '../../data/recipes';
+import { SITE_IMAGES } from '../../data/siteAssets';
 
 const recipes = validatedRecipes;
 
@@ -58,7 +59,7 @@ const schemaData = {
 <BaseLayout 
   title={`Cupcake Recipes (${recipes.length}) | Incr-EdibleCupCakes`}
   description={`Browse ${recipes.length} tested cupcake recipes: classic, keto, vegan, nut-free, and gluten-free. Filter by category, difficulty, or search by name.`}
-  image="/A vibrant, mouth-watering cupcake scene.png"
+  image={SITE_IMAGES.hero}
   canonical="https://incr-ediblecupcakes.com/recipes"
 >
   <Fragment slot="head">

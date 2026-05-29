@@ -18,7 +18,7 @@ export const guides: GuideMeta[] = [
     slug: 'egg-substitutes-for-cupcakes',
     title: 'Egg substitutes for cupcakes',
     desc: 'Reliable replacements and when to use them.',
-    image: '/Egg substitutes for cupcakes.jpg',
+    image: '/egg-substitutes-for-cupcakes.jpg',
     publishedAt: '2025-11-02'
   },
   {
