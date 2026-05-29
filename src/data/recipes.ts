@@ -45,6 +45,12 @@ export interface Recipe {
   video?: string;
   datePublished?: string;
   dateModified?: string;
+  /** SEO — optional overrides from content pipeline */
+  imageAlt?: string;
+  /** Gallery: hero + process + detail (content pipeline) */
+  images?: { role?: string; src: string; alt: string }[];
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 // Utility function to generate SEO-friendly slugs from recipe titles
@@ -1674,5 +1680,37 @@ export const recipes: Recipe[] = [
   }
 ]
 
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'url';
+
+const __dataDir = path.dirname(fileURLToPath(import.meta.url));
+
+function generatedRecipesDir() {
+  return path.join(process.cwd(), 'src', 'data', 'recipes', 'generated');
+}
+
+function loadGeneratedRecipes(): Recipe[] {
+  try {
+    const dir = generatedRecipesDir();
+    if (!fs.existsSync(dir)) return [];
+    return fs
+      .readdirSync(dir)
+      .filter((f) => f.endsWith('.json'))
+      .map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')) as Recipe);
+  } catch {
+    return [];
+  }
+}
+
 // Apply validation to all recipes to ensure they have slugs
-export const validatedRecipes = recipes.map(validateRecipeSlug);
+export function sortRecipesByDate(list: Recipe[]): Recipe[] {
+  return [...list].sort((a, b) => {
+    const da = a.datePublished ?? '2020-01-01';
+    const db = b.datePublished ?? '2020-01-01';
+    if (db !== da) return db.localeCompare(da);
+    return a.title.localeCompare(b.title);
+  });
+}
+
+export const validatedRecipes = sortRecipesByDate([...recipes, ...loadGeneratedRecipes()].map(validateRecipeSlug));

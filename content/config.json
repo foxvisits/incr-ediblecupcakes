@@ -1,0 +1,43 @@
+{
+  "$comment": "Ustawienia pipeline treści — edytuj tylko ten plik, reszta działa automatycznie.",
+  "schedule": {
+    "mode": "fixed",
+    "minPerDay": 1,
+    "maxPerDay": 3,
+    "fixedPerDay": 3,
+    "publishWindowStart": "10:00",
+    "publishWindowEnd": "18:00",
+    "timezone": "Europe/Warsaw",
+    "skipWeekends": false,
+    "startDate": "2026-05-30",
+    "utcOffset": "+02:00",
+    "interleaveTypes": true
+  },
+  "generation": {
+    "textProvider": "anthropic",
+    "textModel": "claude-sonnet-4-6",
+    "kieTextModel": "claude-sonnet-4-6",
+    "imageProvider": "kie",
+    "kieImageModel": "nano-banana-2",
+    "falImageModel": "fal-ai/nano-banana-pro",
+    "batchSize": 3,
+    "delayBetweenMs": 3000,
+    "imagesPerRecipe": 3,
+    "imagesPerGuide": 3
+  },
+  "seo": {
+    "minFaqCount": 3,
+    "minInstructions": 6,
+    "minIngredients": 8,
+    "metaDescriptionMin": 120,
+    "metaDescriptionMax": 158,
+    "titleMax": 60,
+    "minGuideSections": 5
+  },
+  "workflow": {
+    "autoApprove": true,
+    "autoSchedule": true,
+    "defaultBatchSize": 999,
+    "maxRetries": 2
+  }
+}

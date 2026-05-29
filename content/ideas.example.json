@@ -1,0 +1,28 @@
+{
+  "ideas": [
+    {
+      "id": "r001",
+      "title": "Keto Blueberry Cream Cupcakes",
+      "category": "keto",
+      "notes": "Under 4 net carbs, almond flour, cream cheese frosting",
+      "priority": 1,
+      "status": "idea"
+    },
+    {
+      "id": "r002",
+      "title": "Vegan Lemon Poppy Seed Cupcakes",
+      "category": "vegan",
+      "notes": "Aquafaba lift, no dairy, bright citrus",
+      "priority": 2,
+      "status": "idea"
+    },
+    {
+      "id": "r003",
+      "title": "Nut-Free Chocolate Fudge Cupcakes",
+      "category": "nut-free",
+      "notes": "Sunflower seed butter richness, school-safe labels",
+      "priority": 3,
+      "status": "idea"
+    }
+  ]
+}

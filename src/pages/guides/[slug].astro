@@ -1,0 +1,229 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildGuideArticleSchema } from '../../utils/guideArticleSchema';
+import { loadAllGeneratedGuides, type GeneratedGuide } from '../../data/guides';
+
+export async function getStaticPaths() {
+  return loadAllGeneratedGuides().map((guide) => ({
+    params: { slug: guide.slug },
+    props: { guide },
+  }));
+}
+
+const { guide } = Astro.props as { guide: GeneratedGuide };
+
+const canonicalUrl = `https://incr-ediblecupcakes.com/guides/${guide.slug}`;
+const metaDescription = guide.metaDescription ?? guide.desc;
+const title = guide.title;
+const datePublished = guide.datePublished ?? guide.publishedAt ?? '2026-01-01';
+const dateModified = guide.dateModified ?? datePublished;
+const galleryImages =
+  guide.images && guide.images.length > 0
+    ? guide.images
+    : [{ src: guide.image, alt: title }];
+
+const heroImage = galleryImages[0];
+const bodyImages = galleryImages.slice(1);
+const processImage = bodyImages.find((img) => img.role === 'process') ?? bodyImages[0];
+const detailImage = bodyImages.find((img) => img.role === 'detail') ?? bodyImages[1];
+const sectionCount = guide.sections?.length ?? 0;
+const processAfterSection = sectionCount > 0 ? Math.floor(sectionCount / 3) : 0;
+const detailAfterSection = sectionCount > 0 ? Math.floor((2 * sectionCount) / 3) : 0;
+
+const schemaImages = galleryImages.map((img) => `https://incr-ediblecupcakes.com${img.src}`);
+
+const howToSchema = guide.howToSteps?.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      description: metaDescription,
+      step: guide.howToSteps.map((s, i) => ({
+        '@type': 'HowToStep',
+        position: i + 1,
+        name: s,
+      })),
+    }
+  : null;
+
+const faqSchema =
+  guide.faq && guide.faq.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: guide.faq.map((f) => ({
+          '@type': 'Question',
+          name: f.question,
+          acceptedAnswer: { '@type': 'Answer', text: f.answer },
+        })),
+      }
+    : null;
+
+const articleSchema = buildGuideArticleSchema({
+  headline: title,
+  description: metaDescription,
+  url: canonicalUrl,
+  datePublished,
+  dateModified,
+  imagePath: heroImage.src,
+});
+if (schemaImages.length > 1) {
+  (articleSchema as Record<string, unknown>).image = schemaImages;
+}
+---
+
+<BaseLayout
+  title={guide.metaTitle ?? `${title} | Incr-EdibleCupCakes Guides`}
+  description={metaDescription}
+  canonical={canonicalUrl}
+  image={heroImage.src}
+  ogType="article"
+>
+  <Fragment slot="head">
+    {howToSchema && <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />}
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  </Fragment>
+  <Header />
+  <main id="main-content" class="pt-24 lg:pt-28 pb-24">
+    <div class="max-w-5xl mx-auto px-4">
+      <Breadcrumbs
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Guides', url: '/guides' },
+          { name: title },
+        ]}
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <aside class="lg:col-span-1 lg:sticky lg:top-24 space-y-6">
+          <div class="w-full max-w-80 aspect-square rounded-2xl overflow-hidden shadow bg-white mx-auto lg:mx-0">
+            <img
+              src={heroImage.src}
+              alt={heroImage.alt}
+              width={600}
+              height={600}
+              loading="eager"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          {guide.sidebarBullets && guide.sidebarBullets.length > 0 && (
+            <div class="bg-gray-50 border rounded-xl p-4">
+              <h2 class="font-bold text-gray-900 mb-3">{guide.sidebarTitle ?? 'Quick reference'}</h2>
+              <ul class="list-disc pl-5 text-sm text-gray-700 space-y-1">
+                {guide.sidebarBullets.map((b) => (
+                  <li>{b}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </aside>
+        <article class="lg:col-span-2 space-y-8">
+          <h1 class="text-4xl font-black text-gray-900">{title}</h1>
+          <p class="text-sm text-gray-500">
+            By <a href="/about" class="text-rose-600 hover:underline">Sarah</a>, Incr-EdibleCupCakes.
+            Updated {dateModified}.
+          </p>
+          {guide.summaryShort && (
+            <p class="guide-summary text-base text-rose-800 bg-rose-50 border border-rose-100 rounded-xl px-4 py-3">
+              {guide.summaryShort}
+            </p>
+          )}
+
+          {guide.table && guide.table.rows?.length > 0 && (
+            <div class="overflow-hidden rounded-xl border border-gray-200">
+              <table class="w-full text-left text-sm text-gray-700">
+                <thead>
+                  <tr class="border-b border-gray-200 bg-gray-50">
+                    {guide.table.headers.map((h) => (
+                      <th class="px-4 py-3 font-semibold text-gray-900">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {guide.table.rows.map((row) => (
+                    <tr class="border-b border-gray-100">
+                      {row.map((cell) => (
+                        <td class="px-4 py-3">{cell}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+
+          {guide.sections?.map((section, sectionIndex) => (
+            <>
+              <section class="space-y-4">
+                <h2 class="text-2xl font-bold text-gray-900">{section.heading}</h2>
+                {section.paragraphs?.map((p) => (
+                  <p class="text-gray-700">{p}</p>
+                ))}
+                {section.list && section.list.length > 0 && (
+                  <ul class="list-disc pl-6 text-gray-700 space-y-2 border-l-4 border-rose-200">
+                    {section.list.map((item) => (
+                      <li>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </section>
+              {processImage && sectionIndex === processAfterSection && (
+                <figure class="rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src={processImage.src}
+                    alt={processImage.alt}
+                    width={800}
+                    height={500}
+                    loading="lazy"
+                    class="w-full h-64 object-cover"
+                  />
+                </figure>
+              )}
+              {detailImage && sectionIndex === detailAfterSection && (
+                <figure class="rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src={detailImage.src}
+                    alt={detailImage.alt}
+                    width={800}
+                    height={500}
+                    loading="lazy"
+                    class="w-full h-64 object-cover"
+                  />
+                </figure>
+              )}
+            </>
+          ))}
+
+          {guide.faq && guide.faq.length > 0 && (
+            <section class="space-y-4">
+              <h2 class="text-2xl font-bold text-gray-900">FAQ</h2>
+              {guide.faq.map((f) => (
+                <div class="border border-gray-200 rounded-xl p-4">
+                  <h3 class="font-bold text-gray-900 mb-2">{f.question}</h3>
+                  <p class="text-gray-700">{f.answer}</p>
+                </div>
+              ))}
+            </section>
+          )}
+
+          {guide.relatedLinks && guide.relatedLinks.length > 0 && (
+            <section class="space-y-3">
+              <h2 class="text-2xl font-bold text-gray-900">Related on Incr-EdibleCupCakes</h2>
+              <ul class="list-disc pl-6 text-rose-600 space-y-1">
+                {guide.relatedLinks.map((link) => (
+                  <li>
+                    <a href={link.href} class="hover:underline">{link.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+        </article>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

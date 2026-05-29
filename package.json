@@ -6,14 +6,26 @@
     "node": ">=22"
   },
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS=--max-old-space-size=4096 astro dev",
-    "start": "cross-env NODE_OPTIONS=--max-old-space-size=4096 astro dev",
-    "build": "cross-env NODE_OPTIONS=--max-old-space-size=4096 tsx scripts/update-sitemap.mjs && cross-env NODE_OPTIONS=--max-old-space-size=4096 astro build",
+    "dev": "node scripts/materialize-public-assets.mjs && cross-env NODE_OPTIONS=--max-old-space-size=4096 astro dev",
+    "start": "node scripts/materialize-public-assets.mjs && cross-env NODE_OPTIONS=--max-old-space-size=4096 astro dev",
+    "build": "node scripts/materialize-public-assets.mjs && cross-env NODE_OPTIONS=--max-old-space-size=4096 tsx scripts/update-seo.mjs --no-indexnow && cross-env NODE_OPTIONS=--max-old-space-size=4096 astro build",
     "preview": "astro preview",
     "astro": "astro",
     "lint": "astro check",
     "update-sitemap": "tsx scripts/update-sitemap.mjs",
-    "seo-check": "node scripts/seo-monitor.mjs"
+    "update-seo": "tsx scripts/update-seo.mjs",
+    "update-llms": "tsx scripts/update-llms.mjs",
+    "indexnow": "tsx scripts/indexnow.mjs",
+    "seo-check": "node scripts/seo-monitor.mjs",
+    "content": "node scripts/content/cli.mjs",
+    "content:run": "node scripts/content/cli.mjs run",
+    "content:import": "node scripts/content/cli.mjs import",
+    "content:status": "node scripts/content/cli.mjs status",
+    "content:generate": "node scripts/content/cli.mjs generate",
+    "content:approve": "node scripts/content/cli.mjs approve",
+    "content:schedule": "node scripts/content/cli.mjs schedule",
+    "content:cleanup": "node scripts/cleanup-generated-content.mjs",
+    "content:publish-due": "node scripts/content/cli.mjs publish-due"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",

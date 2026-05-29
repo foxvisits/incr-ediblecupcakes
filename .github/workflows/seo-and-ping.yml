@@ -7,8 +7,10 @@ on:
     branches: [ main ]
     paths:
       - 'public/sitemap.xml'
-      - 'scripts/**sitemap**.mjs'
-      - 'src/data/recipes.ts'
+      - 'public/llms.txt'
+      - 'src/data/recipes/**'
+      - 'src/data/guides/**'
+      - 'scripts/**'
 
 jobs:
   seo-check:
@@ -22,18 +24,26 @@ jobs:
           node-version: '22'
       - name: Install deps
         run: npm ci
+      - name: Regenerate SEO files
+        run: npm run update-seo -- --no-indexnow
       - name: Run SEO check
         run: npm run seo-check
       - name: Astro check
         run: npm run lint
 
-  ping-sitemaps:
+  index-and-ping:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
-      - name: Ping Google
-        run: |
-          curl -s -o /dev/null -w "%{http_code}\n" "https://www.google.com/ping?sitemap=https://incr-ediblecupcakes.com/sitemap.xml"
-      - name: Ping Bing
-        run: |
-          curl -s -o /dev/null -w "%{http_code}\n" "https://www.bing.com/ping?sitemap=https://incr-ediblecupcakes.com/sitemap.xml"
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install deps
+        run: npm ci
+      - name: SEO sync + IndexNow + sitemap ping
+        run: npm run update-seo -- --ping
+        env:
+          INDEXNOW_KEY: a48df6c167094534b369300a89f8f530

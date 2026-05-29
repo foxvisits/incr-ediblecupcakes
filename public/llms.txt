@@ -4,46 +4,69 @@
 
 ## Primary pages
 
-- https://incr-ediblecupcakes.com/
-- https://incr-ediblecupcakes.com/recipes
-- https://incr-ediblecupcakes.com/guides
-- https://incr-ediblecupcakes.com/categories
-- https://incr-ediblecupcakes.com/about
-- https://incr-ediblecupcakes.com/contact
-- https://incr-ediblecupcakes.com/privacy
+https://incr-ediblecupcakes.com/
+https://incr-ediblecupcakes.com/recipes
+https://incr-ediblecupcakes.com/guides
+https://incr-ediblecupcakes.com/categories
+https://incr-ediblecupcakes.com/about
+https://incr-ediblecupcakes.com/contact
+https://incr-ediblecupcakes.com/privacy
 
-## Top recipes
+## Recipes (newest first)
 
-- https://incr-ediblecupcakes.com/recipe/classic-vanilla-dream-cupcakes
-- https://incr-ediblecupcakes.com/recipe/keto-chocolate-bliss-cupcakes
-- https://incr-ediblecupcakes.com/recipe/yellow-cake-cupcakes
-- https://incr-ediblecupcakes.com/recipe/mango-coconut-sunset-cupcakes
-- https://incr-ediblecupcakes.com/recipe/chocolate-chili-firecracker-cupcakes
-- https://incr-ediblecupcakes.com/recipe/red-velvet-romance-cupcakes
-- https://incr-ediblecupcakes.com/recipe/vegan-rainbow-surprise-cupcakes
+https://incr-ediblecupcakes.com/recipe/miso-caramel-cupcakes
+https://incr-ediblecupcakes.com/recipe/ube-coconut-cupcakes
+https://incr-ediblecupcakes.com/recipe/boston-cream-cupcakes
+https://incr-ediblecupcakes.com/recipe/cherry-blossom-cupcakes
+https://incr-ediblecupcakes.com/recipe/chocolate-chili-firecracker-cupcakes
+https://incr-ediblecupcakes.com/recipe/classic-vanilla-dream-cupcakes
+https://incr-ediblecupcakes.com/recipe/cranberry-orange-sparkle-cupcakes
+https://incr-ediblecupcakes.com/recipe/gluten-free-almond-joy-cupcakes
+https://incr-ediblecupcakes.com/recipe/keto-chocolate-bliss-cupcakes
+https://incr-ediblecupcakes.com/recipe/keto-chocolate-truffle-cupcakes
+https://incr-ediblecupcakes.com/recipe/keto-lemon-ricotta-cupcakes
+https://incr-ediblecupcakes.com/recipe/mango-coconut-sunset-cupcakes
+https://incr-ediblecupcakes.com/recipe/nut-free-lemon-sunshine-cupcakes
+https://incr-ediblecupcakes.com/recipe/prune-cupcakes
+https://incr-ediblecupcakes.com/recipe/red-velvet-romance-cupcakes
+https://incr-ediblecupcakes.com/recipe/rosewater-pistachio-delight-cupcakes
+https://incr-ediblecupcakes.com/recipe/spiced-pear-cupcakes
+https://incr-ediblecupcakes.com/recipe/vegan-rainbow-surprise-cupcakes
+https://incr-ediblecupcakes.com/recipe/white-chocolate-snowflake-cupcakes
+https://incr-ediblecupcakes.com/recipe/yellow-cake-cupcakes
 
-## Top guides
+## Guides (newest first)
 
-- https://incr-ediblecupcakes.com/guides/why-do-cupcakes-sink-after-baking
-- https://incr-ediblecupcakes.com/guides/fix-cupcake-mistakes
-- https://incr-ediblecupcakes.com/guides/how-to-make-cupcakes-moist-every-time
-- https://incr-ediblecupcakes.com/guides/egg-substitutes-for-cupcakes
-- https://incr-ediblecupcakes.com/guides/cupcake-vs-muffin-whats-the-real-difference
-- https://incr-ediblecupcakes.com/guides/natural-food-coloring-for-frosting
+https://incr-ediblecupcakes.com/guides/cupcake-flavor-pairing-guide
+https://incr-ediblecupcakes.com/guides/how-to-create-cupcake-flavors
+https://incr-ediblecupcakes.com/guides/why-do-cupcakes-sink-after-baking
+https://incr-ediblecupcakes.com/guides/how-to-make-cupcakes-moist-every-time
+https://incr-ediblecupcakes.com/guides/cupcake-vs-muffin-whats-the-real-difference
+https://incr-ediblecupcakes.com/guides/natural-food-coloring-for-frosting
+https://incr-ediblecupcakes.com/guides/egg-substitutes-for-cupcakes
+https://incr-ediblecupcakes.com/guides/fix-cupcake-mistakes
 
 ## Reference pages
 
-- https://incr-ediblecupcakes.com/substitutes/egg
-- https://incr-ediblecupcakes.com/substitutes/buttermilk
-- https://incr-ediblecupcakes.com/baking-times/standard
-- https://incr-ediblecupcakes.com/categories/keto
-- https://incr-ediblecupcakes.com/categories/vegan
+https://incr-ediblecupcakes.com/substitutes/egg
+https://incr-ediblecupcakes.com/substitutes/buttermilk
+https://incr-ediblecupcakes.com/substitutes/sugar
+https://incr-ediblecupcakes.com/substitutes/flour
+https://incr-ediblecupcakes.com/baking-times/standard
+https://incr-ediblecupcakes.com/baking-times/mini
+https://incr-ediblecupcakes.com/baking-times/jumbo
+https://incr-ediblecupcakes.com/categories/keto
+https://incr-ediblecupcakes.com/categories/vegan
+https://incr-ediblecupcakes.com/categories/gourmet
+https://incr-ediblecupcakes.com/categories/tropical
+https://incr-ediblecupcakes.com/tags
 
 ## Resources
 
-- https://incr-ediblecupcakes.com/cupcake-troubleshooting-checklist.txt
-- https://incr-ediblecupcakes.com/egg-substitutes-cheatsheet.txt
+https://incr-ediblecupcakes.com/cupcake-troubleshooting-checklist.txt
+https://incr-ediblecupcakes.com/egg-substitutes-cheatsheet.txt
 
 Sitemap: https://incr-ediblecupcakes.com/sitemap.xml
+LLMs: https://incr-ediblecupcakes.com/llms.txt
 
 Contact: sarah@incr-ediblecupcakes.com

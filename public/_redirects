@@ -1,7 +1,6 @@
 # Canonical asset URLs (200 rewrite to legacy filenames on CDN)
 /hero-cupcake-scene.png  /A vibrant, mouth-watering cupcake scene.png  200
 /logo.png  /Incr-EdibleCupCakes Logo.png  200
-/sarah.png  /Sarah.png  200
 
 # Recipe images — kebab-case canonical URLs
 /classic-vanilla-dream-cupcakes.jpg  /Classic Vanilla Dream Cupcakes.jpg  200

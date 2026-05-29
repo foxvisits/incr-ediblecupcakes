@@ -1,0 +1,59 @@
+---
+description: Gdy użytkownik wkleja pomysły na przepisy lub guide'y — obsłuż pipeline treści automatycznie
+alwaysApply: true
+---
+
+# Content pipeline — wklej i uruchom
+
+Gdy użytkownik wkleja listę pomysłów (przepisy, guide'y, lub oba) w czacie:
+
+## Przepisy
+1. Sparsuj listę (akceptuj: plain text, bullet points, numerację, `Tytuł | kategoria | notatki`).
+2. Dopisz unikalne linie do `content/ideas.txt` (bez duplikatów tytułów).
+3. Uruchom: `npm run content:import` potem `npm run content:run -- N` (N = liczba nowych pomysłów).
+4. Nie proś użytkownika o JSON, ręczny approve ani edycję plików technicznych.
+5. Po zakończeniu podaj krótki raport: ile dodano, ile wygenerowano, ile failed, harmonogram.
+
+## Guide'y
+1. Dopisz pomysły do `content/guide-ideas.txt` (format: `Tytuł | kąt/notatki`).
+2. Guide pipeline jest częścią `content:run`.
+3. Po generacji uruchom `npm run content:cleanup`.
+
+## Jakość (obowiązkowe — `content/requirements.md`)
+
+Przed publikacją każda treść MUSI spełniać:
+
+### Zero tolerancji
+- Brak em dash (—) i en dash (–) w **każdym** polu JSON (body, alt, prompt, meta).
+- Brak AI-slop: delve, leverage, utilize, framework, mid-palate, flavor story, hero ingredient, itd.
+
+### Czytelność (content-readability-seo-geo)
+- Zdania 12–18 słów średnio; max 2 zdania na akapit w guide.
+- Prosty język bloga kulinarnego (Sarah, domowa piekarka).
+- Listy i podnagłówki zamiast ścian tekstu.
+- Lead sekcji = odpowiedź w pierwszym zdaniu (GEO/snippet).
+
+### Technika
+- 3 obrazy: hero (1 w layoucie), process + detail w body.
+- Pełne schema, FAQ, meta, alt.
+- `npm run content:cleanup` po generacji — bez warningów.
+- Unikalność względem `src/data/recipes.ts`, `generated/` i istniejących guide'ów.
+
+### Post-processing
+- Cleanup dotyka tylko pól treści — nigdy slug, src, ingredients, paths.
+- Jeśli cleanup psuje tekst, przepisz ręcznie zamiast agresywnego skracania zdań.
+
+### SEO sync (po publikacji / deploy)
+- `content:publish-due` automatycznie uruchamia `update-seo` (sitemap + llms.txt + IndexNow).
+- Ręcznie: `npm run update-seo` lub `npm run update-seo -- --ping`.
+- Nowe URL muszą trafić do sitemap i llms.txt przed deployem (build też regeneruje bez IndexNow).
+- IndexNow key: `public/a48df6c167094534b369300a89f8f530.txt` (Bing Webmaster).
+
+## Klucze API
+- Czytaj z `.env` / `.env.local` — nie commituj sekretów.
+- Wymagane: `ANTHROPIC_API_KEY`, `KIE_API_KEY`.
+
+## Użytkownik NIE musi
+- Otwierać JSON ręcznie
+- Przeglądać każdy draft
+- Kopiować plików między folderami

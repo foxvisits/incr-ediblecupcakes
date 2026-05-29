@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
-  <!-- Homepage -->
   <url>
     <loc>https://incr-ediblecupcakes.com/</loc>
     <lastmod>2026-05-29</lastmod>
@@ -10,11 +8,10 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://incr-ediblecupcakes.com/hero-cupcake-scene.png</image:loc>
-      <image:title>Incr-EdibleCupCakes - Extraordinary Cupcake Recipes</image:title>
+      <image:title>Incr-EdibleCupCakes</image:title>
     </image:image>
   </url>
 
-  <!-- Main Pages -->
   <url>
     <loc>https://incr-ediblecupcakes.com/recipes</loc>
     <lastmod>2026-05-29</lastmod>
@@ -29,7 +26,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://incr-ediblecupcakes.com/sarah.png</image:loc>
-      <image:title>Sarah - Professional Baker and Recipe Developer</image:title>
+      <image:title>Incr-EdibleCupCakes</image:title>
     </image:image>
   </url>
 
@@ -47,7 +44,6 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- Categories Index -->
   <url>
     <loc>https://incr-ediblecupcakes.com/categories</loc>
     <lastmod>2026-05-29</lastmod>
@@ -55,7 +51,20 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Category Pages -->
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://incr-ediblecupcakes.com/categories/classic</loc>
     <lastmod>2026-05-29</lastmod>
@@ -119,179 +128,28 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Tags Index -->
   <url>
-    <loc>https://incr-ediblecupcakes.com/tags</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Guides Index -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/guides</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Classic Vanilla Dream Cupcakes -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/classic-vanilla-dream-cupcakes</loc>
+    <loc>https://incr-ediblecupcakes.com/recipe/miso-caramel-cupcakes</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/classic-vanilla-dream-cupcakes.jpg</image:loc>
-      <image:title>Classic Vanilla Dream Cupcakes Recipe</image:title>
+      <image:loc>https://incr-ediblecupcakes.com/miso-caramel-cupcakes.jpg</image:loc>
+      <image:title>Miso Caramel Cupcakes</image:title>
     </image:image>
   </url>
 
-  <!-- Cranberry Orange Sparkle Cupcakes -->
   <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/cranberry-orange-sparkle-cupcakes</loc>
+    <loc>https://incr-ediblecupcakes.com/recipe/ube-coconut-cupcakes</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/cranberry-orange-sparkle-cupcakes.jpg</image:loc>
-      <image:title>Cranberry Orange Sparkle Cupcakes Recipe</image:title>
+      <image:loc>https://incr-ediblecupcakes.com/ube-coconut-cupcakes.jpg</image:loc>
+      <image:title>Ube Coconut Cupcakes</image:title>
     </image:image>
   </url>
 
-  <!-- White Chocolate Snowflake Cupcakes -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/white-chocolate-snowflake-cupcakes</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/white-chocolate-snowflake-cupcakes.jpg</image:loc>
-      <image:title>White Chocolate Snowflake Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <!-- Spiced Pear Cupcakes -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/spiced-pear-cupcakes</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/spiced-pear-cupcakes.jpg</image:loc>
-      <image:title>Spiced Pear Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <!-- Cherry Blossom Cupcakes -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/cherry-blossom-cupcakes</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/Cherry-Blossom-Cupcakes.jpg</image:loc>
-      <image:title>Cherry Blossom Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <!-- Keto Chocolate Bliss Cupcakes -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/keto-chocolate-bliss-cupcakes</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/keto-chocolate-bliss-cupcakes.png</image:loc>
-      <image:title>Keto Chocolate Bliss Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <!-- Vegan Rainbow Surprise Cupcakes -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/vegan-rainbow-surprise-cupcakes</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/vegan-rainbow-surprise-cupcakes.jpg</image:loc>
-      <image:title>Vegan Rainbow Surprise Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <!-- Nut-Free Lemon Sunshine Cupcakes -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/nut-free-lemon-sunshine-cupcakes</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/nut-free-lemon-sunshine-cupcakes.jpg</image:loc>
-      <image:title>Nut-Free Lemon Sunshine Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <!-- Red Velvet Romance Cupcakes -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/red-velvet-romance-cupcakes</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/red-velvet-romance-cupcakes.jpg</image:loc>
-      <image:title>Red Velvet Romance Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <!-- Gluten-Free Almond Joy Cupcakes -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/gluten-free-almond-joy-cupcakes</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/gluten-free-almond-joy-cupcakes.jpg</image:loc>
-      <image:title>Gluten-Free Almond Joy Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <!-- Rosewater Pistachio Delight Cupcakes -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/rosewater-pistachio-delight-cupcakes</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/rosewater-pistachio-delight-cupcakes.jpg</image:loc>
-      <image:title>Rosewater Pistachio Delight Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <!-- Mango Coconut Sunset Cupcakes -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/mango-coconut-sunset-cupcakes</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/mango-coconut-sunset-cupcakes.png</image:loc>
-      <image:title>Mango Coconut Sunset Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <!-- Chocolate Chili Firecracker Cupcakes -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/chocolate-chili-firecracker-cupcakes</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/chocolate-chili-firecracker-cupcakes.jpg</image:loc>
-      <image:title>Chocolate Chili Firecracker Cupcakes Recipe</image:title>
-    </image:image>
-  </url>
-
-  <!-- Boston Cream Cupcakes -->
   <url>
     <loc>https://incr-ediblecupcakes.com/recipe/boston-cream-cupcakes</loc>
     <lastmod>2026-05-29</lastmod>
@@ -299,47 +157,76 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://incr-ediblecupcakes.com/boston-cream-cupcakes.jpg</image:loc>
-      <image:title>Boston Cream Cupcakes Recipe</image:title>
+      <image:title>Boston Cream Cupcakes</image:title>
     </image:image>
   </url>
 
-  <!-- Prune Cupcakes -->
   <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/prune-cupcakes</loc>
+    <loc>https://incr-ediblecupcakes.com/recipe/cherry-blossom-cupcakes</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/prune-cupcakes.jpg</image:loc>
-      <image:title>Prune Cupcakes Recipe</image:title>
+      <image:loc>https://incr-ediblecupcakes.com/Cherry-Blossom-Cupcakes.jpg</image:loc>
+      <image:title>Cherry Blossom Cupcakes</image:title>
     </image:image>
   </url>
 
-  <!-- Yellow Cake Cupcakes -->
   <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/yellow-cake-cupcakes</loc>
+    <loc>https://incr-ediblecupcakes.com/recipe/chocolate-chili-firecracker-cupcakes</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/yellow-cake-cupcakes.jpg</image:loc>
-      <image:title>Yellow Cake Cupcakes Recipe</image:title>
+      <image:loc>https://incr-ediblecupcakes.com/chocolate-chili-firecracker-cupcakes.jpg</image:loc>
+      <image:title>Chocolate Chili Firecracker Cupcakes</image:title>
     </image:image>
   </url>
 
-  <!-- Keto Lemon Ricotta Cupcakes -->
   <url>
-    <loc>https://incr-ediblecupcakes.com/recipe/keto-lemon-ricotta-cupcakes</loc>
+    <loc>https://incr-ediblecupcakes.com/recipe/classic-vanilla-dream-cupcakes</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://incr-ediblecupcakes.com/keto-lemon-ricotta-cupcakes.jpg</image:loc>
-      <image:title>Keto Lemon Ricotta Cupcakes Recipe</image:title>
+      <image:loc>https://incr-ediblecupcakes.com/classic-vanilla-dream-cupcakes.jpg</image:loc>
+      <image:title>Classic Vanilla Dream Cupcakes</image:title>
     </image:image>
   </url>
 
-  <!-- Keto Chocolate Truffle Cupcakes -->
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/cranberry-orange-sparkle-cupcakes</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/cranberry-orange-sparkle-cupcakes.jpg</image:loc>
+      <image:title>Cranberry Orange Sparkle Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/gluten-free-almond-joy-cupcakes</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/gluten-free-almond-joy-cupcakes.jpg</image:loc>
+      <image:title>Gluten-Free Almond Joy Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/keto-chocolate-bliss-cupcakes</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/keto-chocolate-bliss-cupcakes.png</image:loc>
+      <image:title>Keto Chocolate Bliss Cupcakes</image:title>
+    </image:image>
+  </url>
+
   <url>
     <loc>https://incr-ediblecupcakes.com/recipe/keto-chocolate-truffle-cupcakes</loc>
     <lastmod>2026-05-29</lastmod>
@@ -347,35 +234,127 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://incr-ediblecupcakes.com/keto-chocolate-truffle-cupcakes.jpg</image:loc>
-      <image:title>Keto Chocolate Truffle Cupcakes Recipe</image:title>
+      <image:title>Keto Chocolate Truffle Cupcakes</image:title>
     </image:image>
   </url>
 
-  <!-- Tag: chocolate -->
   <url>
-    <loc>https://incr-ediblecupcakes.com/tags/chocolate</loc>
+    <loc>https://incr-ediblecupcakes.com/recipe/keto-lemon-ricotta-cupcakes</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/keto-lemon-ricotta-cupcakes.jpg</image:loc>
+      <image:title>Keto Lemon Ricotta Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/mango-coconut-sunset-cupcakes</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/mango-coconut-sunset-cupcakes.png</image:loc>
+      <image:title>Mango Coconut Sunset Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/nut-free-lemon-sunshine-cupcakes</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/nut-free-lemon-sunshine-cupcakes.jpg</image:loc>
+      <image:title>Nut-Free Lemon Sunshine Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/prune-cupcakes</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/prune-cupcakes.jpg</image:loc>
+      <image:title>Prune Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/red-velvet-romance-cupcakes</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/red-velvet-romance-cupcakes.jpg</image:loc>
+      <image:title>Red Velvet Romance Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/rosewater-pistachio-delight-cupcakes</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/rosewater-pistachio-delight-cupcakes.jpg</image:loc>
+      <image:title>Rosewater Pistachio Delight Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/spiced-pear-cupcakes</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/spiced-pear-cupcakes.jpg</image:loc>
+      <image:title>Spiced Pear Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/vegan-rainbow-surprise-cupcakes</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/vegan-rainbow-surprise-cupcakes.jpg</image:loc>
+      <image:title>Vegan Rainbow Surprise Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/white-chocolate-snowflake-cupcakes</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/white-chocolate-snowflake-cupcakes.jpg</image:loc>
+      <image:title>White Chocolate Snowflake Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/yellow-cake-cupcakes</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/yellow-cake-cupcakes.jpg</image:loc>
+      <image:title>Yellow Cake Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/buttercream</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Tag: almond-flour -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/almond-flour</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Tag: erythritol -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/erythritol</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Tag: coconut -->
   <url>
     <loc>https://incr-ediblecupcakes.com/tags/coconut</loc>
     <lastmod>2026-05-29</lastmod>
@@ -383,23 +362,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Tag: lemon -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/lemon</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Tag: cream-cheese -->
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/cream-cheese</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Tag: ganache -->
   <url>
     <loc>https://incr-ediblecupcakes.com/tags/ganache</loc>
     <lastmod>2026-05-29</lastmod>
@@ -407,7 +369,41 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Natural Food Coloring for Frosting (No Dyes) -->
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/chocolate</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/almond-flour</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/erythritol</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/lemon</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/cream-cheese</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://incr-ediblecupcakes.com/guides/natural-food-coloring-for-frosting</loc>
     <lastmod>2025-11-03</lastmod>
@@ -419,7 +415,6 @@
     </image:image>
   </url>
 
-  <!-- Egg substitutes for cupcakes -->
   <url>
     <loc>https://incr-ediblecupcakes.com/guides/egg-substitutes-for-cupcakes</loc>
     <lastmod>2025-11-02</lastmod>
@@ -431,7 +426,6 @@
     </image:image>
   </url>
 
-  <!-- 10 cupcake mistakes and how to fix them -->
   <url>
     <loc>https://incr-ediblecupcakes.com/guides/fix-cupcake-mistakes</loc>
     <lastmod>2025-11-01</lastmod>
@@ -443,7 +437,6 @@
     </image:image>
   </url>
 
-  <!-- Why Do Cupcakes Sink After Baking? -->
   <url>
     <loc>https://incr-ediblecupcakes.com/guides/why-do-cupcakes-sink-after-baking</loc>
     <lastmod>2026-01-28</lastmod>
@@ -455,7 +448,6 @@
     </image:image>
   </url>
 
-  <!-- How to Make Cupcakes Moist Every Time -->
   <url>
     <loc>https://incr-ediblecupcakes.com/guides/how-to-make-cupcakes-moist-every-time</loc>
     <lastmod>2026-01-28</lastmod>
@@ -467,7 +459,6 @@
     </image:image>
   </url>
 
-  <!-- Cupcake vs Muffin - What's the Real Difference? -->
   <url>
     <loc>https://incr-ediblecupcakes.com/guides/cupcake-vs-muffin-whats-the-real-difference</loc>
     <lastmod>2026-01-28</lastmod>
@@ -479,7 +470,28 @@
     </image:image>
   </url>
 
-  <!-- Substitute: egg -->
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides/cupcake-flavor-pairing-guide</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/guide-cupcake-flavor-pairing-guide.jpg</image:loc>
+      <image:title>A Flavor Pairing Guide for Inventing Cupcake Combos</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides/how-to-create-cupcake-flavors</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/guide-how-to-create-cupcake-flavors.jpg</image:loc>
+      <image:title>How to Develop Your Own Signature Cupcake Flavor</image:title>
+    </image:image>
+  </url>
+
   <url>
     <loc>https://incr-ediblecupcakes.com/substitutes/egg</loc>
     <lastmod>2026-05-29</lastmod>
@@ -487,7 +499,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Substitute: buttermilk -->
   <url>
     <loc>https://incr-ediblecupcakes.com/substitutes/buttermilk</loc>
     <lastmod>2026-05-29</lastmod>
@@ -495,7 +506,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Substitute: sugar -->
   <url>
     <loc>https://incr-ediblecupcakes.com/substitutes/sugar</loc>
     <lastmod>2026-05-29</lastmod>
@@ -503,7 +513,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Substitute: flour -->
   <url>
     <loc>https://incr-ediblecupcakes.com/substitutes/flour</loc>
     <lastmod>2026-05-29</lastmod>
@@ -511,7 +520,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Baking Times: standard -->
   <url>
     <loc>https://incr-ediblecupcakes.com/baking-times/standard</loc>
     <lastmod>2026-05-29</lastmod>
@@ -519,7 +527,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Baking Times: mini -->
   <url>
     <loc>https://incr-ediblecupcakes.com/baking-times/mini</loc>
     <lastmod>2026-05-29</lastmod>
@@ -527,7 +534,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Baking Times: jumbo -->
   <url>
     <loc>https://incr-ediblecupcakes.com/baking-times/jumbo</loc>
     <lastmod>2026-05-29</lastmod>

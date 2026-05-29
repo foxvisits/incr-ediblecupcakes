@@ -2,12 +2,17 @@
 
 import fs from 'fs';
 import path from 'path';
+import { INDEXNOW_KEY, LLMS_URL } from './lib/seo-config.mjs';
 
 const root = process.cwd();
 
 const REQUIRED_LLMS_PATHS = [
   '/guides/natural-food-coloring-for-frosting',
   '/guides/cupcake-vs-muffin-whats-the-real-difference',
+  '/guides/how-to-create-cupcake-flavors',
+  '/guides/cupcake-flavor-pairing-guide',
+  '/recipe/miso-caramel-cupcakes',
+  '/recipe/ube-coconut-cupcakes',
   '/categories',
   '/substitutes/egg',
   '/baking-times/standard',
@@ -15,6 +20,13 @@ const REQUIRED_LLMS_PATHS = [
 
 const checkSEO = () => {
   console.log('🔍 SEO Health Check Starting...\n');
+
+  const keyPath = path.join(root, 'public', `${INDEXNOW_KEY}.txt`);
+  if (fs.existsSync(keyPath) && fs.readFileSync(keyPath, 'utf8').trim() === INDEXNOW_KEY) {
+    console.log('✅ IndexNow key file present (Bing Webmaster)');
+  } else {
+    console.log('⚠️  IndexNow key file missing — run npm run update-seo');
+  }
 
   const sitemapPath = path.join(root, 'public', 'sitemap.xml');
   if (fs.existsSync(sitemapPath)) {
@@ -57,13 +69,16 @@ const checkSEO = () => {
   if (fs.existsSync(llmsPath)) {
     const llms = fs.readFileSync(llmsPath, 'utf8');
     console.log('✅ llms.txt present for AI crawlers');
+    if (llms.includes(LLMS_URL)) {
+      console.log('✅ llms.txt self-reference present');
+    }
     for (const requiredPath of REQUIRED_LLMS_PATHS) {
       if (!llms.includes(requiredPath)) {
-        console.log(`⚠️  llms.txt missing ${requiredPath}`);
+        console.log(`⚠️  llms.txt missing ${requiredPath} — run npm run update-seo`);
       }
     }
   } else {
-    console.log('⚠️  llms.txt missing');
+    console.log('⚠️  llms.txt missing — run npm run update-seo');
   }
 
   const headersPath = path.join(root, 'public', '_headers');

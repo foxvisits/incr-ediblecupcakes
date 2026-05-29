@@ -21,6 +21,19 @@ if (!recipe) {
   throw new Error('Recipe not found');
 }
 
+const galleryImages =
+  recipe.images && recipe.images.length > 0
+    ? recipe.images
+    : [{ src: recipe.image, alt: recipe.imageAlt ?? `${recipe.title}, cupcake recipe by Incr-EdibleCupCakes` }];
+
+const heroImage = galleryImages[0];
+const bodyImages = galleryImages.slice(1);
+const processImage = bodyImages.find((img) => img.role === 'process') ?? bodyImages[0];
+const detailImage = bodyImages.find((img) => img.role === 'detail') ?? bodyImages[1];
+const processImageAfterStep = Math.max(0, Math.floor(recipe.instructions.length / 2) - 1);
+
+const schemaImageUrls = galleryImages.map((img) => `https://incr-ediblecupcakes.com${img.src}`);
+
 const getCategoryColor = (category: string) => {
   const colors = {
     classic: 'bg-blue-100 text-blue-800',
@@ -63,7 +76,7 @@ const schemaData = {
   "@type": "Recipe",
   "name": recipe.title,
   "description": recipe.shortDescription,
-  "image": `https://incr-ediblecupcakes.com${recipe.image}`,
+  "image": schemaImageUrls.length === 1 ? schemaImageUrls[0] : schemaImageUrls,
   "url": `https://incr-ediblecupcakes.com/recipe/${recipe.slug}`,
   "datePublished": recipeDatePublished,
   "dateModified": recipeDateModified,
@@ -108,8 +121,8 @@ const schemaData = {
 ---
 
 <BaseLayout 
-  title={`${recipe.title} Recipe | Incr-EdibleCupCakes`}
-  description={`${recipe.shortDescription} Step-by-step ingredients, instructions, tips, and nutrition.`}
+  title={recipe.metaTitle ?? `${recipe.title} Recipe | Incr-EdibleCupCakes`}
+  description={recipe.metaDescription ?? `${recipe.shortDescription} Step-by-step ingredients, instructions, tips, and nutrition.`}
   image={recipe.image}
   canonical={`https://incr-ediblecupcakes.com/recipe/${recipe.slug}`}
   ogType="article"
@@ -203,6 +216,7 @@ const schemaData = {
                   <div class="text-sm">{recipe.difficulty} level</div>
                 </div>
               </div>
+              {recipe.rating != null && (
               <div class="flex items-center space-x-2">
                 <svg class="w-5 h-5 fill-current text-yellow-400" viewBox="0 0 24 24">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
@@ -212,6 +226,7 @@ const schemaData = {
                   <div class="text-sm">Editor&apos;s rating</div>
                 </div>
               </div>
+              )}
               <div class="flex items-center space-x-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
@@ -224,16 +239,18 @@ const schemaData = {
             </div>
           </div>
 
-          <div class="relative">
-            <img
-              src={recipe.image}
-              alt={`${recipe.title} - professional ${recipe.category} cupcake recipe`}
-              class="w-full h-96 object-cover rounded-2xl shadow-2xl"
-              loading="eager"
-              width={600}
-              height={384}
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl" />
+          <div class="space-y-4">
+            <div class="relative">
+              <img
+                src={heroImage.src}
+                alt={heroImage.alt}
+                class="w-full h-96 object-cover rounded-2xl shadow-2xl"
+                loading="eager"
+                width={600}
+                height={384}
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl pointer-events-none" />
+            </div>
           </div>
         </div>
       </div>
@@ -271,12 +288,26 @@ const schemaData = {
               <h2 class="text-2xl font-bold text-gray-900 mb-6">Instructions</h2>
               <div class="space-y-6">
                 {recipe.instructions.map((instruction, index) => (
-                  <div key={index} class="flex space-x-4">
-                    <div class="w-8 h-8 bg-gradient-to-br from-rose-400 to-pink-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
-                      {index + 1}
+                  <>
+                    <div key={index} class="flex space-x-4">
+                      <div class="w-8 h-8 bg-gradient-to-br from-rose-400 to-pink-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                        {index + 1}
+                      </div>
+                      <p class="text-gray-700 leading-relaxed pt-1">{instruction}</p>
                     </div>
-                    <p class="text-gray-700 leading-relaxed pt-1">{instruction}</p>
-                  </div>
+                    {processImage && index === processImageAfterStep && (
+                      <figure class="rounded-2xl overflow-hidden shadow-lg my-4">
+                        <img
+                          src={processImage.src}
+                          alt={processImage.alt}
+                          width={800}
+                          height={500}
+                          loading="lazy"
+                          class="w-full h-64 object-cover"
+                        />
+                      </figure>
+                    )}
+                  </>
                 ))}
               </div>
             </div>
@@ -292,7 +323,19 @@ const schemaData = {
           
           {/* Left Column */}
           <div class="space-y-8">
-            {/* Secondary Image (for visual detail) */}
+            {detailImage && (
+              <figure class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={detailImage.src}
+                  alt={detailImage.alt}
+                  width={1200}
+                  height={800}
+                  loading="lazy"
+                  class="w-full h-64 object-cover"
+                />
+              </figure>
+            )}
+            {/* Legacy per-recipe detail photos */}
             {recipe.slug === 'spiced-pear-cupcakes' && (
               <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <img

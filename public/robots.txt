@@ -10,4 +10,7 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+# AI / LLM discovery (GEO)
+# https://incr-ediblecupcakes.com/llms.txt
+
 Sitemap: https://incr-ediblecupcakes.com/sitemap.xml

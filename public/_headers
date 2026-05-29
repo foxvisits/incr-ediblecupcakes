@@ -39,3 +39,8 @@
 
 /llms.txt
   Cache-Control: public, max-age=3600
+  Content-Type: text/plain; charset=utf-8
+
+/a48df6c167094534b369300a89f8f530.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain; charset=utf-8

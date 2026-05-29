@@ -1,0 +1,7 @@
+# Pomysły na guide'y — ten sam format co ideas.txt (wkrótce pełna obsługa w pipeline).
+# Format:
+#   Tytuł guide'a
+#   Tytuł | krótki opis / kąt artykułu
+#
+# Przykład:
+# How to Store Cupcakes So They Stay Fresh | room temp vs fridge, frosting types

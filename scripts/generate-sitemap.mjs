@@ -119,7 +119,7 @@ function generateSitemap() {
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>${baseUrl}/Sarah.png</image:loc>
+      <image:loc>${baseUrl}/sarah.png</image:loc>
       <image:title>Sarah - Professional Baker and Recipe Developer</image:title>
     </image:image>
   </url>

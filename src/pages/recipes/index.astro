@@ -6,10 +6,10 @@ import RecipeCard from '../../components/RecipeCard.tsx';
 import ClientOnly from '../../components/ClientOnly.tsx';
 import GuideCard from '../../components/GuideCard.astro';
 import { latestGuides } from '../../data/guides';
-import { validatedRecipes } from '../../data/recipes';
+import { validatedRecipes, sortRecipesByDate } from '../../data/recipes';
 import { SITE_IMAGES } from '../../data/siteAssets';
 
-const recipes = validatedRecipes;
+const recipes = sortRecipesByDate(validatedRecipes);
 
 const categories = [
   { id: 'all', name: 'All Recipes', count: recipes.length },

@@ -11,8 +11,12 @@ npm run build        # sitemap update + production build
 npm run preview      # preview dist/
 npm run seo-check    # SEO health script
 npm run update-sitemap
+npm run content:run         # import ideas.txt → AI → schedule (main command)
+npm run content:status      # pipeline queue overview
 node scripts/generate-favicons.mjs  # after public/favicon-source.png exists
 ```
+
+See **`content/README.md`** for the full recipe publishing pipeline (ideas → AI → schedule → auto-publish).
 
 ## Deploy
 
