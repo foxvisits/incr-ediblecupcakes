@@ -31,9 +31,10 @@
       "targetKeyword": "how to brown butter for baking",
       "notes": "Browning stages, substitution ratios in cupcakes and frostings",
       "priority": 3,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-brown-butter-for-baking",
-      "publishAt": "2026-05-30T15:45:00+02:00"
+      "publishAt": "2026-05-30T15:45:00+02:00",
+      "publishedAt": "2026-05-30T15:05:14.655Z"
     }
   ]
 }
