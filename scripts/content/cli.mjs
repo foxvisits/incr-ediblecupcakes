@@ -9,6 +9,7 @@ import { cmdSchedule } from './schedule.mjs';
 import { cmdPublishDue } from './publish-due.mjs';
 import { cmdImportIdeas } from './import-ideas.mjs';
 import { cmdPipeline } from './pipeline.mjs';
+import { cmdVerifyPipeline } from './verify-pipeline.mjs';
 
 const [, , command, ...args] = process.argv;
 
@@ -22,6 +23,7 @@ Content pipeline — Incr-EdibleCupCakes
   npm run content:approve -- <id|all>
   npm run content:schedule
   npm run content:publish-due
+  npm run content:verify
 
 Docs: content/README.md
 `;
@@ -56,6 +58,9 @@ async function main() {
       break;
     case 'publish-due':
       await cmdPublishDue();
+      break;
+    case 'verify':
+      process.exit(cmdVerifyPipeline());
       break;
     default:
       console.log(help);

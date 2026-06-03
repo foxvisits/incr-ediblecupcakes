@@ -25,7 +25,8 @@
     "content:approve": "node scripts/content/cli.mjs approve",
     "content:schedule": "node scripts/content/cli.mjs schedule",
     "content:cleanup": "node scripts/cleanup-generated-content.mjs",
-    "content:publish-due": "node scripts/content/cli.mjs publish-due"
+    "content:publish-due": "node scripts/content/cli.mjs publish-due",
+    "content:verify": "node scripts/content/cli.mjs verify"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",

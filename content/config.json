@@ -5,13 +5,15 @@
     "minPerDay": 1,
     "maxPerDay": 3,
     "fixedPerDay": 3,
+    "recipesPerDay": 2,
+    "guidesPerDay": 1,
     "publishWindowStart": "10:00",
     "publishWindowEnd": "18:00",
     "timezone": "Europe/Warsaw",
     "skipWeekends": false,
-    "startDate": "2026-05-30",
+    "startDate": "2026-06-04",
     "utcOffset": "+02:00",
-    "interleaveTypes": true
+    "interleaveTypes": false
   },
   "generation": {
     "textProvider": "anthropic",

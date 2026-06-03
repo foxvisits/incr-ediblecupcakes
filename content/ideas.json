@@ -32,6 +32,146 @@
       "slug": "thai-tea-cupcakes",
       "publishAt": "2026-05-30T11:30:00+02:00",
       "publishedAt": "2026-05-30T09:59:36.652Z"
+    },
+    {
+      "id": "r004",
+      "title": "Black Sesame Cupcakes",
+      "category": "gourmet",
+      "notes": "target keyword: black sesame cupcakes. Roasted black sesame paste, dramatic gray crumb, nutty toasted finish",
+      "priority": 4,
+      "status": "scheduled",
+      "slug": "black-sesame-cupcakes",
+      "publishAt": "2026-06-04T10:16:00+02:00"
+    },
+    {
+      "id": "r005",
+      "title": "Hojicha Cupcakes",
+      "category": "gourmet",
+      "notes": "target keyword: hojicha cupcakes recipe. Roasted green tea in batter and buttercream, milder than matcha",
+      "priority": 5,
+      "status": "scheduled",
+      "slug": "hojicha-cupcakes",
+      "publishAt": "2026-06-04T12:42:00+02:00"
+    },
+    {
+      "id": "r006",
+      "title": "Halva Tahini Cupcakes",
+      "category": "gourmet",
+      "notes": "target keyword: tahini halva cupcakes. Tahini swirl batter, halva crumble topping, Middle Eastern sweet-nutty",
+      "priority": 6,
+      "status": "scheduled",
+      "slug": "halva-tahini-cupcakes",
+      "publishAt": "2026-06-05T10:09:00+02:00"
+    },
+    {
+      "id": "r007",
+      "title": "Cardamom Rose Pistachio Cupcakes",
+      "category": "spiced",
+      "notes": "target keyword: rose pistachio cupcakes. Persian gulab jamun inspiration, cardamom rose frosting, pistachio crunch",
+      "priority": 7,
+      "status": "scheduled",
+      "slug": "cardamom-rose-pistachio-cupcakes",
+      "publishAt": "2026-06-05T11:02:00+02:00"
+    },
+    {
+      "id": "r008",
+      "title": "Horchata Cupcakes",
+      "category": "tropical",
+      "notes": "target keyword: horchata cupcakes. Cinnamon rice milk flavor in cupcake and frosting, Latino market appeal",
+      "priority": 8,
+      "status": "scheduled",
+      "slug": "horchata-cupcakes",
+      "publishAt": "2026-06-06T13:11:00+02:00"
+    },
+    {
+      "id": "r009",
+      "title": "Calamansi Cupcakes",
+      "category": "tropical",
+      "notes": "target keyword: calamansi cupcakes. Philippine sour citrus curd filling, bright tart balance",
+      "priority": 9,
+      "status": "scheduled",
+      "slug": "calamansi-cupcakes",
+      "publishAt": "2026-06-06T14:02:00+02:00"
+    },
+    {
+      "id": "r010",
+      "title": "Pandan Kaya Cupcakes",
+      "category": "tropical",
+      "notes": "target keyword: pandan cupcakes recipe. Natural pandan extract, coconut kaya core, vivid green crumb",
+      "priority": 10,
+      "status": "scheduled",
+      "slug": "pandan-kaya-cupcakes",
+      "publishAt": "2026-06-07T12:48:00+02:00"
+    },
+    {
+      "id": "r011",
+      "title": "Speculoos Brown Butter Cupcakes",
+      "category": "gourmet",
+      "notes": "target keyword: biscoff brown butter cupcakes. Biscoff cookie crumb, nutty brown butter base, caramelized depth",
+      "priority": 11,
+      "status": "scheduled",
+      "slug": "speculoos-brown-butter-cupcakes",
+      "publishAt": "2026-06-07T13:28:00+02:00"
+    },
+    {
+      "id": "r012",
+      "title": "Malva Pudding Cupcakes",
+      "category": "gourmet",
+      "notes": "target keyword: malva pudding cupcakes. South African apricot jam sauce, spongy caramelized topping",
+      "priority": 12,
+      "status": "scheduled",
+      "slug": "malva-pudding-cupcakes",
+      "publishAt": "2026-06-08T11:01:00+02:00"
+    },
+    {
+      "id": "r013",
+      "title": "Espresso Martini Cupcakes",
+      "category": "gourmet",
+      "notes": "target keyword: espresso martini cupcakes. Coffee vodka soak, espresso buttercream, cocktail-inspired adult treat",
+      "priority": 13,
+      "status": "scheduled",
+      "slug": "espresso-martini-cupcakes",
+      "publishAt": "2026-06-08T13:51:00+02:00"
+    },
+    {
+      "id": "r014",
+      "title": "Aperol Spritz Cupcakes",
+      "category": "seasonal",
+      "notes": "target keyword: aperol spritz cupcakes. Bitter orange Aperol glaze, prosecco note, summer seasonal",
+      "priority": 14,
+      "status": "scheduled",
+      "slug": "aperol-spritz-cupcakes",
+      "publishAt": "2026-06-09T14:56:00+02:00"
+    },
+    {
+      "id": "r015",
+      "title": "Negroni Orange Cupcakes",
+      "category": "gourmet",
+      "notes": "target keyword: negroni cupcakes. Campari orange zest, gin-soaked syrup, bitter-sweet cocktail niche",
+      "priority": 15,
+      "status": "scheduled",
+      "slug": "negroni-orange-cupcakes",
+      "publishAt": "2026-06-09T14:59:00+02:00"
+    },
+    {
+      "id": "r016",
+      "title": "Irish Coffee Cupcakes",
+      "category": "spiced",
+      "notes": "target keyword: irish coffee cupcakes. Whiskey coffee soak, Irish cream frosting, St Patricks and winter theme",
+      "priority": 16,
+      "status": "scheduled",
+      "slug": "irish-coffee-cupcakes",
+      "publishAt": "2026-06-10T12:57:00+02:00"
+    },
+    {
+      "id": "r017",
+      "title": "Mojito Lime Mint Cupcakes",
+      "category": "tropical",
+      "notes": "target keyword: mojito cupcakes recipe. Lime zest, fresh mint buttercream, white rum syrup, refreshing summer",
+      "priority": 17,
+      "status": "scheduled",
+      "slug": "mojito-lime-mint-cupcakes",
+      "publishAt": "2026-06-10T13:16:00+02:00"
     }
   ]
 }

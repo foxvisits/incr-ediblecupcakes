@@ -75,7 +75,41 @@ export function appendIdeasToFile(lines) {
   return { appended: toAdd.length, skipped: parsed.length - toAdd.length };
 }
 
-export function cmdImportIdeas({ merge = true } = {}) {
+/**
+ * Remove from ideas.txt any line whose title already exists in ideas.json
+ * with status other than "idea" (scheduled, approved, published, etc.).
+ */
+export function pruneIdeasTxtQueue(ideasData = loadIdeas()) {
+  if (!fs.existsSync(IDEAS_TXT)) return { removed: 0 };
+
+  const byTitle = new Map(
+    ideasData.ideas.map((i) => [i.title.trim().toLowerCase(), i.status])
+  );
+
+  const lines = fs.readFileSync(IDEAS_TXT, 'utf8').split(/\r?\n/);
+  const kept = [];
+  let removed = 0;
+
+  for (const line of lines) {
+    const parsed = parseLine(line.trim().replace(/^[-*•]\s+/, '').replace(/^\d+[.)]\s+/, ''));
+    if (!parsed) {
+      kept.push(line);
+      continue;
+    }
+    const status = byTitle.get(parsed.title.trim().toLowerCase());
+    if (status && status !== 'idea') {
+      removed++;
+      continue;
+    }
+    kept.push(line);
+  }
+
+  const out = kept.join('\n').replace(/\n{3,}/g, '\n\n');
+  fs.writeFileSync(IDEAS_TXT, out.endsWith('\n') ? out : out + '\n', 'utf8');
+  return { removed };
+}
+
+export function cmdImportIdeas({ merge = true, pruneQueue = true } = {}) {
   if (!fs.existsSync(IDEAS_TXT)) {
     console.error(`Brak pliku: content/ideas.txt`);
     process.exit(1);
@@ -120,6 +154,12 @@ export function cmdImportIdeas({ merge = true } = {}) {
   }
 
   saveIdeas(ideasData);
+
+  if (pruneQueue) {
+    const { removed } = pruneIdeasTxtQueue(ideasData);
+    if (removed) console.log(`   🧹 Usunięto ${removed} linii z ideas.txt (już w pipeline)`);
+  }
+
   console.log(`\n📥 Import: ${imported} nowych pomysłów → content/ideas.json`);
   if (skipped) console.log(`   (${skipped} pominiętych — duplikat tytułu)`);
   console.log(`   Razem w kolejce: ${ideasData.ideas.filter((i) => i.status === 'idea').length} oczekujących\n`);

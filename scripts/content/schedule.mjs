@@ -114,16 +114,31 @@ export function cmdSchedule() {
     .filter((i) => i.status === 'approved')
     .sort((a, b) => (a.priority ?? 99) - (b.priority ?? 99));
 
-  const queue = buildInterleavedQueue(
-    approvedRecipes,
-    approvedGuides,
-    schedule.interleaveTypes !== false
-  );
+  const recipesPerDay = schedule.recipesPerDay;
+  const guidesPerDay = schedule.guidesPerDay;
+  const useSplitDaily =
+    Number.isFinite(recipesPerDay) && recipesPerDay > 0 &&
+    Number.isFinite(guidesPerDay) && guidesPerDay > 0;
 
-  if (queue.length === 0) {
+  let remainingRecipes = approvedRecipes.map((i) => ({ ...i, contentType: 'recipe' }));
+  let remainingGuides = approvedGuides.map((i) => ({ ...i, contentType: 'guide' }));
+
+  if (!useSplitDaily) {
+    const queue = buildInterleavedQueue(
+      approvedRecipes,
+      approvedGuides,
+      schedule.interleaveTypes !== false
+    );
+    if (queue.length === 0) {
+      console.log('Nothing approved to schedule.');
+      return;
+    }
+  } else if (remainingRecipes.length === 0 && remainingGuides.length === 0) {
     console.log('Nothing approved to schedule.');
     return;
   }
+
+  const totalCount = remainingRecipes.length + remainingGuides.length;
 
   let cursor = schedule.startDate
     ? new Date(schedule.startDate + 'T12:00:00Z')
@@ -136,31 +151,72 @@ export function cmdSchedule() {
     }
   }
 
-  let remaining = [...queue];
-  console.log(`\n📅 Scheduling ${remaining.length} item(s) (recipes + guides)...\n`);
+  console.log(
+    `\n📅 Scheduling ${totalCount} item(s)` +
+      (useSplitDaily
+        ? ` (${recipesPerDay} recipe(s) + ${guidesPerDay} guide(s) per day)...\n`
+        : '...\n')
+  );
 
-  while (remaining.length > 0) {
-    const n = Math.min(itemsPerDay(schedule), remaining.length);
-    const daySlots = [];
+  if (!useSplitDaily) {
+    const queue = buildInterleavedQueue(
+      approvedRecipes,
+      approvedGuides,
+      schedule.interleaveTypes !== false
+    );
+    let remaining = [...queue];
 
-    for (let i = 0; i < n; i++) {
-      daySlots.push(
-        randomMinutesInWindow(
-          schedule.publishWindowStart || '09:00',
-          schedule.publishWindowEnd || '19:00'
-        )
-      );
+    while (remaining.length > 0) {
+      const n = Math.min(itemsPerDay(schedule), remaining.length);
+      const daySlots = [];
+
+      for (let i = 0; i < n; i++) {
+        daySlots.push(
+          randomMinutesInWindow(
+            schedule.publishWindowStart || '09:00',
+            schedule.publishWindowEnd || '19:00'
+          )
+        );
+      }
+      daySlots.sort((a, b) => a - b);
+
+      for (const mins of daySlots) {
+        const item = remaining.shift();
+        if (!item) break;
+        const publishAt = formatPublishAt(cursor, mins, offsetStr);
+        scheduleItem(item, publishAt, ideasData, guideIdeasData);
+      }
+
+      cursor = nextDay(cursor, schedule.skipWeekends);
     }
-    daySlots.sort((a, b) => a - b);
+  } else {
+    while (remainingRecipes.length > 0 || remainingGuides.length > 0) {
+      const dayItems = [];
+      for (let i = 0; i < recipesPerDay && remainingRecipes.length; i++) {
+        dayItems.push(remainingRecipes.shift());
+      }
+      for (let i = 0; i < guidesPerDay && remainingGuides.length; i++) {
+        dayItems.push(remainingGuides.shift());
+      }
 
-    for (const mins of daySlots) {
-      const item = remaining.shift();
-      if (!item) break;
-      const publishAt = formatPublishAt(cursor, mins, offsetStr);
-      scheduleItem(item, publishAt, ideasData, guideIdeasData);
+      const daySlots = [];
+      for (let i = 0; i < dayItems.length; i++) {
+        daySlots.push(
+          randomMinutesInWindow(
+            schedule.publishWindowStart || '09:00',
+            schedule.publishWindowEnd || '19:00'
+          )
+        );
+      }
+      daySlots.sort((a, b) => a - b);
+
+      for (let i = 0; i < dayItems.length; i++) {
+        const publishAt = formatPublishAt(cursor, daySlots[i], offsetStr);
+        scheduleItem(dayItems[i], publishAt, ideasData, guideIdeasData);
+      }
+
+      cursor = nextDay(cursor, schedule.skipWeekends);
     }
-
-    cursor = nextDay(cursor, schedule.skipWeekends);
   }
 
   saveIdeas(ideasData);

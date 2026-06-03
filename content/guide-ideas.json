@@ -35,6 +35,61 @@
       "slug": "how-to-brown-butter-for-baking",
       "publishAt": "2026-05-30T15:45:00+02:00",
       "publishedAt": "2026-05-30T15:05:14.655Z"
+    },
+    {
+      "id": "g004",
+      "title": "The science of a moist cupcake crumb",
+      "category": "Technique & science",
+      "targetKeyword": "why are my cupcakes dry",
+      "notes": "Fat, sugar, and liquid ratios explained to fix dry cupcakes at home",
+      "priority": 4,
+      "status": "scheduled",
+      "slug": "science-of-moist-cupcake-crumb",
+      "publishAt": "2026-06-04T15:43:00+02:00"
+    },
+    {
+      "id": "g005",
+      "title": "High-altitude cupcake baking adjustments",
+      "category": "Technique & science",
+      "targetKeyword": "high altitude cupcakes",
+      "notes": "Elevation-specific flour, leavening, and oven tweaks with few good guides online",
+      "priority": 5,
+      "status": "scheduled",
+      "slug": "high-altitude-cupcake-baking-adjustments",
+      "publishAt": "2026-06-05T16:03:00+02:00"
+    },
+    {
+      "id": "g006",
+      "title": "How to fill cupcakes with cores and curds without sogginess",
+      "category": "Technique & science",
+      "targetKeyword": "how to fill cupcakes",
+      "notes": "Core removal, fill timing, and moisture barriers so the crumb stays firm",
+      "priority": 6,
+      "status": "scheduled",
+      "slug": "how-to-fill-cupcakes-without-sogginess",
+      "publishAt": "2026-06-06T17:21:00+02:00"
+    },
+    {
+      "id": "g007",
+      "title": "Piping tips decoded: which nozzle makes which swirl",
+      "category": "Technique & science",
+      "targetKeyword": "cupcake piping tips guide",
+      "notes": "Visual map of open star, closed star, round, and petal tips with frosting pairings",
+      "priority": 7,
+      "status": "scheduled",
+      "slug": "cupcake-piping-tips-guide",
+      "publishAt": "2026-06-07T15:02:00+02:00"
+    },
+    {
+      "id": "g008",
+      "title": "Fixing common cupcake fails: a diagnostic guide",
+      "category": "Technique & science",
+      "targetKeyword": "cupcake troubleshooting",
+      "notes": "Sinking, doming, dryness, greasiness: causes and fixes in one diagnostic flow",
+      "priority": 8,
+      "status": "scheduled",
+      "slug": "cupcake-troubleshooting",
+      "publishAt": "2026-06-08T14:35:00+02:00"
     }
   ]
 }

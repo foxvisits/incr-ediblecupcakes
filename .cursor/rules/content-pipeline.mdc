@@ -10,9 +10,10 @@ Gdy użytkownik wkleja listę pomysłów (przepisy, guide'y, lub oba) w czacie:
 ## Przepisy
 1. Sparsuj listę (akceptuj: plain text, bullet points, numerację, `Tytuł | kategoria | notatki`).
 2. Dopisz unikalne linie do `content/ideas.txt` (bez duplikatów tytułów).
-3. Uruchom: `npm run content:import` potem `npm run content:run -- N` (N = liczba nowych pomysłów).
-4. Nie proś użytkownika o JSON, ręczny approve ani edycję plików technicznych.
-5. Po zakończeniu podaj krótki raport: ile dodano, ile wygenerowano, ile failed, harmonogram.
+3. Uruchom: `npm run content:import` potem `npm run content:run -- N` (N = liczba nowych pomysłów). Import automatycznie czyści z `ideas.txt` linie już w pipeline (scheduled/published).
+4. Po batchu: `npm run content:verify` — brak duplikatów i osieroconych scheduled.
+5. Nie proś użytkownika o JSON, ręczny approve ani edycję plików technicznych.
+6. Po zakończeniu podaj krótki raport: ile dodano, ile wygenerowano, ile failed, harmonogram.
 
 ## Guide'y
 1. Dopisz pomysły do `content/guide-ideas.txt` (format: `Tytuł | kąt/notatki`).

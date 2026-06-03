@@ -14,8 +14,6 @@ https://incr-ediblecupcakes.com/privacy
 
 ## Recipes (newest first)
 
-https://incr-ediblecupcakes.com/recipe/miso-caramel-cupcakes
-https://incr-ediblecupcakes.com/recipe/ube-coconut-cupcakes
 https://incr-ediblecupcakes.com/recipe/boston-cream-cupcakes
 https://incr-ediblecupcakes.com/recipe/cherry-blossom-cupcakes
 https://incr-ediblecupcakes.com/recipe/chocolate-chili-firecracker-cupcakes
@@ -37,6 +35,7 @@ https://incr-ediblecupcakes.com/recipe/yellow-cake-cupcakes
 
 ## Guides (newest first)
 
+https://incr-ediblecupcakes.com/guides/how-to-brown-butter-for-baking
 https://incr-ediblecupcakes.com/guides/cupcake-flavor-pairing-guide
 https://incr-ediblecupcakes.com/guides/how-to-create-cupcake-flavors
 https://incr-ediblecupcakes.com/guides/why-do-cupcakes-sink-after-baking

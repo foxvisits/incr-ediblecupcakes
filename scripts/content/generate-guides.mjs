@@ -46,7 +46,7 @@ export async function cmdGenerateGuides(countArg) {
   const count = countArg ?? config.generation.batchSize ?? 3;
 
   const pending = ideasData.ideas
-    .filter((i) => i.status === 'idea')
+    .filter((i) => i.status === 'idea' && !i.slug)
     .sort((a, b) => (a.priority ?? 99) - (b.priority ?? 99))
     .slice(0, count);
 
