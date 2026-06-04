@@ -558,6 +558,17 @@
   </url>
 
   <url>
+    <loc>https://incr-ediblecupcakes.com/guides/science-of-moist-cupcake-crumb</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/guide-science-of-moist-cupcake-crumb.jpg</image:loc>
+      <image:title>The Science of a Moist Cupcake Crumb</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://incr-ediblecupcakes.com/substitutes/egg</loc>
     <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>

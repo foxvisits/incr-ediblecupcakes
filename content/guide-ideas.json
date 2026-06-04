@@ -43,9 +43,10 @@
       "targetKeyword": "why are my cupcakes dry",
       "notes": "Fat, sugar, and liquid ratios explained to fix dry cupcakes at home",
       "priority": 4,
-      "status": "scheduled",
+      "status": "published",
       "slug": "science-of-moist-cupcake-crumb",
-      "publishAt": "2026-06-04T15:43:00+02:00"
+      "publishAt": "2026-06-04T15:43:00+02:00",
+      "publishedAt": "2026-06-04T14:56:10.221Z"
     },
     {
       "id": "g005",
