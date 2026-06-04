@@ -39,9 +39,10 @@
       "category": "gourmet",
       "notes": "target keyword: black sesame cupcakes. Roasted black sesame paste, dramatic gray crumb, nutty toasted finish",
       "priority": 4,
-      "status": "scheduled",
+      "status": "published",
       "slug": "black-sesame-cupcakes",
-      "publishAt": "2026-06-04T10:16:00+02:00"
+      "publishAt": "2026-06-04T10:16:00+02:00",
+      "publishedAt": "2026-06-04T08:20:01.601Z"
     },
     {
       "id": "r005",
