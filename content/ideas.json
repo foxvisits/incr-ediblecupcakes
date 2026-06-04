@@ -50,9 +50,10 @@
       "category": "gourmet",
       "notes": "target keyword: hojicha cupcakes recipe. Roasted green tea in batter and buttercream, milder than matcha",
       "priority": 5,
-      "status": "scheduled",
+      "status": "published",
       "slug": "hojicha-cupcakes",
-      "publishAt": "2026-06-04T12:42:00+02:00"
+      "publishAt": "2026-06-04T12:42:00+02:00",
+      "publishedAt": "2026-06-04T11:52:18.822Z"
     },
     {
       "id": "r006",
