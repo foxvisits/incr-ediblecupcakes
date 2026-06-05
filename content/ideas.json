@@ -61,9 +61,10 @@
       "category": "gourmet",
       "notes": "target keyword: tahini halva cupcakes. Tahini swirl batter, halva crumble topping, Middle Eastern sweet-nutty",
       "priority": 6,
-      "status": "scheduled",
+      "status": "published",
       "slug": "halva-tahini-cupcakes",
-      "publishAt": "2026-06-05T10:09:00+02:00"
+      "publishAt": "2026-06-05T10:09:00+02:00",
+      "publishedAt": "2026-06-05T09:43:37.007Z"
     },
     {
       "id": "r007",
@@ -71,9 +72,10 @@
       "category": "spiced",
       "notes": "target keyword: rose pistachio cupcakes. Persian gulab jamun inspiration, cardamom rose frosting, pistachio crunch",
       "priority": 7,
-      "status": "scheduled",
+      "status": "published",
       "slug": "cardamom-rose-pistachio-cupcakes",
-      "publishAt": "2026-06-05T11:02:00+02:00"
+      "publishAt": "2026-06-05T11:02:00+02:00",
+      "publishedAt": "2026-06-05T09:43:37.007Z"
     },
     {
       "id": "r008",
