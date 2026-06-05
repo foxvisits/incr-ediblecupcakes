@@ -55,9 +55,10 @@
       "targetKeyword": "high altitude cupcakes",
       "notes": "Elevation-specific flour, leavening, and oven tweaks with few good guides online",
       "priority": 5,
-      "status": "scheduled",
+      "status": "published",
       "slug": "high-altitude-cupcake-baking-adjustments",
-      "publishAt": "2026-06-05T16:03:00+02:00"
+      "publishAt": "2026-06-05T16:03:00+02:00",
+      "publishedAt": "2026-06-05T15:52:42.983Z"
     },
     {
       "id": "g006",
