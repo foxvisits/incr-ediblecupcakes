@@ -94,9 +94,10 @@
       "category": "tropical",
       "notes": "target keyword: calamansi cupcakes. Philippine sour citrus curd filling, bright tart balance",
       "priority": 9,
-      "status": "scheduled",
+      "status": "published",
       "slug": "calamansi-cupcakes",
-      "publishAt": "2026-06-06T14:02:00+02:00"
+      "publishAt": "2026-06-06T14:02:00+02:00",
+      "publishedAt": "2026-06-06T13:28:16.098Z"
     },
     {
       "id": "r010",
