@@ -79,9 +79,10 @@
       "targetKeyword": "cupcake piping tips guide",
       "notes": "Visual map of open star, closed star, round, and petal tips with frosting pairings",
       "priority": 7,
-      "status": "scheduled",
+      "status": "published",
       "slug": "cupcake-piping-tips-guide",
-      "publishAt": "2026-06-07T15:02:00+02:00"
+      "publishAt": "2026-06-07T15:02:00+02:00",
+      "publishedAt": "2026-06-07T14:51:29.096Z"
     },
     {
       "id": "g008",
