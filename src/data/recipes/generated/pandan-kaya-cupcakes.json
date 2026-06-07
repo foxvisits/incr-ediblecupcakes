@@ -1,0 +1,136 @@
+{
+  "id": "r010",
+  "title": "Pandan Kaya Cupcakes",
+  "slug": "pandan-kaya-cupcakes",
+  "description": "This pandan cupcakes recipe uses real pandan extract for that deep green color and grassy, vanilla-like scent. No artificial coloring needed. The crumb stays soft and moist thanks to coconut milk in the batter Inside each cupcake sits a spoonful of coconut kaya. The Southeast Asian jam made from coconut milk and eggs. It melts into the cake as it bakes, giving you a creamy, slightly sweet core. The frosting is a light coconut buttercream. It keeps things simple so the pandan flavor stays front and center. I tested this batch three times in my home kitchen before the color and texture felt right. The key is using pure pandan extract, not pandan paste, and measuring it by drops rather than teaspoons.",
+  "shortDescription": "These pandan cupcakes recipe takes 25 mins prep and 18 mins bake, with a coconut kaya filling and vivid green crumb from natural pandan extract.",
+  "image": "/pandan-kaya-cupcakes.jpg",
+  "imageAlt": "Three pandan kaya cupcakes with vivid green crumb and smooth coconut buttercream on a white ceramic plate, natural daylight on light wood surface",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Three pandan kaya cupcakes with vivid green crumb and smooth coconut buttercream on a white ceramic plate, natural daylight on light wood surface",
+      "prompt": "Three pandan kaya cupcakes arranged on a white ceramic plate, vivid green cake crumb visible where one cupcake is cut in half, smooth pale green coconut buttercream piped on top, light wood surface, soft natural window light, no text, no hands, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/pandan-kaya-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Bright green pandan cupcake batter being spooned into white paper liners in a muffin tin, small jar of kaya jam beside the tin",
+      "prompt": "Bright green pandan cupcake batter being spooned into white paper liners inside a silver muffin tin, small open jar of golden coconut kaya jam placed beside the tin on a light marble surface, natural daylight, no text, no watermarks, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/pandan-kaya-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close-up cross section of a pandan cupcake showing vivid green crumb and soft coconut kaya center with frosting on top",
+      "prompt": "Close-up cross section of a single pandan kaya cupcake placed on a white ceramic plate, vivid green sponge crumb clearly visible, soft golden kaya jam pooling at the center, pale green coconut buttercream on top, shallow depth of field, warm natural light, no text, no hands, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/pandan-kaya-cupcakes-3.jpg"
+    }
+  ],
+  "metaTitle": "Pandan Kaya Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Make vivid green pandan cupcakes with a coconut kaya core and coconut buttercream. Easy step-by-step recipe using natural pandan extract. Bake yours today.",
+  "category": "tropical",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "featured": false,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 tsp baking powder",
+    "1/4 tsp baking soda",
+    "1/4 tsp fine salt",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1/2 cup full-fat coconut milk",
+    "2 tsp pure pandan extract (about 20 drops, adjust for color)",
+    "1/2 tsp vanilla extract",
+    "6 tsp store-bought or homemade coconut kaya jam (1/2 tsp per cupcake)",
+    "1 cup unsalted butter, softened (for frosting)",
+    "2 1/2 cups powdered sugar, sifted",
+    "3 tbsp full-fat coconut milk (for frosting)",
+    "1/2 tsp pure pandan extract (for frosting color)",
+    "Pinch of salt (for frosting)"
+  ],
+  "instructions": [
+    "Preheat your oven to 350 degrees F. Line a 12-cup muffin tin with cupcake liners.",
+    "Whisk together the flour, baking powder, baking soda, and salt in a medium bowl. Set aside.",
+    "Beat the softened butter and sugar together on medium speed for 3 minutes until pale and fluffy. Add the eggs one at a time, mixing well after each.",
+    "Stir the pandan extract and vanilla extract into the coconut milk. The mixture should turn a bright green color.",
+    "Add the flour mixture to the butter mixture in three additions, alternating with the coconut milk mixture. Start and end with flour. Mix until just combined. Do not overmix.",
+    "Fill each liner about one-third full with batter. Add 1/2 teaspoon of kaya jam to the center of each. Top with more batter until each liner is two-thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick inserted at the edge (not center) comes out clean. Cool in the pan for 5 minutes, then transfer to a wire rack to cool completely.",
+    "To make the frosting, beat the butter on medium-high for 4 minutes until very pale. Add the powdered sugar one cup at a time. Mix in the coconut milk, pandan extract, and salt. Beat for 2 more minutes until smooth and fluffy.",
+    "Pipe or spread the frosting onto cooled cupcakes. Top with a small drizzle of kaya or toasted coconut flakes if you like."
+  ],
+  "tags": [
+    "pandan",
+    "tropical",
+    "coconut",
+    "southeast-asian",
+    "filled-cupcakes",
+    "kaya"
+  ],
+  "nutritionInfo": {
+    "calories": 390,
+    "carbs": 47,
+    "protein": 4,
+    "fat": 21,
+    "fiber": 1,
+    "sugar": 32
+  },
+  "tips": [
+    "Use pure pandan extract, not pandan paste. Paste can make the batter too wet and the color muddier. Extract gives a cleaner, brighter green.",
+    "Check the kaya filling by inserting a toothpick at the edge of the cupcake, not the center. The center stays soft from the jam and can give a false underbaked reading.",
+    "Chill your frosted cupcakes for 15 minutes before serving if your kitchen is warm. Coconut buttercream softens faster than standard buttercream.",
+    "Store-bought kaya works well here. Look for it at Asian grocery stores, usually near the jams or in the Malaysian or Singaporean food section."
+  ],
+  "recipeKeys": [
+    "pandan cupcakes recipe",
+    "pandan kaya cupcakes",
+    "coconut kaya filling cupcakes",
+    "green pandan cake",
+    "natural pandan extract baking",
+    "Southeast Asian cupcakes",
+    "tropical filled cupcakes",
+    "Medium difficulty"
+  ],
+  "dietaryBadges": [],
+  "cuisine": "American",
+  "conclusion": "These pandan kaya cupcakes bring a real Southeast Asian flavor to your home kitchen. The vivid green crumb comes from natural pandan extract, and the coconut kaya core adds a creamy surprise in every bite. Make them for a weekend bake, a birthday. Or any time you want something a little different from the usual vanilla or chocolate. If you try them, let me know how the color turned out for you.",
+  "faq": [
+    {
+      "question": "What does pandan taste like in these cupcakes?",
+      "answer": "Pandan has a grassy, slightly sweet flavor that sits somewhere between vanilla and fresh-cut grass. In the cupcake crumb it reads as a floral, nutty sweetness. It is mild enough that most people find it familiar and pleasant on the first bite."
+    },
+    {
+      "question": "Can I use pandan leaves instead of pandan extract?",
+      "answer": "Yes, but you need to make your own juice. Blend 6 to 8 fresh pandan leaves with 3 tablespoons of water, then strain through a fine mesh sieve. Use 2 tablespoons of the strained juice in place of the extract and coconut milk mix. The color will be lighter green."
+    },
+    {
+      "question": "Where can I find coconut kaya jam?",
+      "answer": "Most Asian grocery stores carry kaya near the jams or in a Southeast Asian section. You can also order it online. If you cannot find it, a thin layer of coconut cream mixed with a small spoon of sugar makes a decent stand-in. Though the flavor will be simpler."
+    },
+    {
+      "question": "Why did my cupcakes turn out pale green instead of vivid green?",
+      "answer": "The most common reason is too little pandan extract. Start with 20 drops and add 4 to 5 more if the raw batter looks dull. Also check that your extract is labeled pure pandan, not a pandan-flavored blend, which is often diluted."
+    }
+  ],
+  "author": {
+    "name": "Sarah",
+    "url": "https://incr-ediblecupcakes.com/about"
+  },
+  "keywords": [
+    "pandan cupcakes recipe",
+    "pandan kaya cupcakes",
+    "coconut kaya cupcakes",
+    "pandan extract cupcakes",
+    "green cupcakes natural color",
+    "tropical cupcake recipe",
+    "kaya jam filled cupcakes",
+    "pandan coconut buttercream"
+  ],
+  "datePublished": "2025-07-14",
+  "dateModified": "2025-07-14"
+}

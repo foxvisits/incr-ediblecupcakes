@@ -105,9 +105,10 @@
       "category": "tropical",
       "notes": "target keyword: pandan cupcakes recipe. Natural pandan extract, coconut kaya core, vivid green crumb",
       "priority": 10,
-      "status": "scheduled",
+      "status": "published",
       "slug": "pandan-kaya-cupcakes",
-      "publishAt": "2026-06-07T12:48:00+02:00"
+      "publishAt": "2026-06-07T12:48:00+02:00",
+      "publishedAt": "2026-06-07T12:19:54.087Z"
     },
     {
       "id": "r011",
@@ -115,9 +116,10 @@
       "category": "gourmet",
       "notes": "target keyword: biscoff brown butter cupcakes. Biscoff cookie crumb, nutty brown butter base, caramelized depth",
       "priority": 11,
-      "status": "scheduled",
+      "status": "published",
       "slug": "speculoos-brown-butter-cupcakes",
-      "publishAt": "2026-06-07T13:28:00+02:00"
+      "publishAt": "2026-06-07T13:28:00+02:00",
+      "publishedAt": "2026-06-07T12:19:54.087Z"
     },
     {
       "id": "r012",
