@@ -127,9 +127,10 @@
       "category": "gourmet",
       "notes": "target keyword: malva pudding cupcakes. South African apricot jam sauce, spongy caramelized topping",
       "priority": 12,
-      "status": "scheduled",
+      "status": "published",
       "slug": "malva-pudding-cupcakes",
-      "publishAt": "2026-06-08T11:01:00+02:00"
+      "publishAt": "2026-06-08T11:01:00+02:00",
+      "publishedAt": "2026-06-08T10:50:09.469Z"
     },
     {
       "id": "r013",
