@@ -138,9 +138,10 @@
       "category": "gourmet",
       "notes": "target keyword: espresso martini cupcakes. Coffee vodka soak, espresso buttercream, cocktail-inspired adult treat",
       "priority": 13,
-      "status": "scheduled",
+      "status": "published",
       "slug": "espresso-martini-cupcakes",
-      "publishAt": "2026-06-08T13:51:00+02:00"
+      "publishAt": "2026-06-08T13:51:00+02:00",
+      "publishedAt": "2026-06-08T14:47:37.754Z"
     },
     {
       "id": "r014",

@@ -239,6 +239,17 @@
   </url>
 
   <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/espresso-martini-cupcakes</loc>
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/espresso-martini-cupcakes.jpg</image:loc>
+      <image:title>Espresso Martini Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://incr-ediblecupcakes.com/recipe/pandan-kaya-cupcakes</loc>
     <lastmod>2025-07-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -550,14 +561,14 @@
   </url>
 
   <url>
-    <loc>https://incr-ediblecupcakes.com/tags/ganache</loc>
+    <loc>https://incr-ediblecupcakes.com/tags/chocolate</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://incr-ediblecupcakes.com/tags/chocolate</loc>
+    <loc>https://incr-ediblecupcakes.com/tags/ganache</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -676,6 +687,17 @@
     <image:image>
       <image:loc>https://incr-ediblecupcakes.com/guide-cupcake-piping-tips-guide.jpg</image:loc>
       <image:title>Piping Tips Decoded: Which Nozzle Makes Which Swirl</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides/cupcake-troubleshooting</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/guide-cupcake-troubleshooting.jpg</image:loc>
+      <image:title>Fixing Common Cupcake Fails: A Diagnostic Guide</image:title>
     </image:image>
   </url>
 

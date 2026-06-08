@@ -91,9 +91,10 @@
       "targetKeyword": "cupcake troubleshooting",
       "notes": "Sinking, doming, dryness, greasiness: causes and fixes in one diagnostic flow",
       "priority": 8,
-      "status": "scheduled",
+      "status": "published",
       "slug": "cupcake-troubleshooting",
-      "publishAt": "2026-06-08T14:35:00+02:00"
+      "publishAt": "2026-06-08T14:35:00+02:00",
+      "publishedAt": "2026-06-08T14:47:37.754Z"
     }
   ]
 }
