@@ -149,9 +149,10 @@
       "category": "seasonal",
       "notes": "target keyword: aperol spritz cupcakes. Bitter orange Aperol glaze, prosecco note, summer seasonal",
       "priority": 14,
-      "status": "scheduled",
+      "status": "published",
       "slug": "aperol-spritz-cupcakes",
-      "publishAt": "2026-06-09T14:56:00+02:00"
+      "publishAt": "2026-06-09T14:56:00+02:00",
+      "publishedAt": "2026-06-09T15:53:52.685Z"
     },
     {
       "id": "r015",
@@ -159,9 +160,10 @@
       "category": "gourmet",
       "notes": "target keyword: negroni cupcakes. Campari orange zest, gin-soaked syrup, bitter-sweet cocktail niche",
       "priority": 15,
-      "status": "scheduled",
+      "status": "published",
       "slug": "negroni-orange-cupcakes",
-      "publishAt": "2026-06-09T14:59:00+02:00"
+      "publishAt": "2026-06-09T14:59:00+02:00",
+      "publishedAt": "2026-06-09T15:53:52.685Z"
     },
     {
       "id": "r016",
