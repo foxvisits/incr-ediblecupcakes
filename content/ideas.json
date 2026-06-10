@@ -171,9 +171,10 @@
       "category": "spiced",
       "notes": "target keyword: irish coffee cupcakes. Whiskey coffee soak, Irish cream frosting, St Patricks and winter theme",
       "priority": 16,
-      "status": "scheduled",
+      "status": "published",
       "slug": "irish-coffee-cupcakes",
-      "publishAt": "2026-06-10T12:57:00+02:00"
+      "publishAt": "2026-06-10T12:57:00+02:00",
+      "publishedAt": "2026-06-10T12:57:23.571Z"
     },
     {
       "id": "r017",
@@ -181,9 +182,10 @@
       "category": "tropical",
       "notes": "target keyword: mojito cupcakes recipe. Lime zest, fresh mint buttercream, white rum syrup, refreshing summer",
       "priority": 17,
-      "status": "scheduled",
+      "status": "published",
       "slug": "mojito-lime-mint-cupcakes",
-      "publishAt": "2026-06-10T13:16:00+02:00"
+      "publishAt": "2026-06-10T13:16:00+02:00",
+      "publishedAt": "2026-06-10T12:57:23.571Z"
     }
   ]
 }

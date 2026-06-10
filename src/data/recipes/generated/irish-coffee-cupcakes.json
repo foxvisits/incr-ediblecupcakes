@@ -1,0 +1,140 @@
+{
+  "id": "r016",
+  "title": "Irish Coffee Cupcakes",
+  "slug": "irish-coffee-cupcakes",
+  "description": "These Irish coffee cupcakes bring together strong espresso, a splash of Irish whiskey, and a creamy Irish cream frosting. They taste like your favorite after-dinner drink, baked into a single bite. I tested this recipe several times in my home kitchen to get the soak just right. The whiskey coffee soak is the secret here. It keeps the cupcakes moist and adds a warm, boozy depth that plain coffee cake never has. Even a small amount makes a real difference in flavor. This recipe is perfect for St. Patrick's Day parties, winter gatherings, or any occasion that calls for a grown-up treat. The frosting is smooth, lightly sweet, and carries that signature Irish cream flavor without being overpowering. You do not need any special equipment. A hand mixer and a standard muffin tin are all it takes to pull these off.",
+  "shortDescription": "Rich espresso cupcakes with a whiskey coffee soak and Irish cream frosting, ready in 43 minutes.",
+  "image": "/irish-coffee-cupcakes.jpg",
+  "imageAlt": "Irish coffee cupcakes with swirled Irish cream frosting, dusted with cocoa powder and topped with espresso beans, arranged on a dark wood board with a small cup of espresso beside them",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Irish coffee cupcakes with swirled Irish cream frosting, dusted with cocoa powder and topped with espresso beans, arranged on a dark wood board with a small cup of espresso beside them",
+      "prompt": "A batch of Irish coffee cupcakes with tall swirled cream frosting dusted with dark cocoa powder, each topped with a single chocolate espresso bean, arranged on a dark walnut wood board next to a small white espresso cup, soft natural window light, warm moody tones, no text or logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/irish-coffee-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Whiskey coffee soak being spooned over warm cupcakes fresh from the oven with visible holes poked in the tops",
+      "prompt": "Close-up of a small spoon drizzling a dark whiskey coffee soak over the top of a just-baked cupcake in a white paper liner, holes visible in the cupcake surface, muffin tin in soft background, warm natural light, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/irish-coffee-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Cross-section of an Irish coffee cupcake showing the moist espresso crumb and thick Irish cream frosting layer on top",
+      "prompt": "A single Irish coffee cupcake cut in half to show the dark moist coffee-colored crumb interior and a thick swirl of pale Irish cream frosting on top, placed on a white ceramic plate with espresso powder dusting nearby, soft natural light, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/irish-coffee-cupcakes-3.jpg"
+    }
+  ],
+  "metaTitle": "Irish Coffee Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Make Irish coffee cupcakes with a whiskey coffee soak and Irish cream frosting. Perfect for St. Patrick's Day. Easy step-by-step recipe at Incr-EdibleCupCakes",
+  "category": "spiced",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "featured": false,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp baking soda",
+    "1/4 tsp fine salt",
+    "1/2 tsp ground cinnamon",
+    "1/2 cup (1 stick) unsalted butter, softened",
+    "3/4 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1/3 cup sour cream",
+    "1/4 cup strongly brewed espresso or strong coffee, cooled",
+    "1 tsp pure vanilla extract",
+    "For the whiskey coffee soak: 2 tbsp strongly brewed espresso, cooled",
+    "For the whiskey coffee soak: 1 tbsp Irish whiskey",
+    "For the whiskey coffee soak: 1 tsp granulated sugar",
+    "For the Irish cream frosting: 1 cup (2 sticks) unsalted butter, softened",
+    "For the Irish cream frosting: 3 cups powdered sugar, sifted",
+    "For the Irish cream frosting: 3 tbsp Irish cream liqueur (such as Baileys)",
+    "For the Irish cream frosting: 1 tsp pure vanilla extract",
+    "For the Irish cream frosting: pinch of fine salt",
+    "For garnish: cocoa powder or espresso powder for dusting",
+    "For garnish: 12 chocolate-covered espresso beans (optional)"
+  ],
+  "instructions": [
+    "Preheat your oven to 350 degrees F. Line a standard 12-cup muffin tin with paper liners.",
+    "Whisk together the flour, baking powder, baking soda, salt, and cinnamon in a medium bowl. Set aside.",
+    "Beat the softened butter and sugar together on medium speed for about 3 minutes, until light and pale. Add the eggs one at a time, beating well after each one.",
+    "Mix in the sour cream, cooled espresso, and vanilla extract. The batter may look slightly curdled at this stage. That is normal.",
+    "Add the dry ingredients to the wet ingredients and mix on low speed just until no dry streaks remain. Do not overmix.",
+    "Divide the batter evenly among the 12 liners, filling each about two-thirds full. Bake for 16 to 18 minutes, until a toothpick inserted in the center comes out clean.",
+    "While the cupcakes bake, stir together the espresso, Irish whiskey, and sugar for the soak until the sugar dissolves.",
+    "As soon as the cupcakes come out of the oven, use a toothpick or skewer to poke 4 to 5 holes in the top of each one. Spoon about 1/2 teaspoon of the whiskey coffee soak over each cupcake. Let them cool completely in the pan, at least 30 minutes.",
+    "For the frosting, beat the softened butter on medium-high for 3 minutes until fluffy. Add the powdered sugar one cup at a time, mixing on low after each addition. Add the Irish cream liqueur, vanilla, and salt. Beat on medium-high for 2 minutes until smooth.",
+    "Pipe or spread the frosting onto the cooled cupcakes. Dust lightly with cocoa powder or espresso powder and top each one with a chocolate-covered espresso bean if you like."
+  ],
+  "tags": [
+    "irish-coffee",
+    "spiced",
+    "st-patricks-day",
+    "winter",
+    "coffee",
+    "boozy"
+  ],
+  "nutritionInfo": {
+    "calories": 420,
+    "carbs": 52,
+    "protein": 3,
+    "fat": 22,
+    "fiber": 1,
+    "sugar": 39
+  },
+  "tips": [
+    "Use espresso if you have it. Regular brewed coffee works, but espresso gives a much stronger, cleaner coffee flavor in both the batter and the soak.",
+    "Do not skip the soak step. It only takes a minute and it is what separates these from a basic coffee cupcake. Poke the holes while the cupcakes are still hot so the soak absorbs fully.",
+    "Make sure your butter is fully softened before making the frosting. Cold butter will leave lumps that do not mix out, even with a lot of beating.",
+    "If you want to serve these to guests who do not drink alcohol, replace the whiskey in the soak with extra espresso. And use 1 tbsp of heavy cream plus 1 tsp of vanilla in place of the Irish cream in the frosting."
+  ],
+  "recipeKeys": [
+    "irish coffee cupcakes",
+    "whiskey coffee cupcakes",
+    "irish cream frosting cupcakes",
+    "st patricks day cupcakes",
+    "coffee cupcakes with soak",
+    "baileys cupcakes recipe",
+    "medium difficulty cupcakes"
+  ],
+  "dietaryBadges": [],
+  "cuisine": "American",
+  "conclusion": "Irish coffee cupcakes are a small-batch dessert that punches well above its weight. The whiskey coffee soak keeps every bite moist and warm. And the Irish cream frosting ties the whole thing together without being too sweet. Make them for St. Patrick's Day, a winter dinner party, or honestly any night you want something a little more special than a plain cupcake. They keep well overnight and they are even better the next day once the soak has had time to settle.",
+  "faq": [
+    {
+      "question": "Can I make Irish coffee cupcakes without alcohol?",
+      "answer": "Yes. Replace the Irish whiskey in the soak with an equal amount of strongly brewed espresso. For the frosting, swap the Irish cream liqueur with 1 tablespoon of heavy cream and 1 teaspoon of vanilla extract. The flavor will be more straightforwardly coffee, but still very good."
+    },
+    {
+      "question": "How much alcohol actually ends up in each cupcake?",
+      "answer": "Very little. Each cupcake gets roughly 1/4 teaspoon of the soak, which means a tiny fraction of the 1 tablespoon of whiskey total. The alcohol content per cupcake is minimal, but these are still best served to adults."
+    },
+    {
+      "question": "Can I bake these Irish coffee cupcakes ahead of time?",
+      "answer": "Yes, these are a great make-ahead dessert. Bake and soak the cupcakes up to 24 hours in advance. Store them unfrosted, covered at room temperature. Make and pipe the frosting on the day you plan to serve them."
+    },
+    {
+      "question": "Why does the batter look curdled after I add the coffee and sour cream?",
+      "answer": "That is normal. The difference in temperature and acidity between the ingredients can cause temporary separation. Once you add the flour and mix gently, the batter will come together and bake up perfectly fine."
+    }
+  ],
+  "author": {
+    "name": "Sarah",
+    "url": "https://incr-ediblecupcakes.com/about"
+  },
+  "keywords": [
+    "irish coffee cupcakes",
+    "irish cream frosting",
+    "whiskey coffee soak",
+    "st patricks day cupcakes",
+    "coffee cupcakes",
+    "baileys frosting",
+    "winter cupcakes"
+  ],
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10"
+}
