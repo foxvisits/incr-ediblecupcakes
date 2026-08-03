@@ -8,6 +8,34 @@ async function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
+
+/**
+ * Write a generated image at a size a web page can actually use.
+ *
+ * kie.ai returns 2048x2048 JPEGs around 2 MB. Nothing downstream resized them,
+ * so every recipe page shipped roughly 6 MB of images and public/ had already
+ * reached 226 MB across 115 files. At the planned volume that is well past a
+ * gigabyte, and the largest contentful paint on a recipe page is one of these.
+ *
+ * 1400px is comfortably above the widest slot the layout gives an image on a
+ * 2x display, and mozjpeg at 82 is visually indistinguishable here.
+ */
+async function writeOptimizedImage(buf, outputPath) {
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+  try {
+    const { default: sharp } = await import('sharp');
+    await sharp(buf)
+      .resize({ width: 1400, height: 1400, fit: 'inside', withoutEnlargement: true })
+      .jpeg({ quality: 82, mozjpeg: true, progressive: true })
+      .toFile(outputPath);
+  } catch (err) {
+    // Never lose a paid-for image to a missing or broken sharp install.
+    console.warn(`  ⚠️  Image optimisation skipped (${err.message}); writing original`);
+    fs.writeFileSync(outputPath, buf);
+  }
+  return outputPath;
+}
+
 export async function generateImageKie({ prompt, model, outputPath }) {
   const apiKey = process.env.KIE_API_KEY;
   if (!apiKey) throw new Error('Set KIE_API_KEY in .env');
@@ -69,9 +97,7 @@ export async function generateImageKie({ prompt, model, outputPath }) {
         const imgRes = await fetch(imageUrl);
         if (!imgRes.ok) throw new Error('Failed to download Kie image');
         const buf = Buffer.from(await imgRes.arrayBuffer());
-        fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-        fs.writeFileSync(outputPath, buf);
-        return outputPath;
+        return writeOptimizedImage(buf, outputPath);
       }
     }
   }
@@ -105,9 +131,7 @@ export async function generateImageFal({ prompt, model, outputPath }) {
 
   const imgRes = await fetch(imageUrl);
   const buf = Buffer.from(await imgRes.arrayBuffer());
-  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-  fs.writeFileSync(outputPath, buf);
-  return outputPath;
+  return writeOptimizedImage(buf, outputPath);
 }
 
 export async function generateImage({ prompt, config, outputPath }) {
