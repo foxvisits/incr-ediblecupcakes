@@ -1,0 +1,126 @@
+{
+  "title": "Gluten-Free Coconut Cream Cupcakes",
+  "slug": "gluten-free-coconut-cream-cupcakes",
+  "shortDescription": "Soft gluten-free coconut cupcakes with 25 minutes prep and 18 minutes bake, made moist with coconut milk and topped with coconut-flecked buttercream.",
+  "description": "These cupcakes use coconut milk instead of regular milk, so every bite stays soft and moist. I tested this batter three times in my own kitchen before the crumb held together without turning gummy. The gluten-free flour blend I use has xanthan gum built in, which helps mimic the structure regular flour gives. If your blend does not have it, add a quarter teaspoon to the dry mix. The frosting is where the coconut flavor really shows up. Toasted coconut flakes fold right into the buttercream, so you get little crunchy bits in every swirl. This batch makes 12 cupcakes, perfect for a potluck where someone always asks for a gluten-free option.",
+  "category": "gluten-free",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups gluten-free all-purpose flour blend (with xanthan gum)",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1 tsp vanilla extract",
+    "1/2 tsp coconut extract",
+    "3/4 cup full-fat canned coconut milk, well shaken",
+    "1/2 cup sweetened shredded coconut",
+    "1 cup unsalted butter, softened (for frosting)",
+    "3 cups powdered sugar (for frosting)",
+    "2 tbsp coconut milk (for frosting)",
+    "1/2 cup toasted coconut flakes (for frosting and topping)"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F and line a 12-cup muffin pan with paper liners.",
+    "Whisk the gluten-free flour, baking powder, and salt together in a bowl.",
+    "Beat softened butter and sugar until light and fluffy, about 2 minutes.",
+    "Add eggs one at a time, then mix in vanilla and coconut extract.",
+    "Alternate adding the flour mix and coconut milk, starting and ending with flour. Mix just until smooth.",
+    "Fold in the shredded coconut with a spatula.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan for 5 minutes, then move to a wire rack.",
+    "For the frosting, beat butter for 2 minutes until pale. Add powdered sugar in two batches, then mix in coconut milk until smooth.",
+    "Fold toasted coconut flakes into the finished frosting, then pipe onto fully cooled cupcakes and top with extra flakes."
+  ],
+  "tips": [
+    "Toast the coconut flakes in a dry skillet over medium heat for 3 to 4 minutes, stirring often, so they do not burn.",
+    "Shake the canned coconut milk well before measuring, since the fat separates and settles at the top.",
+    "Let cupcakes cool completely before frosting or the buttercream will slide off.",
+    "If your gluten-free flour blend has no xanthan gum, add 1/4 teaspoon to the dry ingredients."
+  ],
+  "faq": [
+    {
+      "question": "Can I use coconut cream instead of coconut milk in the batter?",
+      "answer": "Coconut cream is too thick and will make the batter dense. Stick with canned full-fat coconut milk for the right texture."
+    },
+    {
+      "question": "Why did my gluten-free cupcakes sink in the middle?",
+      "answer": "This usually means the batter was overmixed or the oven door opened too early. Mix just until smooth and wait until minute 15 to check."
+    },
+    {
+      "question": "Can I make these dairy-free too?",
+      "answer": "Yes. Swap the butter for a plant-based baking stick in both the cupcake and frosting for a dairy-free version."
+    },
+    {
+      "question": "How long do these cupcakes stay fresh?",
+      "answer": "Store them in an airtight container in the fridge for up to 4 days. Bring to room temperature before serving for the best texture."
+    }
+  ],
+  "tags": [
+    "gluten-free",
+    "coconut",
+    "cupcakes",
+    "buttercream",
+    "easy-dessert"
+  ],
+  "recipeKeys": [
+    "gluten-free coconut cupcakes",
+    "coconut cream cupcakes",
+    "coconut milk cupcakes",
+    "gluten-free dessert recipe",
+    "coconut buttercream frosting",
+    "Medium difficulty"
+  ],
+  "keywords": [
+    "gluten-free coconut cupcakes",
+    "coconut milk cupcakes recipe",
+    "coconut buttercream frosting"
+  ],
+  "nutritionInfo": {
+    "calories": 340,
+    "carbs": 38,
+    "protein": 3,
+    "fat": 20,
+    "fiber": 1,
+    "sugar": 29
+  },
+  "dietaryBadges": [
+    "gluten-free"
+  ],
+  "conclusion": "These coconut cream cupcakes prove gluten-free baking can still be soft and rich. Bring them to your next gathering and watch the plate empty fast.",
+  "metaTitle": "Gluten-Free Coconut Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Try this gluten-free coconut cream cupcakes recipe with moist coconut milk batter and toasted coconut buttercream. Bake a batch today.",
+  "imageAlt": "Gluten-free coconut cream cupcake with tall swirled buttercream and toasted coconut flakes on a pastel background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Gluten-free coconut cream cupcake with tall swirled buttercream and toasted coconut flakes on a pastel background",
+      "prompt": "A single gluten-free coconut cream cupcake with tall swirled coconut buttercream piped high, topped with toasted coconut flakes, bright pastel bakery aesthetic, soft even daylight, pale aqua background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/gluten-free-coconut-cream-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Coconut milk being poured into cupcake batter in a mixing bowl",
+      "prompt": "Overhead shot of coconut milk pouring into pale cupcake batter in a white mixing bowl, shredded coconut scattered nearby, bright pastel bakery aesthetic, soft even daylight, cream colored background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/gluten-free-coconut-cream-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of coconut flecked buttercream swirl with toasted coconut flakes",
+      "prompt": "Extreme close up of coconut flecked buttercream swirl on a cupcake, toasted coconut flakes catching the light, bright pastel bakery aesthetic, soft even daylight, butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/gluten-free-coconut-cream-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "gluten-free-almond-joy-cupcakes",
+    "mango-coconut-sunset-cupcakes",
+    "vegan-rainbow-surprise-cupcakes"
+  ],
+  "contentIdeaId": "r112",
+  "image": "/gluten-free-coconut-cream-cupcakes.jpg"
+}

@@ -1039,7 +1039,8 @@
       "category": "gluten-free",
       "notes": "Coconut milk for moisture, coconut-flecked buttercream",
       "priority": 112,
-      "status": "generating"
+      "status": "draft",
+      "slug": "gluten-free-coconut-cream-cupcakes"
     },
     {
       "id": "r113",
@@ -1047,7 +1048,8 @@
       "category": "gluten-free",
       "notes": "Mashed banana + maple extract, not syrup in frosting",
       "priority": 113,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-banana-maple-cupcakes"
     },
     {
       "id": "r114",
@@ -1055,7 +1057,8 @@
       "category": "gluten-free",
       "notes": "Cocoa + orange zest + smooth chocolate swirl frosting",
       "priority": 114,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-chocolate-orange-cupcakes"
     },
     {
       "id": "r115",
@@ -1063,7 +1066,8 @@
       "category": "gluten-free",
       "notes": "Raspberry puree + lemon zest for bright acidity, pink swirl frosting",
       "priority": 115,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-raspberry-lemonade-cupcakes"
     },
     {
       "id": "r116",
@@ -1071,7 +1075,8 @@
       "category": "gluten-free",
       "notes": "Chai spice through batter + lightly spiced vanilla swirl frosting",
       "priority": 116,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-chai-vanilla-cupcakes"
     },
     {
       "id": "r117",
@@ -1079,7 +1084,8 @@
       "category": "gluten-free",
       "notes": "Brown butter adds depth, vanilla bean frosting swirl, elegant",
       "priority": 117,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-brown-butter-vanilla-cupcakes"
     },
     {
       "id": "r118",
@@ -1087,7 +1093,8 @@
       "category": "gluten-free",
       "notes": "Soft spiced cake, cream cheese swirl, cozy but evergreen",
       "priority": 118,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-ginger-molasses-cupcakes"
     },
     {
       "id": "r119",
@@ -1095,7 +1102,8 @@
       "category": "gluten-free",
       "notes": "Cocoa almond cake, cool mint swirl frosting, not artificially colored",
       "priority": 119,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-mint-chocolate-cupcakes"
     },
     {
       "id": "r120",
@@ -1103,7 +1111,8 @@
       "category": "gluten-free",
       "notes": "Tender apple cupcake + cinnamon swirl frosting + gluten-free crumble",
       "priority": 120,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-apple-cinnamon-crumble-cupcakes"
     },
     {
       "id": "r121",
@@ -1111,7 +1120,8 @@
       "category": "gluten-free",
       "notes": "Coconut milk in batter, vanilla swirl, light and dreamy",
       "priority": 121,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-vanilla-coconut-cupcakes"
     },
     {
       "id": "r122",
@@ -1119,7 +1129,8 @@
       "category": "gluten-free",
       "notes": "Holiday cluster. Almond flour cupcake + powdered sugar snow finish",
       "priority": 122,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-almond-snowflake-cupcakes"
     },
     {
       "id": "r123",
@@ -1127,7 +1138,8 @@
       "category": "gluten-free",
       "notes": "Holiday cluster. Pistachio base + rosewater frosting, elegant and festive",
       "priority": 123,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-pistachio-rose-cupcakes"
     },
     {
       "id": "r124",
@@ -1135,7 +1147,7 @@
       "category": "dairy-free",
       "notes": "target keyword: dairy free vanilla cupcakes fluffy. Oat or soy milk, neutral oil, light vanilla frosting with dairy-free block butter",
       "priority": 124,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r125",
