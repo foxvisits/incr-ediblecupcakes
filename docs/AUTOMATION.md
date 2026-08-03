@@ -45,6 +45,38 @@ it and resets the clock.
 | `content-publish.yml` | `0 6 * * *` | Publishes items in `content/scheduled/` whose date has arrived. Was hourly, which fired ~720×/month and almost always found nothing — the queue is only ever a handful of items deep. |
 | `seo-and-ping.yml` | `17 3 * * *` | Regenerates SEO files, runs `seo-check` and `astro check`. Also runs on pushes that touch content or scripts, where it additionally pings IndexNow. |
 
+## Secrets
+
+| Secret | Used by | Notes |
+| --- | --- | --- |
+| `ANTHROPIC_API_KEY` | `content-publish` | Recipe and guide text. |
+| `KIE_API_KEY` | `content-publish` | Image generation. |
+| `FAL_KEY` | `content-publish` | Optional image fallback. |
+| `BING_API_KEY` | `seo-and-ping` | Bing Webmaster URL Submission. Skipped with a notice when absent. |
+| `CONTENT_BOT_TOKEN` | `content-publish` | See above — keeps the schedules alive. |
+
+`INDEXNOW_KEY` is **not** a secret. IndexNow verifies ownership by fetching
+`/{key}.txt` from the site, so the key is public by design and lives in the
+workflow file. `BING_API_KEY` is the opposite — anyone holding it can submit
+URLs for the property, so it must stay a repository secret and out of git.
+
+## Submitting URLs to search engines
+
+`npm run update-seo -- --ping` does two things that still work:
+
+- **IndexNow** — reaches Bing, Yandex, and Seznam.
+- **Bing Webmaster URL Submission** — asks Bing to crawl specific URLs. A
+  stronger signal than IndexNow, and it matters more than it looks: ChatGPT
+  search runs on Bing's index, and AI surfaces are currently where this site
+  gets most of its visibility.
+
+**Neither reaches Google, and nothing does.** Google retired its sitemap ping
+endpoint in January 2024 (it returns 404; Bing's returns 410 Gone) and offers no
+public submission API. Both were still being called here until now, and their
+failures were logged as warnings, which made `--ping` look busier than it was.
+For Google the only levers are the sitemap referenced from `robots.txt`, the
+Search Console sitemap submission, and manual "Request indexing".
+
 ## The publish queue
 
 `content/scheduled/` is the queue. `npm run content:status` shows it.

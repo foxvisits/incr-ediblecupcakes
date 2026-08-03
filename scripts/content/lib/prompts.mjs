@@ -53,6 +53,10 @@ SEO FIELDS (required):
 - images: exactly ${config.generation?.imagesPerRecipe ?? 3} objects, each with role (hero|process|detail), alt, prompt
   - hero → ONLY used in page hero (one photo)
   - process + detail → referenced in body copy context; NOT duplicated in hero
+  - Every prompt MUST describe the house style verbatim in its own words, so the
+    whole library looks like one photoshoot: ${config.generation?.imageStyle ?? ''}
+  - Do not invent a different look per recipe. Only the cupcake, garnish, and
+    props change between prompts; lighting, palette, and framing stay constant.
   - NEVER use em dashes (—) anywhere in text fields
 
 Avoid duplicating these existing titles: ${existingTitles.slice(0, 30).join('; ')}

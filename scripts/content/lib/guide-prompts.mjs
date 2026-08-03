@@ -41,6 +41,10 @@ GUIDE RULES:
 - metaTitle: under ${seo.titleMax} chars, format "{Title} | Incr-EdibleCupCakes Guides"
 - metaDescription: ${seo.metaDescriptionMin}-${seo.metaDescriptionMax} chars
 - images: exactly ${imageCount} objects (hero|process|detail), each with alt + prompt
+  - Every prompt MUST describe the house style verbatim in its own words, so guides
+    and recipes read as one photoshoot: ${config.generation?.imageStyle ?? ''}
+  - Only the subject and props change between prompts; lighting, palette, and
+    framing stay constant.
   - hero only in page header; process + detail appear in article body
   - NEVER use em dashes (—) in any text field
 

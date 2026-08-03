@@ -48,7 +48,11 @@ jobs:
           cache: npm
       - name: Install deps
         run: npm ci
-      - name: SEO sync + IndexNow + sitemap ping
+      - name: SEO sync + IndexNow + Bing submission
         run: npm run update-seo -- --ping
         env:
+          # Public by design: served from /{key}.txt so IndexNow can verify it.
           INDEXNOW_KEY: a48df6c167094534b369300a89f8f530
+          # A real credential, unlike the IndexNow key. Submission is skipped
+          # with a notice when the secret is absent, so forks stay green.
+          BING_API_KEY: ${{ secrets.BING_API_KEY }}

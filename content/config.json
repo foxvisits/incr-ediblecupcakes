@@ -27,7 +27,9 @@
     "batchSize": 3,
     "delayBetweenMs": 3000,
     "imagesPerRecipe": 3,
-    "imagesPerGuide": 3
+    "imagesPerGuide": 3,
+    "$imageStyle": "Single source of truth for the look of every generated photo. Used both in the generation prompt (so the model writes on-style prompts) and as the fallback when it does not. Change it here, not in the scripts.",
+    "imageStyle": "bright pastel bakery aesthetic, tall swirled frosting piped high, soft even daylight, pastel background (cream, blush pink, butter yellow, or pale aqua chosen to flatter the flavour), clean minimal props, shallow depth of field, no text, no hands, no logos"
   },
   "seo": {
     "minFaqCount": 3,
