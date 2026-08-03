@@ -186,6 +186,1167 @@
       "slug": "mojito-lime-mint-cupcakes",
       "publishAt": "2026-06-10T13:16:00+02:00",
       "publishedAt": "2026-06-10T12:57:23.571Z"
+    },
+    {
+      "id": "r018",
+      "title": "Buttermilk Bakery-Style Cupcakes",
+      "category": "classic",
+      "notes": "target keyword: buttermilk cupcakes. Tender crumb, light vanilla sweetness, moisture from buttermilk",
+      "priority": 18,
+      "status": "failed",
+      "error": "Kie createTask failed: 403 Host not in allowlist: api.kie.ai. Add this host to your network egress settings to allow access."
+    },
+    {
+      "id": "r019",
+      "title": "Brown Sugar Cinnamon Swirl Cupcakes",
+      "category": "classic",
+      "notes": "Warm brown sugar batter, cinnamon ribbon swirl baked inside, vanilla-cinnamon frosting swirl",
+      "priority": 19,
+      "status": "generating"
+    },
+    {
+      "id": "r020",
+      "title": "Strawberries & Cream Cupcakes",
+      "category": "classic",
+      "notes": "Real strawberry compote folded into batter + whipped cream cheese frosting. No artificial color",
+      "priority": 20,
+      "status": "idea"
+    },
+    {
+      "id": "r021",
+      "title": "Chocolate Fudge Cupcakes with Milk Chocolate Swirl Frosting",
+      "category": "classic",
+      "notes": "Moist deep cocoa cake base, milk chocolate buttercream swirled high",
+      "priority": 21,
+      "status": "idea"
+    },
+    {
+      "id": "r022",
+      "title": "Caramel Latte Cupcakes",
+      "category": "classic",
+      "notes": "Espresso-infused vanilla cake, caramel buttercream swirl, caramel drizzle",
+      "priority": 22,
+      "status": "idea"
+    },
+    {
+      "id": "r023",
+      "title": "Honey Vanilla Bean Cupcakes",
+      "category": "classic",
+      "notes": "Real vanilla bean specks, wildflower honey sweetness, silky honey frosting",
+      "priority": 23,
+      "status": "idea"
+    },
+    {
+      "id": "r024",
+      "title": "Raspberry Lemon Burst Cupcakes",
+      "category": "classic",
+      "notes": "Fresh lemon zest + raspberry puree, tart-sweet balanced flavor",
+      "priority": 24,
+      "status": "idea"
+    },
+    {
+      "id": "r025",
+      "title": "Peaches & Cream Cupcakes",
+      "category": "classic",
+      "notes": "Seasonal evergreen search. Soft peach puree in batter, whipped silky peach cream frosting",
+      "priority": 25,
+      "status": "idea"
+    },
+    {
+      "id": "r026",
+      "title": "Blueberry Muffin Cupcakes with Vanilla Swirl",
+      "category": "classic",
+      "notes": "Cupcake-muffin hybrid, visible blueberry pockets, vanilla swirl frosting",
+      "priority": 26,
+      "status": "idea"
+    },
+    {
+      "id": "r027",
+      "title": "Creamsicle Cupcakes (Orange Vanilla)",
+      "category": "classic",
+      "notes": "Fresh orange zest + juice, vanilla cream frosting, nostalgic but elegant",
+      "priority": 27,
+      "status": "idea"
+    },
+    {
+      "id": "r028",
+      "title": "Banana Pudding Cupcakes",
+      "category": "classic",
+      "notes": "Moist banana cake, pudding core, whipped vanilla frosting",
+      "priority": 28,
+      "status": "idea"
+    },
+    {
+      "id": "r029",
+      "title": "Chocolate Chip Milk Cupcakes",
+      "category": "classic",
+      "notes": "Vanilla cupcake with small chocolate chips, milk-infused frosting",
+      "priority": 29,
+      "status": "idea"
+    },
+    {
+      "id": "r030",
+      "title": "Honey Apple Cupcakes",
+      "category": "classic",
+      "notes": "Grated honey-sweetened apple, cinnamon notes, vanilla frosting",
+      "priority": 30,
+      "status": "idea"
+    },
+    {
+      "id": "r031",
+      "title": "Golden Almond Buttercream Cupcakes",
+      "category": "classic",
+      "notes": "Soft vanilla cake base with almond extract, silky almond buttercream. Classic not nut-free: contains almond",
+      "priority": 31,
+      "status": "idea"
+    },
+    {
+      "id": "r032",
+      "title": "Maple Vanilla Cupcakes",
+      "category": "classic",
+      "notes": "Pure maple syrup in batter + frosting, warm comforting flavor",
+      "priority": 32,
+      "status": "idea"
+    },
+    {
+      "id": "r033",
+      "title": "Toasted Coconut Swirl Cupcakes",
+      "category": "classic",
+      "notes": "Coconut milk batter, fluffy coconut-fleck swirl frosting, toasted coconut topping",
+      "priority": 33,
+      "status": "idea"
+    },
+    {
+      "id": "r034",
+      "title": "Hot Cocoa Cupcakes with Marshmallow Swirl",
+      "category": "classic",
+      "notes": "Cocoa cake + marshmallow-cream swirl frosting piped like soft-serve",
+      "priority": 34,
+      "status": "idea"
+    },
+    {
+      "id": "r035",
+      "title": "Mint Chocolate Swirl Cupcakes",
+      "category": "classic",
+      "notes": "Chocolate base + cool peppermint frosting, no artificial green",
+      "priority": 35,
+      "status": "idea"
+    },
+    {
+      "id": "r036",
+      "title": "Vanilla Chai Cupcakes",
+      "category": "classic",
+      "notes": "Chai-spiced vanilla cake + lightly spiced vanilla swirl frosting",
+      "priority": 36,
+      "status": "idea"
+    },
+    {
+      "id": "r037",
+      "title": "Brown Sugar Eggnog Cupcakes",
+      "category": "classic",
+      "notes": "Holiday cluster. Eggnog in batter + nutmeg buttercream, nostalgic holiday flavor",
+      "priority": 37,
+      "status": "idea"
+    },
+    {
+      "id": "r038",
+      "title": "Spiced Gingerbread Latte Cupcakes",
+      "category": "classic",
+      "notes": "Holiday cluster. Gingerbread spice + espresso buttercream",
+      "priority": 38,
+      "status": "idea"
+    },
+    {
+      "id": "r039",
+      "title": "Caramel Apple Cider Cupcakes",
+      "category": "classic",
+      "notes": "Holiday cluster. Apple cider batter + cinnamon + caramel drizzle",
+      "priority": 39,
+      "status": "idea"
+    },
+    {
+      "id": "r040",
+      "title": "Keto Vanilla Cloud Cupcakes",
+      "category": "keto",
+      "notes": "target keyword: keto vanilla cupcakes almond flour. Almond + coconut flour combo, light but stable crumb",
+      "priority": 40,
+      "status": "idea"
+    },
+    {
+      "id": "r041",
+      "title": "Keto Cinnamon Roll Cupcakes",
+      "category": "keto",
+      "notes": "Cinnamon-spice almond flour cake + vanilla cream swirl frosting",
+      "priority": 41,
+      "status": "idea"
+    },
+    {
+      "id": "r042",
+      "title": "Keto Coconut Dream Cupcakes",
+      "category": "keto",
+      "notes": "Coconut milk batter + shredded coconut, coconut-vanilla frosting swirl",
+      "priority": 42,
+      "status": "idea"
+    },
+    {
+      "id": "r043",
+      "title": "Keto Peanut Butter Cup Cupcakes",
+      "category": "keto",
+      "notes": "Peanut butter batter + chocolate buttercream swirl, balance texture",
+      "priority": 43,
+      "status": "idea"
+    },
+    {
+      "id": "r044",
+      "title": "Keto Almond Mocha Cupcakes",
+      "category": "keto",
+      "notes": "Almond flour espresso cake, mocha cream swirl frosting, deep but not bitter",
+      "priority": 44,
+      "status": "idea"
+    },
+    {
+      "id": "r045",
+      "title": "Keto Caramel Pecan Swirl Cupcakes",
+      "category": "keto",
+      "notes": "Sugar-free caramel drizzled over swirl frosting, chopped pecans",
+      "priority": 45,
+      "status": "idea"
+    },
+    {
+      "id": "r046",
+      "title": "Keto Pumpkin Spice Cupcakes",
+      "category": "keto",
+      "notes": "Pumpkin puree adds moisture, warm spice profile, cream cheese frosting",
+      "priority": 46,
+      "status": "idea"
+    },
+    {
+      "id": "r047",
+      "title": "Keto Strawberry Cheesecake Cupcakes",
+      "category": "keto",
+      "notes": "Fresh strawberry puree swirl in batter, whipped cheesecake frosting",
+      "priority": 47,
+      "status": "idea"
+    },
+    {
+      "id": "r048",
+      "title": "Keto Maple Butter Cupcakes",
+      "category": "keto",
+      "notes": "Butter-heavy batter with maple extract not syrup, creamy vanilla frosting",
+      "priority": 48,
+      "status": "idea"
+    },
+    {
+      "id": "r049",
+      "title": "Keto Blueberry Lemon Muffin-Cupcakes",
+      "category": "keto",
+      "notes": "Almond flour + blueberries, lemon swirl frosting, lightly sweet",
+      "priority": 49,
+      "status": "idea"
+    },
+    {
+      "id": "r050",
+      "title": "Keto Chai Spice Cupcakes",
+      "category": "keto",
+      "notes": "Almond-based chai cake, vanilla chai frosting, warm spice",
+      "priority": 50,
+      "status": "idea"
+    },
+    {
+      "id": "r051",
+      "title": "Keto Red Velvet Cupcakes",
+      "category": "keto",
+      "notes": "Beet powder or natural color for subtle red tint, cream cheese frosting",
+      "priority": 51,
+      "status": "idea"
+    },
+    {
+      "id": "r052",
+      "title": "Keto Banana Bread Cupcakes",
+      "category": "keto",
+      "notes": "No actual banana, use banana extract. Moist crumb from almond flour",
+      "priority": 52,
+      "status": "idea"
+    },
+    {
+      "id": "r053",
+      "title": "Keto Carrot Cake Cupcakes",
+      "category": "keto",
+      "notes": "Finely grated carrot + spices, cream cheese frosting, not overly sweet",
+      "priority": 53,
+      "status": "idea"
+    },
+    {
+      "id": "r054",
+      "title": "Keto Double Chocolate Cupcakes",
+      "category": "keto",
+      "notes": "Cocoa cake with sugar-free chocolate chips, chocolate swirl frosting",
+      "priority": 54,
+      "status": "idea"
+    },
+    {
+      "id": "r055",
+      "title": "Keto Lemon Blueberry Cheesecake Cupcakes",
+      "category": "keto",
+      "notes": "Cheesecake batter base baked into cupcake form, blueberry swirl",
+      "priority": 55,
+      "status": "idea"
+    },
+    {
+      "id": "r056",
+      "title": "Keto Salted Caramel Mocha Cupcakes",
+      "category": "keto",
+      "notes": "Espresso batter + chocolate frosting + sugar-free caramel drizzle",
+      "priority": 56,
+      "status": "idea"
+    },
+    {
+      "id": "r057",
+      "title": "Keto Vanilla Almond Wedding Cupcakes",
+      "category": "keto",
+      "notes": "Elegant, softly sweet almond-vanilla cake, smooth wedding-style swirl",
+      "priority": 57,
+      "status": "idea"
+    },
+    {
+      "id": "r058",
+      "title": "Keto Christmas Spice Cupcakes",
+      "category": "keto",
+      "notes": "Holiday cluster. Almond + coconut flour base with warm spices",
+      "priority": 58,
+      "status": "idea"
+    },
+    {
+      "id": "r059",
+      "title": "Keto Peppermint Mocha Cupcakes",
+      "category": "keto",
+      "notes": "Holiday cluster. Coffee + cocoa + sugar-free peppermint buttercream",
+      "priority": 59,
+      "status": "idea"
+    },
+    {
+      "id": "r060",
+      "title": "Vegan Vanilla Bean Cupcakes",
+      "category": "vegan",
+      "notes": "target keyword: vegan vanilla cupcakes fluffy. Aquafaba for lift, light fluffy crumb, real vanilla bean",
+      "priority": 60,
+      "status": "idea"
+    },
+    {
+      "id": "r061",
+      "title": "Vegan Chocolate Silk Cupcakes",
+      "category": "vegan",
+      "notes": "Coconut milk + cocoa, frosting should be silky not oily, deep chocolate",
+      "priority": 61,
+      "status": "idea"
+    },
+    {
+      "id": "r062",
+      "title": "Vegan Lemon Sunshine Cupcakes",
+      "category": "vegan",
+      "notes": "Fresh zest + lemon juice, frosting is lemon cream cheese-style",
+      "priority": 62,
+      "status": "idea"
+    },
+    {
+      "id": "r063",
+      "title": "Vegan Carrot Cream Cupcakes",
+      "category": "vegan",
+      "notes": "Finely grated carrot, warm spices, vegan cream cheese frosting",
+      "priority": 63,
+      "status": "idea"
+    },
+    {
+      "id": "r064",
+      "title": "Vegan Strawberry Milk Cupcakes",
+      "category": "vegan",
+      "notes": "No artificial red dyes. Strawberry puree in batter + frosting, soft natural pink tone",
+      "priority": 64,
+      "status": "idea"
+    },
+    {
+      "id": "r065",
+      "title": "Vegan Blueberry Muffin Cupcakes",
+      "category": "vegan",
+      "notes": "Small blueberries, keep batter tender, vanilla frosting swirl",
+      "priority": 65,
+      "status": "idea"
+    },
+    {
+      "id": "r066",
+      "title": "Vegan Maple Walnut Cupcakes",
+      "category": "vegan",
+      "notes": "Toasted walnuts for aroma, maple frosting swirl",
+      "priority": 66,
+      "status": "idea"
+    },
+    {
+      "id": "r067",
+      "title": "Vegan Peanut Butter Cup Cupcakes",
+      "category": "vegan",
+      "notes": "PB batter + chocolate swirl frosting, creamy not crumbly",
+      "priority": 67,
+      "status": "idea"
+    },
+    {
+      "id": "r068",
+      "title": "Vegan Cookies & Cream Cupcakes",
+      "category": "vegan",
+      "notes": "Use vegan sandwich cookies. Cookie crumbs in frosting + batter, fluffy and playful",
+      "priority": 68,
+      "status": "idea"
+    },
+    {
+      "id": "r069",
+      "title": "Vegan Chai Latte Cupcakes",
+      "category": "vegan",
+      "notes": "Chai spice blend + creamy spiced vanilla frosting",
+      "priority": 69,
+      "status": "idea"
+    },
+    {
+      "id": "r070",
+      "title": "Vegan Coconut Cloud Cupcakes",
+      "category": "vegan",
+      "notes": "Coconut milk batter + fluffy coconut whip-style frosting",
+      "priority": 70,
+      "status": "idea"
+    },
+    {
+      "id": "r071",
+      "title": "Vegan Gingerbread Cupcakes",
+      "category": "vegan",
+      "notes": "Year-round but low competition. Molasses + warm spices, ginger cream cheese frosting swirl",
+      "priority": 71,
+      "status": "idea"
+    },
+    {
+      "id": "r072",
+      "title": "Vegan Banana Bread Cupcakes",
+      "category": "vegan",
+      "notes": "Ripe bananas for sweetness, cinnamon cream swirl frosting",
+      "priority": 72,
+      "status": "idea"
+    },
+    {
+      "id": "r073",
+      "title": "Vegan Raspberry Almond Cupcakes",
+      "category": "vegan",
+      "notes": "Almond extract for perfume, raspberry garnish",
+      "priority": 73,
+      "status": "idea"
+    },
+    {
+      "id": "r074",
+      "title": "Vegan Orange Cream Cupcakes",
+      "category": "vegan",
+      "notes": "Orange zest + vanilla cream swirl frosting, creamsicle vibe",
+      "priority": 74,
+      "status": "idea"
+    },
+    {
+      "id": "r075",
+      "title": "Vegan Earl Grey Tea Cupcakes",
+      "category": "vegan",
+      "notes": "Brew tea in plant milk, lavender-vanilla frosting swirl optional",
+      "priority": 75,
+      "status": "idea"
+    },
+    {
+      "id": "r076",
+      "title": "Vegan Double Mocha Cupcakes",
+      "category": "vegan",
+      "notes": "Coffee + cocoa balance, mocha buttercream swirl",
+      "priority": 76,
+      "status": "idea"
+    },
+    {
+      "id": "r077",
+      "title": "Vegan Honey-Style Agave Cupcakes",
+      "category": "vegan",
+      "notes": "Use agave or maple instead of honey, warm golden flavor",
+      "priority": 77,
+      "status": "idea"
+    },
+    {
+      "id": "r078",
+      "title": "Vegan Apple Spice Cupcakes",
+      "category": "vegan",
+      "notes": "Apple puree for moisture, autumn spice, cream swirl frosting",
+      "priority": 78,
+      "status": "idea"
+    },
+    {
+      "id": "r079",
+      "title": "Vegan Mint Chocolate Cupcakes",
+      "category": "vegan",
+      "notes": "Cocoa base + peppermint swirl frosting, cool and clean flavor",
+      "priority": 79,
+      "status": "idea"
+    },
+    {
+      "id": "r080",
+      "title": "Vegan Peppermint Chocolate Cupcakes",
+      "category": "vegan",
+      "notes": "Holiday cluster. Coconut milk frosting + peppermint essence",
+      "priority": 80,
+      "status": "idea"
+    },
+    {
+      "id": "r081",
+      "title": "Nut-Free Vanilla Celebration Cupcakes",
+      "category": "nut-free",
+      "notes": "Kid-safe queries. Standard flour + dairy, emphasize allergy-safety language",
+      "priority": 81,
+      "status": "idea"
+    },
+    {
+      "id": "r082",
+      "title": "Nut-Free Chocolate Birthday Cupcakes",
+      "category": "nut-free",
+      "notes": "Rich chocolate flavor, no traces of nuts, kid-friendly and school-safe",
+      "priority": 82,
+      "status": "idea"
+    },
+    {
+      "id": "r083",
+      "title": "Nut-Free Cookies & Cream Cupcakes",
+      "category": "nut-free",
+      "notes": "Use certified nut-free cookie brand, frosting flecked with cookie crumbs",
+      "priority": 83,
+      "status": "idea"
+    },
+    {
+      "id": "r084",
+      "title": "Nut-Free Cinnamon Swirl Cupcakes",
+      "category": "nut-free",
+      "notes": "Sweet cinnamon swirl baked in, vanilla frosting swirl on top",
+      "priority": 84,
+      "status": "idea"
+    },
+    {
+      "id": "r085",
+      "title": "Nut-Free Funfetti Cupcakes",
+      "category": "nut-free",
+      "notes": "Naturally colored sprinkles, light buttery cake base",
+      "priority": 85,
+      "status": "idea"
+    },
+    {
+      "id": "r086",
+      "title": "Nut-Free Banana Cupcakes with Vanilla Swirl",
+      "category": "nut-free",
+      "notes": "Ripe mashed banana for sweetness, soft crumb, not too dense",
+      "priority": 86,
+      "status": "idea"
+    },
+    {
+      "id": "r087",
+      "title": "Nut-Free Lemon Blueberry Cupcakes",
+      "category": "nut-free",
+      "notes": "Fresh blueberries only, lemon zest frosting, light and summery",
+      "priority": 87,
+      "status": "idea"
+    },
+    {
+      "id": "r088",
+      "title": "Nut-Free Strawberry Shortcake Cupcakes",
+      "category": "nut-free",
+      "notes": "Fresh strawberry compote core + whipped vanilla frosting swirl",
+      "priority": 88,
+      "status": "idea"
+    },
+    {
+      "id": "r089",
+      "title": "Nut-Free Chocolate Fudge Swirl Cupcakes",
+      "category": "nut-free",
+      "notes": "Silky chocolate frosting swirl, moist cocoa cake, school-safe",
+      "priority": 89,
+      "status": "idea"
+    },
+    {
+      "id": "r090",
+      "title": "Nut-Free Caramel Drizzle Cupcakes",
+      "category": "nut-free",
+      "notes": "Caramel made from sugar + butter, no nut extracts",
+      "priority": 90,
+      "status": "idea"
+    },
+    {
+      "id": "r091",
+      "title": "Nut-Free Toasted Marshmallow Cupcakes",
+      "category": "nut-free",
+      "notes": "Toast marshmallow frosting lightly for golden finish",
+      "priority": 91,
+      "status": "idea"
+    },
+    {
+      "id": "r092",
+      "title": "Nut-Free Brown Sugar Maple Cupcakes",
+      "category": "nut-free",
+      "notes": "Pure maple syrup for warmth, cream swirl frosting",
+      "priority": 92,
+      "status": "idea"
+    },
+    {
+      "id": "r093",
+      "title": "Nut-Free Apple Cinnamon Cupcakes",
+      "category": "nut-free",
+      "notes": "Grated apple + gentle spice, classic home-baked aroma",
+      "priority": 93,
+      "status": "idea"
+    },
+    {
+      "id": "r094",
+      "title": "Nut-Free Chai Spice Cupcakes",
+      "category": "nut-free",
+      "notes": "Chai spice in batter + vanilla frosting",
+      "priority": 94,
+      "status": "idea"
+    },
+    {
+      "id": "r095",
+      "title": "Nut-Free Raspberry Cream Cupcakes",
+      "category": "nut-free",
+      "notes": "Natural pink frosting via raspberry puree",
+      "priority": 95,
+      "status": "idea"
+    },
+    {
+      "id": "r096",
+      "title": "Nut-Free Orange Creamsicle Cupcakes",
+      "category": "nut-free",
+      "notes": "Orange zest + vanilla swirl, nostalgic but bright",
+      "priority": 96,
+      "status": "idea"
+    },
+    {
+      "id": "r097",
+      "title": "Nut-Free Peach & Cream Cupcakes",
+      "category": "nut-free",
+      "notes": "Fresh peach puree frosting, summer flavor profile",
+      "priority": 97,
+      "status": "idea"
+    },
+    {
+      "id": "r098",
+      "title": "Nut-Free Chocolate Chip Cupcakes",
+      "category": "nut-free",
+      "notes": "Mini chips dispersed evenly, soft cake texture",
+      "priority": 98,
+      "status": "idea"
+    },
+    {
+      "id": "r099",
+      "title": "Nut-Free Maple Cinnamon Glaze Cupcakes",
+      "category": "nut-free",
+      "notes": "Light glaze under frosting for layered flavor",
+      "priority": 99,
+      "status": "idea"
+    },
+    {
+      "id": "r100",
+      "title": "Nut-Free Vanilla Latte Cupcakes",
+      "category": "nut-free",
+      "notes": "Coffee-infused batter + vanilla swirl, gentle and smooth",
+      "priority": 100,
+      "status": "idea"
+    },
+    {
+      "id": "r101",
+      "title": "Nut-Free Sugar Cookie Cupcakes",
+      "category": "nut-free",
+      "notes": "Holiday cluster. Cupcakes that taste like sugar cookies, nut-free guaranteed",
+      "priority": 101,
+      "status": "idea"
+    },
+    {
+      "id": "r102",
+      "title": "Gluten-Free Vanilla Almond Flour Cupcakes",
+      "category": "gluten-free",
+      "notes": "target keyword: gluten free vanilla cupcakes fluffy. Almond + tapioca ratio for lift, real vanilla extract",
+      "priority": 102,
+      "status": "idea"
+    },
+    {
+      "id": "r103",
+      "title": "Gluten-Free Chocolate Almond Flour Cupcakes",
+      "category": "gluten-free",
+      "notes": "Add espresso to enhance cocoa, keep moisture high using oil + milk",
+      "priority": 103,
+      "status": "idea"
+    },
+    {
+      "id": "r104",
+      "title": "Gluten-Free Lemon Poppy Seed Cupcakes",
+      "category": "gluten-free",
+      "notes": "Light lemon zest batter, tapioca gives springy crumb, lemon swirl frosting",
+      "priority": 104,
+      "status": "idea"
+    },
+    {
+      "id": "r105",
+      "title": "Gluten-Free Strawberry Cream Cupcakes",
+      "category": "gluten-free",
+      "notes": "Real strawberry puree, avoid artificial color, gently pink frosting",
+      "priority": 105,
+      "status": "idea"
+    },
+    {
+      "id": "r106",
+      "title": "Gluten-Free Blueberry Almond Cupcakes",
+      "category": "gluten-free",
+      "notes": "Whole blueberries, vanilla swirl on top, keep batter slightly thick",
+      "priority": 106,
+      "status": "idea"
+    },
+    {
+      "id": "r107",
+      "title": "Gluten-Free Cinnamon Brown Sugar Cupcakes",
+      "category": "gluten-free",
+      "notes": "Warm cinnamon cake, creamy vanilla swirl frosting dusted with cinnamon",
+      "priority": 107,
+      "status": "idea"
+    },
+    {
+      "id": "r108",
+      "title": "Gluten-Free Carrot Cake Cupcakes",
+      "category": "gluten-free",
+      "notes": "Grated carrot ensures moisture, cream cheese swirl frosting",
+      "priority": 108,
+      "status": "idea"
+    },
+    {
+      "id": "r109",
+      "title": "Gluten-Free Pumpkin Spice Cupcakes",
+      "category": "gluten-free",
+      "notes": "Almond flour + pumpkin puree for softness, vanilla swirl",
+      "priority": 109,
+      "status": "idea"
+    },
+    {
+      "id": "r110",
+      "title": "Gluten-Free Chocolate Chip Cupcakes",
+      "category": "gluten-free",
+      "notes": "Use mini chips, prevent sinking by tossing chips in almond flour",
+      "priority": 110,
+      "status": "idea"
+    },
+    {
+      "id": "r111",
+      "title": "Gluten-Free Honey Vanilla Cupcakes",
+      "category": "gluten-free",
+      "notes": "Mild floral honey, soft tender crumb, not overly sweet",
+      "priority": 111,
+      "status": "idea"
+    },
+    {
+      "id": "r112",
+      "title": "Gluten-Free Coconut Cream Cupcakes",
+      "category": "gluten-free",
+      "notes": "Coconut milk for moisture, coconut-flecked buttercream",
+      "priority": 112,
+      "status": "idea"
+    },
+    {
+      "id": "r113",
+      "title": "Gluten-Free Banana Maple Cupcakes",
+      "category": "gluten-free",
+      "notes": "Mashed banana + maple extract, not syrup in frosting",
+      "priority": 113,
+      "status": "idea"
+    },
+    {
+      "id": "r114",
+      "title": "Gluten-Free Chocolate Orange Cupcakes",
+      "category": "gluten-free",
+      "notes": "Cocoa + orange zest + smooth chocolate swirl frosting",
+      "priority": 114,
+      "status": "idea"
+    },
+    {
+      "id": "r115",
+      "title": "Gluten-Free Raspberry Lemonade Cupcakes",
+      "category": "gluten-free",
+      "notes": "Raspberry puree + lemon zest for bright acidity, pink swirl frosting",
+      "priority": 115,
+      "status": "idea"
+    },
+    {
+      "id": "r116",
+      "title": "Gluten-Free Chai Vanilla Cupcakes",
+      "category": "gluten-free",
+      "notes": "Chai spice through batter + lightly spiced vanilla swirl frosting",
+      "priority": 116,
+      "status": "idea"
+    },
+    {
+      "id": "r117",
+      "title": "Gluten-Free Brown Butter Vanilla Cupcakes",
+      "category": "gluten-free",
+      "notes": "Brown butter adds depth, vanilla bean frosting swirl, elegant",
+      "priority": 117,
+      "status": "idea"
+    },
+    {
+      "id": "r118",
+      "title": "Gluten-Free Ginger Molasses Cupcakes",
+      "category": "gluten-free",
+      "notes": "Soft spiced cake, cream cheese swirl, cozy but evergreen",
+      "priority": 118,
+      "status": "idea"
+    },
+    {
+      "id": "r119",
+      "title": "Gluten-Free Mint Chocolate Cupcakes",
+      "category": "gluten-free",
+      "notes": "Cocoa almond cake, cool mint swirl frosting, not artificially colored",
+      "priority": 119,
+      "status": "idea"
+    },
+    {
+      "id": "r120",
+      "title": "Gluten-Free Apple Cinnamon Crumble Cupcakes",
+      "category": "gluten-free",
+      "notes": "Tender apple cupcake + cinnamon swirl frosting + gluten-free crumble",
+      "priority": 120,
+      "status": "idea"
+    },
+    {
+      "id": "r121",
+      "title": "Gluten-Free Vanilla Coconut Cupcakes",
+      "category": "gluten-free",
+      "notes": "Coconut milk in batter, vanilla swirl, light and dreamy",
+      "priority": 121,
+      "status": "idea"
+    },
+    {
+      "id": "r122",
+      "title": "Gluten-Free Almond Snowflake Cupcakes",
+      "category": "gluten-free",
+      "notes": "Holiday cluster. Almond flour cupcake + powdered sugar snow finish",
+      "priority": 122,
+      "status": "idea"
+    },
+    {
+      "id": "r123",
+      "title": "Gluten-Free Pistachio Rose Cupcakes",
+      "category": "gluten-free",
+      "notes": "Holiday cluster. Pistachio base + rosewater frosting, elegant and festive",
+      "priority": 123,
+      "status": "idea"
+    },
+    {
+      "id": "r124",
+      "title": "Dairy-Free Classic Vanilla Cupcakes",
+      "category": "dairy-free",
+      "notes": "target keyword: dairy free vanilla cupcakes fluffy. Oat or soy milk, neutral oil, light vanilla frosting with dairy-free block butter",
+      "priority": 124,
+      "status": "idea"
+    },
+    {
+      "id": "r125",
+      "title": "Dairy-Free Chocolate Cloud Cupcakes",
+      "category": "dairy-free",
+      "notes": "Cocoa + coconut milk for richness, silky chocolate swirl frosting",
+      "priority": 125,
+      "status": "idea"
+    },
+    {
+      "id": "r126",
+      "title": "Dairy-Free Lemon Blossom Cupcakes",
+      "category": "dairy-free",
+      "notes": "Fresh zest + light lemon cream frosting using dairy-free butter + powdered sugar",
+      "priority": 126,
+      "status": "idea"
+    },
+    {
+      "id": "r127",
+      "title": "Dairy-Free Strawberry Swirl Cupcakes",
+      "category": "dairy-free",
+      "notes": "Pureed strawberries for natural color, avoid artificial flavor",
+      "priority": 127,
+      "status": "idea"
+    },
+    {
+      "id": "r128",
+      "title": "Dairy-Free Honey-Style Agave Vanilla Cupcakes",
+      "category": "dairy-free",
+      "notes": "Use agave or maple, warm cozy flavor profile",
+      "priority": 128,
+      "status": "idea"
+    },
+    {
+      "id": "r129",
+      "title": "Dairy-Free Cinnamon Maple Cupcakes",
+      "category": "dairy-free",
+      "notes": "Combine cinnamon + maple extract, creamy vanilla swirl",
+      "priority": 129,
+      "status": "idea"
+    },
+    {
+      "id": "r130",
+      "title": "Dairy-Free Caramel Cupcakes",
+      "category": "dairy-free",
+      "notes": "Make caramel using coconut cream + sugar, silky caramel swirl frosting",
+      "priority": 130,
+      "status": "idea"
+    },
+    {
+      "id": "r131",
+      "title": "Dairy-Free Coconut Dream Cupcakes",
+      "category": "dairy-free",
+      "notes": "Coconut milk batter + coconut whip frosting",
+      "priority": 131,
+      "status": "idea"
+    },
+    {
+      "id": "r132",
+      "title": "Dairy-Free Raspberry Cream Cupcakes",
+      "category": "dairy-free",
+      "notes": "Raspberry frosting swirl + vanilla sponge",
+      "priority": 132,
+      "status": "idea"
+    },
+    {
+      "id": "r133",
+      "title": "Dairy-Free Chai Spice Vanilla Cupcakes",
+      "category": "dairy-free",
+      "notes": "Brew chai tea to infuse flavor, warm spice frosting",
+      "priority": 133,
+      "status": "idea"
+    },
+    {
+      "id": "r134",
+      "title": "Dairy-Free Blueberry Lemon Cupcakes",
+      "category": "dairy-free",
+      "notes": "Tangy lemon frosting, blueberries folded throughout",
+      "priority": 134,
+      "status": "idea"
+    },
+    {
+      "id": "r135",
+      "title": "Dairy-Free Orange Creamsicle Cupcakes",
+      "category": "dairy-free",
+      "notes": "Orange zest + vanilla frosting swirl, bright and creamy",
+      "priority": 135,
+      "status": "idea"
+    },
+    {
+      "id": "r136",
+      "title": "Dairy-Free Mocha Latte Cupcakes",
+      "category": "dairy-free",
+      "notes": "Coffee-infused cocoa cake, mocha cream frosting",
+      "priority": 136,
+      "status": "idea"
+    },
+    {
+      "id": "r137",
+      "title": "Dairy-Free Cinnamon Toast Cupcakes",
+      "category": "dairy-free",
+      "notes": "Cinnamon cake + vanilla swirl + cinnamon sugar dust",
+      "priority": 137,
+      "status": "idea"
+    },
+    {
+      "id": "r138",
+      "title": "Dairy-Free Carrot Cake Cupcakes",
+      "category": "dairy-free",
+      "notes": "Finely grated carrots, dairy-free cream cheese swirl",
+      "priority": 138,
+      "status": "idea"
+    },
+    {
+      "id": "r139",
+      "title": "Dairy-Free Banana Spice Cupcakes",
+      "category": "dairy-free",
+      "notes": "Mashed banana + warm spices, soft tender crumb",
+      "priority": 139,
+      "status": "idea"
+    },
+    {
+      "id": "r140",
+      "title": "Dairy-Free Peach & Vanilla Cupcakes",
+      "category": "dairy-free",
+      "notes": "Pureed peach frosting + vanilla cake base",
+      "priority": 140,
+      "status": "idea"
+    },
+    {
+      "id": "r141",
+      "title": "Dairy-Free Lavender Vanilla Cupcakes",
+      "category": "dairy-free",
+      "notes": "Delicate lavender essence, not perfume-like, white swirl frosting",
+      "priority": 141,
+      "status": "idea"
+    },
+    {
+      "id": "r142",
+      "title": "Dairy-Free Apple Pie Cupcakes",
+      "category": "dairy-free",
+      "notes": "Apple compote center, vanilla swirl frosting + cinnamon dust",
+      "priority": 142,
+      "status": "idea"
+    },
+    {
+      "id": "r143",
+      "title": "Dairy-Free Mint Chocolate Cupcakes",
+      "category": "dairy-free",
+      "notes": "Cocoa cake + mint frosting swirl, refreshing finish",
+      "priority": 143,
+      "status": "idea"
+    },
+    {
+      "id": "r144",
+      "title": "Spring Floral Vanilla Cupcakes",
+      "category": "seasonal",
+      "notes": "Edible flowers for garnish: rose, pansy, lavender",
+      "priority": 144,
+      "status": "idea"
+    },
+    {
+      "id": "r145",
+      "title": "Easter Carrot Garden Cupcakes",
+      "category": "seasonal",
+      "notes": "Carrot cake + green piped frosting grass effect",
+      "priority": 145,
+      "status": "idea"
+    },
+    {
+      "id": "r146",
+      "title": "Mother's Day Raspberry Rose Cupcakes",
+      "category": "seasonal",
+      "notes": "Raspberry cream swirl + rosewater hint",
+      "priority": 146,
+      "status": "idea"
+    },
+    {
+      "id": "r147",
+      "title": "4th of July Berry Swirl Cupcakes",
+      "category": "seasonal",
+      "notes": "Red + blue berry swirl frosting pattern",
+      "priority": 147,
+      "status": "idea"
+    },
+    {
+      "id": "r148",
+      "title": "Summer Lemonade Cupcakes",
+      "category": "seasonal",
+      "notes": "Fresh lemon frosting swirl + zest",
+      "priority": 148,
+      "status": "idea"
+    },
+    {
+      "id": "r149",
+      "title": "Peach Picnic Cupcakes",
+      "category": "seasonal",
+      "notes": "Light peach frosting swirl + sliced peach garnish",
+      "priority": 149,
+      "status": "idea"
+    },
+    {
+      "id": "r150",
+      "title": "Salted Caramel Harvest Cupcakes",
+      "category": "seasonal",
+      "notes": "Caramel drizzle + warm spice",
+      "priority": 150,
+      "status": "idea"
+    },
+    {
+      "id": "r151",
+      "title": "Pumpkin Patch Cupcakes",
+      "category": "seasonal",
+      "notes": "Pumpkin spice cake + cream swirl + tiny fondant pumpkin",
+      "priority": 151,
+      "status": "idea"
+    },
+    {
+      "id": "r152",
+      "title": "Hot Cocoa Holiday Cupcakes",
+      "category": "seasonal",
+      "notes": "Chocolate cake + marshmallow swirl frosting",
+      "priority": 152,
+      "status": "idea"
+    },
+    {
+      "id": "r153",
+      "title": "Gingerbread Latte Cupcakes",
+      "category": "seasonal",
+      "notes": "Espresso + gingerbread spices, cream swirl frosting",
+      "priority": 153,
+      "status": "idea"
+    },
+    {
+      "id": "r154",
+      "title": "Maple Walnut Autumn Cupcakes",
+      "category": "seasonal",
+      "notes": "Maple frosting swirl + optional crumble topping",
+      "priority": 154,
+      "status": "idea"
+    },
+    {
+      "id": "r155",
+      "title": "Valentine's Strawberry Chocolate Cupcakes",
+      "category": "seasonal",
+      "notes": "Pink strawberry swirl + chocolate cake",
+      "priority": 155,
+      "status": "idea"
+    },
+    {
+      "id": "r156",
+      "title": "Birthday Confetti Cupcakes",
+      "category": "seasonal",
+      "notes": "Funfetti batter + classic swirl + sprinkles",
+      "priority": 156,
+      "status": "idea"
+    },
+    {
+      "id": "r157",
+      "title": "S'mores Summer Cupcakes",
+      "category": "seasonal",
+      "notes": "Graham-style crumb nut-free, chocolate cake + toasted marshmallow",
+      "priority": 157,
+      "status": "idea"
+    },
+    {
+      "id": "r158",
+      "title": "Apple Cider Donut Cupcakes",
+      "category": "seasonal",
+      "notes": "Apple cider reduction + cinnamon sugar swirl",
+      "priority": 158,
+      "status": "idea"
+    },
+    {
+      "id": "r159",
+      "title": "Caramel Apple Fair Cupcakes",
+      "category": "seasonal",
+      "notes": "Apple cake + caramel swirl drizzle",
+      "priority": 159,
+      "status": "idea"
+    },
+    {
+      "id": "r160",
+      "title": "Red Velvet Reindeer Cupcakes",
+      "category": "seasonal",
+      "notes": "Holiday special. Cute antlers using pretzels or chocolate",
+      "priority": 160,
+      "status": "idea"
+    },
+    {
+      "id": "r161",
+      "title": "Snowman Top Hat Cupcakes",
+      "category": "seasonal",
+      "notes": "Holiday special. Marshmallow snowman head + scarf piping",
+      "priority": 161,
+      "status": "idea"
+    },
+    {
+      "id": "r162",
+      "title": "Christmas Tree Swirl Cupcakes",
+      "category": "seasonal",
+      "notes": "Holiday special. Tall green frosting swirl + star sprinkle",
+      "priority": 162,
+      "status": "idea"
     }
   ]
 }

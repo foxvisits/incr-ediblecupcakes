@@ -43,7 +43,11 @@ STYLE RULES:
 - relatedSlugs: 2-3 existing recipe slugs to link internally (pick from site themes: classic-vanilla-dream-cupcakes, keto-chocolate-bliss-cupcakes, vegan-rainbow-surprise-cupcakes, etc.)
 
 SEO FIELDS (required):
-- metaTitle: under ${seo.titleMax} chars, format "{Title} Recipe | Incr-EdibleCupCakes"
+- metaTitle: HARD limit ${seo.titleMax} chars including the brand suffix. The preferred
+  shape is "{Name} Recipe | Incr-EdibleCupCakes", but that suffix costs 29 characters,
+  so most recipe names will not fit it. The limit always wins. Shed parts in this order
+  until the title fits: shorten the name (drop modifiers, keep the head keyword), then
+  drop " Recipe", then drop " | Incr-EdibleCupCakes". Never return a longer title.
 - metaDescription: ${seo.metaDescriptionMin}-${seo.metaDescriptionMax} chars, CTA + keyword
 - imageAlt: opisowy alt text for hero photo (no stuffing)
 - images: exactly ${config.generation?.imagesPerRecipe ?? 3} objects, each with role (hero|process|detail), alt, prompt
