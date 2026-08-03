@@ -34,6 +34,49 @@ const processImageAfterStep = Math.max(0, Math.floor(recipe.instructions.length 
 
 const schemaImageUrls = galleryImages.map((img) => `https://incr-ediblecupcakes.com${img.src}`);
 
+/**
+ * Related recipes used to be the first three siblings in the category, which
+ * meant every recipe in a category linked to the same three and the rest
+ * received no links from their siblings at all. With ~20 recipes per category
+ * that left most of them reachable only from the paginated listing.
+ *
+ * Walking the category as a ring from this recipe's own position gives each
+ * one three inbound sibling links and spreads them evenly. It is deterministic,
+ * so the build stays reproducible.
+ */
+const ringPick = (pool: typeof validatedRecipes, want: number) => {
+  if (pool.length < 2) return [];
+  const at = Math.max(0, pool.findIndex((r) => r.slug === recipe.slug));
+  return Array.from({ length: Math.min(want, pool.length - 1) }, (_, i) => pool[(at + 1 + i) % pool.length])
+    .filter((r) => r && r.slug !== recipe.slug);
+};
+
+// Slot one always takes the next recipe in the full list. Because every recipe
+// occupies exactly one position in that ring, this alone guarantees each of
+// them one inbound link — including the ones that are the only member of their
+// category, which a category-only rule can never reach.
+const relatedRecipes = [...ringPick(validatedRecipes, 1)];
+
+// The other two come from the category, so the block stays topically relevant.
+const chosen = new Set([recipe.slug, ...relatedRecipes.map((r) => r.slug)]);
+for (const r of ringPick(validatedRecipes.filter((x) => x.category === recipe.category), 4)) {
+  if (relatedRecipes.length >= 3) break;
+  if (!chosen.has(r.slug)) {
+    chosen.add(r.slug);
+    relatedRecipes.push(r);
+  }
+}
+
+// Small site, or a thin category: fill the row from anywhere rather than
+// shipping a half-empty grid.
+for (const r of ringPick(validatedRecipes, validatedRecipes.length - 1)) {
+  if (relatedRecipes.length >= 3) break;
+  if (!chosen.has(r.slug)) {
+    chosen.add(r.slug);
+    relatedRecipes.push(r);
+  }
+}
+
 const getCategoryColor = (category: string) => {
   const colors = {
     classic: 'bg-blue-100 text-blue-800',
@@ -615,9 +658,7 @@ const schemaData = {
         </h2>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {validatedRecipes
-            .filter(r => r.slug !== recipe.slug && r.category === recipe.category)
-            .slice(0, 3)
+          {relatedRecipes
             .map((relatedRecipe, index) => (
               <a
                 href={`/recipe/${relatedRecipe.slug}`}
