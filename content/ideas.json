@@ -1489,7 +1489,8 @@
       "category": "seasonal",
       "notes": "Holiday special. Tall green frosting swirl + star sprinkle",
       "priority": 162,
-      "status": "generating"
+      "status": "draft",
+      "slug": "christmas-tree-swirl-cupcakes"
     }
   ]
 }

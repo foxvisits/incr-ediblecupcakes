@@ -53,8 +53,17 @@ export function validateRecipeDraft(recipe, config) {
   // unmakeable, and nothing else here would catch it.
   const instructionText = (recipe.instructions ?? []).join(' ').toLowerCase();
   const ingredientText = (recipe.ingredients ?? []).join(' ').toLowerCase();
+  // The photos count as a promise to the reader. Three recipes came through
+  // with no frosting at all — they end at "cool on a wire rack" — while their
+  // hero shot showed a tall swirl, so the picture could not be reproduced from
+  // the recipe beneath it. Checking only the instructions missed that, because
+  // a recipe that never mentions frosting never triggered the rule.
+  const imageText = (recipe.images ?? [])
+    .map((img) => `${img?.prompt ?? ''} ${img?.alt ?? ''}`)
+    .join(' ')
+    .toLowerCase();
   const mentionsFrosting = /frost|buttercream|icing|glaze|pipe |piping|swirl/.test(
-    `${instructionText} ${(recipe.title ?? '').toLowerCase()}`,
+    `${instructionText} ${(recipe.title ?? '').toLowerCase()} ${imageText}`,
   );
   const hasFrostingIngredients =
     /powdered sugar|confectioner|icing sugar|cream cheese|heavy cream|whipping cream|frosting|buttercream|mascarpone|coconut cream|erythritol|allulose|monk fruit/.test(
