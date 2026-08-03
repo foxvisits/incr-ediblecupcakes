@@ -481,7 +481,8 @@
       "category": "keto",
       "notes": "Almond-based chai cake, vanilla chai frosting, warm spice",
       "priority": 50,
-      "status": "generating"
+      "status": "draft",
+      "slug": "keto-chai-spice-cupcakes"
     },
     {
       "id": "r051",
@@ -489,7 +490,8 @@
       "category": "keto",
       "notes": "Beet powder or natural color for subtle red tint, cream cheese frosting",
       "priority": 51,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-red-velvet-cupcakes"
     },
     {
       "id": "r052",
@@ -497,7 +499,8 @@
       "category": "keto",
       "notes": "No actual banana, use banana extract. Moist crumb from almond flour",
       "priority": 52,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-banana-bread-cupcakes"
     },
     {
       "id": "r053",
@@ -505,7 +508,8 @@
       "category": "keto",
       "notes": "Finely grated carrot + spices, cream cheese frosting, not overly sweet",
       "priority": 53,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-carrot-cake-cupcakes"
     },
     {
       "id": "r054",
@@ -513,7 +517,8 @@
       "category": "keto",
       "notes": "Cocoa cake with sugar-free chocolate chips, chocolate swirl frosting",
       "priority": 54,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-double-chocolate-cupcakes"
     },
     {
       "id": "r055",
@@ -521,7 +526,8 @@
       "category": "keto",
       "notes": "Cheesecake batter base baked into cupcake form, blueberry swirl",
       "priority": 55,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-lemon-blueberry-cheesecake-cupcakes"
     },
     {
       "id": "r056",
@@ -529,7 +535,8 @@
       "category": "keto",
       "notes": "Espresso batter + chocolate frosting + sugar-free caramel drizzle",
       "priority": 56,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-salted-caramel-mocha-cupcakes"
     },
     {
       "id": "r057",
@@ -537,7 +544,8 @@
       "category": "keto",
       "notes": "Elegant, softly sweet almond-vanilla cake, smooth wedding-style swirl",
       "priority": 57,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-vanilla-almond-wedding-cupcakes"
     },
     {
       "id": "r058",
@@ -545,7 +553,8 @@
       "category": "keto",
       "notes": "Holiday cluster. Almond + coconut flour base with warm spices",
       "priority": 58,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-christmas-spice-cupcakes"
     },
     {
       "id": "r059",
@@ -553,7 +562,8 @@
       "category": "keto",
       "notes": "Holiday cluster. Coffee + cocoa + sugar-free peppermint buttercream",
       "priority": 59,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-peppermint-mocha-cupcakes"
     },
     {
       "id": "r060",
@@ -561,7 +571,8 @@
       "category": "vegan",
       "notes": "target keyword: vegan vanilla cupcakes fluffy. Aquafaba for lift, light fluffy crumb, real vanilla bean",
       "priority": 60,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-vanilla-bean-cupcakes"
     },
     {
       "id": "r061",
@@ -569,7 +580,8 @@
       "category": "vegan",
       "notes": "Coconut milk + cocoa, frosting should be silky not oily, deep chocolate",
       "priority": 61,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-chocolate-silk-cupcakes"
     },
     {
       "id": "r062",
@@ -577,7 +589,8 @@
       "category": "vegan",
       "notes": "Fresh zest + lemon juice, frosting is lemon cream cheese-style",
       "priority": 62,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-lemon-sunshine-cupcakes"
     },
     {
       "id": "r063",
@@ -585,7 +598,8 @@
       "category": "vegan",
       "notes": "Finely grated carrot, warm spices, vegan cream cheese frosting",
       "priority": 63,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-carrot-cream-cupcakes"
     },
     {
       "id": "r064",
@@ -593,7 +607,7 @@
       "category": "vegan",
       "notes": "No artificial red dyes. Strawberry puree in batter + frosting, soft natural pink tone",
       "priority": 64,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r065",

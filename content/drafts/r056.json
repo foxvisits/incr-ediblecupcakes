@@ -1,0 +1,133 @@
+{
+  "title": "Keto Salted Caramel Mocha Cupcakes",
+  "slug": "keto-salted-caramel-mocha-cupcakes",
+  "shortDescription": "Espresso keto cupcakes with chocolate frosting and sugar-free caramel drizzle, ready in about 45 minutes total.",
+  "description": "These cupcakes mix real coffee flavor with rich cocoa in a low carb almond flour batter. The espresso wakes up the chocolate instead of hiding it. I tested this batch three times to get the texture right. Almond flour cupcakes can turn dense fast, so this recipe uses extra eggs and a touch of cream for a softer crumb The chocolate frosting is simple butter and cocoa, no cream cheese needed. A sugar-free caramel drizzle and flaky salt on top make it taste like a coffee shop treat. This is a good keto option when you want something that feels indulgent but keeps net carbs low per cupcake.",
+  "category": "keto",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "2 cups almond flour, finely ground",
+    "1/3 cup unsweetened cocoa powder",
+    "1 tbsp instant espresso powder",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp salt",
+    "4 large eggs, room temperature",
+    "3/4 cup granular erythritol or allulose blend",
+    "1/2 cup unsalted butter, melted",
+    "1/4 cup heavy cream",
+    "2 tsp vanilla extract",
+    "1/2 cup unsalted butter, softened, for frosting",
+    "1/3 cup unsweetened cocoa powder, for frosting",
+    "1 cup powdered erythritol, for frosting",
+    "3 tbsp heavy cream, for frosting",
+    "1/3 cup sugar-free caramel sauce, for drizzle",
+    "1/2 tsp flaky sea salt, for topping"
+  ],
+  "instructions": [
+    "Preheat oven to 325°F. Line a muffin pan with 12 paper liners.",
+    "Whisk almond flour, cocoa powder, espresso powder, baking powder, and salt in a bowl.",
+    "In a separate bowl, beat eggs and sweetener until light, about 1 minute.",
+    "Add melted butter, heavy cream, and vanilla to the egg mix. Whisk until smooth.",
+    "Fold the dry mix into the wet mix just until no streaks remain.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 10 minutes, then move to a rack.",
+    "For frosting, beat softened butter until fluffy. Add cocoa powder and powdered erythritol, then beat in cream until smooth.",
+    "Pipe or spread frosting on fully cooled cupcakes.",
+    "Drizzle with sugar-free caramel sauce and sprinkle with flaky salt before serving."
+  ],
+  "tips": [
+    "Use room temperature eggs so the batter blends smoothly and rises evenly.",
+    "Check your caramel sauce label. Some sugar-free versions taste sweeter than others, so add it a little at a time.",
+    "Let cupcakes cool completely before frosting or the butter will melt and slide off.",
+    "Store leftovers in the fridge and let them sit at room temperature 15 minutes before eating for the best texture."
+  ],
+  "faq": [
+    {
+      "question": "Can I use brewed espresso instead of espresso powder?",
+      "answer": "Yes, swap the espresso powder for 2 tablespoons of strong brewed espresso and reduce the heavy cream by 1 tablespoon to keep the batter from getting too wet."
+    },
+    {
+      "question": "What sugar-free caramel sauce works best for this recipe?",
+      "answer": "Any store-bought keto caramel sauce made with allulose or monk fruit works well. Look for one that stays pourable when chilled so it drizzles instead of hardening."
+    },
+    {
+      "question": "Why did my keto cupcakes turn out dense?",
+      "answer": "Almond flour batters get dense if overmixed or if the eggs are cold. Mix just until combined and use room temperature eggs for a lighter crumb."
+    },
+    {
+      "question": "Can I make these dairy free?",
+      "answer": "Swap the butter for coconut oil and use canned coconut cream instead of heavy cream in both the batter and frosting. The mocha flavor still comes through clearly."
+    }
+  ],
+  "tags": [
+    "keto-cupcakes",
+    "mocha",
+    "salted-caramel",
+    "chocolate",
+    "low-carb",
+    "coffee-cupcakes"
+  ],
+  "recipeKeys": [
+    "keto mocha cupcakes",
+    "salted caramel keto dessert",
+    "sugar-free caramel drizzle",
+    "low carb coffee cupcakes",
+    "keto chocolate frosting",
+    "Medium difficulty"
+  ],
+  "keywords": [
+    "keto salted caramel mocha cupcakes",
+    "keto coffee cupcakes",
+    "sugar free caramel keto",
+    "low carb mocha dessert",
+    "almond flour cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 215,
+    "carbs": 6,
+    "protein": 5,
+    "fat": 19,
+    "fiber": 3,
+    "sugar": 1
+  },
+  "dietaryBadges": [
+    "Keto",
+    "Gluten-Free",
+    "Low-Carb"
+  ],
+  "conclusion": "These cupcakes prove keto baking can still taste like a treat from a coffee shop. Keep a batch in the fridge for a quick low carb pick me up any afternoon.",
+  "metaTitle": "Keto Salted Caramel Mocha Cupcakes | Incr-EdibleCupCakes",
+  "metaDescription": "Rich keto mocha cupcakes with sugar-free caramel drizzle and chocolate frosting. Low carb, gluten free, and easy to bake at home tonight.",
+  "imageAlt": "Keto salted caramel mocha cupcake with tall swirled chocolate frosting and caramel drizzle on a butter yellow background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Keto salted caramel mocha cupcake with tall swirled chocolate frosting and caramel drizzle on a butter yellow background",
+      "prompt": "A single keto salted caramel mocha cupcake with tall swirled chocolate frosting piped high, sugar-free caramel drizzle running down the sides, and a pinch of flaky salt on top, set on white porcelain against a soft butter yellow pastel background, natural bright daylight, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/keto-salted-caramel-mocha-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Espresso cupcake batter being poured into a lined muffin pan",
+      "prompt": "Close up of dark espresso chocolate cupcake batter being poured into paper liners in a muffin pan on a pale wood surface, soft even daylight, pastel butter yellow accents in the background, clean minimal props, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/keto-salted-caramel-mocha-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of chocolate frosting swirl with sugar-free caramel drizzle and flaky salt",
+      "prompt": "Extreme close up of a chocolate frosting swirl on a keto cupcake, sugar-free caramel sauce dripping down the peaks with visible flaky sea salt crystals, soft natural daylight, blurred butter yellow pastel background, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/keto-salted-caramel-mocha-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "keto-chocolate-bliss-cupcakes",
+    "keto-chocolate-truffle-cupcakes",
+    "irish-coffee-cupcakes"
+  ],
+  "contentIdeaId": "r056",
+  "image": "/keto-salted-caramel-mocha-cupcakes.jpg"
+}
