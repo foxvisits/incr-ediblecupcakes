@@ -1273,7 +1273,8 @@
       "category": "dairy-free",
       "notes": "Finely grated carrots, dairy-free cream cheese swirl",
       "priority": 138,
-      "status": "generating"
+      "status": "draft",
+      "slug": "dairy-free-carrot-cake-cupcakes"
     },
     {
       "id": "r139",
@@ -1281,7 +1282,7 @@
       "category": "dairy-free",
       "notes": "Mashed banana + warm spices, soft tender crumb",
       "priority": 139,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r140",
