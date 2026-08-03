@@ -1,0 +1,128 @@
+{
+  "title": "Nut-Free Caramel Drizzle Cupcakes",
+  "slug": "nut-free-caramel-drizzle-cupcakes",
+  "shortDescription": "Vanilla cupcakes topped with homemade caramel drizzle, ready in 25 minutes prep and 18 minutes bake, no nuts anywhere.",
+  "description": "These cupcakes came out of a school bake sale request. A parent asked for something sweet and safe for a nut-free classroom, so I built this recipe around a simple sugar and butter caramel.",
+  "category": "nut-free",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "1 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1 tsp vanilla extract",
+    "1/2 cup whole milk",
+    "1 cup granulated sugar (for caramel)",
+    "1/4 cup unsalted butter (for caramel)",
+    "1/2 cup heavy cream (for caramel)",
+    "1/2 tsp flaky sea salt (for caramel and garnish)"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12-cup muffin pan with paper liners.",
+    "Whisk flour, baking powder, and salt in a bowl. Set aside.",
+    "Beat butter and sugar together for 3 minutes, until light and fluffy.",
+    "Add eggs one at a time, then mix in vanilla extract.",
+    "Add the flour mix and milk in three parts, alternating, starting and ending with flour.",
+    "Divide batter into liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in pan 5 minutes, then move to a rack.",
+    "For the caramel, melt sugar in a dry saucepan over medium heat, swirling the pan often until it turns amber.",
+    "Add butter carefully, whisking until melted. Pour in cream slowly, whisking until smooth.",
+    "Stir in sea salt. Let caramel cool 15 minutes to thicken slightly before drizzling.",
+    "Drizzle cooled caramel over each cooled cupcake. Add a pinch of flaky salt on top."
+  ],
+  "tips": [
+    "Watch the caramel closely once it starts to color. It can go from amber to burnt in under a minute.",
+    "Do not stir the sugar while it melts, just swirl the pan gently to keep it even.",
+    "If your caramel seizes when you add butter, lower the heat and whisk steadily until it smooths out.",
+    "Make the caramel a day ahead and store it in the fridge. Warm it gently before drizzling."
+  ],
+  "faq": [
+    {
+      "question": "Can I make the caramel without a candy thermometer?",
+      "answer": "Yes, just watch the color instead of the temperature. Pull the sugar off the heat once it turns deep amber, right before it looks too dark."
+    },
+    {
+      "question": "Why did my caramel turn grainy?",
+      "answer": "This usually happens if sugar crystals touch the side of the pan and crystallize back. Use a clean pan and avoid stirring while the sugar melts."
+    },
+    {
+      "question": "Is this recipe safe for a nut-free classroom?",
+      "answer": "Yes, there are no nuts, nut extracts, or nut-based products in this recipe. Always check your specific brands for cross contamination warnings."
+    },
+    {
+      "question": "Can I drizzle the caramel while it's still hot?",
+      "answer": "Let it cool about 15 minutes first. Hot caramel is too thin and will slide right off the cupcakes instead of sitting on top."
+    }
+  ],
+  "tags": [
+    "nut-free",
+    "caramel",
+    "vanilla-cupcakes",
+    "kid-friendly",
+    "classic-caramel"
+  ],
+  "recipeKeys": [
+    "nut-free caramel cupcakes",
+    "homemade caramel drizzle",
+    "sugar butter caramel recipe",
+    "nut-free cupcake recipe",
+    "Medium difficulty",
+    "classroom safe cupcakes",
+    "vanilla caramel cupcakes"
+  ],
+  "keywords": [
+    "nut-free caramel cupcakes",
+    "caramel drizzle cupcakes",
+    "homemade caramel sauce",
+    "vanilla cupcakes recipe",
+    "nut-free baking"
+  ],
+  "nutritionInfo": {
+    "calories": 290,
+    "carbs": 38,
+    "protein": 3,
+    "fat": 14,
+    "fiber": 0,
+    "sugar": 29
+  },
+  "dietaryBadges": [
+    "nut-free"
+  ],
+  "conclusion": "This recipe proves you do not need nuts to get a rich, caramel dessert. The homemade drizzle takes a bit of patience, but it turns a plain vanilla cupcake into something special.",
+  "metaTitle": "Caramel Drizzle Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Try this nut-free caramel drizzle cupcake recipe with homemade sugar and butter caramel. Bake a safe, sweet batch today.",
+  "imageAlt": "Vanilla cupcake with tall swirled frosting and golden caramel drizzle on a pale aqua background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Vanilla cupcake with tall swirled frosting and golden caramel drizzle on a pale aqua background",
+      "prompt": "A single cupcake with tall swirled frosting piped high, golden caramel drizzling down the sides, set on a pale aqua background with soft even daylight. Clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-caramel-drizzle-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Amber caramel sauce being poured into a bowl of melted butter and cream",
+      "prompt": "Close up shot of amber caramel sauce being poured from a saucepan into melted butter, with soft even daylight and a butter yellow background. Clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-caramel-drizzle-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of caramel drizzle dripping over frosting with a pinch of flaky sea salt",
+      "prompt": "Macro close up of caramel drizzle dripping down tall swirled frosting, topped with a pinch of flaky sea salt, soft even daylight, cream colored background. Clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-caramel-drizzle-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "classic-vanilla-dream-cupcakes",
+    "nut-free-lemon-sunshine-cupcakes",
+    "boston-cream-cupcakes"
+  ],
+  "contentIdeaId": "r090",
+  "image": "/nut-free-caramel-drizzle-cupcakes.jpg"
+}

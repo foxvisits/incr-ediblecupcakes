@@ -1,0 +1,123 @@
+{
+  "title": "Nut-Free Chocolate Chip Cupcakes",
+  "slug": "nut-free-chocolate-chip-cupcakes",
+  "shortDescription": "Soft vanilla cupcakes studded with mini chocolate chips, ready in about 25 minutes prep and 18 minutes bake.",
+  "description": "These cupcakes are soft, simple, and safe for nut-free kitchens and lunchboxes. Mini chocolate chips get tossed in flour first, so they stay spread through the batter instead of sinking to the bottom.",
+  "category": "nut-free",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 3/4 cups all purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp baking soda",
+    "1/2 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "2 tsp vanilla extract",
+    "1/2 cup whole milk",
+    "1/4 cup sour cream",
+    "3/4 cup mini chocolate chips",
+    "1 tbsp flour, for coating chips"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk flour, baking powder, baking soda, and salt in a medium bowl.",
+    "Beat butter and sugar together for 2 minutes, until light and fluffy.",
+    "Add eggs one at a time, beating well after each. Mix in vanilla.",
+    "Add flour mix in three parts, alternating with milk and sour cream. Mix just until smooth.",
+    "Toss mini chocolate chips with 1 tablespoon flour, then fold gently into the batter.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in pan 5 minutes, then move to a wire rack."
+  ],
+  "tips": [
+    "Coating the chips in flour keeps them from sinking to the bottom of each cupcake.",
+    "Do not overmix once the flour goes in. Overmixing makes the crumb tough instead of soft.",
+    "Check for nut-free chocolate chip brands if baking for school or allergy safe events.",
+    "Let cupcakes cool fully before frosting, or the frosting will slide right off."
+  ],
+  "faq": [
+    {
+      "question": "Why did my chocolate chips sink to the bottom of the cupcakes?",
+      "answer": "This happens when chips go into wet batter with no coating. Toss chips in a spoonful of flour first, then fold them in gently at the very end."
+    },
+    {
+      "question": "Can I use regular size chocolate chips instead of mini?",
+      "answer": "Yes, but mini chips give a more even bite and softer texture. Regular chips work fine, just expect slightly bigger pockets of chocolate."
+    },
+    {
+      "question": "Are these cupcakes safe for a nut-free classroom?",
+      "answer": "Yes, as long as you check your chocolate chip brand label. Some chocolate is processed in facilities that also handle nuts, so pick a certified nut-free brand."
+    },
+    {
+      "question": "Can I make these ahead of time?",
+      "answer": "Yes. Bake the cupcakes up to 2 days ahead and store unfrosted in an airtight container at room temperature."
+    }
+  ],
+  "tags": [
+    "nut-free",
+    "chocolate-chip",
+    "kid-friendly",
+    "easy-cupcakes",
+    "vanilla-base"
+  ],
+  "recipeKeys": [
+    "nut free chocolate chip cupcakes",
+    "easy chocolate chip cupcakes",
+    "soft cupcake recipe",
+    "school safe cupcakes",
+    "mini chocolate chip cupcakes",
+    "Easy difficulty"
+  ],
+  "keywords": [
+    "nut free cupcakes",
+    "chocolate chip cupcakes",
+    "soft cupcake recipe",
+    "kid friendly cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 245,
+    "carbs": 30,
+    "protein": 3,
+    "fat": 12,
+    "fiber": 1,
+    "sugar": 18
+  },
+  "dietaryBadges": [
+    "nut-free"
+  ],
+  "conclusion": "These cupcakes are the ones I bake when I need something safe and simple for a school party. Soft crumb, chocolate in every bite, no nuts in sight.",
+  "metaTitle": "Nut-Free Choc Chip Cupcakes | Incr-EdibleCupCakes",
+  "metaDescription": "Soft nut-free chocolate chip cupcakes with mini chips in every bite. Easy recipe ready in under 45 minutes, perfect for school treats.",
+  "imageAlt": "Nut-free chocolate chip cupcake with tall swirled vanilla frosting on a pastel background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Nut-free chocolate chip cupcake with tall swirled vanilla frosting on a pastel background",
+      "prompt": "A single nut-free chocolate chip cupcake with tall swirled vanilla frosting piped high, mini chocolate chips scattered on top and visible in the soft crumb, bright pastel bakery aesthetic, soft even daylight, pale aqua background chosen to flatter the flavor, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-chocolate-chip-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Mini chocolate chips being folded into pale cupcake batter in a glass mixing bowl",
+      "prompt": "Overhead shot of pale vanilla cupcake batter in a glass bowl with mini chocolate chips being folded in with a spatula, bright pastel bakery aesthetic, soft even daylight, butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-chocolate-chip-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up cross section of a nut-free chocolate chip cupcake showing evenly spread mini chips",
+      "prompt": "Close up cross section of a chocolate chip cupcake cut in half, showing soft crumb with mini chocolate chips evenly spread throughout, bright pastel bakery aesthetic, soft even daylight, cream background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-chocolate-chip-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "nut-free-lemon-sunshine-cupcakes",
+    "classic-vanilla-dream-cupcakes",
+    "yellow-cake-cupcakes"
+  ],
+  "contentIdeaId": "r098",
+  "image": "/nut-free-chocolate-chip-cupcakes.jpg"
+}

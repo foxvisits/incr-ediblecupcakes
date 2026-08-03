@@ -1,0 +1,128 @@
+{
+  "title": "Nut-Free Apple Cinnamon Cupcakes",
+  "slug": "nut-free-apple-cinnamon-cupcakes",
+  "shortDescription": "Soft apple cinnamon cupcakes with grated apple and warm spice, ready in about 43 minutes total.",
+  "description": "These cupcakes taste like a warm kitchen on a fall morning. Grated apple keeps the crumb moist without any nuts in the batter or frosting.",
+  "category": "nut-free",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 tsp baking powder",
+    "1/2 tsp baking soda",
+    "1/4 tsp salt",
+    "1 1/2 tsp ground cinnamon",
+    "1/4 tsp ground nutmeg",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1 tsp vanilla extract",
+    "1/3 cup buttermilk",
+    "1 cup peeled, grated apple (about 1 medium apple, packed)",
+    "8 oz cream cheese, softened",
+    "1/4 cup unsalted butter, softened (for frosting)",
+    "2 cups powdered sugar",
+    "1/2 tsp ground cinnamon (for frosting)"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a muffin pan with 12 paper liners.",
+    "Whisk flour, baking powder, baking soda, salt, cinnamon, and nutmeg in a bowl.",
+    "Beat butter and sugar together until light and fluffy, about 2 minutes.",
+    "Add eggs one at a time, then mix in vanilla.",
+    "Add the flour mix in three parts, alternating with buttermilk. Mix just until combined.",
+    "Fold in the grated apple by hand, including any juice from the apple.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a rack.",
+    "For frosting, beat cream cheese and butter until smooth. Add powdered sugar and cinnamon, then beat until fluffy.",
+    "Pipe or spread frosting on fully cooled cupcakes."
+  ],
+  "tips": [
+    "Squeeze extra liquid from grated apple if it seems very wet, so the batter does not turn soggy.",
+    "Use a fine grater for the apple so it blends into the crumb instead of leaving big chunks.",
+    "Chill the frosting 10 minutes if it feels too soft to pipe.",
+    "A pinch more nutmeg gives a cozier, more baked-apple aroma."
+  ],
+  "faq": [
+    {
+      "question": "Which apple works best for this recipe?",
+      "answer": "I tested this with Honeycrisp and Granny Smith. Both grate well and add good moisture without making the batter too wet."
+    },
+    {
+      "question": "Can I make these ahead of time?",
+      "answer": "Yes. Bake the cupcakes a day ahead and store unfrosted at room temperature in a sealed container. Frost the same day you plan to serve them."
+    },
+    {
+      "question": "Are these cupcakes safe for nut allergies?",
+      "answer": "The recipe itself uses no nuts or nut products. Always check your specific brands of flour and sugar for cross contamination warnings."
+    },
+    {
+      "question": "Why did my cupcakes turn out dense?",
+      "answer": "Overmixing after adding the flour is the usual cause. Stir just until you no longer see dry streaks, then stop."
+    }
+  ],
+  "tags": [
+    "nut-free",
+    "apple-cinnamon",
+    "fall-cupcakes",
+    "cream-cheese-frosting",
+    "easy-cupcakes"
+  ],
+  "recipeKeys": [
+    "nut-free apple cinnamon cupcakes",
+    "apple cinnamon cupcake recipe",
+    "grated apple cupcakes",
+    "fall cupcake recipe",
+    "cream cheese frosting cupcakes",
+    "Easy difficulty"
+  ],
+  "keywords": [
+    "nut-free apple cinnamon cupcakes",
+    "apple cupcakes recipe",
+    "cinnamon cream cheese frosting"
+  ],
+  "nutritionInfo": {
+    "calories": 260,
+    "carbs": 34,
+    "protein": 3,
+    "fat": 12,
+    "fiber": 1,
+    "sugar": 25
+  },
+  "dietaryBadges": [
+    "nut-free"
+  ],
+  "conclusion": "This is a simple, cozy cupcake you can bake any weeknight. The grated apple keeps every bite soft, and the cinnamon frosting ties it all together.",
+  "metaTitle": "Apple Cinnamon Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Soft nut-free apple cinnamon cupcakes with grated apple, warm spice, and creamy frosting. Easy home-baked treat, try the recipe now!",
+  "imageAlt": "Nut-free apple cinnamon cupcake with tall swirled cream cheese frosting on a pale aqua background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Nut-free apple cinnamon cupcake with tall swirled cream cheese frosting on a pale aqua background",
+      "prompt": "A single apple cinnamon cupcake with tall swirled cream cheese frosting piped high, dusted with cinnamon, on a pale aqua background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-apple-cinnamon-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Grated apple being folded into cupcake batter in a mixing bowl",
+      "prompt": "Overhead shot of grated apple being folded into pale yellow cupcake batter in a white ceramic bowl on a light wood surface. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-apple-cinnamon-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of cinnamon cream cheese frosting swirl with a light cinnamon dusting on top",
+      "prompt": "Close up detail shot of a cinnamon cream cheese frosting swirl on a cupcake, light cinnamon dusting visible, set against a butter yellow pastel background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-apple-cinnamon-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "nut-free-lemon-sunshine-cupcakes",
+    "spiced-pear-cupcakes",
+    "classic-vanilla-dream-cupcakes"
+  ],
+  "contentIdeaId": "r093",
+  "image": "/nut-free-apple-cinnamon-cupcakes.jpg"
+}

@@ -814,7 +814,8 @@
       "category": "nut-free",
       "notes": "Fresh blueberries only, lemon zest frosting, light and summery",
       "priority": 87,
-      "status": "generating"
+      "status": "draft",
+      "slug": "nut-free-lemon-blueberry-cupcakes"
     },
     {
       "id": "r088",
@@ -822,7 +823,8 @@
       "category": "nut-free",
       "notes": "Fresh strawberry compote core + whipped vanilla frosting swirl",
       "priority": 88,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-strawberry-shortcake-cupcakes"
     },
     {
       "id": "r089",
@@ -830,7 +832,8 @@
       "category": "nut-free",
       "notes": "Silky chocolate frosting swirl, moist cocoa cake, school-safe",
       "priority": 89,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-chocolate-fudge-swirl-cupcakes"
     },
     {
       "id": "r090",
@@ -838,7 +841,8 @@
       "category": "nut-free",
       "notes": "Caramel made from sugar + butter, no nut extracts",
       "priority": 90,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-caramel-drizzle-cupcakes"
     },
     {
       "id": "r091",
@@ -846,7 +850,8 @@
       "category": "nut-free",
       "notes": "Toast marshmallow frosting lightly for golden finish",
       "priority": 91,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-toasted-marshmallow-cupcakes"
     },
     {
       "id": "r092",
@@ -854,7 +859,8 @@
       "category": "nut-free",
       "notes": "Pure maple syrup for warmth, cream swirl frosting",
       "priority": 92,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-brown-sugar-maple-cupcakes"
     },
     {
       "id": "r093",
@@ -862,7 +868,8 @@
       "category": "nut-free",
       "notes": "Grated apple + gentle spice, classic home-baked aroma",
       "priority": 93,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-apple-cinnamon-cupcakes"
     },
     {
       "id": "r094",
@@ -870,7 +877,8 @@
       "category": "nut-free",
       "notes": "Chai spice in batter + vanilla frosting",
       "priority": 94,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-chai-spice-cupcakes"
     },
     {
       "id": "r095",
@@ -878,7 +886,8 @@
       "category": "nut-free",
       "notes": "Natural pink frosting via raspberry puree",
       "priority": 95,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-raspberry-cream-cupcakes"
     },
     {
       "id": "r096",
@@ -886,7 +895,8 @@
       "category": "nut-free",
       "notes": "Orange zest + vanilla swirl, nostalgic but bright",
       "priority": 96,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-orange-creamsicle-cupcakes"
     },
     {
       "id": "r097",
@@ -894,7 +904,8 @@
       "category": "nut-free",
       "notes": "Fresh peach puree frosting, summer flavor profile",
       "priority": 97,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-peach-cream-cupcakes"
     },
     {
       "id": "r098",
@@ -902,7 +913,8 @@
       "category": "nut-free",
       "notes": "Mini chips dispersed evenly, soft cake texture",
       "priority": 98,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-chocolate-chip-cupcakes"
     },
     {
       "id": "r099",
@@ -910,7 +922,8 @@
       "category": "nut-free",
       "notes": "Light glaze under frosting for layered flavor",
       "priority": 99,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-maple-cinnamon-glaze-cupcakes"
     },
     {
       "id": "r100",
@@ -918,7 +931,7 @@
       "category": "nut-free",
       "notes": "Coffee-infused batter + vanilla swirl, gentle and smooth",
       "priority": 100,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r101",
