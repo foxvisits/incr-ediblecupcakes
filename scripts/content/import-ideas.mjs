@@ -14,10 +14,18 @@ function nextId(existing) {
   return `r${String(max + 1).padStart(3, '0')}`;
 }
 
+/**
+ * Falling back to 'classic' silently is how a whole batch of ideas can land in
+ * the wrong category without anyone noticing — a misspelled or unsupported
+ * category looks identical to one that was left blank. Warn on anything that
+ * was specified but not recognised.
+ */
 function normalizeCategory(raw) {
   if (!raw) return 'classic';
-  const c = raw.trim().toLowerCase();
-  return CATEGORIES.includes(c) ? c : 'classic';
+  const c = raw.trim().toLowerCase().replace(/\s+/g, '-');
+  if (CATEGORIES.includes(c)) return c;
+  console.warn(`  ⚠️  Unknown category "${raw.trim()}" → filed as "classic". Known: ${CATEGORIES.join(', ')}`);
+  return 'classic';
 }
 
 function parseLine(line) {

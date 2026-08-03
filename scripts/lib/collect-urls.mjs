@@ -37,7 +37,7 @@ const recipeLastmod = (recipe) => recipe.dateModified || recipe.datePublished ||
 const guideLastmod = (guide) => guide.dateModified || guide.publishedAt || guide.datePublished || null;
 
 const CATEGORY_SLUGS = [
-  'classic', 'keto', 'vegan', 'nut-free', 'gluten-free',
+  'classic', 'keto', 'vegan', 'nut-free', 'gluten-free', 'dairy-free',
   'gourmet', 'tropical', 'spiced', 'seasonal',
 ];
 

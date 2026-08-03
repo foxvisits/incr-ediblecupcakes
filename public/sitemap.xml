@@ -101,6 +101,13 @@
   </url>
 
   <url>
+    <loc>https://incr-ediblecupcakes.com/categories/dairy-free</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://incr-ediblecupcakes.com/categories/gourmet</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>weekly</changefreq>

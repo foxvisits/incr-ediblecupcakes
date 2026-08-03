@@ -38,6 +38,14 @@ export const categoryExtraContent: Record<string, CategoryExtra> = {
       { question: 'Can I use any gluten-free flour?', answer: 'Use a 1:1 gluten-free baking blend with xanthan gum for best results. Single-ingredient flours usually need recipe adjustments.' },
     ],
   },
+  'dairy-free': {
+    intro: `Dairy-free cupcakes swap butter and milk for oil, plant milk, or coconut cream while keeping a tender crumb. Oat and soy milk behave closest to dairy in a standard batter; coconut milk adds richness but carries its own flavor. For frosting, use a firm dairy-free block butter rather than a tub spread, which holds too much water to whip. Unlike vegan recipes, these still use eggs, so the lift and structure stay familiar.`,
+    faq: [
+      { question: 'What is the best milk substitute for cupcakes?', answer: 'Unsweetened oat or soy milk. Both have enough protein and body to mimic dairy milk in a batter. Almond and rice milk are thinner and can produce a slightly drier crumb.' },
+      { question: 'Are dairy-free cupcakes the same as vegan?', answer: 'No. Dairy-free removes milk, butter, and cream but still allows eggs. Vegan removes all animal products, so it also replaces the eggs. Every vegan cupcake is dairy-free; not every dairy-free cupcake is vegan.' },
+      { question: 'Why did my dairy-free frosting split?', answer: 'Tub-style spreads hold too much water. Use a solid dairy-free baking block at cool room temperature, and add the powdered sugar gradually so the fat stays emulsified.' },
+    ],
+  },
   gourmet: {
     intro: `Gourmet cupcakes layer refined flavors, rosewater, pistachio, cherry blossom, and polished presentation. They suit special occasions when you want elevated technique and plating.`,
     faq: [

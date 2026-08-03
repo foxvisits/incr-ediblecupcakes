@@ -5,7 +5,7 @@ export interface Recipe {
   description: string;
   shortDescription: string;
   image: string;
-  category: 'classic' | 'keto' | 'vegan' | 'nut-free' | 'gluten-free' | 'gourmet' | 'tropical' | 'spiced' | 'seasonal';
+  category: 'classic' | 'keto' | 'vegan' | 'nut-free' | 'gluten-free' | 'dairy-free' | 'gourmet' | 'tropical' | 'spiced' | 'seasonal';
   difficulty: 'Easy' | 'Medium' | 'Hard';
   prepTime: string;
   cookTime: string;

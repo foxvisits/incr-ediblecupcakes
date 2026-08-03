@@ -17,7 +17,9 @@
   },
   "generation": {
     "textProvider": "anthropic",
-    "textModel": "claude-sonnet-4-6",
+    "textModel": "claude-sonnet-5",
+    "maxTokens": 16000,
+    "effort": "medium",
     "kieTextModel": "claude-sonnet-4-6",
     "imageProvider": "kie",
     "kieImageModel": "nano-banana-2",

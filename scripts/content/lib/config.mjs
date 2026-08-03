@@ -50,6 +50,7 @@ export const CATEGORIES = [
   'vegan',
   'nut-free',
   'gluten-free',
+  'dairy-free',
   'gourmet',
   'tropical',
   'spiced',
