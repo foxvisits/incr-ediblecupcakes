@@ -47,6 +47,23 @@ export function validateRecipeDraft(recipe, config) {
     errors.push(`Need at least ${seo.minFaqCount} FAQ items`);
   }
 
+  // Every one of these recipes is a frosted cupcake, and the instructions
+  // always end by telling the reader to frost. A draft that says "cool
+  // completely before frosting" while listing no frosting ingredients is
+  // unmakeable, and nothing else here would catch it.
+  const instructionText = (recipe.instructions ?? []).join(' ').toLowerCase();
+  const ingredientText = (recipe.ingredients ?? []).join(' ').toLowerCase();
+  const mentionsFrosting = /frost|buttercream|icing|glaze|pipe |piping|swirl/.test(
+    `${instructionText} ${(recipe.title ?? '').toLowerCase()}`,
+  );
+  const hasFrostingIngredients =
+    /powdered sugar|confectioner|icing sugar|cream cheese|heavy cream|whipping cream|frosting|buttercream|mascarpone|coconut cream|erythritol|allulose|monk fruit/.test(
+      ingredientText,
+    );
+  if (mentionsFrosting && !hasFrostingIngredients) {
+    errors.push('Instructions reference frosting but no frosting ingredients are listed');
+  }
+
   const metaLen = recipe.metaDescription?.length ?? 0;
   if (metaLen < seo.metaDescriptionMin || metaLen > seo.metaDescriptionMax) {
     warnings.push(`metaDescription length ${metaLen} (target ${seo.metaDescriptionMin}-${seo.metaDescriptionMax})`);
