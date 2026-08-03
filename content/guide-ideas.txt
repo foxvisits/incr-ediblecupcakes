@@ -1,7 +1,58 @@
-# Pomysły na guide'y — ten sam format co ideas.txt (wkrótce pełna obsługa w pipeline).
-# Format:
-#   Tytuł guide'a
-#   Tytuł | krótki opis / kąt artykułu
-#
-# Przykład:
-# How to Store Cupcakes So They Stay Fresh | room temp vs fridge, frosting types
+# Pomysły na guide'y — ten sam format co ideas.txt.
+# Format: Tytuł | krótki opis / kąt artykułu
+
+# ---------- BAKING BASICS ----------
+How to Measure Ingredients for Perfect Cupcakes | Spoon and level flour, weight vs volume, scale recommended
+What Oven Temperature Makes the Best Cupcakes? | 325F vs 350F vs convection, oven testing tips
+How to Cream Butter and Sugar Properly | Aeration, texture change, visual cues, warm friendly tone
+Why Room Temperature Ingredients Matter | Emulsification + smooth batter structure
+How Long Should You Beat Cupcake Batter? | Teach the just-combined concept, avoid overmixing
+How to Test Cupcakes for Doneness | Toothpick test + light bounce method
+How to Fill Cupcake Liners Evenly | Ice cream scoop for even fill, three-quarter height rule
+How to Cool Cupcakes Without Drying Them | Avoid overcooling + airflow tips
+Batch Baking: How to Bake 24+ Cupcakes at Once | Even heat distribution + tray rotation tips
+Cupcake Storage: Room Temp, Fridge, or Freezer? | Storage timelines + airtight technique
+
+# ---------- FROSTING & DECORATION ----------
+How to Pipe the Perfect Bakery-Style Swirl | Step-by-step piping tips, wrist motion, pressure control, bag angle
+How to Make Frosting Smooth, Silky and Stable | Beating time, temperature control, air bubble reduction, lump-free finish
+How to Decorate Cupcakes Like a Boutique Bakery | Finishing touches: micro garnishes, sugar pearls, minimal elegance
+Ombre and Two-Tone Frosting Swirls | Dual piping bag technique
+How to Decorate Cupcakes with Fresh Fruit | Cut shape, moisture control, storage timing
+Edible Flowers on Cupcakes (Safe Guide) | List safe edible flowers only
+Boutique Bakery Finishing Touches | Micro pearls, gold leaf, controlled garnish
+How to Make Frosting Stable in Hot Weather | Cornstarch, cream cheese, shortening tricks
+How to Use a Piping Bag Without Mess | Folding technique, fill level, grip tips
+
+# ---------- TROUBLESHOOTING ----------
+Why Are My Cupcakes Dry? | Overbaking, flour ratio, incorrect mixing, moisture control. Include easy rescue tips
+Why Do Cupcakes Crack on Top? | Too hot oven, too much leavening, heat + leavening explanation. Offer oven adjustments
+How to Fix Runny or Too Stiff Frosting | Balance liquids, fats, powdered sugar. Include quick correction table for both directions
+Why Cupcakes Taste Bland and How to Boost Flavor | Focus on salt, extract quality, flavor layering, aromatic oils
+Cupcakes Sticking to Liners? Here's What to Do | Explain sugar moisture ratio, cooling time, liner quality
+Why Do Cupcakes Taste Eggy? | Discuss ratios + overbeating
+Why Do Cupcakes Dome or Balloon? | Oven temp + batter fill height
+Cupcakes Overflowing? | Three-quarter height rule + batter viscosity
+
+# ---------- INGREDIENTS 101 ----------
+Butter vs Oil in Cupcake Batter | Flavor vs moisture trade-off, when to choose which, effect on crumb
+Which Flour Makes the Fluffiest Cupcakes? | AP vs cake flour vs gluten-free blends vs almond flour. Neutral, clear guidance
+All About Sugar: White, Brown, Coconut, Maple | Explain sweetness, moisture, caramelization, texture effects
+The Secret Power of Salt in Sweet Baking | Balance + flavor intensification
+How to Choose Quality Vanilla (Extract vs Paste) | Show flavor development differences
+Cocoa Powder Types: Dutch vs Natural | Taste, color, acidity differences
+Types of Milk and Milk Alternatives | Dairy vs oat vs coconut vs soy effects
+Oils in Baking: Neutral vs Flavorful | Sunflower vs coconut vs olive, when appropriate
+What Baking Powder Actually Does | Gas expansion explained simply
+How to Use Extracts and Flavor Essences | Vanilla, almond, citrus balance tips
+
+# ---------- DIETARY TRANSFORMATIONS ----------
+How to Convert Any Cupcake Recipe to Gluten-Free | Step-by-step substitution approach with almond + tapioca base, moisture management
+How to Convert Recipes to Dairy-Free | Coconut cream, oat milk, vegan butter guide
+How to Make Cupcakes Low-Sugar Without Losing Flavor | Allulose, monk fruit, maple extract tips
+How to Make Cupcakes Kid Allergen-Safe for School | Peanut-free, nut-free, dye-free, storage-safe
+
+# ---------- ADVANCED TECHNIQUES ----------
+How to Bake Flat-Top Cupcakes for Easy Frosting | Oven temp control, batter leveling
+How to Create Flavor Layers in One Cupcake | Cake + filling + swirl + garnish philosophy
+How to Design Seasonal Cupcakes That Sell | Seasonal flavor patterns, mood, color psychology

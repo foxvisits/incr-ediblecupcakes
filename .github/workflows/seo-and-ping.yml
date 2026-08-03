@@ -3,6 +3,9 @@ name: SEO checks and sitemap ping
 on:
   schedule:
     - cron: '17 3 * * *'  # daily at 03:17 UTC
+  # Lets you re-run this by hand from the Actions tab, which is also how you
+  # revive it after GitHub auto-disables it for repository inactivity.
+  workflow_dispatch:
   push:
     branches: [ main ]
     paths:
@@ -22,6 +25,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
       - name: Install deps
         run: npm ci
       - name: Regenerate SEO files
@@ -41,9 +45,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
       - name: Install deps
         run: npm ci
-      - name: SEO sync + IndexNow + sitemap ping
+      - name: SEO sync + IndexNow + Bing submission
         run: npm run update-seo -- --ping
         env:
+          # Public by design: served from /{key}.txt so IndexNow can verify it.
           INDEXNOW_KEY: a48df6c167094534b369300a89f8f530
+          # A real credential, unlike the IndexNow key. Submission is skipped
+          # with a notice when the secret is absent, so forks stay green.
+          BING_API_KEY: ${{ secrets.BING_API_KEY }}

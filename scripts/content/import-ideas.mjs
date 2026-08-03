@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { CATEGORIES, loadIdeas, saveIdeas } from './lib/config.mjs';
+import { CATEGORIES, loadIdeas, saveIdeas, loadGuideIdeas, saveGuideIdeas } from './lib/config.mjs';
 import { CONTENT } from './lib/paths.mjs';
 
 const IDEAS_TXT = path.join(CONTENT, 'ideas.txt');
@@ -14,10 +14,18 @@ function nextId(existing) {
   return `r${String(max + 1).padStart(3, '0')}`;
 }
 
+/**
+ * Falling back to 'classic' silently is how a whole batch of ideas can land in
+ * the wrong category without anyone noticing — a misspelled or unsupported
+ * category looks identical to one that was left blank. Warn on anything that
+ * was specified but not recognised.
+ */
 function normalizeCategory(raw) {
   if (!raw) return 'classic';
-  const c = raw.trim().toLowerCase();
-  return CATEGORIES.includes(c) ? c : 'classic';
+  const c = raw.trim().toLowerCase().replace(/\s+/g, '-');
+  if (CATEGORIES.includes(c)) return c;
+  console.warn(`  ⚠️  Unknown category "${raw.trim()}" → filed as "classic". Known: ${CATEGORIES.join(', ')}`);
+  return 'classic';
 }
 
 function parseLine(line) {
@@ -165,4 +173,82 @@ export function cmdImportIdeas({ merge = true, pruneQueue = true } = {}) {
   console.log(`   Razem w kolejce: ${ideasData.ideas.filter((i) => i.status === 'idea').length} oczekujących\n`);
 
   return { imported, skipped, total: ideasData.ideas.length };
+}
+
+/* ------------------------------------------------------------------ */
+/* Guide ideas                                                        */
+/*                                                                    */
+/* content/guide-ideas.txt was documented in content/README.md but had */
+/* no importer — guides could only be added by hand-editing            */
+/* guide-ideas.json. This mirrors the recipe importer so both queues   */
+/* work the same way.                                                  */
+/* ------------------------------------------------------------------ */
+
+const GUIDE_IDEAS_TXT = path.join(CONTENT, 'guide-ideas.txt');
+
+const slugify = (t) =>
+  t
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-+|-+$/g, '');
+
+function nextGuideId(existing) {
+  let max = 0;
+  for (const idea of existing) {
+    const m = String(idea.id || '').match(/^g(\d+)$/i);
+    if (m) max = Math.max(max, parseInt(m[1], 10));
+  }
+  return `g${String(max + 1).padStart(3, '0')}`;
+}
+
+/** `Title | angle / notes` — one guide per line. */
+export function parseGuideIdeasText(text) {
+  return text
+    .split(/\r?\n/)
+    .flatMap((line) => {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith('#')) return [];
+      const cleaned = trimmed.replace(/^[-*•]\s+/, '').replace(/^\d+[.)]\s+/, '').trim();
+      const parts = cleaned.split('|').map((p) => p.trim());
+      if (!parts[0]) return [];
+      return [{ title: parts[0], notes: parts[1] || '' }];
+    });
+}
+
+export function cmdImportGuideIdeas() {
+  if (!fs.existsSync(GUIDE_IDEAS_TXT)) {
+    console.log('ℹ️  Brak content/guide-ideas.txt — pomijam import guide\'ów.');
+    return;
+  }
+
+  const data = loadGuideIdeas();
+  const parsed = parseGuideIdeasText(fs.readFileSync(GUIDE_IDEAS_TXT, 'utf8'));
+
+  // Match on slug, not title: a published guide's title is rewritten by the
+  // generator, so comparing titles would re-import everything every run.
+  const seen = new Set(data.ideas.map((i) => slugify(i.slug || i.title)));
+  let added = 0;
+
+  for (const item of parsed) {
+    const slug = slugify(item.title);
+    if (seen.has(slug)) continue;
+    seen.add(slug);
+    data.ideas.push({
+      id: nextGuideId(data.ideas),
+      title: item.title,
+      category: 'Baking guides',
+      targetKeyword: item.title.toLowerCase(),
+      notes: item.notes,
+      priority: data.ideas.length + 1,
+      status: 'idea',
+    });
+    added++;
+  }
+
+  saveGuideIdeas(data);
+  const pending = data.ideas.filter((i) => i.status === 'idea').length;
+  console.log(`\n📥 Import guide'ów: ${added} nowych → content/guide-ideas.json`);
+  console.log(`   Razem w kolejce: ${pending} oczekujących`);
 }

@@ -7,7 +7,7 @@ import { cmdGenerate } from './generate.mjs';
 import { cmdApprove } from './approve.mjs';
 import { cmdSchedule } from './schedule.mjs';
 import { cmdPublishDue } from './publish-due.mjs';
-import { cmdImportIdeas } from './import-ideas.mjs';
+import { cmdImportIdeas, cmdImportGuideIdeas } from './import-ideas.mjs';
 import { cmdPipeline } from './pipeline.mjs';
 import { cmdVerifyPipeline } from './verify-pipeline.mjs';
 
@@ -35,6 +35,7 @@ async function main() {
       break;
     case 'import':
       cmdImportIdeas();
+      cmdImportGuideIdeas();
       break;
     case 'run': {
       const n = args[0] ? parseInt(args[0], 10) : undefined;

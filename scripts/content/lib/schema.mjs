@@ -47,6 +47,23 @@ export function validateRecipeDraft(recipe, config) {
     errors.push(`Need at least ${seo.minFaqCount} FAQ items`);
   }
 
+  // Every one of these recipes is a frosted cupcake, and the instructions
+  // always end by telling the reader to frost. A draft that says "cool
+  // completely before frosting" while listing no frosting ingredients is
+  // unmakeable, and nothing else here would catch it.
+  const instructionText = (recipe.instructions ?? []).join(' ').toLowerCase();
+  const ingredientText = (recipe.ingredients ?? []).join(' ').toLowerCase();
+  const mentionsFrosting = /frost|buttercream|icing|glaze|pipe |piping|swirl/.test(
+    `${instructionText} ${(recipe.title ?? '').toLowerCase()}`,
+  );
+  const hasFrostingIngredients =
+    /powdered sugar|confectioner|icing sugar|cream cheese|heavy cream|whipping cream|frosting|buttercream|mascarpone|coconut cream|erythritol|allulose|monk fruit/.test(
+      ingredientText,
+    );
+  if (mentionsFrosting && !hasFrostingIngredients) {
+    errors.push('Instructions reference frosting but no frosting ingredients are listed');
+  }
+
   const metaLen = recipe.metaDescription?.length ?? 0;
   if (metaLen < seo.metaDescriptionMin || metaLen > seo.metaDescriptionMax) {
     warnings.push(`metaDescription length ${metaLen} (target ${seo.metaDescriptionMin}-${seo.metaDescriptionMax})`);
@@ -80,10 +97,15 @@ export function attachImagePaths(draft, config) {
   const suffixes = ['', '-2', '-3', '-4'].slice(0, count);
 
   const roles = ['hero', 'process', 'detail', 'detail'];
+
+  // These defaults described a different look ("white plate, natural soft
+  // light") than the house style, so any recipe that fell back to them broke
+  // the visual consistency of the library. Both paths now read one setting.
+  const style = config.generation?.imageStyle ?? '';
   const defaultPrompts = [
-    `Professional food photography of ${draft.title}, finished cupcakes hero shot, Incr-EdibleCupCakes blog style, natural soft light, white plate, no text`,
-    `Baking process photo for ${draft.title}, mixing bowl or frosting step, same photoshoot style, natural light, no text`,
-    `Close-up cross-section or frosting texture of ${draft.title} cupcakes, same photoshoot style, natural light, no text`,
+    `Food photography of ${draft.title}, finished cupcakes hero shot. ${style}`,
+    `Baking process photo for ${draft.title}, mixing bowl or frosting step. ${style}`,
+    `Close-up cross-section or frosting texture of ${draft.title} cupcakes. ${style}`,
   ];
 
   const existing = (draft.images ?? []).slice(0, count);

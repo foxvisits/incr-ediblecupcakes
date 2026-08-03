@@ -43,12 +43,20 @@ STYLE RULES:
 - relatedSlugs: 2-3 existing recipe slugs to link internally (pick from site themes: classic-vanilla-dream-cupcakes, keto-chocolate-bliss-cupcakes, vegan-rainbow-surprise-cupcakes, etc.)
 
 SEO FIELDS (required):
-- metaTitle: under ${seo.titleMax} chars, format "{Title} Recipe | Incr-EdibleCupCakes"
+- metaTitle: HARD limit ${seo.titleMax} chars including the brand suffix. The preferred
+  shape is "{Name} Recipe | Incr-EdibleCupCakes", but that suffix costs 29 characters,
+  so most recipe names will not fit it. The limit always wins. Shed parts in this order
+  until the title fits: shorten the name (drop modifiers, keep the head keyword), then
+  drop " Recipe", then drop " | Incr-EdibleCupCakes". Never return a longer title.
 - metaDescription: ${seo.metaDescriptionMin}-${seo.metaDescriptionMax} chars, CTA + keyword
 - imageAlt: opisowy alt text for hero photo (no stuffing)
 - images: exactly ${config.generation?.imagesPerRecipe ?? 3} objects, each with role (hero|process|detail), alt, prompt
   - hero → ONLY used in page hero (one photo)
   - process + detail → referenced in body copy context; NOT duplicated in hero
+  - Every prompt MUST describe the house style verbatim in its own words, so the
+    whole library looks like one photoshoot: ${config.generation?.imageStyle ?? ''}
+  - Do not invent a different look per recipe. Only the cupcake, garnish, and
+    props change between prompts; lighting, palette, and framing stay constant.
   - NEVER use em dashes (—) anywhere in text fields
 
 Avoid duplicating these existing titles: ${existingTitles.slice(0, 30).join('; ')}

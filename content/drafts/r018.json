@@ -1,0 +1,123 @@
+{
+  "title": "Buttermilk Bakery-Style Cupcakes",
+  "slug": "buttermilk-bakery-style-cupcakes",
+  "shortDescription": "Classic buttermilk cupcakes with 25 minutes prep and 18 minutes bake time, made for a tender crumb and light vanilla flavor.",
+  "description": "These buttermilk cupcakes taste like the ones from a real neighborhood bakery. The buttermilk keeps the crumb soft and adds a light tang that balances the sweetness.",
+  "category": "classic",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp baking soda",
+    "1/2 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "2 tsp vanilla extract",
+    "3/4 cup buttermilk, room temperature",
+    "1 cup unsalted butter, softened, for frosting",
+    "3 cups powdered sugar",
+    "2 tbsp buttermilk, for frosting"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12-cup muffin pan with paper liners.",
+    "Whisk flour, baking powder, baking soda, and salt in a medium bowl. Set aside.",
+    "Beat 1/2 cup butter and granulated sugar until light and fluffy, about 3 minutes.",
+    "Add eggs one at a time, beating well after each. Mix in vanilla.",
+    "Add flour mixture in three parts, alternating with buttermilk. Start and end with flour. Mix just until combined.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a wire rack.",
+    "Let cupcakes cool completely before frosting.",
+    "Beat 1 cup butter until smooth, then add powdered sugar in two additions.",
+    "Add 2 tablespoons buttermilk and beat 2 minutes until light and fluffy. Pipe onto cooled cupcakes."
+  ],
+  "tips": [
+    "Use real buttermilk, not milk with vinegar, for the best tang and moisture.",
+    "Room temperature eggs and buttermilk blend smoother and give a more even crumb.",
+    "Do not overmix once you add the flour. Overmixing makes the crumb tough.",
+    "Weigh your flour or spoon and level it. Too much flour dries out the cupcake."
+  ],
+  "faq": [
+    {
+      "question": "Can I make buttermilk cupcakes without real buttermilk?",
+      "answer": "Yes, mix 3/4 cup milk with 2 1/2 teaspoons of lemon juice or white vinegar. Let it sit 5 minutes before using. The texture is slightly less tender than real buttermilk."
+    },
+    {
+      "question": "Why did my buttermilk cupcakes sink in the middle?",
+      "answer": "This usually means the oven was too cool or the cupcakes were pulled out too early. Check with a toothpick and make sure your oven temperature is accurate with a separate thermometer."
+    },
+    {
+      "question": "How long do these cupcakes stay moist?",
+      "answer": "Stored in an airtight container at room temperature, they stay moist for 2 days. Refrigerate frosted cupcakes for up to 4 days, but bring to room temperature before serving."
+    },
+    {
+      "question": "Can I turn this recipe into a layer cake?",
+      "answer": "Yes, this batter works in two 8 inch round pans. Bake at 350°F for about 25 to 28 minutes, until a toothpick comes out clean."
+    }
+  ],
+  "tags": [
+    "buttermilk-cupcakes",
+    "classic",
+    "vanilla",
+    "bakery-style",
+    "easy-cupcakes"
+  ],
+  "recipeKeys": [
+    "buttermilk cupcakes",
+    "classic buttermilk cupcakes recipe",
+    "bakery style cupcakes",
+    "tender vanilla cupcakes",
+    "moist buttermilk cake",
+    "Easy difficulty"
+  ],
+  "keywords": [
+    "buttermilk cupcakes",
+    "bakery style cupcakes",
+    "vanilla buttermilk cupcakes",
+    "moist cupcake recipe"
+  ],
+  "nutritionInfo": {
+    "calories": 320,
+    "carbs": 40,
+    "protein": 3,
+    "fat": 17,
+    "fiber": 0,
+    "sugar": 32
+  },
+  "dietaryBadges": [],
+  "conclusion": "These buttermilk cupcakes give you that soft, tangy bakery flavor right from your own kitchen. Once you taste the difference real buttermilk makes, you will keep this recipe on repeat.",
+  "metaTitle": "Buttermilk Bakery Cupcakes | Incr-EdibleCupCakes",
+  "metaDescription": "Classic buttermilk cupcakes with a tender crumb and light vanilla flavor. Get the step-by-step plan and bake a bakery-style batch today.",
+  "imageAlt": "Buttermilk cupcake with tall swirled vanilla frosting on a pastel background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Buttermilk cupcake with tall swirled vanilla frosting on a pastel background",
+      "prompt": "A single buttermilk cupcake with tall swirled vanilla buttercream piped high, set against a soft butter yellow pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/buttermilk-bakery-style-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Cupcake batter being poured into lined muffin pan before baking",
+      "prompt": "Overhead view of pale buttermilk cupcake batter being poured into paper lined muffin tin, bright pastel bakery aesthetic, soft even daylight, pale aqua background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/buttermilk-bakery-style-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of buttermilk cupcake crumb showing soft tender texture",
+      "prompt": "Close up of a buttermilk cupcake split in half showing a soft tender crumb, tall swirled vanilla frosting still on top half, blush pink pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/buttermilk-bakery-style-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "classic-vanilla-dream-cupcakes",
+    "yellow-cake-cupcakes",
+    "red-velvet-romance-cupcakes"
+  ],
+  "contentIdeaId": "r018",
+  "image": "/buttermilk-bakery-style-cupcakes.jpg"
+}

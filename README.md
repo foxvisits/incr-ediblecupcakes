@@ -30,3 +30,19 @@ See **`content/README.md`** for the full recipe publishing pipeline (ideas → A
 - LLM crawl hints: `public/llms.txt`
 - Re-index queue: `docs/GSC_REINDEX_QUEUE.md`
 - Content roadmap: `docs/CONTENT_CALENDAR.md`
+- Scheduled-workflow upkeep: `docs/AUTOMATION.md`
+
+`lastmod` in the sitemap is derived from real content dates, never from "today".
+Listing pages inherit the date of the freshest item they list; hand-written
+pages use `EDITORIAL_LASTMOD` in `scripts/lib/collect-urls.mjs`, which you bump
+when the copy actually changes. Rebuilding without a content change produces a
+byte-identical sitemap on purpose — a sitemap that claims all 96 URLs changed
+every night teaches Google to ignore the signal.
+
+## Known state (2026-08-03)
+
+Google had indexed **4** of the site's 96 URLs; 14 more were "Crawled –
+currently not indexed", and the remaining ~78 had never been discovered. Web
+search delivered ~5 clicks per quarter. AI-surface citations, by contrast, were
+growing (roughly 4–17/day in June to 20–67/day in late July). Read
+`docs/AUTOMATION.md` before assuming the publishing pipeline is the bottleneck.

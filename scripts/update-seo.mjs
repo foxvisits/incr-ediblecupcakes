@@ -8,8 +8,9 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { loadSiteData } from './lib/load-site-data.mjs';
 import { collectUrls, encodeImageUrl, entriesToUrlList } from './lib/collect-urls.mjs';
-import { SITE_ORIGIN, SITEMAP_URL } from './lib/seo-config.mjs';
+import { SITE_ORIGIN } from './lib/seo-config.mjs';
 import { ensureIndexNowKeyFile, submitIndexNow } from './indexnow.mjs';
+import { submitBingUrls } from './bing-submit.mjs';
 import { updateLlms } from './update-llms.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -54,19 +55,18 @@ export async function updateSitemapFile() {
   return entries;
 }
 
-async function pingSitemapSearchEngines() {
-  const encoded = encodeURIComponent(SITEMAP_URL);
-  for (const [name, url] of [
-    ['Google', `https://www.google.com/ping?sitemap=${encoded}`],
-    ['Bing', `https://www.bing.com/ping?sitemap=${encoded}`],
-  ]) {
-    try {
-      const res = await fetch(url);
-      console.log(`  ✓ ${name} sitemap ping HTTP ${res.status}`);
-    } catch (err) {
-      console.warn(`  ⚠️  ${name} sitemap ping failed: ${err.message}`);
-    }
-  }
+/**
+ * The old sitemap ping endpoints are gone: Google retired
+ * /ping?sitemap= in January 2024 (it now 404s) and Bing's returns 410 Gone.
+ * Both were still being called here and their failures logged as warnings, so
+ * `--ping` looked like it was doing something when it was not.
+ *
+ * What actually works now: IndexNow (Bing, Yandex, Seznam) and the Bing
+ * Webmaster submission API. Google has no equivalent — for Google the sitemap
+ * in robots.txt plus Search Console is the whole story.
+ */
+async function submitToSearchEngines(urlList) {
+  await submitBingUrls(urlList);
 }
 
 function parseArgs(argv) {
@@ -95,7 +95,8 @@ export async function updateSeo(options = {}) {
   }
 
   if (opts.ping) {
-    await pingSitemapSearchEngines();
+    const urlList = opts.urls?.length ? opts.urls : entriesToUrlList(entries);
+    await submitToSearchEngines(urlList);
   }
 
   console.log('');

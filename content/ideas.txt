@@ -1,3 +1,162 @@
 # Kolejka przepisów — wklej TYLKO nowe pomysły (jeden na linię).
 # Format: Tytuł | kategoria | notatki / target keyword
 # Po imporcie (content:import / content:run) linie już w pipeline znikają automatycznie.
+
+# ---------- CLASSIC ----------
+Buttermilk Bakery-Style Cupcakes | classic | target keyword: buttermilk cupcakes. Tender crumb, light vanilla sweetness, moisture from buttermilk
+Brown Sugar Cinnamon Swirl Cupcakes | classic | Warm brown sugar batter, cinnamon ribbon swirl baked inside, vanilla-cinnamon frosting swirl
+Strawberries & Cream Cupcakes | classic | Real strawberry compote folded into batter + whipped cream cheese frosting. No artificial color
+Chocolate Fudge Cupcakes with Milk Chocolate Swirl Frosting | classic | Moist deep cocoa cake base, milk chocolate buttercream swirled high
+Caramel Latte Cupcakes | classic | Espresso-infused vanilla cake, caramel buttercream swirl, caramel drizzle
+Honey Vanilla Bean Cupcakes | classic | Real vanilla bean specks, wildflower honey sweetness, silky honey frosting
+Raspberry Lemon Burst Cupcakes | classic | Fresh lemon zest + raspberry puree, tart-sweet balanced flavor
+Peaches & Cream Cupcakes | classic | Seasonal evergreen search. Soft peach puree in batter, whipped silky peach cream frosting
+Blueberry Muffin Cupcakes with Vanilla Swirl | classic | Cupcake-muffin hybrid, visible blueberry pockets, vanilla swirl frosting
+Creamsicle Cupcakes (Orange Vanilla) | classic | Fresh orange zest + juice, vanilla cream frosting, nostalgic but elegant
+Banana Pudding Cupcakes | classic | Moist banana cake, pudding core, whipped vanilla frosting
+Chocolate Chip Milk Cupcakes | classic | Vanilla cupcake with small chocolate chips, milk-infused frosting
+Honey Apple Cupcakes | classic | Grated honey-sweetened apple, cinnamon notes, vanilla frosting
+Golden Almond Buttercream Cupcakes | classic | Soft vanilla cake base with almond extract, silky almond buttercream. Classic not nut-free: contains almond
+Maple Vanilla Cupcakes | classic | Pure maple syrup in batter + frosting, warm comforting flavor
+Toasted Coconut Swirl Cupcakes | classic | Coconut milk batter, fluffy coconut-fleck swirl frosting, toasted coconut topping
+Hot Cocoa Cupcakes with Marshmallow Swirl | classic | Cocoa cake + marshmallow-cream swirl frosting piped like soft-serve
+Mint Chocolate Swirl Cupcakes | classic | Chocolate base + cool peppermint frosting, no artificial green
+Vanilla Chai Cupcakes | classic | Chai-spiced vanilla cake + lightly spiced vanilla swirl frosting
+Brown Sugar Eggnog Cupcakes | classic | Holiday cluster. Eggnog in batter + nutmeg buttercream, nostalgic holiday flavor
+Spiced Gingerbread Latte Cupcakes | classic | Holiday cluster. Gingerbread spice + espresso buttercream
+Caramel Apple Cider Cupcakes | classic | Holiday cluster. Apple cider batter + cinnamon + caramel drizzle
+
+# ---------- KETO ----------
+Keto Vanilla Cloud Cupcakes | keto | target keyword: keto vanilla cupcakes almond flour. Almond + coconut flour combo, light but stable crumb
+Keto Cinnamon Roll Cupcakes | keto | Cinnamon-spice almond flour cake + vanilla cream swirl frosting
+Keto Coconut Dream Cupcakes | keto | Coconut milk batter + shredded coconut, coconut-vanilla frosting swirl
+Keto Peanut Butter Cup Cupcakes | keto | Peanut butter batter + chocolate buttercream swirl, balance texture
+Keto Almond Mocha Cupcakes | keto | Almond flour espresso cake, mocha cream swirl frosting, deep but not bitter
+Keto Caramel Pecan Swirl Cupcakes | keto | Sugar-free caramel drizzled over swirl frosting, chopped pecans
+Keto Pumpkin Spice Cupcakes | keto | Pumpkin puree adds moisture, warm spice profile, cream cheese frosting
+Keto Strawberry Cheesecake Cupcakes | keto | Fresh strawberry puree swirl in batter, whipped cheesecake frosting
+Keto Maple Butter Cupcakes | keto | Butter-heavy batter with maple extract not syrup, creamy vanilla frosting
+Keto Blueberry Lemon Muffin-Cupcakes | keto | Almond flour + blueberries, lemon swirl frosting, lightly sweet
+Keto Chai Spice Cupcakes | keto | Almond-based chai cake, vanilla chai frosting, warm spice
+Keto Red Velvet Cupcakes | keto | Beet powder or natural color for subtle red tint, cream cheese frosting
+Keto Banana Bread Cupcakes | keto | No actual banana, use banana extract. Moist crumb from almond flour
+Keto Carrot Cake Cupcakes | keto | Finely grated carrot + spices, cream cheese frosting, not overly sweet
+Keto Double Chocolate Cupcakes | keto | Cocoa cake with sugar-free chocolate chips, chocolate swirl frosting
+Keto Lemon Blueberry Cheesecake Cupcakes | keto | Cheesecake batter base baked into cupcake form, blueberry swirl
+Keto Salted Caramel Mocha Cupcakes | keto | Espresso batter + chocolate frosting + sugar-free caramel drizzle
+Keto Vanilla Almond Wedding Cupcakes | keto | Elegant, softly sweet almond-vanilla cake, smooth wedding-style swirl
+Keto Christmas Spice Cupcakes | keto | Holiday cluster. Almond + coconut flour base with warm spices
+Keto Peppermint Mocha Cupcakes | keto | Holiday cluster. Coffee + cocoa + sugar-free peppermint buttercream
+
+# ---------- VEGAN ----------
+Vegan Vanilla Bean Cupcakes | vegan | target keyword: vegan vanilla cupcakes fluffy. Aquafaba for lift, light fluffy crumb, real vanilla bean
+Vegan Chocolate Silk Cupcakes | vegan | Coconut milk + cocoa, frosting should be silky not oily, deep chocolate
+Vegan Lemon Sunshine Cupcakes | vegan | Fresh zest + lemon juice, frosting is lemon cream cheese-style
+Vegan Carrot Cream Cupcakes | vegan | Finely grated carrot, warm spices, vegan cream cheese frosting
+Vegan Strawberry Milk Cupcakes | vegan | No artificial red dyes. Strawberry puree in batter + frosting, soft natural pink tone
+Vegan Blueberry Muffin Cupcakes | vegan | Small blueberries, keep batter tender, vanilla frosting swirl
+Vegan Maple Walnut Cupcakes | vegan | Toasted walnuts for aroma, maple frosting swirl
+Vegan Peanut Butter Cup Cupcakes | vegan | PB batter + chocolate swirl frosting, creamy not crumbly
+Vegan Cookies & Cream Cupcakes | vegan | Use vegan sandwich cookies. Cookie crumbs in frosting + batter, fluffy and playful
+Vegan Chai Latte Cupcakes | vegan | Chai spice blend + creamy spiced vanilla frosting
+Vegan Coconut Cloud Cupcakes | vegan | Coconut milk batter + fluffy coconut whip-style frosting
+Vegan Gingerbread Cupcakes | vegan | Year-round but low competition. Molasses + warm spices, ginger cream cheese frosting swirl
+Vegan Banana Bread Cupcakes | vegan | Ripe bananas for sweetness, cinnamon cream swirl frosting
+Vegan Raspberry Almond Cupcakes | vegan | Almond extract for perfume, raspberry garnish
+Vegan Orange Cream Cupcakes | vegan | Orange zest + vanilla cream swirl frosting, creamsicle vibe
+Vegan Earl Grey Tea Cupcakes | vegan | Brew tea in plant milk, lavender-vanilla frosting swirl optional
+Vegan Double Mocha Cupcakes | vegan | Coffee + cocoa balance, mocha buttercream swirl
+Vegan Honey-Style Agave Cupcakes | vegan | Use agave or maple instead of honey, warm golden flavor
+Vegan Apple Spice Cupcakes | vegan | Apple puree for moisture, autumn spice, cream swirl frosting
+Vegan Mint Chocolate Cupcakes | vegan | Cocoa base + peppermint swirl frosting, cool and clean flavor
+Vegan Peppermint Chocolate Cupcakes | vegan | Holiday cluster. Coconut milk frosting + peppermint essence
+
+# ---------- NUT-FREE ----------
+Nut-Free Vanilla Celebration Cupcakes | nut-free | Kid-safe queries. Standard flour + dairy, emphasize allergy-safety language
+Nut-Free Chocolate Birthday Cupcakes | nut-free | Rich chocolate flavor, no traces of nuts, kid-friendly and school-safe
+Nut-Free Cookies & Cream Cupcakes | nut-free | Use certified nut-free cookie brand, frosting flecked with cookie crumbs
+Nut-Free Cinnamon Swirl Cupcakes | nut-free | Sweet cinnamon swirl baked in, vanilla frosting swirl on top
+Nut-Free Funfetti Cupcakes | nut-free | Naturally colored sprinkles, light buttery cake base
+Nut-Free Banana Cupcakes with Vanilla Swirl | nut-free | Ripe mashed banana for sweetness, soft crumb, not too dense
+Nut-Free Lemon Blueberry Cupcakes | nut-free | Fresh blueberries only, lemon zest frosting, light and summery
+Nut-Free Strawberry Shortcake Cupcakes | nut-free | Fresh strawberry compote core + whipped vanilla frosting swirl
+Nut-Free Chocolate Fudge Swirl Cupcakes | nut-free | Silky chocolate frosting swirl, moist cocoa cake, school-safe
+Nut-Free Caramel Drizzle Cupcakes | nut-free | Caramel made from sugar + butter, no nut extracts
+Nut-Free Toasted Marshmallow Cupcakes | nut-free | Toast marshmallow frosting lightly for golden finish
+Nut-Free Brown Sugar Maple Cupcakes | nut-free | Pure maple syrup for warmth, cream swirl frosting
+Nut-Free Apple Cinnamon Cupcakes | nut-free | Grated apple + gentle spice, classic home-baked aroma
+Nut-Free Chai Spice Cupcakes | nut-free | Chai spice in batter + vanilla frosting
+Nut-Free Raspberry Cream Cupcakes | nut-free | Natural pink frosting via raspberry puree
+Nut-Free Orange Creamsicle Cupcakes | nut-free | Orange zest + vanilla swirl, nostalgic but bright
+Nut-Free Peach & Cream Cupcakes | nut-free | Fresh peach puree frosting, summer flavor profile
+Nut-Free Chocolate Chip Cupcakes | nut-free | Mini chips dispersed evenly, soft cake texture
+Nut-Free Maple Cinnamon Glaze Cupcakes | nut-free | Light glaze under frosting for layered flavor
+Nut-Free Vanilla Latte Cupcakes | nut-free | Coffee-infused batter + vanilla swirl, gentle and smooth
+Nut-Free Sugar Cookie Cupcakes | nut-free | Holiday cluster. Cupcakes that taste like sugar cookies, nut-free guaranteed
+
+# ---------- GLUTEN-FREE ----------
+Gluten-Free Vanilla Almond Flour Cupcakes | gluten-free | target keyword: gluten free vanilla cupcakes fluffy. Almond + tapioca ratio for lift, real vanilla extract
+Gluten-Free Chocolate Almond Flour Cupcakes | gluten-free | Add espresso to enhance cocoa, keep moisture high using oil + milk
+Gluten-Free Lemon Poppy Seed Cupcakes | gluten-free | Light lemon zest batter, tapioca gives springy crumb, lemon swirl frosting
+Gluten-Free Strawberry Cream Cupcakes | gluten-free | Real strawberry puree, avoid artificial color, gently pink frosting
+Gluten-Free Blueberry Almond Cupcakes | gluten-free | Whole blueberries, vanilla swirl on top, keep batter slightly thick
+Gluten-Free Cinnamon Brown Sugar Cupcakes | gluten-free | Warm cinnamon cake, creamy vanilla swirl frosting dusted with cinnamon
+Gluten-Free Carrot Cake Cupcakes | gluten-free | Grated carrot ensures moisture, cream cheese swirl frosting
+Gluten-Free Pumpkin Spice Cupcakes | gluten-free | Almond flour + pumpkin puree for softness, vanilla swirl
+Gluten-Free Chocolate Chip Cupcakes | gluten-free | Use mini chips, prevent sinking by tossing chips in almond flour
+Gluten-Free Honey Vanilla Cupcakes | gluten-free | Mild floral honey, soft tender crumb, not overly sweet
+Gluten-Free Coconut Cream Cupcakes | gluten-free | Coconut milk for moisture, coconut-flecked buttercream
+Gluten-Free Banana Maple Cupcakes | gluten-free | Mashed banana + maple extract, not syrup in frosting
+Gluten-Free Chocolate Orange Cupcakes | gluten-free | Cocoa + orange zest + smooth chocolate swirl frosting
+Gluten-Free Raspberry Lemonade Cupcakes | gluten-free | Raspberry puree + lemon zest for bright acidity, pink swirl frosting
+Gluten-Free Chai Vanilla Cupcakes | gluten-free | Chai spice through batter + lightly spiced vanilla swirl frosting
+Gluten-Free Brown Butter Vanilla Cupcakes | gluten-free | Brown butter adds depth, vanilla bean frosting swirl, elegant
+Gluten-Free Ginger Molasses Cupcakes | gluten-free | Soft spiced cake, cream cheese swirl, cozy but evergreen
+Gluten-Free Mint Chocolate Cupcakes | gluten-free | Cocoa almond cake, cool mint swirl frosting, not artificially colored
+Gluten-Free Apple Cinnamon Crumble Cupcakes | gluten-free | Tender apple cupcake + cinnamon swirl frosting + gluten-free crumble
+Gluten-Free Vanilla Coconut Cupcakes | gluten-free | Coconut milk in batter, vanilla swirl, light and dreamy
+Gluten-Free Almond Snowflake Cupcakes | gluten-free | Holiday cluster. Almond flour cupcake + powdered sugar snow finish
+Gluten-Free Pistachio Rose Cupcakes | gluten-free | Holiday cluster. Pistachio base + rosewater frosting, elegant and festive
+
+# ---------- DAIRY-FREE ----------
+Dairy-Free Classic Vanilla Cupcakes | dairy-free | target keyword: dairy free vanilla cupcakes fluffy. Oat or soy milk, neutral oil, light vanilla frosting with dairy-free block butter
+Dairy-Free Chocolate Cloud Cupcakes | dairy-free | Cocoa + coconut milk for richness, silky chocolate swirl frosting
+Dairy-Free Lemon Blossom Cupcakes | dairy-free | Fresh zest + light lemon cream frosting using dairy-free butter + powdered sugar
+Dairy-Free Strawberry Swirl Cupcakes | dairy-free | Pureed strawberries for natural color, avoid artificial flavor
+Dairy-Free Honey-Style Agave Vanilla Cupcakes | dairy-free | Use agave or maple, warm cozy flavor profile
+Dairy-Free Cinnamon Maple Cupcakes | dairy-free | Combine cinnamon + maple extract, creamy vanilla swirl
+Dairy-Free Caramel Cupcakes | dairy-free | Make caramel using coconut cream + sugar, silky caramel swirl frosting
+Dairy-Free Coconut Dream Cupcakes | dairy-free | Coconut milk batter + coconut whip frosting
+Dairy-Free Raspberry Cream Cupcakes | dairy-free | Raspberry frosting swirl + vanilla sponge
+Dairy-Free Chai Spice Vanilla Cupcakes | dairy-free | Brew chai tea to infuse flavor, warm spice frosting
+Dairy-Free Blueberry Lemon Cupcakes | dairy-free | Tangy lemon frosting, blueberries folded throughout
+Dairy-Free Orange Creamsicle Cupcakes | dairy-free | Orange zest + vanilla frosting swirl, bright and creamy
+Dairy-Free Mocha Latte Cupcakes | dairy-free | Coffee-infused cocoa cake, mocha cream frosting
+Dairy-Free Cinnamon Toast Cupcakes | dairy-free | Cinnamon cake + vanilla swirl + cinnamon sugar dust
+Dairy-Free Carrot Cake Cupcakes | dairy-free | Finely grated carrots, dairy-free cream cheese swirl
+Dairy-Free Banana Spice Cupcakes | dairy-free | Mashed banana + warm spices, soft tender crumb
+Dairy-Free Peach & Vanilla Cupcakes | dairy-free | Pureed peach frosting + vanilla cake base
+Dairy-Free Lavender Vanilla Cupcakes | dairy-free | Delicate lavender essence, not perfume-like, white swirl frosting
+Dairy-Free Apple Pie Cupcakes | dairy-free | Apple compote center, vanilla swirl frosting + cinnamon dust
+Dairy-Free Mint Chocolate Cupcakes | dairy-free | Cocoa cake + mint frosting swirl, refreshing finish
+
+# ---------- SEASONAL ----------
+Spring Floral Vanilla Cupcakes | seasonal | Edible flowers for garnish: rose, pansy, lavender
+Easter Carrot Garden Cupcakes | seasonal | Carrot cake + green piped frosting grass effect
+Mother's Day Raspberry Rose Cupcakes | seasonal | Raspberry cream swirl + rosewater hint
+4th of July Berry Swirl Cupcakes | seasonal | Red + blue berry swirl frosting pattern
+Summer Lemonade Cupcakes | seasonal | Fresh lemon frosting swirl + zest
+Peach Picnic Cupcakes | seasonal | Light peach frosting swirl + sliced peach garnish
+Salted Caramel Harvest Cupcakes | seasonal | Caramel drizzle + warm spice
+Pumpkin Patch Cupcakes | seasonal | Pumpkin spice cake + cream swirl + tiny fondant pumpkin
+Hot Cocoa Holiday Cupcakes | seasonal | Chocolate cake + marshmallow swirl frosting
+Gingerbread Latte Cupcakes | seasonal | Espresso + gingerbread spices, cream swirl frosting
+Maple Walnut Autumn Cupcakes | seasonal | Maple frosting swirl + optional crumble topping
+Valentine's Strawberry Chocolate Cupcakes | seasonal | Pink strawberry swirl + chocolate cake
+Birthday Confetti Cupcakes | seasonal | Funfetti batter + classic swirl + sprinkles
+S'mores Summer Cupcakes | seasonal | Graham-style crumb nut-free, chocolate cake + toasted marshmallow
+Apple Cider Donut Cupcakes | seasonal | Apple cider reduction + cinnamon sugar swirl
+Caramel Apple Fair Cupcakes | seasonal | Apple cake + caramel swirl drizzle
+Red Velvet Reindeer Cupcakes | seasonal | Holiday special. Cute antlers using pretzels or chocolate
+Snowman Top Hat Cupcakes | seasonal | Holiday special. Marshmallow snowman head + scarf piping
+Christmas Tree Swirl Cupcakes | seasonal | Holiday special. Tall green frosting swirl + star sprinkle

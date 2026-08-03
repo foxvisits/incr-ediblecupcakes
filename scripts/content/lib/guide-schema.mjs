@@ -41,10 +41,11 @@ export function attachGuideImagePaths(draft, config) {
   const count = config.generation?.imagesPerGuide ?? 3;
   const suffixes = ['', '-2', '-3', '-4'].slice(0, count);
   const roles = ['hero', 'process', 'detail', 'detail'];
+  const style = config.generation?.imageStyle ?? '';
   const defaultPrompts = [
-    `Professional food photography for guide "${draft.title}", hero shot of cupcakes or baking scene, Incr-EdibleCupCakes blog style, natural light, no text`,
-    `Process photo for "${draft.title}" guide, mixing or technique step, same photoshoot style, no text`,
-    `Detail close-up for "${draft.title}" guide, texture or ingredient focus, same photoshoot style, no text`,
+    `Food photography for guide "${draft.title}", hero shot of cupcakes or baking scene. ${style}`,
+    `Process photo for "${draft.title}" guide, mixing or technique step. ${style}`,
+    `Detail close-up for "${draft.title}" guide, texture or ingredient focus. ${style}`,
   ];
 
   const existing = (draft.images ?? []).slice(0, count);

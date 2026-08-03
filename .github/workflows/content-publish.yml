@@ -1,22 +1,38 @@
 name: Content publish (scheduled recipes)
 
 on:
+  # The publish queue lives in content/scheduled/. `publish-due` only acts on
+  # items whose publish date has arrived, so one run a day is enough — the
+  # previous hourly cron fired ~720 times a month, almost always finding
+  # nothing to do.
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 6 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: content-publish
+  cancel-in-progress: false
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # A push authenticated with the default GITHUB_TOKEN does not count as
+          # repository activity, so it cannot stop GitHub disabling these
+          # scheduled workflows after 60 days (see docs/AUTOMATION.md). Set the
+          # CONTENT_BOT_TOKEN secret to a fine-grained PAT with "Contents: write"
+          # to make these pushes count. Falls back to GITHUB_TOKEN when unset.
+          token: ${{ secrets.CONTENT_BOT_TOKEN || secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
 
       - run: npm ci
 
@@ -31,6 +47,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add content/ src/data/recipes/generated/ src/data/guides/generated/ public/*.jpg public/guide-*.jpg public/*-2.jpg public/*-3.jpg public/sitemap.xml public/llms.txt content/ideas.json content/guide-ideas.json
-          git diff --staged --quiet || git commit -m "content: publish scheduled recipes [automated]"
-          git push
+          # `git add -A` over the content roots: the previous explicit globs
+          # (public/*-2.jpg etc.) abort the whole step the first time a run
+          # produces no file matching one of them.
+          git add -A content src/data/recipes/generated src/data/guides/generated public
+          git diff --staged --quiet && echo "Nothing due to publish." && exit 0
+          git commit -m "content: publish scheduled recipes [automated]"
+          git push -u origin HEAD:${GITHUB_REF_NAME}

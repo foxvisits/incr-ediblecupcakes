@@ -5,7 +5,7 @@ export interface Recipe {
   description: string;
   shortDescription: string;
   image: string;
-  category: 'classic' | 'keto' | 'vegan' | 'nut-free' | 'gluten-free' | 'gourmet' | 'tropical' | 'spiced' | 'seasonal';
+  category: 'classic' | 'keto' | 'vegan' | 'nut-free' | 'gluten-free' | 'dairy-free' | 'gourmet' | 'tropical' | 'spiced' | 'seasonal';
   difficulty: 'Easy' | 'Medium' | 'Hard';
   prepTime: string;
   cookTime: string;
@@ -982,7 +982,7 @@ export const recipes: Recipe[] = [
     shortDescription: 'Gourmet rosewater and pistachio cupcakes with rose buttercream and chopped pistachio topping.',
     image: '/rosewater-pistachio-delight-cupcakes.jpg',
     category: 'gourmet',
-    difficulty: 'Intermediate',
+    difficulty: 'Medium',
     prepTime: '30 mins',
     cookTime: '18 mins',
     totalTime: '48 mins',
@@ -1119,7 +1119,7 @@ export const recipes: Recipe[] = [
     shortDescription: 'Spiced chocolate chili cupcakes with cocoa crumb, mild heat, and dark chocolate ganache frosting.',
     image: '/chocolate-chili-firecracker-cupcakes.jpg',
     category: 'spiced',
-    difficulty: 'Intermediate',
+    difficulty: 'Medium',
     prepTime: '30 mins',
     cookTime: '20 mins',
     totalTime: '50 mins',

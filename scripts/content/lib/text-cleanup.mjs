@@ -48,6 +48,20 @@ function wordCount(s) {
   return s.trim().split(/\s+/).filter(Boolean).length;
 }
 
+/**
+ * Words that cannot open an English sentence on their own. Splitting a comma
+ * clause that begins with one of these promotes a dependent clause to a
+ * sentence and produces fragments like "With a texture bakeries charge extra
+ * for." — which is how em dash removal (which turns dashes into commas) was
+ * quietly manufacturing broken prose.
+ */
+const CANNOT_START_SENTENCE =
+  /^(and|but|or|nor|yet|so|then|plus|with|without|which|that|who|whom|whose|because|since|while|although|though|unless|until|as|if|when|where|for|to|of|in|on|at|by|from|into|onto|over|under|about|like|per|via|thanks)\b/i;
+
+function endsSentence(s) {
+  return /[.!?]["')\]]?$/.test(s);
+}
+
 /** Split long sentences at comma boundaries only when safe. */
 export function shortenSentences(text, maxWords = 22) {
   if (!text || typeof text !== 'string') return text;
@@ -69,11 +83,18 @@ export function shortenSentences(text, maxWords = 22) {
       const left = s.slice(0, comma).trim();
       const right = s.slice(comma + 2).trim();
       if (!right || wordCount(left) < 8) break;
+      // Leaving the sentence long is better than cutting it into a fragment.
+      // A clause opening with a participle after a comma ("…, scraping the
+      // bowl between additions") is dependent too, so treat it the same way.
+      if (CANNOT_START_SENTENCE.test(right) || /^\w+ing\b/i.test(right)) break;
 
-      out.push(left.endsWith('.') || left.endsWith('!') || left.endsWith('?') ? left : `${left}.`);
+      out.push(endsSentence(left) ? left : `${left}.`);
       s = right.charAt(0).toUpperCase() + right.slice(1);
     }
-    out.push(s);
+    // Without this the trailing segment can arrive with no terminal
+    // punctuation and, once joined with a space, runs straight into the next
+    // sentence ("...will get you there This is my go to base").
+    out.push(endsSentence(s) ? s : `${s}.`);
   }
 
   return out.join(' ').replace(/\s{2,}/g, ' ').trim();

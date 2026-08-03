@@ -1,5 +1,5 @@
 import { loadConfig } from './lib/config.mjs';
-import { cmdImportIdeas } from './import-ideas.mjs';
+import { cmdImportIdeas, cmdImportGuideIdeas } from './import-ideas.mjs';
 import { cmdGenerate } from './generate.mjs';
 import { cmdGenerateGuides } from './generate-guides.mjs';
 import { cmdApprove } from './approve.mjs';
@@ -17,6 +17,7 @@ export async function cmdPipeline(countArg) {
   console.log('═══════════════════════════════════════════\n');
 
   cmdImportIdeas();
+  cmdImportGuideIdeas();
 
   await cmdGenerate(count);
   await cmdGenerateGuides(count);

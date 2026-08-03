@@ -217,7 +217,7 @@ const ogImage = new URL(image, Astro.site).href;
             const imageObserver = new IntersectionObserver((entries) => {
               entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                  const img = entry.target;
+                  const img = entry.target as HTMLImageElement;
                   img.src = img.dataset.src || img.src;
                   imageObserver.unobserve(img);
                 }
