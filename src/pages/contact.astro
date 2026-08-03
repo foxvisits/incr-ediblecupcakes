@@ -44,7 +44,6 @@ const schemaData = {
           <>
           {[...Array(10)].map((_, i) => (
             <div
-              key={i}
               class="absolute animate-float-random opacity-20"
               style={{
                 left: `${Math.random() * 100}%`,
@@ -105,7 +104,7 @@ const schemaData = {
                   description: 'Usually much faster!'
                 }
               ].map((contact, index) => (
-                <div key={index} class="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
                   <div class="w-12 h-12 bg-gradient-to-br from-cupcake-coral to-sunshine-400 rounded-full flex items-center justify-center flex-shrink-0">
                     {contact.icon === 'mail' && (
                       <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -147,7 +146,6 @@ const schemaData = {
                   { icon: 'facebook', label: 'IncrEdibleCupCakes', href: 'https://facebook.com/incrediblecupcakes' },
                 ].map((social, index) => (
                   <a
-                    key={index}
                     href={social.href}
                     class="font-quicksand flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-cupcake-coral to-sunshine-400 text-white rounded-full hover:from-cupcake-cherry hover:to-sunshine-500 transition-all duration-300 transform hover:scale-105 font-bold"
                     target="_blank"
@@ -290,7 +288,7 @@ const schemaData = {
               answer: 'I love collaborations! Please reach out to discuss proper attribution and usage guidelines.'
             }
           ].map((faq, index) => (
-            <div key={index} class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+            <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
               <h3 class="font-quicksand font-bold text-gray-900 mb-3">{faq.question}</h3>
               <p class="font-nunito text-gray-600">{faq.answer}</p>
             </div>
@@ -303,11 +301,12 @@ const schemaData = {
   <Footer />
 
   <script>
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
+    const contactForm = document.getElementById('contact-form') as HTMLFormElement | null;
+    contactForm?.addEventListener('submit', function (e) {
       e.preventDefault();
-      
+
       // Get form data
-      const formData = new FormData(this);
+      const formData = new FormData(contactForm);
       const data = {
         name: formData.get('name'),
         email: formData.get('email'),
@@ -320,7 +319,7 @@ const schemaData = {
       alert('Thank you for your message! I\'ll get back to you soon.');
       
       // Reset form
-      this.reset();
+      contactForm.reset();
     });
   </script>
 </BaseLayout>

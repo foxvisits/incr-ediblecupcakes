@@ -1,18 +1,27 @@
-# Canonical asset URLs (200 rewrite to legacy filenames on CDN)
-/hero-cupcake-scene.png  /A vibrant, mouth-watering cupcake scene.png  200
-/logo.png  /Incr-EdibleCupCakes Logo.png  200
+# ---------------------------------------------------------------------------
+# Host canonicalisation — one origin only: https://incr-ediblecupcakes.com
+# Google still has http://www.incr-ediblecupcakes.com/ URLs in its index
+# (they are the site's top pages by impressions), so these must be explicit.
+# `!` forces the rule even when a matching file exists.
+# ---------------------------------------------------------------------------
+http://www.incr-ediblecupcakes.com/*   https://incr-ediblecupcakes.com/:splat  301!
+https://www.incr-ediblecupcakes.com/*  https://incr-ediblecupcakes.com/:splat  301!
+http://incr-ediblecupcakes.com/*       https://incr-ediblecupcakes.com/:splat  301!
 
-# Recipe images — kebab-case canonical URLs
-/classic-vanilla-dream-cupcakes.jpg  /Classic Vanilla Dream Cupcakes.jpg  200
-/cranberry-orange-sparkle-cupcakes.jpg  /Cranberry Orange Sparkle Cupcakes.jpg  200
-/white-chocolate-snowflake-cupcakes.jpg  /White Chocolate Snowflake Cupcakes with White chocolate swirl frosting.jpg  200
-/spiced-pear-cupcakes.jpg  /Spiced Pear Cupcakes with pear puree.jpg  200
-/chocolate-chili-firecracker-cupcakes.jpg  /Chocolate Chili Firecracker Cupcakes.jpg  200
+# ---------------------------------------------------------------------------
+# Legacy routes from the pre-Astro (Bolt/Vite SPA) version of the site.
+# /flavors is still indexed and is the single highest-impression URL in GSC,
+# but the route no longer exists — it was returning 404 and leaking that traffic.
+# ---------------------------------------------------------------------------
+/flavors        /recipes      301
+/flavors/*      /recipes      301
 
-# Guide images
-/egg-substitutes-for-cupcakes.jpg  /Egg substitutes for cupcakes.jpg  200
-
-# 301 legacy URLs → canonical
+# ---------------------------------------------------------------------------
+# Legacy asset URLs (spaces, mixed case) → canonical kebab-case filenames.
+# The kebab-case files are committed in public/ and re-materialised at build
+# time by scripts/materialize-public-assets.mjs, so they are served directly;
+# only these 301s are needed to retire the old URLs.
+# ---------------------------------------------------------------------------
 /A%20vibrant%2C%20mouth-watering%20cupcake%20scene.png  /hero-cupcake-scene.png  301
 /Incr-EdibleCupCakes%20Logo.png  /logo.png  301
 /Sarah.png  /sarah.png  301

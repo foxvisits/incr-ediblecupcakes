@@ -48,7 +48,6 @@ const schemaData = {
           <>
             {[...Array(12)].map((_, i) => (
               <div
-                key={i}
                 class="absolute animate-float-random opacity-20"
                 style={{
                   left: `${Math.random() * 100}%`,
@@ -191,7 +190,7 @@ const schemaData = {
             { title: 'Troubleshooting Guides', description: 'Fix sinking centers, dryness, and frosting problems.', color: 'bg-sprinkle-green' },
             { title: 'Honest Notes', description: 'Clear ingredient lists, timing, and storage tips, no fake stats.', color: 'bg-cupcake-coral' },
           ].map((item, index) => (
-            <div key={index} class="bg-white rounded-2xl p-6 shadow-lg text-center">
+            <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
               <h3 class="font-quicksand text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
               <p class="font-nunito text-gray-600">{item.description}</p>
             </div>
@@ -225,7 +224,7 @@ const schemaData = {
               icon: '⭐'
             }
           ].map((principle, index) => (
-            <div key={index} class="text-center">
+            <div class="text-center">
               <div class="text-4xl mb-4">{principle.icon}</div>
               <h3 class="font-quicksand text-xl font-bold text-gray-900 mb-3">{principle.title}</h3>
               <p class="font-nunito text-gray-600">{principle.description}</p>

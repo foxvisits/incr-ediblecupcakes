@@ -75,7 +75,6 @@ const schemaData = {
           <>
           {[...Array(15)].map((_, i) => (
             <div
-              key={i}
               class="absolute animate-float-random opacity-20"
               style={{
                 left: `${Math.random() * 100}%`,
@@ -148,7 +147,7 @@ const schemaData = {
               class="font-nunito px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cupcake-coral focus:border-transparent transition-all duration-300"
             >
               {categories.map(category => (
-                <option key={category.id} value={category.id}>
+                <option value={category.id}>
                   {category.name} ({category.count})
                 </option>
               ))}
@@ -162,7 +161,7 @@ const schemaData = {
               class="font-nunito px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cupcake-coral focus:border-transparent transition-all duration-300"
             >
               {difficulties.map(difficulty => (
-                <option key={difficulty.id} value={difficulty.id}>
+                <option value={difficulty.id}>
                   {difficulty.name}
                 </option>
               ))}
@@ -188,7 +187,6 @@ const schemaData = {
         <div id="recipe-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredRecipes.map((recipe, index) => (
             <div
-              key={recipe.id}
               class="animate-fade-in-up"
               style={`animation-delay: ${index * 100}ms`}
               data-recipe-id={recipe.id}
@@ -255,7 +253,6 @@ const schemaData = {
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {categories.slice(1).map(category => (
             <a
-              key={category.id}
               href={`/categories/${category.id}`}
               class="group bg-gradient-to-br from-cupcake-pink/20 to-sunshine-100/50 rounded-2xl p-6 text-center hover:from-cupcake-pink/30 hover:to-sunshine-200/60 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
             >
@@ -278,9 +275,9 @@ const schemaData = {
 
 <script>
   // Client-side filtering functionality
-  const searchInput = document.getElementById('search-input');
-  const categoryFilter = document.getElementById('category-filter');
-  const difficultyFilter = document.getElementById('difficulty-filter');
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const categoryFilter = document.getElementById('category-filter') as HTMLSelectElement;
+  const difficultyFilter = document.getElementById('difficulty-filter') as HTMLSelectElement;
   const resultsCount = document.getElementById('results-count');
   const searchTermDisplay = document.getElementById('search-term-display');
   const searchTermText = document.getElementById('search-term-text');
@@ -297,8 +294,10 @@ const schemaData = {
     const selectedCategory = categoryFilter.value;
     const selectedDifficulty = difficultyFilter.value;
     
-    const recipeCards = Array.from(recipeGrid.querySelectorAll('[data-recipe-id]'));
-    let visible = [];
+    const recipeCards = Array.from(
+      recipeGrid?.querySelectorAll<HTMLElement>('[data-recipe-id]') ?? [],
+    );
+    let visible: HTMLElement[] = [];
 
     recipeCards.forEach(card => {
       const title = card.dataset.recipeTitle || '';
@@ -323,7 +322,7 @@ const schemaData = {
     visible.slice(start, end).forEach(card => { card.style.display = 'block'; });
 
     // Update results count
-    resultsCount.textContent = total;
+    if (resultsCount) resultsCount.textContent = String(total);
     
     // Show/hide search term display
     if (searchTerm) {
