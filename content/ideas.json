@@ -931,7 +931,8 @@
       "category": "nut-free",
       "notes": "Coffee-infused batter + vanilla swirl, gentle and smooth",
       "priority": 100,
-      "status": "generating"
+      "status": "draft",
+      "slug": "nut-free-vanilla-latte-cupcakes"
     },
     {
       "id": "r101",
@@ -939,7 +940,8 @@
       "category": "nut-free",
       "notes": "Holiday cluster. Cupcakes that taste like sugar cookies, nut-free guaranteed",
       "priority": 101,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-sugar-cookie-cupcakes"
     },
     {
       "id": "r102",
@@ -947,7 +949,8 @@
       "category": "gluten-free",
       "notes": "target keyword: gluten free vanilla cupcakes fluffy. Almond + tapioca ratio for lift, real vanilla extract",
       "priority": 102,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-vanilla-almond-flour-cupcakes"
     },
     {
       "id": "r103",
@@ -955,7 +958,8 @@
       "category": "gluten-free",
       "notes": "Add espresso to enhance cocoa, keep moisture high using oil + milk",
       "priority": 103,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-chocolate-almond-flour-cupcakes"
     },
     {
       "id": "r104",
@@ -963,7 +967,8 @@
       "category": "gluten-free",
       "notes": "Light lemon zest batter, tapioca gives springy crumb, lemon swirl frosting",
       "priority": 104,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-lemon-poppy-seed-cupcakes"
     },
     {
       "id": "r105",
@@ -971,7 +976,8 @@
       "category": "gluten-free",
       "notes": "Real strawberry puree, avoid artificial color, gently pink frosting",
       "priority": 105,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-strawberry-cream-cupcakes"
     },
     {
       "id": "r106",
@@ -979,7 +985,8 @@
       "category": "gluten-free",
       "notes": "Whole blueberries, vanilla swirl on top, keep batter slightly thick",
       "priority": 106,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-blueberry-almond-cupcakes"
     },
     {
       "id": "r107",
@@ -987,7 +994,8 @@
       "category": "gluten-free",
       "notes": "Warm cinnamon cake, creamy vanilla swirl frosting dusted with cinnamon",
       "priority": 107,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-cinnamon-brown-sugar-cupcakes"
     },
     {
       "id": "r108",
@@ -995,7 +1003,7 @@
       "category": "gluten-free",
       "notes": "Grated carrot ensures moisture, cream cheese swirl frosting",
       "priority": 108,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r109",
