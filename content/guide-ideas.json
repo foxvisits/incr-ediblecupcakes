@@ -123,7 +123,8 @@
       "targetKeyword": "how to cream butter and sugar properly",
       "notes": "Aeration, texture change, visual cues, warm friendly tone",
       "priority": 11,
-      "status": "generating"
+      "status": "draft",
+      "slug": "how-to-cream-butter-and-sugar-properly"
     },
     {
       "id": "g012",
@@ -132,7 +133,8 @@
       "targetKeyword": "why room temperature ingredients matter",
       "notes": "Emulsification + smooth batter structure",
       "priority": 12,
-      "status": "idea"
+      "status": "draft",
+      "slug": "why-room-temperature-ingredients-matter"
     },
     {
       "id": "g013",
@@ -141,7 +143,7 @@
       "targetKeyword": "how long should you beat cupcake batter?",
       "notes": "Teach the just-combined concept, avoid overmixing",
       "priority": 13,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "g014",
