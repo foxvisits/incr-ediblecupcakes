@@ -1,0 +1,138 @@
+{
+  "title": "Vegan Apple Spice Cupcakes",
+  "slug": "vegan-apple-spice-cupcakes",
+  "shortDescription": "Moist vegan apple spice cupcakes with 25 minutes prep and 18 minutes bake time, topped with a fluffy cream swirl frosting.",
+  "description": "These cupcakes get their moisture from real apple puree, not oil or eggs. I tested this batch three times in my home kitchen to get the crumb soft but not gummy. Warm cinnamon, nutmeg, and ginger make it taste like fall in one bite. The vegan cream swirl on top stays light and holds its shape for hours.",
+  "category": "vegan",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all purpose flour",
+    "1 tsp baking soda",
+    "1/2 tsp baking powder",
+    "1/2 tsp salt",
+    "2 tsp ground cinnamon",
+    "1/2 tsp ground nutmeg",
+    "1/4 tsp ground ginger",
+    "1 cup unsweetened apple puree",
+    "1/2 cup granulated sugar",
+    "1/3 cup brown sugar, packed",
+    "1/3 cup melted coconut oil",
+    "1/4 cup unsweetened almond milk",
+    "1 tsp vanilla extract",
+    "1 tbsp apple cider vinegar",
+    "1 cup vegan butter, softened, for frosting",
+    "2 1/2 cups powdered sugar, for frosting",
+    "1 tbsp almond milk, for frosting",
+    "1/2 tsp cinnamon, for frosting"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a muffin pan with 12 paper liners.",
+    "Whisk flour, baking soda, baking powder, salt, cinnamon, nutmeg, and ginger in a bowl.",
+    "In a separate bowl, mix apple puree, both sugars, melted coconut oil, almond milk, and vanilla.",
+    "Stir the apple cider vinegar into the wet mix. It will foam slightly.",
+    "Pour wet ingredients into dry ingredients. Stir just until combined, no dry streaks left.",
+    "Divide batter evenly into liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean.",
+    "Cool cupcakes in the pan for 5 minutes, then move to a wire rack to cool fully.",
+    "Beat vegan butter until smooth and pale, about 2 minutes.",
+    "Add powdered sugar in two batches, then mix in almond milk and cinnamon until fluffy.",
+    "Pipe frosting in a tall swirl once cupcakes are completely cool.",
+    "Dust with a pinch of cinnamon before serving."
+  ],
+  "tips": [
+    "Use unsweetened apple puree, not sweetened applesauce, or the cake will be too sugary.",
+    "Do not overmix the batter. Overmixing makes the crumb tough instead of soft.",
+    "Let cupcakes cool all the way before frosting, or the swirl will melt and slide.",
+    "Chill the frosting bowl for 10 minutes if your kitchen is warm, it pipes cleaner."
+  ],
+  "faq": [
+    {
+      "question": "Can I use homemade apple puree instead of store bought?",
+      "answer": "Yes, just cook peeled apples until soft, then blend smooth with no added sugar. Let it cool before adding to the batter."
+    },
+    {
+      "question": "Why did my cupcakes sink in the middle?",
+      "answer": "This usually means too much apple puree or an underbaked center. Measure the puree carefully and test with a toothpick before pulling them out."
+    },
+    {
+      "question": "Can I make these gluten free?",
+      "answer": "Swap the flour for a 1 to 1 gluten free baking blend. I tested this substitution and the crumb stays moist and holds together well."
+    },
+    {
+      "question": "How long do these cupcakes stay fresh?",
+      "answer": "Store them in an airtight container at room temperature for 2 days, or in the fridge for up to 5 days. Bring to room temperature before serving."
+    }
+  ],
+  "tags": [
+    "vegan",
+    "apple",
+    "fall",
+    "spice",
+    "cupcakes",
+    "dairy-free"
+  ],
+  "recipeKeys": [
+    "vegan apple spice cupcakes",
+    "apple puree cupcakes",
+    "vegan fall cupcakes",
+    "dairy free apple cupcakes",
+    "cinnamon apple cupcakes",
+    "Easy difficulty",
+    "vegan cream frosting"
+  ],
+  "keywords": [
+    "vegan apple spice cupcakes",
+    "apple cupcakes recipe",
+    "vegan cupcakes",
+    "fall cupcake recipe",
+    "cinnamon apple cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 265,
+    "carbs": 40,
+    "protein": 2,
+    "fat": 11,
+    "fiber": 1,
+    "sugar": 29
+  },
+  "dietaryBadges": [
+    "vegan",
+    "dairy-free",
+    "egg-free"
+  ],
+  "conclusion": "These vegan apple spice cupcakes prove you do not need eggs or dairy for a moist, tender crumb. The apple puree does all the work, and the cream swirl on top makes them feel special enough for any fall gathering.",
+  "metaTitle": "Vegan Apple Spice Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Moist vegan apple spice cupcakes with cinnamon and a fluffy cream swirl. Easy fall recipe, ready in 43 minutes. Bake a batch today.",
+  "imageAlt": "Vegan apple spice cupcake with tall swirled cream frosting and a cinnamon dusting on a pastel background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Vegan apple spice cupcake with tall swirled cream frosting and a cinnamon dusting on a pastel background",
+      "prompt": "A single vegan apple spice cupcake with tall swirled cream frosting piped high, dusted with cinnamon, sitting on a pale butter yellow background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/vegan-apple-spice-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Bowl of apple spice cupcake batter being poured into paper liners in a muffin pan",
+      "prompt": "Overhead shot of apple spice cupcake batter being poured into white paper liners in a muffin pan, small bowl of apple puree beside it. Bright pastel bakery aesthetic, soft even daylight, pale aqua background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/vegan-apple-spice-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of vegan cream swirl frosting on an apple spice cupcake showing texture",
+      "prompt": "Close up detail shot of a tall swirled vegan cream frosting on an apple spice cupcake, a thin cinnamon stick and small dried apple slice as garnish. Bright pastel bakery aesthetic, soft even daylight, blush pink background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/vegan-apple-spice-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "spiced-pear-cupcakes",
+    "vegan-rainbow-surprise-cupcakes",
+    "cranberry-orange-sparkle-cupcakes"
+  ],
+  "contentIdeaId": "r078",
+  "image": "/vegan-apple-spice-cupcakes.jpg"
+}

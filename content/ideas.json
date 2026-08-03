@@ -733,7 +733,8 @@
       "category": "vegan",
       "notes": "Apple puree for moisture, autumn spice, cream swirl frosting",
       "priority": 78,
-      "status": "generating"
+      "status": "draft",
+      "slug": "vegan-apple-spice-cupcakes"
     },
     {
       "id": "r079",
@@ -741,7 +742,8 @@
       "category": "vegan",
       "notes": "Cocoa base + peppermint swirl frosting, cool and clean flavor",
       "priority": 79,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-mint-chocolate-cupcakes"
     },
     {
       "id": "r080",
@@ -749,7 +751,8 @@
       "category": "vegan",
       "notes": "Holiday cluster. Coconut milk frosting + peppermint essence",
       "priority": 80,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-peppermint-chocolate-cupcakes"
     },
     {
       "id": "r081",
@@ -757,7 +760,8 @@
       "category": "nut-free",
       "notes": "Kid-safe queries. Standard flour + dairy, emphasize allergy-safety language",
       "priority": 81,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-vanilla-celebration-cupcakes"
     },
     {
       "id": "r082",
@@ -765,7 +769,8 @@
       "category": "nut-free",
       "notes": "Rich chocolate flavor, no traces of nuts, kid-friendly and school-safe",
       "priority": 82,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-chocolate-birthday-cupcakes"
     },
     {
       "id": "r083",
@@ -773,7 +778,8 @@
       "category": "nut-free",
       "notes": "Use certified nut-free cookie brand, frosting flecked with cookie crumbs",
       "priority": 83,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-cookies-and-cream-cupcakes"
     },
     {
       "id": "r084",
@@ -781,7 +787,8 @@
       "category": "nut-free",
       "notes": "Sweet cinnamon swirl baked in, vanilla frosting swirl on top",
       "priority": 84,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-cinnamon-swirl-cupcakes"
     },
     {
       "id": "r085",
@@ -789,7 +796,8 @@
       "category": "nut-free",
       "notes": "Naturally colored sprinkles, light buttery cake base",
       "priority": 85,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-funfetti-cupcakes"
     },
     {
       "id": "r086",
@@ -797,7 +805,8 @@
       "category": "nut-free",
       "notes": "Ripe mashed banana for sweetness, soft crumb, not too dense",
       "priority": 86,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-banana-vanilla-swirl-cupcakes"
     },
     {
       "id": "r087",
@@ -805,7 +814,7 @@
       "category": "nut-free",
       "notes": "Fresh blueberries only, lemon zest frosting, light and summery",
       "priority": 87,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r088",
