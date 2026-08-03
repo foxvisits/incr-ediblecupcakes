@@ -1021,8 +1021,7 @@
       "category": "gluten-free",
       "notes": "Use mini chips, prevent sinking by tossing chips in almond flour",
       "priority": 110,
-      "status": "failed",
-      "error": "Instructions reference frosting but no frosting ingredients are listed"
+      "status": "idea"
     },
     {
       "id": "r111",
