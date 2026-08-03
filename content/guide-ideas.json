@@ -313,7 +313,8 @@
       "targetKeyword": "how to fix runny or too stiff frosting",
       "notes": "Balance liquids, fats, powdered sugar. Include quick correction table for both directions",
       "priority": 30,
-      "status": "generating"
+      "status": "draft",
+      "slug": "how-to-fix-runny-or-too-stiff-frosting"
     },
     {
       "id": "g031",
@@ -322,7 +323,8 @@
       "targetKeyword": "why cupcakes taste bland and how to boost flavor",
       "notes": "Focus on salt, extract quality, flavor layering, aromatic oils",
       "priority": 31,
-      "status": "idea"
+      "status": "draft",
+      "slug": "why-cupcakes-taste-bland-how-to-boost-flavor"
     },
     {
       "id": "g032",
@@ -331,7 +333,8 @@
       "targetKeyword": "cupcakes sticking to liners? here's what to do",
       "notes": "Explain sugar moisture ratio, cooling time, liner quality",
       "priority": 32,
-      "status": "idea"
+      "status": "draft",
+      "slug": "cupcakes-sticking-to-liners-what-to-do"
     },
     {
       "id": "g033",
@@ -340,7 +343,7 @@
       "targetKeyword": "why do cupcakes taste eggy?",
       "notes": "Discuss ratios + overbeating",
       "priority": 33,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "g034",
