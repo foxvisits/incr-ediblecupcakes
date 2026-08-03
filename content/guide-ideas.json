@@ -413,7 +413,8 @@
       "targetKeyword": "how to choose quality vanilla (extract vs paste)",
       "notes": "Show flavor development differences",
       "priority": 40,
-      "status": "generating"
+      "status": "draft",
+      "slug": "how-to-choose-quality-vanilla-extract-vs-paste"
     },
     {
       "id": "g041",
@@ -422,7 +423,8 @@
       "targetKeyword": "cocoa powder types: dutch vs natural",
       "notes": "Taste, color, acidity differences",
       "priority": 41,
-      "status": "idea"
+      "status": "draft",
+      "slug": "cocoa-powder-types-dutch-vs-natural"
     },
     {
       "id": "g042",
@@ -431,7 +433,8 @@
       "targetKeyword": "types of milk and milk alternatives",
       "notes": "Dairy vs oat vs coconut vs soy effects",
       "priority": 42,
-      "status": "idea"
+      "status": "draft",
+      "slug": "types-of-milk-and-milk-alternatives"
     },
     {
       "id": "g043",
@@ -440,7 +443,8 @@
       "targetKeyword": "oils in baking: neutral vs flavorful",
       "notes": "Sunflower vs coconut vs olive, when appropriate",
       "priority": 43,
-      "status": "idea"
+      "status": "draft",
+      "slug": "oils-in-baking-neutral-vs-flavorful"
     },
     {
       "id": "g044",
@@ -449,7 +453,8 @@
       "targetKeyword": "what baking powder actually does",
       "notes": "Gas expansion explained simply",
       "priority": 44,
-      "status": "idea"
+      "status": "draft",
+      "slug": "what-baking-powder-actually-does"
     },
     {
       "id": "g045",
@@ -458,7 +463,8 @@
       "targetKeyword": "how to use extracts and flavor essences",
       "notes": "Vanilla, almond, citrus balance tips",
       "priority": 45,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-use-extracts-and-flavor-essences"
     },
     {
       "id": "g046",
@@ -467,7 +473,8 @@
       "targetKeyword": "how to convert any cupcake recipe to gluten-free",
       "notes": "Step-by-step substitution approach with almond + tapioca base, moisture management",
       "priority": 46,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-convert-any-cupcake-recipe-to-gluten-free"
     },
     {
       "id": "g047",
@@ -476,7 +483,7 @@
       "targetKeyword": "how to convert recipes to dairy-free",
       "notes": "Coconut cream, oat milk, vegan butter guide",
       "priority": 47,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "g048",
