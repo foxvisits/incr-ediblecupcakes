@@ -38,6 +38,11 @@ GUIDE RULES:
 - sidebarTitle + sidebarBullets: 4-6 quick reference bullets
 - table: optional comparison table with headers[] and rows[][] (2+ rows) when useful
 - relatedLinks: 2-4 internal links {label, href} to /recipe/ or /guides/ pages on site
+- DEPTH: each section needs at least two substantial paragraphs, and the guide
+  as a whole should run 700-1000 words of body copy excluding the FAQ. Answer
+  the "why" behind each instruction, not just the "what": temperatures, ratios,
+  what goes wrong and how the reader spots it. A guide that only lists steps is
+  thin, and thin pages are what Google declines to index.
 - metaTitle: HARD limit ${seo.titleMax} chars including the brand suffix. The preferred
   shape is "{Title} | Incr-EdibleCupCakes Guides", but that suffix costs 29 characters,
   so most guide titles will not fit it. The limit always wins. Shed parts in this order
