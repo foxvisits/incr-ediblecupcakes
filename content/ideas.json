@@ -382,7 +382,8 @@
       "category": "classic",
       "notes": "Holiday cluster. Apple cider batter + cinnamon + caramel drizzle",
       "priority": 39,
-      "status": "generating"
+      "status": "draft",
+      "slug": "caramel-apple-cider-cupcakes"
     },
     {
       "id": "r040",
@@ -390,7 +391,8 @@
       "category": "keto",
       "notes": "target keyword: keto vanilla cupcakes almond flour. Almond + coconut flour combo, light but stable crumb",
       "priority": 40,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-vanilla-cloud-cupcakes"
     },
     {
       "id": "r041",
@@ -398,7 +400,8 @@
       "category": "keto",
       "notes": "Cinnamon-spice almond flour cake + vanilla cream swirl frosting",
       "priority": 41,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-cinnamon-roll-cupcakes"
     },
     {
       "id": "r042",
@@ -406,7 +409,8 @@
       "category": "keto",
       "notes": "Coconut milk batter + shredded coconut, coconut-vanilla frosting swirl",
       "priority": 42,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-coconut-dream-cupcakes"
     },
     {
       "id": "r043",
@@ -414,7 +418,8 @@
       "category": "keto",
       "notes": "Peanut butter batter + chocolate buttercream swirl, balance texture",
       "priority": 43,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-peanut-butter-cup-cupcakes"
     },
     {
       "id": "r044",
@@ -422,7 +427,8 @@
       "category": "keto",
       "notes": "Almond flour espresso cake, mocha cream swirl frosting, deep but not bitter",
       "priority": 44,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-almond-mocha-cupcakes"
     },
     {
       "id": "r045",
@@ -430,7 +436,8 @@
       "category": "keto",
       "notes": "Sugar-free caramel drizzled over swirl frosting, chopped pecans",
       "priority": 45,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-caramel-pecan-swirl-cupcakes"
     },
     {
       "id": "r046",
@@ -438,7 +445,8 @@
       "category": "keto",
       "notes": "Pumpkin puree adds moisture, warm spice profile, cream cheese frosting",
       "priority": 46,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-pumpkin-spice-cupcakes"
     },
     {
       "id": "r047",
@@ -446,7 +454,8 @@
       "category": "keto",
       "notes": "Fresh strawberry puree swirl in batter, whipped cheesecake frosting",
       "priority": 47,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-strawberry-cheesecake-cupcakes"
     },
     {
       "id": "r048",
@@ -454,7 +463,8 @@
       "category": "keto",
       "notes": "Butter-heavy batter with maple extract not syrup, creamy vanilla frosting",
       "priority": 48,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-maple-butter-cupcakes"
     },
     {
       "id": "r049",
@@ -462,7 +472,8 @@
       "category": "keto",
       "notes": "Almond flour + blueberries, lemon swirl frosting, lightly sweet",
       "priority": 49,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-blueberry-lemon-muffin-cupcakes"
     },
     {
       "id": "r050",
@@ -470,7 +481,7 @@
       "category": "keto",
       "notes": "Almond-based chai cake, vanilla chai frosting, warm spice",
       "priority": 50,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r051",
