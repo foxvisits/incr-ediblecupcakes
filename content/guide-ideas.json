@@ -203,7 +203,8 @@
       "targetKeyword": "how to pipe the perfect bakery-style swirl",
       "notes": "Step-by-step piping tips, wrist motion, pressure control, bag angle",
       "priority": 19,
-      "status": "generating"
+      "status": "draft",
+      "slug": "how-to-pipe-the-perfect-bakery-style-swirl"
     },
     {
       "id": "g020",
@@ -212,7 +213,8 @@
       "targetKeyword": "how to make frosting smooth, silky and stable",
       "notes": "Beating time, temperature control, air bubble reduction, lump-free finish",
       "priority": 20,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-make-frosting-smooth-silky-stable"
     },
     {
       "id": "g021",
@@ -221,7 +223,8 @@
       "targetKeyword": "how to decorate cupcakes like a boutique bakery",
       "notes": "Finishing touches: micro garnishes, sugar pearls, minimal elegance",
       "priority": 21,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-decorate-cupcakes-like-a-boutique-bakery"
     },
     {
       "id": "g022",
@@ -230,7 +233,8 @@
       "targetKeyword": "ombre and two-tone frosting swirls",
       "notes": "Dual piping bag technique",
       "priority": 22,
-      "status": "idea"
+      "status": "draft",
+      "slug": "ombre-and-two-tone-frosting-swirls"
     },
     {
       "id": "g023",
@@ -239,7 +243,8 @@
       "targetKeyword": "how to decorate cupcakes with fresh fruit",
       "notes": "Cut shape, moisture control, storage timing",
       "priority": 23,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-decorate-cupcakes-with-fresh-fruit"
     },
     {
       "id": "g024",
@@ -248,7 +253,7 @@
       "targetKeyword": "edible flowers on cupcakes (safe guide)",
       "notes": "List safe edible flowers only",
       "priority": 24,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "g025",
