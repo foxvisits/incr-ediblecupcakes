@@ -1,0 +1,125 @@
+{
+  "title": "Creamsicle Cupcakes (Orange Vanilla)",
+  "slug": "creamsicle-orange-vanilla-cupcakes",
+  "shortDescription": "Soft orange vanilla cupcakes take 25 minutes to prep and 18 minutes to bake, topped with a fresh vanilla cream frosting.",
+  "description": "These cupcakes taste like a creamsicle from your childhood, but a little more grown up. Fresh orange zest and juice go right into the batter, so every bite tastes bright, not artificial.",
+  "category": "classic",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "1 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "2 tbsp orange zest (about 2 oranges)",
+    "1/2 cup fresh orange juice",
+    "1/4 cup whole milk",
+    "1 tsp vanilla extract",
+    "1 cup unsalted butter, softened (for frosting)",
+    "3 cups powdered sugar",
+    "2 tbsp heavy cream",
+    "1 tsp vanilla bean paste or extract",
+    "Orange zest curls, for garnish"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12-cup muffin pan with paper liners.",
+    "Whisk flour, baking powder, and salt in a bowl. Set aside.",
+    "Beat softened butter and sugar together for 2 minutes, until light and fluffy.",
+    "Add eggs one at a time, beating well after each. Mix in orange zest and vanilla.",
+    "Alternate adding the flour mix and orange juice plus milk, starting and ending with flour. Mix just until combined.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a wire rack.",
+    "For frosting, beat butter until smooth. Add powdered sugar one cup at a time, then mix in cream and vanilla until fluffy.",
+    "Once cupcakes are fully cool, pipe frosting high with a swirl tip. Top with a curl of orange zest."
+  ],
+  "tips": [
+    "Zest your oranges before juicing them. It is much easier that way.",
+    "Room temperature eggs and butter blend smoother and give a finer crumb.",
+    "If your frosting looks too soft, chill it for 10 minutes before piping.",
+    "Do not skip cooling the cupcakes fully. Warm cupcakes melt the frosting."
+  ],
+  "faq": [
+    {
+      "question": "Can I use bottled orange juice instead of fresh?",
+      "answer": "Fresh juice tastes brighter and pairs better with the zest. Bottled juice works in a pinch, but the orange flavor will be milder."
+    },
+    {
+      "question": "Why did my cupcakes turn out dense?",
+      "answer": "Overmixing after adding the flour is the usual cause. Mix just until you no longer see streaks of flour."
+    },
+    {
+      "question": "Can I make these dairy free?",
+      "answer": "Swap the butter for a plant based baking stick and use oat milk instead of whole milk. The orange flavor still comes through clearly."
+    },
+    {
+      "question": "How far ahead can I bake these?",
+      "answer": "Bake the cupcakes up to two days ahead and store them unfrosted at room temperature in a sealed container. Frost them the day you plan to serve."
+    }
+  ],
+  "tags": [
+    "orange",
+    "vanilla",
+    "classic",
+    "creamsicle",
+    "citrus"
+  ],
+  "recipeKeys": [
+    "creamsicle cupcakes",
+    "orange vanilla cupcakes",
+    "fresh orange zest cupcakes",
+    "vanilla cream frosting",
+    "citrus cupcake recipe",
+    "Easy difficulty"
+  ],
+  "keywords": [
+    "creamsicle cupcakes",
+    "orange vanilla cupcakes recipe",
+    "orange zest cupcakes",
+    "vanilla frosting cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 310,
+    "carbs": 42,
+    "protein": 3,
+    "fat": 15,
+    "fiber": 1,
+    "sugar": 32
+  },
+  "dietaryBadges": [],
+  "conclusion": "These creamsicle cupcakes bring back that orange popsicle memory, but taste fresh and homemade. Bake a batch for spring parties or any day you want something bright.",
+  "metaTitle": "Creamsicle Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Bake bright orange vanilla creamsicle cupcakes with fresh zest and creamy frosting. Easy recipe, ready in under an hour. Try it today.",
+  "imageAlt": "Orange vanilla creamsicle cupcake with tall swirled vanilla frosting and orange zest curl on top",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Orange vanilla creamsicle cupcake with tall swirled vanilla frosting and orange zest curl on top",
+      "prompt": "A single creamsicle cupcake with tall swirled vanilla frosting piped high, topped with a curl of fresh orange zest, on a pale aqua pastel background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/creamsicle-orange-vanilla-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Orange zest being folded into pale yellow cupcake batter in a glass mixing bowl",
+      "prompt": "Close up of pale yellow cupcake batter in a glass mixing bowl with fresh orange zest folded through it, wooden spoon resting nearby on pale wood surface. Bright pastel bakery aesthetic, soft even daylight, blush pink background accent, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/creamsicle-orange-vanilla-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up cross section of an orange vanilla cupcake showing soft crumb and citrus specks",
+      "prompt": "Close up cross section of a creamsicle cupcake cut in half, showing soft pale crumb flecked with orange zest and a swoop of vanilla frosting on top, set on white porcelain plate. Bright pastel bakery aesthetic, soft even daylight, butter yellow pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/creamsicle-orange-vanilla-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "classic-vanilla-dream-cupcakes",
+    "cranberry-orange-sparkle-cupcakes",
+    "nut-free-lemon-sunshine-cupcakes"
+  ],
+  "contentIdeaId": "r027",
+  "image": "/creamsicle-orange-vanilla-cupcakes.jpg"
+}

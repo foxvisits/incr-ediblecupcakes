@@ -238,7 +238,8 @@
       "category": "classic",
       "notes": "Real vanilla bean specks, wildflower honey sweetness, silky honey frosting",
       "priority": 23,
-      "status": "generating"
+      "status": "draft",
+      "slug": "honey-vanilla-bean-cupcakes"
     },
     {
       "id": "r024",
@@ -246,7 +247,8 @@
       "category": "classic",
       "notes": "Fresh lemon zest + raspberry puree, tart-sweet balanced flavor",
       "priority": 24,
-      "status": "idea"
+      "status": "draft",
+      "slug": "raspberry-lemon-burst-cupcakes"
     },
     {
       "id": "r025",
@@ -254,7 +256,8 @@
       "category": "classic",
       "notes": "Seasonal evergreen search. Soft peach puree in batter, whipped silky peach cream frosting",
       "priority": 25,
-      "status": "idea"
+      "status": "draft",
+      "slug": "peaches-and-cream-cupcakes"
     },
     {
       "id": "r026",
@@ -262,7 +265,8 @@
       "category": "classic",
       "notes": "Cupcake-muffin hybrid, visible blueberry pockets, vanilla swirl frosting",
       "priority": 26,
-      "status": "idea"
+      "status": "draft",
+      "slug": "blueberry-muffin-cupcakes-vanilla-swirl"
     },
     {
       "id": "r027",
@@ -270,7 +274,8 @@
       "category": "classic",
       "notes": "Fresh orange zest + juice, vanilla cream frosting, nostalgic but elegant",
       "priority": 27,
-      "status": "idea"
+      "status": "draft",
+      "slug": "creamsicle-orange-vanilla-cupcakes"
     },
     {
       "id": "r028",
@@ -278,7 +283,8 @@
       "category": "classic",
       "notes": "Moist banana cake, pudding core, whipped vanilla frosting",
       "priority": 28,
-      "status": "idea"
+      "status": "draft",
+      "slug": "banana-pudding-cupcakes"
     },
     {
       "id": "r029",
@@ -286,7 +292,8 @@
       "category": "classic",
       "notes": "Vanilla cupcake with small chocolate chips, milk-infused frosting",
       "priority": 29,
-      "status": "idea"
+      "status": "draft",
+      "slug": "chocolate-chip-milk-cupcakes"
     },
     {
       "id": "r030",
@@ -294,7 +301,8 @@
       "category": "classic",
       "notes": "Grated honey-sweetened apple, cinnamon notes, vanilla frosting",
       "priority": 30,
-      "status": "idea"
+      "status": "draft",
+      "slug": "honey-apple-cupcakes"
     },
     {
       "id": "r031",
@@ -302,7 +310,8 @@
       "category": "classic",
       "notes": "Soft vanilla cake base with almond extract, silky almond buttercream. Classic not nut-free: contains almond",
       "priority": 31,
-      "status": "idea"
+      "status": "draft",
+      "slug": "golden-almond-buttercream-cupcakes"
     },
     {
       "id": "r032",
@@ -310,7 +319,8 @@
       "category": "classic",
       "notes": "Pure maple syrup in batter + frosting, warm comforting flavor",
       "priority": 32,
-      "status": "idea"
+      "status": "draft",
+      "slug": "maple-vanilla-cupcakes"
     },
     {
       "id": "r033",
@@ -318,7 +328,8 @@
       "category": "classic",
       "notes": "Coconut milk batter, fluffy coconut-fleck swirl frosting, toasted coconut topping",
       "priority": 33,
-      "status": "idea"
+      "status": "draft",
+      "slug": "toasted-coconut-swirl-cupcakes"
     },
     {
       "id": "r034",
@@ -326,7 +337,8 @@
       "category": "classic",
       "notes": "Cocoa cake + marshmallow-cream swirl frosting piped like soft-serve",
       "priority": 34,
-      "status": "idea"
+      "status": "draft",
+      "slug": "hot-cocoa-cupcakes-with-marshmallow-swirl"
     },
     {
       "id": "r035",
@@ -334,7 +346,8 @@
       "category": "classic",
       "notes": "Chocolate base + cool peppermint frosting, no artificial green",
       "priority": 35,
-      "status": "idea"
+      "status": "draft",
+      "slug": "mint-chocolate-swirl-cupcakes"
     },
     {
       "id": "r036",
@@ -342,7 +355,8 @@
       "category": "classic",
       "notes": "Chai-spiced vanilla cake + lightly spiced vanilla swirl frosting",
       "priority": 36,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vanilla-chai-cupcakes"
     },
     {
       "id": "r037",
@@ -350,7 +364,8 @@
       "category": "classic",
       "notes": "Holiday cluster. Eggnog in batter + nutmeg buttercream, nostalgic holiday flavor",
       "priority": 37,
-      "status": "idea"
+      "status": "draft",
+      "slug": "brown-sugar-eggnog-cupcakes"
     },
     {
       "id": "r038",
@@ -358,7 +373,8 @@
       "category": "classic",
       "notes": "Holiday cluster. Gingerbread spice + espresso buttercream",
       "priority": 38,
-      "status": "idea"
+      "status": "draft",
+      "slug": "spiced-gingerbread-latte-cupcakes"
     },
     {
       "id": "r039",
@@ -366,7 +382,7 @@
       "category": "classic",
       "notes": "Holiday cluster. Apple cider batter + cinnamon + caramel drizzle",
       "priority": 39,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r040",

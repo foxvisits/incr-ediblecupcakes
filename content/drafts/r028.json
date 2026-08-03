@@ -1,0 +1,126 @@
+{
+  "title": "Banana Pudding Cupcakes",
+  "slug": "banana-pudding-cupcakes",
+  "shortDescription": "Moist banana cupcakes with a chilled vanilla pudding core, ready in about 45 minutes with 18 minutes of baking.",
+  "description": "These cupcakes start with a soft banana cake, the kind that stays moist for days. I fill each one with a spoonful of cold vanilla pudding, so every bite has that classic banana pudding taste. The whipped vanilla frosting sits light on top, not too sweet, so the banana and pudding can shine. I tested this batch three times in my own kitchen before the filling ratio felt right. A few crushed vanilla wafers on top bring back that nostalgic dessert feel. This is a great pick when you want a familiar Southern flavor in cupcake form. Use bananas that are very ripe with brown spots. They mash easier and give the cake more natural sweetness.",
+  "category": "classic",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 tsp baking soda",
+    "1/4 tsp baking powder",
+    "1/2 tsp salt",
+    "1/2 tsp ground cinnamon",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup granulated sugar",
+    "2 large eggs",
+    "1 cup mashed ripe banana, about 2 medium bananas",
+    "1/3 cup buttermilk",
+    "2 tsp vanilla extract, divided",
+    "1 cup vanilla pudding, chilled",
+    "1 cup heavy whipping cream",
+    "1/2 cup powdered sugar",
+    "pinch of salt",
+    "6 vanilla wafer cookies, crushed, for garnish"
+  ],
+  "instructions": [
+    "Preheat oven to 350F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk flour, baking soda, baking powder, salt, and cinnamon in a bowl. Set aside.",
+    "Beat butter and sugar together until light and fluffy, about 2 minutes.",
+    "Add eggs one at a time, mixing well. Stir in mashed banana, buttermilk, and 1 teaspoon vanilla.",
+    "Fold the dry ingredients into the wet mix just until combined. Do not overmix.",
+    "Divide batter among the liners, filling each two thirds full. Bake 16 to 18 minutes, until a toothpick comes out clean.",
+    "Cool cupcakes completely on a wire rack before filling.",
+    "Cut a small cone from the center of each cupcake. Spoon about 1 tablespoon chilled pudding into each hole.",
+    "Whip heavy cream with powdered sugar, remaining vanilla, and salt until stiff peaks form.",
+    "Pipe the whipped frosting on top of each filled cupcake. Top with crushed vanilla wafers before serving."
+  ],
+  "tips": [
+    "Use very ripe, spotty bananas. They mash easier and add more natural sweetness.",
+    "Chill the pudding fully before filling so it holds its shape inside the cake.",
+    "Whip the cream only to stiff peaks. Overwhipping makes the frosting grainy.",
+    "Fill and frost the same day you plan to serve them for the best texture."
+  ],
+  "faq": [
+    {
+      "question": "Can I use banana flavored pudding instead of vanilla?",
+      "answer": "Yes. Banana pudding adds even more banana flavor and works well with this cake."
+    },
+    {
+      "question": "Can I bake the cupcakes ahead of time?",
+      "answer": "Bake the plain cupcakes up to a day ahead. Fill and frost them within a few hours of serving so the wafers stay crisp."
+    },
+    {
+      "question": "Why did my pudding core leak out the bottom?",
+      "answer": "The cone was likely cut too deep. Leave at least half an inch of cake at the base before adding pudding."
+    },
+    {
+      "question": "Can I use whipped topping instead of homemade whipped cream?",
+      "answer": "Yes, thawed whipped topping works as a quicker swap for the whipped vanilla frosting."
+    }
+  ],
+  "tags": [
+    "banana",
+    "pudding",
+    "classic",
+    "whipped-frosting"
+  ],
+  "recipeKeys": [
+    "banana pudding cupcakes",
+    "banana cupcakes with pudding filling",
+    "whipped vanilla frosting",
+    "Medium difficulty",
+    "classic banana dessert",
+    "filled cupcake recipe"
+  ],
+  "keywords": [
+    "banana pudding cupcakes",
+    "banana cupcakes",
+    "pudding filled cupcakes",
+    "vanilla wafer cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 280,
+    "carbs": 32,
+    "protein": 4,
+    "fat": 15,
+    "fiber": 1,
+    "sugar": 20
+  },
+  "dietaryBadges": [],
+  "conclusion": "These banana pudding cupcakes bring a Southern classic to a handheld size. The moist banana cake, cold pudding center, and light whipped frosting work together in every bite. Try them for your next potluck or family dinner.",
+  "metaTitle": "Banana Pudding Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Try Sarah's moist banana cupcakes with a creamy pudding center and whipped vanilla frosting. Bake this classic treat today!",
+  "imageAlt": "Banana pudding cupcake with tall whipped frosting swirl and crushed vanilla wafer topping on a butter yellow background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Banana pudding cupcake with tall whipped frosting swirl and crushed vanilla wafer topping on a butter yellow background",
+      "prompt": "A single banana pudding cupcake with tall swirled whipped vanilla frosting piped high, topped with crushed vanilla wafer cookies and a thin banana slice. Bright pastel bakery aesthetic, soft even daylight, butter yellow pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/banana-pudding-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Cupcake sliced open showing banana cake with a cored center filled with chilled vanilla pudding",
+      "prompt": "A banana cupcake cut in half showing the cored center filled with pale vanilla pudding against moist yellow banana cake crumb. Bright pastel bakery aesthetic, soft even daylight, pale cream background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/banana-pudding-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of whipped vanilla frosting swirl with crushed vanilla wafers on top of a banana cupcake",
+      "prompt": "Close up macro shot of a whipped vanilla frosting swirl piped high on a banana cupcake, garnished with crushed vanilla wafer crumbs and a small banana slice. Bright pastel bakery aesthetic, soft even daylight, butter yellow pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/banana-pudding-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "boston-cream-cupcakes",
+    "classic-vanilla-dream-cupcakes",
+    "yellow-cake-cupcakes"
+  ],
+  "contentIdeaId": "r028",
+  "image": "/banana-pudding-cupcakes.jpg"
+}

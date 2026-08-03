@@ -1,0 +1,123 @@
+{
+  "title": "Chocolate Chip Milk Cupcakes",
+  "slug": "chocolate-chip-milk-cupcakes",
+  "shortDescription": "Vanilla cupcakes with mini chocolate chips, ready in about 43 minutes with a milk-infused frosting on top.",
+  "description": "These cupcakes taste like a glass of cold milk and a cookie in one bite. I folded mini chocolate chips into a soft vanilla batter, then topped it with a frosting made using warm milk to bring out that classic milk flavor.",
+  "category": "classic",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1 tsp vanilla extract",
+    "1/2 cup whole milk, room temperature",
+    "3/4 cup mini chocolate chips",
+    "1 cup unsalted butter, softened (for frosting)",
+    "3 cups powdered sugar",
+    "3 tbsp whole milk, warmed"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12-cup muffin pan with paper liners.",
+    "Whisk flour, baking powder, and salt in a medium bowl. Set aside.",
+    "Beat butter and sugar together until light and fluffy, about 3 minutes.",
+    "Add eggs one at a time, mixing well after each. Beat in vanilla.",
+    "Add the flour mix and milk in three parts, starting and ending with flour. Mix just until smooth.",
+    "Toss chocolate chips with 1 tsp flour, then fold into the batter by hand.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a wire rack.",
+    "For the frosting, beat butter until smooth. Add powdered sugar one cup at a time, beating on low.",
+    "Pour in warmed milk and beat on high for 2 minutes until light and fluffy. Pipe onto fully cooled cupcakes."
+  ],
+  "tips": [
+    "Warm the milk for the frosting just until it steams. Hot milk will melt the butter.",
+    "Toss chocolate chips in flour before folding them in. This stops them from sinking to the bottom.",
+    "Room temperature eggs and milk mix into the batter smoother and give a more even crumb.",
+    "Use mini chips, not regular size. They spread through the batter better and stay put during baking."
+  ],
+  "faq": [
+    {
+      "question": "Why does the frosting taste like milk instead of just sweet?",
+      "answer": "Warm milk mixed in at the end carries more flavor than cold milk. Beating it in on high air whips it light and brings out that fresh milk taste in every bite."
+    },
+    {
+      "question": "Can I use regular size chocolate chips instead of mini?",
+      "answer": "You can, but mini chips spread more evenly and do not sink as much. If using regular chips, chop them in half first."
+    },
+    {
+      "question": "Why did my chocolate chips sink to the bottom of the cupcakes?",
+      "answer": "This happens when chips are added to thin batter or skip the flour coating step. Toss them in a teaspoon of flour before folding in to help them stay suspended."
+    },
+    {
+      "question": "Can I make this frosting ahead of time?",
+      "answer": "Yes. Store it in an airtight container in the fridge for up to 3 days. Bring it to room temperature and rewhip for 1 minute before piping."
+    }
+  ],
+  "tags": [
+    "classic",
+    "chocolate-chip",
+    "vanilla-cupcakes",
+    "milk-frosting",
+    "kid-friendly"
+  ],
+  "recipeKeys": [
+    "chocolate chip cupcakes",
+    "vanilla cupcakes with chocolate chips",
+    "milk frosting recipe",
+    "easy difficulty",
+    "classic cupcake recipe",
+    "mini chocolate chip cupcakes"
+  ],
+  "keywords": [
+    "chocolate chip milk cupcakes",
+    "vanilla chocolate chip cupcakes",
+    "milk frosting",
+    "classic cupcake recipe"
+  ],
+  "nutritionInfo": {
+    "calories": 320,
+    "carbs": 42,
+    "protein": 3,
+    "fat": 16,
+    "fiber": 1,
+    "sugar": 33
+  },
+  "dietaryBadges": [],
+  "conclusion": "These cupcakes bring back the simple joy of milk and cookies in one soft, frosted bite. Make them for a school bake sale or just a Tuesday afternoon treat.",
+  "metaTitle": "Chocolate Chip Milk Cupcakes | Incr-EdibleCupCakes",
+  "metaDescription": "Try these chocolate chip milk cupcakes with vanilla batter and warm milk frosting. Easy classic recipe, ready in 43 minutes. Bake a batch today.",
+  "imageAlt": "Chocolate chip milk cupcake with tall swirled frosting and mini chocolate chips on a pale aqua background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Chocolate chip milk cupcake with tall swirled frosting and mini chocolate chips on a pale aqua background",
+      "prompt": "A single chocolate chip cupcake with tall swirled milk frosting piped high, mini chocolate chips visible in the crumb and scattered on top, bright pastel bakery aesthetic, soft even daylight, pale aqua background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/chocolate-chip-milk-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Mini chocolate chips being folded into vanilla cupcake batter in a glass mixing bowl",
+      "prompt": "Overhead shot of vanilla cupcake batter in a glass bowl with mini chocolate chips being folded in with a spatula, bright pastel bakery aesthetic, soft even daylight, cream background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/chocolate-chip-milk-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of milk frosting swirl showing soft texture with a chocolate chip cupcake crumb visible",
+      "prompt": "Extreme close up of a milk frosting swirl on a chocolate chip cupcake, showing soft piped texture and a few chocolate chips peeking from the cake below, bright pastel bakery aesthetic, soft even daylight, butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/chocolate-chip-milk-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "classic-vanilla-dream-cupcakes",
+    "yellow-cake-cupcakes",
+    "boston-cream-cupcakes"
+  ],
+  "contentIdeaId": "r029",
+  "image": "/chocolate-chip-milk-cupcakes.jpg"
+}
