@@ -1,0 +1,128 @@
+{
+  "title": "Gingerbread Latte Cupcakes",
+  "slug": "gingerbread-latte-cupcakes",
+  "shortDescription": "Espresso gingerbread cupcakes with warm spice and a cream swirl frosting, ready in about 45 minutes from prep to bake.",
+  "description": "These cupcakes taste like a gingerbread latte in cake form. I mix strong espresso right into the batter so the coffee flavor is not shy. Molasses, ginger, cinnamon and cloves give the crumb that classic gingerbread warmth. A light cream swirl frosting on top balances the spice like the foam on a real latte. I tested this batch on a cold December afternoon with the oven running and coffee brewing at the same time. The kitchen smelled like a holiday cafe by the time they cooled. This is a great make ahead treat for a cookie swap or a coffee themed party. The flavor gets even better the next day.",
+  "category": "seasonal",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all purpose flour",
+    "1 tsp baking soda",
+    "1/2 tsp salt",
+    "2 tsp ground ginger",
+    "1 tsp ground cinnamon",
+    "1/4 tsp ground cloves",
+    "1/2 cup unsalted butter, softened",
+    "1/2 cup packed brown sugar",
+    "1/3 cup molasses",
+    "2 large eggs",
+    "1/2 cup strong brewed espresso, cooled",
+    "1/2 cup buttermilk",
+    "1 cup heavy cream, cold",
+    "1/2 cup mascarpone cheese, softened",
+    "1/3 cup powdered sugar",
+    "1/2 tsp vanilla extract",
+    "Ground cinnamon for dusting"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk flour, baking soda, salt, ginger, cinnamon and cloves in a bowl.",
+    "Beat softened butter and brown sugar until light and fluffy, about 2 minutes.",
+    "Add molasses and eggs to the butter mix. Beat until smooth.",
+    "Mix in cooled espresso and buttermilk on low speed until combined.",
+    "Fold in the flour mix in two batches. Stop as soon as no streaks remain.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a rack.",
+    "For the frosting, beat cold heavy cream, mascarpone, powdered sugar and vanilla until stiff peaks form.",
+    "Pipe the cream swirl frosting high on fully cooled cupcakes. Dust with cinnamon before serving."
+  ],
+  "tips": [
+    "Use espresso, not weak drip coffee. The stronger brew keeps the coffee flavor from getting lost in the spice.",
+    "Chill your bowl and beaters before whipping the frosting so it holds a tall swirl.",
+    "Let cupcakes cool completely before frosting or the cream will melt and slide off.",
+    "Store frosted cupcakes in the fridge and let them sit 15 minutes at room temperature before eating."
+  ],
+  "faq": [
+    {
+      "question": "Can I use instant espresso powder instead of brewed espresso?",
+      "answer": "Yes. Dissolve 2 teaspoons of instant espresso powder in 1/2 cup hot water and cool it before adding to the batter."
+    },
+    {
+      "question": "Will the coffee flavor be too strong for kids?",
+      "answer": "The espresso amount is small next to the batter, so the flavor reads more like gingerbread with a coffee hint than a strong coffee cake."
+    },
+    {
+      "question": "Can I make the frosting ahead of time?",
+      "answer": "Make it up to 1 day ahead and keep it covered in the fridge. Rewhip it for 30 seconds before piping to bring back the stiff peaks."
+    },
+    {
+      "question": "What can I use instead of mascarpone in the frosting?",
+      "answer": "Full fat cream cheese works well as a swap. Bring it to room temperature first so the frosting stays smooth."
+    }
+  ],
+  "tags": [
+    "gingerbread",
+    "espresso",
+    "seasonal",
+    "coffee-cupcakes",
+    "holiday-cupcakes"
+  ],
+  "recipeKeys": [
+    "gingerbread latte cupcakes",
+    "espresso gingerbread cupcakes",
+    "coffee spice cupcakes",
+    "holiday cupcake recipe",
+    "cream swirl frosting cupcakes",
+    "Medium difficulty"
+  ],
+  "keywords": [
+    "gingerbread latte cupcakes recipe",
+    "espresso gingerbread cupcakes",
+    "coffee spice cupcake recipe",
+    "holiday coffee cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 270,
+    "carbs": 30,
+    "protein": 3,
+    "fat": 15,
+    "fiber": 1,
+    "sugar": 20
+  },
+  "dietaryBadges": [],
+  "conclusion": "These gingerbread latte cupcakes bring coffee shop warmth into your own kitchen. Serve them at your next holiday gathering with a real latte on the side.",
+  "metaTitle": "Gingerbread Latte Cupcakes | Incr-EdibleCupCakes",
+  "metaDescription": "Try our gingerbread latte cupcakes with espresso, warm spice and cream swirl frosting. Bake this cozy seasonal recipe today.",
+  "imageAlt": "Gingerbread latte cupcake with tall cream swirl frosting and a cinnamon dusting on a pale aqua background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Gingerbread latte cupcake with tall cream swirl frosting and a cinnamon dusting on a pale aqua background",
+      "prompt": "A single gingerbread latte cupcake in a white paper liner, tall swirled cream frosting piped high, dusted lightly with ground cinnamon, set on white porcelain on a pale aqua background, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/gingerbread-latte-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Gingerbread cupcake batter being poured into paper liners in a muffin pan",
+      "prompt": "Overhead shot of dark gingerbread cupcake batter being spooned into white paper liners in a muffin pan, light wood surface, soft even daylight, pale aqua accent linen nearby, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/gingerbread-latte-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of cream swirl frosting on a gingerbread latte cupcake with cinnamon sprinkle",
+      "prompt": "Close up detail shot of a tall cream swirl frosting peak on a gingerbread latte cupcake, light dusting of cinnamon on top, white porcelain plate, pale aqua background, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/gingerbread-latte-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "espresso-martini-cupcakes",
+    "irish-coffee-cupcakes",
+    "spiced-pear-cupcakes"
+  ],
+  "contentIdeaId": "r153",
+  "image": "/gingerbread-latte-cupcakes.jpg"
+}

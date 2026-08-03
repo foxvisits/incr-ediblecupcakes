@@ -1,0 +1,131 @@
+{
+  "title": "Valentine's Strawberry Chocolate Cupcakes",
+  "slug": "valentines-strawberry-chocolate-cupcakes",
+  "shortDescription": "Rich chocolate cupcakes with a pink strawberry swirl frosting, ready in 25 minutes prep and 18 minutes bake.",
+  "description": "These cupcakes pair a deep chocolate cake with a soft pink strawberry swirl on top. The cake stays moist thanks to buttermilk and a splash of hot water in the batter The frosting gets its pink color and real fruit taste from freeze-dried strawberries and a bit of fresh puree. No candy flavoring needed here I tested this batch for a Valentine's Day bake sale and the swirl held its shape for hours on the table. It is a simple two-tone pipe, so it looks fancy without extra skill. This recipe works well for parties, school treats, or a sweet gift box for someone you love.",
+  "category": "seasonal",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/4 cups all-purpose flour",
+    "1/2 cup unsweetened cocoa powder",
+    "1 tsp baking soda",
+    "1/4 tsp baking powder",
+    "1/4 tsp salt",
+    "1 cup granulated sugar",
+    "1/2 cup vegetable oil",
+    "1 large egg",
+    "1 tsp vanilla extract",
+    "1/2 cup buttermilk",
+    "1/2 cup hot water",
+    "1 cup unsalted butter, softened, for frosting",
+    "3 cups powdered sugar",
+    "1/3 cup freeze-dried strawberries, crushed to a fine powder",
+    "2 tbsp fresh strawberry puree, strained",
+    "pink gel food coloring, small amount as needed",
+    "6 fresh strawberries, sliced, for garnish"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12-cup muffin pan with paper liners.",
+    "In a bowl, whisk flour, cocoa powder, baking soda, baking powder, and salt.",
+    "In a separate bowl, mix sugar, oil, egg, and vanilla until smooth.",
+    "Add the wet mix to the dry mix. Stir in buttermilk, then the hot water, until the batter is smooth and thin.",
+    "Divide batter evenly among liners, filling each about two-thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a wire rack.",
+    "Once cupcakes are fully cool, beat butter until light and fluffy. Add powdered sugar, strawberry powder, puree, and vanilla. Beat until smooth.",
+    "Split the frosting into two bowls. Tint one half pink with gel food coloring, leave the other plain.",
+    "Load both frosting shades side by side into one piping bag for a two-tone swirl. Pipe onto cooled cupcakes.",
+    "Top each cupcake with a fresh strawberry slice and serve."
+  ],
+  "tips": [
+    "Cool cupcakes completely before frosting, or the swirl will melt and slide.",
+    "Crush freeze-dried strawberries in a food processor for the finest pink powder.",
+    "Strain fresh strawberry puree well to avoid a watery, runny frosting.",
+    "Load both frosting colors on the same side of the piping bag for a clean, even swirl."
+  ],
+  "faq": [
+    {
+      "question": "Can I use fresh strawberries instead of freeze-dried in the frosting?",
+      "answer": "Fresh strawberries alone make the frosting too soft and pink fades fast. Use freeze-dried powder for color and a small amount of fresh puree for real fruit taste."
+    },
+    {
+      "question": "Why is my swirl frosting turning gray instead of pink?",
+      "answer": "This happens when cocoa crumbs mix into the pink frosting while piping. Wipe your piping tip clean between cupcakes if this happens."
+    },
+    {
+      "question": "Can I make the cupcakes ahead for a Valentine's Day party?",
+      "answer": "Bake the cupcakes up to 2 days ahead and store them covered at room temperature. Frost them the same day you serve them for the best swirl."
+    },
+    {
+      "question": "Do these cupcakes taste like chocolate covered strawberries?",
+      "answer": "Yes, that is the goal. The chocolate cake and real strawberry frosting mimic that classic pairing in cupcake form."
+    }
+  ],
+  "tags": [
+    "valentines-day",
+    "chocolate",
+    "strawberry",
+    "seasonal",
+    "swirl-frosting"
+  ],
+  "recipeKeys": [
+    "valentines day cupcakes",
+    "strawberry chocolate cupcakes",
+    "pink swirl frosting",
+    "chocolate cupcake recipe",
+    "strawberry cupcake recipe",
+    "medium difficulty",
+    "seasonal cupcakes"
+  ],
+  "keywords": [
+    "valentines cupcakes",
+    "strawberry chocolate cupcakes",
+    "pink swirl frosting cupcakes",
+    "seasonal cupcake recipe"
+  ],
+  "nutritionInfo": {
+    "calories": 320,
+    "carbs": 42,
+    "protein": 3,
+    "fat": 16,
+    "fiber": 2,
+    "sugar": 32
+  },
+  "dietaryBadges": [
+    "vegetarian"
+  ],
+  "conclusion": "These strawberry chocolate cupcakes bring a classic Valentine's Day flavor pair into one easy bake. The pink swirl makes them party ready without much extra work.",
+  "metaTitle": "Valentine's Strawberry Chocolate | Incr-EdibleCupCakes",
+  "metaDescription": "Chocolate cupcakes with a real strawberry pink swirl frosting. Get the step-by-step Valentine's Day recipe and bake a batch today.",
+  "imageAlt": "Chocolate cupcake topped with a pink and white swirl frosting and a fresh strawberry slice on a blush pink background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Chocolate cupcake topped with a pink and white swirl frosting and a fresh strawberry slice on a blush pink background",
+      "prompt": "A single chocolate cupcake with a tall two-tone pink and white swirled frosting piped high, topped with a fresh strawberry slice, bright pastel bakery aesthetic, soft even daylight, blush pink pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/valentines-strawberry-chocolate-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Piping bag filled with pink and plain white frosting swirling onto a chocolate cupcake",
+      "prompt": "Close up of a piping bag loaded with pink and white frosting swirling onto a chocolate cupcake, bright pastel bakery aesthetic, soft even daylight, blush pink pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/valentines-strawberry-chocolate-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of pink swirl frosting texture with strawberry pieces on top of a chocolate cupcake",
+      "prompt": "Extreme close up of pink and white swirl frosting texture with tiny strawberry pieces on a chocolate cupcake, bright pastel bakery aesthetic, soft even daylight, blush pink pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/valentines-strawberry-chocolate-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "red-velvet-romance-cupcakes",
+    "cherry-blossom-cupcakes",
+    "keto-chocolate-truffle-cupcakes"
+  ],
+  "contentIdeaId": "r155",
+  "image": "/valentines-strawberry-chocolate-cupcakes.jpg"
+}

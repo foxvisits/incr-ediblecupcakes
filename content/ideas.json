@@ -1399,7 +1399,8 @@
       "category": "seasonal",
       "notes": "Chocolate cake + marshmallow swirl frosting",
       "priority": 152,
-      "status": "generating"
+      "status": "draft",
+      "slug": "hot-cocoa-holiday-cupcakes"
     },
     {
       "id": "r153",
@@ -1407,7 +1408,8 @@
       "category": "seasonal",
       "notes": "Espresso + gingerbread spices, cream swirl frosting",
       "priority": 153,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gingerbread-latte-cupcakes"
     },
     {
       "id": "r154",
@@ -1415,7 +1417,8 @@
       "category": "seasonal",
       "notes": "Maple frosting swirl + optional crumble topping",
       "priority": 154,
-      "status": "idea"
+      "status": "draft",
+      "slug": "maple-walnut-autumn-cupcakes"
     },
     {
       "id": "r155",
@@ -1423,7 +1426,8 @@
       "category": "seasonal",
       "notes": "Pink strawberry swirl + chocolate cake",
       "priority": 155,
-      "status": "idea"
+      "status": "draft",
+      "slug": "valentines-strawberry-chocolate-cupcakes"
     },
     {
       "id": "r156",
@@ -1431,7 +1435,8 @@
       "category": "seasonal",
       "notes": "Funfetti batter + classic swirl + sprinkles",
       "priority": 156,
-      "status": "idea"
+      "status": "draft",
+      "slug": "birthday-confetti-cupcakes"
     },
     {
       "id": "r157",
@@ -1439,7 +1444,8 @@
       "category": "seasonal",
       "notes": "Graham-style crumb nut-free, chocolate cake + toasted marshmallow",
       "priority": 157,
-      "status": "idea"
+      "status": "draft",
+      "slug": "smores-summer-cupcakes"
     },
     {
       "id": "r158",
@@ -1447,7 +1453,8 @@
       "category": "seasonal",
       "notes": "Apple cider reduction + cinnamon sugar swirl",
       "priority": 158,
-      "status": "idea"
+      "status": "draft",
+      "slug": "apple-cider-donut-cupcakes"
     },
     {
       "id": "r159",
@@ -1455,7 +1462,8 @@
       "category": "seasonal",
       "notes": "Apple cake + caramel swirl drizzle",
       "priority": 159,
-      "status": "idea"
+      "status": "draft",
+      "slug": "caramel-apple-fair-cupcakes"
     },
     {
       "id": "r160",
@@ -1463,7 +1471,8 @@
       "category": "seasonal",
       "notes": "Holiday special. Cute antlers using pretzels or chocolate",
       "priority": 160,
-      "status": "idea"
+      "status": "draft",
+      "slug": "red-velvet-reindeer-cupcakes"
     },
     {
       "id": "r161",
@@ -1471,7 +1480,8 @@
       "category": "seasonal",
       "notes": "Holiday special. Marshmallow snowman head + scarf piping",
       "priority": 161,
-      "status": "idea"
+      "status": "draft",
+      "slug": "snowman-top-hat-cupcakes"
     },
     {
       "id": "r162",
@@ -1479,7 +1489,7 @@
       "category": "seasonal",
       "notes": "Holiday special. Tall green frosting swirl + star sprinkle",
       "priority": 162,
-      "status": "idea"
+      "status": "generating"
     }
   ]
 }
