@@ -1282,7 +1282,8 @@
       "category": "dairy-free",
       "notes": "Mashed banana + warm spices, soft tender crumb",
       "priority": 139,
-      "status": "generating"
+      "status": "draft",
+      "slug": "dairy-free-banana-spice-cupcakes"
     },
     {
       "id": "r140",
@@ -1290,7 +1291,8 @@
       "category": "dairy-free",
       "notes": "Pureed peach frosting + vanilla cake base",
       "priority": 140,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-peach-vanilla-cupcakes"
     },
     {
       "id": "r141",
@@ -1298,7 +1300,8 @@
       "category": "dairy-free",
       "notes": "Delicate lavender essence, not perfume-like, white swirl frosting",
       "priority": 141,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-lavender-vanilla-cupcakes"
     },
     {
       "id": "r142",
@@ -1306,7 +1309,8 @@
       "category": "dairy-free",
       "notes": "Apple compote center, vanilla swirl frosting + cinnamon dust",
       "priority": 142,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-apple-pie-cupcakes"
     },
     {
       "id": "r143",
@@ -1314,7 +1318,8 @@
       "category": "dairy-free",
       "notes": "Cocoa cake + mint frosting swirl, refreshing finish",
       "priority": 143,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-mint-chocolate-cupcakes"
     },
     {
       "id": "r144",
@@ -1322,7 +1327,8 @@
       "category": "seasonal",
       "notes": "Edible flowers for garnish: rose, pansy, lavender",
       "priority": 144,
-      "status": "idea"
+      "status": "draft",
+      "slug": "spring-floral-vanilla-cupcakes"
     },
     {
       "id": "r145",
@@ -1330,7 +1336,8 @@
       "category": "seasonal",
       "notes": "Carrot cake + green piped frosting grass effect",
       "priority": 145,
-      "status": "idea"
+      "status": "draft",
+      "slug": "easter-carrot-garden-cupcakes"
     },
     {
       "id": "r146",
@@ -1338,7 +1345,8 @@
       "category": "seasonal",
       "notes": "Raspberry cream swirl + rosewater hint",
       "priority": 146,
-      "status": "idea"
+      "status": "draft",
+      "slug": "mothers-day-raspberry-rose-cupcakes"
     },
     {
       "id": "r147",
@@ -1346,7 +1354,8 @@
       "category": "seasonal",
       "notes": "Red + blue berry swirl frosting pattern",
       "priority": 147,
-      "status": "idea"
+      "status": "draft",
+      "slug": "4th-of-july-berry-swirl-cupcakes"
     },
     {
       "id": "r148",
@@ -1354,7 +1363,8 @@
       "category": "seasonal",
       "notes": "Fresh lemon frosting swirl + zest",
       "priority": 148,
-      "status": "idea"
+      "status": "draft",
+      "slug": "summer-lemonade-cupcakes"
     },
     {
       "id": "r149",
@@ -1362,7 +1372,8 @@
       "category": "seasonal",
       "notes": "Light peach frosting swirl + sliced peach garnish",
       "priority": 149,
-      "status": "idea"
+      "status": "draft",
+      "slug": "peach-picnic-cupcakes"
     },
     {
       "id": "r150",
@@ -1370,7 +1381,8 @@
       "category": "seasonal",
       "notes": "Caramel drizzle + warm spice",
       "priority": 150,
-      "status": "idea"
+      "status": "draft",
+      "slug": "salted-caramel-harvest-cupcakes"
     },
     {
       "id": "r151",
@@ -1378,7 +1390,7 @@
       "category": "seasonal",
       "notes": "Pumpkin spice cake + cream swirl + tiny fondant pumpkin",
       "priority": 151,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r152",
