@@ -1,0 +1,130 @@
+{
+  "title": "Vegan Honey-Style Agave Cupcakes",
+  "slug": "vegan-honey-style-agave-cupcakes",
+  "shortDescription": "Warm, golden cupcakes sweetened with agave or maple, ready in about 43 minutes with 25 minutes prep and 18 minutes bake.",
+  "description": "These cupcakes taste like honey cake, but they are fully vegan. Agave or maple syrup gives them a warm, golden flavor without any bee products. I tested this batch in my own kitchen three times before I got the crumb right. The trick is using melted coconut oil with the syrup so the cake stays moist, not dense. A touch of cinnamon makes the flavor feel cozy, almost like fall baking. You can swap in maple syrup if you want a deeper, woodsy sweetness instead of agave's cleaner taste. Frost these with a simple vegan buttercream sweetened with more agave. It ties the whole cupcake together and keeps the flavor consistent from cake to topping.",
+  "category": "vegan",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 tsp baking soda",
+    "1/2 tsp baking powder",
+    "1/2 tsp salt",
+    "1 tsp ground cinnamon",
+    "1/2 cup agave syrup (or maple syrup)",
+    "1/3 cup melted coconut oil",
+    "3/4 cup unsweetened plant milk (almond or oat)",
+    "1 tbsp apple cider vinegar",
+    "1 tsp vanilla extract",
+    "1/4 cup granulated sugar",
+    "1/2 cup vegan butter, softened (for frosting)",
+    "2 cups powdered sugar (for frosting)",
+    "2 tbsp agave syrup (for frosting)",
+    "1 tsp vanilla extract (for frosting)",
+    "1 pinch salt (for frosting)"
+  ],
+  "instructions": [
+    "Preheat your oven to 350°F. Line a 12-cup muffin pan with paper liners.",
+    "In a large bowl, whisk the flour, baking soda, baking powder, salt, and cinnamon.",
+    "In a separate bowl, mix the plant milk and apple cider vinegar. Let it sit for 2 minutes to curdle slightly.",
+    "Whisk the agave syrup, melted coconut oil, sugar, and vanilla into the milk mixture.",
+    "Pour the wet mix into the dry mix. Stir just until no dry streaks remain. Do not overmix.",
+    "Divide the batter evenly among the liners, filling each about two thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan for 5 minutes.",
+    "Move cupcakes to a wire rack and cool completely before frosting.",
+    "Beat the vegan butter until smooth, then add powdered sugar, agave syrup, vanilla, and salt.",
+    "Beat the frosting for 2 minutes until fluffy, then pipe onto cooled cupcakes."
+  ],
+  "tips": [
+    "Maple syrup gives a deeper, woodsy sweetness if you want a change from agave.",
+    "Do not overbake. Pull the cupcakes as soon as the toothpick comes out clean, since agave can brown edges faster than white sugar.",
+    "Let the batter rest 5 minutes before baking. This helps the crumb set evenly.",
+    "Store frosted cupcakes in an airtight container at room temperature for up to 2 days."
+  ],
+  "faq": [
+    {
+      "question": "Can I use maple syrup instead of agave in this recipe?",
+      "answer": "Yes. Swap the agave one for one with maple syrup. The cupcakes will taste a bit more woodsy and less clean sweet."
+    },
+    {
+      "question": "Why do these cupcakes taste like honey without using honey?",
+      "answer": "Agave and maple syrup both bring a warm, golden sweetness close to honey. The cinnamon in the batter adds to that honey-like feel."
+    },
+    {
+      "question": "Can I make these cupcakes gluten free?",
+      "answer": "Swap the all-purpose flour for a 1:1 gluten-free baking blend. The texture will be slightly denser but still moist."
+    },
+    {
+      "question": "Why did my cupcakes turn out dense instead of fluffy?",
+      "answer": "This usually means the batter was overmixed. Stir just until the dry streaks disappear, then stop."
+    }
+  ],
+  "tags": [
+    "vegan",
+    "agave",
+    "maple",
+    "honey-style",
+    "easy-cupcakes"
+  ],
+  "recipeKeys": [
+    "vegan cupcakes",
+    "agave cupcakes",
+    "maple cupcakes",
+    "honey-style vegan dessert",
+    "dairy-free cupcakes",
+    "Easy difficulty"
+  ],
+  "keywords": [
+    "vegan honey cupcakes",
+    "agave cupcake recipe",
+    "maple sweetened cupcakes",
+    "dairy-free honey style cake"
+  ],
+  "nutritionInfo": {
+    "calories": 210,
+    "carbs": 32,
+    "protein": 2,
+    "fat": 9,
+    "fiber": 1,
+    "sugar": 22
+  },
+  "dietaryBadges": [
+    "vegan",
+    "dairy-free"
+  ],
+  "conclusion": "These cupcakes bring a warm, honey-like sweetness to your vegan baking rotation. Try them with maple syrup for a cozy twist and share the batch with friends who miss honey cake.",
+  "metaTitle": "Vegan Agave Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Bake vegan cupcakes with agave or maple for a warm, honey-style flavor. Easy, dairy-free recipe ready in under an hour. Try it today.",
+  "imageAlt": "Vegan agave cupcake with tall swirled frosting on a pale butter yellow background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Vegan agave cupcake with tall swirled frosting on a pale butter yellow background",
+      "prompt": "A single vegan agave cupcake with tall swirled cream frosting piped high, light golden cake crumb visible at the base, soft even daylight, pale butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/vegan-honey-style-agave-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Agave syrup being poured into cupcake batter in a mixing bowl",
+      "prompt": "Overhead shot of golden agave syrup pouring into pale cupcake batter in a white ceramic bowl, soft even daylight, pale butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/vegan-honey-style-agave-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of vegan cupcake frosting swirl with a light drizzle of agave syrup",
+      "prompt": "Close up detail shot of a vegan cupcake frosting swirl with a thin drizzle of golden agave syrup on top, soft even daylight, pale butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/vegan-honey-style-agave-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "vegan-rainbow-surprise-cupcakes",
+    "classic-vanilla-dream-cupcakes",
+    "spiced-pear-cupcakes"
+  ],
+  "contentIdeaId": "r077",
+  "image": "/vegan-honey-style-agave-cupcakes.jpg"
+}

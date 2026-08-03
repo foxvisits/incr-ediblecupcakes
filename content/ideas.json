@@ -715,7 +715,8 @@
       "category": "vegan",
       "notes": "Coffee + cocoa balance, mocha buttercream swirl",
       "priority": 76,
-      "status": "generating"
+      "status": "draft",
+      "slug": "vegan-double-mocha-cupcakes"
     },
     {
       "id": "r077",
@@ -723,7 +724,8 @@
       "category": "vegan",
       "notes": "Use agave or maple instead of honey, warm golden flavor",
       "priority": 77,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-honey-style-agave-cupcakes"
     },
     {
       "id": "r078",
@@ -731,7 +733,7 @@
       "category": "vegan",
       "notes": "Apple puree for moisture, autumn spice, cream swirl frosting",
       "priority": 78,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r079",
