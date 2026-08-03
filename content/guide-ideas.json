@@ -393,7 +393,8 @@
       "targetKeyword": "all about sugar: white, brown, coconut, maple",
       "notes": "Explain sweetness, moisture, caramelization, texture effects",
       "priority": 38,
-      "status": "generating"
+      "status": "draft",
+      "slug": "all-about-sugar-white-brown-coconut-maple"
     },
     {
       "id": "g039",
@@ -402,7 +403,8 @@
       "targetKeyword": "the secret power of salt in sweet baking",
       "notes": "Balance + flavor intensification",
       "priority": 39,
-      "status": "idea"
+      "status": "draft",
+      "slug": "the-secret-power-of-salt-in-sweet-baking"
     },
     {
       "id": "g040",
@@ -411,7 +413,7 @@
       "targetKeyword": "how to choose quality vanilla (extract vs paste)",
       "notes": "Show flavor development differences",
       "priority": 40,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "g041",
