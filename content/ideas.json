@@ -643,7 +643,8 @@
       "category": "vegan",
       "notes": "Use vegan sandwich cookies. Cookie crumbs in frosting + batter, fluffy and playful",
       "priority": 68,
-      "status": "generating"
+      "status": "draft",
+      "slug": "vegan-cookies-and-cream-cupcakes"
     },
     {
       "id": "r069",
@@ -651,7 +652,8 @@
       "category": "vegan",
       "notes": "Chai spice blend + creamy spiced vanilla frosting",
       "priority": 69,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-chai-latte-cupcakes"
     },
     {
       "id": "r070",
@@ -659,7 +661,8 @@
       "category": "vegan",
       "notes": "Coconut milk batter + fluffy coconut whip-style frosting",
       "priority": 70,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-coconut-cloud-cupcakes"
     },
     {
       "id": "r071",
@@ -667,7 +670,8 @@
       "category": "vegan",
       "notes": "Year-round but low competition. Molasses + warm spices, ginger cream cheese frosting swirl",
       "priority": 71,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-gingerbread-cupcakes"
     },
     {
       "id": "r072",
@@ -675,7 +679,8 @@
       "category": "vegan",
       "notes": "Ripe bananas for sweetness, cinnamon cream swirl frosting",
       "priority": 72,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-banana-bread-cupcakes"
     },
     {
       "id": "r073",
@@ -683,7 +688,8 @@
       "category": "vegan",
       "notes": "Almond extract for perfume, raspberry garnish",
       "priority": 73,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-raspberry-almond-cupcakes"
     },
     {
       "id": "r074",
@@ -691,7 +697,8 @@
       "category": "vegan",
       "notes": "Orange zest + vanilla cream swirl frosting, creamsicle vibe",
       "priority": 74,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-orange-cream-cupcakes"
     },
     {
       "id": "r075",
@@ -699,7 +706,8 @@
       "category": "vegan",
       "notes": "Brew tea in plant milk, lavender-vanilla frosting swirl optional",
       "priority": 75,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-earl-grey-tea-cupcakes"
     },
     {
       "id": "r076",
@@ -707,7 +715,7 @@
       "category": "vegan",
       "notes": "Coffee + cocoa balance, mocha buttercream swirl",
       "priority": 76,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r077",

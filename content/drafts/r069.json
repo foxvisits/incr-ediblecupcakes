@@ -1,0 +1,135 @@
+{
+  "title": "Vegan Chai Latte Cupcakes",
+  "slug": "vegan-chai-latte-cupcakes",
+  "shortDescription": "Vegan chai latte cupcakes take 25 minutes to prep and 18 minutes to bake, with warm chai spice and creamy vanilla chai frosting.",
+  "description": "These vegan chai latte cupcakes taste like your favorite coffee shop order, but in cake form. I mix black tea and warm spices right into the batter, so every bite has that cozy chai punch. The frosting is a creamy vanilla buttercream with a pinch of the same spice blend. It is fluffy, not too sweet, and pipes into tall swirls without any dairy. I tested this batch three times in my own kitchen to get the spice level right. Too much cardamom and it tastes like soap, too little and you just get plain vanilla. This is a great pick for fall parties or a coffee themed dessert table. They also freeze well, so you can bake ahead for a busy week.",
+  "category": "vegan",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all purpose flour",
+    "1 cup unsweetened almond milk",
+    "1 black tea bag (or 1 tbsp loose black tea)",
+    "3/4 cup granulated sugar",
+    "1/3 cup neutral oil (canola or vegetable)",
+    "1 tbsp apple cider vinegar",
+    "1 tsp vanilla extract",
+    "1 tsp baking powder",
+    "1/2 tsp baking soda",
+    "1/4 tsp salt",
+    "3/4 tsp ground cinnamon",
+    "1/2 tsp ground ginger",
+    "1/4 tsp ground cardamom",
+    "1/4 tsp ground cloves",
+    "1/2 cup vegan butter, softened, for frosting",
+    "2 cups powdered sugar, for frosting",
+    "1 tbsp almond milk, for frosting",
+    "1/4 tsp cinnamon, for frosting"
+  ],
+  "instructions": [
+    "Heat the almond milk until steaming, then steep the tea bag for 5 minutes. Remove the bag and let the milk cool to room temperature.",
+    "Preheat your oven to 350°F and line a muffin pan with 12 paper liners.",
+    "In a large bowl, whisk the flour, baking powder, baking soda, salt, cinnamon, ginger, cardamom, and cloves.",
+    "In another bowl, whisk the cooled chai milk, sugar, oil, vinegar, and vanilla until smooth.",
+    "Pour the wet mix into the dry mix. Stir just until no dry flour streaks remain, about 20 seconds.",
+    "Divide batter evenly among the liners, filling each about two thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan for 5 minutes, then move to a wire rack.",
+    "For the frosting, beat the vegan butter until smooth, about 1 minute. Add powdered sugar, almond milk, and cinnamon, then beat 3 more minutes until fluffy.",
+    "Let cupcakes cool fully before piping. Frost each cupcake with a tall swirl and a light dusting of cinnamon on top."
+  ],
+  "tips": [
+    "Steep the tea bag directly in warm milk instead of using pre made chai concentrate. This keeps the spice flavor cleaner and less sweet.",
+    "Do not skip the full cool down before frosting. Warm cupcakes melt the vegan butter and make the swirl slide off.",
+    "If your kitchen is warm, chill the frosting bowl for 10 minutes before piping for firmer swirls.",
+    "Swap almond milk for oat milk if you want a slightly richer, creamier crumb."
+  ],
+  "faq": [
+    {
+      "question": "Can I use chai tea bags instead of plain black tea plus spices?",
+      "answer": "Yes, one chai tea bag steeped in the milk works fine. You can also cut the added cinnamon and ginger by half since chai bags already carry spice."
+    },
+    {
+      "question": "Why did my cupcakes turn out dense instead of light?",
+      "answer": "This usually means the batter was overmixed. Stir the wet and dry ingredients just until combined, then stop."
+    },
+    {
+      "question": "Can I make these caffeine free?",
+      "answer": "Swap the black tea bag for a rooibos or chai rooibos bag. You still get the warm spice flavor without caffeine."
+    },
+    {
+      "question": "How long do these cupcakes stay fresh?",
+      "answer": "Store them in an airtight container at room temperature for up to 2 days, or in the fridge for up to 5 days."
+    }
+  ],
+  "tags": [
+    "vegan",
+    "chai",
+    "spiced",
+    "vanilla-frosting",
+    "coffee-shop-style",
+    "fall-baking"
+  ],
+  "recipeKeys": [
+    "vegan chai latte cupcakes",
+    "chai spice cupcakes",
+    "vegan chai cupcakes recipe",
+    "dairy free chai cupcakes",
+    "spiced vanilla frosting",
+    "Easy difficulty",
+    "vegan fall cupcakes"
+  ],
+  "keywords": [
+    "vegan chai cupcakes",
+    "chai latte cupcake recipe",
+    "dairy free spiced cupcakes",
+    "vegan fall dessert"
+  ],
+  "nutritionInfo": {
+    "calories": 245,
+    "carbs": 34,
+    "protein": 2,
+    "fat": 11,
+    "fiber": 1,
+    "sugar": 24
+  },
+  "dietaryBadges": [
+    "vegan",
+    "dairy-free",
+    "egg-free"
+  ],
+  "conclusion": "These vegan chai latte cupcakes bring coffee shop coziness straight to your own kitchen counter. Bake a batch, share a few, and freeze the rest for later.",
+  "metaTitle": "Vegan Chai Latte Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Try these vegan chai latte cupcakes with warm spice and creamy vanilla chai frosting. Bake a batch tonight and see why they disappear fast.",
+  "imageAlt": "Vegan chai latte cupcake with tall swirled vanilla chai frosting and a cinnamon dusting on a pastel background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Vegan chai latte cupcake with tall swirled vanilla chai frosting and a cinnamon dusting on a pastel background",
+      "prompt": "A single vegan chai latte cupcake with tall swirled vanilla chai frosting piped high, dusted lightly with cinnamon, set on a pale aqua background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "prompt_alt": "",
+      "src": "/vegan-chai-latte-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Chai spiced cupcake batter being poured into paper liners in a muffin pan",
+      "prompt": "Overhead shot of chai spiced cupcake batter being poured into white paper liners in a muffin pan, warm cream background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/vegan-chai-latte-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of vegan chai latte cupcake frosting swirl with a light dusting of cinnamon",
+      "prompt": "Close up detail shot of a tall swirled vanilla chai frosting on a cupcake, light dusting of cinnamon on top, butter yellow pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/vegan-chai-latte-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "espresso-martini-cupcakes",
+    "irish-coffee-cupcakes",
+    "vegan-rainbow-surprise-cupcakes"
+  ],
+  "contentIdeaId": "r069",
+  "image": "/vegan-chai-latte-cupcakes.jpg"
+}
