@@ -1003,7 +1003,8 @@
       "category": "gluten-free",
       "notes": "Grated carrot ensures moisture, cream cheese swirl frosting",
       "priority": 108,
-      "status": "generating"
+      "status": "draft",
+      "slug": "gluten-free-carrot-cake-cupcakes"
     },
     {
       "id": "r109",
@@ -1011,7 +1012,8 @@
       "category": "gluten-free",
       "notes": "Almond flour + pumpkin puree for softness, vanilla swirl",
       "priority": 109,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-pumpkin-spice-cupcakes"
     },
     {
       "id": "r110",
@@ -1019,7 +1021,8 @@
       "category": "gluten-free",
       "notes": "Use mini chips, prevent sinking by tossing chips in almond flour",
       "priority": 110,
-      "status": "idea"
+      "status": "failed",
+      "error": "Instructions reference frosting but no frosting ingredients are listed"
     },
     {
       "id": "r111",
@@ -1027,7 +1030,8 @@
       "category": "gluten-free",
       "notes": "Mild floral honey, soft tender crumb, not overly sweet",
       "priority": 111,
-      "status": "idea"
+      "status": "draft",
+      "slug": "gluten-free-honey-vanilla-cupcakes"
     },
     {
       "id": "r112",
@@ -1035,7 +1039,7 @@
       "category": "gluten-free",
       "notes": "Coconut milk for moisture, coconut-flecked buttercream",
       "priority": 112,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r113",

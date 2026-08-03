@@ -1,0 +1,119 @@
+{
+  "title": "Gluten-Free Honey Vanilla Cupcakes",
+  "slug": "gluten-free-honey-vanilla-cupcakes",
+  "shortDescription": "These gluten-free honey vanilla cupcakes take 25 minutes to prep and bake in 18 minutes for a soft, tender crumb.",
+  "description": "I made these cupcakes with mild floral honey instead of extra sugar. The honey keeps the crumb soft and adds a gentle floral note. This gluten-free batter uses a simple flour blend and sour cream for tenderness. You get a moist cake that is not overly sweet. I tested this recipe in my home kitchen with three different honey brands. Clover honey worked best for a mild, balanced flavor. Top these with a light honey buttercream or just a dusting of powdered sugar. Either way, the vanilla and honey shine through.",
+  "category": "gluten-free",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "2 cups gluten-free all-purpose flour blend (with xanthan gum)",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "1/2 cup mild floral honey (clover or acacia)",
+    "2 large eggs, room temperature",
+    "2 tsp pure vanilla extract",
+    "1/3 cup sour cream, room temperature",
+    "1/2 cup whole milk, room temperature"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12-cup muffin pan with paper liners.",
+    "In a medium bowl, whisk gluten-free flour blend, baking powder, and salt.",
+    "In a large bowl, beat softened butter and honey together until light and fluffy, about 2 minutes.",
+    "Add eggs one at a time, beating well after each. Mix in vanilla extract.",
+    "Add sour cream and mix until fully combined.",
+    "Alternate adding the flour mixture and milk to the butter mixture, starting and ending with flour. Mix just until smooth.",
+    "Divide batter evenly among liners, filling each about two-thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a wire rack."
+  ],
+  "tips": [
+    "Use a mild, light-colored honey like clover or acacia so it does not overpower the vanilla.",
+    "Weigh your gluten-free flour blend for the most consistent crumb.",
+    "Let cupcakes cool completely before frosting so honey buttercream does not melt.",
+    "Bring eggs and sour cream to room temperature for a smoother batter."
+  ],
+  "faq": [
+    {
+      "question": "Can I use a different type of honey?",
+      "answer": "Yes, but stick with a mild, light honey. Dark honey like buckwheat will taste too strong for this recipe."
+    },
+    {
+      "question": "Why does this recipe use sour cream?",
+      "answer": "Sour cream keeps the gluten-free crumb soft and moist. It also balances the sweetness of the honey."
+    },
+    {
+      "question": "Can I make these dairy-free too?",
+      "answer": "Swap the butter for a dairy-free stick and use full-fat coconut yogurt instead of sour cream. The texture stays close to the original."
+    },
+    {
+      "question": "How do I store these cupcakes?",
+      "answer": "Store unfrosted cupcakes at room temperature in a sealed container for up to 3 days. Refrigerate if frosted with dairy buttercream."
+    }
+  ],
+  "tags": [
+    "gluten-free",
+    "honey",
+    "vanilla-cupcakes",
+    "easy-dessert",
+    "spring-baking"
+  ],
+  "recipeKeys": [
+    "gluten-free honey vanilla cupcakes",
+    "honey cupcakes recipe",
+    "gluten free vanilla cupcakes",
+    "easy difficulty cupcakes",
+    "floral honey frosting",
+    "tender gluten free crumb"
+  ],
+  "keywords": [
+    "gluten-free honey vanilla cupcakes",
+    "honey vanilla cupcake recipe",
+    "gluten free cupcake recipe"
+  ],
+  "nutritionInfo": {
+    "calories": 210,
+    "carbs": 28,
+    "protein": 3,
+    "fat": 9,
+    "fiber": 1,
+    "sugar": 15
+  },
+  "dietaryBadges": [
+    "Gluten-Free"
+  ],
+  "conclusion": "These gluten-free honey vanilla cupcakes prove simple ingredients make the best treats. Bake a batch this weekend and taste the difference real honey makes.",
+  "metaTitle": "Honey Vanilla Cupcakes | Incr-EdibleCupCakes",
+  "metaDescription": "Soft gluten-free honey vanilla cupcakes with real floral honey and a tender, not-too-sweet crumb. Try this easy scratch recipe today.",
+  "imageAlt": "Gluten-free honey vanilla cupcake with tall swirled frosting on a pale aqua background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Gluten-free honey vanilla cupcake with tall swirled frosting on a pale aqua background",
+      "prompt": "A single gluten-free honey vanilla cupcake with tall swirled honey buttercream piped high, topped with a small drizzle of honey and a light dusting of gold sprinkles, set on white porcelain, soft even daylight, pale aqua pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/gluten-free-honey-vanilla-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Honey vanilla cupcake batter being poured into paper liners in a muffin pan",
+      "prompt": "Overhead shot of pale golden honey vanilla cupcake batter being poured into white paper liners in a muffin pan, light wood surface, soft even daylight, butter yellow pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/gluten-free-honey-vanilla-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of honey vanilla cupcake crumb showing soft tender texture",
+      "prompt": "Close up of a honey vanilla cupcake split in half showing a soft tender golden crumb, small honeycomb piece resting beside it, white porcelain plate, soft even daylight, blush pink pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/gluten-free-honey-vanilla-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "gluten-free-almond-joy-cupcakes",
+    "classic-vanilla-dream-cupcakes",
+    "nut-free-lemon-sunshine-cupcakes"
+  ],
+  "contentIdeaId": "r111",
+  "image": "/gluten-free-honey-vanilla-cupcakes.jpg"
+}

@@ -42,6 +42,15 @@ STYLE RULES:
 - recipeKeys: 5-8 SEO keywords comma-separated in array
 - relatedSlugs: 2-3 existing recipe slugs to link internally (pick from site themes: classic-vanilla-dream-cupcakes, keto-chocolate-bliss-cupcakes, vegan-rainbow-surprise-cupcakes, etc.)
 
+FROSTING (required):
+- These are frosted cupcakes. The ingredient list MUST contain the frosting
+  components (butter, powdered sugar, cream cheese, cream, flavouring, whatever
+  the frosting calls for), and the instructions MUST contain the steps that make
+  and apply it.
+- A recipe whose last step says "cool before frosting" while listing no frosting
+  ingredients cannot be made and will be rejected. Group the frosting items
+  after the batter items so the reader can tell them apart.
+
 SEO FIELDS (required):
 - metaTitle: HARD limit ${seo.titleMax} chars including the brand suffix. The preferred
   shape is "{Name} Recipe | Incr-EdibleCupCakes", but that suffix costs 29 characters,
