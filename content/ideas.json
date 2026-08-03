@@ -1390,7 +1390,8 @@
       "category": "seasonal",
       "notes": "Pumpkin spice cake + cream swirl + tiny fondant pumpkin",
       "priority": 151,
-      "status": "generating"
+      "status": "draft",
+      "slug": "pumpkin-patch-cupcakes"
     },
     {
       "id": "r152",
@@ -1398,7 +1399,7 @@
       "category": "seasonal",
       "notes": "Chocolate cake + marshmallow swirl frosting",
       "priority": 152,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r153",
