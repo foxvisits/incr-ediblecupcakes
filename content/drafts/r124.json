@@ -1,0 +1,127 @@
+{
+  "title": "Dairy-Free Classic Vanilla Cupcakes",
+  "slug": "dairy-free-classic-vanilla-cupcakes",
+  "shortDescription": "Fluffy dairy free vanilla cupcakes made with oat milk and neutral oil, ready in about 43 minutes total.",
+  "description": "These dairy free vanilla cupcakes are soft, light, and easy to make on a weeknight. I swapped butter and milk for neutral oil and oat milk, and the texture stayed just as fluffy as my classic recipe. The crumb is fine and tender, not dense like some dairy free bakes can turn out. A splash of vinegar reacts with the oat milk to keep the cupcakes airy. I topped these with a light vanilla frosting made from dairy free block butter. It pipes just like regular buttercream and holds its shape well at room temperature. This is my go to recipe when a friend needs a dairy free treat but still wants a true vanilla cupcake. Not a substitute that tastes different.",
+  "category": "dairy-free",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all purpose flour",
+    "1 cup granulated sugar",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp salt",
+    "1/2 cup neutral oil (canola or sunflower)",
+    "1 cup oat milk or soy milk, room temperature",
+    "1 tsp apple cider vinegar",
+    "2 large eggs, room temperature",
+    "2 tsp vanilla extract",
+    "1 1/2 cups dairy free block butter, softened",
+    "3 cups powdered sugar",
+    "1 tbsp oat milk (for frosting, plus more if needed)"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk oat milk and vinegar in a small bowl. Let it sit 5 minutes, it will look slightly curdled.",
+    "In a large bowl, whisk flour, sugar, baking powder, and salt together.",
+    "In another bowl, whisk oil, eggs, vanilla, and the oat milk mixture until smooth.",
+    "Pour wet ingredients into dry ingredients. Mix just until no dry streaks remain, do not overmix.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a wire rack.",
+    "Let cupcakes cool completely before frosting, about 45 minutes.",
+    "Beat dairy free butter on medium speed for 2 minutes until smooth and pale.",
+    "Add powdered sugar one cup at a time, beating well after each addition.",
+    "Add vanilla and 1 tablespoon oat milk, then beat 2 more minutes until light and fluffy.",
+    "Pipe or spread frosting onto cooled cupcakes and serve."
+  ],
+  "tips": [
+    "Use room temperature oat milk and eggs so the batter blends evenly and rises well.",
+    "Do not overmix the batter, a few small lumps are fine and keep cupcakes tender.",
+    "Chill dairy free block butter for 10 minutes if your kitchen is warm, it whips better slightly firm.",
+    "For extra fluffy frosting, beat the butter longer before adding sugar, this adds air."
+  ],
+  "faq": [
+    {
+      "question": "Can I use soy milk instead of oat milk in this recipe?",
+      "answer": "Yes, soy milk works just as well as oat milk here. Both react with vinegar the same way and give a soft, fluffy crumb."
+    },
+    {
+      "question": "Why do I need vinegar in a vanilla cupcake recipe?",
+      "answer": "The vinegar reacts with the plant milk to create a light acidity, similar to buttermilk. This helps the cupcakes rise and stay tender without dairy."
+    },
+    {
+      "question": "Can I use dairy free butter alternatives other than block butter?",
+      "answer": "Spreadable tub versions have more water and can make the frosting too soft. Block style dairy free butter holds its shape best for piping."
+    },
+    {
+      "question": "Are these cupcakes also egg free?",
+      "answer": "No, this recipe uses two eggs for structure. If you need egg free too, try a flax egg swap, though the texture will be denser."
+    }
+  ],
+  "tags": [
+    "dairy-free",
+    "vanilla",
+    "easy-cupcakes",
+    "oat-milk",
+    "fluffy-cupcakes"
+  ],
+  "recipeKeys": [
+    "dairy free vanilla cupcakes fluffy",
+    "dairy free cupcakes recipe",
+    "oat milk cupcakes",
+    "vegan friendly vanilla cupcakes",
+    "Easy difficulty",
+    "no dairy vanilla frosting"
+  ],
+  "keywords": [
+    "dairy free vanilla cupcakes fluffy",
+    "dairy free cupcakes",
+    "oat milk cupcakes",
+    "vanilla cupcakes no butter"
+  ],
+  "nutritionInfo": {
+    "calories": 310,
+    "carbs": 42,
+    "protein": 3,
+    "fat": 15,
+    "fiber": 1,
+    "sugar": 32
+  },
+  "dietaryBadges": [
+    "dairy-free"
+  ],
+  "conclusion": "These dairy free vanilla cupcakes prove you do not need butter or milk for a fluffy, classic bake. Keep this recipe on hand for birthdays, potlucks, or anytime someone needs a dairy free option that still tastes like a true vanilla cupcake.",
+  "metaTitle": "Dairy-Free Vanilla Cupcakes | Incr-EdibleCupCakes",
+  "metaDescription": "Try these dairy free vanilla cupcakes fluffy and tender, made with oat milk and light frosting. Get the full recipe now.",
+  "imageAlt": "Dairy free vanilla cupcake with tall swirled frosting on a pastel blush background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Dairy free vanilla cupcake with tall swirled frosting on a pastel blush background",
+      "prompt": "A single dairy free vanilla cupcake with tall swirled light vanilla frosting piped high, soft even daylight, blush pink pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-classic-vanilla-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Cupcake batter being poured into paper liners in a muffin pan",
+      "prompt": "Pale vanilla cupcake batter being poured into white paper liners inside a muffin pan, soft even daylight, pastel butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-classic-vanilla-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of dairy free vanilla frosting swirl showing smooth texture",
+      "prompt": "Close up detail shot of a smooth light vanilla frosting swirl on top of a cupcake, soft even daylight, pale aqua pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-classic-vanilla-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "classic-vanilla-dream-cupcakes",
+    "vegan-rainbow-surprise-cupcakes",
+    "nut-free-lemon-sunshine-cupcakes"
+  ],
+  "contentIdeaId": "r124",
+  "image": "/dairy-free-classic-vanilla-cupcakes.jpg"
+}

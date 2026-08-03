@@ -1147,7 +1147,8 @@
       "category": "dairy-free",
       "notes": "target keyword: dairy free vanilla cupcakes fluffy. Oat or soy milk, neutral oil, light vanilla frosting with dairy-free block butter",
       "priority": 124,
-      "status": "generating"
+      "status": "draft",
+      "slug": "dairy-free-classic-vanilla-cupcakes"
     },
     {
       "id": "r125",
@@ -1155,7 +1156,7 @@
       "category": "dairy-free",
       "notes": "Cocoa + coconut milk for richness, silky chocolate swirl frosting",
       "priority": 125,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r126",
