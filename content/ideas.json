@@ -607,7 +607,8 @@
       "category": "vegan",
       "notes": "No artificial red dyes. Strawberry puree in batter + frosting, soft natural pink tone",
       "priority": 64,
-      "status": "generating"
+      "status": "draft",
+      "slug": "vegan-strawberry-milk-cupcakes"
     },
     {
       "id": "r065",
@@ -615,7 +616,8 @@
       "category": "vegan",
       "notes": "Small blueberries, keep batter tender, vanilla frosting swirl",
       "priority": 65,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-blueberry-muffin-cupcakes"
     },
     {
       "id": "r066",
@@ -623,7 +625,8 @@
       "category": "vegan",
       "notes": "Toasted walnuts for aroma, maple frosting swirl",
       "priority": 66,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-maple-walnut-cupcakes"
     },
     {
       "id": "r067",
@@ -631,7 +634,8 @@
       "category": "vegan",
       "notes": "PB batter + chocolate swirl frosting, creamy not crumbly",
       "priority": 67,
-      "status": "idea"
+      "status": "draft",
+      "slug": "vegan-peanut-butter-cup-cupcakes"
     },
     {
       "id": "r068",
@@ -639,7 +643,7 @@
       "category": "vegan",
       "notes": "Use vegan sandwich cookies. Cookie crumbs in frosting + batter, fluffy and playful",
       "priority": 68,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r069",
