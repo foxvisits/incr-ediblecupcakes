@@ -143,7 +143,8 @@
       "targetKeyword": "how long should you beat cupcake batter?",
       "notes": "Teach the just-combined concept, avoid overmixing",
       "priority": 13,
-      "status": "generating"
+      "status": "draft",
+      "slug": "how-long-should-you-beat-cupcake-batter"
     },
     {
       "id": "g014",
@@ -152,7 +153,8 @@
       "targetKeyword": "how to test cupcakes for doneness",
       "notes": "Toothpick test + light bounce method",
       "priority": 14,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-test-cupcakes-for-doneness"
     },
     {
       "id": "g015",
@@ -161,7 +163,8 @@
       "targetKeyword": "how to fill cupcake liners evenly",
       "notes": "Ice cream scoop for even fill, three-quarter height rule",
       "priority": 15,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-fill-cupcake-liners-evenly"
     },
     {
       "id": "g016",
@@ -170,7 +173,8 @@
       "targetKeyword": "how to cool cupcakes without drying them",
       "notes": "Avoid overcooling + airflow tips",
       "priority": 16,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-cool-cupcakes-without-drying-them"
     },
     {
       "id": "g017",
@@ -179,7 +183,8 @@
       "targetKeyword": "batch baking: how to bake 24+ cupcakes at once",
       "notes": "Even heat distribution + tray rotation tips",
       "priority": 17,
-      "status": "idea"
+      "status": "draft",
+      "slug": "batch-baking-24-cupcakes-at-once"
     },
     {
       "id": "g018",
@@ -188,7 +193,8 @@
       "targetKeyword": "cupcake storage: room temp, fridge, or freezer?",
       "notes": "Storage timelines + airtight technique",
       "priority": 18,
-      "status": "idea"
+      "status": "draft",
+      "slug": "cupcake-storage-room-temp-fridge-or-freezer"
     },
     {
       "id": "g019",
@@ -197,7 +203,7 @@
       "targetKeyword": "how to pipe the perfect bakery-style swirl",
       "notes": "Step-by-step piping tips, wrist motion, pressure control, bag angle",
       "priority": 19,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "g020",
