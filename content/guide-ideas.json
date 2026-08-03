@@ -343,7 +343,8 @@
       "targetKeyword": "why do cupcakes taste eggy?",
       "notes": "Discuss ratios + overbeating",
       "priority": 33,
-      "status": "generating"
+      "status": "draft",
+      "slug": "why-do-cupcakes-taste-eggy"
     },
     {
       "id": "g034",
@@ -352,7 +353,8 @@
       "targetKeyword": "why do cupcakes dome or balloon?",
       "notes": "Oven temp + batter fill height",
       "priority": 34,
-      "status": "idea"
+      "status": "draft",
+      "slug": "why-do-cupcakes-dome-or-balloon"
     },
     {
       "id": "g035",
@@ -361,7 +363,8 @@
       "targetKeyword": "cupcakes overflowing?",
       "notes": "Three-quarter height rule + batter viscosity",
       "priority": 35,
-      "status": "idea"
+      "status": "draft",
+      "slug": "cupcakes-overflowing"
     },
     {
       "id": "g036",
@@ -370,7 +373,8 @@
       "targetKeyword": "butter vs oil in cupcake batter",
       "notes": "Flavor vs moisture trade-off, when to choose which, effect on crumb",
       "priority": 36,
-      "status": "idea"
+      "status": "draft",
+      "slug": "butter-vs-oil-in-cupcake-batter"
     },
     {
       "id": "g037",
@@ -379,7 +383,8 @@
       "targetKeyword": "which flour makes the fluffiest cupcakes?",
       "notes": "AP vs cake flour vs gluten-free blends vs almond flour. Neutral, clear guidance",
       "priority": 37,
-      "status": "idea"
+      "status": "draft",
+      "slug": "which-flour-makes-the-fluffiest-cupcakes"
     },
     {
       "id": "g038",
