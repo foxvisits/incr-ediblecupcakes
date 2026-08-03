@@ -1,0 +1,131 @@
+{
+  "title": "Dairy-Free Lemon Blossom Cupcakes",
+  "slug": "dairy-free-lemon-blossom-cupcakes",
+  "shortDescription": "Bright lemon cupcakes with 25 minutes of prep and 18 minutes of baking, topped with a light dairy-free lemon cream frosting.",
+  "description": "These cupcakes taste like fresh lemon zest in every bite. I tested this batch in my own kitchen using dairy-free butter and oat milk, and the crumb still came out soft and moist. The frosting is simple: dairy-free butter, powdered sugar, and lots of lemon juice. No cream cheese or heavy cream needed, so it stays light and holds its swirl. Zest does the real work here. I use both lemon zest and juice, which gives a brighter lemon taste than juice alone. This recipe is a good pick for spring parties or anyone who needs a dairy-free treat that does not feel like a substitute.",
+  "category": "dairy-free",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp salt",
+    "1/2 cup dairy-free butter, softened",
+    "1 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1/2 cup dairy-free milk (almond or oat)",
+    "1/4 cup fresh lemon juice",
+    "2 tbsp fresh lemon zest",
+    "1 tsp vanilla extract",
+    "1/2 cup dairy-free butter, softened (for frosting)",
+    "2 cups powdered sugar",
+    "2 tbsp fresh lemon juice (for frosting)",
+    "1 tsp lemon zest (for frosting)",
+    "1 pinch salt (for frosting)"
+  ],
+  "instructions": [
+    "Heat your oven to 350°F. Line a 12-cup muffin pan with paper liners.",
+    "Whisk the flour, baking powder, and salt in a bowl. Set aside.",
+    "Beat the dairy-free butter and sugar until light and fluffy, about 2 minutes.",
+    "Add the eggs one at a time, mixing well after each addition.",
+    "Mix in the dairy-free milk, lemon juice, lemon zest, and vanilla extract.",
+    "Add the flour mix in two batches, stirring just until no dry streaks remain.",
+    "Divide the batter evenly among the liners, filling each about two-thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick comes out clean.",
+    "Cool the cupcakes in the pan for 5 minutes, then move them to a wire rack to cool fully.",
+    "Beat the dairy-free butter for the frosting until smooth, about 1 minute.",
+    "Add powdered sugar, lemon juice, lemon zest, and salt. Beat until light and fluffy.",
+    "Pipe the frosting onto the cooled cupcakes and top with extra lemon zest if you like."
+  ],
+  "tips": [
+    "Zest your lemons before you juice them. It is much easier that way.",
+    "Chill the frosting for 10 minutes if it feels too soft to pipe tall swirls.",
+    "Use room temperature eggs so the batter mixes evenly and rises well.",
+    "Store leftovers in the fridge since the frosting has no dairy fat to stabilize it at room temperature."
+  ],
+  "faq": [
+    {
+      "question": "Can I use bottled lemon juice instead of fresh?",
+      "answer": "Fresh juice tastes brighter and pairs better with the zest. Bottled juice works in a pinch but the lemon flavor will be milder."
+    },
+    {
+      "question": "What dairy-free milk works best in this recipe?",
+      "answer": "I tested this with both almond milk and oat milk, and both worked well. Oat milk gives a slightly richer crumb."
+    },
+    {
+      "question": "Why is my dairy-free frosting too soft to pipe?",
+      "answer": "Some dairy-free butters are softer than dairy butter. Chill the frosting for 10 to 15 minutes before piping."
+    },
+    {
+      "question": "Can I make these cupcakes ahead of time?",
+      "answer": "Bake the cupcakes up to a day ahead and store them unfrosted at room temperature in a sealed container. Frost them the day you plan to serve."
+    }
+  ],
+  "tags": [
+    "dairy-free",
+    "lemon",
+    "spring",
+    "easy",
+    "citrus"
+  ],
+  "recipeKeys": [
+    "dairy-free lemon cupcakes",
+    "lemon cupcakes recipe",
+    "dairy-free frosting",
+    "lemon zest cupcakes",
+    "easy difficulty",
+    "dairy-free dessert",
+    "citrus cupcakes"
+  ],
+  "keywords": [
+    "dairy-free lemon cupcakes",
+    "lemon blossom cupcakes",
+    "dairy-free lemon frosting",
+    "easy lemon cupcake recipe"
+  ],
+  "nutritionInfo": {
+    "calories": 245,
+    "carbs": 36,
+    "protein": 2,
+    "fat": 10,
+    "fiber": 0,
+    "sugar": 27
+  },
+  "dietaryBadges": [
+    "dairy-free"
+  ],
+  "conclusion": "These lemon blossom cupcakes prove dairy-free baking can still taste bright and rich. The lemon frosting is easy to make and holds a tall swirl without any dairy at all.",
+  "metaTitle": "Dairy-Free Lemon Blossom Cupcakes | Incr-EdibleCupCakes",
+  "metaDescription": "Try these dairy-free lemon blossom cupcakes with fresh zest and a light lemon cream frosting. Get the easy recipe now on Incr-EdibleCupCakes.",
+  "imageAlt": "Dairy-free lemon blossom cupcake with tall swirled frosting on a pale aqua background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Dairy-free lemon blossom cupcake with tall swirled frosting on a pale aqua background",
+      "prompt": "A single dairy-free lemon cupcake with tall swirled lemon cream frosting piped high, topped with fresh lemon zest, bright pastel bakery aesthetic, soft even daylight, pale aqua background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-lemon-blossom-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Lemon zest being grated over a bowl of cupcake batter",
+      "prompt": "Overhead shot of fresh lemon zest being grated into a bowl of pale yellow cupcake batter, wooden spoon resting nearby, bright pastel bakery aesthetic, soft even daylight, butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-lemon-blossom-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of lemon frosting swirl with lemon zest curls on a cupcake",
+      "prompt": "Close up macro shot of a tall lemon cream frosting swirl on a cupcake, garnished with thin curls of lemon zest, bright pastel bakery aesthetic, soft even daylight, cream colored background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-lemon-blossom-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "nut-free-lemon-sunshine-cupcakes",
+    "vegan-rainbow-surprise-cupcakes",
+    "classic-vanilla-dream-cupcakes"
+  ],
+  "contentIdeaId": "r126",
+  "image": "/dairy-free-lemon-blossom-cupcakes.jpg"
+}

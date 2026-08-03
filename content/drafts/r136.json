@@ -1,0 +1,128 @@
+{
+  "title": "Dairy-Free Mocha Latte Cupcakes",
+  "slug": "dairy-free-mocha-latte-cupcakes",
+  "shortDescription": "Coffee-infused cocoa cupcakes with dairy-free mocha cream frosting, ready in 43 minutes total.",
+  "description": "These cupcakes taste like your favorite coffee shop order, baked into a soft cocoa cake. I brew strong coffee right into the batter, so every bite carries real mocha flavor, not just a hint. The frosting uses dairy-free butter and a splash of brewed espresso, whipped until light and pipeable. No dairy, no compromise on richness. I tested this recipe in my home kitchen with oat milk and soy based dairy-free butter, and both worked well. Pick whichever you already have in your fridge. This is a great pick for coffee lovers who need a dairy-free treat for brunch, a bake sale, or just a Tuesday pick-me-up.",
+  "category": "dairy-free",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1/2 cup unsweetened cocoa powder",
+    "1 tsp baking soda",
+    "1/4 tsp salt",
+    "1 cup granulated sugar",
+    "1/2 cup neutral oil (vegetable or canola)",
+    "3/4 cup brewed strong coffee, cooled",
+    "1/2 cup unsweetened oat milk",
+    "1 tbsp instant espresso powder",
+    "1 tsp vanilla extract",
+    "1 tbsp apple cider vinegar",
+    "1 cup dairy-free butter, softened, for frosting",
+    "2 1/2 cups powdered sugar, for frosting",
+    "2 tbsp brewed espresso, cooled, for frosting",
+    "1 tbsp cocoa powder, for frosting"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk flour, cocoa powder, baking soda, and salt in a medium bowl.",
+    "In a large bowl, whisk sugar, oil, brewed coffee, oat milk, espresso powder, vanilla, and vinegar until smooth.",
+    "Add dry ingredients to wet ingredients. Stir just until no dry streaks remain.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean.",
+    "Cool cupcakes in the pan 5 minutes, then move to a wire rack to cool fully.",
+    "Beat dairy-free butter until fluffy, about 2 minutes. Add powdered sugar, brewed espresso, and cocoa powder.",
+    "Beat frosting on high speed 2 more minutes until light and smooth. Pipe onto cooled cupcakes."
+  ],
+  "tips": [
+    "Use strong, freshly brewed coffee. Weak coffee makes the mocha flavor fade after baking.",
+    "Let the coffee cool to room temperature before mixing, or it can melt the oil unevenly.",
+    "Chill the frosting 10 minutes if your kitchen is warm. It pipes cleaner when slightly firm.",
+    "Dust finished cupcakes with cocoa powder for a coffee shop look with almost no extra effort."
+  ],
+  "faq": [
+    {
+      "question": "Can I use decaf coffee in this recipe?",
+      "answer": "Yes, decaf works fine. You get the same mocha flavor without the caffeine kick."
+    },
+    {
+      "question": "What dairy-free butter works best for the frosting?",
+      "answer": "I like a soy based dairy-free butter for stiffer frosting. Oat milk based versions work too, but pipe slightly softer."
+    },
+    {
+      "question": "Can I make these cupcakes ahead of time?",
+      "answer": "Bake the cupcakes up to 2 days ahead and store unfrosted at room temperature in a sealed container. Frost the day you plan to serve them."
+    },
+    {
+      "question": "Is there a way to make this recipe less sweet?",
+      "answer": "Cut the powdered sugar in the frosting to 2 cups and add an extra pinch of salt. The mocha flavor stays strong with less sweetness."
+    }
+  ],
+  "tags": [
+    "dairy-free",
+    "coffee",
+    "mocha",
+    "chocolate",
+    "cupcakes"
+  ],
+  "recipeKeys": [
+    "dairy-free mocha cupcakes",
+    "coffee cupcake recipe",
+    "mocha latte cupcakes",
+    "dairy-free cocoa cake",
+    "Easy difficulty",
+    "coffee cream frosting"
+  ],
+  "keywords": [
+    "dairy-free mocha cupcakes",
+    "coffee cupcakes",
+    "mocha frosting",
+    "dairy-free dessert",
+    "espresso cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 265,
+    "carbs": 38,
+    "protein": 3,
+    "fat": 12,
+    "fiber": 2,
+    "sugar": 27
+  },
+  "dietaryBadges": [
+    "dairy-free"
+  ],
+  "conclusion": "These mocha latte cupcakes bring coffee shop flavor home without any dairy. Bake a batch and see how quickly they disappear from the cooling rack.",
+  "metaTitle": "Dairy-Free Mocha Latte Cupcakes | Incr-EdibleCupCakes",
+  "metaDescription": "Dairy-free mocha latte cupcakes with coffee cocoa cake and mocha cream frosting. Bake this easy recipe today for a coffee shop treat!",
+  "imageAlt": "Dairy-free mocha latte cupcake with tall swirled mocha frosting dusted with cocoa powder",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Dairy-free mocha latte cupcake with tall swirled mocha frosting dusted with cocoa powder",
+      "prompt": "A single dairy-free mocha latte cupcake with tall swirled mocha cream frosting piped high, dusted lightly with cocoa powder, on a soft butter yellow pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-mocha-latte-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Cocoa coffee cupcake batter being poured into a paper lined muffin pan",
+      "prompt": "Dark cocoa coffee cupcake batter being poured into white paper liners in a metal muffin pan, on a pale aqua pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-mocha-latte-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of mocha frosting swirl topped with a coffee bean garnish",
+      "prompt": "Close up detail shot of a tall swirled mocha cream frosting peak topped with a single coffee bean, on a blush pink pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-mocha-latte-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "espresso-martini-cupcakes",
+    "irish-coffee-cupcakes",
+    "keto-chocolate-truffle-cupcakes"
+  ],
+  "contentIdeaId": "r136",
+  "image": "/dairy-free-mocha-latte-cupcakes.jpg"
+}

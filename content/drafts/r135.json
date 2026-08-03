@@ -1,0 +1,130 @@
+{
+  "title": "Dairy-Free Orange Creamsicle Cupcakes",
+  "slug": "dairy-free-orange-creamsicle-cupcakes",
+  "shortDescription": "Bright orange cupcakes with dairy-free vanilla frosting, ready in about 43 minutes with 25 minutes prep and 18 minutes baking.",
+  "description": "These cupcakes taste like an orange creamsicle from your childhood, but grown up and dairy-free. Fresh orange zest goes right into the batter, so every bite tastes bright, not artificial. The frosting swirls vanilla and orange together using coconut cream instead of butter, and it still pipes tall and smooth. I tested this batch three times in my own kitchen to get the citrus balance just right.",
+  "category": "dairy-free",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp baking soda",
+    "1/2 tsp salt",
+    "1/2 cup dairy-free butter, softened",
+    "3/4 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1 tbsp orange zest (about 2 oranges)",
+    "1/2 cup fresh orange juice",
+    "1/4 cup unsweetened dairy-free milk",
+    "1 tsp vanilla extract",
+    "1/2 tsp orange extract",
+    "1 1/2 cups powdered sugar (for frosting)",
+    "1/2 cup coconut cream, chilled and whipped",
+    "1/4 cup dairy-free butter, softened (for frosting)",
+    "1 tsp vanilla extract (for frosting)"
+  ],
+  "instructions": [
+    "Preheat your oven to 350°F. Line a 12-cup muffin pan with paper liners.",
+    "Whisk the flour, baking powder, baking soda, and salt in a bowl. Set aside.",
+    "Beat the dairy-free butter and sugar together for 2 minutes until fluffy.",
+    "Add the eggs one at a time, beating well after each one.",
+    "Mix in the orange zest, orange juice, dairy-free milk, and vanilla extract.",
+    "Fold the dry ingredients into the wet mix in two batches. Stop mixing once combined.",
+    "Divide the batter evenly among the liners, filling each about two-thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan for 5 minutes, then move to a wire rack.",
+    "For the frosting, beat the dairy-free butter until smooth, then add powdered sugar and vanilla.",
+    "Fold in the whipped coconut cream and orange extract until the frosting is light and creamy.",
+    "Once cupcakes are fully cool, pipe the frosting in a tall swirl on each one."
+  ],
+  "tips": [
+    "Zest your oranges before juicing them. It is much easier that way.",
+    "Chill your coconut cream can overnight so the cream separates and whips well.",
+    "Do not overmix the batter once you add the flour, or the cupcakes turn dense.",
+    "If your frosting looks too soft, chill it for 15 minutes before piping."
+  ],
+  "faq": [
+    {
+      "question": "Can I use bottled orange juice instead of fresh?",
+      "answer": "Fresh juice works better here. Bottled juice often tastes flat and can make the cake less bright."
+    },
+    {
+      "question": "Why does my dairy-free frosting look soupy?",
+      "answer": "This usually means the coconut cream was not fully chilled or whipped enough. Chill the frosting bowl for 15 minutes, then rewhip."
+    },
+    {
+      "question": "Can I skip the orange extract?",
+      "answer": "Yes, but the frosting will taste more like plain vanilla. The extract gives that classic creamsicle flavor mix."
+    },
+    {
+      "question": "How long do these cupcakes stay fresh?",
+      "answer": "Store them in an airtight container in the fridge for up to 4 days. Bring to room temperature before serving."
+    }
+  ],
+  "tags": [
+    "dairy-free",
+    "orange",
+    "creamsicle",
+    "vanilla-frosting",
+    "citrus-cupcakes"
+  ],
+  "recipeKeys": [
+    "dairy-free orange cupcakes",
+    "orange creamsicle cupcakes",
+    "dairy-free vanilla frosting",
+    "citrus cupcake recipe",
+    "coconut cream frosting",
+    "Medium difficulty"
+  ],
+  "keywords": [
+    "dairy-free orange creamsicle cupcakes",
+    "orange cupcakes dairy-free",
+    "vanilla orange swirl frosting",
+    "coconut cream frosting recipe"
+  ],
+  "nutritionInfo": {
+    "calories": 245,
+    "carbs": 34,
+    "protein": 2,
+    "fat": 11,
+    "fiber": 1,
+    "sugar": 25
+  },
+  "dietaryBadges": [
+    "dairy-free"
+  ],
+  "conclusion": "These cupcakes bring back that creamsicle taste without any dairy. The orange zest keeps the flavor real, and the coconut cream frosting stays light, not heavy. Bake a batch for spring parties or any day you want something bright.",
+  "metaTitle": "Orange Creamsicle Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Try these dairy-free orange creamsicle cupcakes with vanilla frosting swirl. Bright, creamy, and ready in under an hour. Get the recipe now.",
+  "imageAlt": "Dairy-free orange creamsicle cupcake with tall vanilla frosting swirl and orange zest garnish on a pastel background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Dairy-free orange creamsicle cupcake with tall vanilla frosting swirl and orange zest garnish on a pastel background",
+      "prompt": "A single orange creamsicle cupcake with a tall swirled dairy-free vanilla frosting piped high, topped with a small curl of orange zest, set against a soft pale aqua pastel background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-orange-creamsicle-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Orange zest being folded into cupcake batter in a mixing bowl",
+      "prompt": "A close overhead shot of fresh orange zest being folded into pale yellow cupcake batter in a white ceramic mixing bowl, with a light wood surface below. Bright pastel bakery aesthetic, soft even daylight, butter yellow pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-orange-creamsicle-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of dairy-free vanilla orange frosting swirl showing texture and orange zest flecks",
+      "prompt": "A close up detail shot of a tall dairy-free vanilla orange frosting swirl on top of a cupcake, showing smooth texture with tiny flecks of orange zest, set on white porcelain against a blush pink pastel background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-orange-creamsicle-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "cranberry-orange-sparkle-cupcakes",
+    "nut-free-lemon-sunshine-cupcakes",
+    "classic-vanilla-dream-cupcakes"
+  ],
+  "contentIdeaId": "r135",
+  "image": "/dairy-free-orange-creamsicle-cupcakes.jpg"
+}

@@ -1156,7 +1156,8 @@
       "category": "dairy-free",
       "notes": "Cocoa + coconut milk for richness, silky chocolate swirl frosting",
       "priority": 125,
-      "status": "generating"
+      "status": "draft",
+      "slug": "dairy-free-chocolate-cloud-cupcakes"
     },
     {
       "id": "r126",
@@ -1164,7 +1165,8 @@
       "category": "dairy-free",
       "notes": "Fresh zest + light lemon cream frosting using dairy-free butter + powdered sugar",
       "priority": 126,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-lemon-blossom-cupcakes"
     },
     {
       "id": "r127",
@@ -1172,7 +1174,8 @@
       "category": "dairy-free",
       "notes": "Pureed strawberries for natural color, avoid artificial flavor",
       "priority": 127,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-strawberry-swirl-cupcakes"
     },
     {
       "id": "r128",
@@ -1180,7 +1183,8 @@
       "category": "dairy-free",
       "notes": "Use agave or maple, warm cozy flavor profile",
       "priority": 128,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-honey-style-agave-vanilla-cupcakes"
     },
     {
       "id": "r129",
@@ -1188,7 +1192,8 @@
       "category": "dairy-free",
       "notes": "Combine cinnamon + maple extract, creamy vanilla swirl",
       "priority": 129,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-cinnamon-maple-cupcakes"
     },
     {
       "id": "r130",
@@ -1196,7 +1201,8 @@
       "category": "dairy-free",
       "notes": "Make caramel using coconut cream + sugar, silky caramel swirl frosting",
       "priority": 130,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-caramel-cupcakes"
     },
     {
       "id": "r131",
@@ -1204,7 +1210,8 @@
       "category": "dairy-free",
       "notes": "Coconut milk batter + coconut whip frosting",
       "priority": 131,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-coconut-dream-cupcakes"
     },
     {
       "id": "r132",
@@ -1212,7 +1219,8 @@
       "category": "dairy-free",
       "notes": "Raspberry frosting swirl + vanilla sponge",
       "priority": 132,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-raspberry-cream-cupcakes"
     },
     {
       "id": "r133",
@@ -1220,7 +1228,8 @@
       "category": "dairy-free",
       "notes": "Brew chai tea to infuse flavor, warm spice frosting",
       "priority": 133,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-chai-spice-vanilla-cupcakes"
     },
     {
       "id": "r134",
@@ -1228,7 +1237,8 @@
       "category": "dairy-free",
       "notes": "Tangy lemon frosting, blueberries folded throughout",
       "priority": 134,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-blueberry-lemon-cupcakes"
     },
     {
       "id": "r135",
@@ -1236,7 +1246,8 @@
       "category": "dairy-free",
       "notes": "Orange zest + vanilla frosting swirl, bright and creamy",
       "priority": 135,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-orange-creamsicle-cupcakes"
     },
     {
       "id": "r136",
@@ -1244,7 +1255,8 @@
       "category": "dairy-free",
       "notes": "Coffee-infused cocoa cake, mocha cream frosting",
       "priority": 136,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-mocha-latte-cupcakes"
     },
     {
       "id": "r137",
@@ -1252,7 +1264,8 @@
       "category": "dairy-free",
       "notes": "Cinnamon cake + vanilla swirl + cinnamon sugar dust",
       "priority": 137,
-      "status": "idea"
+      "status": "draft",
+      "slug": "dairy-free-cinnamon-toast-cupcakes"
     },
     {
       "id": "r138",
@@ -1260,7 +1273,7 @@
       "category": "dairy-free",
       "notes": "Finely grated carrots, dairy-free cream cheese swirl",
       "priority": 138,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "r139",
