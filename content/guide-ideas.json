@@ -483,7 +483,8 @@
       "targetKeyword": "how to convert recipes to dairy-free",
       "notes": "Coconut cream, oat milk, vegan butter guide",
       "priority": 47,
-      "status": "generating"
+      "status": "draft",
+      "slug": "how-to-convert-recipes-to-dairy-free"
     },
     {
       "id": "g048",
@@ -492,7 +493,8 @@
       "targetKeyword": "how to make cupcakes low-sugar without losing flavor",
       "notes": "Allulose, monk fruit, maple extract tips",
       "priority": 48,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-make-cupcakes-low-sugar-without-losing-flavor"
     },
     {
       "id": "g049",
@@ -501,7 +503,8 @@
       "targetKeyword": "how to make cupcakes kid allergen-safe for school",
       "notes": "Peanut-free, nut-free, dye-free, storage-safe",
       "priority": 49,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-make-cupcakes-kid-allergen-safe-for-school"
     },
     {
       "id": "g050",
@@ -510,7 +513,8 @@
       "targetKeyword": "how to bake flat-top cupcakes for easy frosting",
       "notes": "Oven temp control, batter leveling",
       "priority": 50,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-bake-flat-top-cupcakes-for-easy-frosting"
     },
     {
       "id": "g051",
@@ -519,7 +523,8 @@
       "targetKeyword": "how to create flavor layers in one cupcake",
       "notes": "Cake + filling + swirl + garnish philosophy",
       "priority": 51,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-create-flavor-layers-in-one-cupcake"
     },
     {
       "id": "g052",
@@ -528,7 +533,8 @@
       "targetKeyword": "how to design seasonal cupcakes that sell",
       "notes": "Seasonal flavor patterns, mood, color psychology",
       "priority": 52,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-design-seasonal-cupcakes-that-sell"
     }
   ]
 }
