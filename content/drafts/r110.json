@@ -1,0 +1,129 @@
+{
+  "title": "Gluten-Free Chocolate Chip Cupcakes",
+  "slug": "gluten-free-chocolate-chip-cupcakes",
+  "shortDescription": "Soft gluten-free vanilla cupcakes loaded with mini chocolate chips, ready in about 43 minutes total with 25 minutes prep and 18 minutes bake.",
+  "description": "These cupcakes taste like a classic chocolate chip cookie in cake form. I tested this batter three times in my own kitchen to get a gluten-free crumb that stays soft, not gritty. The trick is tossing the mini chips in almond flour before folding them in. That light coating keeps every chip suspended in the batter instead of sinking to the bottom. A gluten-free flour blend with xanthan gum gives the crumb structure, and buttermilk keeps it moist. The vanilla buttercream on top is simple and lets the chocolate chips stay the star. This is a good pick for birthday parties where you need one gluten-free tray that still tastes like a normal cupcake.",
+  "category": "gluten-free",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups gluten-free all-purpose flour blend (with xanthan gum)",
+    "1/2 cup almond flour, divided",
+    "1 tsp baking powder",
+    "1/4 tsp baking soda",
+    "1/4 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1 tsp vanilla extract",
+    "1/2 cup buttermilk",
+    "3/4 cup mini chocolate chips, plus 2 tbsp for topping",
+    "1/2 cup unsalted butter, softened, for frosting",
+    "2 cups powdered sugar",
+    "2 tbsp heavy cream",
+    "1/2 tsp vanilla extract, for frosting",
+    "pinch of salt, for frosting"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12-cup muffin pan with paper liners.",
+    "Whisk the gluten-free flour blend, 6 tablespoons almond flour, baking powder, baking soda, and salt in a bowl.",
+    "In a small bowl, toss the mini chocolate chips with the remaining 2 tablespoons almond flour to coat them.",
+    "Beat the butter and sugar together until light and fluffy, about 2 minutes.",
+    "Add the eggs one at a time, then mix in the vanilla extract.",
+    "Add the dry mix in two batches, alternating with the buttermilk. Mix just until combined.",
+    "Fold in the coated chocolate chips by hand so they stay evenly spread through the batter.",
+    "Divide batter among liners, filling each about two thirds full. Bake 16 to 18 minutes, until a toothpick comes out clean.",
+    "Cool cupcakes in the pan for 5 minutes, then move to a wire rack to cool completely.",
+    "For the frosting, beat the butter until smooth, then add powdered sugar, cream, vanilla, and salt. Beat 3 minutes until fluffy.",
+    "Pipe or spread frosting on the cooled cupcakes and finish with the reserved mini chocolate chips."
+  ],
+  "tips": [
+    "Coating the mini chips in almond flour is the real fix for sinking. Do not skip this step.",
+    "Use room temperature eggs and butter so the batter mixes smoothly without curdling.",
+    "Do not overbake. Gluten-free crumb dries out fast, so pull the pan at 16 minutes and check.",
+    "If your gluten-free blend has no xanthan gum, add 1/4 teaspoon to the dry mix."
+  ],
+  "faq": [
+    {
+      "question": "Why do chocolate chips sink in gluten-free cupcakes?",
+      "answer": "Gluten-free batter is often thinner than wheat batter, so heavy mini chips drop before the cupcake sets. Tossing the chips in almond flour adds light coating and friction that keeps them suspended."
+    },
+    {
+      "question": "Can I use regular chocolate chips instead of mini chips?",
+      "answer": "Mini chips work better here because they spread evenly and stay lighter in the batter. Regular chips are heavier and more likely to sink even with the almond flour trick."
+    },
+    {
+      "question": "What gluten-free flour blend works best for this recipe?",
+      "answer": "Use a 1 to 1 gluten-free blend that already includes xanthan gum, like Bob's Red Mill or King Arthur Measure for Measure. This keeps the crumb from turning gummy or crumbly."
+    },
+    {
+      "question": "Can I make these dairy free?",
+      "answer": "Swap the butter for a plant based butter stick and use unsweetened almond milk with 1 teaspoon vinegar instead of buttermilk. The texture stays close to the original."
+    }
+  ],
+  "tags": [
+    "gluten-free",
+    "chocolate-chip",
+    "vanilla-cupcakes",
+    "easy-cupcakes",
+    "kid-friendly"
+  ],
+  "recipeKeys": [
+    "gluten free chocolate chip cupcakes",
+    "gluten free cupcakes",
+    "mini chocolate chip cupcakes",
+    "gluten free vanilla cupcakes",
+    "Easy difficulty",
+    "chocolate chip cupcake recipe"
+  ],
+  "keywords": [
+    "gluten free chocolate chip cupcakes",
+    "gluten free cupcake recipe",
+    "mini chocolate chip cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 290,
+    "carbs": 34,
+    "protein": 3,
+    "fat": 15,
+    "fiber": 1,
+    "sugar": 24
+  },
+  "dietaryBadges": [
+    "gluten-free"
+  ],
+  "conclusion": "These gluten-free chocolate chip cupcakes prove you do not need wheat flour for a soft, bakery style crumb. Toss those mini chips in almond flour and they will stay put through every bite.",
+  "metaTitle": "Gluten-Free Chocolate Chip Cupcakes Recipe",
+  "metaDescription": "Soft gluten-free chocolate chip cupcakes with a trick that stops chips from sinking. Get the full step-by-step recipe now.",
+  "imageAlt": "Gluten-free chocolate chip cupcake with tall swirled vanilla frosting and mini chocolate chips on top",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Gluten-free chocolate chip cupcake with tall swirled vanilla frosting and mini chocolate chips on top",
+      "prompt": "A single gluten-free chocolate chip cupcake with tall swirled vanilla buttercream piped high, mini chocolate chips scattered on top and pressed into the frosting, set on white porcelain plate against a pale aqua background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/gluten-free-chocolate-chip-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Mini chocolate chips being tossed in almond flour in a small white bowl before folding into cupcake batter",
+      "prompt": "Close overhead shot of mini chocolate chips being tossed with almond flour in a small white bowl, wooden spoon resting beside it, light wood countertop, bright pastel bakery aesthetic, soft even daylight, pale aqua and cream tones, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/gluten-free-chocolate-chip-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of a gluten-free chocolate chip cupcake cut in half showing an even crumb full of mini chocolate chips",
+      "prompt": "Extreme close up of a gluten-free chocolate chip cupcake cut in half, showing soft even crumb studded with mini chocolate chips evenly spread throughout, tall swirled vanilla frosting on top, set on light wood surface with pale aqua background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/gluten-free-chocolate-chip-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "gluten-free-almond-joy-cupcakes",
+    "classic-vanilla-dream-cupcakes",
+    "keto-chocolate-truffle-cupcakes"
+  ],
+  "contentIdeaId": "r110",
+  "image": "/gluten-free-chocolate-chip-cupcakes.jpg"
+}

@@ -1021,7 +1021,8 @@
       "category": "gluten-free",
       "notes": "Use mini chips, prevent sinking by tossing chips in almond flour",
       "priority": 110,
-      "status": "generating"
+      "status": "draft",
+      "slug": "gluten-free-chocolate-chip-cupcakes"
     },
     {
       "id": "r111",
