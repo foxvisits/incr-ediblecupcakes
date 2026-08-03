@@ -1,8 +1,8 @@
 {
   "title": "Nut-Free Chocolate Chip Cupcakes",
   "slug": "nut-free-chocolate-chip-cupcakes",
-  "shortDescription": "Soft vanilla cupcakes studded with mini chocolate chips, ready in about 25 minutes prep and 18 minutes bake.",
-  "description": "These cupcakes are soft, simple, and safe for nut-free kitchens and lunchboxes. Mini chocolate chips get tossed in flour first, so they stay spread through the batter instead of sinking to the bottom.",
+  "shortDescription": "Soft vanilla cupcakes studded with mini chocolate chips, ready in about 43 minutes from prep to cooling.",
+  "description": "These cupcakes are soft, tender, and safe for nut-free kitchens or classrooms. Mini chocolate chips stay evenly spread through the batter instead of sinking to the bottom.",
   "category": "nut-free",
   "difficulty": "Easy",
   "prepTime": "25 mins",
@@ -12,86 +12,93 @@
   "ingredients": [
     "1 3/4 cups all purpose flour",
     "1 1/2 tsp baking powder",
-    "1/4 tsp baking soda",
-    "1/2 tsp salt",
+    "1/4 tsp salt",
     "1/2 cup unsalted butter, softened",
-    "3/4 cup granulated sugar",
+    "1 cup granulated sugar",
     "2 large eggs, room temperature",
     "2 tsp vanilla extract",
     "1/2 cup whole milk",
     "1/4 cup sour cream",
-    "3/4 cup mini chocolate chips",
-    "1 tbsp flour, for coating chips"
+    "3/4 cup mini chocolate chips (nut-free brand)",
+    "1 tbsp flour (for tossing chips)",
+    "1 cup unsalted butter, softened, for frosting",
+    "3 cups powdered sugar, for frosting",
+    "2 tbsp heavy cream, for frosting",
+    "1 tsp vanilla extract, for frosting",
+    "1/8 tsp salt, for frosting"
   ],
   "instructions": [
     "Preheat oven to 350°F. Line a 12 cup muffin pan with paper liners.",
-    "Whisk flour, baking powder, baking soda, and salt in a medium bowl.",
-    "Beat butter and sugar together for 2 minutes, until light and fluffy.",
-    "Add eggs one at a time, beating well after each. Mix in vanilla.",
+    "Whisk flour, baking powder, and salt in a bowl. Set aside.",
+    "Beat softened butter and sugar together for 2 minutes until light and fluffy.",
+    "Add eggs one at a time, then mix in vanilla extract.",
     "Add flour mix in three parts, alternating with milk and sour cream. Mix just until smooth.",
-    "Toss mini chocolate chips with 1 tablespoon flour, then fold gently into the batter.",
-    "Divide batter evenly among liners, filling each about two thirds full.",
-    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in pan 5 minutes, then move to a wire rack."
+    "Toss mini chocolate chips with 1 tablespoon flour. Fold into batter by hand so they spread evenly.",
+    "Divide batter into liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in pan 5 minutes, then move to a rack.",
+    "For frosting, beat butter on its own for 2 minutes until pale and smooth.",
+    "Add powdered sugar one cup at a time, beating well after each addition.",
+    "Mix in heavy cream, vanilla extract, and salt. Beat 2 more minutes until fluffy.",
+    "Pipe or spread frosting on fully cooled cupcakes. Top with a few extra mini chips if you like."
   ],
   "tips": [
-    "Coating the chips in flour keeps them from sinking to the bottom of each cupcake.",
+    "Toss the chips in flour before folding them in. This keeps them from sinking to the bottom of the pan.",
+    "Use room temperature eggs and milk so the batter mixes evenly and stays smooth.",
     "Do not overmix once the flour goes in. Overmixing makes the crumb tough instead of soft.",
-    "Check for nut-free chocolate chip brands if baking for school or allergy safe events.",
-    "Let cupcakes cool fully before frosting, or the frosting will slide right off."
+    "Always double check that your chocolate chip brand is processed in a nut-free facility if allergies are a concern."
   ],
   "faq": [
     {
-      "question": "Why did my chocolate chips sink to the bottom of the cupcakes?",
-      "answer": "This happens when chips go into wet batter with no coating. Toss chips in a spoonful of flour first, then fold them in gently at the very end."
+      "question": "Why do my chocolate chips sink to the bottom of the cupcake?",
+      "answer": "Chips sink when the batter is too thin or the chips are too heavy for the mix. Tossing mini chips in a little flour before folding them in helps them stay suspended through baking."
     },
     {
-      "question": "Can I use regular size chocolate chips instead of mini?",
-      "answer": "Yes, but mini chips give a more even bite and softer texture. Regular chips work fine, just expect slightly bigger pockets of chocolate."
+      "question": "Are mini chocolate chips actually nut-free?",
+      "answer": "Not always, so check the label. Many mainstream brands are made nut-free, but some are processed on shared lines with tree nuts."
     },
     {
-      "question": "Are these cupcakes safe for a nut-free classroom?",
-      "answer": "Yes, as long as you check your chocolate chip brand label. Some chocolate is processed in facilities that also handle nuts, so pick a certified nut-free brand."
+      "question": "Can I make these cupcakes ahead of time?",
+      "answer": "Yes, bake the cupcakes up to 2 days ahead and store unfrosted at room temperature in a sealed container. Frost them the day you plan to serve them for the best texture."
     },
     {
-      "question": "Can I make these ahead of time?",
-      "answer": "Yes. Bake the cupcakes up to 2 days ahead and store unfrosted in an airtight container at room temperature."
+      "question": "Why is my cupcake texture dense instead of soft?",
+      "answer": "Dense cupcakes usually come from overmixing the batter or measuring too much flour. Spoon flour into the cup and level it off instead of scooping straight from the bag."
     }
   ],
   "tags": [
     "nut-free",
     "chocolate-chip",
+    "vanilla-cupcake",
     "kid-friendly",
-    "easy-cupcakes",
-    "vanilla-base"
+    "easy-baking"
   ],
   "recipeKeys": [
-    "nut free chocolate chip cupcakes",
-    "easy chocolate chip cupcakes",
-    "soft cupcake recipe",
-    "school safe cupcakes",
+    "nut-free cupcakes",
+    "chocolate chip cupcakes",
     "mini chocolate chip cupcakes",
+    "nut-free birthday cupcakes",
+    "easy vanilla cupcakes",
     "Easy difficulty"
   ],
   "keywords": [
-    "nut free cupcakes",
-    "chocolate chip cupcakes",
-    "soft cupcake recipe",
-    "kid friendly cupcakes"
+    "nut-free chocolate chip cupcakes",
+    "safe school cupcakes",
+    "mini chip cupcake recipe"
   ],
   "nutritionInfo": {
-    "calories": 245,
-    "carbs": 30,
+    "calories": 320,
+    "carbs": 42,
     "protein": 3,
-    "fat": 12,
+    "fat": 16,
     "fiber": 1,
-    "sugar": 18
+    "sugar": 32
   },
   "dietaryBadges": [
     "nut-free"
   ],
-  "conclusion": "These cupcakes are the ones I bake when I need something safe and simple for a school party. Soft crumb, chocolate in every bite, no nuts in sight.",
-  "metaTitle": "Nut-Free Choc Chip Cupcakes | Incr-EdibleCupCakes",
-  "metaDescription": "Soft nut-free chocolate chip cupcakes with mini chips in every bite. Easy recipe ready in under 45 minutes, perfect for school treats.",
+  "conclusion": "These cupcakes work for birthdays, bake sales, or any nut-free classroom. Soft crumb, even chips, and a simple buttercream make them easy to repeat.",
+  "metaTitle": "Nut-Free Chocolate Chip Cupcakes | Incr-EdibleCupCakes",
+  "metaDescription": "Soft nut-free chocolate chip cupcakes with mini chips in every bite. Get the easy recipe and bake a safe batch today.",
   "imageAlt": "Nut-free chocolate chip cupcake with tall swirled vanilla frosting on a pastel background",
   "images": [
     {
@@ -114,9 +121,9 @@
     }
   ],
   "relatedSlugs": [
-    "nut-free-lemon-sunshine-cupcakes",
     "classic-vanilla-dream-cupcakes",
-    "yellow-cake-cupcakes"
+    "vegan-rainbow-surprise-cupcakes",
+    "keto-chocolate-bliss-cupcakes"
   ],
   "contentIdeaId": "r098",
   "image": "/nut-free-chocolate-chip-cupcakes.jpg"

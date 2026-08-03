@@ -1,8 +1,8 @@
 {
   "title": "Gluten-Free Honey Vanilla Cupcakes",
   "slug": "gluten-free-honey-vanilla-cupcakes",
-  "shortDescription": "These gluten-free honey vanilla cupcakes take 25 minutes to prep and bake in 18 minutes for a soft, tender crumb.",
-  "description": "I made these cupcakes with mild floral honey instead of extra sugar. The honey keeps the crumb soft and adds a gentle floral note. This gluten-free batter uses a simple flour blend and sour cream for tenderness. You get a moist cake that is not overly sweet. I tested this recipe in my home kitchen with three different honey brands. Clover honey worked best for a mild, balanced flavor. Top these with a light honey buttercream or just a dusting of powdered sugar. Either way, the vanilla and honey shine through.",
+  "shortDescription": "Soft gluten-free honey vanilla cupcakes with 25 minutes prep and 18 minutes bake time, topped with honey buttercream.",
+  "description": "These gluten-free honey vanilla cupcakes use a mild floral honey instead of a lot of sugar. The crumb stays soft and tender, thanks to a gluten-free flour blend and a splash of buttermilk.",
   "category": "gluten-free",
   "difficulty": "Easy",
   "prepTime": "25 mins",
@@ -10,84 +10,94 @@
   "totalTime": "43 mins",
   "servings": 12,
   "ingredients": [
-    "2 cups gluten-free all-purpose flour blend (with xanthan gum)",
+    "1 3/4 cups gluten-free 1:1 baking flour blend (with xanthan gum)",
     "1 1/2 tsp baking powder",
-    "1/4 tsp salt",
+    "1/4 tsp baking soda",
+    "1/2 tsp fine salt",
     "1/2 cup unsalted butter, softened",
-    "1/2 cup mild floral honey (clover or acacia)",
+    "1/3 cup mild floral honey (clover or orange blossom)",
+    "1/4 cup granulated sugar",
     "2 large eggs, room temperature",
     "2 tsp pure vanilla extract",
-    "1/3 cup sour cream, room temperature",
-    "1/2 cup whole milk, room temperature"
+    "2/3 cup buttermilk, room temperature",
+    "1/2 cup unsalted butter, softened, for frosting",
+    "2 cups powdered sugar, sifted",
+    "3 tbsp mild floral honey, for frosting",
+    "1 tsp pure vanilla extract, for frosting",
+    "1 to 2 tbsp heavy cream, as needed"
   ],
   "instructions": [
     "Preheat oven to 350°F. Line a 12-cup muffin pan with paper liners.",
-    "In a medium bowl, whisk gluten-free flour blend, baking powder, and salt.",
-    "In a large bowl, beat softened butter and honey together until light and fluffy, about 2 minutes.",
-    "Add eggs one at a time, beating well after each. Mix in vanilla extract.",
-    "Add sour cream and mix until fully combined.",
-    "Alternate adding the flour mixture and milk to the butter mixture, starting and ending with flour. Mix just until smooth.",
-    "Divide batter evenly among liners, filling each about two-thirds full.",
-    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a wire rack."
+    "Whisk the gluten-free flour blend, baking powder, baking soda, and salt in a bowl.",
+    "Beat 1/2 cup butter, 1/3 cup honey, and sugar together for 2 minutes until fluffy.",
+    "Add the eggs one at a time, beating well after each. Mix in vanilla.",
+    "Add the dry mix in three parts, alternating with buttermilk. Mix just until smooth.",
+    "Divide the batter evenly among the liners, filling each about two thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a rack to cool fully.",
+    "For the frosting, beat 1/2 cup butter until pale and smooth, about 2 minutes.",
+    "Add powdered sugar, 3 tablespoons honey, and vanilla. Beat on low, then high, until fluffy.",
+    "Add cream, one teaspoon at a time, until the frosting is soft enough to pipe.",
+    "Pipe or spread the frosting on fully cooled cupcakes. Serve right away or store in the fridge."
   ],
   "tips": [
-    "Use a mild, light-colored honey like clover or acacia so it does not overpower the vanilla.",
-    "Weigh your gluten-free flour blend for the most consistent crumb.",
-    "Let cupcakes cool completely before frosting so honey buttercream does not melt.",
-    "Bring eggs and sour cream to room temperature for a smoother batter."
+    "Use a gluten-free flour blend that already has xanthan gum, or the crumb may turn crumbly.",
+    "Room temperature eggs and buttermilk blend in smoother and give a more even crumb.",
+    "Do not overbake. Gluten-free cupcakes dry out fast once the toothpick comes out clean.",
+    "Warm the honey slightly before measuring so it pours easily and mixes in fast."
   ],
   "faq": [
     {
-      "question": "Can I use a different type of honey?",
-      "answer": "Yes, but stick with a mild, light honey. Dark honey like buckwheat will taste too strong for this recipe."
+      "question": "Can I use a different honey for these cupcakes?",
+      "answer": "Yes, but stick with a mild floral honey like clover or orange blossom. Darker honeys like buckwheat will make the flavor much stronger and less delicate."
     },
     {
-      "question": "Why does this recipe use sour cream?",
-      "answer": "Sour cream keeps the gluten-free crumb soft and moist. It also balances the sweetness of the honey."
+      "question": "Why are my gluten-free cupcakes dense instead of tender?",
+      "answer": "This usually means the flour blend lacked xanthan gum or the batter was overmixed. Mix just until the flour disappears, then stop."
     },
     {
-      "question": "Can I make these dairy-free too?",
-      "answer": "Swap the butter for a dairy-free stick and use full-fat coconut yogurt instead of sour cream. The texture stays close to the original."
+      "question": "Can I make these dairy free too?",
+      "answer": "Swap the butter for a plant based butter stick and use a dairy free buttermilk substitute, like plant milk with a teaspoon of lemon juice. The honey flavor still comes through clearly."
     },
     {
-      "question": "How do I store these cupcakes?",
-      "answer": "Store unfrosted cupcakes at room temperature in a sealed container for up to 3 days. Refrigerate if frosted with dairy buttercream."
+      "question": "How far ahead can I bake these cupcakes?",
+      "answer": "Bake the cupcakes up to two days ahead and store unfrosted in an airtight container at room temperature. Frost them the day you plan to serve them for the best texture."
     }
   ],
   "tags": [
     "gluten-free",
     "honey",
-    "vanilla-cupcakes",
-    "easy-dessert",
-    "spring-baking"
+    "vanilla",
+    "buttercream",
+    "easy-cupcakes"
   ],
   "recipeKeys": [
-    "gluten-free honey vanilla cupcakes",
-    "honey cupcakes recipe",
-    "gluten free vanilla cupcakes",
-    "easy difficulty cupcakes",
-    "floral honey frosting",
-    "tender gluten free crumb"
+    "gluten free honey cupcakes",
+    "honey vanilla cupcakes",
+    "gluten free vanilla cupcakes recipe",
+    "easy difficulty",
+    "honey buttercream frosting",
+    "mild honey cupcake recipe"
   ],
   "keywords": [
-    "gluten-free honey vanilla cupcakes",
-    "honey vanilla cupcake recipe",
-    "gluten free cupcake recipe"
+    "gluten free honey vanilla cupcakes",
+    "honey buttercream cupcakes",
+    "gluten free cupcake recipe",
+    "soft gluten free cupcakes"
   ],
   "nutritionInfo": {
-    "calories": 210,
-    "carbs": 28,
+    "calories": 268,
+    "carbs": 34,
     "protein": 3,
-    "fat": 9,
+    "fat": 13,
     "fiber": 1,
-    "sugar": 15
+    "sugar": 24
   },
   "dietaryBadges": [
-    "Gluten-Free"
+    "gluten-free"
   ],
-  "conclusion": "These gluten-free honey vanilla cupcakes prove simple ingredients make the best treats. Bake a batch this weekend and taste the difference real honey makes.",
-  "metaTitle": "Honey Vanilla Cupcakes | Incr-EdibleCupCakes",
-  "metaDescription": "Soft gluten-free honey vanilla cupcakes with real floral honey and a tender, not-too-sweet crumb. Try this easy scratch recipe today.",
+  "conclusion": "These honey vanilla cupcakes prove gluten-free baking can still be soft and light. Keep the honey mild and the mixing gentle, and the crumb will stay tender every time.",
+  "metaTitle": "Gluten-Free Honey Vanilla Cupcakes | Incr-EdibleCupCakes",
+  "metaDescription": "Soft gluten-free honey vanilla cupcakes with honey buttercream. A tested recipe with a tender crumb and mild sweetness. Bake a batch today.",
   "imageAlt": "Gluten-free honey vanilla cupcake with tall swirled frosting on a pale aqua background",
   "images": [
     {
@@ -110,9 +120,9 @@
     }
   ],
   "relatedSlugs": [
-    "gluten-free-almond-joy-cupcakes",
     "classic-vanilla-dream-cupcakes",
-    "nut-free-lemon-sunshine-cupcakes"
+    "keto-chocolate-bliss-cupcakes",
+    "vegan-rainbow-surprise-cupcakes"
   ],
   "contentIdeaId": "r111",
   "image": "/gluten-free-honey-vanilla-cupcakes.jpg"
