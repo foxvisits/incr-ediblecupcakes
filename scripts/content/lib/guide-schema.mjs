@@ -9,6 +9,12 @@ export function validateGuideDraft(guide, config) {
     if (!guide[field] || !String(guide[field]).trim()) errors.push(`Missing: ${field}`);
   }
 
+  // The recipe validator checked this and the guide one did not, so an
+  // over-length guide title shipped silently and got truncated in results.
+  if ((guide.metaTitle?.length ?? 0) > seo.titleMax) {
+    errors.push(`metaTitle is ${guide.metaTitle.length} chars, limit is ${seo.titleMax}`);
+  }
+
   if ((guide.sections?.length ?? 0) < (seo.minGuideSections ?? 5)) {
     errors.push(`Need at least ${seo.minGuideSections ?? 5} sections`);
   }

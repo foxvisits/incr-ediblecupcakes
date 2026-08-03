@@ -103,7 +103,8 @@
       "targetKeyword": "how to measure ingredients for perfect cupcakes",
       "notes": "Spoon and level flour, weight vs volume, scale recommended",
       "priority": 9,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-measure-ingredients-for-perfect-cupcakes"
     },
     {
       "id": "g010",
@@ -112,7 +113,7 @@
       "targetKeyword": "what oven temperature makes the best cupcakes?",
       "notes": "325F vs 350F vs convection, oven testing tips",
       "priority": 10,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "g011",

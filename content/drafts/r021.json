@@ -1,0 +1,129 @@
+{
+  "title": "Chocolate Fudge Cupcakes with Milk Chocolate Swirl Frosting",
+  "slug": "chocolate-fudge-cupcakes-milk-chocolate-swirl",
+  "shortDescription": "Deep cocoa fudge cupcakes take 25 minutes to prep and 18 minutes to bake, topped with tall milk chocolate buttercream swirls.",
+  "description": "These cupcakes are for anyone who wants a real chocolate hit, not a light cocoa suggestion. The batter uses melted chocolate plus cocoa powder, so the crumb bakes moist and fudgy, not dry and crumbly.",
+  "category": "classic",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 cup all-purpose flour",
+    "1/2 cup unsweetened cocoa powder",
+    "3/4 cup granulated sugar",
+    "1/4 cup packed brown sugar",
+    "1 tsp baking soda",
+    "1/4 tsp salt",
+    "1/2 cup buttermilk, room temperature",
+    "1/2 cup hot coffee (or hot water)",
+    "1/3 cup vegetable oil",
+    "1 large egg, room temperature",
+    "1 tsp vanilla extract",
+    "3 oz semisweet chocolate, melted and cooled",
+    "1 cup unsalted butter, softened (for frosting)",
+    "8 oz milk chocolate, melted and cooled (for frosting)",
+    "2 1/2 cups powdered sugar, sifted (for frosting)",
+    "2 tbsp heavy cream (for frosting)",
+    "1/4 tsp salt (for frosting)"
+  ],
+  "instructions": [
+    "Heat oven to 350°F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk flour, cocoa powder, both sugars, baking soda, and salt in a large bowl.",
+    "In a separate bowl, mix buttermilk, hot coffee, oil, egg, and vanilla.",
+    "Pour wet ingredients into dry ingredients. Whisk until smooth.",
+    "Stir in the melted semisweet chocolate until the batter looks glossy and even.",
+    "Divide batter among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out with a few moist crumbs.",
+    "Cool cupcakes in the pan 5 minutes, then move to a wire rack to cool fully.",
+    "Beat softened butter on medium speed until pale and fluffy, about 2 minutes.",
+    "Add melted milk chocolate and beat until combined.",
+    "Add powdered sugar in two batches, mixing on low, then add cream and salt. Beat on high 1 minute until light.",
+    "Pipe frosting high in a swirl on each cooled cupcake using a large star tip."
+  ],
+  "tips": [
+    "Use hot coffee instead of water. It sharpens the cocoa flavor without tasting like coffee.",
+    "Let melted chocolate cool to room temperature before adding it to batter or butter, so it does not melt the butter or cook the egg.",
+    "Weigh your flour or spoon it into the measuring cup and level it. Packed flour makes dense cupcakes.",
+    "Chill piped cupcakes 10 minutes before serving so the swirl holds its shape in a warm kitchen."
+  ],
+  "faq": [
+    {
+      "question": "Why do these cupcakes use coffee in the batter?",
+      "answer": "Hot coffee deepens the cocoa flavor without making the cupcakes taste like coffee. Hot water works too, but the chocolate flavor is less bold."
+    },
+    {
+      "question": "Can I use dark chocolate instead of milk chocolate in the frosting?",
+      "answer": "Yes, swap in the same amount of dark chocolate for a less sweet frosting. Keep the powdered sugar the same so the texture still pipes well."
+    },
+    {
+      "question": "Why did my frosting turn grainy or split?",
+      "answer": "This happens when the melted chocolate is still warm when added to butter. Let it cool fully to room temperature first, then mix on medium speed, not high."
+    },
+    {
+      "question": "How far ahead can I bake these cupcakes?",
+      "answer": "Bake the cupcakes up to 2 days ahead and store them unfrosted in an airtight container at room temperature. Frost the same day you plan to serve them for the best swirl."
+    }
+  ],
+  "tags": [
+    "chocolate",
+    "classic",
+    "fudge",
+    "milk-chocolate",
+    "buttercream"
+  ],
+  "recipeKeys": [
+    "chocolate fudge cupcakes",
+    "milk chocolate frosting",
+    "chocolate buttercream swirl",
+    "easy difficulty",
+    "cocoa cupcake recipe",
+    "moist chocolate cupcakes"
+  ],
+  "keywords": [
+    "chocolate fudge cupcakes",
+    "milk chocolate buttercream",
+    "classic chocolate cupcake recipe"
+  ],
+  "nutritionInfo": {
+    "calories": 380,
+    "carbs": 45,
+    "protein": 4,
+    "fat": 21,
+    "fiber": 2,
+    "sugar": 34
+  },
+  "dietaryBadges": [],
+  "conclusion": "These cupcakes give you real fudge flavor in the cake and a milk chocolate swirl that piles up tall. Bake a batch when you want chocolate that actually tastes like chocolate.",
+  "metaTitle": "Chocolate Fudge Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Bake moist chocolate fudge cupcakes with milk chocolate swirl frosting. Easy recipe, ready in 43 minutes. Get the full step-by-step plan now.",
+  "imageAlt": "Chocolate fudge cupcake with tall swirled milk chocolate frosting on a pastel background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Chocolate fudge cupcake with tall swirled milk chocolate frosting on a pastel background",
+      "prompt": "A single chocolate fudge cupcake with tall swirled milk chocolate buttercream piped high, dark moist crumb visible at the base, bright pastel bakery aesthetic, soft even daylight, pale aqua background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/chocolate-fudge-cupcakes-milk-chocolate-swirl.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Chocolate cupcake batter being poured into lined muffin pan",
+      "prompt": "Glossy dark chocolate cupcake batter being poured from a bowl into paper lined muffin pan, bright pastel bakery aesthetic, soft even daylight, butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/chocolate-fudge-cupcakes-milk-chocolate-swirl-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of milk chocolate buttercream swirl on top of a fudge cupcake",
+      "prompt": "Close up detail shot of a milk chocolate buttercream swirl piped high on a fudge cupcake, visible piping ridges and glossy chocolate sheen, bright pastel bakery aesthetic, soft even daylight, blush pink background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/chocolate-fudge-cupcakes-milk-chocolate-swirl-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "classic-vanilla-dream-cupcakes",
+    "keto-chocolate-bliss-cupcakes",
+    "boston-cream-cupcakes"
+  ],
+  "contentIdeaId": "r021",
+  "image": "/chocolate-fudge-cupcakes-milk-chocolate-swirl.jpg"
+}

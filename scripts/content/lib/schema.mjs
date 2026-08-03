@@ -70,7 +70,10 @@ export function validateRecipeDraft(recipe, config) {
   }
 
   if ((recipe.metaTitle?.length ?? 0) > seo.titleMax) {
-    warnings.push(`metaTitle longer than ${seo.titleMax} chars`);
+    // Was a warning, which meant an over-length title still shipped and got
+    // truncated in search results. Validation runs before any image is
+    // generated, so a retry costs one text call.
+    errors.push(`metaTitle is ${recipe.metaTitle.length} chars, limit is ${seo.titleMax}`);
   }
 
   if (recipe.rating !== undefined) {

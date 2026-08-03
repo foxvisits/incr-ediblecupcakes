@@ -193,7 +193,8 @@
       "category": "classic",
       "notes": "target keyword: buttermilk cupcakes. Tender crumb, light vanilla sweetness, moisture from buttermilk",
       "priority": 18,
-      "status": "generating"
+      "status": "draft",
+      "slug": "buttermilk-bakery-style-cupcakes"
     },
     {
       "id": "r019",
@@ -201,7 +202,8 @@
       "category": "classic",
       "notes": "Warm brown sugar batter, cinnamon ribbon swirl baked inside, vanilla-cinnamon frosting swirl",
       "priority": 19,
-      "status": "idea"
+      "status": "draft",
+      "slug": "brown-sugar-cinnamon-swirl-cupcakes"
     },
     {
       "id": "r020",
@@ -209,7 +211,8 @@
       "category": "classic",
       "notes": "Real strawberry compote folded into batter + whipped cream cheese frosting. No artificial color",
       "priority": 20,
-      "status": "idea"
+      "status": "draft",
+      "slug": "strawberries-and-cream-cupcakes"
     },
     {
       "id": "r021",
@@ -217,7 +220,8 @@
       "category": "classic",
       "notes": "Moist deep cocoa cake base, milk chocolate buttercream swirled high",
       "priority": 21,
-      "status": "idea"
+      "status": "draft",
+      "slug": "chocolate-fudge-cupcakes-milk-chocolate-swirl"
     },
     {
       "id": "r022",
@@ -225,7 +229,8 @@
       "category": "classic",
       "notes": "Espresso-infused vanilla cake, caramel buttercream swirl, caramel drizzle",
       "priority": 22,
-      "status": "idea"
+      "status": "draft",
+      "slug": "caramel-latte-cupcakes"
     },
     {
       "id": "r023",

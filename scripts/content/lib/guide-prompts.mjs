@@ -38,7 +38,11 @@ GUIDE RULES:
 - sidebarTitle + sidebarBullets: 4-6 quick reference bullets
 - table: optional comparison table with headers[] and rows[][] (2+ rows) when useful
 - relatedLinks: 2-4 internal links {label, href} to /recipe/ or /guides/ pages on site
-- metaTitle: under ${seo.titleMax} chars, format "{Title} | Incr-EdibleCupCakes Guides"
+- metaTitle: HARD limit ${seo.titleMax} chars including the brand suffix. The preferred
+  shape is "{Title} | Incr-EdibleCupCakes Guides", but that suffix costs 29 characters,
+  so most guide titles will not fit it. The limit always wins. Shed parts in this order
+  until the title fits: shorten the title (keep the head keyword), then drop " Guides",
+  then drop " | Incr-EdibleCupCakes". Never return a longer title.
 - metaDescription: ${seo.metaDescriptionMin}-${seo.metaDescriptionMax} chars
 - images: exactly ${imageCount} objects (hero|process|detail), each with alt + prompt
   - Every prompt MUST describe the house style verbatim in its own words, so guides
