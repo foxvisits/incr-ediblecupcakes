@@ -1,0 +1,130 @@
+{
+  "title": "Strawberries & Cream Cupcakes",
+  "slug": "strawberries-and-cream-cupcakes",
+  "shortDescription": "Vanilla cupcakes with real strawberry compote folded into the batter, ready in 25 minutes prep and 18 minutes bake.",
+  "description": "These cupcakes get their pink blush from real strawberry compote, not food coloring. I cook down fresh berries with a little sugar and lemon juice, then fold the cooled compote right into the batter The result is a soft. Moist cupcake with real fruit flecks and a light strawberry taste in every bite. I top them with whipped cream cheese frosting instead of a heavy buttercream. Since the tangy frosting balances the sweetness of the berries. I tested this recipe three times in my home kitchen to get the compote thick enough that it does not make the batter soggy. Draining off extra juice before folding it in is the key step. This is a classic spring and summer bake. Serve them at bridal showers, birthday parties, or just because strawberries are in season.",
+  "category": "classic",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups fresh strawberries, diced small",
+    "3 tablespoons granulated sugar (for compote)",
+    "1 teaspoon lemon juice",
+    "1 1/2 cups all-purpose flour",
+    "1 1/2 teaspoons baking powder",
+    "1/4 teaspoon salt",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1 teaspoon vanilla extract",
+    "1/3 cup whole milk",
+    "8 ounces cream cheese, softened",
+    "1/2 cup unsalted butter, softened (for frosting)",
+    "2 cups powdered sugar",
+    "1/2 cup heavy whipping cream, cold"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F and line a muffin pan with 12 paper liners.",
+    "Cook diced strawberries, 3 tablespoons sugar, and lemon juice in a small saucepan over medium heat for 8 minutes, stirring often.",
+    "Strain the compote through a fine mesh sieve to remove extra juice, then let it cool completely. You should have about 1/2 cup thick compote.",
+    "Whisk flour, baking powder, and salt together in a medium bowl.",
+    "Beat butter and sugar together for 3 minutes until light and fluffy. Add eggs one at a time, then mix in vanilla.",
+    "Add the flour mixture in three parts, alternating with milk. Mix on low speed just until combined.",
+    "Fold in the cooled strawberry compote by hand with a spatula. Do not overmix or the batter will turn pink and dense.",
+    "Divide batter evenly among liners, filling each about two thirds full. Bake for 16 to 18 minutes, until a toothpick comes out clean.",
+    "Cool cupcakes in the pan for 5 minutes, then move to a wire rack to cool fully before frosting.",
+    "Beat cream cheese and butter together until smooth. Add powdered sugar and mix on low until combined.",
+    "In a separate bowl, whip cold heavy cream to stiff peaks. Then fold it into the cream cheese mixture for a light, whipped frosting.",
+    "Pipe frosting onto cooled cupcakes and top with a fresh strawberry slice if you like."
+  ],
+  "tips": [
+    "Straining the compote is not optional. Skip it and your cupcakes will sink in the middle.",
+    "Chill your frosting bowl and beaters before whipping the cream, it whips faster and holds shape longer.",
+    "Use ripe, in season strawberries for the best natural color and flavor. Off season berries can taste watery.",
+    "Frost cupcakes only once they are fully cool, warm cupcakes will melt the whipped cream cheese frosting."
+  ],
+  "faq": [
+    {
+      "question": "Why did my strawberry compote make the cupcakes gummy?",
+      "answer": "Extra liquid in the compote adds too much moisture to the batter. Always strain the cooked strawberries and let the compote cool before folding it in."
+    },
+    {
+      "question": "Can I use frozen strawberries instead of fresh?",
+      "answer": "Yes, thaw them first and drain off the extra liquid. Cook the compote a bit longer since frozen berries release more water."
+    },
+    {
+      "question": "Why is my frosting runny instead of holding a swirl?",
+      "answer": "This usually means the heavy cream was not cold enough or was underwhipped. Chill your bowl and cream, and whip to stiff peaks before folding into the cream cheese base."
+    },
+    {
+      "question": "How far ahead can I make these cupcakes?",
+      "answer": "Bake the cupcakes up to two days ahead and store unfrosted at room temperature in an airtight container. Frost the same day you plan to serve them, since the whipped cream cheese frosting is best fresh."
+    }
+  ],
+  "tags": [
+    "strawberry-cupcakes",
+    "cream-cheese-frosting",
+    "classic-cupcakes",
+    "spring-baking",
+    "fresh-fruit"
+  ],
+  "recipeKeys": [
+    "strawberries and cream cupcakes",
+    "strawberry cupcake recipe",
+    "cream cheese frosting cupcakes",
+    "fresh strawberry compote cupcakes",
+    "classic cupcake recipe",
+    "no artificial color cupcakes",
+    "Medium difficulty"
+  ],
+  "keywords": [
+    "strawberries and cream cupcakes",
+    "strawberry compote cupcakes",
+    "whipped cream cheese frosting"
+  ],
+  "nutritionInfo": {
+    "calories": 310,
+    "carbs": 34,
+    "protein": 4,
+    "fat": 17,
+    "fiber": 1,
+    "sugar": 24
+  },
+  "dietaryBadges": [
+    "vegetarian"
+  ],
+  "conclusion": "These cupcakes prove real fruit beats food coloring every time. The compote step takes a little extra time, but the fresh strawberry taste is worth it.",
+  "metaTitle": "Strawberries & Cream Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Try our Strawberries & Cream Cupcakes with real fruit compote and whipped cream cheese frosting. No artificial color. Bake a batch today.",
+  "imageAlt": "Strawberries and cream cupcake with tall whipped frosting swirl and fresh strawberry slice on top",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Strawberries and cream cupcake with tall whipped frosting swirl and fresh strawberry slice on top",
+      "prompt": "A single strawberries and cream cupcake with tall swirled whipped cream cheese frosting piped high, topped with a fresh strawberry slice, set on a blush pink pastel background with soft even daylight, clean minimal white porcelane plate and pale wood surface, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/strawberries-and-cream-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Fresh strawberry compote being folded into pale vanilla cupcake batter in a glass bowl",
+      "prompt": "Overhead shot of thick strawberry compote being folded into pale vanilla cupcake batter with a spatula in a glass mixing bowl, soft even daylight, blush pink pastel background, clean minimal props on white porcelain and light wood surface, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/strawberries-and-cream-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up cross section of strawberries and cream cupcake showing pink fruit flecks in the crumb",
+      "prompt": "Close up cross section of a strawberries and cream cupcake sliced in half, showing soft crumb with pink strawberry flecks and whipped cream cheese frosting on top, blush pink pastel background, soft even daylight, clean minimal white porcelain plate, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/strawberries-and-cream-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "classic-vanilla-dream-cupcakes",
+    "red-velvet-romance-cupcakes",
+    "cherry-blossom-cupcakes"
+  ],
+  "contentIdeaId": "r020",
+  "image": "/strawberries-and-cream-cupcakes.jpg"
+}

@@ -1,0 +1,126 @@
+{
+  "title": "Brown Sugar Cinnamon Swirl Cupcakes",
+  "slug": "brown-sugar-cinnamon-swirl-cupcakes",
+  "shortDescription": "Warm brown sugar cupcakes with a baked in cinnamon swirl, ready in 25 minutes prep and 18 minutes bake.",
+  "description": "These cupcakes taste like a snickerdoodle and a coffee cake had a baby. The batter uses brown sugar instead of white, so it bakes up soft and a little caramel toned. A ribbon of cinnamon sugar gets swirled through the middle before baking, so every bite has that warm cinnamon pocket. I tested this batch three times in my home kitchen to get the swirl to stay put instead of sinking to the bottom. The vanilla cinnamon frosting on top ties it all together without tasting like a plain vanilla cupcake.",
+  "category": "classic",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup packed light brown sugar",
+    "2 large eggs, room temperature",
+    "1 1/2 tsp vanilla extract",
+    "1/2 cup whole milk, room temperature",
+    "1/4 cup packed light brown sugar (for swirl)",
+    "1 1/2 tsp ground cinnamon (for swirl)",
+    "4 oz cream cheese, softened",
+    "1/2 cup unsalted butter, softened (for frosting)",
+    "2 1/2 cups powdered sugar",
+    "1/2 tsp ground cinnamon (for frosting)",
+    "1/2 tsp vanilla extract (for frosting)"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk flour, baking powder, and salt in a medium bowl. Set aside.",
+    "Beat butter and brown sugar together for 2 minutes until fluffy and light in color.",
+    "Add eggs one at a time, beating well after each. Mix in vanilla extract.",
+    "Add flour mixture and milk in three parts, alternating, starting and ending with flour. Mix just until combined.",
+    "In a small bowl, stir together the swirl brown sugar and cinnamon until it looks like wet sand.",
+    "Fill each liner halfway with batter. Sprinkle 1 teaspoon of the cinnamon swirl mix on top of each.",
+    "Cover with remaining batter, then drag a toothpick through each cup in a swirl pattern to marble the mixture.",
+    "Bake 17 to 19 minutes, until a toothpick in the center comes out clean. Cool in the pan 5 minutes, then move to a wire rack.",
+    "For frosting, beat cream cheese and butter together until smooth. Add powdered sugar, cinnamon, and vanilla, then beat 3 minutes until fluffy.",
+    "Once cupcakes are fully cool, pipe frosting in a swirl on top of each cupcake."
+  ],
+  "tips": [
+    "Room temperature eggs and milk blend faster and give a smoother crumb, so set them out 30 minutes early.",
+    "Do not overmix once the flour goes in. Overmixed batter makes the cinnamon swirl sink instead of staying marbled.",
+    "Chill the frosting for 10 minutes if it feels too soft to pipe a tall swirl.",
+    "Use light brown sugar for a milder caramel taste, or dark brown sugar for a deeper, richer flavor."
+  ],
+  "faq": [
+    {
+      "question": "Why did my cinnamon swirl sink to the bottom of the cupcake?",
+      "answer": "This happens when the swirl mix is too heavy or the batter is too thin. Keep the cinnamon sugar mix dry and only drag a toothpick through once or twice, not stirred all the way in."
+    },
+    {
+      "question": "Can I use dark brown sugar instead of light brown sugar?",
+      "answer": "Yes, dark brown sugar works well here and gives a deeper molasses taste. The cupcakes will look slightly darker but bake the same way."
+    },
+    {
+      "question": "How far ahead can I bake these cupcakes?",
+      "answer": "Bake the unfrosted cupcakes up to 2 days ahead and store in an airtight container at room temperature. Frost them the day you plan to serve for the best texture."
+    },
+    {
+      "question": "Can I make these without cream cheese in the frosting?",
+      "answer": "Swap the cream cheese for an extra 4 tablespoons of butter for a simple vanilla cinnamon buttercream. The frosting will be a bit sweeter and less tangy."
+    }
+  ],
+  "tags": [
+    "cinnamon",
+    "brown-sugar",
+    "classic",
+    "swirl-cupcakes",
+    "fall-baking"
+  ],
+  "recipeKeys": [
+    "brown sugar cinnamon cupcakes",
+    "cinnamon swirl cupcakes recipe",
+    "brown sugar cupcakes",
+    "cinnamon buttercream cupcakes",
+    "Medium difficulty",
+    "fall cupcake recipe"
+  ],
+  "keywords": [
+    "brown sugar cinnamon cupcakes",
+    "cinnamon swirl cupcakes",
+    "vanilla cinnamon frosting"
+  ],
+  "nutritionInfo": {
+    "calories": 320,
+    "carbs": 42,
+    "protein": 3,
+    "fat": 15,
+    "fiber": 1,
+    "sugar": 32
+  },
+  "dietaryBadges": [],
+  "conclusion": "These cupcakes bring cozy snickerdoodle flavor into a soft, swirled cupcake. The cinnamon ribbon inside makes each bite a little different, which is half the fun. Try them for a fall bake sale or just a Sunday afternoon baking project.",
+  "metaTitle": "Brown Sugar Cinnamon Swirl Cupcakes Recipe",
+  "metaDescription": "Try this brown sugar cinnamon swirl cupcakes recipe with a cinnamon ribbon baked inside and vanilla cinnamon frosting on top.",
+  "imageAlt": "Brown sugar cinnamon swirl cupcake with tall vanilla cinnamon frosting swirl on a butter yellow background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Brown sugar cinnamon swirl cupcake with tall vanilla cinnamon frosting swirl on a butter yellow background",
+      "prompt": "A single brown sugar cinnamon swirl cupcake with tall swirled vanilla cinnamon frosting piped high, dusted with a light sprinkle of cinnamon, set on white porcelain against a butter yellow pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/brown-sugar-cinnamon-swirl-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Cinnamon sugar swirl being layered into brown sugar cupcake batter in a muffin tin",
+      "prompt": "Close overhead view of unbaked cupcake batter in paper liners inside a muffin tin, a spoonful of cinnamon sugar mix being layered over the brown sugar batter with a toothpick swirl pattern visible, bright pastel bakery aesthetic, soft even daylight, pale aqua pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/brown-sugar-cinnamon-swirl-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up cross section of a cinnamon swirl cupcake showing the marbled cinnamon ribbon inside",
+      "prompt": "Close up macro shot of a brown sugar cupcake sliced in half, showing the marbled cinnamon swirl ribbon running through the soft crumb, vanilla cinnamon frosting visible on top edge, set on white porcelain plate against a blush pink pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/brown-sugar-cinnamon-swirl-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "classic-vanilla-dream-cupcakes",
+    "spiced-pear-cupcakes",
+    "yellow-cake-cupcakes"
+  ],
+  "contentIdeaId": "r019",
+  "image": "/brown-sugar-cinnamon-swirl-cupcakes.jpg"
+}

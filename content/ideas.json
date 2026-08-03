@@ -193,7 +193,8 @@
       "category": "classic",
       "notes": "target keyword: buttermilk cupcakes. Tender crumb, light vanilla sweetness, moisture from buttermilk",
       "priority": 18,
-      "status": "idea"
+      "status": "draft",
+      "slug": "buttermilk-bakery-style-cupcakes"
     },
     {
       "id": "r019",
@@ -201,7 +202,8 @@
       "category": "classic",
       "notes": "Warm brown sugar batter, cinnamon ribbon swirl baked inside, vanilla-cinnamon frosting swirl",
       "priority": 19,
-      "status": "idea"
+      "status": "draft",
+      "slug": "brown-sugar-cinnamon-swirl-cupcakes"
     },
     {
       "id": "r020",
@@ -209,7 +211,8 @@
       "category": "classic",
       "notes": "Real strawberry compote folded into batter + whipped cream cheese frosting. No artificial color",
       "priority": 20,
-      "status": "idea"
+      "status": "draft",
+      "slug": "strawberries-and-cream-cupcakes"
     },
     {
       "id": "r021",

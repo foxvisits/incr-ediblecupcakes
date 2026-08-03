@@ -95,7 +95,14 @@ export async function cmdGenerate(countArg) {
           break;
         }
 
-        await generateRecipeImages(parsed, config);
+        // SKIP_IMAGES=1 writes the draft with image paths and prompts filled in
+        // but no files generated, so the copy can be reviewed before paying for
+        // three images per recipe. Re-running without the flag fills them in.
+        if (process.env.SKIP_IMAGES === '1') {
+          console.log('  ⏭️  SKIP_IMAGES=1 — text only, no images generated');
+        } else {
+          await generateRecipeImages(parsed, config);
+        }
 
         writeJson(path.join(DRAFTS, `${idea.id}.json`), parsed);
         updateIdeaStatus(ideasData, idea.id, 'draft', { slug: parsed.slug });
