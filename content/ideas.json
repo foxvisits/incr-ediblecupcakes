@@ -193,8 +193,7 @@
       "category": "classic",
       "notes": "target keyword: buttermilk cupcakes. Tender crumb, light vanilla sweetness, moisture from buttermilk",
       "priority": 18,
-      "status": "failed",
-      "error": "Kie createTask failed: 403 Host not in allowlist: api.kie.ai. Add this host to your network egress settings to allow access."
+      "status": "idea"
     },
     {
       "id": "r019",
@@ -202,7 +201,7 @@
       "category": "classic",
       "notes": "Warm brown sugar batter, cinnamon ribbon swirl baked inside, vanilla-cinnamon frosting swirl",
       "priority": 19,
-      "status": "generating"
+      "status": "idea"
     },
     {
       "id": "r020",
