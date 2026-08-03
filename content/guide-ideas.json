@@ -253,7 +253,8 @@
       "targetKeyword": "edible flowers on cupcakes (safe guide)",
       "notes": "List safe edible flowers only",
       "priority": 24,
-      "status": "generating"
+      "status": "draft",
+      "slug": "edible-flowers-on-cupcakes-safe-guide"
     },
     {
       "id": "g025",
@@ -262,7 +263,8 @@
       "targetKeyword": "boutique bakery finishing touches",
       "notes": "Micro pearls, gold leaf, controlled garnish",
       "priority": 25,
-      "status": "idea"
+      "status": "draft",
+      "slug": "boutique-bakery-finishing-touches"
     },
     {
       "id": "g026",
@@ -271,7 +273,8 @@
       "targetKeyword": "how to make frosting stable in hot weather",
       "notes": "Cornstarch, cream cheese, shortening tricks",
       "priority": 26,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-make-frosting-stable-in-hot-weather"
     },
     {
       "id": "g027",
@@ -280,7 +283,8 @@
       "targetKeyword": "how to use a piping bag without mess",
       "notes": "Folding technique, fill level, grip tips",
       "priority": 27,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-use-a-piping-bag-without-mess"
     },
     {
       "id": "g028",
@@ -289,7 +293,8 @@
       "targetKeyword": "why are my cupcakes dry?",
       "notes": "Overbaking, flour ratio, incorrect mixing, moisture control. Include easy rescue tips",
       "priority": 28,
-      "status": "idea"
+      "status": "draft",
+      "slug": "why-are-my-cupcakes-dry"
     },
     {
       "id": "g029",
@@ -298,7 +303,8 @@
       "targetKeyword": "why do cupcakes crack on top?",
       "notes": "Too hot oven, too much leavening, heat + leavening explanation. Offer oven adjustments",
       "priority": 29,
-      "status": "idea"
+      "status": "draft",
+      "slug": "why-do-cupcakes-crack-on-top"
     },
     {
       "id": "g030",
@@ -307,7 +313,7 @@
       "targetKeyword": "how to fix runny or too stiff frosting",
       "notes": "Balance liquids, fats, powdered sugar. Include quick correction table for both directions",
       "priority": 30,
-      "status": "idea"
+      "status": "generating"
     },
     {
       "id": "g031",
