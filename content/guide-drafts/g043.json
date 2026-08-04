@@ -1,152 +1,150 @@
 {
   "title": "Oils in Baking: Neutral vs Flavorful",
   "slug": "oils-in-baking-neutral-vs-flavorful",
-  "summaryShort": "Neutral oils like sunflower or canola keep the cake flavor clean, while flavorful oils like coconut or olive oil add their own taste and change texture. Pick neutral for most cupcakes and flavorful oil only when it fits the recipe.",
+  "summaryShort": "Neutral oils like sunflower or canola keep cupcakes moist without changing flavor, while flavorful oils like coconut or olive oil add their own taste. Choose based on whether you want the batter flavor to lead or stay quiet.",
   "metaTitle": "Oils in Baking: Neutral vs Flavorful | Guides",
-  "metaDescription": "Learn when to use neutral oil versus coconut or olive oil in cupcakes. I tested all three in my kitchen so you get moist crumb every time.",
-  "sidebarTitle": "Quick Oil Cheat Sheet",
+  "metaDescription": "Sunflower, coconut, or olive oil in cupcakes? Learn which oil keeps flavor neutral and which one changes the taste, plus when to use each.",
+  "sidebarTitle": "Quick Oil Guide",
   "sidebarBullets": [
-    "Sunflower and canola oil: no flavor, best all-around choice.",
-    "Coconut oil: adds sweetness, firms up when cold.",
-    "Olive oil: bold flavor, best for citrus or spice cakes.",
-    "Swap oil for melted butter 1:1 by weight, not volume.",
-    "Oil keeps cupcakes moist longer than butter alone.",
-    "Store opened oils away from heat and light."
+    "Sunflower and canola oil: neutral, moist, safe default.",
+    "Melted coconut oil: adds sweetness, firms up when cold.",
+    "Olive oil: best for citrus, spice, or savory-leaning cupcakes.",
+    "Swap oil for oil at a 1:1 ratio in most recipes.",
+    "Never sub solid butter for liquid oil without adjusting liquid.",
+    "Room temperature oil blends smoother into batter."
   ],
   "sections": [
     {
-      "heading": "Why Oil Matters in Cupcake Batter",
+      "heading": "What Does Oil Actually Do in Cupcake Batter",
       "paragraphs": [
-        "Oil stays liquid at room temperature, so it keeps cupcake crumb softer than butter for longer. Butter firms up as it cools, which is why butter cakes can taste dry a day later.",
-        "Oil coats flour proteins fully, which limits gluten formation. That gives you a tender, moist bite instead of a chewy one."
+        "Oil keeps cupcakes moist and tender because it stays liquid at room temperature, unlike butter. That liquid state means it coats flour proteins more evenly, so cupcakes stay soft for days.",
+        "Butter adds structure and a rich taste, but it firms up as it cools. Oil-based cupcakes bounce back better and taste fresher on day two, which is why so many box mixes and bakery recipes lean on oil."
       ],
       "list": []
     },
     {
-      "heading": "Neutral Oils: Sunflower, Canola, and Vegetable",
+      "heading": "Neutral Oils: Sunflower, Canola, and Vegetable Oil",
       "paragraphs": [
-        "Neutral oils have almost no taste, so they let your main flavor lead. I use sunflower oil most often because it is light and never turns bitter when baked.",
-        "Canola and plain vegetable oil work the same way. Pick whichever is freshest and cheapest at your store."
+        "Neutral oils have almost no taste, so they let your main flavor, like vanilla or cocoa, come through clearly. I use sunflower oil most often because it is light and never turns bitter when baked.",
+        "Canola and plain vegetable oil work the same way. They are the safest choice when a recipe already has a strong flavor and you do not want the oil competing with it."
       ],
       "list": [
-        "Best for vanilla, chocolate, and fruit cupcakes.",
-        "Won't clash with delicate flavors like lavender or lemon.",
-        "Stable at high oven heat, no smoking or off tastes."
+        "Sunflower oil: light texture, mild taste, my go to for vanilla cupcakes.",
+        "Canola oil: budget friendly, neutral, works in almost any recipe.",
+        "Vegetable oil: usually soybean based, neutral and widely available."
       ]
     },
     {
-      "heading": "Coconut Oil: Sweet, Rich, and Temperature Sensitive",
+      "heading": "Coconut Oil: When It Adds Flavor and When It Does Not",
       "paragraphs": [
-        "Coconut oil adds a light sweet taste and pairs well with tropical or nutty flavors. It solidifies below 76°F, so cupcakes made with it can feel denser once fully cooled.",
-        "Melt it fully before mixing, and bring other wet ingredients to room temperature. Cold eggs or milk can make melted coconut oil seize into hard bits."
+        "Refined coconut oil is nearly flavorless, while unrefined (virgin) coconut oil brings a noticeable coconut taste. Pick refined if you want moisture without flavor, and virgin if you want that coconut note on purpose.",
+        "Coconut oil is solid below 76°F, so it must be melted before mixing. If your kitchen is cold, the batter can look slightly grainy as the oil starts to firm up again, so mix quickly and bake right away."
       ],
-      "list": [
-        "Great with pineapple, banana, mango, or almond cupcakes.",
-        "Refined coconut oil has less coconut taste than virgin.",
-        "Cupcakes may firm up more in the fridge than oil made with sunflower."
-      ]
+      "list": []
     },
     {
-      "heading": "Olive Oil: Bold Flavor for the Right Recipe",
+      "heading": "Olive Oil: A Flavorful Choice for the Right Recipe",
       "paragraphs": [
-        "Olive oil brings a fruity, sometimes peppery taste that works in citrus, spice, or coffee cupcakes. Use a mild extra virgin oil, not a sharp peppery one meant for salads.",
-        "I tested a strong Tuscan olive oil in a vanilla batter once and it fought with the flavor. Save bold oils for cakes built to carry them."
+        "Olive oil adds a fruity, sometimes peppery taste that pairs well with citrus, olive oil cake style batters, or spiced cupcakes. It is not the right pick for delicate vanilla or classic yellow cupcakes, where its taste can feel out of place.",
+        "Use a mild, light olive oil rather than a strong extra virgin one, unless the recipe is built around that bold flavor. I tested a lemon olive oil cupcake and the peppery finish worked beautifully with the citrus."
       ],
-      "list": [
-        "Pairs well with orange, lemon, rosemary, or cardamom.",
-        "Choose light or mild olive oil for baking, not solid styles.",
-        "Adds a slightly savory edge that some bakers love in chocolate."
-      ]
+      "list": []
     },
     {
       "heading": "How to Choose the Right Oil for Your Recipe",
       "paragraphs": [
-        "Match the oil to the flavor you want to taste last. If the main flavor is delicate, go neutral so nothing competes with it.",
-        "If the recipe already leans rich or fruity, a flavorful oil can add depth instead of noise."
+        "Match the oil to the flavor you want in the final cupcake, not just what is in your pantry. If the recipe calls for vanilla, chocolate, or funfetti, stick with neutral oil so nothing else competes.",
+        "If the recipe already leans tropical, citrusy, or spiced, a flavorful oil can support that direction instead of fighting it."
       ],
       "list": [
-        "Delicate flavors (vanilla, lemon, lavender): use neutral oil.",
-        "Tropical or nutty flavors: coconut oil works well.",
-        "Citrus, spice, or coffee cakes: try mild olive oil.",
-        "Unsure: default to sunflower or canola oil."
+        "Vanilla, chocolate, or classic cupcakes: use sunflower or canola oil.",
+        "Coconut, piña colada, or tropical cupcakes: use virgin coconut oil.",
+        "Lemon, orange, or olive oil cake style cupcakes: use light olive oil.",
+        "Spiced cupcakes like carrot or pumpkin: neutral oil or light olive oil both work."
       ]
     },
     {
-      "heading": "Swapping Oil for Butter in a Recipe",
+      "heading": "Swapping Oils Without Ruining the Batter",
       "paragraphs": [
-        "You can swap oil for melted butter using a 1:1 ratio by weight, not by cup measure. Butter is about 80 percent fat and 20 percent water, so cupcakes may turn out slightly denser.",
-        "Start with three quarters of the butter amount in oil, then adjust after one test batch."
+        "Most oils swap 1:1 by volume, so a cup of sunflower oil can become a cup of melted coconut oil with no other changes. The one thing to watch is temperature, since melted coconut oil needs to cool to room temperature before mixing or it can cook the eggs slightly.",
+        "Do not substitute solid butter directly for oil. Butter contains water and air that oil does not, so you would also need to adjust the liquid and leavening in the recipe."
       ],
       "list": []
     }
   ],
   "howToSteps": [
-    "Pick your oil based on the main flavor of the cupcake.",
-    "Measure oil by volume using a liquid measuring cup, not a dry cup.",
-    "If using coconut oil, melt it fully and cool slightly before adding.",
-    "Bring eggs, milk, or yogurt to room temperature before mixing with oil.",
-    "Whisk oil into wet ingredients first, then combine with dry ingredients.",
-    "Bake right away since oil batters do not need to rest.",
-    "Cool cupcakes fully before frosting to avoid a greasy top."
+    "Read the recipe and note what flavor it is built around.",
+    "Pick a neutral oil like sunflower or canola for classic flavors.",
+    "Pick a flavorful oil like coconut or olive oil for tropical, citrus, or spiced recipes.",
+    "Melt solid coconut oil and let it cool to room temperature before mixing.",
+    "Measure oil at room temperature for the smoothest batter.",
+    "Swap oils 1:1 by volume if you need to substitute.",
+    "Bake as directed and check texture once cooled, oil based cupcakes should feel soft, not greasy."
   ],
   "faq": [
     {
-      "question": "Can I mix two oils in one cupcake recipe?",
-      "answer": "Yes, blending neutral oil with a small amount of coconut or olive oil works well. Try three quarters neutral oil and one quarter flavorful oil to add taste without overpowering the batter."
+      "question": "Can I use olive oil in a plain vanilla cupcake recipe?",
+      "answer": "You can, but the peppery taste of olive oil often clashes with plain vanilla. Save olive oil for citrus, spiced, or olive oil cake style recipes instead."
     },
     {
-      "question": "Does oil make cupcakes greasy?",
-      "answer": "Too much oil can leave a greasy texture, so stick close to the recipe amount. Most cupcake recipes use between one third and one half cup of oil per dozen."
+      "question": "Does refined coconut oil taste like coconut?",
+      "answer": "No, refined coconut oil is processed to remove most of its flavor and smell. Use virgin coconut oil if you want the cupcake to actually taste like coconut."
     },
     {
-      "question": "Why did my coconut oil cupcakes turn dense after cooling?",
-      "answer": "Coconut oil solidifies below 76°F, which firms up the crumb as cupcakes cool. Let them sit at room temperature for a few minutes before serving to soften slightly."
+      "question": "Can I substitute melted butter for oil in a cupcake recipe?",
+      "answer": "Not directly, since butter has water and air that oil lacks. Swapping without adjusting other liquids can make the batter too wet or too dry."
     },
     {
-      "question": "Is olive oil healthier than sunflower oil in baking?",
-      "answer": "Both are similar in fat content, so the choice comes down to taste, not health. Pick olive oil for the flavor it adds, not because it changes the nutrition much."
+      "question": "Which oil makes the moistest cupcakes?",
+      "answer": "Neutral oils like sunflower or canola tend to produce the moistest, softest crumb because they stay liquid and coat flour evenly. Coconut oil comes close but can firm up slightly once cupcakes cool."
     }
   ],
   "table": {
     "headers": [
-      "Oil Type",
-      "Flavor Impact",
-      "Best Used For",
-      "Texture Effect"
+      "Oil",
+      "Flavor",
+      "Best Use"
     ],
     "rows": [
       [
-        "Sunflower or canola",
-        "None",
-        "Vanilla, chocolate, fruit cupcakes",
-        "Soft, moist, stays tender days later"
+        "Sunflower oil",
+        "Neutral",
+        "Vanilla, chocolate, funfetti cupcakes"
       ],
       [
-        "Coconut oil",
-        "Light sweet, tropical",
-        "Banana, mango, almond cupcakes",
-        "Firmer once fully cooled"
+        "Canola oil",
+        "Neutral",
+        "Any everyday cupcake recipe"
       ],
       [
-        "Olive oil (mild)",
-        "Fruity, slightly peppery",
-        "Citrus, spice, coffee cupcakes",
-        "Moist with a slightly denser crumb"
+        "Refined coconut oil",
+        "Nearly neutral",
+        "Moist cupcakes without coconut taste"
+      ],
+      [
+        "Virgin coconut oil",
+        "Coconut flavor",
+        "Tropical or coconut cupcakes"
+      ],
+      [
+        "Light olive oil",
+        "Mild fruity flavor",
+        "Citrus or spiced cupcakes"
       ]
     ]
   },
   "relatedLinks": [
     {
-      "label": "The Science of a Moist Cupcake Crumb",
-      "href": "/guides/the-science-of-a-moist-cupcake-crumb"
+      "label": "Vanilla Cupcakes Recipe",
+      "href": "/recipe/classic-vanilla-cupcakes"
     },
     {
-      "label": "How to Make Cupcakes Moist Every Time",
-      "href": "/guides/how-to-make-cupcakes-moist-every-time"
+      "label": "Lemon Olive Oil Cupcakes",
+      "href": "/recipe/lemon-olive-oil-cupcakes"
     },
     {
-      "label": "Brown Butter in Baking: Complete Guide and Ratios",
-      "href": "/guides/brown-butter-in-baking-complete-guide-and-ratios"
+      "label": "How to Measure Baking Ingredients Correctly",
+      "href": "/guides/how-to-measure-baking-ingredients-correctly"
     }
   ],
   "images": [
@@ -172,5 +170,6 @@
   "contentIdeaId": "g043",
   "category": "Baking guides",
   "targetKeyword": "oils in baking: neutral vs flavorful",
-  "image": "/guide-oils-in-baking-neutral-vs-flavorful.jpg"
+  "image": "/guide-oils-in-baking-neutral-vs-flavorful.jpg",
+  "imageAlt": "Three small glass bottles of sunflower, coconut, and olive oil next to a frosted cupcake"
 }

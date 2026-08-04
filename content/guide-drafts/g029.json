@@ -1,164 +1,154 @@
 {
   "title": "Why Do Cupcakes Crack on Top?",
   "slug": "why-do-cupcakes-crack-on-top",
-  "summaryShort": "Cupcakes crack on top when the oven is too hot or the batter has too much leavening, so the outside sets before the inside finishes rising and pushes through the crust.",
+  "summaryShort": "Cupcakes crack on top when the oven is too hot or the batter has too much leavening, so the outside sets before the inside finishes rising and pushes through.",
   "metaTitle": "Why Do Cupcakes Crack on Top? | Guides",
-  "metaDescription": "Why do cupcakes crack on top? Learn the oven and leavening causes, plus simple fixes I tested at home to get smooth, domed tops every time.",
-  "sidebarTitle": "Quick Fixes for Cracked Tops",
+  "metaDescription": "Why do cupcakes crack on top? Learn the heat and leavening reasons, plus oven fixes I use at home to bake smooth, even cupcake tops every time.",
+  "sidebarTitle": "Quick Fixes For Cracked Tops",
   "sidebarBullets": [
     "Check oven temp with a separate thermometer.",
-    "Drop oven heat by 15 to 25 degrees F.",
+    "Bake at 325-350°F, not higher.",
     "Measure baking powder and soda exactly.",
     "Fill liners two thirds full, not more.",
-    "Bake on the middle rack, not top.",
-    "Avoid opening the oven in the first 15 minutes."
+    "Avoid opening the door in the first 15 minutes.",
+    "Use the center rack for even heat."
   ],
   "sections": [
     {
       "heading": "What Causes Cracked Cupcake Tops",
       "paragraphs": [
-        "Cracked tops happen when the outside of the cupcake bakes and sets too fast while the inside is still rising. The batter keeps pushing up from underneath, and since the top crust is already firm, it splits instead of stretching smoothly.",
-        "This usually comes down to two things working together: an oven that runs hotter than it should, and a batter with too much lift from baking powder or soda."
+        "Cupcakes crack on top mainly from too much heat or too much leavening. Both of which make the batter rise too fast on the outside edges.",
+        "When the outer crust sets before the center finishes expanding, the batter underneath keeps pushing up and breaks through the surface.",
+        "I tested this in my home kitchen with the same batter at two oven temps. The 375°F batch cracked every time, the 325°F batch stayed smooth."
       ],
       "list": []
     },
     {
-      "heading": "Too Hot Oven: The Main Culprit",
+      "heading": "The Role Of Oven Heat",
       "paragraphs": [
-        "A too hot oven is the number one reason cupcakes crack on top. High heat bakes the surface almost instantly, forming a dry crust in the first few minutes.",
-        "Meanwhile the center is still full of steam and air trying to expand. That trapped pressure has nowhere to go but up and out, so it breaks through the hardened top."
+        "A too hot oven bakes the outside of the cupcake before the inside has a chance to catch up, and that gap is what splits the top.",
+        "Most home ovens run hotter than the dial says, sometimes by 25 degrees or more. That hidden heat spike is a common hidden cause of cracking.",
+        "High heat also dries the surface fast, forming a thin crust early. Once that crust sets, it has nowhere to go but crack when the middle keeps rising."
       ],
-      "list": [
-        "Most home ovens run 20 to 50 degrees F hotter than the dial shows.",
-        "Preheating for less than 15 minutes gives uneven heat.",
-        "Dark or thin metal pans absorb heat faster and worsen the problem."
-      ]
+      "list": []
     },
     {
-      "heading": "Too Much Leavening: The Second Cause",
+      "heading": "Too Much Leavening Makes It Worse",
       "paragraphs": [
-        "Extra baking powder or soda makes batter rise too fast and too high, straining the crust until it splits. Leavening creates gas bubbles that expand in the oven, and more gas means more upward force.",
-        "If a recipe calls for too much leavening, or you measured with a heaping spoon instead of a level one. The batter simply outgrows its own structure."
+        "Extra baking powder or soda creates gas faster than the batter structure can hold it, so the top domes hard and splits.",
+        "A little leavening lifts cupcakes gently. Too much creates big bubbles that rise fast, stretch the crust, and crack once the outside firms up.",
+        "This is why doubling baking powder by accident, even by half a teaspoon, can turn a smooth batch into a cracked one."
       ],
-      "list": [
-        "Standard ratio is about 1 to 1. 25 tsp baking powder per cup of flour.",
-        "Baking soda needs an acid like buttermilk or cocoa to work, and too much unbalanced soda leaves a bitter crack-prone rise.",
-        "Doubling a recipe without adjusting leavening often causes over-rising."
-      ]
+      "list": []
     },
     {
-      "heading": "How Heat and Leavening Work Together",
+      "heading": "How Heat And Leavening Work Together",
       "paragraphs": [
-        "Heat and leavening combine to crack tops because fast heat sets the crust while extra gas still pushes hard against it. Think of it like a balloon with a stiff shell forming around it before it finishes inflating.",
-        "In my home kitchen, I found that fixing either one alone helped a little. Fixing both together is what gave me smooth, evenly domed tops."
+        "Cracking usually happens when both problems overlap: hot oven plus strong leavening pushes the batter up fast while the crust sets fast too.",
+        "Think of it like a balloon inflating inside a shell that is hardening in real time. The gas needs room, the shell has none, so it splits.",
+        "Fixing just one factor often helps, but fixing both gives the smoothest, most reliable tops."
       ],
       "list": []
     },
     {
       "heading": "Oven Adjustments That Fix Cracking",
       "paragraphs": [
-        "The fastest fix is lowering your oven temperature by 15 to 25 degrees F and baking a few minutes longer. This slows the crust from forming so early, letting the inside catch up gently.",
-        "Pair that with an oven thermometer, since dial temperatures are often wrong by a wide margin."
+        "Lowering your oven temperature and confirming it with a thermometer solves most cracking problems within one or two test batches.",
+        "I keep a $6 oven thermometer clipped to my center rack. It caught my oven running 20 degrees hot, which explained months of domed, cracked cupcakes.",
+        "Small oven changes make a big difference here, since cupcakes are small and react fast to temperature swings."
       ],
       "list": [
-        "Lower temp by 15 to 25 degrees F for a slower, even rise.",
-        "Use an oven thermometer to confirm true temperature.",
-        "Bake on the middle rack for even heat flow.",
-        "Avoid convection or fan settings unless the recipe calls for them.",
-        "Rotate the pan halfway through if your oven has hot spots."
+        "Bake at 325-350°F instead of 375°F or higher.",
+        "Use an oven thermometer, not just the built in dial.",
+        "Bake on the center rack for even airflow.",
+        "Rotate the pan halfway through if your oven has hot spots.",
+        "Avoid convection fan settings unless your recipe is written for it."
       ]
     },
     {
-      "heading": "Batter Fixes to Prevent Cracked Tops",
+      "heading": "Getting Leavening Right",
       "paragraphs": [
-        "Cutting back leavening slightly and measuring it with a level spoon stops over-rising at the source. Also avoid overfilling liners, since a too full cup forces batter higher and faster.",
-        "Small changes here make a bigger difference than most bakers expect."
+        "Measuring baking powder and soda exactly, and checking they are fresh, prevents the gas overload that cracks cupcake tops.",
+        "Old baking powder loses power, which tempts bakers to add extra scoops. That extra scoop is often the real problem, not the recipe.",
+        "Stick to level teaspoons, spoon and level flour too, since dense flour measuring can throw off the leavening to liquid ratio."
       ],
       "list": [
-        "Level off baking powder and soda with a knife, never heaping.",
-        "Fill liners two thirds full, not to the rim.",
-        "Do not substitute baking soda for baking powder without adjusting the amount.",
-        "Let batter rest 5 minutes before baking to release large air bubbles."
+        "Use level teaspoons, not heaping ones.",
+        "Test baking powder freshness in warm water, it should fizz strongly.",
+        "Do not substitute baking soda for baking powder without adjusting acid.",
+        "Whisk dry ingredients well so leavening spreads evenly through the batter."
       ]
     }
   ],
   "howToSteps": [
-    "Check your oven with a separate thermometer to see the true temperature.",
-    "Lower the oven setting by 15 to 25 degrees F from the recipe.",
-    "Measure baking powder and soda with a level spoon, not heaping.",
-    "Fill cupcake liners two thirds full at most.",
-    "Place the pan on the middle rack for even heat.",
-    "Bake without opening the door for the first 15 minutes.",
-    "Test with a toothpick a few minutes before the timer ends.",
-    "Cool cupcakes in the pan for 5 minutes before moving to a rack."
+    "Check your oven temperature with a separate thermometer before baking.",
+    "Set the oven to 325-350°F for standard cupcakes.",
+    "Measure baking powder and soda with level, not heaping, spoons.",
+    "Check that leavening agents are fresh, not expired or weak.",
+    "Fill liners about two thirds full to leave room for rise.",
+    "Place the pan on the center rack for even heat.",
+    "Avoid opening the oven door during the first 15 minutes.",
+    "Test one cupcake first if you suspect your oven runs hot."
   ],
   "faq": [
     {
-      "question": "Why do cupcakes crack on top?",
-      "answer": "Cupcakes crack on top when the outside sets too fast in a hot oven while extra leavening keeps pushing the inside upward. The stiff crust splits because it cannot stretch to match the rising batter underneath."
+      "question": "Are cracked top cupcakes still safe to eat?",
+      "answer": "Yes, cracked tops are a texture and looks issue, not a safety issue. The cupcakes are still fully baked and safe once they pass the toothpick test."
     },
     {
-      "question": "Does lowering the oven temperature really stop cracking?",
-      "answer": "Yes, dropping the temperature by 15 to 25 degrees F slows crust formation so the inside has time to rise without breaking through. I tested this in my own kitchen and it fixed cracking on nearly every batch."
+      "question": "Does altitude cause cupcakes to crack on top?",
+      "answer": "High altitude can make cracking worse because lower air pressure lets gas expand faster. If you bake above 3000 feet, reduce leavening slightly and lower oven temp by 25 degrees."
     },
     {
-      "question": "Can too much baking powder cause cracked tops?",
-      "answer": "Too much baking powder creates excess gas that pushes hard against an already set crust, causing it to split. Sticking close to the standard ratio of about 1 to 1. 25 tsp per cup of flour helps prevent this."
+      "question": "Will a dark or light cupcake pan change cracking?",
+      "answer": "Dark pans absorb more heat and can crack tops faster than light pans. If you only own dark pans, lower your oven temp by about 15 degrees to compensate."
     },
     {
-      "question": "Is a cracked top cupcake still safe to eat?",
-      "answer": "Yes, a cracked top is a texture issue, not a safety issue, and the cupcake is fully safe to eat. It just will not look as smooth or domed as one baked at the right temperature."
-    },
-    {
-      "question": "Should I use an oven thermometer for cupcakes?",
-      "answer": "An oven thermometer is one of the best tools for stopping cracked tops, since many home ovens run hotter than the dial shows. It lets you catch and correct that gap before it affects your bake."
+      "question": "Can frosting hide a cracked cupcake top?",
+      "answer": "Yes, a swirl of frosting piped high easily covers a cracked top. Fixing the cause still matters if you want a taller, more even rise for the frosting to sit on."
     }
   ],
   "table": {
     "headers": [
       "Cause",
-      "What It Looks Like",
+      "What You See",
       "Fix"
     ],
     "rows": [
       [
-        "Too hot oven",
-        "Deep crack, browned edges, pale center",
-        "Lower temp 15 to 25 degrees F"
+        "Oven too hot",
+        "Deep crack, hard domed top",
+        "Lower to 325-350°F, use thermometer"
       ],
       [
-        "Too much leavening",
-        "Domed then split top, sometimes bitter taste",
-        "Level off baking powder and soda"
+        "Too much baking powder",
+        "Big dome, crack, bitter taste",
+        "Measure level teaspoons, check recipe"
       ],
       [
-        "Overfilled liners",
-        "Batter spills over, cracks at the rim",
-        "Fill only two thirds full"
+        "Old leavening",
+        "Uneven rise, weak crack",
+        "Test freshness, replace if flat"
       ],
       [
-        "Opening oven early",
-        "Uneven crack, one side worse than the other",
-        "Wait 15 minutes before checking"
+        "Dark metal pan",
+        "Crack plus darker sides",
+        "Lower oven temp 15 degrees"
       ]
     ]
   },
   "relatedLinks": [
     {
-      "label": "Why Do Cupcakes Sink After Baking?",
-      "href": "/guides/why-do-cupcakes-sink-after-baking"
+      "label": "How To Get Flat Cupcake Tops",
+      "href": "/guides/how-to-get-flat-cupcake-tops"
     },
     {
-      "label": "10 Cupcake Mistakes and How to Fix Them",
-      "href": "/guides/10-cupcake-mistakes-and-how-to-fix-them"
+      "label": "Classic Vanilla Cupcakes Recipe",
+      "href": "/recipe/classic-vanilla-cupcakes"
     },
     {
-      "label": "The Science of a Moist Cupcake Crumb",
-      "href": "/guides/the-science-of-a-moist-cupcake-crumb"
-    },
-    {
-      "label": "High-Altitude Cupcake Baking Adjustments",
-      "href": "/guides/high-altitude-cupcake-baking-adjustments"
+      "label": "Best Frosting Piping Techniques",
+      "href": "/guides/best-frosting-piping-techniques"
     }
   ],
   "images": [
@@ -184,5 +174,6 @@
   "contentIdeaId": "g029",
   "category": "Baking guides",
   "targetKeyword": "why do cupcakes crack on top?",
-  "image": "/guide-why-do-cupcakes-crack-on-top.jpg"
+  "image": "/guide-why-do-cupcakes-crack-on-top.jpg",
+  "imageAlt": "A row of vanilla cupcakes with smooth domed tops next to one with a cracked top, tall swirled frosting on a butter yellow background"
 }
