@@ -103,8 +103,9 @@
       "targetKeyword": "how to measure ingredients for perfect cupcakes",
       "notes": "Spoon and level flour, weight vs volume, scale recommended",
       "priority": 9,
-      "status": "draft",
-      "slug": "how-to-measure-ingredients-for-perfect-cupcakes"
+      "status": "scheduled",
+      "slug": "how-to-measure-ingredients-for-perfect-cupcakes",
+      "publishAt": "2026-08-04T15:34:00+02:00"
     },
     {
       "id": "g010",
@@ -113,8 +114,9 @@
       "targetKeyword": "what oven temperature makes the best cupcakes?",
       "notes": "325F vs 350F vs convection, oven testing tips",
       "priority": 10,
-      "status": "draft",
-      "slug": "what-oven-temperature-makes-the-best-cupcakes"
+      "status": "scheduled",
+      "slug": "what-oven-temperature-makes-the-best-cupcakes",
+      "publishAt": "2026-08-05T14:39:00+02:00"
     },
     {
       "id": "g011",
@@ -123,8 +125,9 @@
       "targetKeyword": "how to cream butter and sugar properly",
       "notes": "Aeration, texture change, visual cues, warm friendly tone",
       "priority": 11,
-      "status": "draft",
-      "slug": "how-to-cream-butter-and-sugar-properly"
+      "status": "scheduled",
+      "slug": "how-to-cream-butter-and-sugar-properly",
+      "publishAt": "2026-08-06T16:34:00+02:00"
     },
     {
       "id": "g012",
@@ -133,8 +136,9 @@
       "targetKeyword": "why room temperature ingredients matter",
       "notes": "Emulsification + smooth batter structure",
       "priority": 12,
-      "status": "draft",
-      "slug": "why-room-temperature-ingredients-matter"
+      "status": "scheduled",
+      "slug": "why-room-temperature-ingredients-matter",
+      "publishAt": "2026-08-07T15:17:00+02:00"
     },
     {
       "id": "g013",
@@ -143,8 +147,9 @@
       "targetKeyword": "how long should you beat cupcake batter?",
       "notes": "Teach the just-combined concept, avoid overmixing",
       "priority": 13,
-      "status": "draft",
-      "slug": "how-long-should-you-beat-cupcake-batter"
+      "status": "scheduled",
+      "slug": "how-long-should-you-beat-cupcake-batter",
+      "publishAt": "2026-08-08T11:33:00+02:00"
     },
     {
       "id": "g014",
@@ -153,8 +158,9 @@
       "targetKeyword": "how to test cupcakes for doneness",
       "notes": "Toothpick test + light bounce method",
       "priority": 14,
-      "status": "draft",
-      "slug": "how-to-test-cupcakes-for-doneness"
+      "status": "scheduled",
+      "slug": "how-to-test-cupcakes-for-doneness",
+      "publishAt": "2026-08-09T10:54:00+02:00"
     },
     {
       "id": "g015",
@@ -163,8 +169,9 @@
       "targetKeyword": "how to fill cupcake liners evenly",
       "notes": "Ice cream scoop for even fill, three-quarter height rule",
       "priority": 15,
-      "status": "draft",
-      "slug": "how-to-fill-cupcake-liners-evenly"
+      "status": "scheduled",
+      "slug": "how-to-fill-cupcake-liners-evenly",
+      "publishAt": "2026-08-10T14:43:00+02:00"
     },
     {
       "id": "g016",
@@ -173,8 +180,9 @@
       "targetKeyword": "how to cool cupcakes without drying them",
       "notes": "Avoid overcooling + airflow tips",
       "priority": 16,
-      "status": "draft",
-      "slug": "how-to-cool-cupcakes-without-drying-them"
+      "status": "scheduled",
+      "slug": "how-to-cool-cupcakes-without-drying-them",
+      "publishAt": "2026-08-11T16:30:00+02:00"
     },
     {
       "id": "g017",
@@ -183,8 +191,9 @@
       "targetKeyword": "batch baking: how to bake 24+ cupcakes at once",
       "notes": "Even heat distribution + tray rotation tips",
       "priority": 17,
-      "status": "draft",
-      "slug": "batch-baking-24-cupcakes-at-once"
+      "status": "scheduled",
+      "slug": "batch-baking-24-cupcakes-at-once",
+      "publishAt": "2026-08-12T11:03:00+02:00"
     },
     {
       "id": "g018",
@@ -193,8 +202,9 @@
       "targetKeyword": "cupcake storage: room temp, fridge, or freezer?",
       "notes": "Storage timelines + airtight technique",
       "priority": 18,
-      "status": "draft",
-      "slug": "cupcake-storage-room-temp-fridge-or-freezer"
+      "status": "scheduled",
+      "slug": "cupcake-storage-room-temp-fridge-or-freezer",
+      "publishAt": "2026-08-13T17:33:00+02:00"
     },
     {
       "id": "g019",
@@ -203,8 +213,9 @@
       "targetKeyword": "how to pipe the perfect bakery-style swirl",
       "notes": "Step-by-step piping tips, wrist motion, pressure control, bag angle",
       "priority": 19,
-      "status": "draft",
-      "slug": "how-to-pipe-the-perfect-bakery-style-swirl"
+      "status": "scheduled",
+      "slug": "how-to-pipe-the-perfect-bakery-style-swirl",
+      "publishAt": "2026-08-14T14:01:00+02:00"
     },
     {
       "id": "g020",
@@ -213,8 +224,9 @@
       "targetKeyword": "how to make frosting smooth, silky and stable",
       "notes": "Beating time, temperature control, air bubble reduction, lump-free finish",
       "priority": 20,
-      "status": "draft",
-      "slug": "how-to-make-frosting-smooth-silky-stable"
+      "status": "scheduled",
+      "slug": "how-to-make-frosting-smooth-silky-stable",
+      "publishAt": "2026-08-15T12:46:00+02:00"
     },
     {
       "id": "g021",
@@ -223,8 +235,9 @@
       "targetKeyword": "how to decorate cupcakes like a boutique bakery",
       "notes": "Finishing touches: micro garnishes, sugar pearls, minimal elegance",
       "priority": 21,
-      "status": "draft",
-      "slug": "how-to-decorate-cupcakes-like-a-boutique-bakery"
+      "status": "scheduled",
+      "slug": "how-to-decorate-cupcakes-like-a-boutique-bakery",
+      "publishAt": "2026-08-16T16:49:00+02:00"
     },
     {
       "id": "g022",
@@ -233,8 +246,9 @@
       "targetKeyword": "ombre and two-tone frosting swirls",
       "notes": "Dual piping bag technique",
       "priority": 22,
-      "status": "draft",
-      "slug": "ombre-and-two-tone-frosting-swirls"
+      "status": "scheduled",
+      "slug": "ombre-and-two-tone-frosting-swirls",
+      "publishAt": "2026-08-17T17:36:00+02:00"
     },
     {
       "id": "g023",
@@ -243,8 +257,9 @@
       "targetKeyword": "how to decorate cupcakes with fresh fruit",
       "notes": "Cut shape, moisture control, storage timing",
       "priority": 23,
-      "status": "draft",
-      "slug": "how-to-decorate-cupcakes-with-fresh-fruit"
+      "status": "scheduled",
+      "slug": "how-to-decorate-cupcakes-with-fresh-fruit",
+      "publishAt": "2026-08-18T11:29:00+02:00"
     },
     {
       "id": "g024",
@@ -253,8 +268,9 @@
       "targetKeyword": "edible flowers on cupcakes (safe guide)",
       "notes": "List safe edible flowers only",
       "priority": 24,
-      "status": "draft",
-      "slug": "edible-flowers-on-cupcakes-safe-guide"
+      "status": "scheduled",
+      "slug": "edible-flowers-on-cupcakes-safe-guide",
+      "publishAt": "2026-08-19T14:39:00+02:00"
     },
     {
       "id": "g025",
@@ -263,8 +279,9 @@
       "targetKeyword": "boutique bakery finishing touches",
       "notes": "Micro pearls, gold leaf, controlled garnish",
       "priority": 25,
-      "status": "draft",
-      "slug": "boutique-bakery-finishing-touches"
+      "status": "scheduled",
+      "slug": "boutique-bakery-finishing-touches",
+      "publishAt": "2026-08-20T15:36:00+02:00"
     },
     {
       "id": "g026",
@@ -273,8 +290,9 @@
       "targetKeyword": "how to make frosting stable in hot weather",
       "notes": "Cornstarch, cream cheese, shortening tricks",
       "priority": 26,
-      "status": "draft",
-      "slug": "how-to-make-frosting-stable-in-hot-weather"
+      "status": "scheduled",
+      "slug": "how-to-make-frosting-stable-in-hot-weather",
+      "publishAt": "2026-08-21T17:43:00+02:00"
     },
     {
       "id": "g027",
@@ -283,8 +301,9 @@
       "targetKeyword": "how to use a piping bag without mess",
       "notes": "Folding technique, fill level, grip tips",
       "priority": 27,
-      "status": "draft",
-      "slug": "how-to-use-a-piping-bag-without-mess"
+      "status": "scheduled",
+      "slug": "how-to-use-a-piping-bag-without-mess",
+      "publishAt": "2026-08-22T14:58:00+02:00"
     },
     {
       "id": "g028",
@@ -293,8 +312,9 @@
       "targetKeyword": "why are my cupcakes dry?",
       "notes": "Overbaking, flour ratio, incorrect mixing, moisture control. Include easy rescue tips",
       "priority": 28,
-      "status": "draft",
-      "slug": "why-are-my-cupcakes-dry"
+      "status": "scheduled",
+      "slug": "why-are-my-cupcakes-dry",
+      "publishAt": "2026-08-23T11:55:00+02:00"
     },
     {
       "id": "g029",
@@ -303,8 +323,9 @@
       "targetKeyword": "why do cupcakes crack on top?",
       "notes": "Too hot oven, too much leavening, heat + leavening explanation. Offer oven adjustments",
       "priority": 29,
-      "status": "draft",
-      "slug": "why-do-cupcakes-crack-on-top"
+      "status": "scheduled",
+      "slug": "why-do-cupcakes-crack-on-top",
+      "publishAt": "2026-08-24T16:50:00+02:00"
     },
     {
       "id": "g030",
@@ -313,8 +334,9 @@
       "targetKeyword": "how to fix runny or too stiff frosting",
       "notes": "Balance liquids, fats, powdered sugar. Include quick correction table for both directions",
       "priority": 30,
-      "status": "draft",
-      "slug": "how-to-fix-runny-or-too-stiff-frosting"
+      "status": "scheduled",
+      "slug": "how-to-fix-runny-or-too-stiff-frosting",
+      "publishAt": "2026-08-25T17:50:00+02:00"
     },
     {
       "id": "g031",
@@ -323,8 +345,9 @@
       "targetKeyword": "why cupcakes taste bland and how to boost flavor",
       "notes": "Focus on salt, extract quality, flavor layering, aromatic oils",
       "priority": 31,
-      "status": "draft",
-      "slug": "why-cupcakes-taste-bland-how-to-boost-flavor"
+      "status": "scheduled",
+      "slug": "why-cupcakes-taste-bland-how-to-boost-flavor",
+      "publishAt": "2026-08-26T14:27:00+02:00"
     },
     {
       "id": "g032",
@@ -333,8 +356,9 @@
       "targetKeyword": "cupcakes sticking to liners? here's what to do",
       "notes": "Explain sugar moisture ratio, cooling time, liner quality",
       "priority": 32,
-      "status": "draft",
-      "slug": "cupcakes-sticking-to-liners-what-to-do"
+      "status": "scheduled",
+      "slug": "cupcakes-sticking-to-liners-what-to-do",
+      "publishAt": "2026-08-27T17:52:00+02:00"
     },
     {
       "id": "g033",
@@ -343,8 +367,9 @@
       "targetKeyword": "why do cupcakes taste eggy?",
       "notes": "Discuss ratios + overbeating",
       "priority": 33,
-      "status": "draft",
-      "slug": "why-do-cupcakes-taste-eggy"
+      "status": "scheduled",
+      "slug": "why-do-cupcakes-taste-eggy",
+      "publishAt": "2026-08-28T14:40:00+02:00"
     },
     {
       "id": "g034",
@@ -353,8 +378,9 @@
       "targetKeyword": "why do cupcakes dome or balloon?",
       "notes": "Oven temp + batter fill height",
       "priority": 34,
-      "status": "draft",
-      "slug": "why-do-cupcakes-dome-or-balloon"
+      "status": "scheduled",
+      "slug": "why-do-cupcakes-dome-or-balloon",
+      "publishAt": "2026-08-29T14:00:00+02:00"
     },
     {
       "id": "g035",
@@ -363,8 +389,9 @@
       "targetKeyword": "cupcakes overflowing?",
       "notes": "Three-quarter height rule + batter viscosity",
       "priority": 35,
-      "status": "draft",
-      "slug": "cupcakes-overflowing"
+      "status": "scheduled",
+      "slug": "cupcakes-overflowing",
+      "publishAt": "2026-08-30T15:06:00+02:00"
     },
     {
       "id": "g036",
@@ -373,8 +400,9 @@
       "targetKeyword": "butter vs oil in cupcake batter",
       "notes": "Flavor vs moisture trade-off, when to choose which, effect on crumb",
       "priority": 36,
-      "status": "draft",
-      "slug": "butter-vs-oil-in-cupcake-batter"
+      "status": "scheduled",
+      "slug": "butter-vs-oil-in-cupcake-batter",
+      "publishAt": "2026-08-31T17:55:00+02:00"
     },
     {
       "id": "g037",
@@ -383,8 +411,9 @@
       "targetKeyword": "which flour makes the fluffiest cupcakes?",
       "notes": "AP vs cake flour vs gluten-free blends vs almond flour. Neutral, clear guidance",
       "priority": 37,
-      "status": "draft",
-      "slug": "which-flour-makes-the-fluffiest-cupcakes"
+      "status": "scheduled",
+      "slug": "which-flour-makes-the-fluffiest-cupcakes",
+      "publishAt": "2026-09-01T14:33:00+02:00"
     },
     {
       "id": "g038",
@@ -393,8 +422,9 @@
       "targetKeyword": "all about sugar: white, brown, coconut, maple",
       "notes": "Explain sweetness, moisture, caramelization, texture effects",
       "priority": 38,
-      "status": "draft",
-      "slug": "all-about-sugar-white-brown-coconut-maple"
+      "status": "scheduled",
+      "slug": "all-about-sugar-white-brown-coconut-maple",
+      "publishAt": "2026-09-02T12:21:00+02:00"
     },
     {
       "id": "g039",
@@ -403,8 +433,9 @@
       "targetKeyword": "the secret power of salt in sweet baking",
       "notes": "Balance + flavor intensification",
       "priority": 39,
-      "status": "draft",
-      "slug": "the-secret-power-of-salt-in-sweet-baking"
+      "status": "scheduled",
+      "slug": "the-secret-power-of-salt-in-sweet-baking",
+      "publishAt": "2026-09-03T14:48:00+02:00"
     },
     {
       "id": "g040",
@@ -413,8 +444,9 @@
       "targetKeyword": "how to choose quality vanilla (extract vs paste)",
       "notes": "Show flavor development differences",
       "priority": 40,
-      "status": "draft",
-      "slug": "how-to-choose-quality-vanilla-extract-vs-paste"
+      "status": "scheduled",
+      "slug": "how-to-choose-quality-vanilla-extract-vs-paste",
+      "publishAt": "2026-09-04T15:00:00+02:00"
     },
     {
       "id": "g041",
@@ -423,8 +455,9 @@
       "targetKeyword": "cocoa powder types: dutch vs natural",
       "notes": "Taste, color, acidity differences",
       "priority": 41,
-      "status": "draft",
-      "slug": "cocoa-powder-types-dutch-vs-natural"
+      "status": "scheduled",
+      "slug": "cocoa-powder-types-dutch-vs-natural",
+      "publishAt": "2026-09-05T17:30:00+02:00"
     },
     {
       "id": "g042",
@@ -433,8 +466,9 @@
       "targetKeyword": "types of milk and milk alternatives",
       "notes": "Dairy vs oat vs coconut vs soy effects",
       "priority": 42,
-      "status": "draft",
-      "slug": "types-of-milk-and-milk-alternatives"
+      "status": "scheduled",
+      "slug": "types-of-milk-and-milk-alternatives",
+      "publishAt": "2026-09-06T16:43:00+02:00"
     },
     {
       "id": "g043",
@@ -443,8 +477,9 @@
       "targetKeyword": "oils in baking: neutral vs flavorful",
       "notes": "Sunflower vs coconut vs olive, when appropriate",
       "priority": 43,
-      "status": "draft",
-      "slug": "oils-in-baking-neutral-vs-flavorful"
+      "status": "scheduled",
+      "slug": "oils-in-baking-neutral-vs-flavorful",
+      "publishAt": "2026-09-07T14:14:00+02:00"
     },
     {
       "id": "g044",
@@ -453,8 +488,9 @@
       "targetKeyword": "what baking powder actually does",
       "notes": "Gas expansion explained simply",
       "priority": 44,
-      "status": "draft",
-      "slug": "what-baking-powder-actually-does"
+      "status": "scheduled",
+      "slug": "what-baking-powder-actually-does",
+      "publishAt": "2026-09-08T14:05:00+02:00"
     },
     {
       "id": "g045",
@@ -463,8 +499,9 @@
       "targetKeyword": "how to use extracts and flavor essences",
       "notes": "Vanilla, almond, citrus balance tips",
       "priority": 45,
-      "status": "draft",
-      "slug": "how-to-use-extracts-and-flavor-essences"
+      "status": "scheduled",
+      "slug": "how-to-use-extracts-and-flavor-essences",
+      "publishAt": "2026-09-09T17:12:00+02:00"
     },
     {
       "id": "g046",
@@ -473,8 +510,9 @@
       "targetKeyword": "how to convert any cupcake recipe to gluten-free",
       "notes": "Step-by-step substitution approach with almond + tapioca base, moisture management",
       "priority": 46,
-      "status": "draft",
-      "slug": "how-to-convert-any-cupcake-recipe-to-gluten-free"
+      "status": "scheduled",
+      "slug": "how-to-convert-any-cupcake-recipe-to-gluten-free",
+      "publishAt": "2026-09-10T16:09:00+02:00"
     },
     {
       "id": "g047",
@@ -483,8 +521,9 @@
       "targetKeyword": "how to convert recipes to dairy-free",
       "notes": "Coconut cream, oat milk, vegan butter guide",
       "priority": 47,
-      "status": "draft",
-      "slug": "how-to-convert-recipes-to-dairy-free"
+      "status": "scheduled",
+      "slug": "how-to-convert-recipes-to-dairy-free",
+      "publishAt": "2026-09-11T17:04:00+02:00"
     },
     {
       "id": "g048",
@@ -493,8 +532,9 @@
       "targetKeyword": "how to make cupcakes low-sugar without losing flavor",
       "notes": "Allulose, monk fruit, maple extract tips",
       "priority": 48,
-      "status": "draft",
-      "slug": "how-to-make-cupcakes-low-sugar-without-losing-flavor"
+      "status": "scheduled",
+      "slug": "how-to-make-cupcakes-low-sugar-without-losing-flavor",
+      "publishAt": "2026-09-12T13:36:00+02:00"
     },
     {
       "id": "g049",
@@ -503,8 +543,9 @@
       "targetKeyword": "how to make cupcakes kid allergen-safe for school",
       "notes": "Peanut-free, nut-free, dye-free, storage-safe",
       "priority": 49,
-      "status": "draft",
-      "slug": "how-to-make-cupcakes-kid-allergen-safe-for-school"
+      "status": "scheduled",
+      "slug": "how-to-make-cupcakes-kid-allergen-safe-for-school",
+      "publishAt": "2026-09-13T16:31:00+02:00"
     },
     {
       "id": "g050",
@@ -513,8 +554,9 @@
       "targetKeyword": "how to bake flat-top cupcakes for easy frosting",
       "notes": "Oven temp control, batter leveling",
       "priority": 50,
-      "status": "draft",
-      "slug": "how-to-bake-flat-top-cupcakes-for-easy-frosting"
+      "status": "scheduled",
+      "slug": "how-to-bake-flat-top-cupcakes-for-easy-frosting",
+      "publishAt": "2026-09-14T15:10:00+02:00"
     },
     {
       "id": "g051",
@@ -523,8 +565,9 @@
       "targetKeyword": "how to create flavor layers in one cupcake",
       "notes": "Cake + filling + swirl + garnish philosophy",
       "priority": 51,
-      "status": "draft",
-      "slug": "how-to-create-flavor-layers-in-one-cupcake"
+      "status": "scheduled",
+      "slug": "how-to-create-flavor-layers-in-one-cupcake",
+      "publishAt": "2026-09-15T13:13:00+02:00"
     },
     {
       "id": "g052",
@@ -533,8 +576,9 @@
       "targetKeyword": "how to design seasonal cupcakes that sell",
       "notes": "Seasonal flavor patterns, mood, color psychology",
       "priority": 52,
-      "status": "draft",
-      "slug": "how-to-design-seasonal-cupcakes-that-sell"
+      "status": "scheduled",
+      "slug": "how-to-design-seasonal-cupcakes-that-sell",
+      "publishAt": "2026-09-16T15:44:00+02:00"
     }
   ]
 }

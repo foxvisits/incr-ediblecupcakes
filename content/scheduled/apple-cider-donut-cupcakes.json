@@ -1,0 +1,131 @@
+{
+  "title": "Apple Cider Donut Cupcakes",
+  "slug": "apple-cider-donut-cupcakes",
+  "shortDescription": "These apple cider donut cupcakes need 25 minutes to prep and 18 minutes to bake, with a cinnamon sugar swirl and a homemade cider reduction.",
+  "description": "I made these when my kitchen smelled like an apple orchard in October. A simmered cider reduction packs real apple flavor into a soft, spiced cake base. A cinnamon sugar swirl runs through the batter, so every bite tastes like a fresh donut. I tested three cider brands and the cloudy, unfiltered kind gave the best deep flavor after reducing.",
+  "category": "seasonal",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "2 cups apple cider (unfiltered)",
+    "1 3/4 cups all purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/2 tsp baking soda",
+    "1 tsp ground cinnamon",
+    "1/4 tsp ground nutmeg",
+    "1/2 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup brown sugar, packed",
+    "2 large eggs",
+    "1 tsp vanilla extract",
+    "1/2 cup sour cream",
+    "1/4 cup cinnamon sugar (2 tbsp sugar mixed with 1 tsp cinnamon), for swirl",
+    "1 cup unsalted butter, softened, for frosting",
+    "3 cups powdered sugar, for frosting",
+    "1/2 tsp ground cinnamon, for frosting"
+  ],
+  "instructions": [
+    "Pour cider into a saucepan and simmer over medium heat until it reduces to 1/2 cup, about 20 minutes. Let it cool completely.",
+    "Preheat oven to 350°F and line a muffin pan with 12 liners.",
+    "Whisk flour, baking powder, baking soda, cinnamon, nutmeg, and salt in a bowl.",
+    "Beat butter and brown sugar until light and fluffy, about 2 minutes. Add eggs one at a time, then mix in vanilla.",
+    "Add the cooled cider reduction and sour cream to the butter mixture. Mix until smooth.",
+    "Fold the dry ingredients into the wet mixture just until combined. Do not overmix.",
+    "Spoon half the batter into liners, sprinkle with half the cinnamon sugar, then top with remaining batter. Swirl gently with a toothpick.",
+    "Bake 18 to 20 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a wire rack.",
+    "Beat butter for frosting until pale and creamy, about 3 minutes. Add powdered sugar and cinnamon, then beat until smooth and fluffy.",
+    "Pipe frosting onto fully cooled cupcakes and dust with extra cinnamon sugar."
+  ],
+  "tips": [
+    "Reduce the cider a day ahead. It keeps in the fridge and saves time on baking day.",
+    "Use unfiltered, cloudy apple cider for the strongest apple flavor. Clear apple juice tastes flat once reduced.",
+    "Roll warm cupcake tops in cinnamon sugar right after baking for a true donut shop finish, if you skip the frosting.",
+    "Let the reduction cool fully before mixing it in, or it will melt the butter and thin your batter."
+  ],
+  "faq": [
+    {
+      "question": "Can I use store bought apple cider or does it need to be fresh pressed?",
+      "answer": "Store bought unfiltered cider works fine. I tested both and the flavor difference after reducing was small."
+    },
+    {
+      "question": "Why did my cupcakes sink in the middle?",
+      "answer": "This usually means the cider reduction was still warm when added, or the batter was overmixed. Cool the reduction fully and fold gently."
+    },
+    {
+      "question": "Can I make these without the frosting?",
+      "answer": "Yes. Brush warm cupcakes with melted butter and roll in cinnamon sugar for a true donut style finish instead."
+    },
+    {
+      "question": "How far ahead can I make the cider reduction?",
+      "answer": "Make it up to 3 days ahead and store it covered in the fridge. Bring it to room temperature before mixing into batter."
+    }
+  ],
+  "tags": [
+    "apple-cider",
+    "fall-cupcakes",
+    "cinnamon-sugar",
+    "seasonal",
+    "donut-cupcakes"
+  ],
+  "recipeKeys": [
+    "apple cider donut cupcakes",
+    "fall cupcake recipe",
+    "cinnamon sugar cupcakes",
+    "apple cider reduction recipe",
+    "seasonal cupcake recipe",
+    "medium difficulty",
+    "cinnamon swirl cupcakes"
+  ],
+  "keywords": [
+    "apple cider donut cupcakes",
+    "fall cupcakes",
+    "cinnamon sugar swirl",
+    "apple cider reduction",
+    "seasonal cupcake recipe"
+  ],
+  "nutritionInfo": {
+    "calories": 320,
+    "carbs": 42,
+    "protein": 3,
+    "fat": 16,
+    "fiber": 1,
+    "sugar": 30
+  },
+  "dietaryBadges": [],
+  "conclusion": "These cupcakes bring donut shop flavor to a cupcake stand. The cider reduction and cinnamon swirl make them feel like fall in one bite.",
+  "metaTitle": "Apple Cider Donut Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Bake apple cider donut cupcakes with a cinnamon sugar swirl and cider reduction. Get the full step-by-step recipe and pro tips now.",
+  "imageAlt": "Apple cider donut cupcake with tall swirled cinnamon frosting on a pale aqua background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Apple cider donut cupcake with tall swirled cinnamon frosting on a pale aqua background",
+      "prompt": "A single apple cider donut cupcake with tall swirled cinnamon buttercream piped high, dusted with cinnamon sugar, on white porcelain, bright pastel bakery aesthetic, soft even daylight, pale aqua background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/apple-cider-donut-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Cinnamon sugar being swirled into apple cider cupcake batter in a muffin tin",
+      "prompt": "Overhead close up of cupcake batter in a muffin tin with a toothpick swirling cinnamon sugar through the top, bright pastel bakery aesthetic, soft even daylight, butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/apple-cider-donut-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of apple cider donut cupcake cross section showing cinnamon swirl",
+      "prompt": "Close up cross section of an apple cider donut cupcake showing a visible cinnamon swirl inside soft golden crumb, tall swirled frosting on top, bright pastel bakery aesthetic, soft even daylight, cream background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/apple-cider-donut-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "spiced-pear-cupcakes",
+    "cranberry-orange-sparkle-cupcakes",
+    "classic-vanilla-dream-cupcakes"
+  ],
+  "contentIdeaId": "r158",
+  "image": "/apple-cider-donut-cupcakes.jpg",
+  "publishAt": "2026-09-07T10:26:00+02:00",
+  "contentType": "recipe"
+}

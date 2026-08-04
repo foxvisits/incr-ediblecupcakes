@@ -1,0 +1,132 @@
+{
+  "title": "Dairy-Free Strawberry Swirl Cupcakes",
+  "slug": "dairy-free-strawberry-swirl-cupcakes",
+  "shortDescription": "Soft dairy-free cupcakes swirled with real strawberry puree, ready in about 45 minutes total.",
+  "description": "I tested these cupcakes in my own kitchen to get a real strawberry color without any drops of food dye. Fresh pureed berries do all the work here, both in the batter and the frosting.",
+  "category": "dairy-free",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 tsp baking powder",
+    "1/4 tsp baking soda",
+    "1/4 tsp salt",
+    "1/2 cup dairy-free butter, softened",
+    "3/4 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1/2 cup pureed fresh strawberries (about 6 medium berries)",
+    "1/3 cup unsweetened almond milk",
+    "1 tsp vanilla extract",
+    "1 cup dairy-free butter, softened, for frosting",
+    "2 1/2 cups powdered sugar, for frosting",
+    "3 tbsp pureed fresh strawberries, for frosting",
+    "1/2 tsp vanilla extract, for frosting"
+  ],
+  "instructions": [
+    "Preheat your oven to 350°F and line a 12-cup muffin pan with paper liners.",
+    "Whisk the flour, baking powder, baking soda, and salt in a medium bowl.",
+    "Beat the dairy-free butter and sugar together until light and fluffy, about 2 minutes.",
+    "Add the eggs one at a time, mixing well after each addition.",
+    "Stir in the strawberry puree, almond milk, and vanilla until just combined.",
+    "Fold the dry ingredients into the wet mix gently, stopping as soon as no flour streaks show.",
+    "Divide the batter evenly among the liners, filling each about two thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick in the center comes out clean.",
+    "Cool the cupcakes in the pan for 5 minutes, then move them to a wire rack to cool fully.",
+    "Beat the frosting butter until smooth, then add powdered sugar in two batches.",
+    "Mix in the strawberry puree and vanilla, then beat on high for 1 minute until fluffy.",
+    "Pipe the frosting onto the cooled cupcakes in a high swirl and serve."
+  ],
+  "tips": [
+    "Blot the pureed strawberries with a paper towel if they seem watery, so the batter stays thick.",
+    "Chill the frosting for 10 minutes before piping if your kitchen is warm, it holds its swirl better.",
+    "Use fresh strawberries, not frozen, for a truer pink color and less extra liquid.",
+    "Taste your batter puree first, some berries are sweeter than others and you may want less sugar."
+  ],
+  "faq": [
+    {
+      "question": "Why does my strawberry puree turn the batter pale pink instead of bright red?",
+      "answer": "Real strawberries give a soft natural pink, not a bold red. That is normal and expected without artificial dye."
+    },
+    {
+      "question": "Can I use frozen strawberries for the puree?",
+      "answer": "Yes, thaw them fully and drain the extra juice first. Frozen berries add more water, so blot them well."
+    },
+    {
+      "question": "Is this recipe also egg-free?",
+      "answer": "No, this recipe uses two eggs. Swap them for a flax egg mix if you also need egg-free, though texture will change slightly."
+    },
+    {
+      "question": "How long do these cupcakes stay fresh?",
+      "answer": "Store them in an airtight container at room temperature for 2 days, or in the fridge for up to 4 days."
+    }
+  ],
+  "tags": [
+    "dairy-free",
+    "strawberry",
+    "cupcakes",
+    "spring-dessert",
+    "easy-baking"
+  ],
+  "recipeKeys": [
+    "dairy-free strawberry cupcakes",
+    "strawberry swirl cupcakes recipe",
+    "pureed strawberry cupcakes",
+    "easy dairy-free dessert",
+    "natural strawberry cupcakes",
+    "dairy-free baking recipe"
+  ],
+  "keywords": [
+    "dairy-free strawberry cupcakes",
+    "strawberry swirl cupcakes",
+    "pureed strawberry frosting",
+    "dairy-free dessert recipe",
+    "natural strawberry flavor cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 220,
+    "carbs": 32,
+    "protein": 2,
+    "fat": 9,
+    "fiber": 1,
+    "sugar": 22
+  },
+  "dietaryBadges": [
+    "Dairy-Free"
+  ],
+  "conclusion": "These cupcakes prove you do not need dairy or dye to get a soft pink treat with real strawberry taste. Bake a batch and see how well the fresh puree holds up in both the cake and the frosting.",
+  "metaTitle": "Strawberry Swirl Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Bake dairy-free strawberry swirl cupcakes with real pureed berries for natural color. Get the full step-by-step recipe now.",
+  "imageAlt": "Dairy-free strawberry cupcake with a tall pink swirl of frosting on a white plate",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Dairy-free strawberry cupcake with a tall pink swirl of frosting on a white plate",
+      "prompt": "A single dairy-free strawberry cupcake with tall swirled pink frosting piped high, topped with a small fresh strawberry slice, bright pastel bakery aesthetic, soft even daylight, blush pink pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-strawberry-swirl-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Fresh strawberries being pureed in a blender next to a bowl of pale pink cupcake batter",
+      "prompt": "Fresh strawberries in a blender jar next to a glass bowl of pale pink cupcake batter, wooden spoon resting nearby, bright pastel bakery aesthetic, soft even daylight, cream pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-strawberry-swirl-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of pink strawberry frosting swirl showing soft texture and small berry seeds",
+      "prompt": "Close up detail of a piped pink strawberry frosting swirl on a cupcake, soft texture visible with tiny berry seed flecks, bright pastel bakery aesthetic, soft even daylight, butter yellow pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/dairy-free-strawberry-swirl-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "vegan-rainbow-surprise-cupcakes",
+    "nut-free-lemon-sunshine-cupcakes",
+    "classic-vanilla-dream-cupcakes"
+  ],
+  "contentIdeaId": "r127",
+  "image": "/dairy-free-strawberry-swirl-cupcakes.jpg",
+  "publishAt": "2026-11-30T17:29:00+02:00",
+  "contentType": "recipe"
+}

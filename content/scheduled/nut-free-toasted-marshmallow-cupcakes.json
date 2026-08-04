@@ -1,0 +1,128 @@
+{
+  "title": "Nut-Free Toasted Marshmallow Cupcakes",
+  "slug": "nut-free-toasted-marshmallow-cupcakes",
+  "shortDescription": "Soft vanilla cupcakes topped with fluffy marshmallow frosting, torched golden in 25 minutes prep and 18 minutes bake.",
+  "description": "These cupcakes taste like a campfire treat in cake form. I made a batch for my son's nut-free classroom party and the golden toasted swirls disappeared first. The base is a simple vanilla cupcake, soft and moist, with no nuts anywhere in the ingredient list. The real star is the marshmallow frosting, whipped fluffy then toasted lightly with a kitchen torch or broiler. Toasting the frosting gives it a light graham cracker color and a faint caramel smell. It only takes a few seconds per cupcake, so watch closely. This recipe is safe for nut-free school events and easy enough for a weeknight bake. Kids love helping toast the tops under supervision.",
+  "category": "nut-free",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "1 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "2 tsp pure vanilla extract",
+    "1/2 cup whole milk",
+    "3 large egg whites",
+    "1 cup granulated sugar (for frosting)",
+    "1/4 tsp cream of tartar",
+    "1 tsp vanilla extract (for frosting)"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk flour, baking powder, and salt in a bowl. Set aside.",
+    "Beat butter and sugar together until light and fluffy, about 3 minutes.",
+    "Add eggs one at a time, mixing well after each. Stir in vanilla extract.",
+    "Add flour mix and milk in three additions, alternating and mixing just until combined.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool completely on a wire rack.",
+    "For frosting, whisk egg whites, sugar, and cream of tartar in a heatproof bowl set over simmering water until sugar dissolves, about 3 minutes.",
+    "Remove from heat and beat with a mixer on high until stiff, glossy peaks form, 5 to 7 minutes. Beat in vanilla.",
+    "Pipe frosting high onto cooled cupcakes using a large open star tip.",
+    "Toast the frosting lightly with a kitchen torch, moving in slow circles until golden. If no torch, broil cupcakes on the top rack for 30 to 60 seconds, watching closely."
+  ],
+  "tips": [
+    "Keep the torch moving so the frosting toasts evenly without burning.",
+    "If using a broiler, freeze frosted cupcakes for 10 minutes first so the cake does not overheat.",
+    "Make the frosting right before piping. It loses volume if it sits too long.",
+    "Double check all packaged ingredients for a nut-free label if serving at school events."
+  ],
+  "faq": [
+    {
+      "question": "Can I make these cupcakes without a kitchen torch?",
+      "answer": "Yes, use your oven broiler on high. Place frosted cupcakes on the top rack for 30 to 60 seconds and watch the whole time."
+    },
+    {
+      "question": "Why did my marshmallow frosting deflate after toasting?",
+      "answer": "This happens if the frosting sits too long before use or gets too warm under the torch. Pipe and toast within an hour of making it."
+    },
+    {
+      "question": "Are these cupcakes safe for a nut-free classroom?",
+      "answer": "Yes, none of the ingredients contain nuts. Always check your specific brands for cross contamination warnings before sending them to school."
+    },
+    {
+      "question": "Can I make the frosting ahead of time?",
+      "answer": "It is best made fresh since it loses its fluffy texture in the fridge. You can bake the cupcakes a day ahead and frost them right before serving."
+    }
+  ],
+  "tags": [
+    "nut-free",
+    "marshmallow",
+    "vanilla",
+    "kid-friendly",
+    "toasted-frosting"
+  ],
+  "recipeKeys": [
+    "nut-free cupcakes",
+    "toasted marshmallow frosting",
+    "marshmallow cupcake recipe",
+    "vanilla cupcakes",
+    "Medium difficulty",
+    "school safe cupcakes",
+    "torched frosting"
+  ],
+  "keywords": [
+    "toasted marshmallow cupcakes",
+    "nut-free cupcake recipe",
+    "marshmallow frosting"
+  ],
+  "nutritionInfo": {
+    "calories": 245,
+    "carbs": 38,
+    "protein": 3,
+    "fat": 9,
+    "fiber": 0,
+    "sugar": 29
+  },
+  "dietaryBadges": [
+    "nut-free"
+  ],
+  "conclusion": "These cupcakes bring a fun bakery trick home with simple ingredients. Toast the frosting slowly and you get a soft cake with a golden marshmallow top every time.",
+  "metaTitle": "Nut-Free Toasted Marshmallow Cupcakes | Incr-EdibleCupCakes",
+  "metaDescription": "Try this nut-free toasted marshmallow cupcake recipe with fluffy vanilla cake and golden torched frosting. Bake a safe treat for any classroom party.",
+  "imageAlt": "Nut-free cupcake with tall toasted marshmallow frosting swirl on a pastel background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Nut-free cupcake with tall toasted marshmallow frosting swirl on a pastel background",
+      "prompt": "A single cupcake with tall swirled marshmallow frosting piped high, lightly toasted golden brown on top like a campfire marshmallow. Bright pastel bakery aesthetic, soft even daylight, pale cream background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-toasted-marshmallow-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Kitchen torch toasting marshmallow frosting on a cupcake until golden",
+      "prompt": "A kitchen torch flame gently browning the top of a piped marshmallow frosting swirl on a cupcake, small golden toasted patches forming. Bright pastel bakery aesthetic, soft even daylight, butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-toasted-marshmallow-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of toasted marshmallow frosting texture on a cupcake",
+      "prompt": "Extreme close up of glossy marshmallow frosting swirl with golden toasted peaks and soft white valleys, showing fine texture detail. Bright pastel bakery aesthetic, soft even daylight, blush pink background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-toasted-marshmallow-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "nut-free-lemon-sunshine-cupcakes",
+    "classic-vanilla-dream-cupcakes",
+    "boston-cream-cupcakes"
+  ],
+  "contentIdeaId": "r091",
+  "image": "/nut-free-toasted-marshmallow-cupcakes.jpg",
+  "publishAt": "2026-10-16T16:22:00+02:00",
+  "contentType": "recipe"
+}

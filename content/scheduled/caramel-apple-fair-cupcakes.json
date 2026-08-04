@@ -1,0 +1,130 @@
+{
+  "title": "Caramel Apple Fair Cupcakes",
+  "slug": "caramel-apple-fair-cupcakes",
+  "shortDescription": "Spiced apple cupcakes with a caramel swirl drizzle, ready in about 45 minutes total.",
+  "description": "These cupcakes taste like a warm apple pie from the county fair, baked into a soft cake. I grated fresh apples right into the batter so every bite stays moist. A swirl of caramel goes into the batter before baking, then more caramel gets drizzled on top after frosting. It gives you that gooey caramel apple bite in every cupcake. I tested this recipe three times in my home kitchen to get the apple to cake ratio right. Too much apple made the cupcakes sink, so I found the sweet spot below Serve these at a fall party or after a school pickup. They hold up well at room temperature for a few hours, which makes them easy for parties.",
+  "category": "seasonal",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all purpose flour",
+    "1 tsp baking powder",
+    "1/2 tsp baking soda",
+    "1 tsp ground cinnamon",
+    "1/4 tsp ground nutmeg",
+    "1/2 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup light brown sugar, packed",
+    "2 large eggs",
+    "1 tsp vanilla extract",
+    "1/2 cup buttermilk",
+    "1 cup peeled and finely grated apple (about 1 medium apple), squeezed lightly to remove extra juice",
+    "1/2 cup store bought soft caramel sauce, divided",
+    "1 cup unsalted butter, softened, for frosting",
+    "3 cups powdered sugar, for frosting",
+    "2 tbsp heavy cream",
+    "1/2 tsp sea salt flakes, for topping"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk flour, baking powder, baking soda, cinnamon, nutmeg, and salt in a bowl. Set aside.",
+    "Beat softened butter and brown sugar together for 2 minutes until fluffy.",
+    "Add eggs one at a time, beating well after each. Mix in vanilla.",
+    "Add the flour mix in three parts, alternating with buttermilk. Mix just until combined.",
+    "Fold in the grated apple by hand. Do not overmix the batter.",
+    "Fill liners two thirds full. Drop 1/2 teaspoon of caramel sauce into the center of each cupcake and swirl gently with a toothpick.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a wire rack to cool fully.",
+    "Beat 1 cup butter until smooth. Add powdered sugar and cream, then beat 3 minutes until light and fluffy.",
+    "Pipe frosting on cooled cupcakes. Drizzle with remaining caramel sauce and finish with a pinch of sea salt flakes."
+  ],
+  "tips": [
+    "Squeeze the grated apple in a paper towel before mixing it in. Extra juice makes the cake soggy.",
+    "Use a firm baking apple like Honeycrisp or Granny Smith. Soft apples turn mushy in the batter.",
+    "Warm the caramel sauce for a few seconds before drizzling so it pours smoothly.",
+    "Chill piped cupcakes for 10 minutes before drizzling caramel so the frosting holds its shape."
+  ],
+  "faq": [
+    {
+      "question": "Can I use apple sauce instead of grated apple?",
+      "answer": "Grated apple works better here. Apple sauce adds too much moisture and the cake can sink in the middle."
+    },
+    {
+      "question": "Why did the caramel sink to the bottom of my cupcakes?",
+      "answer": "This happens if the caramel sauce is too thin or added in a large amount. Use a small 1/2 teaspoon swirl, not a full spoonful."
+    },
+    {
+      "question": "Can I make these ahead for a fall party?",
+      "answer": "Yes. Bake the cupcakes up to 2 days ahead and store unfrosted at room temperature in a sealed container. Frost and drizzle the day you serve them."
+    },
+    {
+      "question": "What caramel sauce works best for the drizzle?",
+      "answer": "A thick, store bought soft caramel sauce holds its shape on top of frosting. Very runny caramel sauce will slide right off."
+    }
+  ],
+  "tags": [
+    "fall",
+    "apple",
+    "caramel",
+    "seasonal",
+    "fair-food",
+    "autumn-cupcakes"
+  ],
+  "recipeKeys": [
+    "caramel apple cupcakes",
+    "fall apple cupcakes recipe",
+    "caramel swirl cupcakes",
+    "apple cake cupcakes",
+    "Medium difficulty",
+    "autumn baking recipe"
+  ],
+  "keywords": [
+    "caramel apple cupcakes",
+    "fall cupcake recipe",
+    "apple caramel swirl cake"
+  ],
+  "nutritionInfo": {
+    "calories": 310,
+    "carbs": 42,
+    "protein": 3,
+    "fat": 15,
+    "fiber": 1,
+    "sugar": 32
+  },
+  "dietaryBadges": [],
+  "conclusion": "These caramel apple cupcakes bring fair season flavor right to your kitchen. Grated apple keeps the cake moist, and the caramel swirl inside and out makes each bite feel special. Bake a batch this weekend and see why it is one of my favorite fall recipes.",
+  "metaTitle": "Caramel Apple Fair Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Bake caramel apple cupcakes with real apple cake and a gooey caramel swirl. A cozy fall treat, tested at home. Try the recipe today.",
+  "imageAlt": "Caramel apple cupcake with tall swirled frosting, caramel drizzle, and sea salt on top",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Caramel apple cupcake with tall swirled frosting, caramel drizzle, and sea salt on top",
+      "prompt": "A single caramel apple cupcake with tall swirled cream cheese frosting piped high, caramel sauce drizzled down the sides, and a pinch of sea salt flakes on top, set against a soft butter yellow pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/caramel-apple-fair-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Grated apple being folded into cupcake batter in a mixing bowl",
+      "prompt": "Overhead shot of grated apple being folded into pale cupcake batter in a white ceramic mixing bowl, wooden spoon resting on the side, soft even daylight, pastel butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/caramel-apple-fair-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of caramel sauce swirling into cupcake batter before baking",
+      "prompt": "Close up detail shot of caramel sauce being swirled into unbaked cupcake batter in a paper liner inside a muffin pan, soft even daylight, warm pastel tones, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/caramel-apple-fair-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "spiced-pear-cupcakes",
+    "classic-vanilla-dream-cupcakes",
+    "miso-caramel-cupcakes"
+  ],
+  "contentIdeaId": "r159",
+  "image": "/caramel-apple-fair-cupcakes.jpg",
+  "publishAt": "2026-09-08T12:33:00+02:00",
+  "contentType": "recipe"
+}

@@ -11,9 +11,10 @@
     "publishWindowEnd": "18:00",
     "timezone": "Europe/Warsaw",
     "skipWeekends": false,
-    "startDate": "2026-06-04",
+    "startDate": "2026-08-04",
     "utcOffset": "+02:00",
-    "interleaveTypes": false
+    "interleaveTypes": false,
+    "$startDate": "Bump this when starting a new run. The scheduler refuses to schedule into the past regardless."
   },
   "generation": {
     "textProvider": "anthropic",

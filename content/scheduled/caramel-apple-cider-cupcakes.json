@@ -1,0 +1,131 @@
+{
+  "title": "Caramel Apple Cider Cupcakes",
+  "slug": "caramel-apple-cider-cupcakes",
+  "shortDescription": "Spiced apple cider cupcakes with cinnamon batter and caramel drizzle, ready in about 45 minutes with 25 minutes prep and 18 minutes baking.",
+  "description": "These cupcakes taste like fall in a wrapper. I simmer apple cider down to a thick syrup, then fold it into a warm cinnamon batter for real apple flavor, not just spice. A cream cheese frosting keeps things classic, and a caramel drizzle on top makes them feel like a holiday treat. I tested this batch three times in my own kitchen to get the cider reduction just right. They are simple enough for a Tuesday but pretty enough for a holiday dessert table. Kids love the caramel drizzle, adults love the spiced batter Make the caramel first so it has time to cool before you drizzle. Everything else comes together with basic pantry staples.",
+  "category": "classic",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "2 cups unfiltered apple cider",
+    "1 3/4 cups all purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/2 tsp baking soda",
+    "1/4 tsp salt",
+    "1 1/2 tsp ground cinnamon",
+    "1/4 tsp ground nutmeg",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup brown sugar, packed",
+    "2 large eggs",
+    "1 tsp vanilla extract",
+    "1/3 cup sour cream",
+    "8 oz cream cheese, softened",
+    "1/4 cup unsalted butter, softened (for frosting)",
+    "2 cups powdered sugar",
+    "1/2 cup store bought soft caramel sauce, warmed slightly"
+  ],
+  "instructions": [
+    "Pour the apple cider into a small saucepan. Simmer over medium heat until reduced to 1/2 cup, about 15 minutes. Let it cool completely.",
+    "Preheat your oven to 350°F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk flour, baking powder, baking soda, salt, cinnamon, and nutmeg in a medium bowl.",
+    "Beat the softened butter and brown sugar together until light and fluffy, about 2 minutes.",
+    "Add the eggs one at a time, beating well after each. Mix in the vanilla and cooled cider reduction.",
+    "Add the dry ingredients in two batches, alternating with the sour cream. Mix just until combined, no dry streaks.",
+    "Divide batter evenly among the liners, filling each about two thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan for 5 minutes, then move to a wire rack.",
+    "For the frosting, beat cream cheese and butter until smooth. Add powdered sugar and beat until fluffy.",
+    "Pipe frosting on fully cooled cupcakes, then drizzle each one with warm caramel sauce."
+  ],
+  "tips": [
+    "Reduce the cider a day ahead. It keeps in the fridge and saves time on baking day.",
+    "Let the caramel cool for a few minutes before drizzling so it does not melt the frosting.",
+    "Use unfiltered cider, not clear apple juice. It gives a deeper, more apple forward flavor.",
+    "If your frosting feels too soft, chill it for 15 minutes before piping."
+  ],
+  "faq": [
+    {
+      "question": "Can I use apple juice instead of apple cider?",
+      "answer": "You can, but the flavor will be milder and sweeter. Cider gives a deeper, more spiced apple taste, so if you swap in juice, add an extra 1/4 tsp of cinnamon."
+    },
+    {
+      "question": "Why do I need to reduce the cider first?",
+      "answer": "Simmering the cider concentrates the apple flavor and removes extra liquid. Skipping this step can make the batter too wet and weak in apple taste."
+    },
+    {
+      "question": "Can I make the caramel sauce from scratch?",
+      "answer": "Yes, homemade caramel works great here. Just make sure it is warm enough to drizzle but not hot, or it will melt the cream cheese frosting."
+    },
+    {
+      "question": "How far ahead can I make these cupcakes?",
+      "answer": "Bake the cupcakes up to two days ahead and store them unfrosted at room temperature. Frost and drizzle with caramel the day you plan to serve them."
+    }
+  ],
+  "tags": [
+    "holiday",
+    "fall",
+    "apple-cider",
+    "caramel",
+    "classic",
+    "cinnamon"
+  ],
+  "recipeKeys": [
+    "apple cider cupcakes",
+    "caramel apple cupcakes",
+    "fall cupcake recipe",
+    "cinnamon cupcakes",
+    "holiday cupcakes",
+    "Medium difficulty",
+    "cream cheese frosting cupcakes"
+  ],
+  "keywords": [
+    "apple cider cupcakes",
+    "caramel apple cupcakes recipe",
+    "fall cupcake recipe",
+    "holiday cupcake recipe"
+  ],
+  "nutritionInfo": {
+    "calories": 310,
+    "carbs": 42,
+    "protein": 3,
+    "fat": 14,
+    "fiber": 1,
+    "sugar": 30
+  },
+  "dietaryBadges": [],
+  "conclusion": "These caramel apple cider cupcakes bring real fall flavor to your holiday table. The cider reduction and warm spices make them taste homemade in the best way, and the caramel drizzle seals the deal.",
+  "metaTitle": "Caramel Apple Cider Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Try these caramel apple cider cupcakes with cinnamon batter and cream cheese frosting. Get the full step-by-step recipe and bake them today.",
+  "imageAlt": "Caramel apple cider cupcake with tall swirled cream cheese frosting and caramel drizzle on a pastel background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Caramel apple cider cupcake with tall swirled cream cheese frosting and caramel drizzle on a pastel background",
+      "prompt": "A single caramel apple cider cupcake with tall swirled cream cheese frosting piped high, caramel sauce drizzled over the top, set against a soft butter yellow pastel background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/caramel-apple-cider-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Apple cider being reduced in a small saucepan on the stove for cupcake batter",
+      "prompt": "A small saucepan of apple cider simmering down to a thick syrup on a stovetop, steam rising gently, warm golden liquid visible in the pan. Bright pastel bakery aesthetic, soft even daylight, pale aqua background tile, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/caramel-apple-cider-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of caramel drizzle dripping down swirled frosting on an apple cider cupcake",
+      "prompt": "Close up detail shot of warm caramel sauce dripping down tall swirled cream cheese frosting on a cupcake, a light dusting of cinnamon visible on top, blush pink pastel background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/caramel-apple-cider-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "spiced-pear-cupcakes",
+    "classic-vanilla-dream-cupcakes",
+    "cranberry-orange-sparkle-cupcakes"
+  ],
+  "contentIdeaId": "r039",
+  "image": "/caramel-apple-cider-cupcakes.jpg",
+  "publishAt": "2026-09-01T13:34:00+02:00",
+  "contentType": "recipe"
+}

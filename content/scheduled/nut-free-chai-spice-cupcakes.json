@@ -1,0 +1,135 @@
+{
+  "title": "Nut-Free Chai Spice Cupcakes",
+  "slug": "nut-free-chai-spice-cupcakes",
+  "shortDescription": "Soft chai spice cupcakes with vanilla frosting, ready in 43 minutes with 25 minutes prep and 18 minutes bake.",
+  "description": "These cupcakes taste like a warm mug of chai, but in cake form. I mix cinnamon, ginger, cardamom, and cloves right into the batter, then top each one with a simple vanilla frosting so the spice stays front and center. I tested this recipe in my home kitchen with kids who have nut allergies in mind, so every ingredient here is nut-free by design. No nut flours, no almond milk, no hidden nut oils in the frosting. The batter comes together in one bowl with basic pantry staples. You get a soft, moist crumb with a gentle spice warmth, not an overpowering punch. This is the kind of cupcake I bring to fall potlucks and school bake sales, since it works for guests with nut allergies without anyone noticing a difference in taste.",
+  "category": "nut-free",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp baking soda",
+    "1/2 tsp salt",
+    "1 1/2 tsp ground cinnamon",
+    "1/2 tsp ground ginger",
+    "1/2 tsp ground cardamom",
+    "1/4 tsp ground cloves",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1 tsp vanilla extract",
+    "1/2 cup whole milk",
+    "1/4 cup strong brewed black tea, cooled",
+    "1 1/2 cups powdered sugar (for frosting)",
+    "1/2 cup unsalted butter, softened (for frosting)",
+    "2 tbsp whole milk (for frosting)",
+    "1 tsp vanilla extract (for frosting)"
+  ],
+  "instructions": [
+    "Preheat your oven to 350°F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk the flour, baking powder, baking soda, salt, cinnamon, ginger, cardamom, and cloves in a bowl.",
+    "In a separate bowl, beat the butter and sugar until light and fluffy, about 2 minutes.",
+    "Add the eggs one at a time, beating well after each. Mix in the vanilla extract.",
+    "Combine the milk and cooled tea in a small cup. Add the dry mix and milk mixture to the batter in three additions, starting and ending with the dry mix.",
+    "Stir just until no dry streaks remain. Do not overmix, or the cupcakes will turn dense.",
+    "Divide the batter evenly among the liners, filling each about two thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan for 5 minutes, then move to a wire rack to cool fully.",
+    "For the frosting, beat the butter until smooth, then add powdered sugar, milk, and vanilla. Beat on high for 3 minutes until fluffy.",
+    "Pipe or spread the frosting on fully cooled cupcakes. Dust with a pinch of cinnamon if you like."
+  ],
+  "tips": [
+    "Brew the tea strong and let it cool completely before adding it to the batter, so it does not melt the butter mix.",
+    "Toast your spices in a dry pan for 30 seconds before measuring if you want a deeper chai flavor.",
+    "Room temperature eggs and butter blend smoother and give a more even crumb.",
+    "If frosting feels too soft, chill it for 10 minutes before piping so the swirl holds its shape."
+  ],
+  "faq": [
+    {
+      "question": "Can I use chai tea bags instead of loose tea for the batter?",
+      "answer": "Yes. Steep one strong chai tea bag in 1/4 cup hot water for 5 minutes, then cool before adding it to the batter."
+    },
+    {
+      "question": "Is this recipe safe for a nut-free school bake sale?",
+      "answer": "Yes, every ingredient listed is nut-free, including the frosting. Just double check your specific brands for cross contact warnings."
+    },
+    {
+      "question": "Why did my cupcakes turn out dense instead of soft?",
+      "answer": "This usually means the batter was overmixed after adding the dry ingredients. Stir just until the streaks disappear."
+    },
+    {
+      "question": "Can I make these dairy free too?",
+      "answer": "Swap the butter for a plant based baking stick and the milk for oat milk in both the batter and frosting. The texture stays close to the original."
+    }
+  ],
+  "tags": [
+    "nut-free",
+    "chai-spice",
+    "vanilla-frosting",
+    "fall-cupcakes",
+    "easy-cupcakes"
+  ],
+  "recipeKeys": [
+    "nut-free chai spice cupcakes",
+    "chai cupcakes recipe",
+    "vanilla frosting cupcakes",
+    "nut-free cupcake recipe",
+    "Easy difficulty",
+    "fall spice cupcakes",
+    "chai tea cupcakes"
+  ],
+  "keywords": [
+    "nut-free chai spice cupcakes",
+    "chai spice cupcake recipe",
+    "vanilla frosting",
+    "nut-free baking",
+    "fall cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 260,
+    "carbs": 34,
+    "protein": 3,
+    "fat": 12,
+    "fiber": 1,
+    "sugar": 24
+  },
+  "dietaryBadges": [
+    "nut-free"
+  ],
+  "conclusion": "These chai spice cupcakes bring cozy spice flavor to any table without a single nut in sight. The vanilla frosting keeps things simple, so the chai spices stay in charge. Bake a batch this weekend and see how fast they disappear.",
+  "metaTitle": "Nut-Free Chai Spice Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Warm chai spice cupcakes with vanilla frosting, baked nut-free in a home kitchen. Easy recipe with step-by-step tips. Try it today!",
+  "imageAlt": "Nut-free chai spice cupcake with tall swirled vanilla frosting and a dusting of cinnamon on a pastel background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Nut-free chai spice cupcake with tall swirled vanilla frosting and a dusting of cinnamon on a pastel background",
+      "prompt": "A single chai spice cupcake with tall swirled vanilla frosting piped high, dusted with a pinch of cinnamon, set on a pale butter yellow pastel background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-chai-spice-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Chai spice cupcake batter being poured into a lined muffin pan with visible cinnamon flecks",
+      "prompt": "Chai spice cupcake batter with visible cinnamon flecks being poured into a paper lined muffin pan on a light wood surface. Bright pastel bakery aesthetic, soft even daylight, pale butter yellow background accents, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-chai-spice-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of vanilla frosting swirl on a chai spice cupcake showing texture and cinnamon dusting",
+      "prompt": "Close up detail shot of a tall vanilla frosting swirl on a chai spice cupcake, showing frosting texture and a light cinnamon dusting on top. Bright pastel bakery aesthetic, soft even daylight, pale butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/nut-free-chai-spice-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "classic-vanilla-dream-cupcakes",
+    "nut-free-lemon-sunshine-cupcakes",
+    "spiced-pear-cupcakes"
+  ],
+  "contentIdeaId": "r094",
+  "image": "/nut-free-chai-spice-cupcakes.jpg",
+  "publishAt": "2026-10-19T14:18:00+02:00",
+  "contentType": "recipe"
+}

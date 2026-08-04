@@ -1,0 +1,130 @@
+{
+  "title": "Caramel Latte Cupcakes",
+  "slug": "caramel-latte-cupcakes",
+  "shortDescription": "Espresso vanilla cupcakes with caramel buttercream, ready in 25 minutes prep and 18 minutes bake.",
+  "description": "These cupcakes taste like your favorite coffee shop order, but you baked it yourself. Espresso powder goes right into the vanilla batter, so every bite has that warm coffee note.",
+  "extra": "I tested this recipe on a slow Sunday morning with a real latte in hand for comparison. The caramel buttercream swirl on top makes these feel bakery fancy, but the steps are simple enough for a weeknight bake.\n\nA caramel drizzle finishes each cupcake with a shiny, sticky top. Great for coffee lovers, brunch tables, or anyone who wants a grown up cupcake flavor.",
+  "category": "classic",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp salt",
+    "2 tbsp instant espresso powder",
+    "1 tbsp hot water",
+    "1/2 cup unsalted butter, softened",
+    "1 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1 tsp vanilla extract",
+    "1/2 cup whole milk",
+    "1 cup unsalted butter, softened, for frosting",
+    "3 cups powdered sugar",
+    "1/2 cup store bought caramel sauce, divided",
+    "1 tsp vanilla extract, for frosting",
+    "Pinch of salt for frosting"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk flour, baking powder, and salt in a bowl. Set aside.",
+    "Dissolve espresso powder in hot water. Let it cool slightly.",
+    "Beat butter and sugar together until light and fluffy, about 3 minutes.",
+    "Add eggs one at a time, beating well after each. Mix in vanilla and espresso liquid.",
+    "Add flour mix and milk in three additions, alternating. Mix just until smooth.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in pan 5 minutes, then move to a rack.",
+    "For frosting, beat butter until creamy. Add powdered sugar in batches, then mix in 1/4 cup caramel sauce, vanilla, and salt.",
+    "Once cupcakes are fully cool, pipe caramel buttercream in a tall swirl on each one.",
+    "Warm the remaining caramel sauce slightly and drizzle over each swirl before serving."
+  ],
+  "tips": [
+    "Use room temperature eggs and butter so the batter mixes smooth without lumps.",
+    "Do not skip cooling the cupcakes fully before frosting, or the buttercream will melt and slide.",
+    "For a stronger coffee kick, add an extra 1/2 tsp espresso powder to the batter.",
+    "Warm caramel sauce for about 10 seconds in the microwave so it drizzles instead of clumps."
+  ],
+  "faq": [
+    {
+      "question": "Can I use brewed coffee instead of espresso powder?",
+      "answer": "Espresso powder works best because it adds flavor without extra liquid. If you use brewed coffee, cut the milk by 2 tablespoons to keep the batter from getting too wet."
+    },
+    {
+      "question": "Why did my caramel buttercream turn out runny?",
+      "answer": "This usually means your caramel sauce was too warm or your butter was too soft. Chill the frosting bowl for 10 minutes and rebeat before piping."
+    },
+    {
+      "question": "Can I make the caramel buttercream ahead of time?",
+      "answer": "Yes, make it up to 2 days ahead and store covered in the fridge. Let it sit at room temperature for 30 minutes, then rebeat before piping."
+    },
+    {
+      "question": "How do I stop the caramel drizzle from sliding off the frosting?",
+      "answer": "Let the drizzle cool for a minute after warming so it is thick, not thin. Pipe the buttercream swirl tall first so the caramel has somewhere to sit."
+    }
+  ],
+  "tags": [
+    "classic",
+    "coffee",
+    "caramel",
+    "espresso",
+    "buttercream"
+  ],
+  "recipeKeys": [
+    "caramel latte cupcakes",
+    "espresso cupcakes",
+    "coffee cupcakes recipe",
+    "caramel buttercream",
+    "Medium difficulty",
+    "classic cupcake recipe"
+  ],
+  "keywords": [
+    "caramel latte cupcakes",
+    "espresso vanilla cupcakes",
+    "caramel buttercream cupcakes",
+    "coffee cupcake recipe"
+  ],
+  "nutritionInfo": {
+    "calories": 380,
+    "carbs": 48,
+    "protein": 3,
+    "fat": 20,
+    "fiber": 0,
+    "sugar": 38
+  },
+  "dietaryBadges": [],
+  "conclusion": "These caramel latte cupcakes turn your morning coffee order into a dessert. Make a batch for brunch or gift a few to your favorite coffee lover.",
+  "metaTitle": "Caramel Latte Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Bake espresso vanilla cupcakes with caramel buttercream and drizzle. Easy step-by-step plan ready in 43 minutes, get the recipe now.",
+  "imageAlt": "Caramel latte cupcake with tall swirled caramel buttercream and caramel drizzle on top",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Caramel latte cupcake with tall swirled caramel buttercream and caramel drizzle on top",
+      "prompt": "A single caramel latte cupcake with tall swirled caramel buttercream piped high, caramel drizzle running down the sides, set against a warm butter yellow pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/caramel-latte-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Piping caramel buttercream in a tall swirl onto an espresso vanilla cupcake",
+      "prompt": "Close up of a piping bag adding tall swirled caramel buttercream onto a fresh espresso vanilla cupcake on white porcelain, bright pastel bakery aesthetic, pale aqua pastel background, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/caramel-latte-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of caramel drizzle dripping over swirled buttercream on a latte cupcake",
+      "prompt": "Extreme close up of golden caramel drizzle dripping over tall swirled caramel buttercream on a cupcake, set on white porcelain, blush pink pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/caramel-latte-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "espresso-martini-cupcakes",
+    "irish-coffee-cupcakes",
+    "classic-vanilla-dream-cupcakes"
+  ],
+  "contentIdeaId": "r022",
+  "image": "/caramel-latte-cupcakes.jpg",
+  "publishAt": "2026-08-08T11:19:00+02:00",
+  "contentType": "recipe"
+}

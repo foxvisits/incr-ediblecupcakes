@@ -1,0 +1,133 @@
+{
+  "title": "Maple Walnut Autumn Cupcakes",
+  "slug": "maple-walnut-autumn-cupcakes",
+  "shortDescription": "Soft brown butter cupcakes with toasted walnuts, ready in 25 minutes prep and 18 minutes bake.",
+  "description": "These maple walnut cupcakes taste like a fall afternoon. Brown butter and real maple syrup give the crumb a warm, toasty base. Toasted walnuts add crunch in every bite. I tested this batch three times in my own kitchen before I got the frosting swirl right. The trick is using maple syrup, not maple extract, for real depth. A maple buttercream swirl goes on top, piped high like our other cupcakes. If you want extra texture, add the optional oat and walnut crumble before serving. This one is great for potlucks, teacher gifts, or just a Sunday baking project when the leaves start turning.",
+  "category": "seasonal",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all purpose flour",
+    "1 1/2 tsp baking powder",
+    "1/2 tsp baking soda",
+    "1/2 tsp salt",
+    "1/2 cup unsalted butter, browned and cooled",
+    "1/2 cup pure maple syrup (grade A dark)",
+    "1/3 cup brown sugar, packed",
+    "2 large eggs, room temperature",
+    "1/2 cup buttermilk",
+    "1 tsp vanilla extract",
+    "3/4 cup walnuts, toasted and chopped",
+    "1 cup unsalted butter, softened, for frosting",
+    "3 cups powdered sugar, for frosting",
+    "3 tbsp pure maple syrup, for frosting",
+    "1/4 cup old fashioned oats, for optional crumble",
+    "2 tbsp cold butter, cubed, for optional crumble"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12 cup muffin pan with paper liners.",
+    "Brown the 1/2 cup butter in a light pan until it smells nutty. Pour into a bowl and let it cool for 10 minutes.",
+    "Whisk flour, baking powder, baking soda, and salt in a medium bowl.",
+    "In a large bowl, whisk cooled brown butter, maple syrup, and brown sugar until smooth.",
+    "Add eggs one at a time, whisking well after each. Whisk in buttermilk and vanilla.",
+    "Fold the dry mix into the wet mix in two batches. Stop mixing once no dry flour shows.",
+    "Fold in the chopped toasted walnuts by hand.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a wire rack.",
+    "For the crumble, rub cold butter into oats with your fingers until it looks like coarse sand. Toast in a dry pan 3 minutes, stirring often. Cool fully.",
+    "For the frosting, beat softened butter until pale and fluffy, about 2 minutes.",
+    "Add powdered sugar in two batches, then beat in maple syrup until the frosting is smooth and holds a peak.",
+    "Pipe frosting high on fully cooled cupcakes. Sprinkle crumble on top if using."
+  ],
+  "tips": [
+    "Use real maple syrup, not pancake syrup or maple extract, for true flavor.",
+    "Toast walnuts in a dry pan for 4 minutes before chopping. It makes them taste less bitter.",
+    "Let brown butter cool to room temperature before mixing, or it will melt the sugar too fast.",
+    "Frost only fully cooled cupcakes, or the buttercream will slide right off."
+  ],
+  "faq": [
+    {
+      "question": "Can I use maple extract instead of maple syrup?",
+      "answer": "You can, but the flavor will be flatter. Real maple syrup gives the crumb moisture and a deeper, less one note taste."
+    },
+    {
+      "question": "Do I have to toast the walnuts first?",
+      "answer": "Toasting is not required, but it removes raw bitterness and makes the nuts taste richer. I toast mine for 4 minutes in a dry pan."
+    },
+    {
+      "question": "Can I skip the crumble topping?",
+      "answer": "Yes, the crumble is optional. The cupcakes are still fully finished with just the maple frosting swirl on top."
+    },
+    {
+      "question": "How far ahead can I bake these cupcakes?",
+      "answer": "Bake the cupcakes up to 2 days ahead and store unfrosted at room temperature in a sealed container. Frost the day you plan to serve them."
+    }
+  ],
+  "tags": [
+    "seasonal",
+    "fall-cupcakes",
+    "maple-frosting",
+    "walnut",
+    "autumn-baking"
+  ],
+  "recipeKeys": [
+    "maple walnut cupcakes",
+    "autumn cupcake recipe",
+    "maple frosting cupcakes",
+    "fall cupcakes with walnuts",
+    "brown butter cupcakes",
+    "Medium difficulty"
+  ],
+  "keywords": [
+    "maple walnut cupcakes",
+    "fall cupcake recipe",
+    "maple frosting swirl",
+    "autumn dessert",
+    "toasted walnut cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 320,
+    "carbs": 40,
+    "protein": 4,
+    "fat": 17,
+    "fiber": 1,
+    "sugar": 30
+  },
+  "dietaryBadges": [],
+  "conclusion": "These maple walnut cupcakes bring real fall flavor without a long ingredient list. The maple frosting swirl makes them look bakery ready, and the crumble adds a nice crunch if you want it. Bake a batch this weekend and see how fast they disappear.",
+  "metaTitle": "Maple Walnut Autumn Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Bake these maple walnut cupcakes with a maple frosting swirl and crunchy crumble topping. Try this cozy autumn recipe today!",
+  "imageAlt": "Maple walnut cupcake with tall maple frosting swirl and crumble topping on a cream plate",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Maple walnut cupcake with tall maple frosting swirl and crumble topping on a cream plate",
+      "prompt": "A single maple walnut cupcake with tall swirled maple buttercream piped high, topped with a light oat crumble and a few chopped walnuts, set on white porcelain against a butter yellow pastel background, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/maple-walnut-autumn-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Piping maple buttercream swirl onto a cooled walnut cupcake",
+      "prompt": "Close up of a piping bag swirling tall maple buttercream frosting onto a cooled walnut cupcake on white porcelain, soft even daylight, pastel butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/maple-walnut-autumn-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of maple frosting swirl with crumble topping and chopped walnuts",
+      "prompt": "Macro shot of a maple frosting swirl topped with a light oat crumble and chopped toasted walnuts on a cupcake, white porcelain plate, pastel butter yellow background, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/maple-walnut-autumn-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "spiced-pear-cupcakes",
+    "classic-vanilla-dream-cupcakes",
+    "malva-pudding-cupcakes"
+  ],
+  "contentIdeaId": "r154",
+  "image": "/maple-walnut-autumn-cupcakes.jpg",
+  "publishAt": "2026-09-06T14:33:00+02:00",
+  "contentType": "recipe"
+}

@@ -1,0 +1,137 @@
+{
+  "title": "Keto Red Velvet Cupcakes",
+  "slug": "keto-red-velvet-cupcakes",
+  "shortDescription": "Low carb red velvet cupcakes with beet powder tint, ready in 43 minutes with 25 minutes prep and 18 minutes bake.",
+  "description": "These keto red velvet cupcakes get their soft red color from beet powder, not food dye. I tested this batch three times in my own kitchen to get the crumb right without any wheat flour.",
+  "category": "keto",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "2 cups almond flour, finely ground",
+    "1/4 cup unsweetened cocoa powder",
+    "1 tbsp beet powder",
+    "1 tsp baking powder",
+    "1/4 tsp salt",
+    "3 large eggs, room temperature",
+    "1/2 cup unsalted butter, melted",
+    "3/4 cup granulated erythritol or monk fruit blend",
+    "1 tsp vanilla extract",
+    "1/2 cup sour cream",
+    "1 tsp apple cider vinegar",
+    "2 tbsp unsweetened almond milk",
+    "8 oz cream cheese, softened, for frosting",
+    "1/4 cup unsalted butter, softened, for frosting",
+    "1 cup powdered erythritol, for frosting",
+    "1/2 tsp vanilla extract, for frosting"
+  ],
+  "instructions": [
+    "Preheat your oven to 350°F and line a 12-cup muffin pan with paper liners.",
+    "Whisk the almond flour, cocoa powder, beet powder, baking powder, and salt in a large bowl.",
+    "In another bowl, beat the eggs, melted butter, erythritol, and vanilla until smooth.",
+    "Stir in the sour cream, vinegar, and almond milk until the wet mix is fully blended.",
+    "Pour the wet mix into the dry mix and stir just until no dry streaks remain.",
+    "Divide the batter evenly among the liners, filling each about two thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick comes out clean.",
+    "Cool the cupcakes in the pan for 5 minutes, then move them to a wire rack to cool fully.",
+    "Beat the cream cheese and butter for the frosting until smooth and light.",
+    "Add the powdered erythritol and vanilla, then beat until the frosting holds soft peaks.",
+    "Pipe or spread the frosting on the fully cooled cupcakes before serving."
+  ],
+  "tips": [
+    "Use fine almond flour, not almond meal, for a smoother crumb.",
+    "Beet powder gives a soft rose red, not a bright red. Add an extra 1/2 teaspoon for a deeper tone.",
+    "Let the cupcakes cool completely before frosting or the cream cheese will slide right off.",
+    "Store frosted cupcakes in the fridge and let them sit 10 minutes at room temperature before serving."
+  ],
+  "faq": [
+    {
+      "question": "Why is beet powder used instead of red food coloring?",
+      "answer": "Beet powder gives a natural red tint without artificial dye. It also adds a light earthy note that pairs well with cocoa in this keto batter."
+    },
+    {
+      "question": "Can I make these cupcakes dairy free?",
+      "answer": "Swap the butter for coconut oil and use dairy free cream cheese and a plant based butter for the frosting. The texture stays close to the original."
+    },
+    {
+      "question": "Why did my cupcakes turn out dense?",
+      "answer": "Almond flour batters are heavier than wheat flour batters by nature. Overmixing the batter after adding the wet ingredients also makes them denser, so stir just until combined."
+    },
+    {
+      "question": "How many net carbs are in one cupcake?",
+      "answer": "Each cupcake has about 4 grams net carbs when made with erythritol, based on my nutrition breakdown below."
+    }
+  ],
+  "tags": [
+    "keto",
+    "red-velvet",
+    "low-carb",
+    "gluten-free",
+    "cupcakes"
+  ],
+  "recipeKeys": [
+    "keto red velvet cupcakes",
+    "low carb red velvet cupcakes",
+    "gluten free red velvet cupcakes",
+    "beet powder cupcakes",
+    "sugar free cream cheese frosting",
+    "keto cupcake recipe",
+    "Medium difficulty"
+  ],
+  "keywords": [
+    "keto red velvet cupcakes",
+    "low carb red velvet cupcakes",
+    "beet powder cupcakes",
+    "sugar free red velvet",
+    "gluten free red velvet cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 210,
+    "carbs": 6,
+    "protein": 5,
+    "fat": 19,
+    "fiber": 2,
+    "sugar": 1
+  },
+  "dietaryBadges": [
+    "keto",
+    "gluten-free",
+    "low-carb",
+    "sugar-free"
+  ],
+  "conclusion": "These keto red velvet cupcakes prove you can keep the classic look without the sugar or flour. Bake a batch this weekend and see how the beet powder color holds up in your own oven.",
+  "metaTitle": "Keto Red Velvet Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Bake keto red velvet cupcakes with beet powder tint and cream cheese frosting. Low carb and gluten free. Try Sarah's tested recipe today.",
+  "imageAlt": "Keto red velvet cupcake with tall swirled cream cheese frosting on a white plate",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Keto red velvet cupcake with tall swirled cream cheese frosting on a white plate",
+      "prompt": "A single keto red velvet cupcake with a soft rose red crumb and tall swirled cream cheese frosting piped high, set on white porcelain, bright pastel bakery aesthetic, soft even daylight, blush pink pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/keto-red-velvet-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Red velvet keto batter being poured into a lined muffin pan",
+      "prompt": "Overhead shot of deep red keto cupcake batter being poured into paper lined muffin cups, bright pastel bakery aesthetic, soft even daylight, pale aqua pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/keto-red-velvet-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of cream cheese frosting swirl on a keto red velvet cupcake",
+      "prompt": "Close up detail of a tall swirled cream cheese frosting peak on a keto red velvet cupcake, crumb just visible at the base, bright pastel bakery aesthetic, soft even daylight, butter yellow pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/keto-red-velvet-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "keto-chocolate-bliss-cupcakes",
+    "keto-chocolate-truffle-cupcakes",
+    "red-velvet-romance-cupcakes"
+  ],
+  "contentIdeaId": "r051",
+  "image": "/keto-red-velvet-cupcakes.jpg",
+  "publishAt": "2026-09-10T14:41:00+02:00",
+  "contentType": "recipe"
+}

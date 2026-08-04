@@ -193,8 +193,9 @@
       "category": "classic",
       "notes": "target keyword: buttermilk cupcakes. Tender crumb, light vanilla sweetness, moisture from buttermilk",
       "priority": 18,
-      "status": "draft",
-      "slug": "buttermilk-bakery-style-cupcakes"
+      "status": "scheduled",
+      "slug": "buttermilk-bakery-style-cupcakes",
+      "publishAt": "2026-08-04T14:19:00+02:00"
     },
     {
       "id": "r019",
@@ -202,8 +203,9 @@
       "category": "classic",
       "notes": "Warm brown sugar batter, cinnamon ribbon swirl baked inside, vanilla-cinnamon frosting swirl",
       "priority": 19,
-      "status": "draft",
-      "slug": "brown-sugar-cinnamon-swirl-cupcakes"
+      "status": "scheduled",
+      "slug": "brown-sugar-cinnamon-swirl-cupcakes",
+      "publishAt": "2026-08-05T10:43:00+02:00"
     },
     {
       "id": "r020",
@@ -211,8 +213,9 @@
       "category": "classic",
       "notes": "Real strawberry compote folded into batter + whipped cream cheese frosting. No artificial color",
       "priority": 20,
-      "status": "draft",
-      "slug": "strawberries-and-cream-cupcakes"
+      "status": "scheduled",
+      "slug": "strawberries-and-cream-cupcakes",
+      "publishAt": "2026-08-06T15:30:00+02:00"
     },
     {
       "id": "r021",
@@ -220,8 +223,9 @@
       "category": "classic",
       "notes": "Moist deep cocoa cake base, milk chocolate buttercream swirled high",
       "priority": 21,
-      "status": "draft",
-      "slug": "chocolate-fudge-cupcakes-milk-chocolate-swirl"
+      "status": "scheduled",
+      "slug": "chocolate-fudge-cupcakes-milk-chocolate-swirl",
+      "publishAt": "2026-08-07T13:18:00+02:00"
     },
     {
       "id": "r022",
@@ -229,8 +233,9 @@
       "category": "classic",
       "notes": "Espresso-infused vanilla cake, caramel buttercream swirl, caramel drizzle",
       "priority": 22,
-      "status": "draft",
-      "slug": "caramel-latte-cupcakes"
+      "status": "scheduled",
+      "slug": "caramel-latte-cupcakes",
+      "publishAt": "2026-08-08T11:19:00+02:00"
     },
     {
       "id": "r023",
@@ -238,8 +243,9 @@
       "category": "classic",
       "notes": "Real vanilla bean specks, wildflower honey sweetness, silky honey frosting",
       "priority": 23,
-      "status": "draft",
-      "slug": "honey-vanilla-bean-cupcakes"
+      "status": "scheduled",
+      "slug": "honey-vanilla-bean-cupcakes",
+      "publishAt": "2026-08-09T10:38:00+02:00"
     },
     {
       "id": "r024",
@@ -247,8 +253,9 @@
       "category": "classic",
       "notes": "Fresh lemon zest + raspberry puree, tart-sweet balanced flavor",
       "priority": 24,
-      "status": "draft",
-      "slug": "raspberry-lemon-burst-cupcakes"
+      "status": "scheduled",
+      "slug": "raspberry-lemon-burst-cupcakes",
+      "publishAt": "2026-08-10T10:18:00+02:00"
     },
     {
       "id": "r025",
@@ -256,8 +263,9 @@
       "category": "classic",
       "notes": "Seasonal evergreen search. Soft peach puree in batter, whipped silky peach cream frosting",
       "priority": 25,
-      "status": "draft",
-      "slug": "peaches-and-cream-cupcakes"
+      "status": "scheduled",
+      "slug": "peaches-and-cream-cupcakes",
+      "publishAt": "2026-08-11T10:45:00+02:00"
     },
     {
       "id": "r026",
@@ -265,8 +273,9 @@
       "category": "classic",
       "notes": "Cupcake-muffin hybrid, visible blueberry pockets, vanilla swirl frosting",
       "priority": 26,
-      "status": "draft",
-      "slug": "blueberry-muffin-cupcakes-vanilla-swirl"
+      "status": "scheduled",
+      "slug": "blueberry-muffin-cupcakes-vanilla-swirl",
+      "publishAt": "2026-08-12T10:02:00+02:00"
     },
     {
       "id": "r027",
@@ -274,8 +283,9 @@
       "category": "classic",
       "notes": "Fresh orange zest + juice, vanilla cream frosting, nostalgic but elegant",
       "priority": 27,
-      "status": "draft",
-      "slug": "creamsicle-orange-vanilla-cupcakes"
+      "status": "scheduled",
+      "slug": "creamsicle-orange-vanilla-cupcakes",
+      "publishAt": "2026-08-13T12:59:00+02:00"
     },
     {
       "id": "r028",
@@ -283,8 +293,9 @@
       "category": "classic",
       "notes": "Moist banana cake, pudding core, whipped vanilla frosting",
       "priority": 28,
-      "status": "draft",
-      "slug": "banana-pudding-cupcakes"
+      "status": "scheduled",
+      "slug": "banana-pudding-cupcakes",
+      "publishAt": "2026-08-14T13:46:00+02:00"
     },
     {
       "id": "r029",
@@ -292,8 +303,9 @@
       "category": "classic",
       "notes": "Vanilla cupcake with small chocolate chips, milk-infused frosting",
       "priority": 29,
-      "status": "draft",
-      "slug": "chocolate-chip-milk-cupcakes"
+      "status": "scheduled",
+      "slug": "chocolate-chip-milk-cupcakes",
+      "publishAt": "2026-08-15T11:35:00+02:00"
     },
     {
       "id": "r030",
@@ -301,8 +313,9 @@
       "category": "classic",
       "notes": "Grated honey-sweetened apple, cinnamon notes, vanilla frosting",
       "priority": 30,
-      "status": "draft",
-      "slug": "honey-apple-cupcakes"
+      "status": "scheduled",
+      "slug": "honey-apple-cupcakes",
+      "publishAt": "2026-08-16T14:44:00+02:00"
     },
     {
       "id": "r031",
@@ -310,8 +323,9 @@
       "category": "classic",
       "notes": "Soft vanilla cake base with almond extract, silky almond buttercream. Classic not nut-free: contains almond",
       "priority": 31,
-      "status": "draft",
-      "slug": "golden-almond-buttercream-cupcakes"
+      "status": "scheduled",
+      "slug": "golden-almond-buttercream-cupcakes",
+      "publishAt": "2026-08-17T10:49:00+02:00"
     },
     {
       "id": "r032",
@@ -319,8 +333,9 @@
       "category": "classic",
       "notes": "Pure maple syrup in batter + frosting, warm comforting flavor",
       "priority": 32,
-      "status": "draft",
-      "slug": "maple-vanilla-cupcakes"
+      "status": "scheduled",
+      "slug": "maple-vanilla-cupcakes",
+      "publishAt": "2026-08-18T10:03:00+02:00"
     },
     {
       "id": "r033",
@@ -328,8 +343,9 @@
       "category": "classic",
       "notes": "Coconut milk batter, fluffy coconut-fleck swirl frosting, toasted coconut topping",
       "priority": 33,
-      "status": "draft",
-      "slug": "toasted-coconut-swirl-cupcakes"
+      "status": "scheduled",
+      "slug": "toasted-coconut-swirl-cupcakes",
+      "publishAt": "2026-08-19T13:46:00+02:00"
     },
     {
       "id": "r034",
@@ -337,8 +353,9 @@
       "category": "classic",
       "notes": "Cocoa cake + marshmallow-cream swirl frosting piped like soft-serve",
       "priority": 34,
-      "status": "draft",
-      "slug": "hot-cocoa-cupcakes-with-marshmallow-swirl"
+      "status": "scheduled",
+      "slug": "hot-cocoa-cupcakes-with-marshmallow-swirl",
+      "publishAt": "2026-08-20T12:10:00+02:00"
     },
     {
       "id": "r035",
@@ -346,8 +363,9 @@
       "category": "classic",
       "notes": "Chocolate base + cool peppermint frosting, no artificial green",
       "priority": 35,
-      "status": "draft",
-      "slug": "mint-chocolate-swirl-cupcakes"
+      "status": "scheduled",
+      "slug": "mint-chocolate-swirl-cupcakes",
+      "publishAt": "2026-08-21T12:48:00+02:00"
     },
     {
       "id": "r036",
@@ -355,8 +373,9 @@
       "category": "classic",
       "notes": "Chai-spiced vanilla cake + lightly spiced vanilla swirl frosting",
       "priority": 36,
-      "status": "draft",
-      "slug": "vanilla-chai-cupcakes"
+      "status": "scheduled",
+      "slug": "vanilla-chai-cupcakes",
+      "publishAt": "2026-08-22T10:29:00+02:00"
     },
     {
       "id": "r037",
@@ -364,8 +383,9 @@
       "category": "classic",
       "notes": "Holiday cluster. Eggnog in batter + nutmeg buttercream, nostalgic holiday flavor",
       "priority": 37,
-      "status": "draft",
-      "slug": "brown-sugar-eggnog-cupcakes"
+      "status": "scheduled",
+      "slug": "brown-sugar-eggnog-cupcakes",
+      "publishAt": "2026-11-01T15:42:00+02:00"
     },
     {
       "id": "r038",
@@ -373,8 +393,9 @@
       "category": "classic",
       "notes": "Holiday cluster. Gingerbread spice + espresso buttercream",
       "priority": 38,
-      "status": "draft",
-      "slug": "spiced-gingerbread-latte-cupcakes"
+      "status": "scheduled",
+      "slug": "spiced-gingerbread-latte-cupcakes",
+      "publishAt": "2026-11-02T15:57:00+02:00"
     },
     {
       "id": "r039",
@@ -382,8 +403,9 @@
       "category": "classic",
       "notes": "Holiday cluster. Apple cider batter + cinnamon + caramel drizzle",
       "priority": 39,
-      "status": "draft",
-      "slug": "caramel-apple-cider-cupcakes"
+      "status": "scheduled",
+      "slug": "caramel-apple-cider-cupcakes",
+      "publishAt": "2026-09-01T13:34:00+02:00"
     },
     {
       "id": "r040",
@@ -391,8 +413,9 @@
       "category": "keto",
       "notes": "target keyword: keto vanilla cupcakes almond flour. Almond + coconut flour combo, light but stable crumb",
       "priority": 40,
-      "status": "draft",
-      "slug": "keto-vanilla-cloud-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-vanilla-cloud-cupcakes",
+      "publishAt": "2026-08-23T11:10:00+02:00"
     },
     {
       "id": "r041",
@@ -400,8 +423,9 @@
       "category": "keto",
       "notes": "Cinnamon-spice almond flour cake + vanilla cream swirl frosting",
       "priority": 41,
-      "status": "draft",
-      "slug": "keto-cinnamon-roll-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-cinnamon-roll-cupcakes",
+      "publishAt": "2026-08-24T11:19:00+02:00"
     },
     {
       "id": "r042",
@@ -409,8 +433,9 @@
       "category": "keto",
       "notes": "Coconut milk batter + shredded coconut, coconut-vanilla frosting swirl",
       "priority": 42,
-      "status": "draft",
-      "slug": "keto-coconut-dream-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-coconut-dream-cupcakes",
+      "publishAt": "2026-08-25T15:31:00+02:00"
     },
     {
       "id": "r043",
@@ -418,8 +443,9 @@
       "category": "keto",
       "notes": "Peanut butter batter + chocolate buttercream swirl, balance texture",
       "priority": 43,
-      "status": "draft",
-      "slug": "keto-peanut-butter-cup-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-peanut-butter-cup-cupcakes",
+      "publishAt": "2026-08-26T11:07:00+02:00"
     },
     {
       "id": "r044",
@@ -427,8 +453,9 @@
       "category": "keto",
       "notes": "Almond flour espresso cake, mocha cream swirl frosting, deep but not bitter",
       "priority": 44,
-      "status": "draft",
-      "slug": "keto-almond-mocha-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-almond-mocha-cupcakes",
+      "publishAt": "2026-08-27T15:42:00+02:00"
     },
     {
       "id": "r045",
@@ -436,8 +463,9 @@
       "category": "keto",
       "notes": "Sugar-free caramel drizzled over swirl frosting, chopped pecans",
       "priority": 45,
-      "status": "draft",
-      "slug": "keto-caramel-pecan-swirl-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-caramel-pecan-swirl-cupcakes",
+      "publishAt": "2026-08-28T13:13:00+02:00"
     },
     {
       "id": "r046",
@@ -445,8 +473,9 @@
       "category": "keto",
       "notes": "Pumpkin puree adds moisture, warm spice profile, cream cheese frosting",
       "priority": 46,
-      "status": "draft",
-      "slug": "keto-pumpkin-spice-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-pumpkin-spice-cupcakes",
+      "publishAt": "2026-09-02T11:49:00+02:00"
     },
     {
       "id": "r047",
@@ -454,8 +483,9 @@
       "category": "keto",
       "notes": "Fresh strawberry puree swirl in batter, whipped cheesecake frosting",
       "priority": 47,
-      "status": "draft",
-      "slug": "keto-strawberry-cheesecake-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-strawberry-cheesecake-cupcakes",
+      "publishAt": "2026-08-29T11:07:00+02:00"
     },
     {
       "id": "r048",
@@ -463,8 +493,9 @@
       "category": "keto",
       "notes": "Butter-heavy batter with maple extract not syrup, creamy vanilla frosting",
       "priority": 48,
-      "status": "draft",
-      "slug": "keto-maple-butter-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-maple-butter-cupcakes",
+      "publishAt": "2026-08-30T14:09:00+02:00"
     },
     {
       "id": "r049",
@@ -472,8 +503,9 @@
       "category": "keto",
       "notes": "Almond flour + blueberries, lemon swirl frosting, lightly sweet",
       "priority": 49,
-      "status": "draft",
-      "slug": "keto-blueberry-lemon-muffin-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-blueberry-lemon-muffin-cupcakes",
+      "publishAt": "2026-08-31T12:21:00+02:00"
     },
     {
       "id": "r050",
@@ -481,8 +513,9 @@
       "category": "keto",
       "notes": "Almond-based chai cake, vanilla chai frosting, warm spice",
       "priority": 50,
-      "status": "draft",
-      "slug": "keto-chai-spice-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-chai-spice-cupcakes",
+      "publishAt": "2026-09-09T15:34:00+02:00"
     },
     {
       "id": "r051",
@@ -490,8 +523,9 @@
       "category": "keto",
       "notes": "Beet powder or natural color for subtle red tint, cream cheese frosting",
       "priority": 51,
-      "status": "draft",
-      "slug": "keto-red-velvet-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-red-velvet-cupcakes",
+      "publishAt": "2026-09-10T14:41:00+02:00"
     },
     {
       "id": "r052",
@@ -499,8 +533,9 @@
       "category": "keto",
       "notes": "No actual banana, use banana extract. Moist crumb from almond flour",
       "priority": 52,
-      "status": "draft",
-      "slug": "keto-banana-bread-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-banana-bread-cupcakes",
+      "publishAt": "2026-09-11T10:16:00+02:00"
     },
     {
       "id": "r053",
@@ -508,8 +543,9 @@
       "category": "keto",
       "notes": "Finely grated carrot + spices, cream cheese frosting, not overly sweet",
       "priority": 53,
-      "status": "draft",
-      "slug": "keto-carrot-cake-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-carrot-cake-cupcakes",
+      "publishAt": "2026-09-12T11:50:00+02:00"
     },
     {
       "id": "r054",
@@ -517,8 +553,9 @@
       "category": "keto",
       "notes": "Cocoa cake with sugar-free chocolate chips, chocolate swirl frosting",
       "priority": 54,
-      "status": "draft",
-      "slug": "keto-double-chocolate-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-double-chocolate-cupcakes",
+      "publishAt": "2026-09-13T15:41:00+02:00"
     },
     {
       "id": "r055",
@@ -526,8 +563,9 @@
       "category": "keto",
       "notes": "Cheesecake batter base baked into cupcake form, blueberry swirl",
       "priority": 55,
-      "status": "draft",
-      "slug": "keto-lemon-blueberry-cheesecake-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-lemon-blueberry-cheesecake-cupcakes",
+      "publishAt": "2026-09-14T11:32:00+02:00"
     },
     {
       "id": "r056",
@@ -535,8 +573,9 @@
       "category": "keto",
       "notes": "Espresso batter + chocolate frosting + sugar-free caramel drizzle",
       "priority": 56,
-      "status": "draft",
-      "slug": "keto-salted-caramel-mocha-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-salted-caramel-mocha-cupcakes",
+      "publishAt": "2026-09-15T12:18:00+02:00"
     },
     {
       "id": "r057",
@@ -544,8 +583,9 @@
       "category": "keto",
       "notes": "Elegant, softly sweet almond-vanilla cake, smooth wedding-style swirl",
       "priority": 57,
-      "status": "draft",
-      "slug": "keto-vanilla-almond-wedding-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-vanilla-almond-wedding-cupcakes",
+      "publishAt": "2026-09-16T15:35:00+02:00"
     },
     {
       "id": "r058",
@@ -553,8 +593,9 @@
       "category": "keto",
       "notes": "Holiday cluster. Almond + coconut flour base with warm spices",
       "priority": 58,
-      "status": "draft",
-      "slug": "keto-christmas-spice-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-christmas-spice-cupcakes",
+      "publishAt": "2026-11-03T12:06:00+02:00"
     },
     {
       "id": "r059",
@@ -562,8 +603,9 @@
       "category": "keto",
       "notes": "Holiday cluster. Coffee + cocoa + sugar-free peppermint buttercream",
       "priority": 59,
-      "status": "draft",
-      "slug": "keto-peppermint-mocha-cupcakes"
+      "status": "scheduled",
+      "slug": "keto-peppermint-mocha-cupcakes",
+      "publishAt": "2026-11-04T13:40:00+02:00"
     },
     {
       "id": "r060",
@@ -571,8 +613,9 @@
       "category": "vegan",
       "notes": "target keyword: vegan vanilla cupcakes fluffy. Aquafaba for lift, light fluffy crumb, real vanilla bean",
       "priority": 60,
-      "status": "draft",
-      "slug": "vegan-vanilla-bean-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-vanilla-bean-cupcakes",
+      "publishAt": "2026-09-17T15:01:00+02:00"
     },
     {
       "id": "r061",
@@ -580,8 +623,9 @@
       "category": "vegan",
       "notes": "Coconut milk + cocoa, frosting should be silky not oily, deep chocolate",
       "priority": 61,
-      "status": "draft",
-      "slug": "vegan-chocolate-silk-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-chocolate-silk-cupcakes",
+      "publishAt": "2026-09-18T15:50:00+02:00"
     },
     {
       "id": "r062",
@@ -589,8 +633,9 @@
       "category": "vegan",
       "notes": "Fresh zest + lemon juice, frosting is lemon cream cheese-style",
       "priority": 62,
-      "status": "draft",
-      "slug": "vegan-lemon-sunshine-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-lemon-sunshine-cupcakes",
+      "publishAt": "2026-09-19T14:43:00+02:00"
     },
     {
       "id": "r063",
@@ -598,8 +643,9 @@
       "category": "vegan",
       "notes": "Finely grated carrot, warm spices, vegan cream cheese frosting",
       "priority": 63,
-      "status": "draft",
-      "slug": "vegan-carrot-cream-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-carrot-cream-cupcakes",
+      "publishAt": "2026-09-20T11:29:00+02:00"
     },
     {
       "id": "r064",
@@ -607,8 +653,9 @@
       "category": "vegan",
       "notes": "No artificial red dyes. Strawberry puree in batter + frosting, soft natural pink tone",
       "priority": 64,
-      "status": "draft",
-      "slug": "vegan-strawberry-milk-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-strawberry-milk-cupcakes",
+      "publishAt": "2026-09-21T15:19:00+02:00"
     },
     {
       "id": "r065",
@@ -616,8 +663,9 @@
       "category": "vegan",
       "notes": "Small blueberries, keep batter tender, vanilla frosting swirl",
       "priority": 65,
-      "status": "draft",
-      "slug": "vegan-blueberry-muffin-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-blueberry-muffin-cupcakes",
+      "publishAt": "2026-09-22T11:06:00+02:00"
     },
     {
       "id": "r066",
@@ -625,8 +673,9 @@
       "category": "vegan",
       "notes": "Toasted walnuts for aroma, maple frosting swirl",
       "priority": 66,
-      "status": "draft",
-      "slug": "vegan-maple-walnut-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-maple-walnut-cupcakes",
+      "publishAt": "2026-09-23T10:32:00+02:00"
     },
     {
       "id": "r067",
@@ -634,8 +683,9 @@
       "category": "vegan",
       "notes": "PB batter + chocolate swirl frosting, creamy not crumbly",
       "priority": 67,
-      "status": "draft",
-      "slug": "vegan-peanut-butter-cup-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-peanut-butter-cup-cupcakes",
+      "publishAt": "2026-09-24T16:20:00+02:00"
     },
     {
       "id": "r068",
@@ -643,8 +693,9 @@
       "category": "vegan",
       "notes": "Use vegan sandwich cookies. Cookie crumbs in frosting + batter, fluffy and playful",
       "priority": 68,
-      "status": "draft",
-      "slug": "vegan-cookies-and-cream-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-cookies-and-cream-cupcakes",
+      "publishAt": "2026-09-25T12:32:00+02:00"
     },
     {
       "id": "r069",
@@ -652,8 +703,9 @@
       "category": "vegan",
       "notes": "Chai spice blend + creamy spiced vanilla frosting",
       "priority": 69,
-      "status": "draft",
-      "slug": "vegan-chai-latte-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-chai-latte-cupcakes",
+      "publishAt": "2026-09-26T15:13:00+02:00"
     },
     {
       "id": "r070",
@@ -661,8 +713,9 @@
       "category": "vegan",
       "notes": "Coconut milk batter + fluffy coconut whip-style frosting",
       "priority": 70,
-      "status": "draft",
-      "slug": "vegan-coconut-cloud-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-coconut-cloud-cupcakes",
+      "publishAt": "2026-09-27T14:21:00+02:00"
     },
     {
       "id": "r071",
@@ -670,8 +723,9 @@
       "category": "vegan",
       "notes": "Year-round but low competition. Molasses + warm spices, ginger cream cheese frosting swirl",
       "priority": 71,
-      "status": "draft",
-      "slug": "vegan-gingerbread-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-gingerbread-cupcakes",
+      "publishAt": "2026-11-05T17:45:00+02:00"
     },
     {
       "id": "r072",
@@ -679,8 +733,9 @@
       "category": "vegan",
       "notes": "Ripe bananas for sweetness, cinnamon cream swirl frosting",
       "priority": 72,
-      "status": "draft",
-      "slug": "vegan-banana-bread-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-banana-bread-cupcakes",
+      "publishAt": "2026-09-28T13:23:00+02:00"
     },
     {
       "id": "r073",
@@ -688,8 +743,9 @@
       "category": "vegan",
       "notes": "Almond extract for perfume, raspberry garnish",
       "priority": 73,
-      "status": "draft",
-      "slug": "vegan-raspberry-almond-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-raspberry-almond-cupcakes",
+      "publishAt": "2026-09-29T13:42:00+02:00"
     },
     {
       "id": "r074",
@@ -697,8 +753,9 @@
       "category": "vegan",
       "notes": "Orange zest + vanilla cream swirl frosting, creamsicle vibe",
       "priority": 74,
-      "status": "draft",
-      "slug": "vegan-orange-cream-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-orange-cream-cupcakes",
+      "publishAt": "2026-09-30T15:49:00+02:00"
     },
     {
       "id": "r075",
@@ -706,8 +763,9 @@
       "category": "vegan",
       "notes": "Brew tea in plant milk, lavender-vanilla frosting swirl optional",
       "priority": 75,
-      "status": "draft",
-      "slug": "vegan-earl-grey-tea-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-earl-grey-tea-cupcakes",
+      "publishAt": "2026-10-01T13:21:00+02:00"
     },
     {
       "id": "r076",
@@ -715,8 +773,9 @@
       "category": "vegan",
       "notes": "Coffee + cocoa balance, mocha buttercream swirl",
       "priority": 76,
-      "status": "draft",
-      "slug": "vegan-double-mocha-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-double-mocha-cupcakes",
+      "publishAt": "2026-10-02T17:03:00+02:00"
     },
     {
       "id": "r077",
@@ -724,8 +783,9 @@
       "category": "vegan",
       "notes": "Use agave or maple instead of honey, warm golden flavor",
       "priority": 77,
-      "status": "draft",
-      "slug": "vegan-honey-style-agave-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-honey-style-agave-cupcakes",
+      "publishAt": "2026-10-03T15:35:00+02:00"
     },
     {
       "id": "r078",
@@ -733,8 +793,9 @@
       "category": "vegan",
       "notes": "Apple puree for moisture, autumn spice, cream swirl frosting",
       "priority": 78,
-      "status": "draft",
-      "slug": "vegan-apple-spice-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-apple-spice-cupcakes",
+      "publishAt": "2026-10-04T12:49:00+02:00"
     },
     {
       "id": "r079",
@@ -742,8 +803,9 @@
       "category": "vegan",
       "notes": "Cocoa base + peppermint swirl frosting, cool and clean flavor",
       "priority": 79,
-      "status": "draft",
-      "slug": "vegan-mint-chocolate-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-mint-chocolate-cupcakes",
+      "publishAt": "2026-10-05T10:47:00+02:00"
     },
     {
       "id": "r080",
@@ -751,8 +813,9 @@
       "category": "vegan",
       "notes": "Holiday cluster. Coconut milk frosting + peppermint essence",
       "priority": 80,
-      "status": "draft",
-      "slug": "vegan-peppermint-chocolate-cupcakes"
+      "status": "scheduled",
+      "slug": "vegan-peppermint-chocolate-cupcakes",
+      "publishAt": "2026-11-06T16:34:00+02:00"
     },
     {
       "id": "r081",
@@ -760,8 +823,9 @@
       "category": "nut-free",
       "notes": "Kid-safe queries. Standard flour + dairy, emphasize allergy-safety language",
       "priority": 81,
-      "status": "draft",
-      "slug": "nut-free-vanilla-celebration-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-vanilla-celebration-cupcakes",
+      "publishAt": "2026-10-06T17:03:00+02:00"
     },
     {
       "id": "r082",
@@ -769,8 +833,9 @@
       "category": "nut-free",
       "notes": "Rich chocolate flavor, no traces of nuts, kid-friendly and school-safe",
       "priority": 82,
-      "status": "draft",
-      "slug": "nut-free-chocolate-birthday-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-chocolate-birthday-cupcakes",
+      "publishAt": "2026-10-07T13:16:00+02:00"
     },
     {
       "id": "r083",
@@ -778,8 +843,9 @@
       "category": "nut-free",
       "notes": "Use certified nut-free cookie brand, frosting flecked with cookie crumbs",
       "priority": 83,
-      "status": "draft",
-      "slug": "nut-free-cookies-and-cream-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-cookies-and-cream-cupcakes",
+      "publishAt": "2026-10-08T11:46:00+02:00"
     },
     {
       "id": "r084",
@@ -787,8 +853,9 @@
       "category": "nut-free",
       "notes": "Sweet cinnamon swirl baked in, vanilla frosting swirl on top",
       "priority": 84,
-      "status": "draft",
-      "slug": "nut-free-cinnamon-swirl-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-cinnamon-swirl-cupcakes",
+      "publishAt": "2026-10-09T17:21:00+02:00"
     },
     {
       "id": "r085",
@@ -796,8 +863,9 @@
       "category": "nut-free",
       "notes": "Naturally colored sprinkles, light buttery cake base",
       "priority": 85,
-      "status": "draft",
-      "slug": "nut-free-funfetti-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-funfetti-cupcakes",
+      "publishAt": "2026-10-10T14:05:00+02:00"
     },
     {
       "id": "r086",
@@ -805,8 +873,9 @@
       "category": "nut-free",
       "notes": "Ripe mashed banana for sweetness, soft crumb, not too dense",
       "priority": 86,
-      "status": "draft",
-      "slug": "nut-free-banana-vanilla-swirl-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-banana-vanilla-swirl-cupcakes",
+      "publishAt": "2026-10-11T10:06:00+02:00"
     },
     {
       "id": "r087",
@@ -814,8 +883,9 @@
       "category": "nut-free",
       "notes": "Fresh blueberries only, lemon zest frosting, light and summery",
       "priority": 87,
-      "status": "draft",
-      "slug": "nut-free-lemon-blueberry-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-lemon-blueberry-cupcakes",
+      "publishAt": "2026-10-12T13:25:00+02:00"
     },
     {
       "id": "r088",
@@ -823,8 +893,9 @@
       "category": "nut-free",
       "notes": "Fresh strawberry compote core + whipped vanilla frosting swirl",
       "priority": 88,
-      "status": "draft",
-      "slug": "nut-free-strawberry-shortcake-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-strawberry-shortcake-cupcakes",
+      "publishAt": "2026-10-13T14:51:00+02:00"
     },
     {
       "id": "r089",
@@ -832,8 +903,9 @@
       "category": "nut-free",
       "notes": "Silky chocolate frosting swirl, moist cocoa cake, school-safe",
       "priority": 89,
-      "status": "draft",
-      "slug": "nut-free-chocolate-fudge-swirl-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-chocolate-fudge-swirl-cupcakes",
+      "publishAt": "2026-10-14T10:45:00+02:00"
     },
     {
       "id": "r090",
@@ -841,8 +913,9 @@
       "category": "nut-free",
       "notes": "Caramel made from sugar + butter, no nut extracts",
       "priority": 90,
-      "status": "draft",
-      "slug": "nut-free-caramel-drizzle-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-caramel-drizzle-cupcakes",
+      "publishAt": "2026-10-15T14:24:00+02:00"
     },
     {
       "id": "r091",
@@ -850,8 +923,9 @@
       "category": "nut-free",
       "notes": "Toast marshmallow frosting lightly for golden finish",
       "priority": 91,
-      "status": "draft",
-      "slug": "nut-free-toasted-marshmallow-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-toasted-marshmallow-cupcakes",
+      "publishAt": "2026-10-16T16:22:00+02:00"
     },
     {
       "id": "r092",
@@ -859,8 +933,9 @@
       "category": "nut-free",
       "notes": "Pure maple syrup for warmth, cream swirl frosting",
       "priority": 92,
-      "status": "draft",
-      "slug": "nut-free-brown-sugar-maple-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-brown-sugar-maple-cupcakes",
+      "publishAt": "2026-10-17T15:07:00+02:00"
     },
     {
       "id": "r093",
@@ -868,8 +943,9 @@
       "category": "nut-free",
       "notes": "Grated apple + gentle spice, classic home-baked aroma",
       "priority": 93,
-      "status": "draft",
-      "slug": "nut-free-apple-cinnamon-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-apple-cinnamon-cupcakes",
+      "publishAt": "2026-10-18T13:21:00+02:00"
     },
     {
       "id": "r094",
@@ -877,8 +953,9 @@
       "category": "nut-free",
       "notes": "Chai spice in batter + vanilla frosting",
       "priority": 94,
-      "status": "draft",
-      "slug": "nut-free-chai-spice-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-chai-spice-cupcakes",
+      "publishAt": "2026-10-19T14:18:00+02:00"
     },
     {
       "id": "r095",
@@ -886,8 +963,9 @@
       "category": "nut-free",
       "notes": "Natural pink frosting via raspberry puree",
       "priority": 95,
-      "status": "draft",
-      "slug": "nut-free-raspberry-cream-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-raspberry-cream-cupcakes",
+      "publishAt": "2026-10-20T13:26:00+02:00"
     },
     {
       "id": "r096",
@@ -895,8 +973,9 @@
       "category": "nut-free",
       "notes": "Orange zest + vanilla swirl, nostalgic but bright",
       "priority": 96,
-      "status": "draft",
-      "slug": "nut-free-orange-creamsicle-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-orange-creamsicle-cupcakes",
+      "publishAt": "2026-10-21T13:35:00+02:00"
     },
     {
       "id": "r097",
@@ -904,8 +983,9 @@
       "category": "nut-free",
       "notes": "Fresh peach puree frosting, summer flavor profile",
       "priority": 97,
-      "status": "draft",
-      "slug": "nut-free-peach-cream-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-peach-cream-cupcakes",
+      "publishAt": "2026-10-22T11:37:00+02:00"
     },
     {
       "id": "r098",
@@ -913,8 +993,9 @@
       "category": "nut-free",
       "notes": "Mini chips dispersed evenly, soft cake texture",
       "priority": 98,
-      "status": "draft",
-      "slug": "nut-free-chocolate-chip-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-chocolate-chip-cupcakes",
+      "publishAt": "2026-10-23T16:39:00+02:00"
     },
     {
       "id": "r099",
@@ -922,8 +1003,9 @@
       "category": "nut-free",
       "notes": "Light glaze under frosting for layered flavor",
       "priority": 99,
-      "status": "draft",
-      "slug": "nut-free-maple-cinnamon-glaze-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-maple-cinnamon-glaze-cupcakes",
+      "publishAt": "2026-10-24T11:49:00+02:00"
     },
     {
       "id": "r100",
@@ -931,8 +1013,9 @@
       "category": "nut-free",
       "notes": "Coffee-infused batter + vanilla swirl, gentle and smooth",
       "priority": 100,
-      "status": "draft",
-      "slug": "nut-free-vanilla-latte-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-vanilla-latte-cupcakes",
+      "publishAt": "2026-10-25T10:35:00+02:00"
     },
     {
       "id": "r101",
@@ -940,8 +1023,9 @@
       "category": "nut-free",
       "notes": "Holiday cluster. Cupcakes that taste like sugar cookies, nut-free guaranteed",
       "priority": 101,
-      "status": "draft",
-      "slug": "nut-free-sugar-cookie-cupcakes"
+      "status": "scheduled",
+      "slug": "nut-free-sugar-cookie-cupcakes",
+      "publishAt": "2026-10-26T17:44:00+02:00"
     },
     {
       "id": "r102",
@@ -949,8 +1033,9 @@
       "category": "gluten-free",
       "notes": "target keyword: gluten free vanilla cupcakes fluffy. Almond + tapioca ratio for lift, real vanilla extract",
       "priority": 102,
-      "status": "draft",
-      "slug": "gluten-free-vanilla-almond-flour-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-vanilla-almond-flour-cupcakes",
+      "publishAt": "2026-10-27T15:15:00+02:00"
     },
     {
       "id": "r103",
@@ -958,8 +1043,9 @@
       "category": "gluten-free",
       "notes": "Add espresso to enhance cocoa, keep moisture high using oil + milk",
       "priority": 103,
-      "status": "draft",
-      "slug": "gluten-free-chocolate-almond-flour-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-chocolate-almond-flour-cupcakes",
+      "publishAt": "2026-10-28T11:24:00+02:00"
     },
     {
       "id": "r104",
@@ -967,8 +1053,9 @@
       "category": "gluten-free",
       "notes": "Light lemon zest batter, tapioca gives springy crumb, lemon swirl frosting",
       "priority": 104,
-      "status": "draft",
-      "slug": "gluten-free-lemon-poppy-seed-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-lemon-poppy-seed-cupcakes",
+      "publishAt": "2026-10-29T11:38:00+02:00"
     },
     {
       "id": "r105",
@@ -976,8 +1063,9 @@
       "category": "gluten-free",
       "notes": "Real strawberry puree, avoid artificial color, gently pink frosting",
       "priority": 105,
-      "status": "draft",
-      "slug": "gluten-free-strawberry-cream-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-strawberry-cream-cupcakes",
+      "publishAt": "2026-10-30T11:17:00+02:00"
     },
     {
       "id": "r106",
@@ -985,8 +1073,9 @@
       "category": "gluten-free",
       "notes": "Whole blueberries, vanilla swirl on top, keep batter slightly thick",
       "priority": 106,
-      "status": "draft",
-      "slug": "gluten-free-blueberry-almond-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-blueberry-almond-cupcakes",
+      "publishAt": "2026-10-31T16:30:00+02:00"
     },
     {
       "id": "r107",
@@ -994,8 +1083,9 @@
       "category": "gluten-free",
       "notes": "Warm cinnamon cake, creamy vanilla swirl frosting dusted with cinnamon",
       "priority": 107,
-      "status": "draft",
-      "slug": "gluten-free-cinnamon-brown-sugar-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-cinnamon-brown-sugar-cupcakes",
+      "publishAt": "2026-11-13T12:14:00+02:00"
     },
     {
       "id": "r108",
@@ -1003,8 +1093,9 @@
       "category": "gluten-free",
       "notes": "Grated carrot ensures moisture, cream cheese swirl frosting",
       "priority": 108,
-      "status": "draft",
-      "slug": "gluten-free-carrot-cake-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-carrot-cake-cupcakes",
+      "publishAt": "2026-11-14T16:41:00+02:00"
     },
     {
       "id": "r109",
@@ -1012,8 +1103,9 @@
       "category": "gluten-free",
       "notes": "Almond flour + pumpkin puree for softness, vanilla swirl",
       "priority": 109,
-      "status": "draft",
-      "slug": "gluten-free-pumpkin-spice-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-pumpkin-spice-cupcakes",
+      "publishAt": "2026-09-03T12:30:00+02:00"
     },
     {
       "id": "r110",
@@ -1021,8 +1113,9 @@
       "category": "gluten-free",
       "notes": "Use mini chips, prevent sinking by tossing chips in almond flour",
       "priority": 110,
-      "status": "draft",
-      "slug": "gluten-free-chocolate-chip-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-chocolate-chip-cupcakes",
+      "publishAt": "2026-11-15T12:57:00+02:00"
     },
     {
       "id": "r111",
@@ -1030,8 +1123,9 @@
       "category": "gluten-free",
       "notes": "Mild floral honey, soft tender crumb, not overly sweet",
       "priority": 111,
-      "status": "draft",
-      "slug": "gluten-free-honey-vanilla-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-honey-vanilla-cupcakes",
+      "publishAt": "2026-11-16T11:16:00+02:00"
     },
     {
       "id": "r112",
@@ -1039,8 +1133,9 @@
       "category": "gluten-free",
       "notes": "Coconut milk for moisture, coconut-flecked buttercream",
       "priority": 112,
-      "status": "draft",
-      "slug": "gluten-free-coconut-cream-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-coconut-cream-cupcakes",
+      "publishAt": "2026-11-17T15:18:00+02:00"
     },
     {
       "id": "r113",
@@ -1048,8 +1143,9 @@
       "category": "gluten-free",
       "notes": "Mashed banana + maple extract, not syrup in frosting",
       "priority": 113,
-      "status": "draft",
-      "slug": "gluten-free-banana-maple-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-banana-maple-cupcakes",
+      "publishAt": "2026-11-18T17:48:00+02:00"
     },
     {
       "id": "r114",
@@ -1057,8 +1153,9 @@
       "category": "gluten-free",
       "notes": "Cocoa + orange zest + smooth chocolate swirl frosting",
       "priority": 114,
-      "status": "draft",
-      "slug": "gluten-free-chocolate-orange-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-chocolate-orange-cupcakes",
+      "publishAt": "2026-11-19T10:25:00+02:00"
     },
     {
       "id": "r115",
@@ -1066,8 +1163,9 @@
       "category": "gluten-free",
       "notes": "Raspberry puree + lemon zest for bright acidity, pink swirl frosting",
       "priority": 115,
-      "status": "draft",
-      "slug": "gluten-free-raspberry-lemonade-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-raspberry-lemonade-cupcakes",
+      "publishAt": "2026-11-20T12:12:00+02:00"
     },
     {
       "id": "r116",
@@ -1075,8 +1173,9 @@
       "category": "gluten-free",
       "notes": "Chai spice through batter + lightly spiced vanilla swirl frosting",
       "priority": 116,
-      "status": "draft",
-      "slug": "gluten-free-chai-vanilla-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-chai-vanilla-cupcakes",
+      "publishAt": "2026-11-21T15:51:00+02:00"
     },
     {
       "id": "r117",
@@ -1084,8 +1183,9 @@
       "category": "gluten-free",
       "notes": "Brown butter adds depth, vanilla bean frosting swirl, elegant",
       "priority": 117,
-      "status": "draft",
-      "slug": "gluten-free-brown-butter-vanilla-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-brown-butter-vanilla-cupcakes",
+      "publishAt": "2026-11-22T13:16:00+02:00"
     },
     {
       "id": "r118",
@@ -1093,8 +1193,9 @@
       "category": "gluten-free",
       "notes": "Soft spiced cake, cream cheese swirl, cozy but evergreen",
       "priority": 118,
-      "status": "draft",
-      "slug": "gluten-free-ginger-molasses-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-ginger-molasses-cupcakes",
+      "publishAt": "2026-11-23T13:45:00+02:00"
     },
     {
       "id": "r119",
@@ -1102,8 +1203,9 @@
       "category": "gluten-free",
       "notes": "Cocoa almond cake, cool mint swirl frosting, not artificially colored",
       "priority": 119,
-      "status": "draft",
-      "slug": "gluten-free-mint-chocolate-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-mint-chocolate-cupcakes",
+      "publishAt": "2026-11-24T16:45:00+02:00"
     },
     {
       "id": "r120",
@@ -1111,8 +1213,9 @@
       "category": "gluten-free",
       "notes": "Tender apple cupcake + cinnamon swirl frosting + gluten-free crumble",
       "priority": 120,
-      "status": "draft",
-      "slug": "gluten-free-apple-cinnamon-crumble-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-apple-cinnamon-crumble-cupcakes",
+      "publishAt": "2026-11-25T16:39:00+02:00"
     },
     {
       "id": "r121",
@@ -1120,8 +1223,9 @@
       "category": "gluten-free",
       "notes": "Coconut milk in batter, vanilla swirl, light and dreamy",
       "priority": 121,
-      "status": "draft",
-      "slug": "gluten-free-vanilla-coconut-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-vanilla-coconut-cupcakes",
+      "publishAt": "2026-11-26T10:39:00+02:00"
     },
     {
       "id": "r122",
@@ -1129,8 +1233,9 @@
       "category": "gluten-free",
       "notes": "Holiday cluster. Almond flour cupcake + powdered sugar snow finish",
       "priority": 122,
-      "status": "draft",
-      "slug": "gluten-free-almond-snowflake-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-almond-snowflake-cupcakes",
+      "publishAt": "2026-11-07T12:06:00+02:00"
     },
     {
       "id": "r123",
@@ -1138,8 +1243,9 @@
       "category": "gluten-free",
       "notes": "Holiday cluster. Pistachio base + rosewater frosting, elegant and festive",
       "priority": 123,
-      "status": "draft",
-      "slug": "gluten-free-pistachio-rose-cupcakes"
+      "status": "scheduled",
+      "slug": "gluten-free-pistachio-rose-cupcakes",
+      "publishAt": "2026-11-27T11:52:00+02:00"
     },
     {
       "id": "r124",
@@ -1147,8 +1253,9 @@
       "category": "dairy-free",
       "notes": "target keyword: dairy free vanilla cupcakes fluffy. Oat or soy milk, neutral oil, light vanilla frosting with dairy-free block butter",
       "priority": 124,
-      "status": "draft",
-      "slug": "dairy-free-classic-vanilla-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-classic-vanilla-cupcakes",
+      "publishAt": "2026-11-28T15:53:00+02:00"
     },
     {
       "id": "r125",
@@ -1156,8 +1263,9 @@
       "category": "dairy-free",
       "notes": "Cocoa + coconut milk for richness, silky chocolate swirl frosting",
       "priority": 125,
-      "status": "draft",
-      "slug": "dairy-free-chocolate-cloud-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-chocolate-cloud-cupcakes",
+      "publishAt": "2026-11-29T12:07:00+02:00"
     },
     {
       "id": "r126",
@@ -1165,7 +1273,7 @@
       "category": "dairy-free",
       "notes": "Fresh zest + light lemon cream frosting using dairy-free butter + powdered sugar",
       "priority": 126,
-      "status": "draft",
+      "status": "approved",
       "slug": "dairy-free-lemon-blossom-cupcakes"
     },
     {
@@ -1174,8 +1282,9 @@
       "category": "dairy-free",
       "notes": "Pureed strawberries for natural color, avoid artificial flavor",
       "priority": 127,
-      "status": "draft",
-      "slug": "dairy-free-strawberry-swirl-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-strawberry-swirl-cupcakes",
+      "publishAt": "2026-11-30T17:29:00+02:00"
     },
     {
       "id": "r128",
@@ -1183,8 +1292,9 @@
       "category": "dairy-free",
       "notes": "Use agave or maple, warm cozy flavor profile",
       "priority": 128,
-      "status": "draft",
-      "slug": "dairy-free-honey-style-agave-vanilla-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-honey-style-agave-vanilla-cupcakes",
+      "publishAt": "2026-12-01T12:53:00+02:00"
     },
     {
       "id": "r129",
@@ -1192,8 +1302,9 @@
       "category": "dairy-free",
       "notes": "Combine cinnamon + maple extract, creamy vanilla swirl",
       "priority": 129,
-      "status": "draft",
-      "slug": "dairy-free-cinnamon-maple-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-cinnamon-maple-cupcakes",
+      "publishAt": "2026-12-02T14:24:00+02:00"
     },
     {
       "id": "r130",
@@ -1201,8 +1312,9 @@
       "category": "dairy-free",
       "notes": "Make caramel using coconut cream + sugar, silky caramel swirl frosting",
       "priority": 130,
-      "status": "draft",
-      "slug": "dairy-free-caramel-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-caramel-cupcakes",
+      "publishAt": "2026-12-03T16:10:00+02:00"
     },
     {
       "id": "r131",
@@ -1210,8 +1322,9 @@
       "category": "dairy-free",
       "notes": "Coconut milk batter + coconut whip frosting",
       "priority": 131,
-      "status": "draft",
-      "slug": "dairy-free-coconut-dream-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-coconut-dream-cupcakes",
+      "publishAt": "2026-12-04T15:36:00+02:00"
     },
     {
       "id": "r132",
@@ -1219,8 +1332,9 @@
       "category": "dairy-free",
       "notes": "Raspberry frosting swirl + vanilla sponge",
       "priority": 132,
-      "status": "draft",
-      "slug": "dairy-free-raspberry-cream-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-raspberry-cream-cupcakes",
+      "publishAt": "2026-12-05T13:17:00+02:00"
     },
     {
       "id": "r133",
@@ -1228,8 +1342,9 @@
       "category": "dairy-free",
       "notes": "Brew chai tea to infuse flavor, warm spice frosting",
       "priority": 133,
-      "status": "draft",
-      "slug": "dairy-free-chai-spice-vanilla-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-chai-spice-vanilla-cupcakes",
+      "publishAt": "2026-12-06T15:52:00+02:00"
     },
     {
       "id": "r134",
@@ -1237,8 +1352,9 @@
       "category": "dairy-free",
       "notes": "Tangy lemon frosting, blueberries folded throughout",
       "priority": 134,
-      "status": "draft",
-      "slug": "dairy-free-blueberry-lemon-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-blueberry-lemon-cupcakes",
+      "publishAt": "2026-12-07T10:52:00+02:00"
     },
     {
       "id": "r135",
@@ -1246,8 +1362,9 @@
       "category": "dairy-free",
       "notes": "Orange zest + vanilla frosting swirl, bright and creamy",
       "priority": 135,
-      "status": "draft",
-      "slug": "dairy-free-orange-creamsicle-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-orange-creamsicle-cupcakes",
+      "publishAt": "2026-12-08T14:08:00+02:00"
     },
     {
       "id": "r136",
@@ -1255,8 +1372,9 @@
       "category": "dairy-free",
       "notes": "Coffee-infused cocoa cake, mocha cream frosting",
       "priority": 136,
-      "status": "draft",
-      "slug": "dairy-free-mocha-latte-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-mocha-latte-cupcakes",
+      "publishAt": "2026-12-09T17:42:00+02:00"
     },
     {
       "id": "r137",
@@ -1264,8 +1382,9 @@
       "category": "dairy-free",
       "notes": "Cinnamon cake + vanilla swirl + cinnamon sugar dust",
       "priority": 137,
-      "status": "draft",
-      "slug": "dairy-free-cinnamon-toast-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-cinnamon-toast-cupcakes",
+      "publishAt": "2026-12-10T12:58:00+02:00"
     },
     {
       "id": "r138",
@@ -1273,8 +1392,9 @@
       "category": "dairy-free",
       "notes": "Finely grated carrots, dairy-free cream cheese swirl",
       "priority": 138,
-      "status": "draft",
-      "slug": "dairy-free-carrot-cake-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-carrot-cake-cupcakes",
+      "publishAt": "2026-12-11T14:29:00+02:00"
     },
     {
       "id": "r139",
@@ -1282,8 +1402,9 @@
       "category": "dairy-free",
       "notes": "Mashed banana + warm spices, soft tender crumb",
       "priority": 139,
-      "status": "draft",
-      "slug": "dairy-free-banana-spice-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-banana-spice-cupcakes",
+      "publishAt": "2026-12-12T10:19:00+02:00"
     },
     {
       "id": "r140",
@@ -1291,8 +1412,9 @@
       "category": "dairy-free",
       "notes": "Pureed peach frosting + vanilla cake base",
       "priority": 140,
-      "status": "draft",
-      "slug": "dairy-free-peach-vanilla-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-peach-vanilla-cupcakes",
+      "publishAt": "2026-12-13T11:15:00+02:00"
     },
     {
       "id": "r141",
@@ -1300,8 +1422,9 @@
       "category": "dairy-free",
       "notes": "Delicate lavender essence, not perfume-like, white swirl frosting",
       "priority": 141,
-      "status": "draft",
-      "slug": "dairy-free-lavender-vanilla-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-lavender-vanilla-cupcakes",
+      "publishAt": "2026-12-14T14:00:00+02:00"
     },
     {
       "id": "r142",
@@ -1309,8 +1432,9 @@
       "category": "dairy-free",
       "notes": "Apple compote center, vanilla swirl frosting + cinnamon dust",
       "priority": 142,
-      "status": "draft",
-      "slug": "dairy-free-apple-pie-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-apple-pie-cupcakes",
+      "publishAt": "2026-12-15T12:17:00+02:00"
     },
     {
       "id": "r143",
@@ -1318,8 +1442,9 @@
       "category": "dairy-free",
       "notes": "Cocoa cake + mint frosting swirl, refreshing finish",
       "priority": 143,
-      "status": "draft",
-      "slug": "dairy-free-mint-chocolate-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-mint-chocolate-cupcakes",
+      "publishAt": "2026-12-16T10:00:00+02:00"
     },
     {
       "id": "r144",
@@ -1327,7 +1452,7 @@
       "category": "seasonal",
       "notes": "Edible flowers for garnish: rose, pansy, lavender",
       "priority": 144,
-      "status": "draft",
+      "status": "approved",
       "slug": "spring-floral-vanilla-cupcakes"
     },
     {
@@ -1336,7 +1461,7 @@
       "category": "seasonal",
       "notes": "Carrot cake + green piped frosting grass effect",
       "priority": 145,
-      "status": "draft",
+      "status": "approved",
       "slug": "easter-carrot-garden-cupcakes"
     },
     {
@@ -1345,7 +1470,7 @@
       "category": "seasonal",
       "notes": "Raspberry cream swirl + rosewater hint",
       "priority": 146,
-      "status": "draft",
+      "status": "approved",
       "slug": "mothers-day-raspberry-rose-cupcakes"
     },
     {
@@ -1354,7 +1479,7 @@
       "category": "seasonal",
       "notes": "Red + blue berry swirl frosting pattern",
       "priority": 147,
-      "status": "draft",
+      "status": "approved",
       "slug": "4th-of-july-berry-swirl-cupcakes"
     },
     {
@@ -1363,7 +1488,7 @@
       "category": "seasonal",
       "notes": "Fresh lemon frosting swirl + zest",
       "priority": 148,
-      "status": "draft",
+      "status": "approved",
       "slug": "summer-lemonade-cupcakes"
     },
     {
@@ -1372,7 +1497,7 @@
       "category": "seasonal",
       "notes": "Light peach frosting swirl + sliced peach garnish",
       "priority": 149,
-      "status": "draft",
+      "status": "approved",
       "slug": "peach-picnic-cupcakes"
     },
     {
@@ -1381,8 +1506,9 @@
       "category": "seasonal",
       "notes": "Caramel drizzle + warm spice",
       "priority": 150,
-      "status": "draft",
-      "slug": "salted-caramel-harvest-cupcakes"
+      "status": "scheduled",
+      "slug": "salted-caramel-harvest-cupcakes",
+      "publishAt": "2026-09-04T10:20:00+02:00"
     },
     {
       "id": "r151",
@@ -1390,8 +1516,9 @@
       "category": "seasonal",
       "notes": "Pumpkin spice cake + cream swirl + tiny fondant pumpkin",
       "priority": 151,
-      "status": "draft",
-      "slug": "pumpkin-patch-cupcakes"
+      "status": "scheduled",
+      "slug": "pumpkin-patch-cupcakes",
+      "publishAt": "2026-09-05T11:07:00+02:00"
     },
     {
       "id": "r152",
@@ -1399,8 +1526,9 @@
       "category": "seasonal",
       "notes": "Chocolate cake + marshmallow swirl frosting",
       "priority": 152,
-      "status": "draft",
-      "slug": "hot-cocoa-holiday-cupcakes"
+      "status": "scheduled",
+      "slug": "hot-cocoa-holiday-cupcakes",
+      "publishAt": "2026-11-08T17:59:00+02:00"
     },
     {
       "id": "r153",
@@ -1408,8 +1536,9 @@
       "category": "seasonal",
       "notes": "Espresso + gingerbread spices, cream swirl frosting",
       "priority": 153,
-      "status": "draft",
-      "slug": "gingerbread-latte-cupcakes"
+      "status": "scheduled",
+      "slug": "gingerbread-latte-cupcakes",
+      "publishAt": "2026-11-09T17:25:00+02:00"
     },
     {
       "id": "r154",
@@ -1417,8 +1546,9 @@
       "category": "seasonal",
       "notes": "Maple frosting swirl + optional crumble topping",
       "priority": 154,
-      "status": "draft",
-      "slug": "maple-walnut-autumn-cupcakes"
+      "status": "scheduled",
+      "slug": "maple-walnut-autumn-cupcakes",
+      "publishAt": "2026-09-06T14:33:00+02:00"
     },
     {
       "id": "r155",
@@ -1426,7 +1556,7 @@
       "category": "seasonal",
       "notes": "Pink strawberry swirl + chocolate cake",
       "priority": 155,
-      "status": "draft",
+      "status": "approved",
       "slug": "valentines-strawberry-chocolate-cupcakes"
     },
     {
@@ -1435,8 +1565,9 @@
       "category": "seasonal",
       "notes": "Funfetti batter + classic swirl + sprinkles",
       "priority": 156,
-      "status": "draft",
-      "slug": "birthday-confetti-cupcakes"
+      "status": "scheduled",
+      "slug": "birthday-confetti-cupcakes",
+      "publishAt": "2026-12-17T10:09:00+02:00"
     },
     {
       "id": "r157",
@@ -1444,7 +1575,7 @@
       "category": "seasonal",
       "notes": "Graham-style crumb nut-free, chocolate cake + toasted marshmallow",
       "priority": 157,
-      "status": "draft",
+      "status": "approved",
       "slug": "smores-summer-cupcakes"
     },
     {
@@ -1453,8 +1584,9 @@
       "category": "seasonal",
       "notes": "Apple cider reduction + cinnamon sugar swirl",
       "priority": 158,
-      "status": "draft",
-      "slug": "apple-cider-donut-cupcakes"
+      "status": "scheduled",
+      "slug": "apple-cider-donut-cupcakes",
+      "publishAt": "2026-09-07T10:26:00+02:00"
     },
     {
       "id": "r159",
@@ -1462,8 +1594,9 @@
       "category": "seasonal",
       "notes": "Apple cake + caramel swirl drizzle",
       "priority": 159,
-      "status": "draft",
-      "slug": "caramel-apple-fair-cupcakes"
+      "status": "scheduled",
+      "slug": "caramel-apple-fair-cupcakes",
+      "publishAt": "2026-09-08T12:33:00+02:00"
     },
     {
       "id": "r160",
@@ -1471,8 +1604,9 @@
       "category": "seasonal",
       "notes": "Holiday special. Cute antlers using pretzels or chocolate",
       "priority": 160,
-      "status": "draft",
-      "slug": "red-velvet-reindeer-cupcakes"
+      "status": "scheduled",
+      "slug": "red-velvet-reindeer-cupcakes",
+      "publishAt": "2026-11-10T17:30:00+02:00"
     },
     {
       "id": "r161",
@@ -1480,8 +1614,9 @@
       "category": "seasonal",
       "notes": "Holiday special. Marshmallow snowman head + scarf piping",
       "priority": 161,
-      "status": "draft",
-      "slug": "snowman-top-hat-cupcakes"
+      "status": "scheduled",
+      "slug": "snowman-top-hat-cupcakes",
+      "publishAt": "2026-11-11T13:37:00+02:00"
     },
     {
       "id": "r162",
@@ -1489,8 +1624,9 @@
       "category": "seasonal",
       "notes": "Holiday special. Tall green frosting swirl + star sprinkle",
       "priority": 162,
-      "status": "draft",
-      "slug": "christmas-tree-swirl-cupcakes"
+      "status": "scheduled",
+      "slug": "christmas-tree-swirl-cupcakes",
+      "publishAt": "2026-11-12T12:57:00+02:00"
     }
   ]
 }

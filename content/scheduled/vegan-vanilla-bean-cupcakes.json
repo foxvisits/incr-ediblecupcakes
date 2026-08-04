@@ -1,0 +1,133 @@
+{
+  "title": "Vegan Vanilla Bean Cupcakes",
+  "slug": "vegan-vanilla-bean-cupcakes",
+  "shortDescription": "Fluffy vegan vanilla cupcakes with real vanilla bean, ready in about 43 minutes with 25 minutes prep and 18 minutes bake.",
+  "description": "These vegan vanilla cupcakes prove you do not need eggs for a light, fluffy crumb. Whipped aquafaba gives the batter real lift, while real vanilla bean seeds add tiny flecks and deep flavor. I tested this batter five times in my own kitchen to get the rise right without eggs. The trick is whipping the aquafaba until foamy before folding it in, just like you would with egg whites. The crumb bakes up soft and tender, not dense like some plant-based cakes. A quick vegan vanilla buttercream on top keeps the whole cupcake dairy-free and egg-free. This is the recipe to bake when you want a classic vanilla cupcake that happens to be vegan. Not a cupcake that tastes like a compromise.",
+  "category": "vegan",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 cup granulated sugar",
+    "1 tsp baking powder",
+    "1/2 tsp baking soda",
+    "1/4 tsp salt",
+    "1 vanilla bean, seeds scraped (or 1 tbsp vanilla bean paste)",
+    "1 cup unsweetened plant-based milk (soy or almond)",
+    "1/3 cup neutral oil, such as canola or melted coconut oil",
+    "1/4 cup aquafaba (liquid from canned chickpeas)",
+    "1 tsp apple cider vinegar",
+    "1 tsp pure vanilla extract",
+    "1 cup vegan butter, softened, for frosting",
+    "3 cups powdered sugar, for frosting",
+    "1 to 2 tbsp plant-based milk, for frosting",
+    "1/2 tsp pure vanilla extract, for frosting"
+  ],
+  "instructions": [
+    "Preheat your oven to 350°F. Line a 12-cup muffin pan with paper liners.",
+    "In a bowl, whisk flour, sugar, baking powder, baking soda, and salt. Whisk in the scraped vanilla bean seeds.",
+    "In a separate bowl, whip the aquafaba with a hand mixer for 2 to 3 minutes, until foamy and slightly thickened.",
+    "Whisk the plant-based milk, oil, vinegar, and vanilla extract into the whipped aquafaba.",
+    "Pour the wet mix into the dry ingredients. Stir gently until just combined, no dry streaks left.",
+    "Divide batter evenly among the liners, filling each about two thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick in the center comes out clean.",
+    "Cool cupcakes in the pan for 5 minutes, then move them to a wire rack to cool fully.",
+    "Beat the vegan butter until smooth, then add powdered sugar, vanilla, and milk. Beat until fluffy and pipeable.",
+    "Pipe or spread frosting onto the fully cooled cupcakes before serving."
+  ],
+  "tips": [
+    "Whip the aquafaba until it looks like soft foamy egg whites, that step is what gives the fluffy crumb.",
+    "Use real vanilla bean seeds if you can, they add small flecks and a rounder flavor than extract alone.",
+    "Do not overmix the batter once wet and dry ingredients meet, stir just until combined.",
+    "Frost only after the cupcakes are fully cool, warm cupcakes melt the vegan buttercream."
+  ],
+  "faq": [
+    {
+      "question": "Can I use bottled aquafaba instead of chickpea liquid?",
+      "answer": "Yes, bottled aquafaba works the same way. Use 1/4 cup and whip it just like you would liquid drained from a can of chickpeas."
+    },
+    {
+      "question": "Why are my vegan cupcakes dense instead of fluffy?",
+      "answer": "Dense vegan cupcakes usually mean the aquafaba was not whipped enough or the batter was overmixed. Whip the aquafaba until foamy first, then stir the batter gently."
+    },
+    {
+      "question": "Can I use vanilla extract instead of a vanilla bean?",
+      "answer": "Yes, swap the vanilla bean for 1 extra teaspoon of pure vanilla extract. The flavor will be slightly less complex but still good."
+    },
+    {
+      "question": "Do these vegan vanilla cupcakes need refrigeration?",
+      "answer": "Unfrosted cupcakes keep at room temperature in a sealed container for 2 days. Once frosted, store them in the fridge and bring to room temperature before serving."
+    }
+  ],
+  "tags": [
+    "vegan",
+    "vanilla",
+    "aquafaba",
+    "fluffy-cupcakes",
+    "egg-free",
+    "dairy-free"
+  ],
+  "recipeKeys": [
+    "vegan vanilla cupcakes fluffy",
+    "aquafaba cupcakes",
+    "vegan vanilla bean cupcakes",
+    "egg free vanilla cupcakes",
+    "dairy free vanilla cupcakes",
+    "Easy difficulty",
+    "vegan cupcake recipe"
+  ],
+  "keywords": [
+    "vegan vanilla cupcakes fluffy",
+    "aquafaba cupcakes",
+    "vegan vanilla bean cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 260,
+    "carbs": 40,
+    "protein": 2,
+    "fat": 11,
+    "fiber": 1,
+    "sugar": 30
+  },
+  "dietaryBadges": [
+    "vegan",
+    "dairy-free",
+    "egg-free"
+  ],
+  "conclusion": "These vegan vanilla bean cupcakes give you a soft, fluffy crumb without a single egg. Bake a batch and see how far whipped aquafaba can take a simple vanilla recipe.",
+  "metaTitle": "Vegan Vanilla Bean Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Fluffy vegan vanilla bean cupcakes made light with aquafaba, no eggs needed. Try this easy recipe and bake a fluffy batch today!",
+  "imageAlt": "Vegan vanilla bean cupcake with tall swirled frosting on a pastel background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Vegan vanilla bean cupcake with tall swirled frosting on a pastel background",
+      "prompt": "A single vegan vanilla bean cupcake with tall swirled vanilla buttercream piped high, tiny vanilla bean flecks visible in the frosting, set against a soft butter yellow pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/vegan-vanilla-bean-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Bowl of whipped aquafaba being folded into vanilla cupcake batter",
+      "prompt": "Overhead shot of a glass bowl with foamy whipped aquafaba being folded into pale vanilla cupcake batter, wooden spoon resting nearby, split vanilla bean pod on the counter, bright pastel bakery aesthetic, soft even daylight, pale aqua background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/vegan-vanilla-bean-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of vanilla bean cupcake crumb showing soft fluffy texture",
+      "prompt": "Close up of a vegan vanilla bean cupcake torn in half, showing a soft fluffy crumb with tiny vanilla bean specks, sitting on white porcelain, blush pink pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/vegan-vanilla-bean-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "classic-vanilla-dream-cupcakes",
+    "vegan-rainbow-surprise-cupcakes",
+    "yellow-cake-cupcakes"
+  ],
+  "contentIdeaId": "r060",
+  "image": "/vegan-vanilla-bean-cupcakes.jpg",
+  "publishAt": "2026-09-17T15:01:00+02:00",
+  "contentType": "recipe"
+}

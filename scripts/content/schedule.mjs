@@ -98,6 +98,84 @@ function scheduleItem(item, publishAt, ideasData, guideIdeasData) {
   console.log(`  [recipe] ${item.id} → ${publishAt}  (${draft.title})`);
 }
 
+/**
+ * Seasonal recipes are worthless out of season: a Christmas cupcake published
+ * in June is stale before anyone searches for it, and the page carries a
+ * publish date six months adrift from its own subject. Priority order alone
+ * scattered them at random — Valentine's landed in October, Easter in October,
+ * Christmas in June.
+ *
+ * Each pattern maps to the month the post should appear in, set a few weeks
+ * ahead of the occasion so it is indexed by the time interest builds.
+ */
+const SEASONAL_TARGETS = [
+  [/valentine/i, 1], // February 14 → publish in January
+  [/easter/i, 2], // late March or April → publish in March
+  [/mother'?s day/i, 3],
+  [/4th of july|independence/i, 5], // July 4 → publish in June
+  [/s'?mores|summer lemonade|picnic/i, 5],
+  [/pumpkin|harvest|autumn|apple cider|fair/i, 8], // October → publish in September
+  [/halloween/i, 8],
+  [/thanksgiving/i, 9],
+  [/christmas|reindeer|snowman|eggnog|gingerbread|snowflake|holiday|peppermint|cranberry orange/i, 10], // December → publish in November
+  [/spring|floral|blossom/i, 1], // spring → publish in February
+];
+
+const seasonalMonthFor = (title) => SEASONAL_TARGETS.find(([re]) => re.test(title))?.[1] ?? null;
+
+/**
+ * Move each seasonal item to the first slot whose month matches its target,
+ * taking the slot of whatever evergreen post sat there. Items whose season has
+ * already passed within the run wait for the next occurrence of that month, and
+ * anything that cannot be placed inside the run keeps its original slot rather
+ * than being dropped.
+ */
+function applySeasonalOrder(queue, startDate) {
+  const monthAt = (index) => {
+    const d = new Date(startDate);
+    d.setUTCDate(d.getUTCDate() + index);
+    return d.getUTCMonth();
+  };
+
+  const seasonal = [];
+  const evergreen = [];
+  for (const item of queue) {
+    const target = seasonalMonthFor(item.title ?? '');
+    (target === null ? evergreen : seasonal).push({ item, target });
+  }
+  if (!seasonal.length) return queue;
+
+  const out = new Array(queue.length).fill(null);
+  const taken = new Set();
+  const deferred = [];
+
+  for (const { item, target } of seasonal) {
+    let placed = false;
+    for (let i = 0; i < queue.length; i++) {
+      if (taken.has(i) || monthAt(i) !== target) continue;
+      out[i] = item;
+      taken.add(i);
+      placed = true;
+      break;
+    }
+    // The run does not reach this item's season. Filling the gap with it anyway
+    // is how Valentine's ends up published on Christmas Day. Hold it back
+    // instead and schedule it in a later run, closer to when it is worth
+    // reading.
+    if (!placed) deferred.push(item);
+  }
+
+  let next = 0;
+  for (const { item } of evergreen) {
+    while (next < out.length && out[next] !== null) next++;
+    if (next >= out.length) break;
+    out[next] = item;
+    taken.add(next);
+  }
+
+  return { queue: out.filter(Boolean), deferred };
+}
+
 export function cmdSchedule() {
   ensureDirs();
   const config = loadConfig();
@@ -145,6 +223,21 @@ export function cmdSchedule() {
     : new Date();
   cursor.setUTCHours(0, 0, 0, 0);
 
+  // A startDate left behind in the config back-dates the whole run. With the
+  // date two months stale, every slot up to today was already due, so the next
+  // publish job would have emptied sixty-odd posts at once — which is both the
+  // opposite of the daily pacing and exactly what scaled-content dumping looks
+  // like. Never schedule into the past.
+  const today = new Date();
+  today.setUTCHours(0, 0, 0, 0);
+  if (cursor < today) {
+    console.log(
+      `  ℹ️  startDate ${schedule.startDate} is in the past; starting from today instead ` +
+        `(would otherwise have published ${Math.round((today - cursor) / 86400000)} days of backlog at once)`,
+    );
+    cursor = today;
+  }
+
   if (schedule.skipWeekends) {
     while (cursor.getUTCDay() === 0 || cursor.getUTCDay() === 6) {
       cursor = nextDay(cursor, true);
@@ -190,6 +283,18 @@ export function cmdSchedule() {
       cursor = nextDay(cursor, schedule.skipWeekends);
     }
   } else {
+    // Only recipes carry seasonal titles; guides are evergreen technique posts.
+    const seasonalPass = applySeasonalOrder(remainingRecipes, cursor);
+    remainingRecipes = seasonalPass.queue;
+    if (seasonalPass.deferred.length) {
+      console.log(
+        `  ℹ️  Holding back ${seasonalPass.deferred.length} recipe(s) whose season falls after this run; ` +
+          `schedule them nearer the date:`,
+      );
+      seasonalPass.deferred.forEach((i) => console.log(`      ${i.id}  ${i.title}`));
+      console.log('');
+    }
+
     while (remainingRecipes.length > 0 || remainingGuides.length > 0) {
       const dayItems = [];
       for (let i = 0; i < recipesPerDay && remainingRecipes.length; i++) {

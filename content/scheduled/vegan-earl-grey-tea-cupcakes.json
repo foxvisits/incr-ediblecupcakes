@@ -1,0 +1,132 @@
+{
+  "title": "Vegan Earl Grey Tea Cupcakes",
+  "slug": "vegan-earl-grey-tea-cupcakes",
+  "shortDescription": "Soft vegan cupcakes made with Earl Grey tea steeped in oat milk, ready in about 45 minutes with a 15 minute steep.",
+  "description": "These cupcakes get their flavor from Earl Grey tea steeped right in warm oat milk. The tea gives the crumb a soft citrus and bergamot note without any eggs or dairy. I tested this batch three times in my own kitchen to get the crumb tender, not gummy. The trick is letting the tea milk cool before you mix it into the batter You can frost these plain with vanilla buttercream, or swirl in a little lavender for a floral twist. Both versions disappeared fast when I brought them to a book club meeting. This is a good beginner vegan recipe. No egg replacers to hunt down, just pantry staples and one tea bag.",
+  "category": "vegan",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 cup oat milk, unsweetened",
+    "3 Earl Grey tea bags",
+    "1 1/2 cups all purpose flour",
+    "1 cup granulated sugar",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp baking soda",
+    "1/2 tsp salt",
+    "1/3 cup neutral oil, such as canola",
+    "1 tsp vanilla extract",
+    "1 tsp apple cider vinegar",
+    "2 cups vegan powdered sugar, for frosting",
+    "1/2 cup vegan butter, softened, for frosting",
+    "1/4 tsp dried culinary lavender, finely ground, optional",
+    "1/2 tsp vanilla extract, for frosting"
+  ],
+  "instructions": [
+    "Heat oat milk in a small pot until steaming, not boiling.",
+    "Remove from heat, add tea bags, and steep for 15 minutes. Squeeze bags out, then cool the tea milk fully.",
+    "Preheat oven to 350°F. Line a muffin pan with 12 paper liners.",
+    "Whisk flour, sugar, baking powder, baking soda, and salt in a large bowl.",
+    "In a separate bowl, whisk cooled tea milk, oil, vanilla, and vinegar until combined.",
+    "Pour wet ingredients into dry ingredients. Stir just until no dry streaks remain.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a wire rack.",
+    "For frosting, beat vegan butter until smooth, then add powdered sugar gradually with vanilla.",
+    "If using lavender, fold ground lavender into half the frosting to create a swirl before piping onto cooled cupcakes."
+  ],
+  "tips": [
+    "Cool the tea milk to room temperature before mixing. Warm milk can melt the oil too fast and change the texture.",
+    "Squeeze the tea bags well. This pulls out more bergamot flavor without adding bitterness.",
+    "Go light on lavender. A little goes a long way and too much tastes like soap.",
+    "For a stronger tea taste, steep one extra tea bag or steep for 20 minutes instead of 15."
+  ],
+  "faq": [
+    {
+      "question": "Can I use a different plant milk for these Earl Grey cupcakes?",
+      "answer": "Yes, soy milk or almond milk both work well. Oat milk gives the softest crumb because of its natural fat content."
+    },
+    {
+      "question": "Why does my tea milk taste bitter?",
+      "answer": "Bitterness usually comes from steeping too long or squeezing the tea bags too hard. Stick to 15 minutes and a gentle squeeze."
+    },
+    {
+      "question": "Can I skip the lavender in the frosting?",
+      "answer": "Yes, plain vanilla frosting works great here. The lavender swirl is optional and just adds a floral note."
+    },
+    {
+      "question": "How do I store leftover Earl Grey cupcakes?",
+      "answer": "Keep them in an airtight container at room temperature for up to 2 days, or refrigerate for up to 5 days."
+    }
+  ],
+  "tags": [
+    "vegan",
+    "tea-cupcakes",
+    "earl-grey",
+    "lavender",
+    "dairy-free-baking"
+  ],
+  "recipeKeys": [
+    "vegan Earl Grey cupcakes",
+    "Earl Grey tea cupcakes",
+    "lavender vanilla frosting",
+    "dairy free tea cupcakes",
+    "Easy difficulty",
+    "oat milk cupcakes",
+    "bergamot cupcake recipe"
+  ],
+  "keywords": [
+    "vegan cupcakes",
+    "earl grey cupcakes",
+    "lavender frosting",
+    "dairy free cupcakes",
+    "tea cupcake recipe"
+  ],
+  "nutritionInfo": {
+    "calories": 210,
+    "carbs": 32,
+    "protein": 2,
+    "fat": 9,
+    "fiber": 1,
+    "sugar": 22
+  },
+  "dietaryBadges": [
+    "vegan",
+    "dairy-free"
+  ],
+  "conclusion": "These Earl Grey cupcakes are a simple way to bring a tea shop flavor into a vegan bake. Steep the tea, keep the frosting light, and you have a batch that works for everyday snacking or a small gathering.",
+  "metaTitle": "Vegan Earl Grey Tea Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Vegan Earl Grey tea cupcakes with lavender vanilla frosting. Steep the tea in oat milk and bake a soft batch today for tea time.",
+  "imageAlt": "Vegan Earl Grey tea cupcake with tall swirled lavender vanilla frosting on a pale aqua background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Vegan Earl Grey tea cupcake with tall swirled lavender vanilla frosting on a pale aqua background",
+      "prompt": "A single vegan Earl Grey tea cupcake with tall swirled lavender vanilla frosting piped high, a few dried lavender buds on top, bright pastel bakery aesthetic, soft even daylight, pale aqua background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/vegan-earl-grey-tea-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Earl Grey tea bags steeping in warm oat milk in a small pot",
+      "prompt": "Overhead shot of Earl Grey tea bags steeping in warm oat milk in a small pot on a light wood surface, bright pastel bakery aesthetic, soft even daylight, pale aqua background accents, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/vegan-earl-grey-tea-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of lavender vanilla frosting swirl on top of an Earl Grey cupcake",
+      "prompt": "Close up detail shot of a tall swirled lavender vanilla frosting on a vegan Earl Grey cupcake, a sprinkle of dried lavender on top, bright pastel bakery aesthetic, soft even daylight, pale aqua background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/vegan-earl-grey-tea-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "vegan-rainbow-surprise-cupcakes",
+    "classic-vanilla-dream-cupcakes",
+    "rosewater-pistachio-delight-cupcakes"
+  ],
+  "contentIdeaId": "r075",
+  "image": "/vegan-earl-grey-tea-cupcakes.jpg",
+  "publishAt": "2026-10-01T13:21:00+02:00",
+  "contentType": "recipe"
+}

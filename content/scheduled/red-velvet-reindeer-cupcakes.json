@@ -1,0 +1,132 @@
+{
+  "title": "Red Velvet Reindeer Cupcakes",
+  "slug": "red-velvet-reindeer-cupcakes",
+  "shortDescription": "Soft red velvet cupcakes with cream cheese frosting, ready in 25 minutes prep and 18 minutes bake, topped with pretzel antlers and candy eyes.",
+  "description": "These red velvet cupcakes get a holiday makeover with pretzel antlers, candy eyes, and a red candy nose. The cake stays soft and tender under a swirl of cream cheese frosting.",
+  "category": "seasonal",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 1/4 cups all-purpose flour",
+    "1 tbsp cocoa powder",
+    "1/2 tsp baking soda",
+    "1/2 tsp salt",
+    "1/2 cup granulated sugar",
+    "1/2 cup vegetable oil",
+    "1 large egg",
+    "1/2 cup buttermilk",
+    "1 tbsp red food coloring",
+    "1/2 tsp white vinegar",
+    "1/2 tsp vanilla extract",
+    "8 oz cream cheese, softened",
+    "1/4 cup unsalted butter, softened",
+    "2 cups powdered sugar",
+    "24 small pretzel twists (for antlers)",
+    "24 candy eyes",
+    "12 red M&M's or red cinnamon candies (for noses)"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F and line a muffin pan with 12 paper liners.",
+    "Whisk flour, cocoa powder, baking soda, and salt in a bowl. Set aside.",
+    "In a large bowl, beat sugar and oil together until smooth.",
+    "Add the egg, buttermilk, red food coloring, vinegar, and vanilla. Mix until combined.",
+    "Pour the dry ingredients into the wet ingredients. Stir just until no streaks remain.",
+    "Divide batter evenly among the liners, filling each about two thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick comes out clean.",
+    "Cool cupcakes in the pan for 5 minutes, then move to a wire rack to cool fully.",
+    "Beat cream cheese and butter until smooth, then add powdered sugar. Beat until fluffy.",
+    "Pipe frosting on each cooled cupcake in a tall swirl.",
+    "Break each pretzel twist in half to make two antler pieces. Push two halves into the top of the frosting to look like antlers.",
+    "Add two candy eyes below the antlers and press a red candy into the center for the nose."
+  ],
+  "tips": [
+    "Chill frosted cupcakes for 10 minutes before adding pretzels so they hold their spot.",
+    "If pretzels feel soft, dry them in a 300°F oven for 3 minutes first.",
+    "Use gel food coloring instead of liquid for a deeper red without changing the batter texture.",
+    "Make the antlers ahead and store in an airtight bag so decorating goes faster on party day."
+  ],
+  "faq": [
+    {
+      "question": "Can I make the pretzel antlers ahead of time?",
+      "answer": "Yes, break the pretzels into antler shapes up to 2 days ahead. Store them in a sealed bag at room temperature so they stay crisp."
+    },
+    {
+      "question": "Why did my antlers slide out of the frosting?",
+      "answer": "The frosting was likely too soft. Chill the frosted cupcakes for 10 minutes before pushing in the pretzel pieces."
+    },
+    {
+      "question": "Can I use chocolate antlers instead of pretzels?",
+      "answer": "Yes, piped chocolate antlers or store bought chocolate twigs both work. Let chocolate antlers set firm before adding them."
+    },
+    {
+      "question": "Do I need the vinegar in red velvet batter?",
+      "answer": "Yes, the vinegar reacts with baking soda to keep the crumb soft and helps the red color stay bright after baking."
+    }
+  ],
+  "tags": [
+    "christmas",
+    "red-velvet",
+    "holiday-cupcakes",
+    "kids-baking",
+    "seasonal"
+  ],
+  "recipeKeys": [
+    "red velvet reindeer cupcakes",
+    "christmas cupcakes",
+    "pretzel antler cupcakes",
+    "holiday cupcake recipe",
+    "Easy difficulty",
+    "cream cheese frosting cupcakes"
+  ],
+  "keywords": [
+    "red velvet reindeer cupcakes",
+    "christmas cupcake recipe",
+    "pretzel antlers cupcakes",
+    "holiday cupcake idea"
+  ],
+  "nutritionInfo": {
+    "calories": 290,
+    "carbs": 34,
+    "protein": 3,
+    "fat": 15,
+    "fiber": 1,
+    "sugar": 24
+  },
+  "dietaryBadges": [],
+  "conclusion": "These reindeer cupcakes turn a classic red velvet base into a holiday party centerpiece. Kids can help push in the pretzel antlers and candy eyes, making this a fun baking afternoon.",
+  "metaTitle": "Red Velvet Reindeer Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Make Red Velvet Reindeer Cupcakes with pretzel antlers and candy eyes. Easy holiday recipe ready in 43 minutes, get the full step-by-step plan now.",
+  "imageAlt": "Red velvet cupcake with cream cheese frosting shaped as a reindeer face with pretzel antlers and candy eyes",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Red velvet cupcake with cream cheese frosting shaped as a reindeer face with pretzel antlers and candy eyes",
+      "prompt": "A red velvet cupcake with tall swirled cream cheese frosting piped high, decorated as a reindeer face with pretzel antlers, candy eyes, and a red candy nose, set on soft even daylight against a blush pink pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/red-velvet-reindeer-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Pretzel antlers and candy eyes being placed onto frosted red velvet cupcakes on a wooden board",
+      "prompt": "Overhead view of frosted red velvet cupcakes lined up on pale wood, with small bowls of pretzel antler pieces, candy eyes, and red candies nearby ready for decorating, bright pastel bakery aesthetic, soft even daylight, cream background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/red-velvet-reindeer-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of pretzel antler and candy eye detail on a red velvet reindeer cupcake",
+      "prompt": "Close up macro shot of a red velvet cupcake reindeer face showing crisp pretzel antler texture, glossy candy eyes, and a shiny red candy nose against pale butter yellow pastel background, soft even daylight, shallow depth of field, clean minimal props, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/red-velvet-reindeer-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "red-velvet-romance-cupcakes",
+    "white-chocolate-snowflake-cupcakes",
+    "cranberry-orange-sparkle-cupcakes"
+  ],
+  "contentIdeaId": "r160",
+  "image": "/red-velvet-reindeer-cupcakes.jpg",
+  "publishAt": "2026-11-10T17:30:00+02:00",
+  "contentType": "recipe"
+}

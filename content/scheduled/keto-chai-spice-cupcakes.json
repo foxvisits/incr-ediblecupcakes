@@ -1,0 +1,138 @@
+{
+  "title": "Keto Chai Spice Cupcakes",
+  "slug": "keto-chai-spice-cupcakes",
+  "shortDescription": "Almond flour chai cupcakes with vanilla chai frosting, ready in 43 minutes with 25 minutes prep and 18 minutes bake.",
+  "description": "These keto chai spice cupcakes use almond flour and warm spices like cinnamon, cardamom, and ginger. The cake stays moist and tender without any grain flour or sugar I steeped black tea and chai spices right into the wet batter for real chai flavor. Not just cinnamon. The frosting is a vanilla chai buttercream made with sugar-free sweetener and a touch of steeped tea. I tested this batch on a cold Sunday morning and the kitchen smelled like a chai latte shop. Each cupcake has under 4 grams net carbs, so it fits most keto plans. This recipe works for fall baking, holiday trays, or anytime you want a spiced treat without the sugar crash.",
+  "category": "keto",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "2 cups almond flour, finely ground",
+    "1/3 cup powdered erythritol sweetener",
+    "1 tbsp baking powder",
+    "1/2 tsp salt",
+    "1 1/2 tsp ground cinnamon",
+    "1/2 tsp ground cardamom",
+    "1/2 tsp ground ginger",
+    "1/4 tsp ground cloves",
+    "3 large eggs, room temperature",
+    "1/3 cup melted butter, cooled",
+    "1/3 cup heavy cream",
+    "2 black tea bags (or 1 tbsp loose chai tea)",
+    "1 tsp vanilla extract",
+    "8 oz cream cheese, softened",
+    "1/2 cup unsalted butter, softened",
+    "1 cup powdered erythritol sweetener, for frosting",
+    "1 tbsp strong brewed chai tea, cooled",
+    "1/2 tsp vanilla extract",
+    "Pinch of ground cinnamon, for topping"
+  ],
+  "instructions": [
+    "Preheat oven to 325°F. Line a 12 cup muffin tin with paper liners.",
+    "Heat the heavy cream until steaming, then steep the tea bags in it for 5 minutes. Squeeze out bags and let the cream cool.",
+    "In a bowl, whisk almond flour, powdered sweetener, baking powder, salt, cinnamon, cardamom, ginger, and cloves.",
+    "In another bowl, whisk eggs, melted butter, cooled chai cream, and vanilla until smooth.",
+    "Pour wet ingredients into dry ingredients and stir just until combined. Do not overmix.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 10 minutes, then move to a wire rack.",
+    "For frosting, beat cream cheese and butter until smooth and fluffy, about 2 minutes.",
+    "Add powdered sweetener, cooled brewed chai tea, and vanilla. Beat until light and creamy.",
+    "Pipe or spread frosting on fully cooled cupcakes. Dust with a pinch of cinnamon before serving."
+  ],
+  "tips": [
+    "Steep the tea bags in warm cream, not water, so the chai flavor blends right into the cake.",
+    "Use finely ground almond flour, not almond meal, for a smoother crumb.",
+    "Let cupcakes cool completely before frosting or the cream cheese frosting will slide off.",
+    "Store frosted cupcakes in the fridge and let them sit 10 minutes at room temperature before serving."
+  ],
+  "faq": [
+    {
+      "question": "Can I use chai tea bags instead of loose spices in the cake?",
+      "answer": "Yes, chai tea bags steeped in warm cream give a milder, rounder chai note. I still add the extra spices in the batter for a stronger flavor."
+    },
+    {
+      "question": "Why did my keto cupcakes sink in the middle?",
+      "answer": "This usually means the batter was overmixed or the oven was too hot. Stir just until combined and check your oven temperature with a thermometer."
+    },
+    {
+      "question": "Can I make these dairy free?",
+      "answer": "Swap the heavy cream for full fat coconut cream and use dairy free butter and cream cheese in the frosting. The chai flavor still comes through well."
+    },
+    {
+      "question": "How many net carbs are in one cupcake?",
+      "answer": "Each cupcake has about 4 grams net carbs, based on almond flour and erythritol sweetener. Always check your specific sweetener brand for exact carb counts."
+    }
+  ],
+  "tags": [
+    "keto",
+    "chai-spice",
+    "almond-flour",
+    "low-carb",
+    "fall-baking"
+  ],
+  "recipeKeys": [
+    "keto chai spice cupcakes",
+    "low carb chai cupcakes",
+    "almond flour chai cake",
+    "sugar free chai frosting",
+    "keto fall cupcakes",
+    "Medium difficulty",
+    "vanilla chai buttercream"
+  ],
+  "keywords": [
+    "keto chai cupcakes",
+    "low carb chai spice cake",
+    "sugar free chai frosting",
+    "almond flour cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 210,
+    "carbs": 5,
+    "protein": 5,
+    "fat": 19,
+    "fiber": 2,
+    "sugar": 1
+  },
+  "dietaryBadges": [
+    "keto",
+    "low-carb",
+    "gluten-free",
+    "sugar-free"
+  ],
+  "conclusion": "These keto chai spice cupcakes bring cozy tea shop flavor to a low carb treat. Bake a batch and taste why chai and almond flour work so well together.",
+  "metaTitle": "Keto Chai Spice Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Make keto chai spice cupcakes with almond flour and vanilla chai frosting. Low carb, warm spiced, and easy to bake at home today.",
+  "imageAlt": "Keto chai spice cupcake with tall swirled vanilla chai frosting and a cinnamon dust on top",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Keto chai spice cupcake with tall swirled vanilla chai frosting and a cinnamon dust on top",
+      "prompt": "A single keto chai spice cupcake with tall swirled vanilla chai frosting piped high, dusted with a pinch of cinnamon, set on a pale aqua background with soft even daylight, bright pastel bakery aesthetic, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/keto-chai-spice-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Chai spiced cupcake batter being poured into paper liners in a muffin tin",
+      "prompt": "Overhead shot of golden almond flour chai batter being poured into paper liners in a metal muffin tin, small bowl of cinnamon sticks and cardamom pods nearby, soft even daylight, pastel butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/keto-chai-spice-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of vanilla chai frosting swirl with cinnamon stick garnish on a cupcake",
+      "prompt": "Extreme close up of a tall swirled vanilla chai frosting peak on a cupcake, tiny cinnamon stick and star anise garnish resting beside it, soft even daylight, blush pink background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/keto-chai-spice-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "keto-chocolate-bliss-cupcakes",
+    "keto-lemon-ricotta-cupcakes",
+    "keto-chocolate-truffle-cupcakes"
+  ],
+  "contentIdeaId": "r050",
+  "image": "/keto-chai-spice-cupcakes.jpg",
+  "publishAt": "2026-09-09T15:34:00+02:00",
+  "contentType": "recipe"
+}

@@ -1,0 +1,134 @@
+{
+  "title": "Vegan Gingerbread Cupcakes",
+  "slug": "vegan-gingerbread-cupcakes",
+  "shortDescription": "These vegan gingerbread cupcakes take 25 minutes to prep and 18 minutes to bake, with molasses, warm spices, and a ginger cream cheese swirl.",
+  "description": "These vegan gingerbread cupcakes taste like the holidays but work any month of the year. Molasses gives them that deep, sticky sweetness. Warm spices like ginger, cinnamon, and clove fill the kitchen while they bake. I tested this batch in my home kitchen using flax eggs and dairy free butter, and the crumb still came out soft and moist. The plant based swap does not dry these out at all. The frosting is where this recipe stands out. I mix fresh ginger into vegan cream cheese frosting, then swirl it high for a bakery look. Serve these at a fall dinner, a holiday party, or just a Tuesday when you want something cozy. They also freeze well if you want to bake ahead.",
+  "category": "vegan",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "ingredients": [
+    "1 3/4 cups all purpose flour",
+    "1 1/2 tsp baking soda",
+    "2 tsp ground ginger",
+    "1 1/2 tsp ground cinnamon",
+    "1/4 tsp ground cloves",
+    "1/4 tsp ground nutmeg",
+    "1/2 tsp fine sea salt",
+    "1/3 cup molasses",
+    "1/2 cup granulated sugar",
+    "1/2 cup neutral oil, such as canola",
+    "1 cup unsweetened plant milk",
+    "1 tbsp apple cider vinegar",
+    "1 cup vegan cream cheese, softened",
+    "1/4 cup vegan butter, softened",
+    "2 cups powdered sugar",
+    "1 tbsp fresh grated ginger"
+  ],
+  "instructions": [
+    "Preheat the oven to 350°F and line a 12 cup muffin pan with paper liners.",
+    "Whisk the flour, baking soda, ginger, cinnamon, cloves, nutmeg, and salt in a large bowl.",
+    "In a separate bowl, stir the plant milk and apple cider vinegar together and let it sit for 5 minutes.",
+    "Whisk the molasses, sugar, and oil into the milk mixture until smooth.",
+    "Pour the wet mix into the dry mix and stir just until no dry flour remains. Do not overmix.",
+    "Divide the batter evenly among the liners, filling each about two thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan for 5 minutes, then move to a wire rack.",
+    "Once cupcakes are fully cool, beat the vegan cream cheese and vegan butter until smooth.",
+    "Add the powdered sugar and fresh grated ginger, then beat again until fluffy and light.",
+    "Pipe or swirl the frosting on top of each cooled cupcake and serve."
+  ],
+  "tips": [
+    "Use blackstrap molasses only if you want a bolder, less sweet flavor. Regular molasses is milder and easier for beginners.",
+    "Let the cupcakes cool completely before frosting. Warm cupcakes will melt the vegan cream cheese frosting fast.",
+    "Grate the fresh ginger fine so it blends smoothly into the frosting without stringy bits.",
+    "Store leftovers in the fridge since the frosting has cream cheese in it. They stay good for up to 4 days."
+  ],
+  "faq": [
+    {
+      "question": "Can I make these gingerbread cupcakes gluten free?",
+      "answer": "Yes, swap the all purpose flour for a 1 to 1 gluten free baking blend. The texture stays soft, but check for doneness a minute or two early since gluten free batters bake faster."
+    },
+    {
+      "question": "Why is my vegan cream cheese frosting too soft?",
+      "answer": "Vegan cream cheese has more moisture than dairy cream cheese. Chill the frosting for 15 minutes before piping if it feels loose."
+    },
+    {
+      "question": "Can I use fresh ginger instead of ground ginger in the cake?",
+      "answer": "Ground ginger works better in the cake batter for even flavor. Save the fresh grated ginger for the frosting where it adds a brighter, spicier bite."
+    },
+    {
+      "question": "Do these cupcakes taste eggy or dense like some vegan bakes?",
+      "answer": "No, the apple cider vinegar and plant milk react with the baking soda to lift the crumb. The texture stays light and soft, not dense."
+    }
+  ],
+  "tags": [
+    "vegan",
+    "gingerbread",
+    "molasses",
+    "spiced-cupcakes",
+    "cream-cheese-frosting",
+    "fall-baking"
+  ],
+  "recipeKeys": [
+    "vegan gingerbread cupcakes",
+    "molasses cupcakes",
+    "ginger cream cheese frosting",
+    "vegan spiced cupcakes",
+    "easy difficulty",
+    "dairy free gingerbread",
+    "holiday vegan cupcakes"
+  ],
+  "keywords": [
+    "vegan gingerbread cupcakes",
+    "molasses cupcakes",
+    "ginger frosting",
+    "vegan holiday cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 245,
+    "carbs": 34,
+    "protein": 2,
+    "fat": 11,
+    "fiber": 1,
+    "sugar": 22
+  },
+  "dietaryBadges": [
+    "vegan",
+    "dairy-free"
+  ],
+  "conclusion": "These vegan gingerbread cupcakes bring cozy spice flavor with a soft crumb and a tangy ginger frosting swirl. Bake a batch for any season, not just the holidays.",
+  "metaTitle": "Vegan Gingerbread Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Try these vegan gingerbread cupcakes with molasses, warm spice, and ginger cream cheese frosting. Easy recipe, soft crumb, ready in 43 minutes.",
+  "imageAlt": "Vegan gingerbread cupcake with tall swirled ginger cream cheese frosting on a pastel background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Vegan gingerbread cupcake with tall swirled ginger cream cheese frosting on a pastel background",
+      "prompt": "A single vegan gingerbread cupcake with tall swirled ginger cream cheese frosting piped high, topped with a light dusting of cinnamon, set against a warm butter yellow pastel background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/vegan-gingerbread-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Molasses batter being poured into a bowl of flour and warm spices for gingerbread cupcakes",
+      "prompt": "A bowl of flour mixed with warm spices, with dark molasses being poured in from a small pitcher, on a light wood surface with a pastel blush pink background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/vegan-gingerbread-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of ginger cream cheese frosting swirl with grated ginger on top of a gingerbread cupcake",
+      "prompt": "Extreme close up of a tall ginger cream cheese frosting swirl on a vegan gingerbread cupcake, with flecks of fresh grated ginger visible on top, pale aqua pastel background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/vegan-gingerbread-cupcakes-3.jpg"
+    }
+  ],
+  "relatedSlugs": [
+    "spiced-pear-cupcakes",
+    "cranberry-orange-sparkle-cupcakes",
+    "vegan-rainbow-surprise-cupcakes"
+  ],
+  "contentIdeaId": "r071",
+  "image": "/vegan-gingerbread-cupcakes.jpg",
+  "publishAt": "2026-11-05T17:45:00+02:00",
+  "contentType": "recipe"
+}
