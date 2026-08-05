@@ -193,9 +193,10 @@
       "category": "classic",
       "notes": "target keyword: buttermilk cupcakes. Tender crumb, light vanilla sweetness, moisture from buttermilk",
       "priority": 18,
-      "status": "scheduled",
+      "status": "published",
       "slug": "buttermilk-bakery-style-cupcakes",
-      "publishAt": "2026-08-04T14:19:00+02:00"
+      "publishAt": "2026-08-04T14:19:00+02:00",
+      "publishedAt": "2026-08-05T08:29:44.846Z"
     },
     {
       "id": "r019",

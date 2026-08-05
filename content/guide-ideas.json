@@ -103,9 +103,10 @@
       "targetKeyword": "how to measure ingredients for perfect cupcakes",
       "notes": "Spoon and level flour, weight vs volume, scale recommended",
       "priority": 9,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-measure-ingredients-for-perfect-cupcakes",
-      "publishAt": "2026-08-04T15:34:00+02:00"
+      "publishAt": "2026-08-04T15:34:00+02:00",
+      "publishedAt": "2026-08-05T08:29:44.846Z"
     },
     {
       "id": "g010",

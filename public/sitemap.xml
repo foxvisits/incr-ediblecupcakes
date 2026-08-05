@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://incr-ediblecupcakes.com/</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,7 +14,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipes</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -46,28 +46,28 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/categories</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/tags</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/guides</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/categories/classic</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -133,6 +133,17 @@
     <lastmod>2025-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/buttermilk-bakery-style-cupcakes</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/buttermilk-bakery-style-cupcakes.jpg</image:loc>
+      <image:title>Buttermilk Bakery-Style Cupcakes</image:title>
+    </image:image>
   </url>
 
   <url>
@@ -521,6 +532,13 @@
   </url>
 
   <url>
+    <loc>https://incr-ediblecupcakes.com/tags/easy-cupcakes</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://incr-ediblecupcakes.com/tags/winter</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -821,6 +839,17 @@
     <image:image>
       <image:loc>https://incr-ediblecupcakes.com/guide-how-to-fill-cupcakes-without-sogginess.jpg</image:loc>
       <image:title>How to Fill Cupcakes with Cores and Curds Without Sogginess</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides/how-to-measure-ingredients-for-perfect-cupcakes</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/guide-how-to-measure-ingredients-for-perfect-cupcakes.jpg</image:loc>
+      <image:title>How to Measure Ingredients for Perfect Cupcakes</image:title>
     </image:image>
   </url>
 
