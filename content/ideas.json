@@ -204,9 +204,10 @@
       "category": "classic",
       "notes": "Warm brown sugar batter, cinnamon ribbon swirl baked inside, vanilla-cinnamon frosting swirl",
       "priority": 19,
-      "status": "scheduled",
+      "status": "published",
       "slug": "brown-sugar-cinnamon-swirl-cupcakes",
-      "publishAt": "2026-08-05T10:43:00+02:00"
+      "publishAt": "2026-08-05T10:43:00+02:00",
+      "publishedAt": "2026-08-06T08:28:45.913Z"
     },
     {
       "id": "r020",

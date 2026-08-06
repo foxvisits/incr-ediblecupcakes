@@ -115,9 +115,10 @@
       "targetKeyword": "what oven temperature makes the best cupcakes?",
       "notes": "325F vs 350F vs convection, oven testing tips",
       "priority": 10,
-      "status": "scheduled",
+      "status": "published",
       "slug": "what-oven-temperature-makes-the-best-cupcakes",
-      "publishAt": "2026-08-05T14:39:00+02:00"
+      "publishAt": "2026-08-05T14:39:00+02:00",
+      "publishedAt": "2026-08-06T08:28:45.913Z"
     },
     {
       "id": "g011",
