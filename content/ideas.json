@@ -215,9 +215,10 @@
       "category": "classic",
       "notes": "Real strawberry compote folded into batter + whipped cream cheese frosting. No artificial color",
       "priority": 20,
-      "status": "scheduled",
+      "status": "published",
       "slug": "strawberries-and-cream-cupcakes",
-      "publishAt": "2026-08-06T15:30:00+02:00"
+      "publishAt": "2026-08-06T15:30:00+02:00",
+      "publishedAt": "2026-08-07T07:08:54.361Z"
     },
     {
       "id": "r021",
