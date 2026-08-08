@@ -226,9 +226,10 @@
       "category": "classic",
       "notes": "Moist deep cocoa cake base, milk chocolate buttercream swirled high",
       "priority": 21,
-      "status": "scheduled",
+      "status": "published",
       "slug": "chocolate-fudge-cupcakes-milk-chocolate-swirl",
-      "publishAt": "2026-08-07T13:18:00+02:00"
+      "publishAt": "2026-08-07T13:18:00+02:00",
+      "publishedAt": "2026-08-08T06:43:37.561Z"
     },
     {
       "id": "r022",

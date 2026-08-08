@@ -139,9 +139,10 @@
       "targetKeyword": "why room temperature ingredients matter",
       "notes": "Emulsification + smooth batter structure",
       "priority": 12,
-      "status": "scheduled",
+      "status": "published",
       "slug": "why-room-temperature-ingredients-matter",
-      "publishAt": "2026-08-07T15:17:00+02:00"
+      "publishAt": "2026-08-07T15:17:00+02:00",
+      "publishedAt": "2026-08-08T06:43:37.561Z"
     },
     {
       "id": "g013",
