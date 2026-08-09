@@ -237,9 +237,10 @@
       "category": "classic",
       "notes": "Espresso-infused vanilla cake, caramel buttercream swirl, caramel drizzle",
       "priority": 22,
-      "status": "scheduled",
+      "status": "published",
       "slug": "caramel-latte-cupcakes",
-      "publishAt": "2026-08-08T11:19:00+02:00"
+      "publishAt": "2026-08-08T11:19:00+02:00",
+      "publishedAt": "2026-08-09T06:49:12.054Z"
     },
     {
       "id": "r023",

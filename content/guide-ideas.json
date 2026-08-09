@@ -151,9 +151,10 @@
       "targetKeyword": "how long should you beat cupcake batter?",
       "notes": "Teach the just-combined concept, avoid overmixing",
       "priority": 13,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-long-should-you-beat-cupcake-batter",
-      "publishAt": "2026-08-08T11:33:00+02:00"
+      "publishAt": "2026-08-08T11:33:00+02:00",
+      "publishedAt": "2026-08-09T06:49:12.054Z"
     },
     {
       "id": "g014",
