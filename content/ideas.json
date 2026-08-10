@@ -248,9 +248,10 @@
       "category": "classic",
       "notes": "Real vanilla bean specks, wildflower honey sweetness, silky honey frosting",
       "priority": 23,
-      "status": "scheduled",
+      "status": "published",
       "slug": "honey-vanilla-bean-cupcakes",
-      "publishAt": "2026-08-09T10:38:00+02:00"
+      "publishAt": "2026-08-09T10:38:00+02:00",
+      "publishedAt": "2026-08-10T07:23:54.811Z"
     },
     {
       "id": "r024",
