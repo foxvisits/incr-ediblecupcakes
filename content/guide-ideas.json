@@ -175,9 +175,10 @@
       "targetKeyword": "how to fill cupcake liners evenly",
       "notes": "Ice cream scoop for even fill, three-quarter height rule",
       "priority": 15,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-fill-cupcake-liners-evenly",
-      "publishAt": "2026-08-10T14:43:00+02:00"
+      "publishAt": "2026-08-10T14:43:00+02:00",
+      "publishedAt": "2026-08-11T07:00:05.707Z"
     },
     {
       "id": "g016",
