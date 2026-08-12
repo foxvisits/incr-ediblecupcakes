@@ -270,9 +270,10 @@
       "category": "classic",
       "notes": "Seasonal evergreen search. Soft peach puree in batter, whipped silky peach cream frosting",
       "priority": 25,
-      "status": "scheduled",
+      "status": "published",
       "slug": "peaches-and-cream-cupcakes",
-      "publishAt": "2026-08-11T10:45:00+02:00"
+      "publishAt": "2026-08-11T10:45:00+02:00",
+      "publishedAt": "2026-08-12T07:18:11.200Z"
     },
     {
       "id": "r026",

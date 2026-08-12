@@ -187,9 +187,10 @@
       "targetKeyword": "how to cool cupcakes without drying them",
       "notes": "Avoid overcooling + airflow tips",
       "priority": 16,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-cool-cupcakes-without-drying-them",
-      "publishAt": "2026-08-11T16:30:00+02:00"
+      "publishAt": "2026-08-11T16:30:00+02:00",
+      "publishedAt": "2026-08-12T07:18:11.200Z"
     },
     {
       "id": "g017",
