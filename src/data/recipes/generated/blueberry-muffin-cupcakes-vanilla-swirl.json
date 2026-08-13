@@ -1,0 +1,130 @@
+{
+  "id": "r026",
+  "title": "Blueberry Muffin Cupcakes with Vanilla Swirl",
+  "slug": "blueberry-muffin-cupcakes-vanilla-swirl",
+  "description": "This recipe mixes two favorites into one treat. You get a soft muffin crumb loaded with blueberries, topped with a light vanilla swirl frosting instead of a crumb topping. I tested this batter three times in my home kitchen to get the berries to stay put instead of sinking. The trick is a quick flour toss before folding them in. It works every time. These are great for brunch tables or lunchbox treats when you want something less sweet than a classic cupcake. The frosting stays light, so the muffin flavor still leads.",
+  "shortDescription": "These blueberry muffin cupcakes take 25 minutes to prep and 18 minutes to bake, with juicy berry pockets and vanilla swirl frosting.",
+  "image": "/blueberry-muffin-cupcakes-vanilla-swirl.jpg",
+  "imageAlt": "Blueberry muffin cupcake with tall vanilla swirl frosting and fresh blueberries on top",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Blueberry muffin cupcake with tall vanilla swirl frosting and fresh blueberries on top",
+      "prompt": "A single blueberry muffin cupcake with tall swirled vanilla frosting piped high, topped with fresh blueberries, set against a soft butter yellow pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/blueberry-muffin-cupcakes-vanilla-swirl.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Blueberry muffin batter with fresh blueberries being folded in with a spatula",
+      "prompt": "Overhead view of pale yellow muffin batter in a glass bowl with fresh blueberries folded in using a spatula, soft even daylight, pastel butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/blueberry-muffin-cupcakes-vanilla-swirl-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of blueberry muffin cupcake showing juicy berry pockets inside the crumb",
+      "prompt": "Close up cross section of a blueberry muffin cupcake showing juicy blueberry pockets inside soft golden crumb, tall vanilla swirl frosting visible at the top edge, soft even daylight, pastel butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/blueberry-muffin-cupcakes-vanilla-swirl-3.jpg"
+    }
+  ],
+  "metaTitle": "Blueberry Muffin Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Blueberry muffin cupcakes with a light vanilla swirl frosting. Easy classic recipe, ready in 43 minutes. Bake a batch today!",
+  "category": "classic",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "featured": false,
+  "ingredients": [
+    "1 3/4 cups all-purpose flour, divided",
+    "1 1/2 tsp baking powder",
+    "1/4 tsp baking soda",
+    "1/2 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1 tsp vanilla extract",
+    "1/2 cup sour cream",
+    "1/3 cup whole milk",
+    "1 1/2 cups fresh blueberries",
+    "1 cup unsalted butter, softened (for frosting)",
+    "3 cups powdered sugar",
+    "2 tbsp heavy cream",
+    "1 1/2 tsp vanilla bean paste or vanilla extract"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a muffin pan with 12 cupcake liners.",
+    "Whisk 1 1/2 cups flour, baking powder, baking soda, and salt in a bowl. Set aside.",
+    "Beat softened butter and sugar until light and fluffy, about 2 minutes.",
+    "Add eggs one at a time, then mix in vanilla extract.",
+    "Add flour mixture in two batches, alternating with sour cream and milk. Mix just until combined.",
+    "Toss blueberries with the remaining 1/4 cup flour. Fold gently into the batter by hand.",
+    "Divide batter evenly among liners, filling each about three-quarters full.",
+    "Bake 18 to 20 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a wire rack.",
+    "For the frosting, beat butter until smooth. Add powdered sugar one cup at a time.",
+    "Mix in heavy cream and vanilla bean paste. Beat 2 more minutes until fluffy.",
+    "Once cupcakes are fully cool, pipe frosting in a swirl using a large star tip.",
+    "Top each cupcake with a few extra fresh blueberries before serving."
+  ],
+  "tags": [
+    "blueberry",
+    "vanilla",
+    "classic",
+    "muffin-cupcake",
+    "brunch"
+  ],
+  "nutritionInfo": {
+    "calories": 320,
+    "carbs": 42,
+    "protein": 3,
+    "fat": 15,
+    "fiber": 1,
+    "sugar": 30
+  },
+  "tips": [
+    "Tossing berries in flour keeps them from sinking to the bottom of the batter.",
+    "Use room temperature eggs and sour cream so the batter mixes smoothly.",
+    "Frozen blueberries work too. Do not thaw them first, or the batter turns purple.",
+    "Chill the frosted cupcakes for 10 minutes before serving for cleaner swirls."
+  ],
+  "recipeKeys": [
+    "blueberry muffin cupcakes",
+    "vanilla swirl frosting",
+    "blueberry cupcakes recipe",
+    "muffin cupcake hybrid",
+    "Easy difficulty",
+    "brunch cupcakes"
+  ],
+  "dietaryBadges": [],
+  "cuisine": "American",
+  "conclusion": "These blueberry muffin cupcakes give you the best of both treats in one bite. The berry pockets stay juicy and the vanilla swirl keeps things light on top. Try them for your next brunch and let me know how the swirl turns out.",
+  "faq": [
+    {
+      "question": "Can I use frozen blueberries instead of fresh?",
+      "answer": "Yes, use them straight from the freezer. Toss them in flour while still frozen so they do not bleed color into the batter."
+    },
+    {
+      "question": "Why did my blueberries sink to the bottom?",
+      "answer": "This usually happens when berries are wet or not coated in flour. Pat berries dry and toss them in the reserved flour before folding in."
+    },
+    {
+      "question": "Can I make these ahead of time?",
+      "answer": "Bake the cupcakes up to 2 days ahead and store unfrosted at room temperature in an airtight container. Frost the same day you plan to serve them."
+    },
+    {
+      "question": "Is this recipe closer to a muffin or a cupcake?",
+      "answer": "The base is a muffin style batter with sour cream for a tender crumb. The vanilla swirl frosting on top gives it cupcake styling for parties."
+    }
+  ],
+  "author": {
+    "name": "Sarah",
+    "url": "https://incr-ediblecupcakes.com/about"
+  },
+  "keywords": [
+    "blueberry muffin cupcakes",
+    "vanilla swirl frosting recipe",
+    "blueberry cupcakes with fresh berries"
+  ],
+  "datePublished": "2026-08-13",
+  "dateModified": "2026-08-13"
+}

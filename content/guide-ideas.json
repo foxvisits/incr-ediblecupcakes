@@ -199,9 +199,10 @@
       "targetKeyword": "batch baking: how to bake 24+ cupcakes at once",
       "notes": "Even heat distribution + tray rotation tips",
       "priority": 17,
-      "status": "scheduled",
+      "status": "published",
       "slug": "batch-baking-24-cupcakes-at-once",
-      "publishAt": "2026-08-12T11:03:00+02:00"
+      "publishAt": "2026-08-12T11:03:00+02:00",
+      "publishedAt": "2026-08-13T07:20:51.519Z"
     },
     {
       "id": "g018",
