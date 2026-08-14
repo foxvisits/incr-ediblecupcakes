@@ -292,9 +292,10 @@
       "category": "classic",
       "notes": "Fresh orange zest + juice, vanilla cream frosting, nostalgic but elegant",
       "priority": 27,
-      "status": "scheduled",
+      "status": "published",
       "slug": "creamsicle-orange-vanilla-cupcakes",
-      "publishAt": "2026-08-13T12:59:00+02:00"
+      "publishAt": "2026-08-13T12:59:00+02:00",
+      "publishedAt": "2026-08-14T07:18:30.137Z"
     },
     {
       "id": "r028",
