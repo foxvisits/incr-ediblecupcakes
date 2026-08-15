@@ -303,9 +303,10 @@
       "category": "classic",
       "notes": "Moist banana cake, pudding core, whipped vanilla frosting",
       "priority": 28,
-      "status": "scheduled",
+      "status": "published",
       "slug": "banana-pudding-cupcakes",
-      "publishAt": "2026-08-14T13:46:00+02:00"
+      "publishAt": "2026-08-14T13:46:00+02:00",
+      "publishedAt": "2026-08-15T06:31:15.688Z"
     },
     {
       "id": "r029",

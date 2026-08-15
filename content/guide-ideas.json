@@ -223,9 +223,10 @@
       "targetKeyword": "how to pipe the perfect bakery-style swirl",
       "notes": "Step-by-step piping tips, wrist motion, pressure control, bag angle",
       "priority": 19,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-pipe-the-perfect-bakery-style-swirl",
-      "publishAt": "2026-08-14T14:01:00+02:00"
+      "publishAt": "2026-08-14T14:01:00+02:00",
+      "publishedAt": "2026-08-15T06:31:15.688Z"
     },
     {
       "id": "g020",
