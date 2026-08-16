@@ -314,9 +314,10 @@
       "category": "classic",
       "notes": "Vanilla cupcake with small chocolate chips, milk-infused frosting",
       "priority": 29,
-      "status": "scheduled",
+      "status": "published",
       "slug": "chocolate-chip-milk-cupcakes",
-      "publishAt": "2026-08-15T11:35:00+02:00"
+      "publishAt": "2026-08-15T11:35:00+02:00",
+      "publishedAt": "2026-08-16T06:32:26.768Z"
     },
     {
       "id": "r030",

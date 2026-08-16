@@ -235,9 +235,10 @@
       "targetKeyword": "how to make frosting smooth, silky and stable",
       "notes": "Beating time, temperature control, air bubble reduction, lump-free finish",
       "priority": 20,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-make-frosting-smooth-silky-stable",
-      "publishAt": "2026-08-15T12:46:00+02:00"
+      "publishAt": "2026-08-15T12:46:00+02:00",
+      "publishedAt": "2026-08-16T06:32:26.768Z"
     },
     {
       "id": "g021",
