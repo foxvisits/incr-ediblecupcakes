@@ -247,9 +247,10 @@
       "targetKeyword": "how to decorate cupcakes like a boutique bakery",
       "notes": "Finishing touches: micro garnishes, sugar pearls, minimal elegance",
       "priority": 21,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-decorate-cupcakes-like-a-boutique-bakery",
-      "publishAt": "2026-08-16T16:49:00+02:00"
+      "publishAt": "2026-08-16T16:49:00+02:00",
+      "publishedAt": "2026-08-17T06:44:27.527Z"
     },
     {
       "id": "g022",

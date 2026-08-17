@@ -325,9 +325,10 @@
       "category": "classic",
       "notes": "Grated honey-sweetened apple, cinnamon notes, vanilla frosting",
       "priority": 30,
-      "status": "scheduled",
+      "status": "published",
       "slug": "honey-apple-cupcakes",
-      "publishAt": "2026-08-16T14:44:00+02:00"
+      "publishAt": "2026-08-16T14:44:00+02:00",
+      "publishedAt": "2026-08-17T06:44:27.527Z"
     },
     {
       "id": "r031",

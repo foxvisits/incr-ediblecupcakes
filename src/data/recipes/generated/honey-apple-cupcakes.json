@@ -1,0 +1,130 @@
+{
+  "id": "r030",
+  "title": "Honey Apple Cupcakes",
+  "slug": "honey-apple-cupcakes",
+  "description": "These cupcakes came from a bag of apples I needed to use up fast. I grated one instead of chopping it, and the batter turned soft and moist right away. Honey and cinnamon warm up the apple flavor without making the cake heavy. The vanilla frosting keeps things classic, so the apple stays the main flavor. I tested this batch three times in my home kitchen before the texture felt right. Dense enough to hold the apple but still light on the fork.",
+  "shortDescription": "Soft cinnamon cupcakes with grated honey apple, ready in 45 minutes with 25 minutes prep and 18 minutes bake.",
+  "image": "/honey-apple-cupcakes.jpg",
+  "imageAlt": "Honey apple cupcake with tall swirled vanilla frosting on a pastel butter yellow background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Honey apple cupcake with tall swirled vanilla frosting on a pastel butter yellow background",
+      "prompt": "A single honey apple cupcake with tall swirled vanilla frosting piped high, topped with a light dusting of cinnamon, set on a butter yellow pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/honey-apple-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Grated apple being folded into cupcake batter in a mixing bowl",
+      "prompt": "Overhead shot of grated apple being folded into pale cinnamon cupcake batter with a spatula in a white ceramic bowl, soft even daylight, pale aqua pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/honey-apple-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of cupcake crumb showing grated apple flecks inside",
+      "prompt": "Close up cross section of a honey apple cupcake showing soft golden crumb with visible flecks of grated apple, tall swirled vanilla frosting on top, blush pink pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/honey-apple-cupcakes-3.jpg"
+    }
+  ],
+  "metaTitle": "Honey Apple Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Moist honey apple cupcakes with cinnamon and vanilla frosting. Easy recipe, ready in under an hour. Bake a batch today.",
+  "category": "classic",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "featured": false,
+  "ingredients": [
+    "1 1/2 cups all purpose flour",
+    "1 tsp baking powder",
+    "1/2 tsp baking soda",
+    "1 tsp ground cinnamon",
+    "1/4 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "1/3 cup honey",
+    "1/4 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1 tsp vanilla extract",
+    "1/3 cup buttermilk",
+    "1 cup grated apple, packed (about 1 medium apple, peeled)",
+    "1 1/2 cups powdered sugar (for frosting)",
+    "1/2 cup unsalted butter, softened (for frosting)",
+    "1 tsp vanilla extract (for frosting)",
+    "1 to 2 tbsp heavy cream (for frosting)"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk flour, baking powder, baking soda, cinnamon, and salt in a medium bowl.",
+    "Beat butter, honey, and sugar together until light and fluffy, about 2 minutes.",
+    "Add eggs one at a time, beating well after each. Mix in vanilla.",
+    "Add the flour mix in three parts, alternating with buttermilk. Mix just until combined.",
+    "Fold in the grated apple with a spatula. Do not overmix the batter.",
+    "Divide batter evenly among the liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a wire rack.",
+    "Beat frosting butter until smooth. Add powdered sugar, vanilla, and cream, then whip until fluffy.",
+    "Pipe or spread frosting on fully cooled cupcakes."
+  ],
+  "tags": [
+    "honey",
+    "apple",
+    "cinnamon",
+    "classic-cupcakes",
+    "fall-baking"
+  ],
+  "nutritionInfo": {
+    "calories": 260,
+    "carbs": 34,
+    "protein": 3,
+    "fat": 13,
+    "fiber": 1,
+    "sugar": 24
+  },
+  "tips": [
+    "Squeeze the grated apple in a paper towel to remove extra juice, so the batter does not turn soggy.",
+    "Use a firm apple like Honeycrisp or Gala. Soft apples add too much water.",
+    "Let cupcakes cool completely before frosting, or the frosting will melt and slide off.",
+    "Warm the honey slightly before measuring so it pours easily and mixes in smoothly."
+  ],
+  "recipeKeys": [
+    "honey apple cupcakes",
+    "cinnamon apple cupcakes",
+    "honey cupcakes recipe",
+    "grated apple cupcakes",
+    "vanilla frosting cupcakes",
+    "Easy difficulty",
+    "classic cupcake recipe"
+  ],
+  "dietaryBadges": [],
+  "cuisine": "American",
+  "conclusion": "These honey apple cupcakes give you fall flavor any time of year. Grated apple keeps the crumb moist, and the vanilla frosting keeps it feeling like a classic treat.",
+  "faq": [
+    {
+      "question": "Can I use apple sauce instead of grated apple?",
+      "answer": "Grated apple works better here because it keeps some texture and moisture control. Apple sauce adds too much liquid and can make the cupcakes dense."
+    },
+    {
+      "question": "Do I need to peel the apple first?",
+      "answer": "Yes, peel the apple before grating. The peel gets tough and chewy once baked and changes the texture of each bite."
+    },
+    {
+      "question": "Why did my cupcakes turn out dense?",
+      "answer": "This usually means the apple was too wet or the batter was overmixed. Squeeze out extra juice and stop mixing as soon as the flour disappears."
+    },
+    {
+      "question": "Can I swap the honey for maple syrup?",
+      "answer": "Yes, maple syrup works as a one to one swap. The flavor will be slightly less floral but still pairs well with cinnamon."
+    }
+  ],
+  "author": {
+    "name": "Sarah",
+    "url": "https://incr-ediblecupcakes.com/about"
+  },
+  "keywords": [
+    "honey apple cupcakes",
+    "apple cinnamon cupcakes",
+    "vanilla frosting cupcakes recipe"
+  ],
+  "datePublished": "2026-08-17",
+  "dateModified": "2026-08-17"
+}
