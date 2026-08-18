@@ -259,9 +259,10 @@
       "targetKeyword": "ombre and two-tone frosting swirls",
       "notes": "Dual piping bag technique",
       "priority": 22,
-      "status": "scheduled",
+      "status": "published",
       "slug": "ombre-and-two-tone-frosting-swirls",
-      "publishAt": "2026-08-17T17:36:00+02:00"
+      "publishAt": "2026-08-17T17:36:00+02:00",
+      "publishedAt": "2026-08-18T06:35:57.710Z"
     },
     {
       "id": "g023",

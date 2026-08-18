@@ -336,9 +336,10 @@
       "category": "classic",
       "notes": "Soft vanilla cake base with almond extract, silky almond buttercream. Classic not nut-free: contains almond",
       "priority": 31,
-      "status": "scheduled",
+      "status": "published",
       "slug": "golden-almond-buttercream-cupcakes",
-      "publishAt": "2026-08-17T10:49:00+02:00"
+      "publishAt": "2026-08-17T10:49:00+02:00",
+      "publishedAt": "2026-08-18T06:35:57.710Z"
     },
     {
       "id": "r032",
