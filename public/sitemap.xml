@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://incr-ediblecupcakes.com/</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,7 +14,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipes</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -46,28 +46,28 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/categories</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/tags</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/guides</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/categories/classic</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -133,6 +133,17 @@
     <lastmod>2025-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/maple-vanilla-cupcakes</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/maple-vanilla-cupcakes.jpg</image:loc>
+      <image:title>Maple Vanilla Cupcakes</image:title>
+    </image:image>
   </url>
 
   <url>
@@ -675,21 +686,28 @@
   </url>
 
   <url>
-    <loc>https://incr-ediblecupcakes.com/tags/classic-cupcakes</loc>
-    <lastmod>2026-08-18</lastmod>
+    <loc>https://incr-ediblecupcakes.com/tags/vanilla</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://incr-ediblecupcakes.com/tags/cinnamon</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://incr-ediblecupcakes.com/tags/classic-cupcakes</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/tags/fall-baking</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/cinnamon</loc>
     <lastmod>2026-08-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -704,13 +722,6 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/tags/orange</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/vanilla</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -1086,6 +1097,17 @@
     <image:image>
       <image:loc>https://incr-ediblecupcakes.com/guide-how-to-decorate-cupcakes-like-a-boutique-bakery.jpg</image:loc>
       <image:title>How to Decorate Cupcakes Like a Boutique Bakery</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides/how-to-decorate-cupcakes-with-fresh-fruit</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/guide-how-to-decorate-cupcakes-with-fresh-fruit.jpg</image:loc>
+      <image:title>How to Decorate Cupcakes with Fresh Fruit</image:title>
     </image:image>
   </url>
 

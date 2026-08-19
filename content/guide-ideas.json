@@ -271,9 +271,10 @@
       "targetKeyword": "how to decorate cupcakes with fresh fruit",
       "notes": "Cut shape, moisture control, storage timing",
       "priority": 23,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-decorate-cupcakes-with-fresh-fruit",
-      "publishAt": "2026-08-18T11:29:00+02:00"
+      "publishAt": "2026-08-18T11:29:00+02:00",
+      "publishedAt": "2026-08-19T06:36:39.691Z"
     },
     {
       "id": "g024",

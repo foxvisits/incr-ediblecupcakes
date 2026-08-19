@@ -347,9 +347,10 @@
       "category": "classic",
       "notes": "Pure maple syrup in batter + frosting, warm comforting flavor",
       "priority": 32,
-      "status": "scheduled",
+      "status": "published",
       "slug": "maple-vanilla-cupcakes",
-      "publishAt": "2026-08-18T10:03:00+02:00"
+      "publishAt": "2026-08-18T10:03:00+02:00",
+      "publishedAt": "2026-08-19T06:36:39.691Z"
     },
     {
       "id": "r033",
