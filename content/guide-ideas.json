@@ -283,9 +283,10 @@
       "targetKeyword": "edible flowers on cupcakes (safe guide)",
       "notes": "List safe edible flowers only",
       "priority": 24,
-      "status": "scheduled",
+      "status": "published",
       "slug": "edible-flowers-on-cupcakes-safe-guide",
-      "publishAt": "2026-08-19T14:39:00+02:00"
+      "publishAt": "2026-08-19T14:39:00+02:00",
+      "publishedAt": "2026-08-20T06:38:41.933Z"
     },
     {
       "id": "g025",

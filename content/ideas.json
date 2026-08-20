@@ -358,9 +358,10 @@
       "category": "classic",
       "notes": "Coconut milk batter, fluffy coconut-fleck swirl frosting, toasted coconut topping",
       "priority": 33,
-      "status": "scheduled",
+      "status": "published",
       "slug": "toasted-coconut-swirl-cupcakes",
-      "publishAt": "2026-08-19T13:46:00+02:00"
+      "publishAt": "2026-08-19T13:46:00+02:00",
+      "publishedAt": "2026-08-20T06:38:41.933Z"
     },
     {
       "id": "r034",
