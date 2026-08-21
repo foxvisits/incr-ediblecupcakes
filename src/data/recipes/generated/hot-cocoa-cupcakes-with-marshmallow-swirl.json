@@ -1,0 +1,130 @@
+{
+  "id": "r034",
+  "title": "Hot Cocoa Cupcakes with Marshmallow Swirl",
+  "slug": "hot-cocoa-cupcakes-with-marshmallow-swirl",
+  "description": "These cupcakes taste like a mug of hot cocoa in cake form. The base is a moist cocoa cupcake with a deep chocolate color and soft crumb On top. I pipe a marshmallow cream frosting high and swirled, so it looks like soft serve ice cream. It is sweet, fluffy, and toasts nicely under a kitchen torch if you want that campfire look. I tested this recipe in my home kitchen on a cold weekend when we wanted real hot cocoa flavor without making a mess of the stove. The batter comes together fast with basic pantry staples. This is a great pick for winter parties, holiday tables, or any day you want a cozy dessert that still looks fun and a little playful.",
+  "shortDescription": "Rich cocoa cupcakes with a tall marshmallow cream swirl, ready in about 45 minutes with 25 minutes prep and 18 minutes baking.",
+  "image": "/hot-cocoa-cupcakes-with-marshmallow-swirl.jpg",
+  "imageAlt": "Chocolate cocoa cupcake topped with a tall swirled marshmallow frosting and a mini marshmallow on a pastel background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Chocolate cocoa cupcake topped with a tall swirled marshmallow frosting and a mini marshmallow on a pastel background",
+      "prompt": "A single chocolate cocoa cupcake with tall swirled marshmallow frosting piped high like soft serve, topped with a mini marshmallow, on a pale blue pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/hot-cocoa-cupcakes-with-marshmallow-swirl.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Marshmallow cream frosting being piped high onto a cocoa cupcake in a swirl shape",
+      "prompt": "Close up of marshmallow cream frosting being piped in a tall soft serve swirl onto a chocolate cocoa cupcake, piping bag visible at edge of frame, pastel blush pink background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/hot-cocoa-cupcakes-with-marshmallow-swirl-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of toasted marshmallow swirl frosting on top of a cocoa cupcake showing light golden char marks",
+      "prompt": "Extreme close up detail shot of a toasted marshmallow swirl frosting on a cocoa cupcake, light golden char marks visible on the peaks, mini marshmallow garnish on top, pale butter yellow pastel background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/hot-cocoa-cupcakes-with-marshmallow-swirl-3.jpg"
+    }
+  ],
+  "metaTitle": "Hot Cocoa Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Try these hot cocoa cupcakes with a swirled marshmallow frosting. Easy chocolate cupcake recipe ready in under 45 minutes, perfect for winter baking.",
+  "category": "classic",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "featured": false,
+  "ingredients": [
+    "1 1/4 cups all purpose flour",
+    "1/2 cup unsweetened cocoa powder",
+    "1 tsp baking soda",
+    "1/4 tsp baking powder",
+    "1/2 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "1 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1 tsp vanilla extract",
+    "1/2 cup whole milk",
+    "1/2 cup hot water",
+    "7 oz marshmallow fluff (about 1 jar)",
+    "1/2 cup unsalted butter, softened, for frosting",
+    "1 cup powdered sugar",
+    "Mini marshmallows, for garnish"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk flour, cocoa powder, baking soda, baking powder, and salt in a bowl. Set aside.",
+    "Beat softened butter and sugar together until light and fluffy, about 2 minutes.",
+    "Add eggs one at a time, then mix in vanilla extract.",
+    "Add the dry mix in two batches, alternating with the milk. Mix just until combined.",
+    "Stir in the hot water last. The batter will be thin, that is normal for cocoa cake.",
+    "Divide batter evenly among the liners, filling each about two thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick comes out clean. Cool fully before frosting.",
+    "For frosting, beat butter until smooth, then add marshmallow fluff and powdered sugar. Beat until fluffy and pipeable.",
+    "Pipe the frosting high in a swirl using a large round tip, so it looks like soft serve. Top with a mini marshmallow."
+  ],
+  "tags": [
+    "chocolate",
+    "marshmallow",
+    "winter",
+    "classic",
+    "holiday"
+  ],
+  "nutritionInfo": {
+    "calories": 310,
+    "carbs": 42,
+    "protein": 3,
+    "fat": 15,
+    "fiber": 1,
+    "sugar": 32
+  },
+  "tips": [
+    "Chill the marshmallow frosting for 10 minutes if it feels too soft to hold a tall swirl.",
+    "Use a kitchen torch on the frosting tips for a toasted marshmallow look and light char flavor.",
+    "Room temperature eggs mix in smoother and give a more even cake crumb.",
+    "Store leftovers in an airtight container at room temperature for up to 2 days."
+  ],
+  "recipeKeys": [
+    "hot cocoa cupcakes",
+    "marshmallow swirl frosting",
+    "cocoa cupcake recipe",
+    "chocolate marshmallow cupcakes",
+    "Easy difficulty",
+    "winter cupcake recipe",
+    "soft serve frosting"
+  ],
+  "dietaryBadges": [],
+  "cuisine": "American",
+  "conclusion": "These hot cocoa cupcakes bring cozy winter flavor with a fun, tall marshmallow swirl on top. Bake a batch for your next cold weather gathering and watch them disappear fast.",
+  "faq": [
+    {
+      "question": "Why is the cocoa cupcake batter so thin?",
+      "answer": "Hot water blooms the cocoa powder and keeps the crumb soft and moist. Thin batter is normal here, do not add extra flour to thicken it."
+    },
+    {
+      "question": "Can I make the marshmallow frosting ahead of time?",
+      "answer": "Yes, make it up to a day ahead and store it covered in the fridge. Let it sit at room temperature for 20 minutes before piping so it softens enough to swirl."
+    },
+    {
+      "question": "Why did my frosting swirl collapse after piping?",
+      "answer": "The frosting was likely too warm or too soft to hold shape. Chill it for 10 to 15 minutes, then pipe again in one smooth motion."
+    },
+    {
+      "question": "Can I toast the marshmallow swirl without a kitchen torch?",
+      "answer": "Yes, place cupcakes under the oven broiler for 30 to 60 seconds. Watch closely since marshmallow browns fast and can burn quickly."
+    }
+  ],
+  "author": {
+    "name": "Sarah",
+    "url": "https://incr-ediblecupcakes.com/about"
+  },
+  "keywords": [
+    "hot cocoa cupcakes",
+    "marshmallow frosting cupcakes",
+    "cocoa cupcake recipe",
+    "winter chocolate cupcakes"
+  ],
+  "datePublished": "2026-08-21",
+  "dateModified": "2026-08-21"
+}

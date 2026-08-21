@@ -295,9 +295,10 @@
       "targetKeyword": "boutique bakery finishing touches",
       "notes": "Micro pearls, gold leaf, controlled garnish",
       "priority": 25,
-      "status": "scheduled",
+      "status": "published",
       "slug": "boutique-bakery-finishing-touches",
-      "publishAt": "2026-08-20T15:36:00+02:00"
+      "publishAt": "2026-08-20T15:36:00+02:00",
+      "publishedAt": "2026-08-21T06:38:38.921Z"
     },
     {
       "id": "g026",

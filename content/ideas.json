@@ -369,9 +369,10 @@
       "category": "classic",
       "notes": "Cocoa cake + marshmallow-cream swirl frosting piped like soft-serve",
       "priority": 34,
-      "status": "scheduled",
+      "status": "published",
       "slug": "hot-cocoa-cupcakes-with-marshmallow-swirl",
-      "publishAt": "2026-08-20T12:10:00+02:00"
+      "publishAt": "2026-08-20T12:10:00+02:00",
+      "publishedAt": "2026-08-21T06:38:38.921Z"
     },
     {
       "id": "r035",
