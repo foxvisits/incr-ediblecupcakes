@@ -307,9 +307,10 @@
       "targetKeyword": "how to make frosting stable in hot weather",
       "notes": "Cornstarch, cream cheese, shortening tricks",
       "priority": 26,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-make-frosting-stable-in-hot-weather",
-      "publishAt": "2026-08-21T17:43:00+02:00"
+      "publishAt": "2026-08-21T17:43:00+02:00",
+      "publishedAt": "2026-08-22T06:32:32.087Z"
     },
     {
       "id": "g027",

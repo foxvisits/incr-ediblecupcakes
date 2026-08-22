@@ -380,9 +380,10 @@
       "category": "classic",
       "notes": "Chocolate base + cool peppermint frosting, no artificial green",
       "priority": 35,
-      "status": "scheduled",
+      "status": "published",
       "slug": "mint-chocolate-swirl-cupcakes",
-      "publishAt": "2026-08-21T12:48:00+02:00"
+      "publishAt": "2026-08-21T12:48:00+02:00",
+      "publishedAt": "2026-08-22T06:32:32.087Z"
     },
     {
       "id": "r036",

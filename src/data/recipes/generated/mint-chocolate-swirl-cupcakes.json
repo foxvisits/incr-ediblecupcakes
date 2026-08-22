@@ -1,0 +1,130 @@
+{
+  "id": "r035",
+  "title": "Mint Chocolate Swirl Cupcakes",
+  "slug": "mint-chocolate-swirl-cupcakes",
+  "description": "These cupcakes pair a deep chocolate crumb with a light, cool peppermint frosting. No artificial green dye here, just natural cream color with fresh mint flavor. I tested this batch three times in my own kitchen to get the mint level just right, not toothpaste-strong, just refreshing. The cocoa base stays moist thanks to sour cream and hot coffee, and the frosting swirls high without melting fast.",
+  "shortDescription": "Rich cocoa cupcakes topped with cool peppermint frosting, ready in about 45 minutes with 25 minutes prep and 18 minutes bake.",
+  "image": "/mint-chocolate-swirl-cupcakes.jpg",
+  "imageAlt": "Chocolate cupcake with tall swirled peppermint frosting and dark chocolate shavings on a pale aqua background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Chocolate cupcake with tall swirled peppermint frosting and dark chocolate shavings on a pale aqua background",
+      "prompt": "A single chocolate cupcake with tall swirled cream colored peppermint frosting piped high, topped with dark chocolate shavings, on a pale aqua background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/mint-chocolate-swirl-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Piping bag swirling peppermint frosting onto a row of chocolate cupcakes",
+      "prompt": "A piping bag mid swirl, piping cream colored peppermint frosting high onto a row of baked chocolate cupcakes on a pale aqua background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands visible, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/mint-chocolate-swirl-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of dark chocolate shavings resting on swirled peppermint frosting",
+      "prompt": "Close up detail shot of dark chocolate shavings resting on a tall swirl of cream colored peppermint frosting, soft focus chocolate cupcake crumb visible below, pale aqua background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/mint-chocolate-swirl-cupcakes-3.jpg"
+    }
+  ],
+  "metaTitle": "Mint Chocolate Swirl Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Chocolate cupcakes with cool peppermint frosting and no artificial dye. Get the full step-by-step recipe and bake a batch today.",
+  "category": "classic",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "featured": false,
+  "ingredients": [
+    "1 1/4 cups all-purpose flour",
+    "1/2 cup unsweetened cocoa powder",
+    "1 tsp baking soda",
+    "1/4 tsp salt",
+    "1/2 cup unsalted butter, softened",
+    "1 cup granulated sugar",
+    "2 large eggs, room temperature",
+    "1/2 cup sour cream",
+    "1/2 cup hot brewed coffee",
+    "1 tsp vanilla extract",
+    "1 1/2 cups unsalted butter, softened (for frosting)",
+    "3 cups powdered sugar",
+    "1 tsp pure peppermint extract",
+    "2 tbsp heavy cream",
+    "Dark chocolate shavings, for garnish"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a muffin pan with 12 paper liners.",
+    "Whisk flour, cocoa powder, baking soda, and salt in a bowl.",
+    "Beat 1/2 cup butter and sugar until fluffy, about 2 minutes.",
+    "Add eggs one at a time, beating well after each.",
+    "Mix in sour cream and vanilla until smooth.",
+    "Add the flour mix in two batches, alternating with hot coffee. Mix just until combined.",
+    "Divide batter evenly among liners, filling each two thirds full.",
+    "Bake 18 to 20 minutes, until a toothpick comes out clean. Cool completely before frosting.",
+    "For frosting, beat 1 1/2 cups butter until pale and smooth, about 3 minutes.",
+    "Add powdered sugar in two additions, then mix in peppermint extract and heavy cream until light and pipeable.",
+    "Pipe frosting in a high swirl on each cooled cupcake. Top with dark chocolate shavings."
+  ],
+  "tags": [
+    "chocolate",
+    "mint",
+    "classic",
+    "peppermint",
+    "party-cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 380,
+    "carbs": 44,
+    "protein": 4,
+    "fat": 21,
+    "fiber": 2,
+    "sugar": 34
+  },
+  "tips": [
+    "Use pure peppermint extract, not mint extract, for a cleaner cool taste without a spearmint edge.",
+    "Hot coffee deepens the chocolate flavor and will not taste like coffee once baked.",
+    "Chill the frosting bowl and beaters for 10 minutes before whipping for a fluffier swirl.",
+    "For a natural hint of color, add a tiny drop of matcha powder instead of dye. It stays subtle and green comes from the leaf, not a bottle."
+  ],
+  "recipeKeys": [
+    "mint chocolate cupcakes",
+    "peppermint frosting",
+    "chocolate cupcake recipe",
+    "no artificial dye cupcakes",
+    "Easy difficulty",
+    "classic cupcake recipe"
+  ],
+  "dietaryBadges": [],
+  "cuisine": "American",
+  "conclusion": "These cupcakes give you real chocolate depth with a cool, honest mint finish. Skip the food dye and let the flavor speak for itself.",
+  "faq": [
+    {
+      "question": "Can I use peppermint oil instead of extract?",
+      "answer": "Yes, but use only 1/4 teaspoon since oil is much stronger than extract. Start small and taste before adding more."
+    },
+    {
+      "question": "Why is my frosting soupy instead of fluffy?",
+      "answer": "Your butter was likely too warm. Chill the frosting for 15 minutes, then re-whip on medium speed until it firms up."
+    },
+    {
+      "question": "How do I get natural green color without dye?",
+      "answer": "A tiny pinch of matcha powder gives a soft, natural tint without changing the mint flavor much. Add it a little at a time."
+    },
+    {
+      "question": "Can I make these ahead of time?",
+      "answer": "Bake the cupcakes up to 2 days ahead and store unfrosted at room temperature in an airtight container. Frost the day you plan to serve them."
+    }
+  ],
+  "author": {
+    "name": "Sarah",
+    "url": "https://incr-ediblecupcakes.com/about"
+  },
+  "keywords": [
+    "mint chocolate cupcakes",
+    "peppermint chocolate cupcakes",
+    "natural mint frosting",
+    "cocoa cupcake recipe"
+  ],
+  "datePublished": "2026-08-22",
+  "dateModified": "2026-08-22"
+}
