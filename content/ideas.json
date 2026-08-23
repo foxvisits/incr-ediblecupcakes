@@ -391,9 +391,10 @@
       "category": "classic",
       "notes": "Chai-spiced vanilla cake + lightly spiced vanilla swirl frosting",
       "priority": 36,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vanilla-chai-cupcakes",
-      "publishAt": "2026-08-22T10:29:00+02:00"
+      "publishAt": "2026-08-22T10:29:00+02:00",
+      "publishedAt": "2026-08-23T06:33:50.403Z"
     },
     {
       "id": "r037",
