@@ -432,9 +432,10 @@
       "category": "keto",
       "notes": "target keyword: keto vanilla cupcakes almond flour. Almond + coconut flour combo, light but stable crumb",
       "priority": 40,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-vanilla-cloud-cupcakes",
-      "publishAt": "2026-08-23T11:10:00+02:00"
+      "publishAt": "2026-08-23T11:10:00+02:00",
+      "publishedAt": "2026-08-24T06:49:41.720Z"
     },
     {
       "id": "r041",

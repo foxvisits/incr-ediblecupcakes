@@ -331,9 +331,10 @@
       "targetKeyword": "why are my cupcakes dry?",
       "notes": "Overbaking, flour ratio, incorrect mixing, moisture control. Include easy rescue tips",
       "priority": 28,
-      "status": "scheduled",
+      "status": "published",
       "slug": "why-are-my-cupcakes-dry",
-      "publishAt": "2026-08-23T11:55:00+02:00"
+      "publishAt": "2026-08-23T11:55:00+02:00",
+      "publishedAt": "2026-08-24T06:49:41.720Z"
     },
     {
       "id": "g029",

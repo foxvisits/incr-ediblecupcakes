@@ -1,0 +1,136 @@
+{
+  "id": "r040",
+  "title": "Keto Vanilla Cloud Cupcakes",
+  "slug": "keto-vanilla-cloud-cupcakes",
+  "description": "These keto vanilla cupcakes get their light crumb from whipped egg whites folded into an almond flour and coconut flour batter. The two flours work as a team: almond flour gives structure and moisture. Coconut flour soaks up extra liquid so the cupcakes hold their shape. Most keto cupcakes turn dense or gritty. This recipe fixes that by separating the eggs and whipping the whites to soft peaks before folding them in gently. The result is a soft, springy crumb that still feels sturdy enough to frost and hold up in a lunchbox. I tested this batch three times in my own kitchen before the crumb stopped sinking in the middle. Top them with a simple keto vanilla buttercream and you have a low carb cupcake that tastes like the real thing.",
+  "shortDescription": "Light keto vanilla cupcakes with almond flour and coconut flour, ready in about 43 minutes total.",
+  "image": "/keto-vanilla-cloud-cupcakes.jpg",
+  "imageAlt": "Keto vanilla cupcake with tall swirled buttercream frosting on a pale aqua background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Keto vanilla cupcake with tall swirled buttercream frosting on a pale aqua background",
+      "prompt": "A single keto vanilla cupcake in a white paper liner, tall swirled vanilla buttercream piped high, set on pale aqua background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/keto-vanilla-cloud-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Folding whipped egg whites into almond flour cupcake batter in a glass bowl",
+      "prompt": "Overhead shot of a glass mixing bowl with almond flour cupcake batter and fluffy whipped egg whites being folded in with a spatula, soft even daylight, pale aqua and cream props on a light wood surface, bright pastel bakery aesthetic, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/keto-vanilla-cloud-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of a keto vanilla cupcake crumb showing a light, airy texture",
+      "prompt": "Close up macro shot of a keto vanilla cupcake torn in half showing a light airy crumb, tall swirled frosting visible in soft focus behind it, pale aqua background, bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/keto-vanilla-cloud-cupcakes-3.jpg"
+    }
+  ],
+  "metaTitle": "Keto Vanilla Cloud Cupcakes Recipe | Incr-EdibleCupCakes",
+  "metaDescription": "Bake keto vanilla cupcakes with almond flour and coconut flour for a soft, cloud-like crumb that holds its shape. Try it today!",
+  "category": "keto",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "featured": false,
+  "ingredients": [
+    "1 3/4 cups almond flour, finely ground",
+    "1/4 cup coconut flour",
+    "1/2 cup granulated erythritol or allulose",
+    "1 tsp baking powder",
+    "1/4 tsp salt",
+    "4 large eggs, room temperature, separated",
+    "1/4 tsp cream of tartar",
+    "1/2 cup sour cream, room temperature",
+    "1/4 cup unsalted butter, melted and cooled",
+    "1 tsp vanilla extract",
+    "1 cup unsalted butter, softened, for frosting",
+    "1 1/2 cups powdered erythritol, for frosting",
+    "1 tsp vanilla extract, for frosting",
+    "2 to 3 tbsp heavy cream, for frosting"
+  ],
+  "instructions": [
+    "Preheat oven to 325°F. Line a 12 cup muffin pan with paper liners.",
+    "Whisk almond flour, coconut flour, baking powder, and salt in a bowl. Set aside.",
+    "In a separate bowl, beat egg whites and cream of tartar until soft peaks form. Set aside.",
+    "In a large bowl, whisk egg yolks with erythritol until pale and slightly thick.",
+    "Whisk in sour cream, melted butter, and vanilla extract until smooth.",
+    "Fold the dry ingredients into the yolk mixture until just combined, no dry streaks left.",
+    "Fold in the whipped egg whites in two batches. Use a spatula and fold gently to keep air in the batter.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until tops spring back and a toothpick comes out clean.",
+    "Cool in the pan 5 minutes, then move cupcakes to a wire rack to cool fully before frosting.",
+    "Beat softened butter until fluffy, then add powdered erythritol, vanilla, and cream. Beat until light and pipeable.",
+    "Pipe frosting on cooled cupcakes just before serving."
+  ],
+  "tags": [
+    "keto-cupcakes",
+    "almond-flour",
+    "low-carb",
+    "coconut-flour",
+    "vanilla-cupcakes"
+  ],
+  "nutritionInfo": {
+    "calories": 220,
+    "carbs": 6,
+    "protein": 5,
+    "fat": 20,
+    "fiber": 2,
+    "sugar": 1
+  },
+  "tips": [
+    "Whip the egg whites to soft peaks, not stiff. Soft peaks fold in easier and keep the crumb light.",
+    "Use room temperature eggs and sour cream. Cold ingredients make the batter deflate faster.",
+    "Do not overmix once the egg whites go in. A few gentle folds is all you need.",
+    "Store frosted cupcakes in the fridge and let them sit at room temperature 15 minutes before eating."
+  ],
+  "recipeKeys": [
+    "keto vanilla cupcakes almond flour",
+    "low carb vanilla cupcakes",
+    "gluten free vanilla cupcakes",
+    "almond flour coconut flour cupcakes",
+    "sugar free vanilla cupcakes",
+    "medium difficulty"
+  ],
+  "dietaryBadges": [
+    "keto",
+    "gluten-free",
+    "sugar-free"
+  ],
+  "cuisine": "American",
+  "conclusion": "Keep this recipe on hand when you want a keto cupcake that actually feels light. Whip the whites, fold with care, and you get a crumb that holds a swirl of frosting without falling apart.",
+  "faq": [
+    {
+      "question": "Why do these keto cupcakes need whipped egg whites?",
+      "answer": "Whipped egg whites add air to the batter since almond and coconut flour have no gluten to trap it. This step is what gives the cupcakes their light, cloud like texture instead of a dense, heavy crumb."
+    },
+    {
+      "question": "Can I use only almond flour and skip the coconut flour?",
+      "answer": "No, skip that swap here. Coconut flour absorbs extra moisture from the eggs and sour cream, and without it the batter turns too wet and the cupcakes sink in the middle."
+    },
+    {
+      "question": "Why did my cupcakes sink after baking?",
+      "answer": "This usually means the egg whites were overmixed or the oven door opened too early. Fold gently, and wait until the last few minutes of baking to check on them."
+    },
+    {
+      "question": "How many net carbs are in one cupcake?",
+      "answer": "Each frosted cupcake has about 4 grams net carbs when made with almond flour, coconut flour, and a sugar free sweetener like erythritol or allulose."
+    }
+  ],
+  "author": {
+    "name": "Sarah",
+    "url": "https://incr-ediblecupcakes.com/about"
+  },
+  "keywords": [
+    "keto vanilla cupcakes",
+    "almond flour cupcakes",
+    "coconut flour cupcakes",
+    "low carb cupcakes",
+    "sugar free cupcakes",
+    "gluten free vanilla cupcakes"
+  ],
+  "datePublished": "2026-08-24",
+  "dateModified": "2026-08-24"
+}
