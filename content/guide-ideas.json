@@ -343,9 +343,10 @@
       "targetKeyword": "why do cupcakes crack on top?",
       "notes": "Too hot oven, too much leavening, heat + leavening explanation. Offer oven adjustments",
       "priority": 29,
-      "status": "scheduled",
+      "status": "published",
       "slug": "why-do-cupcakes-crack-on-top",
-      "publishAt": "2026-08-24T16:50:00+02:00"
+      "publishAt": "2026-08-24T16:50:00+02:00",
+      "publishedAt": "2026-08-25T06:39:12.269Z"
     },
     {
       "id": "g030",

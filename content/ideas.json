@@ -443,9 +443,10 @@
       "category": "keto",
       "notes": "Cinnamon-spice almond flour cake + vanilla cream swirl frosting",
       "priority": 41,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-cinnamon-roll-cupcakes",
-      "publishAt": "2026-08-24T11:19:00+02:00"
+      "publishAt": "2026-08-24T11:19:00+02:00",
+      "publishedAt": "2026-08-25T06:39:12.269Z"
     },
     {
       "id": "r042",
