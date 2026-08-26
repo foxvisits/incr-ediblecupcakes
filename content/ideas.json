@@ -454,9 +454,10 @@
       "category": "keto",
       "notes": "Coconut milk batter + shredded coconut, coconut-vanilla frosting swirl",
       "priority": 42,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-coconut-dream-cupcakes",
-      "publishAt": "2026-08-25T15:31:00+02:00"
+      "publishAt": "2026-08-25T15:31:00+02:00",
+      "publishedAt": "2026-08-26T06:40:54.536Z"
     },
     {
       "id": "r043",

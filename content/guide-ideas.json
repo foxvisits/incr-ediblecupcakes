@@ -355,9 +355,10 @@
       "targetKeyword": "how to fix runny or too stiff frosting",
       "notes": "Balance liquids, fats, powdered sugar. Include quick correction table for both directions",
       "priority": 30,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-fix-runny-or-too-stiff-frosting",
-      "publishAt": "2026-08-25T17:50:00+02:00"
+      "publishAt": "2026-08-25T17:50:00+02:00",
+      "publishedAt": "2026-08-26T06:40:54.536Z"
     },
     {
       "id": "g031",
