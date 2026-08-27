@@ -465,9 +465,10 @@
       "category": "keto",
       "notes": "Peanut butter batter + chocolate buttercream swirl, balance texture",
       "priority": 43,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-peanut-butter-cup-cupcakes",
-      "publishAt": "2026-08-26T11:07:00+02:00"
+      "publishAt": "2026-08-26T11:07:00+02:00",
+      "publishedAt": "2026-08-27T17:16:08.468Z"
     },
     {
       "id": "r044",
@@ -475,9 +476,10 @@
       "category": "keto",
       "notes": "Almond flour espresso cake, mocha cream swirl frosting, deep but not bitter",
       "priority": 44,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-almond-mocha-cupcakes",
-      "publishAt": "2026-08-27T15:42:00+02:00"
+      "publishAt": "2026-08-27T15:42:00+02:00",
+      "publishedAt": "2026-08-27T17:16:08.468Z"
     },
     {
       "id": "r045",

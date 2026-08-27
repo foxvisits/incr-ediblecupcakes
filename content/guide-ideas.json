@@ -367,9 +367,10 @@
       "targetKeyword": "why cupcakes taste bland and how to boost flavor",
       "notes": "Focus on salt, extract quality, flavor layering, aromatic oils",
       "priority": 31,
-      "status": "scheduled",
+      "status": "published",
       "slug": "why-cupcakes-taste-bland-how-to-boost-flavor",
-      "publishAt": "2026-08-26T14:27:00+02:00"
+      "publishAt": "2026-08-26T14:27:00+02:00",
+      "publishedAt": "2026-08-27T17:16:08.468Z"
     },
     {
       "id": "g032",
@@ -378,9 +379,10 @@
       "targetKeyword": "cupcakes sticking to liners? here's what to do",
       "notes": "Explain sugar moisture ratio, cooling time, liner quality",
       "priority": 32,
-      "status": "scheduled",
+      "status": "published",
       "slug": "cupcakes-sticking-to-liners-what-to-do",
-      "publishAt": "2026-08-27T17:52:00+02:00"
+      "publishAt": "2026-08-27T17:52:00+02:00",
+      "publishedAt": "2026-08-27T17:16:08.468Z"
     },
     {
       "id": "g033",
