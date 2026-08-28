@@ -487,9 +487,10 @@
       "category": "keto",
       "notes": "Sugar-free caramel drizzled over swirl frosting, chopped pecans",
       "priority": 45,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-caramel-pecan-swirl-cupcakes",
-      "publishAt": "2026-08-28T13:13:00+02:00"
+      "publishAt": "2026-08-28T13:13:00+02:00",
+      "publishedAt": "2026-08-28T18:08:35.002Z"
     },
     {
       "id": "r046",

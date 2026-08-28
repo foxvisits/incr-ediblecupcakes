@@ -391,9 +391,10 @@
       "targetKeyword": "why do cupcakes taste eggy?",
       "notes": "Discuss ratios + overbeating",
       "priority": 33,
-      "status": "scheduled",
+      "status": "published",
       "slug": "why-do-cupcakes-taste-eggy",
-      "publishAt": "2026-08-28T14:40:00+02:00"
+      "publishAt": "2026-08-28T14:40:00+02:00",
+      "publishedAt": "2026-08-28T18:08:35.002Z"
     },
     {
       "id": "g034",
