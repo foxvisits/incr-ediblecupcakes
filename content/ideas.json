@@ -508,9 +508,10 @@
       "category": "keto",
       "notes": "Fresh strawberry puree swirl in batter, whipped cheesecake frosting",
       "priority": 47,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-strawberry-cheesecake-cupcakes",
-      "publishAt": "2026-08-29T11:07:00+02:00"
+      "publishAt": "2026-08-29T11:07:00+02:00",
+      "publishedAt": "2026-08-29T12:12:08.503Z"
     },
     {
       "id": "r048",

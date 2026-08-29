@@ -403,9 +403,10 @@
       "targetKeyword": "why do cupcakes dome or balloon?",
       "notes": "Oven temp + batter fill height",
       "priority": 34,
-      "status": "scheduled",
+      "status": "published",
       "slug": "why-do-cupcakes-dome-or-balloon",
-      "publishAt": "2026-08-29T14:00:00+02:00"
+      "publishAt": "2026-08-29T14:00:00+02:00",
+      "publishedAt": "2026-08-29T12:12:08.503Z"
     },
     {
       "id": "g035",
