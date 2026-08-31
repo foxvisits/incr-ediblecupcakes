@@ -519,9 +519,10 @@
       "category": "keto",
       "notes": "Butter-heavy batter with maple extract not syrup, creamy vanilla frosting",
       "priority": 48,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-maple-butter-cupcakes",
-      "publishAt": "2026-08-30T14:09:00+02:00"
+      "publishAt": "2026-08-30T14:09:00+02:00",
+      "publishedAt": "2026-08-31T12:33:45.988Z"
     },
     {
       "id": "r049",
@@ -529,9 +530,10 @@
       "category": "keto",
       "notes": "Almond flour + blueberries, lemon swirl frosting, lightly sweet",
       "priority": 49,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-blueberry-lemon-muffin-cupcakes",
-      "publishAt": "2026-08-31T12:21:00+02:00"
+      "publishAt": "2026-08-31T12:21:00+02:00",
+      "publishedAt": "2026-08-31T12:33:45.988Z"
     },
     {
       "id": "r050",

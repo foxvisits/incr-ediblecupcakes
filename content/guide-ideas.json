@@ -415,9 +415,10 @@
       "targetKeyword": "cupcakes overflowing?",
       "notes": "Three-quarter height rule + batter viscosity",
       "priority": 35,
-      "status": "scheduled",
+      "status": "published",
       "slug": "cupcakes-overflowing",
-      "publishAt": "2026-08-30T15:06:00+02:00"
+      "publishAt": "2026-08-30T15:06:00+02:00",
+      "publishedAt": "2026-08-31T12:33:45.988Z"
     },
     {
       "id": "g036",
