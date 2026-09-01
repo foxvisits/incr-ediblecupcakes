@@ -427,9 +427,10 @@
       "targetKeyword": "butter vs oil in cupcake batter",
       "notes": "Flavor vs moisture trade-off, when to choose which, effect on crumb",
       "priority": 36,
-      "status": "scheduled",
+      "status": "published",
       "slug": "butter-vs-oil-in-cupcake-batter",
-      "publishAt": "2026-08-31T17:55:00+02:00"
+      "publishAt": "2026-08-31T17:55:00+02:00",
+      "publishedAt": "2026-09-01T11:01:10.398Z"
     },
     {
       "id": "g037",
