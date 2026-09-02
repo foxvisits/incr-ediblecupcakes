@@ -422,9 +422,10 @@
       "category": "classic",
       "notes": "Holiday cluster. Apple cider batter + cinnamon + caramel drizzle",
       "priority": 39,
-      "status": "scheduled",
+      "status": "published",
       "slug": "caramel-apple-cider-cupcakes",
-      "publishAt": "2026-09-01T13:34:00+02:00"
+      "publishAt": "2026-09-01T13:34:00+02:00",
+      "publishedAt": "2026-09-02T10:31:10.540Z"
     },
     {
       "id": "r040",
@@ -498,9 +499,10 @@
       "category": "keto",
       "notes": "Pumpkin puree adds moisture, warm spice profile, cream cheese frosting",
       "priority": 46,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-pumpkin-spice-cupcakes",
-      "publishAt": "2026-09-02T11:49:00+02:00"
+      "publishAt": "2026-09-02T11:49:00+02:00",
+      "publishedAt": "2026-09-02T10:31:10.540Z"
     },
     {
       "id": "r047",

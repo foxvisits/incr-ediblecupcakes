@@ -439,9 +439,10 @@
       "targetKeyword": "which flour makes the fluffiest cupcakes?",
       "notes": "AP vs cake flour vs gluten-free blends vs almond flour. Neutral, clear guidance",
       "priority": 37,
-      "status": "scheduled",
+      "status": "published",
       "slug": "which-flour-makes-the-fluffiest-cupcakes",
-      "publishAt": "2026-09-01T14:33:00+02:00"
+      "publishAt": "2026-09-01T14:33:00+02:00",
+      "publishedAt": "2026-09-02T10:31:10.540Z"
     },
     {
       "id": "g038",
@@ -450,9 +451,10 @@
       "targetKeyword": "all about sugar: white, brown, coconut, maple",
       "notes": "Explain sweetness, moisture, caramelization, texture effects",
       "priority": 38,
-      "status": "scheduled",
+      "status": "published",
       "slug": "all-about-sugar-white-brown-coconut-maple",
-      "publishAt": "2026-09-02T12:21:00+02:00"
+      "publishAt": "2026-09-02T12:21:00+02:00",
+      "publishedAt": "2026-09-02T10:31:10.540Z"
     },
     {
       "id": "g039",
