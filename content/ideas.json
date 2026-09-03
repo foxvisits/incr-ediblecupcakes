@@ -1133,9 +1133,10 @@
       "category": "gluten-free",
       "notes": "Almond flour + pumpkin puree for softness, vanilla swirl",
       "priority": 109,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-pumpkin-spice-cupcakes",
-      "publishAt": "2026-09-03T12:30:00+02:00"
+      "publishAt": "2026-09-03T12:30:00+02:00",
+      "publishedAt": "2026-09-03T10:36:22.519Z"
     },
     {
       "id": "r110",

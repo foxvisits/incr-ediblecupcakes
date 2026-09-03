@@ -1,0 +1,131 @@
+{
+  "id": "r109",
+  "title": "Gluten-Free Pumpkin Spice Cupcakes",
+  "slug": "gluten-free-pumpkin-spice-cupcakes",
+  "description": "These gluten-free pumpkin spice cupcakes use almond flour and real pumpkin puree for a moist, tender crumb. No one will guess they skip regular flour.",
+  "shortDescription": "Soft almond flour pumpkin cupcakes with a vanilla swirl, ready in 43 minutes with 25 minutes prep and 18 minutes bake.",
+  "image": "/gluten-free-pumpkin-spice-cupcakes.jpg",
+  "imageAlt": "Gluten-free pumpkin spice cupcake with tall swirled cream cheese frosting on a pale aqua background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Gluten-free pumpkin spice cupcake with tall swirled cream cheese frosting on a pale aqua background",
+      "prompt": "A single gluten-free pumpkin spice cupcake with tall swirled cream cheese frosting piped high, light dusting of cinnamon on top, bright pastel bakery aesthetic, soft even daylight, pale aqua background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/gluten-free-pumpkin-spice-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Pumpkin cupcake batter being folded together in a glass mixing bowl",
+      "prompt": "Overhead shot of orange pumpkin spice cupcake batter being folded in a glass mixing bowl with a rubber spatula, almond flour visible on the counter, bright pastel bakery aesthetic, soft even daylight, butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/gluten-free-pumpkin-spice-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of a pumpkin cupcake cut in half showing a soft moist crumb",
+      "prompt": "Close up macro shot of a gluten-free pumpkin spice cupcake cut in half, showing a soft moist orange crumb and cream cheese frosting swirl, bright pastel bakery aesthetic, soft even daylight, blush pink background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
+      "src": "/gluten-free-pumpkin-spice-cupcakes-3.jpg"
+    }
+  ],
+  "metaTitle": "Gluten-Free Pumpkin Spice Cupcakes | Incr-EdibleCupCakes",
+  "metaDescription": "Soft gluten-free pumpkin spice cupcakes with almond flour and a vanilla swirl. Get the tested recipe and bake a batch this weekend.",
+  "category": "gluten-free",
+  "difficulty": "Easy",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "featured": false,
+  "ingredients": [
+    "2 1/4 cups almond flour, finely ground",
+    "1/4 cup tapioca starch",
+    "1 tsp baking soda",
+    "1/2 tsp salt",
+    "2 tsp pumpkin pie spice",
+    "1/2 tsp ground cinnamon",
+    "3 large eggs, room temperature",
+    "3/4 cup pumpkin puree (not pie filling)",
+    "1/2 cup light brown sugar, packed",
+    "1/4 cup maple syrup",
+    "1/3 cup melted coconut oil",
+    "1 tsp vanilla extract",
+    "8 oz cream cheese, softened",
+    "1/2 cup unsalted butter, softened",
+    "2 cups powdered sugar",
+    "1 tsp vanilla bean paste"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a muffin pan with 12 paper liners.",
+    "Whisk almond flour, tapioca starch, baking soda, salt, pumpkin pie spice, and cinnamon in a bowl.",
+    "In another bowl, beat eggs, pumpkin puree, brown sugar, maple syrup, coconut oil, and vanilla until smooth.",
+    "Fold the wet mix into the dry mix. Stir just until no dry streaks remain.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake for 16 to 18 minutes, until a toothpick comes out clean.",
+    "Cool cupcakes in the pan for 5 minutes, then move to a wire rack to cool fully.",
+    "Beat cream cheese and butter until smooth. Add powdered sugar and vanilla bean paste, then whip until fluffy.",
+    "Pipe the frosting in a tall swirl. Drag a toothpick through plain vanilla frosting for a swirl look if using two colors."
+  ],
+  "tags": [
+    "gluten-free",
+    "pumpkin",
+    "fall",
+    "almond-flour",
+    "cream-cheese-frosting"
+  ],
+  "nutritionInfo": {
+    "calories": 310,
+    "carbs": 26,
+    "protein": 6,
+    "fat": 21,
+    "fiber": 3,
+    "sugar": 19
+  },
+  "tips": [
+    "Blot extra moisture from pumpkin puree with a paper towel so batter does not turn soggy.",
+    "Let cupcakes cool completely before frosting, or the cream cheese frosting will slide off.",
+    "Store frosted cupcakes in the fridge and let them sit at room temperature for 15 minutes before serving.",
+    "For a stronger vanilla swirl, split the frosting and add vanilla bean paste to only half."
+  ],
+  "recipeKeys": [
+    "gluten-free pumpkin cupcakes",
+    "almond flour pumpkin cupcakes",
+    "pumpkin spice cupcakes recipe",
+    "gluten-free fall cupcakes",
+    "Easy difficulty",
+    "cream cheese frosting cupcakes"
+  ],
+  "dietaryBadges": [
+    "gluten-free"
+  ],
+  "cuisine": "American",
+  "conclusion": "These pumpkin spice cupcakes prove gluten-free baking can still be soft and simple. I tested this batch in my own kitchen three times before the almond flour ratio felt right.",
+  "faq": [
+    {
+      "question": "Can I use pumpkin pie filling instead of pumpkin puree?",
+      "answer": "No, pumpkin pie filling has added sugar and spices that will throw off the recipe. Use plain pumpkin puree only."
+    },
+    {
+      "question": "Why did my almond flour cupcakes turn out dense?",
+      "answer": "Dense cupcakes usually mean the almond flour was packed too tightly or the batter was overmixed. Spoon the flour into the cup and stir gently."
+    },
+    {
+      "question": "Can I make these dairy free too?",
+      "answer": "Yes, swap the cream cheese and butter for dairy free versions. The cake itself is already dairy free with coconut oil."
+    },
+    {
+      "question": "How long do these cupcakes stay fresh?",
+      "answer": "They stay fresh in the fridge for up to 5 days in a sealed container. Almond flour cakes hold moisture well."
+    }
+  ],
+  "author": {
+    "name": "Sarah",
+    "url": "https://incr-ediblecupcakes.com/about"
+  },
+  "keywords": [
+    "gluten-free pumpkin cupcakes",
+    "almond flour cupcakes",
+    "pumpkin spice cupcakes",
+    "fall gluten-free dessert"
+  ],
+  "datePublished": "2026-09-03",
+  "dateModified": "2026-09-03"
+}
