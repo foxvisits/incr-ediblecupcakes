@@ -463,9 +463,10 @@
       "targetKeyword": "the secret power of salt in sweet baking",
       "notes": "Balance + flavor intensification",
       "priority": 39,
-      "status": "scheduled",
+      "status": "published",
       "slug": "the-secret-power-of-salt-in-sweet-baking",
-      "publishAt": "2026-09-03T14:48:00+02:00"
+      "publishAt": "2026-09-03T14:48:00+02:00",
+      "publishedAt": "2026-09-04T10:33:58.126Z"
     },
     {
       "id": "g040",

@@ -1,0 +1,131 @@
+{
+  "id": "r150",
+  "title": "Salted Caramel Harvest Cupcakes",
+  "slug": "salted-caramel-harvest-cupcakes",
+  "description": "These cupcakes taste like fall in a wrapper. Warm cinnamon, nutmeg, and ginger fill a soft brown sugar cake, then salted caramel drizzles over the top I tested this batch three times in my home kitchen to get the spice level right. Too much clove and it tastes like potpourri, too little and you lose that harvest feel. The caramel drizzle is homemade and simple. No candy thermometer needed, just butter, sugar, cream, and a good pinch of flaky salt. Serve these at a fall party or pack them for a school bake sale. They hold up well at room temperature for two days.",
+  "shortDescription": "Warm spiced cupcakes with a salted caramel drizzle, ready in 25 minutes prep and 18 minutes bake.",
+  "image": "/salted-caramel-harvest-cupcakes.jpg",
+  "imageAlt": "Salted caramel harvest cupcake with tall swirled frosting and caramel drizzle on a butter yellow background",
+  "images": [
+    {
+      "role": "hero",
+      "alt": "Salted caramel harvest cupcake with tall swirled frosting and caramel drizzle on a butter yellow background",
+      "prompt": "A single salted caramel harvest cupcake with tall swirled caramel frosting piped high, drizzled with glossy caramel sauce and a pinch of flaky salt on top. Bright pastel bakery aesthetic, soft even daylight, butter yellow pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/salted-caramel-harvest-cupcakes.jpg"
+    },
+    {
+      "role": "process",
+      "alt": "Caramel sauce being drizzled over a frosted cupcake with a small spoon",
+      "prompt": "Close view of golden caramel sauce being drizzled from a small spoon over a frosted cupcake with tall swirled frosting. Bright pastel bakery aesthetic, soft even daylight, pale butter yellow background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/salted-caramel-harvest-cupcakes-2.jpg"
+    },
+    {
+      "role": "detail",
+      "alt": "Close up of cupcake top showing caramel drizzle and flaky salt on swirled frosting",
+      "prompt": "Macro shot of a cupcake top showing tall swirled frosting, glossy caramel drizzle, and visible flakes of sea salt. Bright pastel bakery aesthetic, soft even daylight, butter yellow pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog.",
+      "src": "/salted-caramel-harvest-cupcakes-3.jpg"
+    }
+  ],
+  "metaTitle": "Salted Caramel Harvest Cupcakes | Incr-EdibleCupCakes",
+  "metaDescription": "Bake salted caramel harvest cupcakes with warm spice and a homemade caramel drizzle. Get the full step-by-step recipe now.",
+  "category": "seasonal",
+  "difficulty": "Medium",
+  "prepTime": "25 mins",
+  "cookTime": "18 mins",
+  "totalTime": "43 mins",
+  "servings": 12,
+  "featured": false,
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "1 tsp baking powder",
+    "1/2 tsp baking soda",
+    "1/4 tsp salt",
+    "1 1/2 tsp ground cinnamon",
+    "1/2 tsp ground ginger",
+    "1/4 tsp ground nutmeg",
+    "1/2 cup unsalted butter, softened",
+    "3/4 cup packed brown sugar",
+    "2 large eggs, room temperature",
+    "1 tsp vanilla extract",
+    "1/2 cup buttermilk",
+    "1/2 cup unsalted butter (for frosting)",
+    "3 cups powdered sugar",
+    "1/3 cup homemade caramel sauce, plus extra for drizzle",
+    "1 tsp flaky sea salt, for topping"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F. Line a 12-cup muffin pan with paper liners.",
+    "Whisk flour, baking powder, baking soda, salt, cinnamon, ginger, and nutmeg in a bowl.",
+    "Beat softened butter and brown sugar together until light and fluffy, about 2 minutes.",
+    "Add eggs one at a time, beating well after each. Mix in vanilla.",
+    "Add the flour mix and buttermilk in three additions, starting and ending with flour. Mix just until combined.",
+    "Divide batter evenly among liners, filling each about two thirds full.",
+    "Bake 16 to 18 minutes, until a toothpick comes out clean. Cool in the pan 5 minutes, then move to a wire rack.",
+    "Beat butter for the frosting until smooth, then add powdered sugar and caramel sauce. Beat until fluffy.",
+    "Once cupcakes are fully cool, pipe frosting on top in a swirl.",
+    "Drizzle each cupcake with extra caramel sauce and finish with a pinch of flaky salt."
+  ],
+  "tags": [
+    "seasonal",
+    "fall-cupcakes",
+    "salted-caramel",
+    "spiced-cupcakes",
+    "harvest-dessert"
+  ],
+  "nutritionInfo": {
+    "calories": 320,
+    "carbs": 45,
+    "protein": 3,
+    "fat": 15,
+    "fiber": 1,
+    "sugar": 34
+  },
+  "tips": [
+    "Room temperature eggs and buttermilk mix in smoother and give an even crumb.",
+    "Warm your caramel sauce slightly before drizzling so it flows instead of clumping.",
+    "Toast the spices in a dry pan for 30 seconds before adding them if you want a deeper flavor.",
+    "Store leftovers in an airtight container. The caramel stays soft for up to two days at room temperature."
+  ],
+  "recipeKeys": [
+    "salted caramel cupcakes",
+    "fall cupcakes recipe",
+    "harvest spiced cupcakes",
+    "caramel drizzle cupcakes",
+    "Medium difficulty",
+    "warm spice cupcakes",
+    "autumn baking"
+  ],
+  "dietaryBadges": [],
+  "cuisine": "American",
+  "conclusion": "These cupcakes bring cozy fall flavor to any table. The warm spice and salted caramel combo works for parties, potlucks, or just a Sunday treat.",
+  "faq": [
+    {
+      "question": "Can I use store bought caramel sauce instead of homemade?",
+      "answer": "Yes, a thick jarred caramel works fine here. Warm it slightly so it drizzles well and does not sit too heavy on the frosting."
+    },
+    {
+      "question": "Why did my cupcakes sink in the middle?",
+      "answer": "This usually means the batter was overmixed or the oven was not fully preheated. Mix just until the flour disappears and check your oven temperature with a thermometer."
+    },
+    {
+      "question": "Can I make the caramel ahead of time?",
+      "answer": "Yes, caramel sauce keeps in the fridge for up to two weeks in a sealed jar. Warm it gently on the stove or in short microwave bursts before using."
+    },
+    {
+      "question": "What can I use instead of buttermilk?",
+      "answer": "Mix 1/2 cup milk with 1/2 tablespoon lemon juice or vinegar. Let it sit 5 minutes before using in the batter."
+    }
+  ],
+  "author": {
+    "name": "Sarah",
+    "url": "https://incr-ediblecupcakes.com/about"
+  },
+  "keywords": [
+    "salted caramel cupcakes",
+    "harvest cupcakes",
+    "fall spiced cupcakes",
+    "caramel drizzle dessert"
+  ],
+  "datePublished": "2026-09-04",
+  "dateModified": "2026-09-04"
+}

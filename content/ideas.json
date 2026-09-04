@@ -1537,9 +1537,10 @@
       "category": "seasonal",
       "notes": "Caramel drizzle + warm spice",
       "priority": 150,
-      "status": "scheduled",
+      "status": "published",
       "slug": "salted-caramel-harvest-cupcakes",
-      "publishAt": "2026-09-04T10:20:00+02:00"
+      "publishAt": "2026-09-04T10:20:00+02:00",
+      "publishedAt": "2026-09-04T10:33:58.126Z"
     },
     {
       "id": "r151",
