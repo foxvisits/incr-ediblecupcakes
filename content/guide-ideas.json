@@ -475,9 +475,10 @@
       "targetKeyword": "how to choose quality vanilla (extract vs paste)",
       "notes": "Show flavor development differences",
       "priority": 40,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-choose-quality-vanilla-extract-vs-paste",
-      "publishAt": "2026-09-04T15:00:00+02:00"
+      "publishAt": "2026-09-04T15:00:00+02:00",
+      "publishedAt": "2026-09-05T09:53:52.691Z"
     },
     {
       "id": "g041",
