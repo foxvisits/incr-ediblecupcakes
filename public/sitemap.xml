@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://incr-ediblecupcakes.com/</loc>
-    <lastmod>2026-09-05</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -60,7 +60,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/guides</loc>
-    <lastmod>2026-09-05</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1291,6 +1291,17 @@
     <image:image>
       <image:loc>https://incr-ediblecupcakes.com/guide-butter-vs-oil-in-cupcake-batter.jpg</image:loc>
       <image:title>Butter vs Oil in Cupcake Batter</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides/cocoa-powder-types-dutch-vs-natural</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/guide-cocoa-powder-types-dutch-vs-natural.jpg</image:loc>
+      <image:title>Cocoa Powder Types: Dutch vs Natural</image:title>
     </image:image>
   </url>
 

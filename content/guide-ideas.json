@@ -487,9 +487,10 @@
       "targetKeyword": "cocoa powder types: dutch vs natural",
       "notes": "Taste, color, acidity differences",
       "priority": 41,
-      "status": "scheduled",
+      "status": "published",
       "slug": "cocoa-powder-types-dutch-vs-natural",
-      "publishAt": "2026-09-05T17:30:00+02:00"
+      "publishAt": "2026-09-05T17:30:00+02:00",
+      "publishedAt": "2026-09-06T10:11:35.965Z"
     },
     {
       "id": "g042",
