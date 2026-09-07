@@ -1579,9 +1579,10 @@
       "category": "seasonal",
       "notes": "Maple frosting swirl + optional crumble topping",
       "priority": 154,
-      "status": "scheduled",
+      "status": "published",
       "slug": "maple-walnut-autumn-cupcakes",
-      "publishAt": "2026-09-06T14:33:00+02:00"
+      "publishAt": "2026-09-06T14:33:00+02:00",
+      "publishedAt": "2026-09-07T11:27:53.595Z"
     },
     {
       "id": "r155",
@@ -1617,9 +1618,10 @@
       "category": "seasonal",
       "notes": "Apple cider reduction + cinnamon sugar swirl",
       "priority": 158,
-      "status": "scheduled",
+      "status": "published",
       "slug": "apple-cider-donut-cupcakes",
-      "publishAt": "2026-09-07T10:26:00+02:00"
+      "publishAt": "2026-09-07T10:26:00+02:00",
+      "publishedAt": "2026-09-07T11:27:53.595Z"
     },
     {
       "id": "r159",

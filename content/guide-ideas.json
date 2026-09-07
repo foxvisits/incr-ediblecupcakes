@@ -499,9 +499,10 @@
       "targetKeyword": "types of milk and milk alternatives",
       "notes": "Dairy vs oat vs coconut vs soy effects",
       "priority": 42,
-      "status": "scheduled",
+      "status": "published",
       "slug": "types-of-milk-and-milk-alternatives",
-      "publishAt": "2026-09-06T16:43:00+02:00"
+      "publishAt": "2026-09-06T16:43:00+02:00",
+      "publishedAt": "2026-09-07T11:27:53.595Z"
     },
     {
       "id": "g043",
