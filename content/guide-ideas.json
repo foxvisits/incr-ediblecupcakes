@@ -511,9 +511,10 @@
       "targetKeyword": "oils in baking: neutral vs flavorful",
       "notes": "Sunflower vs coconut vs olive, when appropriate",
       "priority": 43,
-      "status": "scheduled",
+      "status": "published",
       "slug": "oils-in-baking-neutral-vs-flavorful",
-      "publishAt": "2026-09-07T14:14:00+02:00"
+      "publishAt": "2026-09-07T14:14:00+02:00",
+      "publishedAt": "2026-09-08T10:30:28.250Z"
     },
     {
       "id": "g044",

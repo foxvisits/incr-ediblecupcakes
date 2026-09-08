@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://incr-ediblecupcakes.com/</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -60,7 +60,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/guides</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1606,6 +1606,17 @@
     <image:image>
       <image:loc>https://incr-ediblecupcakes.com/guide-how-to-use-a-piping-bag-without-mess.jpg</image:loc>
       <image:title>How to Use a Piping Bag Without Mess</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides/oils-in-baking-neutral-vs-flavorful</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/guide-oils-in-baking-neutral-vs-flavorful.jpg</image:loc>
+      <image:title>Oils in Baking: Neutral vs Flavorful</image:title>
     </image:image>
   </url>
 
