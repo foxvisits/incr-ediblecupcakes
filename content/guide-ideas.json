@@ -523,9 +523,10 @@
       "targetKeyword": "what baking powder actually does",
       "notes": "Gas expansion explained simply",
       "priority": 44,
-      "status": "scheduled",
+      "status": "published",
       "slug": "what-baking-powder-actually-does",
-      "publishAt": "2026-09-08T14:05:00+02:00"
+      "publishAt": "2026-09-08T14:05:00+02:00",
+      "publishedAt": "2026-09-09T10:41:38.398Z"
     },
     {
       "id": "g045",

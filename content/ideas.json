@@ -1629,9 +1629,10 @@
       "category": "seasonal",
       "notes": "Apple cake + caramel swirl drizzle",
       "priority": 159,
-      "status": "scheduled",
+      "status": "published",
       "slug": "caramel-apple-fair-cupcakes",
-      "publishAt": "2026-09-08T12:33:00+02:00"
+      "publishAt": "2026-09-08T12:33:00+02:00",
+      "publishedAt": "2026-09-09T10:41:38.398Z"
     },
     {
       "id": "r160",
