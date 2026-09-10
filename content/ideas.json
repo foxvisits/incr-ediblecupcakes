@@ -543,9 +543,10 @@
       "category": "keto",
       "notes": "Almond-based chai cake, vanilla chai frosting, warm spice",
       "priority": 50,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-chai-spice-cupcakes",
-      "publishAt": "2026-09-09T15:34:00+02:00"
+      "publishAt": "2026-09-09T15:34:00+02:00",
+      "publishedAt": "2026-09-10T10:30:07.463Z"
     },
     {
       "id": "r051",
