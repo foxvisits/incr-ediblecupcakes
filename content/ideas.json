@@ -554,9 +554,10 @@
       "category": "keto",
       "notes": "Beet powder or natural color for subtle red tint, cream cheese frosting",
       "priority": 51,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-red-velvet-cupcakes",
-      "publishAt": "2026-09-10T14:41:00+02:00"
+      "publishAt": "2026-09-10T14:41:00+02:00",
+      "publishedAt": "2026-09-11T10:31:49.881Z"
     },
     {
       "id": "r052",
@@ -564,9 +565,10 @@
       "category": "keto",
       "notes": "No actual banana, use banana extract. Moist crumb from almond flour",
       "priority": 52,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-banana-bread-cupcakes",
-      "publishAt": "2026-09-11T10:16:00+02:00"
+      "publishAt": "2026-09-11T10:16:00+02:00",
+      "publishedAt": "2026-09-11T10:31:49.881Z"
     },
     {
       "id": "r053",

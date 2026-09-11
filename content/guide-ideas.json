@@ -547,9 +547,10 @@
       "targetKeyword": "how to convert any cupcake recipe to gluten-free",
       "notes": "Step-by-step substitution approach with almond + tapioca base, moisture management",
       "priority": 46,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-convert-any-cupcake-recipe-to-gluten-free",
-      "publishAt": "2026-09-10T16:09:00+02:00"
+      "publishAt": "2026-09-10T16:09:00+02:00",
+      "publishedAt": "2026-09-11T10:31:49.881Z"
     },
     {
       "id": "g047",
