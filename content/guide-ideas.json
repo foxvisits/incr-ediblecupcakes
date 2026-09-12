@@ -559,9 +559,10 @@
       "targetKeyword": "how to convert recipes to dairy-free",
       "notes": "Coconut cream, oat milk, vegan butter guide",
       "priority": 47,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-convert-recipes-to-dairy-free",
-      "publishAt": "2026-09-11T17:04:00+02:00"
+      "publishAt": "2026-09-11T17:04:00+02:00",
+      "publishedAt": "2026-09-12T10:00:02.532Z"
     },
     {
       "id": "g048",

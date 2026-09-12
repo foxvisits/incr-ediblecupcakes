@@ -576,9 +576,10 @@
       "category": "keto",
       "notes": "Finely grated carrot + spices, cream cheese frosting, not overly sweet",
       "priority": 53,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-carrot-cake-cupcakes",
-      "publishAt": "2026-09-12T11:50:00+02:00"
+      "publishAt": "2026-09-12T11:50:00+02:00",
+      "publishedAt": "2026-09-12T10:00:02.532Z"
     },
     {
       "id": "r054",
