@@ -571,9 +571,10 @@
       "targetKeyword": "how to make cupcakes low-sugar without losing flavor",
       "notes": "Allulose, monk fruit, maple extract tips",
       "priority": 48,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-make-cupcakes-low-sugar-without-losing-flavor",
-      "publishAt": "2026-09-12T13:36:00+02:00"
+      "publishAt": "2026-09-12T13:36:00+02:00",
+      "publishedAt": "2026-09-13T11:00:50.826Z"
     },
     {
       "id": "g049",

@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://incr-ediblecupcakes.com/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -60,7 +60,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/guides</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1645,6 +1645,17 @@
     <image:image>
       <image:loc>https://incr-ediblecupcakes.com/guide-how-to-fix-runny-or-too-stiff-frosting.jpg</image:loc>
       <image:title>How to Fix Runny or Too Stiff Frosting</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides/how-to-make-cupcakes-low-sugar-without-losing-flavor</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/guide-how-to-make-cupcakes-low-sugar-without-losing-flavor.jpg</image:loc>
+      <image:title>How to Make Cupcakes Low-Sugar Without Losing Flavor</image:title>
     </image:image>
   </url>
 
