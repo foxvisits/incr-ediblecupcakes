@@ -587,9 +587,10 @@
       "category": "keto",
       "notes": "Cocoa cake with sugar-free chocolate chips, chocolate swirl frosting",
       "priority": 54,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-double-chocolate-cupcakes",
-      "publishAt": "2026-09-13T15:41:00+02:00"
+      "publishAt": "2026-09-13T15:41:00+02:00",
+      "publishedAt": "2026-09-14T11:39:11.028Z"
     },
     {
       "id": "r055",
@@ -597,9 +598,10 @@
       "category": "keto",
       "notes": "Cheesecake batter base baked into cupcake form, blueberry swirl",
       "priority": 55,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-lemon-blueberry-cheesecake-cupcakes",
-      "publishAt": "2026-09-14T11:32:00+02:00"
+      "publishAt": "2026-09-14T11:32:00+02:00",
+      "publishedAt": "2026-09-14T11:39:11.028Z"
     },
     {
       "id": "r056",

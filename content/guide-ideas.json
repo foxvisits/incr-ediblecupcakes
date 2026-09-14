@@ -583,9 +583,10 @@
       "targetKeyword": "how to make cupcakes kid allergen-safe for school",
       "notes": "Peanut-free, nut-free, dye-free, storage-safe",
       "priority": 49,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-make-cupcakes-kid-allergen-safe-for-school",
-      "publishAt": "2026-09-13T16:31:00+02:00"
+      "publishAt": "2026-09-13T16:31:00+02:00",
+      "publishedAt": "2026-09-14T11:39:11.028Z"
     },
     {
       "id": "g050",
