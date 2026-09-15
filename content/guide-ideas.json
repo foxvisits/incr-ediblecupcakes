@@ -595,9 +595,10 @@
       "targetKeyword": "how to bake flat-top cupcakes for easy frosting",
       "notes": "Oven temp control, batter leveling",
       "priority": 50,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-bake-flat-top-cupcakes-for-easy-frosting",
-      "publishAt": "2026-09-14T15:10:00+02:00"
+      "publishAt": "2026-09-14T15:10:00+02:00",
+      "publishedAt": "2026-09-15T10:57:34.306Z"
     },
     {
       "id": "g051",

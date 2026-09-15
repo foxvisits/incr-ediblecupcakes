@@ -609,9 +609,10 @@
       "category": "keto",
       "notes": "Espresso batter + chocolate frosting + sugar-free caramel drizzle",
       "priority": 56,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-salted-caramel-mocha-cupcakes",
-      "publishAt": "2026-09-15T12:18:00+02:00"
+      "publishAt": "2026-09-15T12:18:00+02:00",
+      "publishedAt": "2026-09-15T10:57:34.306Z"
     },
     {
       "id": "r057",
