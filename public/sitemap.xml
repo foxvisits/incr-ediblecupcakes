@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://incr-ediblecupcakes.com/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -60,7 +60,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/guides</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1676,6 +1676,17 @@
     <image:image>
       <image:loc>https://incr-ediblecupcakes.com/guide-how-to-create-cupcake-flavors.jpg</image:loc>
       <image:title>How to Develop Your Own Signature Cupcake Flavor</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides/how-to-create-flavor-layers-in-one-cupcake</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/guide-how-to-create-flavor-layers-in-one-cupcake.jpg</image:loc>
+      <image:title>How to Create Flavor Layers in One Cupcake</image:title>
     </image:image>
   </url>
 

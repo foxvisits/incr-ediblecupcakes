@@ -607,9 +607,10 @@
       "targetKeyword": "how to create flavor layers in one cupcake",
       "notes": "Cake + filling + swirl + garnish philosophy",
       "priority": 51,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-create-flavor-layers-in-one-cupcake",
-      "publishAt": "2026-09-15T13:13:00+02:00"
+      "publishAt": "2026-09-15T13:13:00+02:00",
+      "publishedAt": "2026-09-16T10:46:31.816Z"
     },
     {
       "id": "g052",
