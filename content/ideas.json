@@ -620,9 +620,10 @@
       "category": "keto",
       "notes": "Elegant, softly sweet almond-vanilla cake, smooth wedding-style swirl",
       "priority": 57,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-vanilla-almond-wedding-cupcakes",
-      "publishAt": "2026-09-16T15:35:00+02:00"
+      "publishAt": "2026-09-16T15:35:00+02:00",
+      "publishedAt": "2026-09-17T10:53:05.054Z"
     },
     {
       "id": "r058",

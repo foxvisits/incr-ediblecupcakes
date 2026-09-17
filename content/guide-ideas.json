@@ -619,9 +619,10 @@
       "targetKeyword": "how to design seasonal cupcakes that sell",
       "notes": "Seasonal flavor patterns, mood, color psychology",
       "priority": 52,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-design-seasonal-cupcakes-that-sell",
-      "publishAt": "2026-09-16T15:44:00+02:00"
+      "publishAt": "2026-09-16T15:44:00+02:00",
+      "publishedAt": "2026-09-17T10:53:05.054Z"
     }
   ]
 }
