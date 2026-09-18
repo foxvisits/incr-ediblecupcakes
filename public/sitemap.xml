@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://incr-ediblecupcakes.com/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,7 +14,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipes</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -46,14 +46,14 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/categories</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/tags</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -81,7 +81,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/categories/vegan</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -133,6 +133,17 @@
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/vegan-vanilla-bean-cupcakes</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/vegan-vanilla-bean-cupcakes.jpg</image:loc>
+      <image:title>Vegan Vanilla Bean Cupcakes</image:title>
+    </image:image>
   </url>
 
   <url>
@@ -1005,6 +1016,13 @@
   </url>
 
   <url>
+    <loc>https://incr-ediblecupcakes.com/tags/vanilla</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://incr-ediblecupcakes.com/tags/low-carb</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -1252,13 +1270,6 @@
   <url>
     <loc>https://incr-ediblecupcakes.com/tags/buttercream</loc>
     <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/vanilla</loc>
-    <lastmod>2026-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

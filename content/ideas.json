@@ -651,9 +651,10 @@
       "category": "vegan",
       "notes": "target keyword: vegan vanilla cupcakes fluffy. Aquafaba for lift, light fluffy crumb, real vanilla bean",
       "priority": 60,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-vanilla-bean-cupcakes",
-      "publishAt": "2026-09-17T15:01:00+02:00"
+      "publishAt": "2026-09-17T15:01:00+02:00",
+      "publishedAt": "2026-09-18T10:28:27.777Z"
     },
     {
       "id": "r061",
