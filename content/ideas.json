@@ -662,9 +662,10 @@
       "category": "vegan",
       "notes": "Coconut milk + cocoa, frosting should be silky not oily, deep chocolate",
       "priority": 61,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-chocolate-silk-cupcakes",
-      "publishAt": "2026-09-18T15:50:00+02:00"
+      "publishAt": "2026-09-18T15:50:00+02:00",
+      "publishedAt": "2026-09-19T10:13:51.952Z"
     },
     {
       "id": "r062",
