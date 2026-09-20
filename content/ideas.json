@@ -673,9 +673,10 @@
       "category": "vegan",
       "notes": "Fresh zest + lemon juice, frosting is lemon cream cheese-style",
       "priority": 62,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-lemon-sunshine-cupcakes",
-      "publishAt": "2026-09-19T14:43:00+02:00"
+      "publishAt": "2026-09-19T14:43:00+02:00",
+      "publishedAt": "2026-09-20T10:32:23.461Z"
     },
     {
       "id": "r063",
@@ -683,9 +684,10 @@
       "category": "vegan",
       "notes": "Finely grated carrot, warm spices, vegan cream cheese frosting",
       "priority": 63,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-carrot-cream-cupcakes",
-      "publishAt": "2026-09-20T11:29:00+02:00"
+      "publishAt": "2026-09-20T11:29:00+02:00",
+      "publishedAt": "2026-09-20T10:32:23.461Z"
     },
     {
       "id": "r064",
