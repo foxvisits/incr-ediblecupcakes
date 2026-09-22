@@ -695,9 +695,10 @@
       "category": "vegan",
       "notes": "No artificial red dyes. Strawberry puree in batter + frosting, soft natural pink tone",
       "priority": 64,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-strawberry-milk-cupcakes",
-      "publishAt": "2026-09-21T15:19:00+02:00"
+      "publishAt": "2026-09-21T15:19:00+02:00",
+      "publishedAt": "2026-09-22T10:52:50.309Z"
     },
     {
       "id": "r065",
@@ -705,9 +706,10 @@
       "category": "vegan",
       "notes": "Small blueberries, keep batter tender, vanilla frosting swirl",
       "priority": 65,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-blueberry-muffin-cupcakes",
-      "publishAt": "2026-09-22T11:06:00+02:00"
+      "publishAt": "2026-09-22T11:06:00+02:00",
+      "publishedAt": "2026-09-22T10:52:50.309Z"
     },
     {
       "id": "r066",
