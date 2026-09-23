@@ -717,9 +717,10 @@
       "category": "vegan",
       "notes": "Toasted walnuts for aroma, maple frosting swirl",
       "priority": 66,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-maple-walnut-cupcakes",
-      "publishAt": "2026-09-23T10:32:00+02:00"
+      "publishAt": "2026-09-23T10:32:00+02:00",
+      "publishedAt": "2026-09-23T10:41:15.537Z"
     },
     {
       "id": "r067",
