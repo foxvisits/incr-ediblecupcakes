@@ -728,9 +728,10 @@
       "category": "vegan",
       "notes": "PB batter + chocolate swirl frosting, creamy not crumbly",
       "priority": 67,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-peanut-butter-cup-cupcakes",
-      "publishAt": "2026-09-24T16:20:00+02:00"
+      "publishAt": "2026-09-24T16:20:00+02:00",
+      "publishedAt": "2026-09-25T11:01:48.987Z"
     },
     {
       "id": "r068",
@@ -738,9 +739,10 @@
       "category": "vegan",
       "notes": "Use vegan sandwich cookies. Cookie crumbs in frosting + batter, fluffy and playful",
       "priority": 68,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-cookies-and-cream-cupcakes",
-      "publishAt": "2026-09-25T12:32:00+02:00"
+      "publishAt": "2026-09-25T12:32:00+02:00",
+      "publishedAt": "2026-09-25T11:01:48.987Z"
     },
     {
       "id": "r069",

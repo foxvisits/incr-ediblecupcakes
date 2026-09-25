@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://incr-ediblecupcakes.com/</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,7 +14,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipes</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -46,14 +46,14 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/categories</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/tags</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -81,7 +81,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/categories/vegan</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -133,6 +133,28 @@
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/vegan-cookies-and-cream-cupcakes</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/vegan-cookies-and-cream-cupcakes.jpg</image:loc>
+      <image:title>Vegan Cookies &amp; Cream Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/vegan-peanut-butter-cup-cupcakes</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/vegan-peanut-butter-cup-cupcakes.jpg</image:loc>
+      <image:title>Vegan Peanut Butter Cup Cupcakes</image:title>
+    </image:image>
   </url>
 
   <url>
@@ -1082,6 +1104,41 @@
   </url>
 
   <url>
+    <loc>https://incr-ediblecupcakes.com/tags/party-cupcakes</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/peanut-butter</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/chocolate</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/cupcakes</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/dairy-free</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://incr-ediblecupcakes.com/tags/maple</loc>
     <lastmod>2026-09-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -1097,13 +1154,6 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/tags/fall-baking</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/dairy-free</loc>
     <lastmod>2026-09-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -1173,13 +1223,6 @@
   </url>
 
   <url>
-    <loc>https://incr-ediblecupcakes.com/tags/cupcakes</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://incr-ediblecupcakes.com/tags/vanilla</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -1209,13 +1252,6 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/tags/salted-caramel</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/chocolate</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -1356,13 +1392,6 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/tags/mint</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/party-cupcakes</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
