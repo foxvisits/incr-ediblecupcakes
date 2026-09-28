@@ -761,9 +761,10 @@
       "category": "vegan",
       "notes": "Coconut milk batter + fluffy coconut whip-style frosting",
       "priority": 70,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-coconut-cloud-cupcakes",
-      "publishAt": "2026-09-27T14:21:00+02:00"
+      "publishAt": "2026-09-27T14:21:00+02:00",
+      "publishedAt": "2026-09-28T12:46:47.359Z"
     },
     {
       "id": "r071",
@@ -781,9 +782,10 @@
       "category": "vegan",
       "notes": "Ripe bananas for sweetness, cinnamon cream swirl frosting",
       "priority": 72,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-banana-bread-cupcakes",
-      "publishAt": "2026-09-28T13:23:00+02:00"
+      "publishAt": "2026-09-28T13:23:00+02:00",
+      "publishedAt": "2026-09-28T12:46:47.359Z"
     },
     {
       "id": "r073",
