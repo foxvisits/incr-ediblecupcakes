@@ -793,9 +793,10 @@
       "category": "vegan",
       "notes": "Almond extract for perfume, raspberry garnish",
       "priority": 73,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-raspberry-almond-cupcakes",
-      "publishAt": "2026-09-29T13:42:00+02:00"
+      "publishAt": "2026-09-29T13:42:00+02:00",
+      "publishedAt": "2026-09-29T12:02:30.655Z"
     },
     {
       "id": "r074",
