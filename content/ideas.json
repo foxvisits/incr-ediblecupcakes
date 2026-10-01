@@ -804,9 +804,10 @@
       "category": "vegan",
       "notes": "Orange zest + vanilla cream swirl frosting, creamsicle vibe",
       "priority": 74,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-orange-cream-cupcakes",
-      "publishAt": "2026-09-30T15:49:00+02:00"
+      "publishAt": "2026-09-30T15:49:00+02:00",
+      "publishedAt": "2026-10-01T12:20:15.507Z"
     },
     {
       "id": "r075",
@@ -814,9 +815,10 @@
       "category": "vegan",
       "notes": "Brew tea in plant milk, lavender-vanilla frosting swirl optional",
       "priority": 75,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-earl-grey-tea-cupcakes",
-      "publishAt": "2026-10-01T13:21:00+02:00"
+      "publishAt": "2026-10-01T13:21:00+02:00",
+      "publishedAt": "2026-10-01T12:20:15.507Z"
     },
     {
       "id": "r076",
