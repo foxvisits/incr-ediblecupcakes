@@ -826,9 +826,10 @@
       "category": "vegan",
       "notes": "Coffee + cocoa balance, mocha buttercream swirl",
       "priority": 76,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-double-mocha-cupcakes",
-      "publishAt": "2026-10-02T17:03:00+02:00"
+      "publishAt": "2026-10-02T17:03:00+02:00",
+      "publishedAt": "2026-10-03T11:01:49.773Z"
     },
     {
       "id": "r077",
