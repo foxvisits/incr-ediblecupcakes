@@ -837,9 +837,10 @@
       "category": "vegan",
       "notes": "Use agave or maple instead of honey, warm golden flavor",
       "priority": 77,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-honey-style-agave-cupcakes",
-      "publishAt": "2026-10-03T15:35:00+02:00"
+      "publishAt": "2026-10-03T15:35:00+02:00",
+      "publishedAt": "2026-10-04T11:43:48.168Z"
     },
     {
       "id": "r078",
@@ -847,9 +848,10 @@
       "category": "vegan",
       "notes": "Apple puree for moisture, autumn spice, cream swirl frosting",
       "priority": 78,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-apple-spice-cupcakes",
-      "publishAt": "2026-10-04T12:49:00+02:00"
+      "publishAt": "2026-10-04T12:49:00+02:00",
+      "publishedAt": "2026-10-04T11:43:48.168Z"
     },
     {
       "id": "r079",
