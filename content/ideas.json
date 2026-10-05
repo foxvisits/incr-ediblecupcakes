@@ -859,9 +859,10 @@
       "category": "vegan",
       "notes": "Cocoa base + peppermint swirl frosting, cool and clean flavor",
       "priority": 79,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-mint-chocolate-cupcakes",
-      "publishAt": "2026-10-05T10:47:00+02:00"
+      "publishAt": "2026-10-05T10:47:00+02:00",
+      "publishedAt": "2026-10-05T13:28:17.915Z"
     },
     {
       "id": "r080",
