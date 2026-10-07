@@ -880,9 +880,10 @@
       "category": "nut-free",
       "notes": "Kid-safe queries. Standard flour + dairy, emphasize allergy-safety language",
       "priority": 81,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-vanilla-celebration-cupcakes",
-      "publishAt": "2026-10-06T17:03:00+02:00"
+      "publishAt": "2026-10-06T17:03:00+02:00",
+      "publishedAt": "2026-10-07T12:34:30.448Z"
     },
     {
       "id": "r082",
@@ -890,9 +891,10 @@
       "category": "nut-free",
       "notes": "Rich chocolate flavor, no traces of nuts, kid-friendly and school-safe",
       "priority": 82,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-chocolate-birthday-cupcakes",
-      "publishAt": "2026-10-07T13:16:00+02:00"
+      "publishAt": "2026-10-07T13:16:00+02:00",
+      "publishedAt": "2026-10-07T12:34:30.448Z"
     },
     {
       "id": "r083",
