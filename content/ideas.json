@@ -902,9 +902,10 @@
       "category": "nut-free",
       "notes": "Use certified nut-free cookie brand, frosting flecked with cookie crumbs",
       "priority": 83,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-cookies-and-cream-cupcakes",
-      "publishAt": "2026-10-08T11:46:00+02:00"
+      "publishAt": "2026-10-08T11:46:00+02:00",
+      "publishedAt": "2026-10-08T12:43:35.526Z"
     },
     {
       "id": "r084",
