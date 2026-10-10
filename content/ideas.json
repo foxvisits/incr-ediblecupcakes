@@ -913,9 +913,10 @@
       "category": "nut-free",
       "notes": "Sweet cinnamon swirl baked in, vanilla frosting swirl on top",
       "priority": 84,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-cinnamon-swirl-cupcakes",
-      "publishAt": "2026-10-09T17:21:00+02:00"
+      "publishAt": "2026-10-09T17:21:00+02:00",
+      "publishedAt": "2026-10-10T11:49:35.551Z"
     },
     {
       "id": "r085",
