@@ -924,9 +924,10 @@
       "category": "nut-free",
       "notes": "Naturally colored sprinkles, light buttery cake base",
       "priority": 85,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-funfetti-cupcakes",
-      "publishAt": "2026-10-10T14:05:00+02:00"
+      "publishAt": "2026-10-10T14:05:00+02:00",
+      "publishedAt": "2026-10-11T12:01:22.340Z"
     },
     {
       "id": "r086",
@@ -934,9 +935,10 @@
       "category": "nut-free",
       "notes": "Ripe mashed banana for sweetness, soft crumb, not too dense",
       "priority": 86,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-banana-vanilla-swirl-cupcakes",
-      "publishAt": "2026-10-11T10:06:00+02:00"
+      "publishAt": "2026-10-11T10:06:00+02:00",
+      "publishedAt": "2026-10-11T12:01:22.340Z"
     },
     {
       "id": "r087",
