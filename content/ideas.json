@@ -946,9 +946,10 @@
       "category": "nut-free",
       "notes": "Fresh blueberries only, lemon zest frosting, light and summery",
       "priority": 87,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-lemon-blueberry-cupcakes",
-      "publishAt": "2026-10-12T13:25:00+02:00"
+      "publishAt": "2026-10-12T13:25:00+02:00",
+      "publishedAt": "2026-10-12T14:17:35.024Z"
     },
     {
       "id": "r088",
