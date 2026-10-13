@@ -957,9 +957,10 @@
       "category": "nut-free",
       "notes": "Fresh strawberry compote core + whipped vanilla frosting swirl",
       "priority": 88,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-strawberry-shortcake-cupcakes",
-      "publishAt": "2026-10-13T14:51:00+02:00"
+      "publishAt": "2026-10-13T14:51:00+02:00",
+      "publishedAt": "2026-10-13T13:27:22.233Z"
     },
     {
       "id": "r089",
