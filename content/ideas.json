@@ -968,9 +968,10 @@
       "category": "nut-free",
       "notes": "Silky chocolate frosting swirl, moist cocoa cake, school-safe",
       "priority": 89,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-chocolate-fudge-swirl-cupcakes",
-      "publishAt": "2026-10-14T10:45:00+02:00"
+      "publishAt": "2026-10-14T10:45:00+02:00",
+      "publishedAt": "2026-10-14T11:04:45.468Z"
     },
     {
       "id": "r090",
