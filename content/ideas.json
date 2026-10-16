@@ -979,9 +979,10 @@
       "category": "nut-free",
       "notes": "Caramel made from sugar + butter, no nut extracts",
       "priority": 90,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-caramel-drizzle-cupcakes",
-      "publishAt": "2026-10-15T14:24:00+02:00"
+      "publishAt": "2026-10-15T14:24:00+02:00",
+      "publishedAt": "2026-10-16T10:35:28.916Z"
     },
     {
       "id": "r091",
