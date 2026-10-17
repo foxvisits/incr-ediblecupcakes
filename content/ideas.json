@@ -990,9 +990,10 @@
       "category": "nut-free",
       "notes": "Toast marshmallow frosting lightly for golden finish",
       "priority": 91,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-toasted-marshmallow-cupcakes",
-      "publishAt": "2026-10-16T16:22:00+02:00"
+      "publishAt": "2026-10-16T16:22:00+02:00",
+      "publishedAt": "2026-10-17T10:04:35.402Z"
     },
     {
       "id": "r092",
