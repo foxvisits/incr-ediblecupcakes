@@ -1001,9 +1001,10 @@
       "category": "nut-free",
       "notes": "Pure maple syrup for warmth, cream swirl frosting",
       "priority": 92,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-brown-sugar-maple-cupcakes",
-      "publishAt": "2026-10-17T15:07:00+02:00"
+      "publishAt": "2026-10-17T15:07:00+02:00",
+      "publishedAt": "2026-10-18T10:18:09.452Z"
     },
     {
       "id": "r093",
