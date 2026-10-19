@@ -1012,9 +1012,10 @@
       "category": "nut-free",
       "notes": "Grated apple + gentle spice, classic home-baked aroma",
       "priority": 93,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-apple-cinnamon-cupcakes",
-      "publishAt": "2026-10-18T13:21:00+02:00"
+      "publishAt": "2026-10-18T13:21:00+02:00",
+      "publishedAt": "2026-10-19T11:58:43.626Z"
     },
     {
       "id": "r094",
