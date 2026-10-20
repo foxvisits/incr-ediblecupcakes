@@ -1023,9 +1023,10 @@
       "category": "nut-free",
       "notes": "Chai spice in batter + vanilla frosting",
       "priority": 94,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-chai-spice-cupcakes",
-      "publishAt": "2026-10-19T14:18:00+02:00"
+      "publishAt": "2026-10-19T14:18:00+02:00",
+      "publishedAt": "2026-10-20T10:52:27.243Z"
     },
     {
       "id": "r095",
