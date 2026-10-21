@@ -1034,9 +1034,10 @@
       "category": "nut-free",
       "notes": "Natural pink frosting via raspberry puree",
       "priority": 95,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-raspberry-cream-cupcakes",
-      "publishAt": "2026-10-20T13:26:00+02:00"
+      "publishAt": "2026-10-20T13:26:00+02:00",
+      "publishedAt": "2026-10-21T11:04:40.938Z"
     },
     {
       "id": "r096",
