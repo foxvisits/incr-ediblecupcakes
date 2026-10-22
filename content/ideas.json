@@ -1045,9 +1045,10 @@
       "category": "nut-free",
       "notes": "Orange zest + vanilla swirl, nostalgic but bright",
       "priority": 96,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-orange-creamsicle-cupcakes",
-      "publishAt": "2026-10-21T13:35:00+02:00"
+      "publishAt": "2026-10-21T13:35:00+02:00",
+      "publishedAt": "2026-10-22T11:04:14.952Z"
     },
     {
       "id": "r097",
@@ -1055,9 +1056,10 @@
       "category": "nut-free",
       "notes": "Fresh peach puree frosting, summer flavor profile",
       "priority": 97,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-peach-cream-cupcakes",
-      "publishAt": "2026-10-22T11:37:00+02:00"
+      "publishAt": "2026-10-22T11:37:00+02:00",
+      "publishedAt": "2026-10-22T11:04:14.952Z"
     },
     {
       "id": "r098",
