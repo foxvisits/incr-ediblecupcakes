@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://incr-ediblecupcakes.com/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,7 +14,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/recipes</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -46,14 +46,14 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/categories</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://incr-ediblecupcakes.com/tags</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -88,7 +88,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/categories/nut-free</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -133,6 +133,28 @@
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/nut-free-chocolate-chip-cupcakes</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/nut-free-chocolate-chip-cupcakes.jpg</image:loc>
+      <image:title>Nut-Free Chocolate Chip Cupcakes</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/recipe/nut-free-maple-cinnamon-glaze-cupcakes</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/nut-free-maple-cinnamon-glaze-cupcakes.jpg</image:loc>
+      <image:title>Nut-Free Maple Cinnamon Glaze Cupcakes</image:title>
+    </image:image>
   </url>
 
   <url>
@@ -1401,6 +1423,55 @@
   </url>
 
   <url>
+    <loc>https://incr-ediblecupcakes.com/tags/chocolate-chip</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/kid-friendly</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/easy-baking</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/maple</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/cinnamon</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/fall-cupcakes</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/tags/easy-cupcakes</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://incr-ediblecupcakes.com/tags/orange</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -1485,29 +1556,8 @@
   </url>
 
   <url>
-    <loc>https://incr-ediblecupcakes.com/tags/fall-cupcakes</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/easy-cupcakes</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://incr-ediblecupcakes.com/tags/cream-cheese-frosting</loc>
     <lastmod>2026-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/maple</loc>
-    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1521,13 +1571,6 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/tags/marshmallow</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/kid-friendly</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -1613,13 +1656,6 @@
   <url>
     <loc>https://incr-ediblecupcakes.com/tags/birthday</loc>
     <lastmod>2026-10-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://incr-ediblecupcakes.com/tags/cinnamon</loc>
-    <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
