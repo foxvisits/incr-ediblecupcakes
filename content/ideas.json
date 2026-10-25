@@ -1089,9 +1089,10 @@
       "category": "nut-free",
       "notes": "Coffee-infused batter + vanilla swirl, gentle and smooth",
       "priority": 100,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-vanilla-latte-cupcakes",
-      "publishAt": "2026-10-25T10:35:00+02:00"
+      "publishAt": "2026-10-25T10:35:00+02:00",
+      "publishedAt": "2026-10-25T10:37:09.141Z"
     },
     {
       "id": "r101",
