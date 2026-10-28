@@ -1111,9 +1111,10 @@
       "category": "gluten-free",
       "notes": "target keyword: gluten free vanilla cupcakes fluffy. Almond + tapioca ratio for lift, real vanilla extract",
       "priority": 102,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-vanilla-almond-flour-cupcakes",
-      "publishAt": "2026-10-27T15:15:00+02:00"
+      "publishAt": "2026-10-27T15:15:00+02:00",
+      "publishedAt": "2026-10-28T12:01:25.080Z"
     },
     {
       "id": "r103",
@@ -1121,9 +1122,10 @@
       "category": "gluten-free",
       "notes": "Add espresso to enhance cocoa, keep moisture high using oil + milk",
       "priority": 103,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-chocolate-almond-flour-cupcakes",
-      "publishAt": "2026-10-28T11:24:00+02:00"
+      "publishAt": "2026-10-28T11:24:00+02:00",
+      "publishedAt": "2026-10-28T12:01:25.080Z"
     },
     {
       "id": "r104",
