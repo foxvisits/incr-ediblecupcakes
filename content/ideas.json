@@ -1133,9 +1133,10 @@
       "category": "gluten-free",
       "notes": "Light lemon zest batter, tapioca gives springy crumb, lemon swirl frosting",
       "priority": 104,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-lemon-poppy-seed-cupcakes",
-      "publishAt": "2026-10-29T11:38:00+02:00"
+      "publishAt": "2026-10-29T11:38:00+02:00",
+      "publishedAt": "2026-10-29T12:11:55.732Z"
     },
     {
       "id": "r105",
