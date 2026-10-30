@@ -1144,9 +1144,10 @@
       "category": "gluten-free",
       "notes": "Real strawberry puree, avoid artificial color, gently pink frosting",
       "priority": 105,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-strawberry-cream-cupcakes",
-      "publishAt": "2026-10-30T11:17:00+02:00"
+      "publishAt": "2026-10-30T11:17:00+02:00",
+      "publishedAt": "2026-10-30T12:02:19.820Z"
     },
     {
       "id": "r106",
