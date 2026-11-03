@@ -118,7 +118,9 @@ const SEASONAL_TARGETS = [
   [/halloween/i, 8],
   [/thanksgiving/i, 9],
   [/christmas|reindeer|snowman|eggnog|gingerbread|snowflake|holiday|peppermint|cranberry orange/i, 10], // December → publish in November
-  [/spring|floral|blossom/i, 1], // spring → publish in February
+  // "cherry blossom", not "blossom": the bare word held back Dairy-Free Lemon
+  // Blossom, an everyday lemon cupcake, for three months waiting for spring.
+  [/spring|floral|cherry blossom/i, 1], // spring → publish in February
 ];
 
 const seasonalMonthFor = (title) => SEASONAL_TARGETS.find(([re]) => re.test(title))?.[1] ?? null;

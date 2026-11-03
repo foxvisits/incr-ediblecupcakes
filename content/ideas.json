@@ -1360,8 +1360,9 @@
       "category": "dairy-free",
       "notes": "Fresh zest + light lemon cream frosting using dairy-free butter + powdered sugar",
       "priority": 126,
-      "status": "approved",
-      "slug": "dairy-free-lemon-blossom-cupcakes"
+      "status": "scheduled",
+      "slug": "dairy-free-lemon-blossom-cupcakes",
+      "publishAt": "2026-11-08T17:59:00+02:00"
     },
     {
       "id": "r127",
@@ -1615,9 +1616,9 @@
       "category": "seasonal",
       "notes": "Chocolate cake + marshmallow swirl frosting",
       "priority": 152,
-      "status": "scheduled",
+      "status": "on-hold",
       "slug": "hot-cocoa-holiday-cupcakes",
-      "publishAt": "2026-11-08T17:59:00+02:00"
+      "holdReason": "Same recipe and search intent as r034 Hot Cocoa Cupcakes with Marshmallow Swirl, already published. Draft kept in content/drafts; publish only if rewritten into a distinct recipe."
     },
     {
       "id": "r153",
@@ -1625,9 +1626,9 @@
       "category": "seasonal",
       "notes": "Espresso + gingerbread spices, cream swirl frosting",
       "priority": 153,
-      "status": "scheduled",
+      "status": "on-hold",
       "slug": "gingerbread-latte-cupcakes",
-      "publishAt": "2026-11-09T17:25:00+02:00"
+      "holdReason": "Same recipe and search intent as r038 Spiced Gingerbread Latte Cupcakes, already published. Draft kept in content/drafts; publish only if rewritten into a distinct recipe."
     },
     {
       "id": "r154",
@@ -1657,7 +1658,7 @@
       "priority": 156,
       "status": "scheduled",
       "slug": "birthday-confetti-cupcakes",
-      "publishAt": "2026-12-17T10:09:00+02:00"
+      "publishAt": "2026-11-09T17:25:00+02:00"
     },
     {
       "id": "r157",
