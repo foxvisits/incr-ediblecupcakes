@@ -63,11 +63,19 @@ function endsSentence(s) {
 }
 
 /** Split long sentences at comma boundaries only when safe. */
+// A sentence ends at . ! or ? followed by whitespace. Splitting at every
+// "." instead cut "3.5 cups" and "$2.25" in two, and joining the pieces with
+// a space printed "3. 5 cups" and "$2. 25" (found November 2026 on six
+// published guides and one recipe).
+function splitSentences(text) {
+  return text.split(/(?<=[.!?])\s+/).filter((s) => s.trim());
+}
+
 export function shortenSentences(text, maxWords = 22) {
   if (!text || typeof text !== 'string') return text;
   if (/\//.test(text) || /\.(jpg|png|webp|astro)/i.test(text)) return text;
 
-  const sentences = text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text];
+  const sentences = splitSentences(text);
   const out = [];
 
   for (let sentence of sentences) {
@@ -119,7 +127,7 @@ export function sanitizeHeading(text) {
 
 function splitParagraphToChunks(text, maxSentences = 2) {
   const cleaned = sanitizeText(text);
-  const sentences = cleaned.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [cleaned];
+  const sentences = splitSentences(cleaned);
   const chunks = [];
   for (let i = 0; i < sentences.length; i += maxSentences) {
     chunks.push(sentences.slice(i, i + maxSentences).join(' ').trim());
