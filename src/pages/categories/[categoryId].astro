@@ -142,7 +142,7 @@ const faqSchema = extra?.faq?.length
       <h2 class="text-2xl font-bold text-gray-900 mb-6">{categoryRecipes.length} recipes</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {categoryRecipes.map((recipe) => (
-          <RecipeCard recipe={recipe} client:load />
+          <RecipeCard recipe={recipe} />
         ))}
       </div>
     </div>

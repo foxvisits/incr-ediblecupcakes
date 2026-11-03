@@ -189,7 +189,7 @@ const schemaData = {
           {filteredRecipes.map((recipe, index) => (
             <div
               class="animate-fade-in-up"
-              style={`animation-delay: ${index * 100}ms`}
+              style={`animation-delay: ${(index % 12) * 60}ms`}
               data-recipe-id={recipe.id}
               data-recipe-title={recipe.title.toLowerCase()}
               data-recipe-description={(recipe.shortDescription || recipe.description).toLowerCase()}
@@ -197,7 +197,7 @@ const schemaData = {
               data-recipe-difficulty={recipe.difficulty}
               data-index={index}
             >
-              <RecipeCard recipe={recipe} client:load />
+              <RecipeCard recipe={recipe} />
             </div>
           ))}
         </div>

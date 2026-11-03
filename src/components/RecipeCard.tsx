@@ -1,5 +1,10 @@
 import React from 'react';
 
+// Renders to static HTML: no state, no handlers, hover effects are CSS. Do not
+// give it a client: directive. On /recipes that serialised every recipe into
+// the page as island props (1.5 MB of HTML, two thirds of it props) and
+// hydrated 123 copies of this component on load for no behaviour at all.
+
 interface Recipe {
   id: string;
   slug: string;
