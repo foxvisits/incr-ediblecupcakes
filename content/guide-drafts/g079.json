@@ -17,11 +17,11 @@
     {
       "heading": "Can You Simply Multiply Every Ingredient?",
       "paragraphs": [
-        "Yes, cupcake recipes scale well because the ratios stay the same when you multiply everything by the same number. A half batch is every ingredient times 0. 5, and a double batch is times 2.",
+        "Yes, cupcake recipes scale well because the ratios stay the same when you multiply everything by the same number. A half batch is every ingredient times 0.5, and a double batch is times 2.",
         "The trouble comes from awkward amounts, like half an egg or 1/8 teaspoon. Those small amounts are where most home bakers go wrong, so I plan them before I start."
       ],
       "list": [
-        "Halve: multiply by 0. 5.",
+        "Halve: multiply by 0.5.",
         "Double: multiply by 2.",
         "Write the new amounts on paper before measuring.",
         "Convert cups to grams first if your recipe lists them."
@@ -31,7 +31,7 @@
       "heading": "How Do You Split an Egg Exactly?",
       "paragraphs": [
         "Whisk the egg until the yolk and white are fully blended, then weigh it and use half. One large egg is about 50 g out of the shell, so half is about 25 g, or 1 1/2 tablespoons.",
-        "Pour the leftover half into a small jar and cover it. Use it within a day in scrambled eggs or to brush on bread."
+        "Pour the leftover half into a small jar, cover it, and refrigerate it. Use it within a day in scrambled eggs or to brush on bread."
       ],
       "list": [
         "Crack the egg into a small bowl.",
@@ -56,7 +56,7 @@
       "heading": "Why Does Baking Time Barely Change?",
       "paragraphs": [
         "Baking time stays almost the same because each cupcake is still the same size. Heat has to travel through the same depth of batter, no matter how many cupcakes are in the oven.",
-        "A half batch can finish about 1 to 2 minutes sooner because the oven is less crowded. A double batch in two pans can need 2 to 3 extra minutes, so I check at the early end of the range."
+        "A half batch can finish about 1 to 2 minutes sooner because the oven is less crowded. A double batch in two pans can need 1 to 2 extra minutes, so I check at the early end of the range."
       ],
       "list": [
         "Test with a toothpick at the minimum time.",
@@ -67,7 +67,7 @@
     {
       "heading": "What Mixer Bowl Size Do You Need?",
       "paragraphs": [
-        "A 5 quart stand mixer bowl handles a double batch of most cupcake batters comfortably. A 4. 5 quart bowl works, but it fills up fast and splashes flour.",
+        "A 5 quart stand mixer bowl handles a double batch of most cupcake batters comfortably. A 4.5 quart bowl works, but it fills up fast and splashes flour.",
         "Half batches have the opposite problem, because the paddle may miss butter at the bottom of a big bowl. I use a hand mixer in a medium bowl and scrape often."
       ],
       "list": [
@@ -90,7 +90,7 @@
     }
   ],
   "howToSteps": [
-    "Decide your scale factor: 0. 5 for half, 2 for double.",
+    "Decide your scale factor: 0.5 for half, 2 for double.",
     "Convert every ingredient to grams and multiply by the factor.",
     "Whisk any egg that needs splitting, then weigh and use half.",
     "Scale baking powder, baking soda, and salt with the same factor.",
@@ -101,7 +101,7 @@
   "faq": [
     {
       "question": "How do I halve a recipe that calls for one egg?",
-      "answer": "Whisk the egg, weigh it, and use about 25 g, or 1 1/2 tablespoons. Save the rest for another recipe within a day."
+      "answer": "Whisk the egg, weigh it, and use about 25 g, or 1 1/2 tablespoons. Refrigerate the rest, covered, and use it within a day."
     },
     {
       "question": "Can I triple a cupcake recipe the same way?",

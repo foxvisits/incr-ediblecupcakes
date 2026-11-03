@@ -61,7 +61,7 @@
       "list": [
         "Name of the cupcake and the flavor.",
         "Full ingredient list, including the frosting and sprinkles.",
-        "Allergens in bold: milk, eggs, wheat, soy, peanuts, tree nuts.",
+        "Allergens in bold: milk, eggs, wheat, soy, peanuts, tree nuts, sesame.",
         "A line such as: Made in a kitchen that also uses nuts.",
         "Bake date and baker name or contact."
       ]
@@ -70,7 +70,7 @@
       "heading": "How do you price bake sale cupcakes simply?",
       "paragraphs": [
         "Multiply your ingredient cost per cupcake by 3, then round to an easy number. That covers ingredients, packaging, and a little for your time.",
-        "If your cupcakes cost about 75 cents each to make, price them at $2. 25 and round up to $2. 50 or $3. Round numbers make change easy at a busy table."
+        "If your cupcakes cost about 75 cents each to make, price them at $2.25 and round up to $2.50 or $3. Round numbers make change easy at a busy table."
       ],
       "list": [
         "Add up flour, sugar, butter, eggs, and toppings.",

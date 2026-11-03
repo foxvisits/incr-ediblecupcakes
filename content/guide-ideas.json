@@ -631,8 +631,9 @@
       "targetKeyword": "how to make cupcakes vegan",
       "notes": "One conversion plan covering eggs, butter, milk and frosting together. Which egg swap suits which batter (aquafaba, flax, applesauce, plant yogurt), block plant butter vs oil, plant milk plus vinegar as buttermilk, what fails when converted, a worked conversion of a classic vanilla recipe. Link the egg substitutes and dairy-free guides instead of repeating them.",
       "priority": 53,
-      "status": "draft",
-      "slug": "how-to-make-any-cupcake-recipe-vegan"
+      "status": "scheduled",
+      "slug": "how-to-make-any-cupcake-recipe-vegan",
+      "publishAt": "2026-11-08T13:59:00+02:00"
     },
     {
       "id": "g054",
@@ -641,8 +642,9 @@
       "targetKeyword": "nut free cupcakes",
       "notes": "For baking for someone with a nut allergy: reading 'may contain' versus 'made in a facility' labels, hidden nut sources (almond extract, marzipan, praline, some sprinkles and chocolates), swaps for almond flour and nut milks, cleaning tools and surfaces to avoid cross-contact. No medical advice; tell readers to confirm with the person or their allergist. Link the nut-free recipes and the school allergen guide.",
       "priority": 54,
-      "status": "draft",
-      "slug": "nut-free-cupcake-baking-labels-swaps-cross-contact"
+      "status": "scheduled",
+      "slug": "nut-free-cupcake-baking-labels-swaps-cross-contact",
+      "publishAt": "2026-11-04T11:36:00+02:00"
     },
     {
       "id": "g055",
@@ -651,8 +653,9 @@
       "targetKeyword": "best sweetener for keto cupcakes",
       "notes": "Compare sweetness relative to sugar, browning, cooling aftertaste, recrystallization in frosting, moisture and texture, digestive tolerance. Include a conversion table and which sweetener to use in batter versus frosting.",
       "priority": 55,
-      "status": "draft",
-      "slug": "keto-sweeteners-for-cupcakes-erythritol-vs-allulose-vs-monk-fruit"
+      "status": "scheduled",
+      "slug": "keto-sweeteners-for-cupcakes-erythritol-vs-allulose-vs-monk-fruit",
+      "publishAt": "2026-11-20T10:29:00+02:00"
     },
     {
       "id": "g056",
@@ -670,8 +673,9 @@
       "targetKeyword": "vegan buttercream",
       "notes": "Block plant butter vs tub spread vs vegetable shortening (water content decides stability), temperature control, aquafaba meringue buttercream as an option, ratios, chilling between piping. Troubleshoot greasy, split and soft frosting.",
       "priority": 57,
-      "status": "draft",
-      "slug": "how-to-make-vegan-buttercream-that-holds-a-swirl"
+      "status": "scheduled",
+      "slug": "how-to-make-vegan-buttercream-that-holds-a-swirl",
+      "publishAt": "2026-11-18T14:35:00+02:00"
     },
     {
       "id": "g058",
@@ -680,8 +684,9 @@
       "targetKeyword": "types of frosting for cupcakes",
       "notes": "A comparison hub: American buttercream, Swiss meringue, Italian meringue, French buttercream, ermine (flour) frosting, cream cheese, stabilized whipped cream, seven-minute frosting and ganache. Compare sweetness, stability at room temperature, difficulty and piping performance in a table. Link the detailed frosting guides on the site.",
       "priority": 58,
-      "status": "draft",
-      "slug": "types-of-frosting-for-cupcakes-compared"
+      "status": "scheduled",
+      "slug": "types-of-frosting-for-cupcakes-compared",
+      "publishAt": "2026-11-06T14:58:00+02:00"
     },
     {
       "id": "g059",
@@ -708,8 +713,9 @@
       "targetKeyword": "stabilized whipped cream frosting",
       "notes": "Compare stabilizers: gelatin, mascarpone, cream cheese, instant pudding mix, cornstarch or powdered milk. How long each holds, how to pipe it, storage and warm-weather limits.",
       "priority": 61,
-      "status": "draft",
-      "slug": "stabilized-whipped-cream-frosting-for-cupcakes"
+      "status": "scheduled",
+      "slug": "stabilized-whipped-cream-frosting-for-cupcakes",
+      "publishAt": "2026-11-12T13:34:00+02:00"
     },
     {
       "id": "g062",
@@ -718,8 +724,9 @@
       "targetKeyword": "frosting vs icing",
       "notes": "Clear definitions and how US and UK usage differ, consistency of each, which to use on cupcakes and when, royal icing for decorations, basic glaze ratios. Short and direct.",
       "priority": 62,
-      "status": "draft",
-      "slug": "frosting-vs-icing-vs-glaze-difference"
+      "status": "scheduled",
+      "slug": "frosting-vs-icing-vs-glaze-difference",
+      "publishAt": "2026-11-14T15:20:00+02:00"
     },
     {
       "id": "g063",
@@ -737,8 +744,9 @@
       "targetKeyword": "how to frost cupcakes without a piping bag",
       "notes": "Offset spatula swirl, spoon-back swirl, dip method for glaze and ganache, zip-top bag substitute, rolling the frosted edge in sprinkles or crumbs. Step by step for each finish.",
       "priority": 64,
-      "status": "draft",
-      "slug": "how-to-frost-cupcakes-without-a-piping-bag"
+      "status": "scheduled",
+      "slug": "how-to-frost-cupcakes-without-a-piping-bag",
+      "publishAt": "2026-11-16T15:10:00+02:00"
     },
     {
       "id": "g065",
@@ -819,8 +827,9 @@
       "targetKeyword": "bake sale cupcakes",
       "notes": "Frostings that survive a table all day, individual packaging, listing ingredients and allergens on labels, a simple pricing approach, how many to bake. Link the school allergen guide.",
       "priority": 73,
-      "status": "draft",
-      "slug": "bake-sale-cupcakes-packaging-pricing-allergen-labels"
+      "status": "scheduled",
+      "slug": "bake-sale-cupcakes-packaging-pricing-allergen-labels",
+      "publishAt": "2026-11-10T10:38:00+02:00"
     },
     {
       "id": "g074",
@@ -856,8 +865,9 @@
       "targetKeyword": "dark vs light pan for cupcakes",
       "notes": "How pan color and material change heat transfer and browning, when to lower the oven temperature for dark pans, how silicone behaves, nonstick versus aluminized steel, mini and jumbo pans.",
       "priority": 77,
-      "status": "draft",
-      "slug": "does-your-cupcake-pan-matter-light-dark-silicone"
+      "status": "scheduled",
+      "slug": "does-your-cupcake-pan-matter-light-dark-silicone",
+      "publishAt": "2026-11-24T13:05:00+02:00"
     },
     {
       "id": "g078",
@@ -866,8 +876,9 @@
       "targetKeyword": "reverse creaming method",
       "notes": "How each method works, the crumb each produces (lighter and domed versus fine and tender), when to choose which, step by step for reverse creaming, common mistakes. Link the creaming guide rather than repeating it.",
       "priority": 78,
-      "status": "draft",
-      "slug": "creaming-vs-reverse-creaming-cupcakes"
+      "status": "scheduled",
+      "slug": "creaming-vs-reverse-creaming-cupcakes",
+      "publishAt": "2026-11-22T10:04:00+02:00"
     },
     {
       "id": "g079",
@@ -876,8 +887,9 @@
       "targetKeyword": "how to halve a cupcake recipe",
       "notes": "Weighing to split an egg, scaling leavening, why baking time barely changes, mixer bowl capacity, how many pans. Include a scaling table.",
       "priority": 79,
-      "status": "draft",
-      "slug": "how-to-halve-or-double-a-cupcake-recipe"
+      "status": "scheduled",
+      "slug": "how-to-halve-or-double-a-cupcake-recipe",
+      "publishAt": "2026-11-26T11:51:00+02:00"
     },
     {
       "id": "g080",
@@ -895,8 +907,9 @@
       "targetKeyword": "egg yolks in cupcakes",
       "notes": "What yolks add (tenderness, richness, color) and what whites add (structure, dryness), the extra-yolk trick, why egg size matters, room temperature eggs. Link the eggy-taste and egg-substitute guides.",
       "priority": 81,
-      "status": "draft",
-      "slug": "egg-yolks-vs-whole-eggs-cupcake-texture"
+      "status": "scheduled",
+      "slug": "egg-yolks-vs-whole-eggs-cupcake-texture",
+      "publishAt": "2026-11-28T12:52:00+02:00"
     },
     {
       "id": "g082",

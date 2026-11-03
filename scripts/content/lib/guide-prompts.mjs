@@ -36,7 +36,9 @@ GUIDE RULES:
 - howToSteps: 5-8 concise actionable steps (for HowTo schema)
 - faq: ${seo.minFaqCount}+ unique Q&A for THIS guide
 - sidebarTitle + sidebarBullets: 4-6 quick reference bullets
-- table: optional comparison table with headers[] and rows[][] (2+ rows) when useful
+- table: optional comparison table with headers[] and rows[][] (2+ rows) when useful.
+  The page shows the table ABOVE the sections, so call it "the table above" or
+  just "the table", never "the table below".
 - relatedLinks: 2-4 internal links {label, href}. Copy each href exactly from the INTERNAL
   PAGES list at the end; choose the pages most useful to someone reading this guide.
   Never write a URL that is not on that list. Fewer good links beat four weak ones.
