@@ -61,14 +61,15 @@ it and resets the clock.
 | Workflow | Cron | Why |
 | --- | --- | --- |
 | `content-publish.yml` | `0 6 * * *` | Publishes items in `content/scheduled/` whose date has arrived. Was hourly, which fired ~720×/month and almost always found nothing — the queue is only ever a handful of items deep. |
+| `content-generate.yml` | manual only | Writes drafts for ideas with status `idea` (guides or recipes) using the repository secrets, and commits them to a `content-drafts/…` branch for review. Checks both API keys first, for free, and stops before any paid call if one is missing or stale. |
 | `seo-and-ping.yml` | `17 3 * * *` | Regenerates SEO files, runs `seo-check` and `astro check`. Also runs on pushes that touch content or scripts, where it additionally pings IndexNow. |
 
 ## Secrets
 
 | Secret | Used by | Notes |
 | --- | --- | --- |
-| `ANTHROPIC_API_KEY` | `content-publish` | Recipe and guide text. |
-| `KIE_API_KEY` | `content-publish` | Image generation. |
+| `ANTHROPIC_API_KEY` | `content-generate` | Recipe and guide text. |
+| `KIE_API_KEY` | `content-generate` | Image generation. |
 | `FAL_KEY` | `content-publish` | Optional image fallback. |
 | `BING_API_KEY` | `seo-and-ping` | Bing Webmaster URL Submission. Skipped with a notice when absent. |
 | `CONTENT_BOT_TOKEN` | `content-publish` | See above — keeps the schedules alive. |

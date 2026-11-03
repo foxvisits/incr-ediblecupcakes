@@ -1,0 +1,99 @@
+name: Content generate (on demand)
+
+# Writes drafts with the API keys kept as repository secrets, so new content
+# can be produced without keys on anyone's machine or in a cloud session.
+# Until November 2026 generation only ran where .env.local existed, and a
+# reset container took the keys with it.
+#
+# Drafts go to their own branch for review. Nothing here approves, schedules
+# or publishes; that happens after someone has read them.
+#
+# Secrets: ANTHROPIC_API_KEY (text), KIE_API_KEY (images).
+on:
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: What to generate from ideas with status "idea"
+        type: choice
+        options: [guides, recipes]
+        default: guides
+      limit:
+        description: Maximum number of drafts
+        default: '40'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: content-generate
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+      KIND: ${{ inputs.kind }}
+      LIMIT: ${{ inputs.limit }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      # Both checks are free. A stale key fails the run here in seconds
+      # instead of after the first paid call.
+      - name: Check API keys
+        run: |
+          fail=0
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::Repository secret ANTHROPIC_API_KEY is not set."; fail=1
+          else
+            code=$(curl -s -o /dev/null -w '%{http_code}' https://api.anthropic.com/v1/models \
+              -H "x-api-key: $ANTHROPIC_API_KEY" -H "anthropic-version: 2023-06-01")
+            if [ "$code" = "200" ]; then echo "ANTHROPIC_API_KEY accepted."
+            else echo "::error::ANTHROPIC_API_KEY was rejected (HTTP $code)."; fail=1; fi
+          fi
+          if [ -z "$KIE_API_KEY" ]; then
+            echo "::error::Repository secret KIE_API_KEY is not set."; fail=1
+          else
+            body=$(curl -s https://api.kie.ai/api/v1/chat/credit -H "Authorization: Bearer $KIE_API_KEY")
+            if echo "$body" | grep -q '"code":401'; then
+              echo "::error::KIE_API_KEY was rejected by kie.ai."; fail=1
+            else
+              echo "KIE_API_KEY accepted. kie.ai says: $(echo "$body" | head -c 200)"
+            fi
+          fi
+          exit $fail
+
+      - name: Generate drafts
+        run: |
+          case "$KIND" in
+            guides)  node --input-type=module -e "const m = await import('./scripts/content/generate-guides.mjs'); await m.cmdGenerateGuides(Number(process.env.LIMIT));" ;;
+            recipes) node scripts/content/cli.mjs generate "$LIMIT" ;;
+            *) echo "::error::Unknown kind: $KIND"; exit 1 ;;
+          esac
+
+      # Reported, not enforced: a draft that fails here still gets committed so
+      # it can be read and fixed on the review branch.
+      - name: Audit the library
+        continue-on-error: true
+        run: node scripts/content/audit.mjs
+
+      - name: Commit drafts to a review branch
+        run: |
+          branch="content-drafts/${KIND}-${GITHUB_RUN_NUMBER}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add -A content
+          if git diff --staged --quiet; then echo "Nothing was generated."; exit 0; fi
+          git commit -m "content: generate ${KIND} drafts [automated]"
+          git push origin "$branch"
+          echo "Drafts are on branch $branch" >> "$GITHUB_STEP_SUMMARY"

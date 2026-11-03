@@ -1540,8 +1540,9 @@
       "category": "seasonal",
       "notes": "Edible flowers for garnish: rose, pansy, lavender",
       "priority": 144,
-      "status": "approved",
-      "slug": "spring-floral-vanilla-cupcakes"
+      "status": "scheduled",
+      "slug": "spring-floral-vanilla-cupcakes",
+      "publishAt": "2027-02-22T12:05:00+02:00"
     },
     {
       "id": "r145",
@@ -1549,8 +1550,9 @@
       "category": "seasonal",
       "notes": "Carrot cake + green piped frosting grass effect",
       "priority": 145,
-      "status": "approved",
-      "slug": "easter-carrot-garden-cupcakes"
+      "status": "scheduled",
+      "slug": "easter-carrot-garden-cupcakes",
+      "publishAt": "2027-03-07T10:45:00+02:00"
     },
     {
       "id": "r146",
@@ -1558,8 +1560,9 @@
       "category": "seasonal",
       "notes": "Raspberry cream swirl + rosewater hint",
       "priority": 146,
-      "status": "approved",
-      "slug": "mothers-day-raspberry-rose-cupcakes"
+      "status": "scheduled",
+      "slug": "mothers-day-raspberry-rose-cupcakes",
+      "publishAt": "2027-04-18T13:10:00+02:00"
     },
     {
       "id": "r147",
@@ -1567,8 +1570,9 @@
       "category": "seasonal",
       "notes": "Red + blue berry swirl frosting pattern",
       "priority": 147,
-      "status": "approved",
-      "slug": "4th-of-july-berry-swirl-cupcakes"
+      "status": "scheduled",
+      "slug": "4th-of-july-berry-swirl-cupcakes",
+      "publishAt": "2027-06-14T12:25:00+02:00"
     },
     {
       "id": "r148",
@@ -1576,8 +1580,9 @@
       "category": "seasonal",
       "notes": "Fresh lemon frosting swirl + zest",
       "priority": 148,
-      "status": "approved",
-      "slug": "summer-lemonade-cupcakes"
+      "status": "scheduled",
+      "slug": "summer-lemonade-cupcakes",
+      "publishAt": "2027-06-03T11:35:00+02:00"
     },
     {
       "id": "r149",
@@ -1585,8 +1590,9 @@
       "category": "seasonal",
       "notes": "Light peach frosting swirl + sliced peach garnish",
       "priority": 149,
-      "status": "approved",
-      "slug": "peach-picnic-cupcakes"
+      "status": "scheduled",
+      "slug": "peach-picnic-cupcakes",
+      "publishAt": "2027-06-21T10:55:00+02:00"
     },
     {
       "id": "r150",
@@ -1647,8 +1653,9 @@
       "category": "seasonal",
       "notes": "Pink strawberry swirl + chocolate cake",
       "priority": 155,
-      "status": "approved",
-      "slug": "valentines-strawberry-chocolate-cupcakes"
+      "status": "scheduled",
+      "slug": "valentines-strawberry-chocolate-cupcakes",
+      "publishAt": "2027-01-20T11:20:00+02:00"
     },
     {
       "id": "r156",
@@ -1666,8 +1673,9 @@
       "category": "seasonal",
       "notes": "Graham-style crumb nut-free, chocolate cake + toasted marshmallow",
       "priority": 157,
-      "status": "approved",
-      "slug": "smores-summer-cupcakes"
+      "status": "scheduled",
+      "slug": "smores-summer-cupcakes",
+      "publishAt": "2027-06-28T14:15:00+02:00"
     },
     {
       "id": "r158",

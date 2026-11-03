@@ -228,7 +228,13 @@ export function cmdImportGuideIdeas() {
 
   // Match on slug, not title: a published guide's title is rewritten by the
   // generator, so comparing titles would re-import everything every run.
-  const seen = new Set(data.ideas.map((i) => slugify(i.slug || i.title)));
+  // Both the published slug and the imported title: the generator usually
+  // renames the slug ("Batch Baking: How to Bake 24+ Cupcakes at Once" was
+  // published as batch-baking-24-cupcakes-at-once), so checking the slug alone
+  // re-imported four published guides as new ideas.
+  const seen = new Set(
+    data.ideas.flatMap((i) => [i.slug, i.title].filter(Boolean).map((v) => slugify(v))),
+  );
   let added = 0;
 
   for (const item of parsed) {
