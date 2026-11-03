@@ -20,17 +20,35 @@ clock ran out.
 
 Set a repository secret named **`CONTENT_BOT_TOKEN`** to a fine-grained
 personal access token scoped to this repo with **Contents: read and write**.
-`content-publish.yml` already prefers it over `GITHUB_TOKEN`:
-
-```yaml
-token: ${{ secrets.CONTENT_BOT_TOKEN || secrets.GITHUB_TOKEN }}
-```
+`content-publish.yml` tests it at the start of every run and uses it when GitHub
+accepts it.
 
 Pushes authenticated with a PAT are attributed to a user account and *do* count
 as activity, so an actively publishing pipeline keeps its own schedules alive.
 
-Note that fine-grained PATs expire (max one year). Put the expiry in your
-calendar — a silently expired token turns the publish step into a failing push.
+### When the token expires
+
+Fine-grained PATs expire, and the default lifetime is short. The first one
+expired on 1 November 2026, and because the checkout step used it directly,
+every run failed before it could publish anything.
+
+The workflow now handles this itself:
+
+| Token state | What the run does |
+| --- | --- |
+| accepted | Publishes with the PAT. Normal. |
+| rejected (expired, revoked, no access) | Publishes with `GITHUB_TOKEN`, then **fails** with a message saying to renew the token. |
+| not set | Publishes with `GITHUB_TOKEN`, with a warning. |
+| GitHub API unreachable | Publishes with `GITHUB_TOKEN`, with a warning. |
+
+The deliberate failure is what sends the email. Content keeps going out, but
+pushes made with `GITHUB_TOKEN` do not count as activity, so a token left
+expired for 60 days still ends with the schedules disabled.
+
+To renew: **GitHub → Settings → Developer settings → Personal access tokens →
+Fine-grained tokens**, open the expired token, **Regenerate**, pick the longest
+expiry offered, then paste the new value into the repository secret
+`CONTENT_BOT_TOKEN`. Put the new expiry date in a calendar.
 
 ### If a workflow is already disabled
 
