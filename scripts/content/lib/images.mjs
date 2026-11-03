@@ -65,8 +65,12 @@ export async function generateImageKie({ prompt, model, outputPath }) {
   const taskId = createData.data?.taskId || createData.taskId || createData.data?.task_id;
   if (!taskId) throw new Error('Kie: no taskId in response: ' + JSON.stringify(createData));
 
-  for (let i = 0; i < 90; i++) {
-    await sleep(3000);
+  // The task is paid for once created, so waiting is cheaper than starting
+  // over. The old 4.5 minutes ran out repeatedly while kie.ai was busy
+  // (November 2026), so allow 10.
+  const deadline = Date.now() + 10 * 60 * 1000;
+  while (Date.now() < deadline) {
+    await sleep(5000);
     const statusRes = await fetch(`${KIE_STATUS}?taskId=${encodeURIComponent(taskId)}`, {
       headers: { Authorization: `Bearer ${apiKey}` },
     });

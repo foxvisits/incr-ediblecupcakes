@@ -40,6 +40,63 @@ function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
+// kie.ai goes through stretches of HTTP 500 and 503 ("Resources are tight")
+// that last minutes, not seconds. In November 2026 a batch retried at once,
+// so all three attempts failed within seconds and 20 of 32 guides were lost.
+// A service error now waits before trying again, and does not use up one of
+// the attempts meant for output that fails validation.
+const SERVICE_WAITS_S = [30, 90, 180, 300];
+
+async function writeGuideText(idea, config, existingTitles, linkablePages) {
+  const maxAttempts = (config.workflow?.maxRetries ?? 2) + 1;
+  let attempt = 0;
+  let serviceErrors = 0;
+  let lastProblem = '';
+
+  while (attempt < maxAttempts) {
+    const prompt = buildGuidePrompt(idea, config, existingTitles, linkablePages);
+    let raw;
+    try {
+      raw = await generateText({ prompt, config });
+    } catch (err) {
+      if (serviceErrors >= SERVICE_WAITS_S.length) throw err;
+      const wait = SERVICE_WAITS_S[serviceErrors++];
+      console.warn(`  ⚠️  ${idea.id}: ${err.message}. Waiting ${wait}s.`);
+      await sleep(wait * 1000);
+      continue;
+    }
+
+    attempt++;
+    let parsed;
+    try {
+      parsed = sanitizeDeep(extractJson(raw));
+    } catch (err) {
+      lastProblem = `unreadable JSON (${err.message})`;
+      console.warn(`  ⚠️  ${idea.id} attempt ${attempt}: ${lastProblem}`);
+      continue;
+    }
+
+    if (!parsed.slug) parsed.slug = generateSlug(parsed.title || idea.title);
+    parsed.contentIdeaId = idea.id;
+    parsed.category = idea.category || parsed.category;
+    parsed.targetKeyword = idea.targetKeyword || idea.notes;
+    attachGuideImagePaths(parsed, config);
+
+    const links = keepLinkable(parsed.relatedLinks, linkablePages, `/guides/${parsed.slug}`);
+    if (links.dropped.length) console.warn(`  ⚠️  dropped related links to unknown pages: ${links.dropped.join(', ')}`);
+    parsed.relatedLinks = links.kept;
+
+    const voiceErrors = validateHumanVoice(parsed);
+    const { valid, errors, warnings } = validateGuideDraft(parsed, config);
+    if (warnings.length) warnings.forEach((w) => console.warn(`  ⚠️  ${w}`));
+    if (valid && !voiceErrors.length) return parsed;
+
+    lastProblem = [...errors, ...voiceErrors].join('; ');
+    console.warn(`  ⚠️  ${idea.id} attempt ${attempt} failed validation: ${lastProblem}`);
+  }
+  throw new Error(`Validation failed: ${lastProblem}`);
+}
+
 export async function cmdGenerateGuides(countArg) {
   ensureDirs();
   const config = loadConfig();
@@ -62,68 +119,27 @@ export async function cmdGenerateGuides(countArg) {
   const linkablePages = loadLinkablePages();
 
   for (const idea of pending) {
-    const maxRetries = config.workflow?.maxRetries ?? 2;
-    let attempt = 0;
-    let succeeded = false;
+    console.log(`→ ${idea.id}: ${idea.title}`);
+    updateGuideIdeaStatus(ideasData, idea.id, 'generating');
+    saveGuideIdeas(ideasData);
 
-    while (attempt <= maxRetries && !succeeded) {
-      attempt++;
-      try {
-        if (attempt === 1) {
-          updateGuideIdeaStatus(ideasData, idea.id, 'generating');
-          saveGuideIdeas(ideasData);
-        } else {
-          console.log(`  🔁 Retry ${attempt - 1}/${maxRetries}...`);
-        }
+    try {
+      const parsed = await writeGuideText(idea, config, existingTitles, linkablePages);
+      // Images have their own retries; a failure there no longer costs the text.
+      await generateGuideImages(parsed, config, { reuseExisting: true });
 
-        const prompt = buildGuidePrompt(idea, config, existingTitles, linkablePages);
-        if (attempt === 1) console.log(`→ ${idea.id}: ${idea.title}`);
-
-        const raw = await generateText({ prompt, config });
-        let parsed = sanitizeDeep(extractJson(raw));
-
-        if (!parsed.slug) parsed.slug = generateSlug(parsed.title || idea.title);
-        parsed.contentIdeaId = idea.id;
-        parsed.category = idea.category || parsed.category;
-        parsed.targetKeyword = idea.targetKeyword || idea.notes;
-        attachGuideImagePaths(parsed, config);
-
-        const links = keepLinkable(parsed.relatedLinks, linkablePages, `/guides/${parsed.slug}`);
-        if (links.dropped.length) console.warn(`  ⚠️  dropped related links to unknown pages: ${links.dropped.join(', ')}`);
-        parsed.relatedLinks = links.kept;
-
-        const voiceErrors = validateHumanVoice(parsed);
-        const { valid, errors, warnings } = validateGuideDraft(parsed, config);
-        const allErrors = [...errors, ...voiceErrors];
-        if (warnings.length) warnings.forEach((w) => console.warn(`  ⚠️  ${w}`));
-        if (!valid || voiceErrors.length) {
-          if (attempt <= maxRetries) continue;
-          console.error(`  ❌ Validation failed:`, allErrors.join('; '));
-          updateGuideIdeaStatus(ideasData, idea.id, 'failed', { error: allErrors.join('; ') });
-          saveGuideIdeas(ideasData);
-          break;
-        }
-
-        await generateGuideImages(parsed, config);
-
-        writeJson(path.join(GUIDE_DRAFTS, `${idea.id}.json`), parsed);
-        updateGuideIdeaStatus(ideasData, idea.id, 'draft', { slug: parsed.slug });
-        saveGuideIdeas(ideasData);
-
-        console.log(`  ✅ Guide draft: content/guide-drafts/${idea.id}.json`);
-        existingTitles.push(parsed.title);
-        succeeded = true;
-
-        await sleep(config.generation.delayBetweenMs ?? 3000);
-      } catch (err) {
-        // Say why before retrying: in a CI log a silent retry looks like a hang.
-        console.warn(`  ⚠️  ${idea.id} attempt ${attempt} failed: ${err.message}`);
-        if (attempt <= maxRetries) continue;
-        console.error(`  ❌ ${idea.id} failed:`, err.message);
-        updateGuideIdeaStatus(ideasData, idea.id, 'failed', { error: err.message });
-        saveGuideIdeas(ideasData);
-      }
+      writeJson(path.join(GUIDE_DRAFTS, `${idea.id}.json`), parsed);
+      updateGuideIdeaStatus(ideasData, idea.id, 'draft', { slug: parsed.slug, error: undefined });
+      saveGuideIdeas(ideasData);
+      console.log(`  ✅ Guide draft: content/guide-drafts/${idea.id}.json`);
+      existingTitles.push(parsed.title);
+    } catch (err) {
+      console.error(`  ❌ ${idea.id} failed:`, err.message);
+      updateGuideIdeaStatus(ideasData, idea.id, 'failed', { error: err.message });
+      saveGuideIdeas(ideasData);
     }
+
+    await sleep(config.generation.delayBetweenMs ?? 3000);
   }
 
   console.log('\nGuides done.\n');
