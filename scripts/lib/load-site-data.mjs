@@ -29,8 +29,7 @@ export async function loadSiteData() {
     });
     return acc;
   }, {});
-  const qualifiedTags = Object.keys(tagCounts).filter((tag) => tagCounts[tag] >= 2);
-  const sitemapTags = getSitemapTags(qualifiedTags);
+  const sitemapTags = getSitemapTags(tagCounts);
 
-  return { validatedRecipes, guides, SITE_IMAGES, sitemapTags, qualifiedTags };
+  return { validatedRecipes, guides, SITE_IMAGES, sitemapTags, tagCount: Object.keys(tagCounts).length };
 }

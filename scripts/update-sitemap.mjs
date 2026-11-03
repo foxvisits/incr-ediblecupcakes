@@ -9,7 +9,7 @@ const data = await loadSiteData();
 console.log(`✅ Sitemap updated with ${entries.length} URLs`);
 console.log(`   - ${data.validatedRecipes.length} recipe pages`);
 console.log(
-  `   - ${data.sitemapTags.length} tag pages in sitemap (${data.qualifiedTags.length - data.sitemapTags.length} category-dupe tags excluded)`,
+  `   - ${data.sitemapTags.length} tag pages in sitemap (of ${data.tagCount}; the rest are noindex)`,
 );
 console.log(`   - ${data.guides.length} guide pages`);
 console.log(`   - Current date: ${new Date().toISOString().split('T')[0]}`);

@@ -8,6 +8,7 @@ import {
   getTagIntro,
   getTagFaq,
   isCategoryDuplicateTag,
+  isIndexableTag,
 } from '../../data/tagContent';
 
 export async function getStaticPaths() {
@@ -22,10 +23,10 @@ const normalized = (tag || '').toLowerCase();
 const taggedRecipes = recipes.filter((r) =>
   r.tags?.map((t) => t.toLowerCase()).includes(normalized)
 );
-const thinTag = taggedRecipes.length < 2;
 const tagIntro = getTagIntro(normalized, taggedRecipes.length);
 const tagFaq = getTagFaq(normalized);
 const isCategoryDup = isCategoryDuplicateTag(normalized);
+const indexable = isIndexableTag(normalized, taggedRecipes.length);
 
 const faqSchema =
   tagFaq.length > 0
@@ -63,7 +64,7 @@ const schemaData = {
   title={`${tag} Cupcake Recipes | Incr-EdibleCupCakes`}
   description={tagIntro.slice(0, 155)}
   canonical={`https://incr-ediblecupcakes.com/tags/${tag}`}
-  robots={thinTag || isCategoryDup ? 'noindex, follow' : undefined}
+  robots={indexable ? undefined : 'noindex, follow'}
 >
   <Fragment slot="head">
     {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}

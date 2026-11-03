@@ -9,14 +9,44 @@ export const CATEGORY_SLUGS = new Set([
   'tropical',
   'spiced',
   'seasonal',
+  'dairy-free',
 ]);
 
 export function isCategoryDuplicateTag(tag: string): boolean {
   return CATEGORY_SLUGS.has(tag.toLowerCase());
 }
 
-export function getSitemapTags(qualifiedTags: string[]): string[] {
-  return qualifiedTags.filter((tag) => !isCategoryDuplicateTag(tag));
+/**
+ * A tag page belongs in the index only when it is a real hub.
+ *
+ * Search Console (November 2026) listed 80 tag pages in the sitemap. Two of
+ * them earned an impression in three months, and 68 sat in "Discovered,
+ * currently not indexed" next to 118 recipes and guides that Google had not
+ * crawled either. A young site gets a small crawl allowance, and every short
+ * tag listing Google is asked to fetch is a recipe it does not fetch. Below
+ * this many recipes a tag page is a few cards the recipe pages already link,
+ * so it stays reachable for readers but leaves the index and the sitemap.
+ */
+export const MIN_INDEXABLE_TAG_RECIPES = 8;
+
+/** Tags that are an existing hub page under another name. */
+const HUB_DUPLICATE_TAGS = new Set([
+  'low-carb', // 81% the same recipes as /categories/keto
+  'cupcakes', // every recipe on the site, which /recipes already lists
+]);
+
+export function isIndexableTag(tag: string, recipeCount: number): boolean {
+  const key = tag.toLowerCase();
+  return (
+    recipeCount >= MIN_INDEXABLE_TAG_RECIPES &&
+    !isCategoryDuplicateTag(key) &&
+    !HUB_DUPLICATE_TAGS.has(key)
+  );
+}
+
+/** Tags whose pages go in the sitemap: exactly the ones the page marks indexable. */
+export function getSitemapTags(tagCounts: Record<string, number>): string[] {
+  return Object.keys(tagCounts).filter((tag) => isIndexableTag(tag, tagCounts[tag]));
 }
 
 /** Unique intros for tag hub pages — angle differs from category pages. */
