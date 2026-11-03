@@ -180,8 +180,10 @@ function checkGithubWorkflow() {
   const wf = path.join(ROOT, '.github/workflows/content-publish.yml');
   const text = fs.readFileSync(wf, 'utf8');
   let pass = true;
-  if (!text.includes("cron: '0 * * * *'")) pass = fail('GitHub Action missing hourly cron');
-  else ok('GitHub Action: hourly cron');
+  // Daily since August 2026; the hourly cron this used to require fired ~720
+  // times a month to find nothing. Any schedule will do.
+  if (!/^\s*- cron: '[^']+'/m.test(text)) pass = fail('GitHub Action has no cron schedule');
+  else ok('GitHub Action: scheduled');
 
   if (!text.includes('content:publish-due')) pass = fail('Workflow missing publish-due');
   else ok('GitHub Action: runs publish-due');
@@ -189,7 +191,8 @@ function checkGithubWorkflow() {
   if (!text.includes('guides/generated')) pass = fail('Workflow git add missing guides/generated');
   else ok('GitHub Action: commits guide generated JSON');
 
-  if (!text.includes('llms.txt')) pass = fail('Workflow git add missing llms.txt');
+  // `git add ... public` covers public/llms.txt, so either form passes.
+  if (!/git add[^\n]*(\bpublic\b|llms\.txt)/.test(text)) pass = fail('Workflow git add missing llms.txt');
   else ok('GitHub Action: commits llms.txt');
 
   return pass;
