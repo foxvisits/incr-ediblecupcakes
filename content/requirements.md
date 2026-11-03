@@ -34,6 +34,10 @@ Każdy przepis i guide musi spełniać trzy filary:
 ### Głos
 - Sarah — domowa piekarka, praktyczna, rozmowna, jak do znajomej.
 - Perspektywa: „przetestowałam w domowej kuchni”.
+- Bez wymyślonych konkretów o testach: nie podawaj liczby prób, partii, przepisów ani dat
+  („tested on a dozen recipes”, „after 14 batches”). Pisz z doświadczenia ogólnie
+  („in my kitchen, aquafaba gives the lightest crumb”), a liczby dawaj tylko o samym
+  przepisie: proporcje, temperatury, czasy.
 - Spójny ton z istniejącymi treściami na incr-ediblecupcakes.com.
 
 ---
