@@ -52,12 +52,27 @@ export async function generateTextAnthropic({ prompt, model, maxTokens = 16000, 
   return block.text;
 }
 
-export async function generateTextKie({ prompt, model }) {
-  const apiKey = process.env.KIE_API_KEY;
-  if (!apiKey) throw new Error('Set KIE_API_KEY in .env for kie text provider');
+const KIE_CLAUDE_URL = 'https://api.kie.ai/claude/v1/messages';
 
-  // Kie unified chat-style endpoint (OpenAI-compatible pattern used by many Kie LLM models)
-  const res = await fetch('https://api.kie.ai/v1/chat/completions', {
+/**
+ * Claude through kie.ai, for an account with a kie.ai balance and no
+ * Anthropic one. kie.ai serves Anthropic's Messages format at its own URL,
+ * with differences its model pages describe (November 2026):
+ *   - auth is `Authorization: Bearer <key>`, not x-api-key;
+ *   - responses stream unless `stream: false` is sent;
+ *   - thinking is a boolean `thinkingFlag`, with no effort setting;
+ *   - max_tokens defaults to 4096, too few for a guide, so it is always sent.
+ * kie.ai can report errors as HTTP 200 with a `code`/`msg` body, so the body
+ * is checked as well as the status.
+ *
+ * The previous version of this function called an OpenAI-style
+ * /v1/chat/completions URL that kie.ai does not serve. It had never run.
+ */
+export async function generateTextKie({ prompt, model, maxTokens = 16000, thinking = true }) {
+  const apiKey = process.env.KIE_API_KEY;
+  if (!apiKey) throw new Error('Set KIE_API_KEY for the kie text provider');
+
+  const res = await fetch(KIE_CLAUDE_URL, {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${apiKey}`,
@@ -65,26 +80,55 @@ export async function generateTextKie({ prompt, model }) {
     },
     body: JSON.stringify({
       model,
+      max_tokens: maxTokens,
+      stream: false,
+      thinkingFlag: thinking,
       messages: [{ role: 'user', content: prompt }],
-      temperature: 0.7,
     }),
   });
 
-  if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`Kie LLM error ${res.status}: ${err}. Tip: set textProvider to "anthropic" in content/config.json`);
+  const raw = await res.text();
+  let data;
+  try {
+    data = JSON.parse(raw);
+  } catch {
+    throw new Error(`kie.ai text: non-JSON response (HTTP ${res.status}): ${raw.slice(0, 300)}`);
   }
 
-  const data = await res.json();
-  const text = data.choices?.[0]?.message?.content;
-  if (!text) throw new Error('No text in Kie LLM response');
+  // A bare { code, msg } envelope is an error even under HTTP 200.
+  const message = data.content ? data : data.data;
+  if (!res.ok || !message?.content) {
+    const detail = data.msg ?? data.error?.message ?? raw.slice(0, 300);
+    throw new Error(`kie.ai text error (HTTP ${res.status}, code ${data.code ?? '-'}): ${detail}`);
+  }
+
+  if (message.stop_reason === 'max_tokens') {
+    throw new Error(
+      `kie.ai response hit max_tokens (${maxTokens}) before finishing. ` +
+        `Raise generation.maxTokens in content/config.json.`,
+    );
+  }
+  if (message.stop_reason === 'refusal') {
+    throw new Error('kie.ai: the model declined this prompt.');
+  }
+
+  const text = message.content
+    .filter((b) => b.type === 'text')
+    .map((b) => b.text)
+    .join('');
+  if (!text) throw new Error(`No text in kie.ai response: ${raw.slice(0, 300)}`);
   return text;
 }
 
 export async function generateText({ prompt, config }) {
   const gen = config.generation;
   if (gen.textProvider === 'kie') {
-    return generateTextKie({ prompt, model: gen.kieTextModel });
+    return generateTextKie({
+      prompt,
+      model: gen.kieTextModel,
+      maxTokens: gen.maxTokens,
+      thinking: gen.kieThinking !== false,
+    });
   }
   return generateTextAnthropic({
     prompt,

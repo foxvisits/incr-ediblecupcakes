@@ -17,11 +17,11 @@
     "$startDate": "Bump this when starting a new run. The scheduler refuses to schedule into the past regardless."
   },
   "generation": {
-    "textProvider": "anthropic",
+    "textProvider": "kie",
     "textModel": "claude-sonnet-5",
     "maxTokens": 16000,
     "effort": "medium",
-    "kieTextModel": "claude-sonnet-4-6",
+    "kieTextModel": "claude-sonnet-5-5",
     "imageProvider": "kie",
     "kieImageModel": "nano-banana-2",
     "falImageModel": "fal-ai/nano-banana-pro",
@@ -30,7 +30,9 @@
     "imagesPerRecipe": 3,
     "imagesPerGuide": 3,
     "$imageStyle": "Single source of truth for the look of every generated photo. Used both in the generation prompt (so the model writes on-style prompts) and as the fallback when it does not. Change it here, not in the scripts.",
-    "imageStyle": "bright pastel bakery aesthetic, tall swirled frosting piped high, soft even daylight, pastel background (cream, blush pink, butter yellow, or pale aqua chosen to flatter the flavour), clean minimal props, shallow depth of field, no text, no hands, no logos"
+    "imageStyle": "bright pastel bakery aesthetic, tall swirled frosting piped high, soft even daylight, pastel background (cream, blush pink, butter yellow, or pale aqua chosen to flatter the flavour), clean minimal props, shallow depth of field, no text, no hands, no logos",
+    "kieThinking": true,
+    "$textProvider": "\"kie\" sends text generation through kie.ai (Claude via its Messages endpoint, billed to the kie.ai balance). \"anthropic\" uses ANTHROPIC_API_KEY directly with textModel."
   },
   "seo": {
     "minFaqCount": 3,

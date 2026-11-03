@@ -116,6 +116,8 @@ export async function cmdGenerateGuides(countArg) {
 
         await sleep(config.generation.delayBetweenMs ?? 3000);
       } catch (err) {
+        // Say why before retrying: in a CI log a silent retry looks like a hang.
+        console.warn(`  ⚠️  ${idea.id} attempt ${attempt} failed: ${err.message}`);
         if (attempt <= maxRetries) continue;
         console.error(`  ❌ ${idea.id} failed:`, err.message);
         updateGuideIdeaStatus(ideasData, idea.id, 'failed', { error: err.message });

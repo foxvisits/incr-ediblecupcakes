@@ -8,7 +8,8 @@ name: Content generate (on demand)
 # Drafts go to their own branch for review. Nothing here approves, schedules
 # or publishes; that happens after someone has read them.
 #
-# Secrets: ANTHROPIC_API_KEY (text), KIE_API_KEY (images).
+# Secrets: KIE_API_KEY (images, and text when textProvider is "kie"),
+# ANTHROPIC_API_KEY (text, only when textProvider is "anthropic").
 on:
   workflow_dispatch:
     inputs:
@@ -47,19 +48,15 @@ jobs:
 
       - run: npm ci
 
-      # Both checks are free. A stale key fails the run here in seconds
-      # instead of after the first paid call.
+      # A stale key fails the run here in seconds, before anything is paid for.
+      # Text goes through kie.ai or Anthropic depending on content/config.json;
+      # only the provider in use needs a key.
       - name: Check API keys
         run: |
           fail=0
-          if [ -z "$ANTHROPIC_API_KEY" ]; then
-            echo "::error::Repository secret ANTHROPIC_API_KEY is not set."; fail=1
-          else
-            code=$(curl -s -o /dev/null -w '%{http_code}' https://api.anthropic.com/v1/models \
-              -H "x-api-key: $ANTHROPIC_API_KEY" -H "anthropic-version: 2023-06-01")
-            if [ "$code" = "200" ]; then echo "ANTHROPIC_API_KEY accepted."
-            else echo "::error::ANTHROPIC_API_KEY was rejected (HTTP $code)."; fail=1; fi
-          fi
+          provider=$(node -p "require('./content/config.json').generation.textProvider")
+          model=$(node -p "require('./content/config.json').generation.kieTextModel")
+
           if [ -z "$KIE_API_KEY" ]; then
             echo "::error::Repository secret KIE_API_KEY is not set."; fail=1
           else
@@ -68,6 +65,28 @@ jobs:
               echo "::error::KIE_API_KEY was rejected by kie.ai."; fail=1
             else
               echo "KIE_API_KEY accepted. kie.ai says: $(echo "$body" | head -c 200)"
+            fi
+          fi
+
+          if [ "$provider" = "anthropic" ]; then
+            if [ -z "$ANTHROPIC_API_KEY" ]; then
+              echo "::error::textProvider is anthropic but ANTHROPIC_API_KEY is not set."; fail=1
+            else
+              code=$(curl -s -o /dev/null -w '%{http_code}' https://api.anthropic.com/v1/models \
+                -H "x-api-key: $ANTHROPIC_API_KEY" -H "anthropic-version: 2023-06-01")
+              if [ "$code" = "200" ]; then echo "ANTHROPIC_API_KEY accepted."
+              else echo "::error::ANTHROPIC_API_KEY was rejected (HTTP $code)."; fail=1; fi
+            fi
+          elif [ "$fail" = "0" ]; then
+            # One tiny real request (a few tokens) proves the endpoint, auth and
+            # model name before any image is paid for.
+            body=$(curl -s --max-time 120 https://api.kie.ai/claude/v1/messages \
+              -H "Authorization: Bearer $KIE_API_KEY" -H "Content-Type: application/json" \
+              -d "{\"model\":\"$model\",\"max_tokens\":32,\"stream\":false,\"messages\":[{\"role\":\"user\",\"content\":\"Reply with the word OK.\"}]}")
+            if echo "$body" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{const j=JSON.parse(s);const m=j.content?j:j.data;process.exit(m&&Array.isArray(m.content)&&m.content.some(b=>b.type==="text")?0:1)}catch{process.exit(1)}})'; then
+              echo "kie.ai text ($model) works."
+            else
+              echo "::error::kie.ai text request failed for model $model: $(echo "$body" | head -c 400)"; fail=1
             fi
           fi
           exit $fail
