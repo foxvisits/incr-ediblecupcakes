@@ -641,7 +641,8 @@
       "targetKeyword": "nut free cupcakes",
       "notes": "For baking for someone with a nut allergy: reading 'may contain' versus 'made in a facility' labels, hidden nut sources (almond extract, marzipan, praline, some sprinkles and chocolates), swaps for almond flour and nut milks, cleaning tools and surfaces to avoid cross-contact. No medical advice; tell readers to confirm with the person or their allergist. Link the nut-free recipes and the school allergen guide.",
       "priority": 54,
-      "status": "idea"
+      "status": "draft",
+      "slug": "nut-free-cupcake-baking-labels-swaps-cross-contact"
     },
     {
       "id": "g055",
@@ -650,7 +651,8 @@
       "targetKeyword": "best sweetener for keto cupcakes",
       "notes": "Compare sweetness relative to sugar, browning, cooling aftertaste, recrystallization in frosting, moisture and texture, digestive tolerance. Include a conversion table and which sweetener to use in batter versus frosting.",
       "priority": 55,
-      "status": "idea"
+      "status": "draft",
+      "slug": "keto-sweeteners-for-cupcakes-erythritol-vs-allulose-vs-monk-fruit"
     },
     {
       "id": "g056",
@@ -659,7 +661,8 @@
       "targetKeyword": "almond flour vs coconut flour cupcakes",
       "notes": "Why they cannot be swapped 1:1: coconut flour absorbs far more liquid, so it needs more eggs and liquid. Substitution ratios, blanched almond flour vs almond meal, texture outcomes, common failures (dry, gritty, eggy) and how to spot them.",
       "priority": 56,
-      "status": "idea"
+      "status": "failed",
+      "error": "Kie image generation timed out"
     },
     {
       "id": "g057",
@@ -668,7 +671,8 @@
       "targetKeyword": "vegan buttercream",
       "notes": "Block plant butter vs tub spread vs vegetable shortening (water content decides stability), temperature control, aquafaba meringue buttercream as an option, ratios, chilling between piping. Troubleshoot greasy, split and soft frosting.",
       "priority": 57,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-make-vegan-buttercream-that-holds-a-swirl"
     },
     {
       "id": "g058",
@@ -677,7 +681,8 @@
       "targetKeyword": "types of frosting for cupcakes",
       "notes": "A comparison hub: American buttercream, Swiss meringue, Italian meringue, French buttercream, ermine (flour) frosting, cream cheese, stabilized whipped cream, seven-minute frosting and ganache. Compare sweetness, stability at room temperature, difficulty and piping performance in a table. Link the detailed frosting guides on the site.",
       "priority": 58,
-      "status": "idea"
+      "status": "draft",
+      "slug": "types-of-frosting-for-cupcakes-compared"
     },
     {
       "id": "g059",
@@ -686,7 +691,8 @@
       "targetKeyword": "pipeable cream cheese frosting",
       "notes": "Why cream cheese frosting goes runny: tub vs block cream cheese, overbeating, warm cream cheese, too much liquid. Fix with cold block cream cheese and softened butter, the order of mixing, sugar ratio, chilling. Distinct from general frosting fixes: stay on cream cheese.",
       "priority": 59,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 503, code -): Resources are tight, please try again later."
     },
     {
       "id": "g060",
@@ -695,7 +701,8 @@
       "targetKeyword": "ganache ratio for cupcakes",
       "notes": "Chocolate to cream ratios for drips, fillings, glazes and whipped ganache, how dark, milk and white chocolate change the ratio, temperature for a clean drip, how to whip ganache, how to fix split or grainy ganache. Include a ratio table.",
       "priority": 60,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 503, code -): Resources are tight, please try again later."
     },
     {
       "id": "g061",
@@ -704,7 +711,8 @@
       "targetKeyword": "stabilized whipped cream frosting",
       "notes": "Compare stabilizers: gelatin, mascarpone, cream cheese, instant pudding mix, cornstarch or powdered milk. How long each holds, how to pipe it, storage and warm-weather limits.",
       "priority": 61,
-      "status": "idea"
+      "status": "draft",
+      "slug": "stabilized-whipped-cream-frosting-for-cupcakes"
     },
     {
       "id": "g062",
@@ -713,7 +721,8 @@
       "targetKeyword": "frosting vs icing",
       "notes": "Clear definitions and how US and UK usage differ, consistency of each, which to use on cupcakes and when, royal icing for decorations, basic glaze ratios. Short and direct.",
       "priority": 62,
-      "status": "idea"
+      "status": "draft",
+      "slug": "frosting-vs-icing-vs-glaze-difference"
     },
     {
       "id": "g063",
@@ -722,7 +731,8 @@
       "targetKeyword": "how much frosting for 24 cupcakes",
       "notes": "Amounts per cupcake and per dozen for a thin spread, a standard swirl and a tall bakery swirl, in cups and grams. How piping tip size changes the amount, a scaling table for 12, 24 and 48 cupcakes, and how much to make extra.",
       "priority": 63,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 500, code -): Server exception, please try again later"
     },
     {
       "id": "g064",
@@ -731,7 +741,8 @@
       "targetKeyword": "how to frost cupcakes without a piping bag",
       "notes": "Offset spatula swirl, spoon-back swirl, dip method for glaze and ganache, zip-top bag substitute, rolling the frosted edge in sprinkles or crumbs. Step by step for each finish.",
       "priority": 64,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-frost-cupcakes-without-a-piping-bag"
     },
     {
       "id": "g065",
@@ -740,7 +751,8 @@
       "targetKeyword": "types of sprinkles",
       "notes": "Jimmies, nonpareils, sanding sugar, sugar pearls and quins and how each behaves. Why colors bleed into frosting (moisture and timing) and how to prevent it, when to add sprinkles, naturally colored options, storage.",
       "priority": 65,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
     },
     {
       "id": "g066",
@@ -749,7 +761,8 @@
       "targetKeyword": "chocolate decorations for cupcakes",
       "notes": "Chocolate curls with a vegetable peeler, shards and bark, piped chocolate shapes on parchment, a quick tempering shortcut, and how to keep decorations from melting or blooming.",
       "priority": 66,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
     },
     {
       "id": "g067",
@@ -758,7 +771,8 @@
       "targetKeyword": "cupcake bouquet",
       "notes": "Container and foam base, attaching cupcakes with toothpicks, piping flower swirls with 1M and 2D tips, tissue paper fillers, how many cupcakes per size of bouquet, moving it safely.",
       "priority": 67,
-      "status": "idea"
+      "status": "failed",
+      "error": "Kie image generation timed out"
     },
     {
       "id": "g068",
@@ -767,7 +781,8 @@
       "targetKeyword": "pull apart cupcake cake",
       "notes": "Planning the layout for shapes and numbers, how many cupcakes each design needs, frosting across the tops so it reads as one cake, choosing a board, serving it cleanly.",
       "priority": 68,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
     },
     {
       "id": "g069",
@@ -776,7 +791,8 @@
       "targetKeyword": "cupcake tower",
       "notes": "Stand types, how many cupcakes each tier holds, loading order, keeping it stable, assembling on site after transport, filling gaps with decorations.",
       "priority": 69,
-      "status": "idea"
+      "status": "failed",
+      "error": "Kie image generation timed out"
     },
     {
       "id": "g070",
@@ -785,7 +801,8 @@
       "targetKeyword": "how many cupcakes per person",
       "notes": "Per-guest estimates for kids parties, weddings, office events and dessert tables with other sweets, mini versus standard sizes, how much buffer to add, worked examples for 25, 50 and 100 guests.",
       "priority": 70,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
     },
     {
       "id": "g071",
@@ -794,7 +811,8 @@
       "targetKeyword": "how to transport cupcakes",
       "notes": "Carriers with inserts, a homemade box insert, chilling before the trip, which frostings travel well, where to put them in the car, hot-weather precautions. Link the hot-weather frosting guide.",
       "priority": 71,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
     },
     {
       "id": "g072",
@@ -803,7 +821,8 @@
       "targetKeyword": "high tea cupcakes",
       "notes": "Mini and petite sizes, delicate flavors that suit tea (Earl Grey, lemon, rose, elderflower, lavender), lighter frostings, arranging a tiered stand with scones and sandwiches. Link the site's tea and floral recipes.",
       "priority": 72,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
     },
     {
       "id": "g073",
@@ -812,7 +831,8 @@
       "targetKeyword": "bake sale cupcakes",
       "notes": "Frostings that survive a table all day, individual packaging, listing ingredients and allergens on labels, a simple pricing approach, how many to bake. Link the school allergen guide.",
       "priority": 73,
-      "status": "idea"
+      "status": "draft",
+      "slug": "bake-sale-cupcakes-packaging-pricing-allergen-labels"
     },
     {
       "id": "g074",
@@ -821,7 +841,8 @@
       "targetKeyword": "how to make box cake mix taste homemade",
       "notes": "Specific swaps and what each changes: milk for water, melted butter for oil, an extra egg or yolk, sour cream, real vanilla, a pinch of salt, homemade frosting. Be honest about the limits and point to the site's from-scratch recipes.",
       "priority": 74,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
     },
     {
       "id": "g075",
@@ -830,7 +851,8 @@
       "targetKeyword": "how to make cupcakes without a mixer",
       "notes": "Creaming by hand with a whisk or wooden spoon, the melted-butter and oil methods that need no creaming, the muffin method, what to avoid, frosting by hand.",
       "priority": 75,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
     },
     {
       "id": "g076",
@@ -839,7 +861,8 @@
       "targetKeyword": "how to bake cupcakes without a cupcake pan",
       "notes": "Doubled paper liners, foil liners, silicone cups, ramekins and oven-safe mugs on a sheet tray, spacing, and how baking time changes for each.",
       "priority": 76,
-      "status": "idea"
+      "status": "failed",
+      "error": "Kie image generation timed out"
     },
     {
       "id": "g077",
@@ -848,7 +871,8 @@
       "targetKeyword": "dark vs light pan for cupcakes",
       "notes": "How pan color and material change heat transfer and browning, when to lower the oven temperature for dark pans, how silicone behaves, nonstick versus aluminized steel, mini and jumbo pans.",
       "priority": 77,
-      "status": "idea"
+      "status": "draft",
+      "slug": "does-your-cupcake-pan-matter-light-dark-silicone"
     },
     {
       "id": "g078",
@@ -857,7 +881,8 @@
       "targetKeyword": "reverse creaming method",
       "notes": "How each method works, the crumb each produces (lighter and domed versus fine and tender), when to choose which, step by step for reverse creaming, common mistakes. Link the creaming guide rather than repeating it.",
       "priority": 78,
-      "status": "idea"
+      "status": "draft",
+      "slug": "creaming-vs-reverse-creaming-cupcakes"
     },
     {
       "id": "g079",
@@ -866,7 +891,8 @@
       "targetKeyword": "how to halve a cupcake recipe",
       "notes": "Weighing to split an egg, scaling leavening, why baking time barely changes, mixer bowl capacity, how many pans. Include a scaling table.",
       "priority": 79,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-halve-or-double-a-cupcake-recipe"
     },
     {
       "id": "g080",
@@ -875,7 +901,8 @@
       "targetKeyword": "cupcake liners pulling away",
       "notes": "Liners peeling away from the cake: steam and condensation, underbaking, cooling in the pan, humidity, liner quality, overfilling. Fixes for each cause. Different problem from cupcakes sticking to liners; link that guide.",
       "priority": 80,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 503, code -): Resources are tight, please try again later."
     },
     {
       "id": "g081",
@@ -884,7 +911,8 @@
       "targetKeyword": "egg yolks in cupcakes",
       "notes": "What yolks add (tenderness, richness, color) and what whites add (structure, dryness), the extra-yolk trick, why egg size matters, room temperature eggs. Link the eggy-taste and egg-substitute guides.",
       "priority": 81,
-      "status": "idea"
+      "status": "draft",
+      "slug": "egg-yolks-vs-whole-eggs-cupcake-texture"
     },
     {
       "id": "g082",
@@ -893,7 +921,8 @@
       "targetKeyword": "sour cream in cupcakes",
       "notes": "How fat and acid in each change moisture and crumb, swapping ratios, their effect on baking soda, flavor differences, full-fat versus low-fat. Link the buttermilk substitute page.",
       "priority": 82,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 500, code -): Server exception, please try again later"
     },
     {
       "id": "g083",
@@ -902,7 +931,8 @@
       "targetKeyword": "how to infuse flavor into cupcakes",
       "notes": "Steeping in milk, cream or butter, ratios and steeping times, straining, keeping bitterness out, when to use powders such as matcha or instant espresso instead. Link the site's tea and coffee recipes.",
       "priority": 83,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 503, code -): Resources are tight, please try again later."
     },
     {
       "id": "g084",
@@ -911,7 +941,8 @@
       "targetKeyword": "fairy cakes vs cupcakes",
       "notes": "For UK and US readers: size, sponge versus American-style batter, glacé icing versus buttercream, cases versus liners, butterfly cakes. Short and friendly.",
       "priority": 84,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 503, code -): Resources are tight, please try again later."
     },
     {
       "id": "g085",
@@ -920,7 +951,8 @@
       "targetKeyword": "cups to grams for baking",
       "notes": "Reference tables: grams per cup for flour, sugars, butter, cocoa, milk and oil, Fahrenheit to Celsius to gas mark, common pan sizes. Explain why grams beat cups and link the measuring guide.",
       "priority": 85,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 503, code -): Resources are tight, please try again later."
     }
   ]
 }
