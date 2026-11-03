@@ -103,34 +103,14 @@ const ogImage = new URL(image, Astro.site).href;
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <style>
-      @font-face {
-        font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url('https://fonts.gstatic.com/s/nunito/v26/XRXI3I6Li01BKofAjsOUYevI.woff2') format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 600;
-        font-display: swap;
-        src: url('https://fonts.gstatic.com/s/nunito/v26/XRXI3I6Li01BKofA6sOUYevI.woff2') format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url('https://fonts.gstatic.com/s/nunito/v26/XRXI3I6Li01BKofAisOUYevI.woff2') format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-    </style>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    {/*
+      Both families come from the Google Fonts CSS API, which always answers
+      with the current file URLs. Nunito used to be inlined as @font-face rules
+      pointing at hard-coded nunito/v26 files; Google retired them, every one
+      returned 404, and the body text fell back to the system font sitewide.
+    */}
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quicksand:wght@300;500;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quicksand:wght@300;500;800;900&display=swap" rel="stylesheet"></noscript>
     
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
