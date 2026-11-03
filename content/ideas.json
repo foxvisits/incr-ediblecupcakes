@@ -402,9 +402,10 @@
       "category": "classic",
       "notes": "Holiday cluster. Eggnog in batter + nutmeg buttercream, nostalgic holiday flavor",
       "priority": 37,
-      "status": "scheduled",
+      "status": "published",
       "slug": "brown-sugar-eggnog-cupcakes",
-      "publishAt": "2026-11-01T15:42:00+02:00"
+      "publishAt": "2026-11-01T15:42:00+02:00",
+      "publishedAt": "2026-11-03T16:07:47.650Z"
     },
     {
       "id": "r038",
@@ -412,9 +413,10 @@
       "category": "classic",
       "notes": "Holiday cluster. Gingerbread spice + espresso buttercream",
       "priority": 38,
-      "status": "scheduled",
+      "status": "published",
       "slug": "spiced-gingerbread-latte-cupcakes",
-      "publishAt": "2026-11-02T15:57:00+02:00"
+      "publishAt": "2026-11-02T15:57:00+02:00",
+      "publishedAt": "2026-11-03T16:07:47.650Z"
     },
     {
       "id": "r039",
@@ -631,9 +633,10 @@
       "category": "keto",
       "notes": "Holiday cluster. Almond + coconut flour base with warm spices",
       "priority": 58,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-christmas-spice-cupcakes",
-      "publishAt": "2026-11-03T12:06:00+02:00"
+      "publishAt": "2026-11-03T12:06:00+02:00",
+      "publishedAt": "2026-11-03T16:07:47.650Z"
     },
     {
       "id": "r059",
@@ -1155,9 +1158,10 @@
       "category": "gluten-free",
       "notes": "Whole blueberries, vanilla swirl on top, keep batter slightly thick",
       "priority": 106,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-blueberry-almond-cupcakes",
-      "publishAt": "2026-10-31T16:30:00+02:00"
+      "publishAt": "2026-10-31T16:30:00+02:00",
+      "publishedAt": "2026-11-03T16:07:47.650Z"
     },
     {
       "id": "r107",
