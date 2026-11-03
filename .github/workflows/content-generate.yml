@@ -91,28 +91,35 @@ jobs:
           fi
           exit $fail
 
-      - name: Generate drafts
-        run: |
-          case "$KIND" in
-            guides)  node --input-type=module -e "const m = await import('./scripts/content/generate-guides.mjs'); await m.cmdGenerateGuides(Number(process.env.LIMIT));" ;;
-            recipes) node scripts/content/cli.mjs generate "$LIMIT" ;;
-            *) echo "::error::Unknown kind: $KIND"; exit 1 ;;
-          esac
-
-      # Reported, not enforced: a draft that fails here still gets committed so
-      # it can be read and fixed on the review branch.
-      - name: Audit the library
-        continue-on-error: true
-        run: node scripts/content/audit.mjs
-
-      - name: Commit drafts to a review branch
+      # One draft at a time, each committed and pushed as soon as it exists.
+      # A long batch can run for hours; if the job hits its time limit, the
+      # drafts finished so far are already on the review branch. A failed
+      # idea is committed too (its status changes), so the loop moves on.
+      - name: Generate drafts, one commit each
         run: |
           branch="content-drafts/${KIND}-${GITHUB_RUN_NUMBER}"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b "$branch"
-          git add -A content
-          if git diff --staged --quiet; then echo "Nothing was generated."; exit 0; fi
-          git commit -m "content: generate ${KIND} drafts [automated]"
-          git push origin "$branch"
-          echo "Drafts are on branch $branch" >> "$GITHUB_STEP_SUMMARY"
+          for n in $(seq 1 "$LIMIT"); do
+            case "$KIND" in
+              guides)  node --input-type=module -e "const m = await import('./scripts/content/generate-guides.mjs'); await m.cmdGenerateGuides(1);" ;;
+              recipes) node scripts/content/cli.mjs generate 1 ;;
+              *) echo "::error::Unknown kind: $KIND"; exit 1 ;;
+            esac
+            git add -A content
+            if git diff --staged --quiet; then echo "No ideas left to generate."; break; fi
+            git commit -q -m "content: ${KIND} draft ${n} [automated]"
+            git push -q origin "$branch"
+          done
+          if git ls-remote --exit-code --heads origin "$branch" > /dev/null; then
+            echo "Drafts are on branch $branch" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Nothing was generated." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      # Reported, not enforced: a draft that fails here is already on the
+      # review branch, where it can be read and fixed.
+      - name: Audit the library
+        continue-on-error: true
+        run: node scripts/content/audit.mjs
