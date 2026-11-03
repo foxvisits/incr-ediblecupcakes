@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { buildGuideArticleSchema } from '../../utils/guideArticleSchema';
 import { loadAllGeneratedGuides, type GeneratedGuide } from '../../data/guides';
+import { isKnownInternalPath } from '../../data/internalLinks';
 
 export async function getStaticPaths() {
   return loadAllGeneratedGuides().map((guide) => ({
@@ -29,6 +30,7 @@ const heroImage = galleryImages[0];
 const bodyImages = galleryImages.slice(1);
 const processImage = bodyImages.find((img) => img.role === 'process') ?? bodyImages[0];
 const detailImage = bodyImages.find((img) => img.role === 'detail') ?? bodyImages[1];
+const relatedLinks = (guide.relatedLinks ?? []).filter((link) => isKnownInternalPath(link.href));
 const sectionCount = guide.sections?.length ?? 0;
 const processAfterSection = sectionCount > 0 ? Math.floor(sectionCount / 3) : 0;
 const detailAfterSection = sectionCount > 0 ? Math.floor((2 * sectionCount) / 3) : 0;
@@ -209,11 +211,11 @@ if (schemaImages.length > 1) {
             </section>
           )}
 
-          {guide.relatedLinks && guide.relatedLinks.length > 0 && (
+          {relatedLinks.length > 0 && (
             <section class="space-y-3">
               <h2 class="text-2xl font-bold text-gray-900">Related on Incr-EdibleCupCakes</h2>
               <ul class="list-disc pl-6 text-rose-600 space-y-1">
-                {guide.relatedLinks.map((link) => (
+                {relatedLinks.map((link) => (
                   <li>
                     <a href={link.href} class="hover:underline">{link.label}</a>
                   </li>

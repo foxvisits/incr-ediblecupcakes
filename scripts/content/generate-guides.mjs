@@ -9,6 +9,7 @@ import {
 } from './lib/config.mjs';
 import { generateText } from './lib/text.mjs';
 import { buildGuidePrompt, extractJson } from './lib/guide-prompts.mjs';
+import { loadLinkablePages, keepLinkable } from './lib/linkable-pages.mjs';
 import {
   validateGuideDraft,
   generateSlug,
@@ -58,6 +59,8 @@ export async function cmdGenerateGuides(countArg) {
   const existingTitles = await getExistingGuideTitles();
   console.log(`\n📚 Generating ${pending.length} guide draft(s)...\n`);
 
+  const linkablePages = loadLinkablePages();
+
   for (const idea of pending) {
     const maxRetries = config.workflow?.maxRetries ?? 2;
     let attempt = 0;
@@ -73,7 +76,7 @@ export async function cmdGenerateGuides(countArg) {
           console.log(`  🔁 Retry ${attempt - 1}/${maxRetries}...`);
         }
 
-        const prompt = buildGuidePrompt(idea, config, existingTitles);
+        const prompt = buildGuidePrompt(idea, config, existingTitles, linkablePages);
         if (attempt === 1) console.log(`→ ${idea.id}: ${idea.title}`);
 
         const raw = await generateText({ prompt, config });
@@ -84,6 +87,10 @@ export async function cmdGenerateGuides(countArg) {
         parsed.category = idea.category || parsed.category;
         parsed.targetKeyword = idea.targetKeyword || idea.notes;
         attachGuideImagePaths(parsed, config);
+
+        const links = keepLinkable(parsed.relatedLinks, linkablePages, `/guides/${parsed.slug}`);
+        if (links.dropped.length) console.warn(`  ⚠️  dropped related links to unknown pages: ${links.dropped.join(', ')}`);
+        parsed.relatedLinks = links.kept;
 
         const voiceErrors = validateHumanVoice(parsed);
         const { valid, errors, warnings } = validateGuideDraft(parsed, config);

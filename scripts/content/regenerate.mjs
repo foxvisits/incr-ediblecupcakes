@@ -25,6 +25,7 @@ const { validateRecipeDraft, generateSlug, attachImagePaths } = await import('./
 const { validateGuideDraft, attachGuideImagePaths } = await import('./lib/guide-schema.mjs');
 const { sanitizeDeep, validateHumanVoice } = await import('./lib/text-cleanup.mjs');
 const { DRAFTS, GUIDE_DRAFTS, ASSETS, writeJson } = await import('./lib/paths.mjs');
+const { loadLinkablePages, keepLinkable } = await import('./lib/linkable-pages.mjs');
 
 const isGuide = (id) => /^g\d+$/i.test(id);
 
@@ -68,12 +69,15 @@ async function regenerateOne(id, { dryRun }) {
 
   const maxRetries = config.workflow?.maxRetries ?? 2;
   for (let attempt = 1; attempt <= maxRetries + 1; attempt++) {
-    const prompt = guide ? buildGuidePrompt(idea, config, []) : buildRecipePrompt(idea, config, []);
+    const prompt = guide
+      ? buildGuidePrompt(idea, config, [], loadLinkablePages())
+      : buildRecipePrompt(idea, config, []);
     const parsed = sanitizeDeep(extractJson(await generateText({ prompt, config })));
 
     parsed.slug = previous.slug; // keep the URL: these drafts may already be scheduled
     parsed.contentIdeaId = id;
     if (guide) {
+      parsed.relatedLinks = keepLinkable(parsed.relatedLinks, loadLinkablePages(), `/guides/${previous.slug}`).kept;
       parsed.category = idea.category ?? previous.category;
       parsed.targetKeyword = idea.targetKeyword ?? previous.targetKeyword;
     }

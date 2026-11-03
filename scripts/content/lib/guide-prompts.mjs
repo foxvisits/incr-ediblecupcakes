@@ -9,7 +9,7 @@ function loadRequirements() {
   return fs.readFileSync(reqPath, 'utf8');
 }
 
-export function buildGuidePrompt(idea, config, existingTitles = []) {
+export function buildGuidePrompt(idea, config, existingTitles = [], linkablePages = []) {
   const seo = config.seo;
   const imageCount = config.generation?.imagesPerGuide ?? 3;
   return `You are Sarah, a home baker and recipe developer for Incr-EdibleCupCakes (incr-ediblecupcakes.com).
@@ -37,7 +37,9 @@ GUIDE RULES:
 - faq: ${seo.minFaqCount}+ unique Q&A for THIS guide
 - sidebarTitle + sidebarBullets: 4-6 quick reference bullets
 - table: optional comparison table with headers[] and rows[][] (2+ rows) when useful
-- relatedLinks: 2-4 internal links {label, href} to /recipe/ or /guides/ pages on site
+- relatedLinks: 2-4 internal links {label, href}. Copy each href exactly from the INTERNAL
+  PAGES list at the end; choose the pages most useful to someone reading this guide.
+  Never write a URL that is not on that list. Fewer good links beat four weak ones.
 - DEPTH: each section needs at least two substantial paragraphs, and the guide
   as a whole should run 700-1000 words of body copy excluding the FAQ. Answer
   the "why" behind each instruction, not just the "what": temperatures, ratios,
@@ -58,7 +60,7 @@ GUIDE RULES:
   - NEVER use em dashes (—) in any text field
 
 Avoid duplicating these existing guide titles: ${existingTitles.slice(0, 20).join('; ')}
-
+${linkablePages.length ? `\nINTERNAL PAGES (the only valid relatedLinks hrefs):\n${linkablePages.map((pg) => `${pg.path} | ${pg.title}`).join('\n')}\n` : ''}
 Return JSON:
 {
   "title": "",

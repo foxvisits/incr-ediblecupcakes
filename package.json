@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "node scripts/materialize-public-assets.mjs && cross-env NODE_OPTIONS=--max-old-space-size=4096 astro dev",
     "start": "node scripts/materialize-public-assets.mjs && cross-env NODE_OPTIONS=--max-old-space-size=4096 astro dev",
-    "build": "node scripts/materialize-public-assets.mjs && cross-env NODE_OPTIONS=--max-old-space-size=4096 tsx scripts/update-seo.mjs --no-indexnow && cross-env NODE_OPTIONS=--max-old-space-size=4096 astro build",
+    "build": "node scripts/materialize-public-assets.mjs && cross-env NODE_OPTIONS=--max-old-space-size=4096 tsx scripts/update-seo.mjs --no-indexnow && cross-env NODE_OPTIONS=--max-old-space-size=4096 astro build && node scripts/check-internal-links.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "lint": "astro check",
@@ -26,7 +26,8 @@
     "content:schedule": "node scripts/content/cli.mjs schedule",
     "content:cleanup": "node scripts/cleanup-generated-content.mjs",
     "content:publish-due": "node scripts/content/cli.mjs publish-due",
-    "content:verify": "node scripts/content/cli.mjs verify"
+    "content:verify": "node scripts/content/cli.mjs verify",
+    "check-links": "node scripts/check-internal-links.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",

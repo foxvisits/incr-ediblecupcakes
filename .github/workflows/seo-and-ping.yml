@@ -34,6 +34,13 @@ jobs:
         run: npm run seo-check
       - name: Astro check
         run: npm run lint
+      # Builds the site and fails on any internal link or image that leads
+      # nowhere. The build itself only reports them, so a bad link never blocks
+      # a deploy; this daily run is what turns one into a failure email.
+      - name: Build and check internal links
+        run: |
+          npm run build
+          npm run check-links -- --strict
 
   index-and-ping:
     if: github.event_name == 'push'
