@@ -800,7 +800,8 @@
       "targetKeyword": "cupcake tower",
       "notes": "Stand types, how many cupcakes each tier holds, loading order, keeping it stable, assembling on site after transport, filling gaps with decorations.",
       "priority": 69,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
     },
     {
       "id": "g070",
