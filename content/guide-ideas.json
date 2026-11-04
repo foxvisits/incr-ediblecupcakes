@@ -810,7 +810,8 @@
       "targetKeyword": "how many cupcakes per person",
       "notes": "Per-guest estimates for kids parties, weddings, office events and dessert tables with other sweets, mini versus standard sizes, how much buffer to add, worked examples for 25, 50 and 100 guests.",
       "priority": 70,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-many-cupcakes-do-you-need-for-a-party"
     },
     {
       "id": "g071",
