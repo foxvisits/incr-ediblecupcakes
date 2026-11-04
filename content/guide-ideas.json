@@ -770,7 +770,8 @@
       "targetKeyword": "chocolate decorations for cupcakes",
       "notes": "Chocolate curls with a vegetable peeler, shards and bark, piped chocolate shapes on parchment, a quick tempering shortcut, and how to keep decorations from melting or blooming.",
       "priority": 66,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
     },
     {
       "id": "g067",
