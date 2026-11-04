@@ -644,9 +644,10 @@
       "category": "keto",
       "notes": "Holiday cluster. Coffee + cocoa + sugar-free peppermint buttercream",
       "priority": 59,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-peppermint-mocha-cupcakes",
-      "publishAt": "2026-11-04T13:40:00+02:00"
+      "publishAt": "2026-11-04T13:40:00+02:00",
+      "publishedAt": "2026-11-04T13:42:36.214Z"
     },
     {
       "id": "r060",

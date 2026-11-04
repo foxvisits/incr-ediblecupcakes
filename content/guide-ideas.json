@@ -642,9 +642,10 @@
       "targetKeyword": "nut free cupcakes",
       "notes": "For baking for someone with a nut allergy: reading 'may contain' versus 'made in a facility' labels, hidden nut sources (almond extract, marzipan, praline, some sprinkles and chocolates), swaps for almond flour and nut milks, cleaning tools and surfaces to avoid cross-contact. No medical advice; tell readers to confirm with the person or their allergist. Link the nut-free recipes and the school allergen guide.",
       "priority": 54,
-      "status": "scheduled",
+      "status": "published",
       "slug": "nut-free-cupcake-baking-labels-swaps-cross-contact",
-      "publishAt": "2026-11-04T11:36:00+02:00"
+      "publishAt": "2026-11-04T11:36:00+02:00",
+      "publishedAt": "2026-11-04T13:42:36.214Z"
     },
     {
       "id": "g055",
