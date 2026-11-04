@@ -190,13 +190,13 @@
     },
     {
       "role": "process",
-      "alt": "Cupcake liners arranged in a heart shape on parchment paper to plan a layout",
+      "alt": "Empty cupcake liners laid out on parchment paper to plan the shape",
       "prompt": "Empty paper cupcake liners arranged in a heart shape on parchment paper on a light wooden board, a pencil sketch visible underneath. Bright pastel bakery aesthetic, tall swirled frosting piped high on a few finished cupcakes nearby, soft even daylight, cream pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos. Natural light, warm tones, white porcelain. Same photoshoot style as Incr-EdibleCupCakes food blog.",
       "src": "/guide-how-to-make-a-pull-apart-cupcake-cake-2.jpg"
     },
     {
       "role": "detail",
-      "alt": "Close-up of a hand-free pull-apart cupcake cake with one cupcake pulled out",
+      "alt": "Close-up of a pull-apart cupcake cake with one cupcake pulled out onto a small plate",
       "prompt": "Close-up of a pull-apart cupcake cake with butter yellow swirled frosting piped high, one cupcake gently pulled out and resting beside it on a white plate. Bright pastel bakery aesthetic, soft even daylight, butter yellow pastel background, clean minimal props, shallow depth of field, no text, no hands, no logos. Natural light, warm tones, white porcelain and light wood. Same photoshoot style as Incr-EdibleCupCakes food blog.",
       "src": "/guide-how-to-make-a-pull-apart-cupcake-cake-3.jpg"
     }
