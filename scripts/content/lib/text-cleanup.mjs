@@ -49,14 +49,16 @@ function wordCount(s) {
 }
 
 /**
- * Words that cannot open an English sentence on their own. Splitting a comma
- * clause that begins with one of these promotes a dependent clause to a
- * sentence and produces fragments like "With a texture bakeries charge extra
- * for." — which is how em dash removal (which turns dashes into commas) was
- * quietly manufacturing broken prose.
+ * A comma clause becomes a sentence of its own only when it opens with a
+ * subject pronoun, which means a full clause follows. Anything else after a
+ * comma is too often the rest of a list or a second adjective, and cutting
+ * there printed fragments on published pages: "in a single. Even layer that
+ * touches each neighbor", "the back of a spoon. A zip-top bag, or a quick
+ * dip", "until the mix turns pale. Fluffy, and almost doubles in size"
+ * (found November 2026). Before that, a list of words that cannot open a
+ * sentence ("and", "which", "with" ...) was the only guard.
  */
-const CANNOT_START_SENTENCE =
-  /^(and|but|or|nor|yet|so|then|plus|with|without|which|that|who|whom|whose|because|since|while|although|though|unless|until|as|if|when|where|for|to|of|in|on|at|by|from|into|onto|over|under|about|like|per|via|thanks)\b/i;
+const STARTS_CLAUSE = /^(?:i|you|we|they|it|he|she|this|these|those|there)(?:'(?:s|re|ll|ve|d|m))?\b/i;
 
 function endsSentence(s) {
   return /[.!?]["')\]]?$/.test(s);
@@ -83,19 +85,19 @@ export function shortenSentences(text, maxWords = 22) {
     if (!s) continue;
 
     while (wordCount(s) > maxWords) {
-      const mid = Math.floor(s.length * 0.5);
-      let comma = s.lastIndexOf(', ', mid + 40);
-      if (comma < 15) comma = s.indexOf(', ', mid - 20);
+      // Cut at the safe comma nearest the middle. With none, the sentence
+      // stays long, which reads better than a fragment.
+      const mid = s.length / 2;
+      let comma = -1;
+      for (let i = s.indexOf(', '); i >= 0; i = s.indexOf(', ', i + 2)) {
+        const rest = s.slice(i + 2).trim();
+        if (!rest || wordCount(s.slice(0, i)) < 8 || !STARTS_CLAUSE.test(rest)) continue;
+        if (comma < 0 || Math.abs(i - mid) < Math.abs(comma - mid)) comma = i;
+      }
       if (comma < 0) break;
 
       const left = s.slice(0, comma).trim();
       const right = s.slice(comma + 2).trim();
-      if (!right || wordCount(left) < 8) break;
-      // Leaving the sentence long is better than cutting it into a fragment.
-      // A clause opening with a participle after a comma ("…, scraping the
-      // bowl between additions") is dependent too, so treat it the same way.
-      if (CANNOT_START_SENTENCE.test(right) || /^\w+ing\b/i.test(right)) break;
-
       out.push(endsSentence(left) ? left : `${left}.`);
       s = right.charAt(0).toUpperCase() + right.slice(1);
     }

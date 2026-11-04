@@ -23,7 +23,7 @@
       "list": [
         "Jimmies: soft, rod-shaped sprinkles with a waxy coating. They are the classic birthday topping.",
         "Nonpareils: tiny round balls, often sold as hundreds and thousands. They add the most color for the least weight.",
-        "Sanding sugar: fine, sparkly sugar crystals. They catch light and give a frosted look.",
+        "Sanding sugar: coarse, sparkly sugar crystals. They catch light and give a frosted look.",
         "Sugar pearls: hard, shiny balls in larger sizes. They stay round and resist moisture.",
         "Quins: flat, shaped pieces like stars, hearts or flowers. They are sold as mixes and look festive."
       ]
@@ -54,7 +54,7 @@
     {
       "heading": "How Do You Prevent Color Bleeding?",
       "paragraphs": [
-        "The best fix is to add sprinkles as late as possible and keep the cupcakes dry and cool. Choose sturdier sprinkles for soft or wet frostings, and avoid the fridge when you can.",
+        "The best fix is to add sprinkles as late as possible and keep the cupcakes dry and cool. Choose sturdier sprinkles for soft or wet frostings, and skip the fridge for buttercream when you can. Cream cheese and whipped cream frostings still need the fridge after 2 hours out, or 1 hour above 90°F.",
         "If you must refrigerate, wait until the frosting has formed a light crust before decorating. Moving cupcakes from a cold fridge into warm air causes condensation, and that wet surface makes colors run."
       ],
       "list": [
@@ -75,7 +75,7 @@
         "Same-day events: sprinkle right after piping.",
         "Make-ahead cupcakes: sprinkle on the day you serve them.",
         "Sticky toppings: brush a tiny amount of corn syrup on the spot where sprinkles go.",
-        "Mixed in batter: use only bake-stable jimmies, since regular ones bleed in the oven."
+        "Mixed in batter: use jimmies, which hold their color in the oven better than nonpareils."
       ]
     },
     {
@@ -116,7 +116,7 @@
     },
     {
       "question": "Can you bake sprinkles into cupcake batter?",
-      "answer": "Yes, but use bake-stable jimmies or confetti-style quins. Regular jimmies melt and bleed color into the crumb, which gives a muddy look."
+      "answer": "Yes, use jimmies, the classic choice for confetti cupcakes. Skip nonpareils, which bleed color into the crumb and give a muddy look."
     },
     {
       "question": "Do sprinkles bleed on cream cheese frosting?",
@@ -153,7 +153,7 @@
       ],
       [
         "Sanding sugar",
-        "Fine crystals",
+        "Coarse crystals",
         "Low",
         "Sparkle on glazes and light frosting"
       ],
