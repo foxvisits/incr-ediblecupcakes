@@ -707,7 +707,8 @@
       "targetKeyword": "ganache ratio for cupcakes",
       "notes": "Chocolate to cream ratios for drips, fillings, glazes and whipped ganache, how dark, milk and white chocolate change the ratio, temperature for a clean drip, how to whip ganache, how to fix split or grainy ganache. Include a ratio table.",
       "priority": 60,
-      "status": "idea"
+      "status": "draft",
+      "slug": "chocolate-ganache-ratios-for-cupcakes"
     },
     {
       "id": "g061",
