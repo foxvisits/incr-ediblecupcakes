@@ -79,15 +79,22 @@ jobs:
             fi
           elif [ "$fail" = "0" ]; then
             # One tiny real request (a few tokens) proves the endpoint, auth and
-            # model name before any image is paid for.
-            body=$(curl -s --max-time 120 https://api.kie.ai/claude/v1/messages \
-              -H "Authorization: Bearer $KIE_API_KEY" -H "Content-Type: application/json" \
-              -d "{\"model\":\"$model\",\"max_tokens\":32,\"stream\":false,\"messages\":[{\"role\":\"user\",\"content\":\"Reply with the word OK.\"}]}")
-            if echo "$body" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{const j=JSON.parse(s);const m=j.content?j:j.data;process.exit(m&&Array.isArray(m.content)&&m.content.some(b=>b.type==="text")?0:1)}catch{process.exit(1)}})'; then
-              echo "kie.ai text ($model) works."
-            else
-              echo "::error::kie.ai text request failed for model $model: $(echo "$body" | head -c 400)"; fail=1
-            fi
+            # model name before any image is paid for. kie.ai answers "Resources
+            # are tight" for minutes at a time when it is busy, so a busy answer
+            # is tried three times, a minute apart, before the run gives up.
+            for try in 1 2 3; do
+              body=$(curl -s --max-time 120 https://api.kie.ai/claude/v1/messages \
+                -H "Authorization: Bearer $KIE_API_KEY" -H "Content-Type: application/json" \
+                -d "{\"model\":\"$model\",\"max_tokens\":32,\"stream\":false,\"messages\":[{\"role\":\"user\",\"content\":\"Reply with the word OK.\"}]}")
+              if echo "$body" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{const j=JSON.parse(s);const m=j.content?j:j.data;process.exit(m&&Array.isArray(m.content)&&m.content.some(b=>b.type==="text")?0:1)}catch{process.exit(1)}})'; then
+                echo "kie.ai text ($model) works."; break
+              fi
+              if [ "$try" -lt 3 ] && echo "$body" | grep -qiE 'resources are tight|try again later|overloaded|"code":5[0-9][0-9]'; then
+                echo "kie.ai is busy (try $try): $(echo "$body" | head -c 200). Waiting a minute."
+                sleep 60; continue
+              fi
+              echo "::error::kie.ai text request failed for model $model: $(echo "$body" | head -c 400)"; fail=1; break
+            done
           fi
           exit $fail
 
