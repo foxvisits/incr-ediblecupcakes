@@ -60,6 +60,16 @@ function wordCount(s) {
  */
 const STARTS_CLAUSE = /^(?:i|you|we|they|it|he|she|this|these|those|there)(?:'(?:s|re|ll|ve|d|m))?\b/i;
 
+/**
+ * A sentence that opens with "If", "When", "For" and the like has an opening
+ * clause before its main one, and the first comma followed by a pronoun is
+ * where that opening clause ends. Cutting there left the opening clause alone:
+ * "For very juicy fruit like watermelon or oranges. I press each piece",
+ * "If your mix looks greasy, curdled, or separated. It is over creamed"
+ * (found November 2026), so that comma is never a cut point.
+ */
+const OPENS_DEPENDENT = /^(?:if|when|whenever|because|while|after|before|since|although|though|once|until|unless|as|for|with|without|in|on|at|from|by|during|like|unlike|instead of|even if|so that)\b/i;
+
 function endsSentence(s) {
   return /[.!?]["')\]]?$/.test(s);
 }
@@ -89,9 +99,15 @@ export function shortenSentences(text, maxWords = 22) {
       // stays long, which reads better than a fragment.
       const mid = s.length / 2;
       let comma = -1;
+      let openingClauseDone = !OPENS_DEPENDENT.test(s);
       for (let i = s.indexOf(', '); i >= 0; i = s.indexOf(', ', i + 2)) {
         const rest = s.slice(i + 2).trim();
-        if (!rest || wordCount(s.slice(0, i)) < 8 || !STARTS_CLAUSE.test(rest)) continue;
+        if (!rest || !STARTS_CLAUSE.test(rest)) continue;
+        if (!openingClauseDone) {
+          openingClauseDone = true;
+          continue;
+        }
+        if (wordCount(s.slice(0, i)) < 8) continue;
         if (comma < 0 || Math.abs(i - mid) < Math.abs(comma - mid)) comma = i;
       }
       if (comma < 0) break;
