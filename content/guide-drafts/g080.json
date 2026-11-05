@@ -172,7 +172,7 @@
   "images": [
     {
       "role": "hero",
-      "alt": "Vanilla cupcakes with smooth liners hugging the cake and tall swirled frosting on a cream background",
+      "alt": "Vanilla cupcakes on a white plate with liners hugging the cake and tall swirled frosting",
       "prompt": "Vanilla cupcakes in neat pastel liners that hug the cake, tall swirled frosting piped high, on a cream background with a white porcelain plate. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
       "src": "/guide-why-cupcake-liners-pull-away.jpg"
     },
@@ -184,7 +184,7 @@
     },
     {
       "role": "detail",
-      "alt": "Close view of one cupcake with a liner peeling slightly away from the side",
+      "alt": "Two frosted cupcakes on a plate, the left one with its liner peeling away from the side",
       "prompt": "Close-up of a single cupcake with its liner starting to peel from the crumb beside a cupcake with a perfectly attached liner, tall swirled frosting piped high, on a butter yellow background. Bright pastel bakery aesthetic, soft even daylight, clean minimal props, shallow depth of field, no text, no hands, no logos, same photoshoot style as Incr-EdibleCupCakes food blog",
       "src": "/guide-why-cupcake-liners-pull-away-3.jpg"
     }
