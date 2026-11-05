@@ -871,7 +871,8 @@
       "targetKeyword": "how to make cupcakes without a mixer",
       "notes": "Creaming by hand with a whisk or wooden spoon, the melted-butter and oil methods that need no creaming, the muffin method, what to avoid, frosting by hand.",
       "priority": 75,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-make-cupcakes-without-a-mixer"
     },
     {
       "id": "g076",
