@@ -954,8 +954,9 @@
       "targetKeyword": "how to infuse flavor into cupcakes",
       "notes": "Steeping in milk, cream or butter, ratios and steeping times, straining, keeping bitterness out, when to use powders such as matcha or instant espresso instead. Link the site's tea and coffee recipes.",
       "priority": 83,
-      "status": "draft",
-      "slug": "how-to-infuse-tea-coffee-herbs-into-cupcakes"
+      "status": "scheduled",
+      "slug": "how-to-infuse-tea-coffee-herbs-into-cupcakes",
+      "publishAt": "2027-01-03T12:02:00+02:00"
     },
     {
       "id": "g084",
@@ -964,8 +965,9 @@
       "targetKeyword": "fairy cakes vs cupcakes",
       "notes": "For UK and US readers: size, sponge versus American-style batter, glacé icing versus buttercream, cases versus liners, butterfly cakes. Short and friendly.",
       "priority": 84,
-      "status": "draft",
-      "slug": "fairy-cakes-vs-cupcakes-whats-the-difference"
+      "status": "scheduled",
+      "slug": "fairy-cakes-vs-cupcakes-whats-the-difference",
+      "publishAt": "2027-01-05T16:18:00+02:00"
     },
     {
       "id": "g085",
@@ -974,8 +976,9 @@
       "targetKeyword": "cups to grams for baking",
       "notes": "Reference tables: grams per cup for flour, sugars, butter, cocoa, milk and oil, Fahrenheit to Celsius to gas mark, common pan sizes. Explain why grams beat cups and link the measuring guide.",
       "priority": 85,
-      "status": "draft",
-      "slug": "cupcake-measurement-conversions-cups-to-grams"
+      "status": "scheduled",
+      "slug": "cupcake-measurement-conversions-cups-to-grams",
+      "publishAt": "2027-01-07T13:07:00+02:00"
     }
   ]
 }

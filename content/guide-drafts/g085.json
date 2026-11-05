@@ -1,7 +1,7 @@
 {
   "title": "Cupcake Measurement Conversions: Cups to Grams",
   "slug": "cupcake-measurement-conversions-cups-to-grams",
-  "summaryShort": "For cups to grams for baking, use 120 g per cup of all-purpose flour, 200 g of granulated sugar, 227 g of butter. 85 g of cocoa, 240 g of milk and 215 g of oil. Weigh ingredients on a scale for cupcakes that bake the same every time.",
+  "summaryShort": "For cups to grams for baking, 1 cup of all-purpose flour is 120 g and granulated sugar is 200 g. Butter is 227 g, cocoa 85 g, milk 240 g and oil 215 g. Weigh ingredients on a scale for cupcakes that bake the same every time.",
   "metaTitle": "Cupcake Measurement Conversions: Cups to Grams",
   "metaDescription": "Use our cups to grams for baking chart for flour, sugar, butter, cocoa, milk and oil, plus oven temps and pan sizes. Bookmark it and bake with confidence.",
   "sidebarTitle": "Quick Conversion Cheat Sheet",
@@ -52,7 +52,7 @@
       "heading": "Oven Temperature: Fahrenheit, Celsius and Gas Mark",
       "paragraphs": [
         "Most cupcakes bake at 350°F, which is 175°C or gas mark 4. This is the middle setting that gives an even rise and a golden top.",
-        "Fan ovens run hotter, so drop the dial by about 20°C (25°F). Use an oven thermometer if your cupcakes brown too fast or sink in the middle."
+        "Fan ovens run hotter, so lower the dial by 25°F, or by 20°C on a Celsius dial. Use an oven thermometer if your cupcakes brown too fast or sink in the middle."
       ],
       "list": [
         "300°F = 150°C = gas mark 2.",
@@ -65,12 +65,12 @@
     {
       "heading": "Common Pan Sizes and How Much Batter They Take",
       "paragraphs": [
-        "A standard cupcake cup holds about 1/3 cup of batter when filled two thirds full. That gives you 12 cupcakes from roughly 2 to 2 1/2 cups of batter.",
-        "Smaller and larger cups need different amounts and bake times. Check them 3 to 4 minutes early for minis and a few minutes late for jumbo."
+        "A standard cupcake cup takes about 3 tablespoons of batter, a scant 1/4 cup. That gives you 12 cupcakes from roughly 2 to 2 1/2 cups of batter.",
+        "Smaller and larger cups need different amounts and bake times. Start checking minis at about 10 to 12 minutes, and give jumbo cupcakes several minutes longer than standard ones."
       ],
       "list": [
         "Mini cup (1 3/4 inch top): about 1 tablespoon of batter",
-        "Standard cup (2 3/4 inch top): about 1/3 cup of batter",
+        "Standard cup (2 3/4 inch top): about 3 tablespoons of batter",
         "Jumbo cup (3 1/2 inch top): about 1/2 cup of batter",
         "8 inch square pan (20 cm): fits about 12 standard cupcakes' worth of batter.",
         "9 x 13 inch pan (23 x 33 cm): fits about 24 cupcakes' worth of batter."
@@ -113,7 +113,7 @@
     },
     {
       "question": "Do I need to adjust the oven for a fan setting?",
-      "answer": "Yes. Lower the temperature by about 20°C (25°F) on a fan oven. Fan heat browns the tops faster than a regular oven."
+      "answer": "Yes. Lower the temperature by 25°F on a fan oven, or by 20°C if your dial reads Celsius. Fan heat browns the tops faster than a regular oven."
     }
   ],
   "table": {
@@ -144,9 +144,9 @@
       ],
       [
         "Brown sugar (packed)",
-        "210",
-        "105",
-        "53"
+        "220",
+        "110",
+        "55"
       ],
       [
         "Powdered sugar",

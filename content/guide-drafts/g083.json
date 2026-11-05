@@ -7,7 +7,7 @@
   "sidebarTitle": "Infusing Cheat Sheet",
   "sidebarBullets": [
     "Tea: 2 tbsp loose leaf per 1 cup milk, steep 10 minutes.",
-    "Coffee: 1/4 cup coarse grounds per 1 cup milk, steep 10 minutes",
+    "Coffee: 1/4 cup coarse grounds per 1 cup milk, steep 10 minutes.",
     "Soft herbs: 1 packed cup per 1 cup cream, steep 20 minutes.",
     "Heat dairy to steaming, never boiling.",
     "Strain, then top up to the original measure."
@@ -27,13 +27,13 @@
       "paragraphs": [
         "Heat 1 cup of milk or cream until it steams, about 180°F, then add your flavor and steep for 10 to 20 minutes. Boiling dairy scorches and pulls out harsh flavors, so keep the heat gentle.",
         "Cover the pot while it steeps so the aroma stays in the liquid. Taste at the 10 minute mark, because you can always steep longer but you can't undo a bitter infusion.",
-        "Use these starting ratios per 1 cup of dairy:."
+        "Use these starting ratios per 1 cup of dairy:"
       ],
       "list": [
         "Black or Earl Grey tea: 2 tbsp loose leaf (or 3 tea bags), 10 minutes.",
         "Chai or spiced tea: 2 tbsp loose leaf, 12 to 15 minutes.",
-        "Coffee: 1/4 cup coarse grounds or 1/2 cup whole beans, 10 minutes",
-        "Dried lavender: 1 tbsp, 10 minutes.",
+        "Coffee: 1/4 cup coarse grounds, 10 minutes.",
+        "Dried culinary lavender: 1 tbsp, 10 minutes.",
         "Fresh mint or basil: 1 packed cup of leaves, 20 minutes."
       ]
     },
@@ -50,7 +50,7 @@
       "heading": "Straining and measuring so your batter stays balanced",
       "paragraphs": [
         "Strain the infusion through a fine mesh sieve, press gently, then add plain dairy until you are back to the original amount. Leaves and grounds soak up 15 to 20 percent of the liquid, and a short measure makes dense cupcakes.",
-        "Don't squeeze tea bags hard or mash the leaves. Pressing releases tannins, the compounds that make tea taste dry and bitter.",
+        "Don't squeeze tea bags hard or mash the leaves. Hard pressing releases tannins, the compounds that make tea taste dry and bitter.",
         "Cool the strained liquid before it meets your eggs or butter. Warm milk can curdle eggs and melt creamed butter, which ruins the crumb."
       ],
       "list": []
@@ -60,7 +60,7 @@
       "paragraphs": [
         "Bitterness comes from steeping too long, using water or dairy that is too hot, or squeezing the leaves. Stick to the times above and the flavor stays smooth.",
         "Coffee turns harsh after about 10 minutes in hot milk. For a mellow taste, try a cold steep instead: stir 1/4 cup coarse grounds into 1 cup cold milk and chill overnight.",
-        "These habits help every time:."
+        "These habits help every time:"
       ],
       "list": [
         "Use coarse grounds and whole leaves, not fine dust.",
@@ -104,7 +104,7 @@
     },
     {
       "question": "How far ahead can I make infused milk or butter?",
-      "answer": "Infused milk keeps in the fridge for up to 3 days. Infused butter keeps for up to a week, and both should be brought to room temperature before baking."
+      "answer": "Infused milk keeps in the fridge for up to 3 days. Infused butter keeps in the fridge for up to a week. Bring both to room temperature before baking."
     },
     {
       "question": "Can I use fresh herbs and dried herbs the same way?",
@@ -135,10 +135,10 @@
         "Coffee (cold steep)",
         "Cold milk",
         "1/4 cup coarse grounds",
-        "8 to 12 hours"
+        "8 to 12 hours in the fridge"
       ],
       [
-        "Lavender",
+        "Culinary lavender",
         "Milk or butter",
         "1 tbsp dried",
         "10 minutes"
