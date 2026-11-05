@@ -742,8 +742,9 @@
       "targetKeyword": "how much frosting for 24 cupcakes",
       "notes": "Amounts per cupcake and per dozen for a thin spread, a standard swirl and a tall bakery swirl, in cups and grams. How piping tip size changes the amount, a scaling table for 12, 24 and 48 cupcakes, and how much to make extra.",
       "priority": 63,
-      "status": "draft",
-      "slug": "how-much-frosting-do-you-need-for-cupcakes"
+      "status": "scheduled",
+      "slug": "how-much-frosting-do-you-need-for-cupcakes",
+      "publishAt": "2026-12-04T13:26:00+02:00"
     },
     {
       "id": "g064",
