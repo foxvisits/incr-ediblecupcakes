@@ -773,8 +773,9 @@
       "targetKeyword": "chocolate decorations for cupcakes",
       "notes": "Chocolate curls with a vegetable peeler, shards and bark, piped chocolate shapes on parchment, a quick tempering shortcut, and how to keep decorations from melting or blooming.",
       "priority": 66,
-      "status": "draft",
-      "slug": "easy-chocolate-decorations-for-cupcakes"
+      "status": "scheduled",
+      "slug": "easy-chocolate-decorations-for-cupcakes",
+      "publishAt": "2026-12-22T14:36:00+02:00"
     },
     {
       "id": "g067",
@@ -805,8 +806,9 @@
       "targetKeyword": "cupcake tower",
       "notes": "Stand types, how many cupcakes each tier holds, loading order, keeping it stable, assembling on site after transport, filling gaps with decorations.",
       "priority": 69,
-      "status": "draft",
-      "slug": "how-to-set-up-a-cupcake-tower-display"
+      "status": "scheduled",
+      "slug": "how-to-set-up-a-cupcake-tower-display",
+      "publishAt": "2026-12-14T15:06:00+02:00"
     },
     {
       "id": "g070",

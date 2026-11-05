@@ -50,7 +50,7 @@
       "heading": "Piped chocolate shapes on parchment",
       "paragraphs": [
         "Pipe hearts, stars, or swirls onto parchment, chill them for 10 to 15 minutes, and peel them off. Slip a printed template under the parchment if you want matching shapes on every cupcake.",
-        "Fill a small bag with melted chocolate and snip a tiny tip. A larger hole gives thick lines that break, so start small and snip more only if needed.",
+        "Fill a small bag with melted chocolate and snip a tiny tip. A larger hole gives thick, blobby lines, so start small and snip more only if needed.",
         "Pipe a few extras, because thin pieces snap easily. Tuck them into the frosting at an angle so they stand tall."
       ],
       "list": []
@@ -58,8 +58,8 @@
     {
       "heading": "A quick tempering shortcut",
       "paragraphs": [
-        "The seed method tempers chocolate without a thermometer fuss. Melt two thirds of your chopped chocolate to 115°F, then stir in the remaining third until it cools to 88°F to 90°F for dark chocolate.",
-        "Milk and white chocolate should cool to 86°F to 88°F instead. Tempered chocolate sets glossy, snaps cleanly, and does not melt on your fingers as fast.",
+        "The seed method is the easiest way to temper at home, but you still need a thermometer. Melt two thirds of your chopped chocolate to 115°F, then stir in the remaining third until it cools to 88°F to 90°F for dark chocolate.",
+        "Melt milk and white chocolate only to 105°F to 110°F. Then cool milk chocolate to 86°F to 88°F and white chocolate to 82°F to 84°F. Tempered chocolate sets glossy, snaps cleanly, and does not melt on your fingers as fast.",
         "Test a smear on parchment. If it sets shiny within 5 minutes at room temperature, you are ready to pipe or spread."
       ],
       "list": [
@@ -81,7 +81,7 @@
   "howToSteps": [
     "Choose real chocolate with cocoa butter, not candy melts.",
     "Soften a thick bar slightly and shave curls with a vegetable peeler.",
-    "Melt two thirds of the chocolate to 115°F, then stir in the rest to temper.",
+    "Melt two thirds of the chocolate to 115°F for dark, or 105°F to 110°F for milk and white. Stir in the rest to temper.",
     "Spread chocolate 1/8 inch thick on parchment, add toppings, and chill for shards or bark.",
     "Pipe shapes onto parchment and chill 10 to 15 minutes.",
     "Add decorations to chilled frosting just before serving.",
@@ -106,7 +106,7 @@
     },
     {
       "question": "Do I have to temper chocolate for piped shapes?",
-      "answer": "No, but tempered shapes look shinier and hold up better in warm hands. The seed method adds only a few minutes."
+      "answer": "No, but tempered shapes look shinier and hold up better in warm hands. The seed method adds about 10 minutes."
     }
   ],
   "table": {
@@ -139,7 +139,7 @@
         "Tempered chocolate",
         "10 minutes extra",
         "Medium",
-        "Any frosting at warm events"
+        "Any frosting, for extra gloss and snap"
       ]
     ]
   },
