@@ -830,7 +830,8 @@
       "targetKeyword": "high tea cupcakes",
       "notes": "Mini and petite sizes, delicate flavors that suit tea (Earl Grey, lemon, rose, elderflower, lavender), lighter frostings, arranging a tiered stand with scones and sandwiches. Link the site's tea and floral recipes.",
       "priority": 72,
-      "status": "idea"
+      "status": "draft",
+      "slug": "cupcakes-for-afternoon-tea-sizes-flavors-presentation"
     },
     {
       "id": "g073",
@@ -850,7 +851,8 @@
       "targetKeyword": "how to make box cake mix taste homemade",
       "notes": "Specific swaps and what each changes: milk for water, melted butter for oil, an extra egg or yolk, sour cream, real vanilla, a pinch of salt, homemade frosting. Be honest about the limits and point to the site's from-scratch recipes.",
       "priority": 74,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-make-box-mix-cupcakes-taste-homemade"
     },
     {
       "id": "g075",
@@ -859,7 +861,8 @@
       "targetKeyword": "how to make cupcakes without a mixer",
       "notes": "Creaming by hand with a whisk or wooden spoon, the melted-butter and oil methods that need no creaming, the muffin method, what to avoid, frosting by hand.",
       "priority": 75,
-      "status": "idea"
+      "status": "failed",
+      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
     },
     {
       "id": "g076",
@@ -868,7 +871,8 @@
       "targetKeyword": "how to bake cupcakes without a cupcake pan",
       "notes": "Doubled paper liners, foil liners, silicone cups, ramekins and oven-safe mugs on a sheet tray, spacing, and how baking time changes for each.",
       "priority": 76,
-      "status": "idea"
+      "status": "draft",
+      "slug": "how-to-bake-cupcakes-without-a-muffin-pan"
     },
     {
       "id": "g077",
@@ -910,7 +914,8 @@
       "targetKeyword": "cupcake liners pulling away",
       "notes": "Liners peeling away from the cake: steam and condensation, underbaking, cooling in the pan, humidity, liner quality, overfilling. Fixes for each cause. Different problem from cupcakes sticking to liners; link that guide.",
       "priority": 80,
-      "status": "idea"
+      "status": "draft",
+      "slug": "why-cupcake-liners-pull-away"
     },
     {
       "id": "g081",
@@ -930,7 +935,8 @@
       "targetKeyword": "sour cream in cupcakes",
       "notes": "How fat and acid in each change moisture and crumb, swapping ratios, their effect on baking soda, flavor differences, full-fat versus low-fat. Link the buttermilk substitute page.",
       "priority": 82,
-      "status": "idea"
+      "status": "draft",
+      "slug": "sour-cream-yogurt-or-buttermilk-moistest-cupcakes"
     },
     {
       "id": "g083",
