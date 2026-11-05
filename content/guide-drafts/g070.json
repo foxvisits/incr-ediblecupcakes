@@ -33,7 +33,7 @@
         "Wedding with a cake: 0.75 per guest as a second dessert.",
         "Wedding with cupcakes only: 1.25 to 1.5 per guest.",
         "Office event: 1 per person, using the real headcount, since some people are out.",
-        "Dessert table with 3 or more sweets: 0.5 per guest per sweet type, up to 1 total."
+        "Dessert table with 3 or more sweets: 0.5 per guest."
       ]
     },
     {
@@ -56,7 +56,7 @@
       "heading": "Worked Examples for 25, 50 and 100 Guests",
       "paragraphs": [
         "Here are two scenarios: cupcakes as the main dessert at 1.25 per guest, and cupcakes sharing a table at 0.75 per guest. Both include the 10 percent buffer and round up to a dozen.",
-        "Use the table above to match your guest count. If you bake your own, each dozen needs one standard batch, so see the batch baking guide for oven timing."
+        "Use the table above to pick your per-guest rate. If you bake your own, each dozen needs one standard batch, so see the batch baking guide for oven timing."
       ],
       "list": [
         "25 guests, main dessert: 31 plus 3 is 34, so bake 36.",
@@ -116,7 +116,7 @@
     "rows": [
       [
         "Kids party, cupcakes only",
-        "1 to 1.25",
+        "About 1.33",
         "2 to 3"
       ],
       [
