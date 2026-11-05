@@ -914,7 +914,8 @@
       "targetKeyword": "cupcake liners pulling away",
       "notes": "Liners peeling away from the cake: steam and condensation, underbaking, cooling in the pan, humidity, liner quality, overfilling. Fixes for each cause. Different problem from cupcakes sticking to liners; link that guide.",
       "priority": 80,
-      "status": "idea"
+      "status": "draft",
+      "slug": "why-cupcake-liners-pull-away"
     },
     {
       "id": "g081",
