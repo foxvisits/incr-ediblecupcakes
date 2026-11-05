@@ -739,8 +739,7 @@
       "targetKeyword": "how much frosting for 24 cupcakes",
       "notes": "Amounts per cupcake and per dozen for a thin spread, a standard swirl and a tall bakery swirl, in cups and grams. How piping tip size changes the amount, a scaling table for 12, 24 and 48 cupcakes, and how much to make extra.",
       "priority": 63,
-      "status": "failed",
-      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
+      "status": "idea"
     },
     {
       "id": "g064",
@@ -770,8 +769,7 @@
       "targetKeyword": "chocolate decorations for cupcakes",
       "notes": "Chocolate curls with a vegetable peeler, shards and bark, piped chocolate shapes on parchment, a quick tempering shortcut, and how to keep decorations from melting or blooming.",
       "priority": 66,
-      "status": "failed",
-      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
+      "status": "idea"
     },
     {
       "id": "g067",
@@ -800,8 +798,7 @@
       "targetKeyword": "cupcake tower",
       "notes": "Stand types, how many cupcakes each tier holds, loading order, keeping it stable, assembling on site after transport, filling gaps with decorations.",
       "priority": 69,
-      "status": "failed",
-      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
+      "status": "idea"
     },
     {
       "id": "g070",
@@ -861,8 +858,7 @@
       "targetKeyword": "how to make cupcakes without a mixer",
       "notes": "Creaming by hand with a whisk or wooden spoon, the melted-butter and oil methods that need no creaming, the muffin method, what to avoid, frosting by hand.",
       "priority": 75,
-      "status": "failed",
-      "error": "kie.ai text error (HTTP 500, code -): Internal error, please try again later"
+      "status": "idea"
     },
     {
       "id": "g076",
