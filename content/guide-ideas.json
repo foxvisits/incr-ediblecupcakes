@@ -965,7 +965,8 @@
       "targetKeyword": "cups to grams for baking",
       "notes": "Reference tables: grams per cup for flour, sugars, butter, cocoa, milk and oil, Fahrenheit to Celsius to gas mark, common pan sizes. Explain why grams beat cups and link the measuring guide.",
       "priority": 85,
-      "status": "idea"
+      "status": "draft",
+      "slug": "cupcake-measurement-conversions-cups-to-grams"
     }
   ]
 }
