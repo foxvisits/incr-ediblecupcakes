@@ -776,9 +776,10 @@
       "category": "vegan",
       "notes": "Year-round but low competition. Molasses + warm spices, ginger cream cheese frosting swirl",
       "priority": 71,
-      "status": "scheduled",
+      "status": "published",
       "slug": "vegan-gingerbread-cupcakes",
-      "publishAt": "2026-11-05T17:45:00+02:00"
+      "publishAt": "2026-11-05T17:45:00+02:00",
+      "publishedAt": "2026-11-06T13:40:38.983Z"
     },
     {
       "id": "r072",

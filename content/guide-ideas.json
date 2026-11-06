@@ -687,9 +687,10 @@
       "targetKeyword": "types of frosting for cupcakes",
       "notes": "A comparison hub: American buttercream, Swiss meringue, Italian meringue, French buttercream, ermine (flour) frosting, cream cheese, stabilized whipped cream, seven-minute frosting and ganache. Compare sweetness, stability at room temperature, difficulty and piping performance in a table. Link the detailed frosting guides on the site.",
       "priority": 58,
-      "status": "scheduled",
+      "status": "published",
       "slug": "types-of-frosting-for-cupcakes-compared",
-      "publishAt": "2026-11-06T14:58:00+02:00"
+      "publishAt": "2026-11-06T14:58:00+02:00",
+      "publishedAt": "2026-11-06T13:40:38.983Z"
     },
     {
       "id": "g059",
