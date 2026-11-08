@@ -631,9 +631,10 @@
       "targetKeyword": "how to make cupcakes vegan",
       "notes": "One conversion plan covering eggs, butter, milk and frosting together. Which egg swap suits which batter (aquafaba, flax, applesauce, plant yogurt), block plant butter vs oil, plant milk plus vinegar as buttermilk, what fails when converted, a worked conversion of a classic vanilla recipe. Link the egg substitutes and dairy-free guides instead of repeating them.",
       "priority": 53,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-make-any-cupcake-recipe-vegan",
-      "publishAt": "2026-11-08T13:59:00+02:00"
+      "publishAt": "2026-11-08T13:59:00+02:00",
+      "publishedAt": "2026-11-08T12:40:37.312Z"
     },
     {
       "id": "g054",
