@@ -1364,9 +1364,10 @@
       "category": "dairy-free",
       "notes": "Fresh zest + light lemon cream frosting using dairy-free butter + powdered sugar",
       "priority": 126,
-      "status": "scheduled",
+      "status": "published",
       "slug": "dairy-free-lemon-blossom-cupcakes",
-      "publishAt": "2026-11-08T17:59:00+02:00"
+      "publishAt": "2026-11-08T17:59:00+02:00",
+      "publishedAt": "2026-11-09T15:00:34.667Z"
     },
     {
       "id": "r127",
