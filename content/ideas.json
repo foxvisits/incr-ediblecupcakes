@@ -1668,9 +1668,10 @@
       "category": "seasonal",
       "notes": "Funfetti batter + classic swirl + sprinkles",
       "priority": 156,
-      "status": "scheduled",
+      "status": "published",
       "slug": "birthday-confetti-cupcakes",
-      "publishAt": "2026-11-09T17:25:00+02:00"
+      "publishAt": "2026-11-09T17:25:00+02:00",
+      "publishedAt": "2026-11-10T14:14:08.831Z"
     },
     {
       "id": "r157",

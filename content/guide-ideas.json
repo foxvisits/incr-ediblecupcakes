@@ -854,9 +854,10 @@
       "targetKeyword": "bake sale cupcakes",
       "notes": "Frostings that survive a table all day, individual packaging, listing ingredients and allergens on labels, a simple pricing approach, how many to bake. Link the school allergen guide.",
       "priority": 73,
-      "status": "scheduled",
+      "status": "published",
       "slug": "bake-sale-cupcakes-packaging-pricing-allergen-labels",
-      "publishAt": "2026-11-10T10:38:00+02:00"
+      "publishAt": "2026-11-10T10:38:00+02:00",
+      "publishedAt": "2026-11-10T14:14:08.831Z"
     },
     {
       "id": "g074",
