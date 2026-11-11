@@ -1711,9 +1711,10 @@
       "category": "seasonal",
       "notes": "Holiday special. Cute antlers using pretzels or chocolate",
       "priority": 160,
-      "status": "scheduled",
+      "status": "published",
       "slug": "red-velvet-reindeer-cupcakes",
-      "publishAt": "2026-11-10T17:30:00+02:00"
+      "publishAt": "2026-11-10T17:30:00+02:00",
+      "publishedAt": "2026-11-11T13:28:37.186Z"
     },
     {
       "id": "r161",
@@ -1721,9 +1722,10 @@
       "category": "seasonal",
       "notes": "Holiday special. Marshmallow snowman head + scarf piping",
       "priority": 161,
-      "status": "scheduled",
+      "status": "published",
       "slug": "snowman-top-hat-cupcakes",
-      "publishAt": "2026-11-11T13:37:00+02:00"
+      "publishAt": "2026-11-11T13:37:00+02:00",
+      "publishedAt": "2026-11-11T13:28:37.186Z"
     },
     {
       "id": "r162",
