@@ -722,9 +722,10 @@
       "targetKeyword": "stabilized whipped cream frosting",
       "notes": "Compare stabilizers: gelatin, mascarpone, cream cheese, instant pudding mix, cornstarch or powdered milk. How long each holds, how to pipe it, storage and warm-weather limits.",
       "priority": 61,
-      "status": "scheduled",
+      "status": "published",
       "slug": "stabilized-whipped-cream-frosting-for-cupcakes",
-      "publishAt": "2026-11-12T13:34:00+02:00"
+      "publishAt": "2026-11-12T13:34:00+02:00",
+      "publishedAt": "2026-11-12T14:32:41.666Z"
     },
     {
       "id": "g062",
