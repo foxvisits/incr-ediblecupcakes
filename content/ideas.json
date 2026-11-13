@@ -1172,9 +1172,10 @@
       "category": "gluten-free",
       "notes": "Warm cinnamon cake, creamy vanilla swirl frosting dusted with cinnamon",
       "priority": 107,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-cinnamon-brown-sugar-cupcakes",
-      "publishAt": "2026-11-13T12:14:00+02:00"
+      "publishAt": "2026-11-13T12:14:00+02:00",
+      "publishedAt": "2026-11-13T13:51:17.920Z"
     },
     {
       "id": "r108",
