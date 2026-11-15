@@ -734,9 +734,10 @@
       "targetKeyword": "frosting vs icing",
       "notes": "Clear definitions and how US and UK usage differ, consistency of each, which to use on cupcakes and when, royal icing for decorations, basic glaze ratios. Short and direct.",
       "priority": 62,
-      "status": "scheduled",
+      "status": "published",
       "slug": "frosting-vs-icing-vs-glaze-difference",
-      "publishAt": "2026-11-14T15:20:00+02:00"
+      "publishAt": "2026-11-14T15:20:00+02:00",
+      "publishedAt": "2026-11-15T13:22:47.325Z"
     },
     {
       "id": "g063",

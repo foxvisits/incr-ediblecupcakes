@@ -1183,9 +1183,10 @@
       "category": "gluten-free",
       "notes": "Grated carrot ensures moisture, cream cheese swirl frosting",
       "priority": 108,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-carrot-cake-cupcakes",
-      "publishAt": "2026-11-14T16:41:00+02:00"
+      "publishAt": "2026-11-14T16:41:00+02:00",
+      "publishedAt": "2026-11-15T13:22:47.325Z"
     },
     {
       "id": "r109",
@@ -1204,9 +1205,10 @@
       "category": "gluten-free",
       "notes": "Use mini chips, prevent sinking by tossing chips in almond flour",
       "priority": 110,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-chocolate-chip-cupcakes",
-      "publishAt": "2026-11-15T12:57:00+02:00"
+      "publishAt": "2026-11-15T12:57:00+02:00",
+      "publishedAt": "2026-11-15T13:22:47.325Z"
     },
     {
       "id": "r111",
