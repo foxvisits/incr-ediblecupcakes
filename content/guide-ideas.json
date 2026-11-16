@@ -757,9 +757,10 @@
       "targetKeyword": "how to frost cupcakes without a piping bag",
       "notes": "Offset spatula swirl, spoon-back swirl, dip method for glaze and ganache, zip-top bag substitute, rolling the frosted edge in sprinkles or crumbs. Step by step for each finish.",
       "priority": 64,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-frost-cupcakes-without-a-piping-bag",
-      "publishAt": "2026-11-16T15:10:00+02:00"
+      "publishAt": "2026-11-16T15:10:00+02:00",
+      "publishedAt": "2026-11-16T14:37:14.854Z"
     },
     {
       "id": "g065",

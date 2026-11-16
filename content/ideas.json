@@ -1216,9 +1216,10 @@
       "category": "gluten-free",
       "notes": "Mild floral honey, soft tender crumb, not overly sweet",
       "priority": 111,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-honey-vanilla-cupcakes",
-      "publishAt": "2026-11-16T11:16:00+02:00"
+      "publishAt": "2026-11-16T11:16:00+02:00",
+      "publishedAt": "2026-11-16T14:37:14.854Z"
     },
     {
       "id": "r112",
