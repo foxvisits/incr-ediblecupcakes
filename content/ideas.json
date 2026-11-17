@@ -1227,9 +1227,10 @@
       "category": "gluten-free",
       "notes": "Coconut milk for moisture, coconut-flecked buttercream",
       "priority": 112,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-coconut-cream-cupcakes",
-      "publishAt": "2026-11-17T15:18:00+02:00"
+      "publishAt": "2026-11-17T15:18:00+02:00",
+      "publishedAt": "2026-11-17T15:26:16.572Z"
     },
     {
       "id": "r113",
