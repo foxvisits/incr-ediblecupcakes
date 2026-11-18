@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://incr-ediblecupcakes.com/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -60,7 +60,7 @@
 
   <url>
     <loc>https://incr-ediblecupcakes.com/guides</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2261,6 +2261,17 @@
     <image:image>
       <image:loc>https://incr-ediblecupcakes.com/guide-how-to-make-frosting-stable-in-hot-weather.jpg</image:loc>
       <image:title>How to Make Frosting Stable in Hot Weather</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://incr-ediblecupcakes.com/guides/how-to-make-vegan-buttercream-that-holds-a-swirl</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://incr-ediblecupcakes.com/guide-how-to-make-vegan-buttercream-that-holds-a-swirl.jpg</image:loc>
+      <image:title>How to Make Vegan Buttercream That Holds a Swirl</image:title>
     </image:image>
   </url>
 
