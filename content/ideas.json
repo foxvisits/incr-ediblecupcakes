@@ -1238,9 +1238,10 @@
       "category": "gluten-free",
       "notes": "Mashed banana + maple extract, not syrup in frosting",
       "priority": 113,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-banana-maple-cupcakes",
-      "publishAt": "2026-11-18T17:48:00+02:00"
+      "publishAt": "2026-11-18T17:48:00+02:00",
+      "publishedAt": "2026-11-19T15:09:50.581Z"
     },
     {
       "id": "r114",
@@ -1248,9 +1249,10 @@
       "category": "gluten-free",
       "notes": "Cocoa + orange zest + smooth chocolate swirl frosting",
       "priority": 114,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-chocolate-orange-cupcakes",
-      "publishAt": "2026-11-19T10:25:00+02:00"
+      "publishAt": "2026-11-19T10:25:00+02:00",
+      "publishedAt": "2026-11-19T15:09:50.581Z"
     },
     {
       "id": "r115",
