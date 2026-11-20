@@ -1260,9 +1260,10 @@
       "category": "gluten-free",
       "notes": "Raspberry puree + lemon zest for bright acidity, pink swirl frosting",
       "priority": 115,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-raspberry-lemonade-cupcakes",
-      "publishAt": "2026-11-20T12:12:00+02:00"
+      "publishAt": "2026-11-20T12:12:00+02:00",
+      "publishedAt": "2026-11-20T14:49:24.436Z"
     },
     {
       "id": "r116",

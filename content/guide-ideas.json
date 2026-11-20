@@ -655,9 +655,10 @@
       "targetKeyword": "best sweetener for keto cupcakes",
       "notes": "Compare sweetness relative to sugar, browning, cooling aftertaste, recrystallization in frosting, moisture and texture, digestive tolerance. Include a conversion table and which sweetener to use in batter versus frosting.",
       "priority": 55,
-      "status": "scheduled",
+      "status": "published",
       "slug": "keto-sweeteners-for-cupcakes-erythritol-vs-allulose-vs-monk-fruit",
-      "publishAt": "2026-11-20T10:29:00+02:00"
+      "publishAt": "2026-11-20T10:29:00+02:00",
+      "publishedAt": "2026-11-20T14:49:24.436Z"
     },
     {
       "id": "g056",
