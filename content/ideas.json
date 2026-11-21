@@ -1271,9 +1271,10 @@
       "category": "gluten-free",
       "notes": "Chai spice through batter + lightly spiced vanilla swirl frosting",
       "priority": 116,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-chai-vanilla-cupcakes",
-      "publishAt": "2026-11-21T15:51:00+02:00"
+      "publishAt": "2026-11-21T15:51:00+02:00",
+      "publishedAt": "2026-11-21T14:06:38.418Z"
     },
     {
       "id": "r117",
