@@ -1282,9 +1282,10 @@
       "category": "gluten-free",
       "notes": "Brown butter adds depth, vanilla bean frosting swirl, elegant",
       "priority": 117,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-brown-butter-vanilla-cupcakes",
-      "publishAt": "2026-11-22T13:16:00+02:00"
+      "publishAt": "2026-11-22T13:16:00+02:00",
+      "publishedAt": "2026-11-22T13:58:03.676Z"
     },
     {
       "id": "r118",
