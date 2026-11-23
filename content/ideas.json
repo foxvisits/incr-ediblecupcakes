@@ -1293,9 +1293,10 @@
       "category": "gluten-free",
       "notes": "Soft spiced cake, cream cheese swirl, cozy but evergreen",
       "priority": 118,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-ginger-molasses-cupcakes",
-      "publishAt": "2026-11-23T13:45:00+02:00"
+      "publishAt": "2026-11-23T13:45:00+02:00",
+      "publishedAt": "2026-11-23T17:14:48.854Z"
     },
     {
       "id": "r119",
