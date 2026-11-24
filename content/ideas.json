@@ -1304,9 +1304,10 @@
       "category": "gluten-free",
       "notes": "Cocoa almond cake, cool mint swirl frosting, not artificially colored",
       "priority": 119,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-mint-chocolate-cupcakes",
-      "publishAt": "2026-11-24T16:45:00+02:00"
+      "publishAt": "2026-11-24T16:45:00+02:00",
+      "publishedAt": "2026-11-24T16:54:33.575Z"
     },
     {
       "id": "r120",
