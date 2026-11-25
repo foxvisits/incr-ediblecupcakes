@@ -1315,9 +1315,10 @@
       "category": "gluten-free",
       "notes": "Tender apple cupcake + cinnamon swirl frosting + gluten-free crumble",
       "priority": 120,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-apple-cinnamon-crumble-cupcakes",
-      "publishAt": "2026-11-25T16:39:00+02:00"
+      "publishAt": "2026-11-25T16:39:00+02:00",
+      "publishedAt": "2026-11-25T16:43:21.711Z"
     },
     {
       "id": "r121",
