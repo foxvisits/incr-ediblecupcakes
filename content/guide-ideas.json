@@ -928,9 +928,10 @@
       "targetKeyword": "how to halve a cupcake recipe",
       "notes": "Weighing to split an egg, scaling leavening, why baking time barely changes, mixer bowl capacity, how many pans. Include a scaling table.",
       "priority": 79,
-      "status": "scheduled",
+      "status": "published",
       "slug": "how-to-halve-or-double-a-cupcake-recipe",
-      "publishAt": "2026-11-26T11:51:00+02:00"
+      "publishAt": "2026-11-26T11:51:00+02:00",
+      "publishedAt": "2026-11-26T16:17:55.556Z"
     },
     {
       "id": "g080",
