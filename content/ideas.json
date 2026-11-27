@@ -1348,9 +1348,10 @@
       "category": "gluten-free",
       "notes": "Holiday cluster. Pistachio base + rosewater frosting, elegant and festive",
       "priority": 123,
-      "status": "scheduled",
+      "status": "published",
       "slug": "gluten-free-pistachio-rose-cupcakes",
-      "publishAt": "2026-11-27T11:52:00+02:00"
+      "publishAt": "2026-11-27T11:52:00+02:00",
+      "publishedAt": "2026-11-27T16:02:05.988Z"
     },
     {
       "id": "r124",
