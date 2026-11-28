@@ -951,9 +951,10 @@
       "targetKeyword": "egg yolks in cupcakes",
       "notes": "What yolks add (tenderness, richness, color) and what whites add (structure, dryness), the extra-yolk trick, why egg size matters, room temperature eggs. Link the eggy-taste and egg-substitute guides.",
       "priority": 81,
-      "status": "scheduled",
+      "status": "published",
       "slug": "egg-yolks-vs-whole-eggs-cupcake-texture",
-      "publishAt": "2026-11-28T12:52:00+02:00"
+      "publishAt": "2026-11-28T12:52:00+02:00",
+      "publishedAt": "2026-11-28T14:58:16.747Z"
     },
     {
       "id": "g082",
